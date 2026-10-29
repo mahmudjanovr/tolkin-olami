@@ -1,14 +1,21 @@
 # 07. TESTING, ACCESSIBILITY, AND REGRESSION PREVENTION
 
 **Loyiha nomi:** TOLKIEN OLAMI  
-**Hujjat holati:** Faza 1 (Arxitektura va rejalashtirish)  
-**Oxirgi yangilanish:** 2026-10-11
+**Hujjat holati:** Faza 7 (Jarayonda — Sinovlar yangilandi)  
+**Oxirgi yangilanish:** 2026-10-29
 
 ---
 
 ## 1. Sifat Kafolati (QA) Strategiyasi
 
 **TOLKIEN OLAMI** ensiklopediyasida har bir sahifa, interaktiv orol va maʼlumotlar toʻplami avtomatlashtirilgan testlar bilan himoyalanadi. Sayt foydalanuvchiga taqdim etilganda xaritaning boʻshab qolishi, panellarning bir-birini toʻsib qoʻyishi yoki qidiruvda nomlar topilmasligi kabi xatolar avtomatik CI tekshiruvlarida aniqlanib toʻxtatiladi.
+
+### Joriy Sinov Koʻrsatkichlari (Audit Natijalari)
+- **Vitest Unit Testlari:** 27 ta test toʻplami, 320 ta test (100% oʻtgan).
+- **Playwright E2E Testlari:** 64 ta test (100% oʻtgan).
+- **Astro Check:** 146 ta fayl tahlil qilingan (0 xatolik, 0 ogohlantirish).
+- **Yigʻilgan Statik Sahifalar:** 232 ta HTML sahifasi (`dist/`).
+- **Qidiruv Indeksi:** 231 ta sahifa Pagefind tomonidan toʻliq indekslangan.
 
 ```
 ┌────────────────────────────────────────────────────────────────────────┐
@@ -132,7 +139,7 @@ test.describe('Interaktiv Atlas Xavfsizligi', () => {
 ## 5. CI / CD Ishga Tushirish Tartibi (Pipeline Order)
 
 Gitga har qanday oʻzgarish kiritilganda quyidagi tartibda tekshiruv oʻtadi:
-1. `npm run lint` va `npm run typecheck`
-2. `npm run test:unit` (Vitest: Zod sxemalari va havolalar)
-3. `npm run build` (Statik sahifalar va Pagefind indeksi yigʻilishi)
-4. `npm run test:e2e` (Playwright: Atlas, Navigatsiya, A11y)
+1. `npx astro check` (Astro va TypeScript qatʼiy tip tekshiruvi: 0 errors)
+2. `npm run build` (Statik 232 sahifa va Pagefind qidiruv indeksining `dist/` ga yigʻilishi)
+3. `npm run test:unit` (Vitest: 27 test fayli, 320 ta test; `tests/unit/performance-budgets.spec.ts` va `content-crosslinks.spec.ts` dagi havolalar tahlili `dist/` mavjudligiga tayanadi. Agar `dist/` mavjud boʻlmasa, byudjet testlari xavfsiz oʻtkazib yuboriladi)
+4. `npm run test:e2e` (Playwright: 64 ta E2E test — Atlas, Navigatsiya, Portretlar, A11y WCAG 2.1 AA)

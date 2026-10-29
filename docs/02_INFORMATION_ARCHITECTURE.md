@@ -1,8 +1,8 @@
 # 02. INFORMATION ARCHITECTURE AND URL CONVENTIONS
 
 **Loyiha nomi:** TOLKIEN OLAMI  
-**Hujjat holati:** Faza 1 (Arxitektura va rejalashtirish)  
-**Oxirgi yangilanish:** 2026-10-11
+**Hujjat holati:** Faza 7 (Jarayonda — Yangilandi)  
+**Oxirgi yangilanish:** 2026-10-29
 
 ---
 
@@ -43,7 +43,7 @@ Ensiklopediya 11 ta asosiy boʻlimga boʻlinadi. Har bir boʻlim aniq URL tuzilm
 ### 2. Interaktiv Atlas — Xaritalar (`/xaritalar/`)
 - **Vazifasi:** Arda, Beleriand, Númenor va Oʻrta-yer xaritalari orqali geografik navigatsiya.
 - **URL parametrlari va Holat (State):** 
-  - `?hudud=beleriand` (Xarita qatlami: `beleriand`, `orta-yer`, `numenor`, `valinor`)
+  - `?hudud=beleriand` (Xarita qatlami: `beleriand` va `orta-yer` mavjud; `numenor` va `valinor` Faza 7 ga rejalashtirilgan, qarang: `docs/10_CURRENT_STATE.md`)
   - `?davr=birinchi-davr` (Xronologik qatlam)
   - `?joy=gondolin` (Tanlangan lokatsiya slugi)
   - `?x=...&y=...&z=...` (Plonar xarita koordinatalari va masshtabi)

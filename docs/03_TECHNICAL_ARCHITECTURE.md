@@ -1,8 +1,8 @@
 # 03. TECHNICAL ARCHITECTURE AND DATA CONTRACTS
 
 **Loyiha nomi:** TOLKIEN OLAMI  
-**Hujjat holati:** Faza 1 (Arxitektura va rejalashtirish)  
-**Oxirgi yangilanish:** 2026-10-11
+**Hujjat holati:** Faza 7 (Jarayonda — Arxitektura yangilandi)  
+**Oxirgi yangilanish:** 2026-10-29
 
 ---
 
@@ -16,14 +16,17 @@ Loyiha quyidagi meʼmoriy ustunlarga tayanadi:
 
 ---
 
-## 2. Framework va Chiqarilish Strategiyasi (Release Evaluation)
+## 2. Framework va Texnologik Stek Spetsifikatsiyasi
 
-### Astro Versiyasini Tanlash
-- **Qoida:** Loyihani implementation (Faza 2) vaqtida rasmiy barqaror (stable) Astro versiyasiga tekshirib oʻrnatish kerak.
-- **Tahlil:**
-  - **Astro 5.x (agar barqaror va ekotizimi tayyor boʻlsa):** Yangi "Content Layer" API taklif qiladi, bu katta maʼlumotlar toʻplamini xotirada tezroq qayta ishlashga yordam beradi.
-  - **Astro 4.x (sinovdan oʻtgan barqaror LTS):** Anʼanaviy Content Collections bilan barqaror ishlaydi, ekotizim integratsiyalari 100% yetilgan.
-- **Qaror:** Faza 2 boshlanishida `npm info astro version` orqali eng soʻnggi barqaror versiya tekshiriladi va Cloudflare Pages adapterining mosligi tasdiqlanib tanlanadi.
+### Tanlangan va Oʻrnatilgan Stek
+- **Astro versiyasi:** Astro 7.3.8 (Static Output: `output: 'static'`, Pure SSG).
+- **Ishchi muhit:** Node.js v24.21.0, npm v11+.
+- **Tipizatsiya:** TypeScript strict (`"strict": true`, TS 5.7.3).
+- **Kontent validatsiyasi:** Zod maʼlumotlar shartnomalari (`src/content/schemas.ts`).
+- **Qidiruv dvigateli:** Pagefind v1.5.2 (statik klient qidiruv indeksi, oʻzbekcha diakritik normalizatsiya).
+- **Interaktiv kartografiya:** Leaflet v1.9.4 (Leaflet SSR guard, planar koordinatalar tizimi).
+- **CSS arxitekturasi:** Plain CSS dizayn tokenlari (`styles/tokens.css` va `styles/global.css`), tashqi yordamchi CSS freymvorklarsiz (0 dependency CSS).
+- **Statik hosting:** Cloudflare Pages statik deploy arxitekturasi (`public/_headers` bilan).
 
 ---
 

@@ -2,8 +2,8 @@
 
 **Loyiha nomi:** TOLKIEN OLAMI  
 **Loyiha shiori:** *J.R.R. Tolkien afsonalar olamining raqamli ensiklopediyasi*  
-**Hujjat holati:** Faza 1 (Arxitektura va rejalashtirish)  
-**Oxirgi yangilanish:** 2026-10-11
+**Hujjat holati:** Faza 7 (Jarayonda — Yangilandi)  
+**Oxirgi yangilanish:** 2026-10-29
 
 ---
 
