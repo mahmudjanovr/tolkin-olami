@@ -1,7 +1,7 @@
 # Tolkien Olami — Loyihaning Haqiqiy Holati Audit Hisoboti (Current State Audit)
 
 > **Avtomatik yaratilgan:** Ushbu hisobot `scripts/audit-content.cjs` skripti orqali loyihaning haqiqiy holatini sinchkovlik bilan skanerlash orqali tuzildi.  
-> **Sana:** 2026-10-29 13:38:28 UTC  
+> **Sana:** 2026-10-29 13:44:18 UTC  
 > **Muhit:** Node v24.21.0, Astro 7.3.8
 
 ---
