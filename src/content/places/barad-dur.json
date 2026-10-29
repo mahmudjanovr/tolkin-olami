@@ -1,0 +1,53 @@
+{
+  "id": "barad-dur",
+  "name": "Barad-dûr",
+  "elvish_name": "Lugbúrz (Qora tilda)",
+  "type": "qalʼa",
+  "region": "orta-yer",
+  "coordinates": {
+    "map_id": "orta-yer",
+    "x": 1480,
+    "y": 640
+  },
+  "founded_era": "Ikkinchi davr 1000",
+  "destroyed_era": "Uchinchi davr 3019",
+  "rulers": [
+    "Sauron"
+  ],
+  "notable_events": [
+    "Soʻnggi Ittifoq qamali",
+    "Yagona Uzukning yoʻq qilinishi"
+  ],
+  "textual_status": "author_published",
+  "summary": "Barad-dûr (Qora Minora) — Mordorning Gorgoroth tekisligida Sauron tomonidan Yagona Uzuk qudrati bilan tiklangan ulkan temir-tosh qalʼa. Oʻrta-yer tarixidagi eng dahshatli mudofaa istehkomi.",
+  "sources": [
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of the Rings of Power and the Third Age",
+      "page": "288",
+      "notes": "Sauron tomonidan Barad-dûr poydevorining qoʻyilishi."
+    }
+  ],
+  "description_sections": [
+    {
+      "title": "Qora Minora: Oʻrta-yerdagi eng dahshatli qalʼa",
+      "content": "Barad-dûr (Sindarincha: 'Qora Minora', Qora tilda: Lugbúrz) — Mordorning shimoli-gʻarbida, Kul Togʻlarining (Ered Lithui) qora qoyalarida qad rostlagan ulkan temir va qora tosh qalʼadir. U Angband qulaganidan soʻng Oʻrta-yerda qurilgan eng baland va eng pishiq mudofaa inshooti hisoblanadi.\n\nSauron ushbu minorani Ikkinchi davrning taxminan 1000-yilida boshlab, 1600-yilda — Yagona Uzukni yasagach toʻliq yakunlagan. Minora poydevori bevosita Yagona Uzukning sehrli qudrati bilan bogʻlangan boʻlib, Uzuk mavjud ekan, Barad-dûrni hech qanday qurol yoki kuch butunlay yoʻq qilolmas edi."
+    },
+    {
+      "title": "Yetti yillik qamal va qayta tiklanish",
+      "content": "Soʻnggi Ittifoq Urushida Elflar va Insonlar armiyasi Barad-dûrni yetti yil davomida uzluksiz qamal qildi. Anárion manjaniq toshidan halok boʻldi. Sauron magʻlubiyatga uchragach, qora minora devorlari buzib tashlandi, ammo poydevorini yoʻq qilib boʻlmadi, chunki Isildur Uzukni yoqib yubormagan edi.\n\nUchinchi davrning 2951-yilida Sauron Mordorga qaytgach, Barad-dûrni qisqa muddatda qayta tikladi. Uning eng baland choʻqqisida yonib turuvchi ulkan Qora Koʻz Oʻrta-yer uzra dahshat soldi."
+    },
+    {
+      "title": "Uzukning yoʻq qilinishi va mutlaq qulash",
+      "content": "3019-yil 25-martida Orodruin qaʼrida Yagona Uzuk erib yoʻq boʻlgan zahoti, Barad-dûr poydevori bir lahzada parchalandi. Asrlar davomida qora sehr bilan ushlab turilgan bahaybat minoralar, temir devorlar va zindonlar ulkan gumburlash bilan qulab, chang-toʻzonga aylandi."
+    },
+    {
+      "title": "Lugbúrzning qora poydevori va Sauron irodasining timsoli",
+      "content": "Barad-dûr (Qora Nutqda: Lugbúrz) O'rta-yer tarixidagi eng bahaybat va qo'rqinchli minora bo'lib, Kulrang Tog'lar (Ered Lithui) tarmog'ida qad rostlagan edi. Uning poydevori Yagona Uzuk kuchi bilan mustahkamlangan bo'lib, oddiy qurollar yoki qamal vositalari bilan uni buzish mutlaqo imkonsiz edi. Minoraning eng yuqori cho'qqisidagi derazadan Sauronning Olovli Ko'zi (Eye of Sauron) tunu kun O'rta-yerni kuzatib turgan. Uzuk yo'q qilingach, minoraning butun tayanchi bir zumda havoga uchib, qora toshlar qulab tushdi."
+    },
+    {
+      "title": "Yetti yillik qamal, quyma po'lat darvozalar va O'rta-yer zulmati",
+      "content": "Barad-dûr qal'asi shunchaki minora emas, balki kilometrlarga cho'zilgan devorlar, temir ko'priklar va chuqur yerosti qamoqxonalari tizimi edi. So'nggi Ittifoq urushida Gil-galad va Elendil boshchiligidagi qo'shin uni yetti yil qamal qildi. Minoraning ichki zallarida qora sehr va temirchilik ilmining eng dahshatli asboblari joylashgan bo'lib, u yerdan butun O'rta-yer bo'ylab qora iroda to'lqinlari tarqalib turardi. Qal'a xarobalarida To'rtinchi Davrda ham hech narsa o'smadi; u qora zulmatning abadiy qarg'ishi ostida qoldi."
+    }
+  ]
+}

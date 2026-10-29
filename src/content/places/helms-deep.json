@@ -1,0 +1,55 @@
+{
+  "id": "helms-deep",
+  "name": "Helm jarligi (Helm's Deep / Hornburg)",
+  "elvish_name": "Aglarond",
+  "type": "qalʼa",
+  "region": "orta-yer",
+  "coordinates": {
+    "map_id": "orta-yer",
+    "x": 890,
+    "y": 788
+  },
+  "founded_era": "Ikkinchi davr",
+  "rulers": [
+    "Helm Hammerhand",
+    "Théoden",
+    "Erkenbrand"
+  ],
+  "notable_events": [
+    "Uzoq Qish vaqtida shoh Helm Hammerhandning dushmanlarga qarshi afsonaviy mudofaasi (Uchinchi davr 2758–2759)",
+    "Hornburg jangi: Sarumanning oʻn minglik Isengard armiyasining Rohirrim va Entlar tomonidan tor-mor etilishi (3019-yil 3–4-mart)",
+    "Gimli boshchiligida Aglarond Yaltiroq Gʻorlarida Mittivoylar knyazligining asos solinishi (Toʻrtinchi davr)"
+  ],
+  "textual_status": "author_published",
+  "summary": "Helm jarligi (Helm's Deep) — Oq togʻlarning shimoli-gʻarbiy darasida joylashgan Rohanning eng qudratli togʻ qalʼasi. Qalʼa majmuasi Hornburg devori, baland qasri va togʻ qaʼridagi Aglarond (Yaltiroq Gʻorlar) gʻorlar tizimidan iborat. Qalʼa Uzoq Qishda oʻz xalqini mardonavor himoya qilgan afsonaviy shoh Helm Hammerhand sharafiga nomlangan.",
+  "sources": [
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "Helm's Deep",
+      "notes": "Hornburg qalʼasi devorlari, Deeping Wall mudofaasi va Saruman qoʻshinlarining qamali."
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "Appendix A: Annals of the Kings and Rulers",
+      "notes": "Helm Hammerhand jasorati, Uzoq Qish fojiasi va Hornburg nomining kelib chiqishi."
+    }
+  ],
+  "description_sections": [
+    {
+      "title": "Hornburg qalʼasi va Deeping devori",
+      "content": "Helm's Deep (Helm Tubsizligi) — Oq Togʻlarning shimoli-gʻarbiy tizmasida joylashgan tor va chuqur vodiy-daradir. Uning ostonasida tabiiy tosh qoya ustida qadimiy mustahkam tosh qalʼa — Hornburg qad rostlagan.\n\nQalʼadan vodiy boʻylab ulkan Deeping Wall (Tubsizlik devori) tortilgan boʻlib, u yigirma fut balandlikdagi pishiq Númenor toshlaridan terilgan. Devor ostidan Deeping Stream soy oqib oʻtadi; orqa tomonda esa Aglarondning (Yarqiroq Gʻorlar) ulkan yerosti gʻorlari boshlanadi."
+    },
+    {
+      "title": "Helm Hammerhand afsonasi",
+      "content": "Qalʼa oʻz nomini Rohan Qiroli Helm Hammerhand sharafiga olgan. Uchinchi davrning 2758-2759 yillaridagi Qattiq Qish (Long Winter) paytida dunlandliklar Rohanga bostirib kirganida, Helm oʻz xalqi bilan shu yerga panoh tortdi.\n\nHelm har kecha oq libosda qor boʻroni orasida yolgʻiz chiqib, qurolsiz — faqat yalangʻoch mushti bilan dushmanlarni oʻldirar edi. Bir kuni tongda u devor ustida muzlab qotgan holda topildi, ammo uning qaddi tik turar edi. Rivoyatlarga koʻra, xavf tugʻilganda Hornburg minorasidagi Helm karnayi oʻz-oʻzidan chalinib dushman qalbiga dahshat soladi."
+    },
+    {
+      "title": "Hornburg jangi (Battle of the Hornburg)",
+      "content": "3019-yil 3-4-mart kechasida Sarumanning oʻn minglik Uruk-hai armiyasi qalʼaga hujum qildi. Sarumanning 'portlovchi olovi' Deeping devorini yorib oʻtdi. Tong otaverganida Théoden va Aragorn darvozadan otliq hujum qildilar. Shu paytda Gandalf va Erkenbrand qoʻshini yetib keldi, Fangorn oʻrmonidan kelgan Huornlar esa oʻrklarni butkul qurshab yoʻq qildi."
+    },
+    {
+      "title": "Yaltiroq G'orlar (Aglarond) va Helm Hammerhand afsonasi",
+      "content": "Helm jarligi ortidagi qoyalarda afsonaviy Aglarond (Yaltiroq G'orlar) joylashgan bo'lib, Gimli uning billur ustunlari, marmar zallari va tovush aks-sadosini dunyodagi eng go'zal mo''jiza deb atagan. Uzuk Urushidan so'ng Gimli bu yerda yangi Mitti shohligiga asos soldi. Qal'a esa qishning qahratonida yolg'iz o'zi yalang qo'l bilan dushmanlarni qirgan va qorda tik turib halok bo'lgan Podshoh Helm Hammerhand xotirasiga atab nomlangan bo'lib, Rohirrim uchun yengilmaslik ramzi edi."
+    }
+  ]
+}

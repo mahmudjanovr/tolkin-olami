@@ -1,0 +1,65 @@
+{
+  "id": "gondolinning-qulashi",
+  "title": "Gondolinning Qulashi",
+  "subtitle": "Yashirin Qoya shahrining xiyonat va olovda vayron boʻlishi",
+  "era": "birinchi_davr",
+  "year_text": "Birinchi davr 510",
+  "location_id": "gondolin",
+  "characters": [
+    "turgon",
+    "tuor",
+    "idril",
+    "earendil",
+    "glorfindel",
+    "maeglin",
+    "melkor"
+  ],
+  "belligerents": {
+    "side_a": [
+      "Gondolinning Oʻn Ikki Xonadoni (Oliy Qirol Turgon)",
+      "Tuor va Qanot Xonadoni",
+      "Oltin Gul Xonadoni (Glorfindel)"
+    ],
+    "side_b": [
+      "Morgoth lashkari (Gothmog va Balroglar)",
+      "Olovli ajdarlar va temir maxluqlar",
+      "Xiyonatkor Maeglin"
+    ]
+  },
+  "outcome": "Yashirin Shohlik Gondolin butunlay vayron qilindi; Oliy Shoh Turgon halok bo'ldi; Tuor, Idril va ularning o'g'li Eärendil boshchiligidagi qochqinlar Sirion Havensiga najot topib yetib bordilar.",
+  "preceding_event": "nirnaeth-arnoediad",
+  "succeeding_event": "gazab-urushi",
+  "textual_status": "posthumous_edited",
+  "sources": [
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of Tuor and the Fall of Gondolin",
+      "page": "238",
+      "notes": "Gondolin qamali, Maeglin xiyonati va Cirith Thoronath jangi."
+    },
+    {
+      "book_slug": "the-fall-of-gondolin",
+      "chapter": "The Fall of Gondolin (Original Tale)",
+      "page": "145",
+      "notes": "Gondolinning Oʻn Ikki Xonadoni va shahar mudofaasi tafsilotlari."
+    }
+  ],
+  "description_sections": [
+    {
+      "title": "Gondolinning siri va Maeglinning xiyonati",
+      "content": "Gondolin O'rta-yerdagi eng go'zal va mustahkam Yashirin Shohlik bo'lib, Turgon tomonidan Qurshov Tog'lari (Echoriath) bag'ridagi Amon Gwareth tepaligida qurilgan edi. Shahar besh yuz yildan ortiq vaqt davomida Morgothning barcha josuslari va lashkarlaridan yashirin qoldi. Biroq Turgonning jiyani Maeglin shaharga kelgan inson Tuorga va Turgonning qizi Idril Celebrindalga nisbatan qora rashk va hasad bilan to'ldi. Maeglin tashqi tog'larda ma'dan qidirayotganda o'rklar tomonidan asir olindi. Morgoth unga Idrilni xotinlikka va Gondolin taxtini berishni va'da qilgach, Maeglin shaharning yashirin darvozalari va zaif joylarini dushmanga sotdi."
+    },
+    {
+      "title": "Yetti Darvoza ostonasidagi qonli qamal",
+      "content": "Birinchi Davrning 510-yili yozida, 'Darvozalar Bayramida' (Gates of Summer), Morgothning dahshatli armiyasi – temir va olovdan yasalgan mexanik ajdaholar, Balroglar to'dasi va millionlab o'rklar Qurshov Tog'laridan oshib, Gondolinga to'satdan bostirib kirdilar. Shaharning Yetti Darvozasi birin-ketin buzib tashlandi. Gondolinning o'n ikki oliy xonadoni (Qaldirg'och, Daraxt, Qanot, Oltin Gul va boshqalar) mislsiz qahramonlik ko'rsatdilar. Favvora Xonadoni sardori Ecthelion shahar maydonida Balroglar hukmdori Gothmog bilan olishib, o'z dubulg'asi nayzasi bilan uni favvora havzasiga cho'ktirib, ikkalasi birga halok bo'ldi."
+    },
+    {
+      "title": "Idrilning yashirin yo'li va Glorfindel jasorati",
+      "content": "Idril o'zining dono ko'ngli bilan xiyonatni oldindan sezgan va shahar ostidan tog'lar tomon maxfiy yerosti yo'lini qazdirgan edi. Tuor va Idril omon qolgan ayollar va bolalarni, jumladan yosh Eärendilni ushbu yo'l orqali olib chiqdilar. Turgon esa o'zining baland minorasida qolib, shohlik xarobalari bilan birga quladi. Qochqinlar Cirith Thoronath (Burgutlar Yorig'i) muzliklaridan o'tayotganda ularga Balrog va o'rk pistirmasi hujum qildi. Oltin Gul Xonadoni sardori Glorfindel qochqinlarni qutqarish uchun Balrog bilan jangga kirishdi va qoya chetidan maxluq bilan birga jarlikka qulab qahramonlarcha halok bo'ldi."
+    },
+    {
+      "title": "Tarixiy oqibatlari va Najot Yulduzi",
+      "content": "Gondolinning qulashi bilan Belerianddagi so'nggi va eng qudratli elflar poytaxti yo'q qilindi. Noldorning barcha shon-shavkati yer bilan yakson bo'lgandek tuyuldi. Biroq Tuor va Idril tomonidan qutqarib qolingan yosh Eärendil keyinchalik o'z kemasi Vingilotda Boqiy G'arbga suzib borib, Valardan yordam so'radi. Aynan Gondolin kulidan chiqqan bu najot nuri Morgothni butunlay yo'q qilgan G'azab Urushini boshlab berdi."
+    }
+  ]
+}

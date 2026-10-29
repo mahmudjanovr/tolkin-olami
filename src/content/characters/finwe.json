@@ -1,0 +1,100 @@
+{
+  "id": "finwe",
+  "name": "Finwë",
+  "original_name": "Finwë Noldóran",
+  "father_name": "Birinchi Elflar avlodi (Cuiviénen uygʻonganlari)",
+  "mother_name": "Birinchi Elflar avlodi (Cuiviénen uygʻonganlari)",
+  "spouse": "Míriel Þerindë (birinchi rafiqasi), Indis Vanyar (ikkinchi rafiqasi)",
+  "children": [
+    "Fëanor",
+    "Fingolfin",
+    "Finarfin",
+    "Findis",
+    "Írimë"
+  ],
+  "aliases": [
+    "Noldor Oqsoqoli",
+    "Finwë Noldóran",
+    "Eldamar Qiroli"
+  ],
+  "titles": [
+    "Noldor Oliy Qiroli",
+    "Tirion Hukmdori"
+  ],
+  "race": "elflar",
+  "sub_race": "Noldor",
+  "culture": "Valinor Noldori",
+  "birth_year": "Daraxtlar davri 1050",
+  "death_year": "Daraxtlar davri 1495",
+  "house_id": "finwe-xonadoni",
+  "weapons_and_artifacts": [
+    "Noldor Oliy Toji"
+  ],
+  "primary_locations": ["tirion", "formenos"],
+  "textual_status": "posthumous_edited",
+  "uncertainty_notes": "Teologik va matnshunoslik tahlili: 'Morgoth's Ring' (HoME X) asarining 'Laws and Customs among the Eldar' boʻlimida Finwëning Míriel vafotidan soʻng Indisga uylanishi Arda tarixidagi eng murakkab teologik va huquqiy hodisa — 'Statute of Finwë and Míriel' deb nomlangan. Tolkien bu voqeani Valinorda ruhiy charchoq va oʻlimning ilk bor qonuniylashtirilishi, bu esa oʻz navbatida Fëanorning ruhiy shikastlanishi va Noldorning fojiaviy boʻlinishiga olib kelgan asosiy sabab sifatida talqin qilgan.",
+  "summary": "Valinordagi Noldor xalqining birinchi Oliy Qiroli, Buyuk Elflar koʻchishining uch afsonaviy yoʻlboshchisidan biri. Míriel va Indis bilan tuzgan ikki nikohi Noldorning uch buyuk sulolasiga asos soldi. Fëanorni Formenosdagi surgunda yolgʻiz qoldirmagan va Melkor tomonidan Formenos darvozasida qahramonlarcha qatl etilgan ilk shahid qirol.",
+  "etymology": "Finwë ismi qadimgi Primitiv Elvish tilidagi *phin- ('soch', 'chiroyli/mohir') oʻzagidan olingan boʻlib, 'Mohir yetakchi' degan maʼnoni anglatadi. Keyinchalik bu ism butun Noldor qirollik sulolasining doimiy sulolaviy qoʻshimchasiga aylangan (Finwë, Curufinwë, Nolofinwë, Arafinwë).",
+  "biography_sections": [
+    {
+      "title": "Cuiviénen uygʻonishi va Elflarning Buyuk Koʻchishi",
+      "content": "Finwë Daraxtlar davrining 1050-yilida Oʻrta-yerdagi Cuiviénen (Uygʻonish Suvlari) boʻyida uygʻongan ilk elflardan biri edi. Vala Oromë elflarni kashf etgach, Finwë Ingwë (Vanyar yetakchisi) va Elwë (Teleri yetakchisi) bilan birga Valinorga elchi sifatida bordi.\n\nValinorning ilohiy nurini koʻrib qaytgan Finwë oʻz xalqini gʻarbga tomon Buyuk Koʻchishga daʼvat etdi. U Noldor qabilasini xavf-xatarlar, Tumanli Togʻlar va Katta Dengiz orqali omon olib oʻtib, Aman zaminiga yetkazdi."
+    },
+    {
+      "title": "Tiriondagi oltin davr va Mírielning foniyligi",
+      "content": "Valinorda Noldor Túna tepaligida oʻzlarining oq toshli Tirion shahrini barpo etdi va Finwë Noldorning Oliy Qiroli sifatida taxtga oʻtirdi. U kashtachilik va nozik sanʼat ustasi Míriel Þerindë bilan turmush qurdi.\n\nDaraxtlar davrining 1169-yilida ularning yagona farzandi — Fëanor dunyoga keldi. Biroq oʻgʻlining shiddatli ruhi Mírielning bor vujudi va ruhiy quvvatini soʻrib oldi. Míriel Lórien bogʻlarida dam olishga chekindi va uning ruhi (fëa) tanasini tark etib, Mandos zallariga yoʻl oldi. Bu Amandagi birinchi oʻlim boʻlib, butun olamni lol qoldirdi."
+    },
+    {
+      "title": "Indis bilan ikkinchi nikoh va sulolaviy boʻlinish",
+      "content": "Cheksiz gʻamda qolgan Finwë uzoq yillar yolgʻiz yashadi. Elflarning boqiylik tabiati ikkinchi nikohni taqiqlaganligi sababli, Manwë va Mandos maxsus qonun — 'Finwë va Míriel qoidasi'ni joriy qildi: agar Míriel Mandosdan qaytmaslikka ont ichsa, Finwë boshqa uylanishi mumkin edi.\n\nFinwë Vanyar goʻzali Indisga uylandi. Ularning turmushidan Fingolfin va Finarfin ismli oʻgʻillar hamda Findis va Írimë ismli qizlar tugʻildi. Biroq Fëanor otasining ikkinchi oilasini hech qachon qabul qilmadi va bu nifoq keyinchalik butun Noldor xalqining fojiaviy parchalanishiga zamin yaratdi."
+    },
+    {
+      "title": "Formenosga ixtiyoriy surgun",
+      "content": "Melkor tarqatgan fitnalar tufayli Fëanor Tirionda Fingolfinga qilich oʻqtalganida, Valar Fëanorni 12 yilga shahardan surgun qildi. Shunda Finwë oʻgʻliga boʻlgan beqiyos mehr va sadoqatini koʻrsatdi.\n\nU Oliy Qirollik tojini Tirionda qoldirib: 'Oʻgʻlim surgunda ekan, men oʻzimni shoh deb bilmayman', dedi va Fëanor bilan birga shimoldagi sovuq Formenos qalʼasiga ixtiyoriy ravishda koʻchib oʻtdi."
+    },
+    {
+      "title": "Formenos fojiasi va birinchi shohlik shahidligi",
+      "content": "Daraxtlar davrining 1495-yilida Melkor va Ungoliant Ikki Daraxtni quritib, Valinorni zulmatga gʻarq qilgach, Melkor Silmarillarni oʻgʻirlash uchun Formenosga bostirib kirdi.\n\nQalʼa himoyachilari qochib ketgan boʻlsa-da, qariya Qirol Finwë yolgʻiz oʻzi qurollanib, darvoza oldida qora Vala yoʻlini toʻsdi. Melkor uni oʻz toʻqmogʻi bilan ayovsiz qatl etdi — bu Amandagi birinchi qon toʻkilishi edi. Finwëning ruhi Mandos zallariga tushdi va u yerda oʻz ixtiyori bilan abadiy qolishga qaror qildi, toki bir kun kelib Míriel yana dunyoga qaytishi mumkin boʻlsin."
+    }
+  ],
+  "image": {
+    "src": "/images/characters/finwe.webp",
+    "src_thumb": "/images/characters/finwe-thumb.webp",
+    "alt": "Finwë Tiriondagi taxtida, qora sochli va tillarang toj kiygan holda",
+    "caption": "Finwë — Valinordagi Noldorning Birinchi Oliy Qiroli, Finwë xonadoni asoschisi"
+  },
+  "sources": [
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of Eldamar and the Princes of the Eldalië",
+      "page": "59"
+    },
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of the Silmarils and the Unrest of the Noldor",
+      "page": "73"
+    },
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of the Flight of the Noldor",
+      "page": "82"
+    },
+    {
+      "book_slug": "history-of-middle-earth",
+      "chapter": "Laws and Customs among the Eldar (HoME X)",
+      "page": "207"
+    }
+  ],
+  "related_characters": [
+    "miriel",
+    "indis",
+    "feanor",
+    "fingolfin",
+    "finarfin",
+    "galadriel",
+    "thingol",
+    "melkor",
+    "manwe"
+  ],
+  "adaptations": []
+}

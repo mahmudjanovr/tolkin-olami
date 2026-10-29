@@ -1,0 +1,61 @@
+{
+  "id": "rohirrim",
+  "name": "Rohirrim (Rohan Chavandozlari)",
+  "other_names": [
+    "Eorlingas",
+    "Otlar Hukmdorlari",
+    "Forgoil (Somonboshlar)"
+  ],
+  "race_category": "insonlar",
+  "divisions_and_clans": [
+    "Éothéod (Anduin va Langwell boʻyidagi shimoliy ajdodlar)",
+    "Eorl Xonadoni (Meduseld va Edoras qirollik sulolasi)",
+    "Sharqiy Marka (East-mark) va Gʻarbiy Marka (West-mark) chavandozlari",
+    "Westfold va Hornburg qoʻriqchilari"
+  ],
+  "origin_era": "Uchinchi davr",
+  "associated_languages": [
+    "westron"
+  ],
+  "primary_realms": [
+    "edoras",
+    "helms-deep",
+    "dunharrow"
+  ],
+  "textual_status": "author_published",
+  "summary": "Rohirrim (Sindarin: 'Otliqlar Xalqi', Ot Hukmdorlari) — Anduin vodiysining qadimgi Éothéod qabilasidan kelib chiqqan, Gondor bilan muqaddas Eorl Qasami orqali bogʻlangan va Calenardhon dashtlarida Rohan qirolligiga asos solgan jasur otliqlar xalqidir. Ular oʻzlarining afsonaviy Mearas tulporlari, nayzabozlik mahoratlari va ochiq dashtlardagi erkin hayot tarzi bilan mashhur.",
+  "sources": [
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "The Riders of Rohan / Appendix A: II — The House of Eorl",
+      "page": "1063"
+    },
+    {
+      "book_slug": "unfinished-tales",
+      "chapter": "Part Three, II: Cirion and Eorl and the Friendship of Gondor and Rohan",
+      "page": "288"
+    }
+  ],
+  "description_sections": [
+    {
+      "title": "Éothéod ildizlari va Eorl Yosh jasorati",
+      "content": "Rohirrimlarning ajdodlari Anduin daryosining shimoliy havzalarida, Tumanli Togʻlar etaklarida yashovchi Éothéod («Ot Odamlari») deb ataluvchi shimoliy insonlar edi. Uchinchi Davr 2510-yilda Gondor sharqdan bostirib kelgan Balchoth toʻdalari tomonidan halokat yoqasiga kelib qolganda, Gondor noibi Cirion shimolga yordam soʻrab choparlar yubordi. Éothéodning yosh yetakchisi Eorl chaqiruvga darhol javob berib, oʻzining yetti ming kishilik otliq qoʻshini bilan mislsiz tezlikda janubga shoshildi. Celebrant Maydoni jangida Eorl otliqlari dushmanning orqasidan zarba berib, Gondorni muqarrar qirgʻindan qutqarib qoldilar."
+    },
+    {
+      "title": "Eorl Qasami va Calenardhonning inʼom etilishi",
+      "content": "Gʻalabadan soʻng noib Cirion va Eorl Yosh Halifirien tepaligida, Elendilning qadimiy maxfiy qabri ustida abadiy doʻstlik va oʻzaro yordam qasamini ichdilar (Eorl Qasami). Gondor Eorl xalqiga kimsasiz qolgan keng Calenardhon dashtlarini sovgʻa qildi; bu zamin keyinchalik Rohan («Riddermark» — Otliqlar oʻlkasi) nomini oldi. Eorl poytaxt sifatida Edoras shahriga asos soldi va uning oʻgʻli Brego u yerda mashhur Meduseld Oltin Saroyini qurdi."
+    },
+    {
+      "title": "Rohan madaniyati, Mearas tulporlari va hayot tarzi",
+      "content": "Rohirrimlar qadimgi anglo-sakson jangchilariga oʻxshash jasur, sofdil, musiqani va dostonlarni sevadigan xalqdir. Ularning butun hayoti otlar bilan chambarchas bogʻlangan. Rohan otlari Oʻrta-yerdagi eng zotdor va chidamli tulporlar hisoblanadi; ularning shohona zoti — Mearaslar (Fëanor otlari yoki Oromë tulpori Nahar naslidan kelgan deb ishoniladi) insoniy aql-idrokka ega boʻlib, ularni faqat Rohan shohlari va Gandalf (Shadowfax / Soya-yol) jilovlay olgan. Rohirrimlar devorlar bilan oʻralgan shaharlarda emas, balki keng yashil dashtlarda, erkin qishloqlarda yashashni afzal koʻradilar."
+    },
+    {
+      "title": "Helm Hammerhand fojiasi va Pelennor dalalaridagi shon-sharaf",
+      "content": "Uchinchi Davr 2758-yilda Dunlandliklar bostirib kirib, qattiq qahraton qishda Rohanni egallaganlarida, toʻqqizinchi shoh Helm Hammerhand (Bolgʻaqoʻl) oʻz xalqini Hornburg qalʼasiga (keyinchalik Helm darasi) boshlab bordi. Helm sovuq tunda yakka oʻzi qurolsiz chiqib, dushmanlarni mushti bilan yer tishlatgan va muzlab qotib turgan holda ham dushmanga dahshat solgan afsonaviy bahodirdir. Halqa Urushida esa qirol Théoden Gandalf yordamida Saruman taʼsiridan qutulib, Helm jangida gʻalaba qozondi va olti ming otliq bilan Pelennor dalalariga yetib bordi. Ushbu jangda Théoden qahramonlarcha halok boʻldi, uning jiyani Éowyn esa Nazgûllar yoʻlboshchisini yer tishlatdi; yangi shoh Éomer esa Gondor bilan qadimiy qasamni yangilab, Toʻrtinchi Davrda ham tinchlik posboni boʻlib qoldi."
+    },
+    {
+      "title": "Shohlik zali Meduseld va qahramonlik qoʻshiqlari",
+      "content": "Rohirrim poytaxti Edorasdagi Meduseld (Oltin Saroy) ularning madaniy va harbiy qudratining markazi edi. Saroy devorlarida Eorl Yoshning afsonaviy gʻalabalari, Felaróf tulporining yugurishi va qadimgi janglar ifodalangan ipak gilamlar osilgan. Har bir jangchi uchun jang maydonida sharaf bilan halok boʻlish va nomi qoʻshiqlarda kuylanishi eng oliy saodat sanalgan. Rohan ayollari ham qurol tutishni va ot minishni yoshlikdan oʻrganganlar; Éowynning jang maydonidagi tengsiz jasorati aynan mana shu erkin ayol ruhiyatining yorqin namoyonidir."
+    }
+  ]
+}

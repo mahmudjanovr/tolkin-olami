@@ -1,0 +1,110 @@
+---
+import { getCollection, render, type CollectionEntry } from 'astro:content';
+import EditorialLayout from '@/layouts/EditorialLayout.astro';
+import CitationBlock from '@/components/editorial/CitationBlock.astro';
+import RelatedEntities from '@/components/editorial/RelatedEntities.astro';
+import { resolveEntityLinks } from '@/utils/entity-resolver';
+
+export async function getStaticPaths() {
+  const articles = await getCollection('articles');
+  // Tolkien biografiyasi va ilmiy merosiga oid maqolalarni ajratib olish
+  const tolkienArticles = articles.filter(
+    (a) =>
+      a.data.category === 'tolkienshunoslik' ||
+      a.data.slug.includes('tolkien') ||
+      a.data.id.includes('tolkien')
+  );
+
+  return tolkienArticles.map((article) => {
+    // Agar slug "jrr-tolkien-tarjimai-hol" bo'lsa, /tolkien/tarjimai-hol/ yoki to'liq slug
+    const cleanSlug = article.data.slug.replace(/^jrr-tolkien-/, '');
+    return {
+      params: { slug: cleanSlug },
+      props: { article },
+    };
+  });
+}
+
+interface Props {
+  article: CollectionEntry<'articles'>;
+}
+
+const { article } = Astro.props;
+const { Content } = await render(article);
+const data = article.data;
+
+const breadcrumbs = [
+  { label: 'J.R.R. Tolkien', href: '/tolkien/' },
+  { label: data.title },
+];
+
+const relatedItems = resolveEntityLinks(data.related_entities);
+---
+
+<EditorialLayout
+  title={data.title}
+  category="Tolkien Biografiyasi va Ilmiy Merosi"
+  description={data.abstract}
+  breadcrumbs={breadcrumbs}
+>
+  <div class="article-markdown-body">
+    <Content />
+  </div>
+
+  <div slot="margin" class="article-margin">
+    <div class="margin-card metadata-card">
+      <h3 class="margin-title">Tadqiqot Tafsilotlari</h3>
+      <div class="meta-row">
+        <span class="meta-label">Muallif:</span>
+        <span class="meta-val">{data.author}</span>
+      </div>
+      <div class="meta-row">
+        <span class="meta-label">Nashr sanasi:</span>
+        <span class="meta-val">{data.published_date}</span>
+      </div>
+      <div class="meta-row">
+        <span class="meta-label">Yoʻnalish:</span>
+        <span class="meta-val">Tolkienshunoslik</span>
+      </div>
+    </div>
+
+    {data.sources.length > 0 && (
+      <div class="margin-card citations-card">
+        <CitationBlock sources={data.sources} />
+      </div>
+    )}
+
+    {relatedItems.length > 0 && (
+      <div class="margin-card related-card">
+        <RelatedEntities items={relatedItems} />
+      </div>
+    )}
+  </div>
+</EditorialLayout>
+
+<style>
+  .article-markdown-body {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: var(--color-text-primary);
+  }
+
+  .meta-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-family: var(--font-sans-ui);
+    font-size: 0.8125rem;
+    padding-block: 0.35rem;
+    border-bottom: 1px solid var(--color-border-subtle);
+  }
+
+  .meta-label {
+    color: var(--color-text-muted);
+  }
+
+  .meta-val {
+    color: var(--color-text-primary);
+    font-weight: 500;
+  }
+</style>

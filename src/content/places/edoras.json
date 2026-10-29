@@ -1,0 +1,61 @@
+{
+  "id": "edoras",
+  "name": "Edoras",
+  "elvish_name": "Edoras",
+  "type": "shahar",
+  "region": "orta-yer",
+  "coordinates": {
+    "map_id": "orta-yer",
+    "x": 1020,
+    "y": 728
+  },
+  "founded_era": "Uchinchi davr 2569",
+  "rulers": [
+    "Eorl",
+    "Brego",
+    "Helm Hammerhand",
+    "Théoden",
+    "Éomer"
+  ],
+  "notable_events": [
+    "Ikkinchi shoh Brego tomonidan Oltin Qasr — Meduseldning barpo etilishi (Uchinchi davr 2569-yil)",
+    "Gandalf Oqning kelishi va Théoden shohning Gríma Wormtongue afsunidan qutqarilishi (3019-yil 2-mart)",
+    "Rohan otliqlarining Pelennor dalalari jangi uchun Edorasdan safarbar etilishi"
+  ],
+  "textual_status": "author_published",
+  "summary": "Edoras — Rohan (Calenardhon) qirolligining poytaxti boʻlib, Oq togʻlar (Ered Nimrais) etagidagi yashil tepalik ustida barpo etilgan mustahkam shahar. Tepalik choʻqqisida tomiga oltin qoplangan afsonaviy Meduseld saroyi qad rostlagan boʻlib, u Eorl xonadoni va Rohan shohlarining bosh qarorgohi hisoblanadi.",
+  "sources": [
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "The King of the Golden Hall",
+      "notes": "Edoras tepaligi, darvoza qoʻriqchilari va Meduseld oltin zalida Théoden bilan uchrashuv."
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "Appendix A: Annals of the Kings and Rulers",
+      "notes": "Brego tomonidan Meduseldning qurilishi va Rohan shohlari sulolasi xronologiyasi."
+    }
+  ],
+  "description_sections": [
+    {
+      "title": "Meduseld Oltin Saroyi va yashil tepalik",
+      "content": "Edoras (Qadimgi inglizcha: 'Qoʻrgʻonlar, Hissarlar') — Oq Togʻlar etagidagi Harrowdale vodiysi ogʻzida, yashil tepalik ustida barpo etilgan Rohan qirolligining poytaxtidir. Shahar pishiq yogʻoch va tosh devorlar hamda chuqur xandaq bilan himoyalangan.\n\nTepalik choʻqqisida Rohan shohlarining bosh qarorgohi — Meduseld (Oltin Saroy) qad rostlagan. Uning tomi uzoq-uzoqlardan oltindek yaraqlab turadi, ichki zallari esa afsonaviy otlar, qahramonlar va janglar aks etgan yogʻoch oʻymakorligi bilan bezatilgan."
+    },
+    {
+      "title": "Tarixiy asos solinishi va podshohlar tepaliklari",
+      "content": "Shahar Uchinchi davrning 2569-yilida Eorlning oʻgʻli Brego tomonidan barpo etilgan. Dastlabki poytaxt Framsburg boʻlgan boʻlsa-da, janubga koʻchgan Rohirrim oʻzlariga Edorasni yangi markaz qilib tanladilar.\n\nShahar darvozasi oldidagi maydonda ikki qator qadimiy maqbara-tepaliklar (barrow-mounds) joylashgan boʻlib, ularda Eorl xonadonining toʻqqiz nafar birinchi sulola va sakkiz nafar ikkinchi sulola podshohlari dafn etilgan. Bu tepaliklar ustida oq rangli, soʻnmas xotira guli — Simbelmynë (Evermind) qor kabi qoplab oʻsadi."
+    },
+    {
+      "title": "Halqa Urushi va Théodenning uygʻonishi",
+      "content": "3019-yil 2-martida Gandalf, Aragorn, Legolas va Gimli Meduseld saroyiga kirib keldilar. Gandalf saroy zalida shoh Théodenni Sarumanning josusi Gríma Wormtongue taʼsiridan va sehrli mudroqlikdan xalos etdi. Shoh oʻz qilichi Herugrimni yalangʻochlab, Edorasdan Helm's Deep tomon yurish boshladi."
+    },
+    {
+      "title": "Meduseld Oltin Saroyi va Rohirrim ajdodlari xotirasi",
+      "content": "Edoras Oq Tog'lar etagidagi yashil adir ustida joylashgan Rohan qirolligining poytaxtidir. Shahar tepasida Brego tomonidan qurilgan Meduseld (Oltin Saroy) qad rostlagan bo'lib, uning tomi uzoqdan quyoshda oltindek yarqirab turgan. Saroyga olib boruvchi yo'l etagida oq 'Simbelmynë' (Evermind) gullari bilan qoplangan qadimiy shohlar maqbaralari joylashgan. Edoras nafaqat harbiy istehkom, balki Rohirrim xalqining qahramonlik qo'shiqlari, bayramlari va erkin chavandozlik ruhiyatining markazi bo'lgan."
+    },
+    {
+      "title": "Chavandozlar poytaxtining harbiy va madaniy ahamiyati",
+      "content": "Edoras nafaqat Rohan hukmdorlarining qarorgohi, balki butun mamlakat otliq askarlarini umumiy yig'inga (Muster of Rohan) chorlaydigan harbiy qal'a edi. Shahar atrofidagi xandaqlar va tosh devorlar uni tekislikdagi har qanday to'satdan hujumdan ishonchli himoya qilgan. Oltin Saroy zallarida yuzlab jangchilar uchun ziyohatlar uyushtirilgan, shohona qurol-aslahalar va ajdodlar eposi kuylangan. Edoras erkin insonlarning mag'rur ruhiyati va dasht madaniyatining tirik ramzi bo'lib qoldi."
+    }
+  ]
+}

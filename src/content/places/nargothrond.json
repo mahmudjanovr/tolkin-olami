@@ -1,0 +1,50 @@
+{
+  "id": "nargothrond",
+  "name": "Nargothrond",
+  "elvish_name": "Nargothrond",
+  "type": "qalʼa",
+  "region": "beleriand",
+  "coordinates": {
+    "map_id": "beleriand",
+    "x": 680,
+    "y": 580
+  },
+  "founded_era": "Birinchi davr 102",
+  "destroyed_era": "Birinchi davr 495",
+  "rulers": [
+    "Finrod Felagund",
+    "Orodreth"
+  ],
+  "notable_events": [
+    "Tumhalad jangi",
+    "Glaurung istilosi"
+  ],
+  "textual_status": "author_published",
+  "summary": "Nargothrond — Narog daryosi boʻyidagi chuqur gʻorlarda Finrod Felagund tomonidan Ulmo maslahati bilan barpo etilgan yashirin yerosti qalʼasi va Noldor qirolligi.",
+  "sources": [
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of the Noldor in Beleriand",
+      "page": "114",
+      "notes": "Finrod Felagundning Narog gʻorlarida shahar barpo etishi."
+    }
+  ],
+  "description_sections": [
+    {
+      "title": "Narog daryosi gʻorlaridagi buyuk saltanat",
+      "content": "Nargothrond — Gʻarbiy Beleriandda Narog daryosining chuqur kanyonidagi ulkan tabiiy gʻorlarda Finrod Felagund tomonidan barpo etilgan yashirin yerosti qalʼa-shahri. Dastlab bu gʻorlar Kichik Mittilar (Noegyth Nibin) maskani boʻlgan.\n\nFinrod Belegost mittilari yordamida gʻorlarni kengaytirib, yashirin saroylar, xazinaxonalar va zargarlik ustaxonalariga aylantirdi. Shu xizmati uchun mittilar Finrodga 'Felagund' ('Gʻorlar Hukmdori') nomini berishgan."
+    },
+    {
+      "title": "Túrin Turambar va Glaurungning bostirib kirishi",
+      "content": "Finrod Beren bilan safarda halok boʻlgach, shohlik uning ukasi Orodrethga oʻtdi. Keyinchalik Húrinning oʻgʻli Túrin bu yerga kelib, bosh sarkardaga aylandi. Túrin elflarning maxfiylik siyosatiga qarshi chiqib, Narog daryosi ustiga ulkan tosh koʻprik qurdirdi.\n\nUshbu koʻprik Nargothrondning halokatiga sabab boʻldi: Birinchi Davrning 495-yilida oltin ajdar Glaurung qoʻshinlari koʻprikdan osonlikcha oʻtib, shaharni vayron qildi va xalqini asirga oldi. Glaurung shahar xazinalari ustida yotib hukmronlik qildi."
+    },
+    {
+      "title": "Felagund shon-shavkati, Narog qoyalari va Glaurung kulfati",
+      "content": "Nargothrond Narog daryosi qirg'og'idagi baland qoyalarda Finrod Felagund tomonidan mitti ustalari yordamida qurilgan yerosti qal'a-shahri edi. Finrod shu tufayli 'Felagund' (G'or Yo'nuvchi) nomini oldi. Shahar ko'p asrlar davomida o'zini yashirib, partizanlik urushi olib bordi. Biroq Túrin Turambar Nargothrondga kelgach, u shahar darvozasi oldida ulkan tosh ko'prik qurdirdi va ochiq jangga chiqishni talab qildi. Bu xato qal'aning joylashuvini dushmanga fosh qildi; ajdaho Glaurung ko'prikdan o'tib, Nargothrondni vayron qildi va uning oltinlarini o'z uyasiga aylantirdi."
+    },
+    {
+      "title": "Amrûn qoyalari, gnomlar merosi va Mormegil fojiasi",
+      "content": "Finrod Nargothrondni qurishdan avval bu g'orlar 'Kichik Gnomlar' (Petty-dwarves) tomonidan 'Nulukkizdîn' deb atalgan va ularning boshpanasi bo'lgan. Finrod ularni kengaytirib, yashirin darvozalar va qurolxonalarga ega yirik yerosti poytaxtini barpo etdi. Shahar aholisi tashqi ko'rinishda o'zlarini ko'rsatmasdan, pistirmalar orqali dushmanga zarba berar edilar. Túrin o'zining qora qilichi Gurthang bilan 'Mormegil' (Qora Qilich) laqabini olib, nargothrondliklarni ochiq jangga undaganida, shahar o'zining eng katta xavfsizlik afzalligi bo'lgan 'sir saqlanish' qobiliyatini yo'qotdi. Nargothrond qalʼasi oʻzining goʻzalligi va mustahkamligi bilan afsonalarga aylangan edi. Finrod Felagundning bu yerdagi qahramonona merosi va elflarning matonati Beleriand xalqlari xotirasida oʻchmas iz qoldirdi va kelgusi avlodlarga jasorat namunasi boʻldi. Nargothrond zallarida saqlangan bebaho xazinalar va qurollar keyinchalik ajdaho Glaurung oʻlimidan soʻng Húrin tomonidan topildi. Ushbu yerosti shohligi Beleriandning eng mahobatli va fojiali qalʼalaridan biri sifatida Tolkien asarlarida muhim oʻrin tutadi. Felagundning bu yuksak merosi afsonalarda mangu yashaydi."
+    }
+  ]
+}

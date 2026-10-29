@@ -1,0 +1,43 @@
+{
+  "id": "rohirric",
+  "name": "Rohirric (Rohan Tili)",
+  "family": "Shimol Insonlari Tili (Talas)",
+  "writing_systems": [
+    "cirth"
+  ],
+  "inventor": "Eorlingas (Rohan Chavandozlari)",
+  "phonology_overview": "Rohirric (Rohan tili) O'rta-yerning shimolidagi Éothéod qabilalarining tili bo'lib, Shimoliy Insonlar (Northmen) til oilasiga mansubdir. Fonetik jihatdan u qadimgi german, xususan qadimgi ingliz (Old English / Anglo-Saxon) tilining Mersiya (Mercian) dialektiga asoslangan. Tilning fonetikasi kuchli alliteratsiya (undoshlar ohangdoshligi), ochiq va keng unlilar, diftonglar (ea, eo, ie) hamda jarangli undosh klasterlari bilan ajralib turadi. Talaffuz ochiq dashtlar, shamollar va otliq jangchilarning hayot tarziga mos ravishda jarangdor, qat'iyatli va jo'shqindir.",
+  "sample_text_original": "Éored, Théoden, Éowyn, Meduseld, Éothéod, Simbelmynë",
+  "sample_text_uz": "Rohirric — Oʻrta-yer shimoliy insonlarining tili boʻlib, Westronga qardosh qadimiy lahjadir. Otlar va qahramonlik qoʻshiqlari bilan toʻyingan uslubga ega.",
+  "textual_status": "author_published",
+  "sources": [
+    {
+      "book_slug": "lotr-return",
+      "chapter": "Appendix F: The Languages and Peoples of the Third Age",
+      "page": "1134",
+      "notes": "Rohirric tilining filologik modeli va qadimgi ingliz tili bilan qiyosi."
+    }
+  ],
+  "grammar_and_vocabulary_sections": [
+    {
+      "title": "Rohan chavandozlari tili va Anglo-Sakson lingvistik ildizlari",
+      "content": "J.R.R. Tolkien Oksford universitetida anglo-sakson tili va adabiyoti professori bo'lgani sababli, Rohirrim xalqini tasvirlashda o'zi eng yaxshi ko'rgan qadimgi ingliz tilining Mersiya lahjasidan foydalangan. Tolkien kontseptsiyasiga ko'ra, Rohirric tili Westron tili bilan qardosh bo'lib, xuddi qadimgi ingliz tili zamonaviy ingliz tilining ajdodi bo'lganidek munosabatda bo'lgan. Shu sababli Tolkien asarda Westronni zamonaviy ingliz tili sifatida bergan bo'lsa, Rohirrim tilini qadimgi inglizcha so'zlar va she'riy shakllar orqali ifodalagan. Bu kitobxonlarga ushbu xalqning arxaik, oliyjanob va qahramonona tabiatini chuqur his qilish imkonini bergan."
+    },
+    {
+      "title": "Otchilik terminologiyasi va madaniy leksika",
+      "content": "Rohirrim hayotining markazida ot (horse) turgani sababli, ularning tili dunyodagi eng boy otchilik leksikasiga ega bo'lgan. Qadimgi inglizcha 'eoh' (jangovar ot) o'zagi Rohanning eng buyuk shaxslari va tushunchalari nomida uchraydi: Éomer ('otlar bilan mashhur'), Éowyn ('otlarni sevuvchi'), Éothéod ('otliq el / otliq xalq'), Éored ('otliq qo'shin bo'linmasi, 120 chavandoz'). Shoh saroyi 'Meduseld' ('Asalli mayxona / Oltin Saroy'), podshoh unvoni 'Théoden' (qadimgi inglizcha 'þēoden' - xalq yetakchisi, podshoh) so'zlaridan olingan. Bu atamalar Rohirrimning dasht madaniyati va eposini to'liq namoyon etadi."
+    },
+    {
+      "title": "Westron bilan munosabatlari va lingvistik farqlar",
+      "content": "Rohirrim xalqi Uchinchi Davrda Gondor bilan ittifoq tuzgach, rasmiy muzokaralarda Westron tilidan ham keng foydalangan. Biroq o'zaro suhbatlarda, saroyda va jang maydonida ular faqat o'z ona tillarida so'zlashganlar. Gondorliklar Rohirric tilini 'qadimiy, qo'pol, lekin g'ururli va musiqiy' deb baholaganlar. Qizig'i shundaki, xobbitlarning Shire tilida saqlanib qolgan ba'zi qadimiy so'zlar (masalan, 'kûd-dûkan' - g'or qazuvchi, ya'ni hobbit) aynan Rohirric tili bilan umumiy ildizga ega, chunki xobbitlarning ajdodlari ham bir paytlar Anduin vodiysida Éothéod qabilalari bilan yonma-yon yashaganlar."
+    },
+    {
+      "title": "Epik she'riyat va Eorl Qasami",
+      "content": "Rohirric tilining eng yuksak namunasi ularning epik she'riyati va qasamyodlaridir. Ular qofiyaga emas, balki qadimgi german alliteratsion vazniga (bosh tovushlarning ohangdoshligiga) tayanganlar. Podshoh Théoden jang maydonida o'z jangchilarini ruhlantirganida aytgan xitoblari ('Arise, arise, Riders of Théoden! Fell deeds awake: fire and slaughter!') aynan shu an'ananing yorqin aksidir. Shuningdek, Eorl Yosh va Gondor noibi Cirion o'rtasida tuzilgan abadiy ittifoq qasami (Oath of Eorl) Rohirric tilida muhrlangan bo'lib, ikki xalq o'rtasidagi birodarlikning asosi sanalgan."
+    },
+    {
+      "title": "Mersiya dialekti va qadimgi ingliz tili bilan filologik parallellar",
+      "content": "Tolkien Rohirrim tilini yaratishda aynan Gʻarbiy Mersiya (West Mercian) dialektini tanlagani bejiz emas. Mersiya qadimgi Angliyaning eng qudratli otliq jangchilari yashagan hududi boʻlib, Tolkien oʻzi bolalik yillarini oʻtkazgan Birmingem va Vorikshir viloyatlarining qadimiy tili edi. Rohirric tilidagi joy nomlari – \"Stow\" (muqaddas maskan), \"Burg\" (mustahkam qalʼa), \"Fold\" (yaylov) – bevosita qadimgi ingliz toponimikasidan olingan. Ushbu lingvistik uygʻunlik kitobxonga Rohirrim xalqini shunchaki fantastik el emas, balki qadimgi Yevropaning qahramonlik davri jangchilarining tirik ruhiyati sifatida his etish imkonini beradi."
+    }
+  ]
+}

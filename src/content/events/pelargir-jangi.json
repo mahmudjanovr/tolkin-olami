@@ -1,0 +1,57 @@
+{
+  "id": "pelargir-jangi",
+  "title": "Pelargir Jangi",
+  "subtitle": "Umbar qaroqchilari flotining egallanishi",
+  "era": "uchinchi_davr",
+  "year_text": "Uchinchi davr 3019 (13-mart)",
+  "location_id": "pelargir",
+  "characters": [
+    "aragorn",
+    "legolas",
+    "gimli"
+  ],
+  "belligerents": {
+    "side_a": [
+      "Aragorn II va Kulrang Boʻlinma (Dúnedain)",
+      "Oʻliklar Qoʻshini (Togʻlarning qasamyod buzuvchilari)",
+      "Legolas va Gimli"
+    ],
+    "side_b": [
+      "Umbar qaroqchilari floti (Corsairs of Umbar)",
+      "Haradrim jangchilari"
+    ]
+  },
+  "outcome": "Aragorn va O'liklar Armiyasi Umbar qaroqchilarining buyuk flotini butunlay tor-mor qildi; Pelargir ozod etildi va Gondor janubiy qo'shinlari ozod bo'lib, Pelennor dalalariga yetib bordi.",
+  "preceding_event": "hornburg-jangi",
+  "succeeding_event": "pelennor-dalalari-jangi",
+  "textual_status": "author_published",
+  "sources": [
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "The Passing of the Grey Company",
+      "page": "788"
+    }
+  ],
+  "description_sections": [
+    {
+      "title": "Janubiy frontdagi qaltis vaziyat va Umbar xavfi",
+      "content": "Uzuk Urushining eng qizg'in pallasida Gondor poytaxti Minas Tirith Mordorning bahaybat lashkari tomonidan qamal qilingan edi. Biroq Gondorning janubiy viloyatlari – Lebennin, Lossarnach va Lamedon o'z poytaxtiga yordamga asosiy qo'shinlarini yubora olmas edilar, chunki Sauron bilan ittifoqchi bo'lgan Umbar Qaroqchilari (Corsairs of Umbar) ulkan harbiy kema floti bilan Anduin bo'ylab suzib kelib, Pelargir portini egallagan va janubiy qirg'oqlarni yondirayotgan edi."
+    },
+    {
+      "title": "O'liklar Yo'li va Erech Qoyasidagi qasamyod",
+      "content": "Isildur vorisi Aragorn bu halokatli vaziyatni bartaraf etish uchun eng xatarli yo'lni tanladi. U Legolas, Gimli va Shimoliy Qo'riqchilar (Grey Company) bilan birga O'liklar Yo'lidan (Paths of the Dead) o'tib, Qasamyod Buzuvchilar – Tog'liklar Arvohlari armiyasini chaqirdi. Isildurning qadimiy qasamini eslatib, Aragorn ularni Umbar qaroqchilariga qarshi so'nggi jangga boshladi. O'liklar Armiyasi Aragorn ortidan shamoldek yelib, bir necha kun ichida Pelargir portiga yetib bordi."
+    },
+    {
+      "title": "Pelargir portidagi arvohlar dahshati va qora kemalarning egallanishi",
+      "content": "Pelargirga yetib kelgan Arvohlar Armiyasi qaroqchilar va haradliklar qalbiga tasvirlab bo'lmas dahshat soldi. Ularga qarshi qurol ko'tarib bo'lmasdi; arvohlarning qorong'i soyalari kemalarga yopirildi. Ko'plab dushmanlar vahima ichida o'zlarini Anduin suviga tashlab cho'kib ketdilar, qolganlari esa qurollarini tashlab qochdilar. Qisqa vaqt ichida Umbarning barcha ellikta asosiy jangovar kemasi va ko'plab kichik qayiqlari Aragorn qo'liga o'tdi. Aragorn o'z va'dasini bajarib, Arvohlar shohiga qasamyodlari ado etilganini e'lon qildi va ularning ruhlarini abadiy tinchlikka ozod qildi."
+    },
+    {
+      "title": "Pelennor jangidagi najot va burilish",
+      "content": "Pelargir g'alabasidan so'ng Aragorn ozod etilgan qora kemalarga Gondorning janubiy viloyatlaridan to'plangan to'rt mingdan ortiq sara jangchilarni mindirdi. Anduin bo'ylab shimolga qarab esgan qutlug' janubiy shamol ostida flot Minas Tirith tomon suzdi. Harnaqadar dushman va hatto qamal qilingan himoyachilar bu kemalarni qaroqchilar deb o'ylab turganda, Aragorn shohona Elendil bayrog'ini yozdi. Pelargir jangi Minas Tirith qutqarilishining va butun O'rta-yer taqdirining hal qiluvchi kaliti bo'ldi."
+    },
+    {
+      "title": "Qora flotning ramziy o'zgarishi va shohona bayroq",
+      "content": "Aragorn Pelargirda Umbar kemalarini egallaganida, u nafaqat kemalarni, balki qaroqchilar zanjirband qilgan minglab qullarni ham ozod qildi. Ozod etilgan insonlar quvonchdan yig'lab, Isildur vorisiga sodiqlik bildirdilar va eshkaklarni o'z ixtiyorlari bilan esha boshladilar. Shunday qilib, Gondorni yo'q qilish uchun yuborilgan qora o'lim floti bir necha soat ichida Gondorning eng buyuk najotkor flotiga aylandi. Bu Tolkien asarlaridagi kutilmagan ilohiy najot (eucatastrophe) kontseptsiyasining yorqin namunasidir."
+    }
+  ]
+}

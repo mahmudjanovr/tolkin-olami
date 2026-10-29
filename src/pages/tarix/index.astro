@@ -1,0 +1,1214 @@
+---
+import { getCollection } from 'astro:content';
+import EditorialLayout from '@/layouts/EditorialLayout.astro';
+import ProvenanceBadge from '@/components/editorial/ProvenanceBadge.astro';
+import { resolveEntityLink, resolveEntityLinks } from '@/utils/entity-resolver';
+
+const breadcrumbs = [
+  { label: 'Tarix va Xronologiya' },
+];
+
+const allEvents = await getCollection('events');
+
+const eraLabels: Record<string, string> = {
+  ainur_musiqasi: 'Ainur Musiqasi',
+  daraxtlar_davri: 'Daraxtlar Davri',
+  birinchi_davr: 'Birinchi Davr',
+  ikkinchi_davr: 'Ikkinchi Davr',
+  uchinchi_davr: 'Uchinchi Davr',
+  tortinchi_davr: 'Toʻrtinchi Davr',
+};
+
+const eraOrder: Record<string, number> = {
+  ainur_musiqasi: 1,
+  daraxtlar_davri: 2,
+  birinchi_davr: 3,
+  ikkinchi_davr: 4,
+  uchinchi_davr: 5,
+  tortinchi_davr: 6,
+};
+
+const intraEraOrder: Record<string, number> = {
+  'birinchi-qarindosh-qirgini': 1495,
+  'dagor-bragollach': 455,
+  'silmaril-safari': 466,
+  'nirnaeth-arnoediad': 472,
+  'gondolinning-qulashi': 510,
+  'gazab-urushi': 587,
+  'qudrat-uzuklarining-yasalishi': 1600,
+  'numenorning-halokati': 3319,
+  'songgi-ittifoq-urushi': 3441,
+  'khazad-dumning-qulashi': 1980,
+  'besh-armiya-jangi': 2941,
+  'isengardning-vayron-qilinishi': 3019.0302,
+  'hornburg-jangi': 3019.0303,
+  'pelargir-jangi': 3019.0313,
+  'pelennor-dalalari-jangi': 3019.0315,
+  'yagona-uzukning-yoq-qilinishi': 3019.0325,
+  'halqa-urushi': 3019.9999,
+};
+
+// Kanonik xronologik tartibda saralash
+const sortedEvents = [...allEvents].sort((a, b) => {
+  const eraA = eraOrder[a.data.era] || 99;
+  const eraB = eraOrder[b.data.era] || 99;
+  if (eraA !== eraB) return eraA - eraB;
+  const idA = a.data.id || a.id;
+  const idB = b.data.id || b.id;
+  const orderA = intraEraOrder[idA] || 0;
+  const orderB = intraEraOrder[idB] || 0;
+  return orderA - orderB;
+});
+
+// Barcha lokatsiyalarni yig'ish va nomlarini yechish
+const allLocationIds = [
+  ...new Set(sortedEvents.map((e) => e.data.location_id).filter((id): id is string => Boolean(id))),
+];
+const locationOptions = allLocationIds
+  .map((id) => {
+    const resolved = resolveEntityLink(id, 'places');
+    return { id, name: resolved.name };
+  })
+  .sort((a, b) => a.name.localeCompare(b.name, 'uz'));
+
+// Barcha qahramonlarni yig'ish va nomlarini yechish
+const allCharacterIds = [
+  ...new Set(sortedEvents.flatMap((e) => e.data.characters || [])),
+];
+const characterOptions = allCharacterIds
+  .map((id) => {
+    const resolved = resolveEntityLink(id, 'characters');
+    return { id, name: resolved.name };
+  })
+  .sort((a, b) => a.name.localeCompare(b.name, 'uz'));
+
+// Davrlar ro'yxati (mavjud voqealar bo'yicha)
+const availableEras = [
+  ...new Set(sortedEvents.map((e) => e.data.era)),
+].sort((a, b) => (eraOrder[a] || 99) - (eraOrder[b] || 99));
+
+const totalEventsCount = sortedEvents.length;
+---
+
+<EditorialLayout
+  title="Arda Tarixi va Xronologiyasi"
+  category="Xronologiya va Voqealar"
+  description="Ainur musiqasidan boshlab Toʻrtinchi davrgacha boʻlgan buyuk burilish nuqtalari, janglar va davrlar solnomasi."
+  breadcrumbs={breadcrumbs}
+>
+  <div class="history-content">
+    <p class="section-lead">
+      Arda tarixi minglab yillik davrlarni oʻz ichiga olgan boʻlib, buyuk yaratilishlar, fojialar va tiklanishlar
+      zanjiridan iboratdir. Ushbu boʻlim xronologik tartibda voqealar rivojini tahlil qiladi hamda qahramonlar,
+      makonlar va birlamchi manbalar bilan oʻzaro bogʻlaydi.
+    </p>
+
+    <!-- Buyuk Davrlar Tavsifi -->
+    <div class="eras-timeline">
+      <article class="era-card">
+        <span class="era-tag">Ilk Davr</span>
+        <h3>Ainur Musiqasi va Ardaning Yaralishi</h3>
+        <p>Ilúvatar huzuridagi Ainulindalë — buyuk kuy va uning moddiy olamga aylanishi (Eä).</p>
+      </article>
+
+      <article class="era-card">
+        <span class="era-tag">Daraxtlar Davri</span>
+        <h3>Valinor Nurlari va Elflarning Uygʻonishi</h3>
+        <p>Telperion va Laurelin daraxtlari, Cuiviénen koʻli boʻyida Elflarning uygʻonishi va Buyuk Yurish.</p>
+      </article>
+
+      <article class="era-card">
+        <span class="era-tag">Birinchi Davr</span>
+        <h3>Silmarillar Urushlari va Beleriandning Qulashi</h3>
+        <p>Morgothga qarshi qasamyod, Noldor quvgʻini, beshta buyuk jang va Gʻazab Urushi (War of Wrath).</p>
+      </article>
+
+      <article class="era-card">
+        <span class="era-tag">Ikkinchi Davr</span>
+        <h3>Númenorning Yuksalishi va Qulashi</h3>
+        <p>Kuch Uzuklarining yasalishi, Sauronning makrlari, Akallabêth (Númenor tubanligi) va Soʻnggi Ittifoq.</p>
+      </article>
+
+      <article class="era-card">
+        <span class="era-tag">Uchinchi Davr</span>
+        <h3>Uzuk Urushi va Insonlar Hukmronligi</h3>
+        <p>Arnor va Gondor saltanatlari, Uzuk Qardoshligi, Yagona Uzukning yoʻq qilinishi va Elflarning ketishi.</p>
+      </article>
+    </div>
+
+    <!-- Interaktiv Xronologiya Filtr Paneli -->
+    <section class="timeline-controls" role="search" aria-label="Xronologiya filtrlari va qidiruv">
+      <div class="controls-header">
+        <div class="era-chips-wrapper" role="tablist" aria-label="Tarixiy davrlar filtri">
+          <button type="button" class="era-chip active" data-era="all" role="tab" aria-selected="true">
+            Barcha Davrlar <span class="chip-count">({totalEventsCount})</span>
+          </button>
+          {availableEras.map((era) => {
+            const count = sortedEvents.filter((e) => e.data.era === era).length;
+            return (
+              <button type="button" class="era-chip" data-era={era} role="tab" aria-selected="false">
+                {eraLabels[era] || era} <span class="chip-count">({count})</span>
+              </button>
+            );
+          })}
+        </div>
+      </div>
+
+      <div class="filter-grid">
+        <div class="filter-field search-field">
+          <label for="timeline-search-input" class="filter-label">Matn boʻyicha qidiruv</label>
+          <div class="search-box">
+            <svg class="search-icon" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input
+              type="search"
+              id="timeline-search-input"
+              class="filter-input search-input"
+              placeholder="Voqea nomi, tafsiloti yoki yili..."
+              autocomplete="off"
+            />
+          </div>
+        </div>
+
+        <div class="filter-field">
+          <label for="timeline-char-select" class="filter-label">Qahramon boʻyicha</label>
+          <select id="timeline-char-select" class="filter-select">
+            <option value="all">Barcha qahramonlar</option>
+            {characterOptions.map((char) => (
+              <option value={char.id}>{char.name}</option>
+            ))}
+          </select>
+        </div>
+
+        <div class="filter-field">
+          <label for="timeline-loc-select" class="filter-label">Tarixiy joy boʻyicha</label>
+          <select id="timeline-loc-select" class="filter-select">
+            <option value="all">Barcha joylar</option>
+            {locationOptions.map((loc) => (
+              <option value={loc.id}>{loc.name}</option>
+            ))}
+          </select>
+        </div>
+
+        <div class="filter-field reset-field">
+          <button type="button" id="clear-filters-btn" class="clear-filters-btn">
+            Filtrlarni tozalash
+          </button>
+        </div>
+      </div>
+
+      <div class="results-bar">
+        <span id="results-count" class="results-count" aria-live="polite">
+          Koʻrsatilmoqda: <strong>{totalEventsCount}</strong> ta hodisa
+        </span>
+      </div>
+    </section>
+
+    <!-- Kanonik Voqealar Katalogi -->
+    <section class="events-catalog-section" aria-label="Tarixiy voqealar roʻyxati">
+      <div id="events-grid" class="events-grid">
+        {sortedEvents.map((evt) => {
+          const loc = evt.data.location_id ? resolveEntityLink(evt.data.location_id, 'places') : null;
+          const chars = resolveEntityLinks(evt.data.characters || [], 'characters');
+          const searchData = `${evt.data.title} ${evt.data.subtitle || ''} ${evt.data.outcome} ${evt.data.year_text} ${(evt.data.characters || []).join(' ')} ${evt.data.location_id || ''}`.toLowerCase();
+
+          return (
+            <article
+              class="event-card"
+              data-event-id={evt.data.id || evt.id}
+              data-era={evt.data.era}
+              data-location={evt.data.location_id || ''}
+              data-characters={(evt.data.characters || []).join(',')}
+              data-search={searchData}
+            >
+              <div class="card-header">
+                <span class="event-era-pill">{evt.data.year_text}</span>
+                <ProvenanceBadge status={evt.data.textual_status} />
+              </div>
+
+              <h3 class="card-title">
+                <a href={`/tarix/${evt.data.id || evt.id}/`}>
+                  {evt.data.title}
+                </a>
+              </h3>
+
+              {evt.data.subtitle && (
+                <p class="card-subtitle"><em>{evt.data.subtitle}</em></p>
+              )}
+
+              <div class="card-meta-chips">
+                {loc && (
+                  <span class="meta-chip loc-chip" title="Hodisa sodir boʻlgan joy">
+                    📍 {loc.href ? <a href={loc.href}>{loc.name}</a> : loc.name}
+                  </span>
+                )}
+                {chars.length > 0 && (
+                  <div class="chars-chip-group" title="Asosiy qatnashchilar">
+                    {chars.slice(0, 3).map((c) => (
+                      <span class="meta-chip char-chip">
+                        {c.href ? <a href={c.href}>✦ {c.name}</a> : `✦ ${c.name}`}
+                      </span>
+                    ))}
+                    {chars.length > 3 && (
+                      <span class="meta-chip more-chip" title={chars.slice(3).map(c => c.name).join(', ')}>
+                        +{chars.length - 3}
+                      </span>
+                    )}
+                  </div>
+                )}
+              </div>
+
+              <p class="card-outcome">{evt.data.outcome}</p>
+
+              <div class="card-link-wrapper">
+                <a href={`/tarix/${evt.data.id || evt.id}/`} class="card-detail-link">
+                  Batafsil tahlil va ishtirokchilar →
+                </a>
+              </div>
+            </article>
+          );
+        })}
+      </div>
+
+      <!-- Bo'sh Holat (Empty State) -->
+      <div id="timeline-empty-state" class="empty-state" style="display: none;">
+        <div class="empty-icon" aria-hidden="true">📜</div>
+        <h3 class="empty-title">Tegishli tarixiy hodisa topilmadi</h3>
+        <p class="empty-desc">
+          Tanlangan davr, qahramon yoki joylashuv boʻyicha hech qanday voqea qayd etilmagan.
+          Iltimos, filtrlarni oʻzgartiring yoki tozalang.
+        </p>
+        <button type="button" id="empty-reset-btn" class="empty-reset-button">
+          Barcha filtrlarni bekor qilish
+        </button>
+      </div>
+    </section>
+
+    <!-- Davrlar Sinxronizmi va Taqqosiy Xronologiya Matritsasi -->
+    <section class="synchronism-section" aria-label="Davrlar sinxronizmi va taqvimlar taqqosiy jadvali">
+      <div class="sync-header">
+        <span class="era-tag">Qiyosiy Xronologiya va Kalendar Tizimlari</span>
+        <h2>Arda Davrlari Sinxronizmi va Taqvimlar Matritsasi</h2>
+        <p class="sync-lead">
+          Tolkien filologiyasida vaqt hisobi Valinor Daraxtlari yillaridan (<em>Valian Years</em>) Quyosh yillariga
+          (<em>Years of the Sun</em>), keyinchalik esa Númenor Qirollar Hisobi, Gondor Namoyandalari Hisobi va
+          Shayr Hisobiga (<em>Shire Reckoning</em>) oʻzgarib borgan.
+        </p>
+      </div>
+
+      <div class="sync-table-wrapper">
+        <table class="sync-table">
+          <thead>
+            <tr>
+              <th>Davr va Taqvim Tizimi</th>
+              <th>Davomiyligi</th>
+              <th>Asosiy Markazlar va Sulolalar</th>
+              <th>Yakunlovchi Tarixiy Burilish</th>
+              <th>Birlamchi Manba</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <strong>Daraxtlar Davri</strong>
+                <span class="table-sub">Valian Yillari (V.Y. 1–1500)</span>
+              </td>
+              <td>1500 V.Y.<br /><span class="table-sub">(~14 373 Quyosh yili)</span></td>
+              <td>
+                Valinor (Tirion), <a href="/xaritalar/menegroth/">Menegroth</a> •
+                <a href="/nasabnomalar/#finwe-xonadoni">Finwë Xonadoni</a>
+              </td>
+              <td>Ikki Daraxtning soʻnishi, Feanor qasamyodi va Quyoshning ilk chiqishi</td>
+              <td><a href="/kitoblar/history-of-middle-earth/">HoME X</a> (<em>Annals of Aman</em>)</td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Birinchi Davr (B.D.)</strong>
+                <span class="table-sub">Quyosh Yillari (B.D. 1–590)</span>
+              </td>
+              <td>590 Quyosh yili</td>
+              <td>
+                <a href="/xaritalar/gondolin/">Gondolin</a>, <a href="/xaritalar/nargothrond/">Nargothrond</a>, <a href="/xaritalar/menegroth/">Doriath</a> •
+                <a href="/nasabnomalar/#edain-va-yarim-elflar">Edain Uch Xonadoni</a>
+              </td>
+              <td><a href="/tarix/gazab-urushi/">Gʻazab Urushi</a>, Morgothning Boʻshliqqa uloqtirilishi va Beleriandning choʻkishi</td>
+              <td><a href="/kitoblar/silmarillion/">Silmarillion</a>, <a href="/kitoblar/history-of-middle-earth/">HoME XI</a></td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Ikkinchi Davr (I.D.)</strong>
+                <span class="table-sub">Númenor Qirollar Hisobi (I.D. 1–3441)</span>
+              </td>
+              <td>3441 Quyosh yili</td>
+              <td>
+                <a href="/xaritalar/ered-luin/">Lindon (Ered Luin)</a>, <a href="/xaritalar/rivendell/">Rivendell</a>, Armenelos •
+                <a href="/nasabnomalar/#elros-numenor-shajarasi">Elros Shajarasi</a>
+              </td>
+              <td><a href="/tarix/numenorning-halokati/">Akallabêth</a> (I.D. 3319) va <a href="/tarix/songgi-ittifoq-urushi/">Soʻnggi Ittifoq Urushi</a> (I.D. 3441)</td>
+              <td><a href="/kitoblar/the-fall-of-numenor/">The Fall of Númenor</a>, <a href="/kitoblar/the-lord-of-the-rings/">Ilova B</a></td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Uchinchi Davr (U.D.)</strong>
+                <span class="table-sub">Qirollar / Shayr Hisobi (U.D. 1–3021)</span>
+              </td>
+              <td>3021 Quyosh yili<br /><span class="table-sub">(Sh.H. 1–1421)</span></td>
+              <td>
+                <a href="/xaritalar/minas-tirith/">Minas Tirith</a>, <a href="/xaritalar/rivendell/">Rivendell</a>, <a href="/xaritalar/lothlorien/">Lothlórien</a>, <a href="/xaritalar/erebor/">Erebor</a> •
+                <a href="/nasabnomalar/#aragorn-va-arwen">Dúnedain</a> va <a href="/nasabnomalar/#durin-xonadoni">Durin Xonadoni</a>
+              </td>
+              <td><a href="/tarix/yagona-uzukning-yoq-qilinishi/">Yagona Uzukning yoʻq qilinishi</a> (U.D. 3019) va Uzuk Egasi safarining yakuni (U.D. 3021)</td>
+              <td><a href="/kitoblar/the-lord-of-the-rings/">Uzuklar Hukmdori</a> (<em>Ilova B & D</em>)</td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Toʻrtinchi Davr (T.D.)</strong>
+                <span class="table-sub">Yangi Hisob (New Reckoning, T.D. 1+)</span>
+              </td>
+              <td>Insonlar Hukmronligi</td>
+              <td>
+                Qayta Birlashgan Qirollik (Gondor va Arnor) • Telcontar Xonadoni va <a href="/nasabnomalar/#shayr-xonadonlari">Shayr Xonadonlari</a>
+              </td>
+              <td>Elflarning Gʻarbga ketishi, Qirol Elessar vafoti (T.D. 120)</td>
+              <td><a href="/kitoblar/history-of-middle-earth/">HoME XII</a>, <a href="/kitoblar/the-nature-of-middle-earth/">NoME</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Interaktiv Shayr Hisobi va Uchinchi Davr Sinxronizatori -->
+      <div class="calendar-converter-card">
+        <div class="converter-info">
+          <h3>Uchinchi Davr (U.D.) va Shayr Hisobi (Sh.H.) Sinxronizatori</h3>
+          <p>
+            Marcho va Blanco boshchiligidagi xobbitlar Uchinchi davrning <strong>1601-yilida</strong> Baranduin
+            (Brandywine) koʻprigidan oʻtib, Shayrga asos solganlar va oʻsha yilni <strong>Shayr Hisobining 1-yili (Sh.H. 1)</strong> deb eʼlon qilganlar (<code>Sh.H. = U.D. - 1600</code>).
+          </p>
+        </div>
+        <div class="converter-controls">
+          <div class="conv-field">
+            <label for="ta-year-input">Uchinchi Davr yili (U.D.):</label>
+            <input type="number" id="ta-year-input" min="1601" max="3021" value="3019" class="conv-input" />
+          </div>
+          <span class="conv-equals" aria-hidden="true">⇄</span>
+          <div class="conv-field">
+            <label for="sr-year-input">Shayr Hisobi yili (Sh.H.):</label>
+            <input type="number" id="sr-year-input" min="1" max="1421" value="1419" class="conv-input" />
+          </div>
+          <div class="conv-presets">
+            <button type="button" class="conv-preset-btn" data-ta="1601">U.D. 1601 (Shayr tashkil topishi)</button>
+            <button type="button" class="conv-preset-btn" data-ta="2941">U.D. 2941 (Erebor safari)</button>
+            <button type="button" class="conv-preset-btn" data-ta="3001">U.D. 3001 (Xayrlashuv ziyofati)</button>
+            <button type="button" class="conv-preset-btn" data-ta="3019">U.D. 3019 (Uzuk Urushi)</button>
+          </div>
+        </div>
+        <p id="conv-note" class="conv-note" aria-live="polite">
+          <strong>U.D. 3019 = Sh.H. 1419:</strong> Buyuk Halqa Urushi, Pelennor Dalalari Jangi va Yagona Uzukning Orodruin olovida yoʻq qilinishi (25-mart).
+        </p>
+      </div>
+    </section>
+  </div>
+
+  <div slot="margin">
+    <div class="margin-card">
+      <h3 class="margin-title">Vaqt Hisobi</h3>
+      <p>
+        Valian yillari (Valian Years) va Quyosh yillari oʻrtasidagi mutanosiblik Tolkienning "The Annals of Aman" matniga muvofiq beriladi.
+      </p>
+    </div>
+    <div class="margin-card">
+      <h3 class="margin-title">Xronologiya Kanoni</h3>
+      <p>
+        Birinchi davr hisobi quyoshning birinchi chiqishidan, Ikkinchi va Uchinchi davrlar esa tegishli buyuk burilishlardan boshlanadi.
+      </p>
+    </div>
+    <div class="margin-card">
+      <h3 class="margin-title">Hodisalar Tizimi</h3>
+      <p>
+        Har bir voqea Oʻrta-yer atlasidagi joylashuv va qahramonlar biografiyalari bilan toʻgʻridan-toʻgʻri bogʻlangan.
+      </p>
+    </div>
+  </div>
+</EditorialLayout>
+
+<script>
+  function setupTimelineFilters() {
+    const eraChips = document.querySelectorAll<HTMLButtonElement>('.era-chip');
+    const searchInput = document.getElementById('timeline-search-input') as HTMLInputElement | null;
+    const charSelect = document.getElementById('timeline-char-select') as HTMLSelectElement | null;
+    const locSelect = document.getElementById('timeline-loc-select') as HTMLSelectElement | null;
+    const clearBtn = document.getElementById('clear-filters-btn') as HTMLButtonElement | null;
+    const emptyResetBtn = document.getElementById('empty-reset-btn') as HTMLButtonElement | null;
+    const countDisplay = document.getElementById('results-count');
+    const emptyState = document.getElementById('timeline-empty-state');
+    const cards = Array.from(document.querySelectorAll<HTMLElement>('.event-card'));
+
+    if (!cards.length) return;
+
+    let activeEra = 'all';
+    let activeChar = 'all';
+    let activeLoc = 'all';
+    let activeQuery = '';
+
+    // URL parametrlari orqali boshlang'ich holatni o'qish
+    const urlParams = new URLSearchParams(window.location.search);
+    const initialEra = urlParams.get('era');
+    const initialChar = urlParams.get('qahramon');
+    const initialLoc = urlParams.get('joy');
+    const initialQuery = urlParams.get('q');
+
+    if (initialEra) {
+      activeEra = initialEra;
+      eraChips.forEach((btn) => {
+        const isMatch = btn.dataset.era === initialEra;
+        btn.classList.toggle('active', isMatch);
+        btn.setAttribute('aria-selected', isMatch ? 'true' : 'false');
+      });
+    }
+
+    if (initialChar && charSelect) {
+      activeChar = initialChar;
+      charSelect.value = initialChar;
+    }
+
+    if (initialLoc && locSelect) {
+      activeLoc = initialLoc;
+      locSelect.value = initialLoc;
+    }
+
+    if (initialQuery && searchInput) {
+      activeQuery = initialQuery;
+      searchInput.value = initialQuery;
+    }
+
+    function syncUrlParams() {
+      const params = new URLSearchParams();
+      if (activeEra && activeEra !== 'all') params.set('era', activeEra);
+      if (activeChar && activeChar !== 'all') params.set('qahramon', activeChar);
+      if (activeLoc && activeLoc !== 'all') params.set('joy', activeLoc);
+      if (activeQuery && activeQuery.trim()) params.set('q', activeQuery.trim());
+
+      const newQuery = params.toString();
+      const newUrl = newQuery ? `${window.location.pathname}?${newQuery}` : window.location.pathname;
+      window.history.replaceState(null, '', newUrl);
+    }
+
+    function applyFilters() {
+      let visibleCount = 0;
+      const normalizedQuery = activeQuery.trim().toLowerCase();
+
+      cards.forEach((card) => {
+        const cardEra = card.dataset.era || '';
+        const cardLoc = card.dataset.location || '';
+        const cardChars = (card.dataset.characters || '').split(',').map((c) => c.trim()).filter(Boolean);
+        const cardSearch = card.dataset.search || '';
+
+        const matchesEra = activeEra === 'all' || cardEra === activeEra;
+        const matchesLoc = activeLoc === 'all' || cardLoc === activeLoc;
+        const matchesChar = activeChar === 'all' || cardChars.includes(activeChar);
+        const matchesQuery = !normalizedQuery || cardSearch.includes(normalizedQuery);
+
+        const isVisible = matchesEra && matchesLoc && matchesChar && matchesQuery;
+        card.style.display = isVisible ? 'flex' : 'none';
+
+        if (isVisible) {
+          visibleCount++;
+        }
+      });
+
+      if (countDisplay) {
+        countDisplay.innerHTML = `Koʻrsatilmoqda: <strong>${visibleCount}</strong> ta hodisa (jami ${cards.length})`;
+      }
+
+      if (emptyState) {
+        emptyState.style.display = visibleCount === 0 ? 'block' : 'none';
+      }
+
+      syncUrlParams();
+    }
+
+    // Davr chiplari hodisasi
+    eraChips.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        eraChips.forEach((b) => {
+          b.classList.remove('active');
+          b.setAttribute('aria-selected', 'false');
+        });
+        btn.classList.add('active');
+        btn.setAttribute('aria-selected', 'true');
+        activeEra = btn.dataset.era || 'all';
+        applyFilters();
+      });
+    });
+
+    // Qahramon selektori
+    if (charSelect) {
+      charSelect.addEventListener('change', () => {
+        activeChar = charSelect.value;
+        applyFilters();
+      });
+    }
+
+    // Joy selektori
+    if (locSelect) {
+      locSelect.addEventListener('change', () => {
+        activeLoc = locSelect.value;
+        applyFilters();
+      });
+    }
+
+    // Matn qidiruvi (debounced)
+    if (searchInput) {
+      let debounceTimer: ReturnType<typeof setTimeout>;
+      searchInput.addEventListener('input', () => {
+        clearTimeout(debounceTimer);
+        debounceTimer = setTimeout(() => {
+          activeQuery = searchInput.value;
+          applyFilters();
+        }, 150);
+      });
+    }
+
+    // Tozalash tugmasi
+    function resetAllFilters() {
+      activeEra = 'all';
+      activeChar = 'all';
+      activeLoc = 'all';
+      activeQuery = '';
+
+      eraChips.forEach((b) => {
+        const isAll = b.dataset.era === 'all';
+        b.classList.toggle('active', isAll);
+        b.setAttribute('aria-selected', isAll ? 'true' : 'false');
+      });
+
+      if (charSelect) charSelect.value = 'all';
+      if (locSelect) locSelect.value = 'all';
+      if (searchInput) searchInput.value = '';
+
+      applyFilters();
+    }
+
+    if (clearBtn) clearBtn.addEventListener('click', resetAllFilters);
+    if (emptyResetBtn) emptyResetBtn.addEventListener('click', resetAllFilters);
+
+    // Boshlang'ich filtrlash
+    applyFilters();
+
+    // Uchinchi Davr <-> Shayr Hisobi konvertori
+    const taInput = document.getElementById('ta-year-input') as HTMLInputElement | null;
+    const srInput = document.getElementById('sr-year-input') as HTMLInputElement | null;
+    const convNote = document.getElementById('conv-note');
+    const presetBtns = document.querySelectorAll<HTMLButtonElement>('.conv-preset-btn');
+
+    const notableTaNotes: Record<number, string> = {
+      1601: 'Marcho va Blanco boshchiligida xobbitlar Baranduin daryosidan oʻtib, Shayrga asos soladilar (Sh.H. 1).',
+      1980: 'Moriada Durin laʼnati (Balrog) uygʻonadi va Qirol Durin VI halok boʻladi (Khazad-dûm qulashi).',
+      2941: 'Bilbo Baggins va Thorin Emanqalqonning Erebor safari, Smaugning halokati va Besh Armiya Jangi (Sh.H. 1341).',
+      3001: 'Bilbo Bagginsning 111 yoshlik xayrlashuv ziyofati va Yagona Uzukning Frodo Bagginsga meros qolishi (Sh.H. 1401).',
+      3018: 'Frodo Baggins Xobbitondan yoʻlga chiqadi, Rivendellda Elrond Kengashi boʻlib oʻtadi (Sh.H. 1418).',
+      3019: 'Buyuk Halqa Urushi, Pelennor Dalalari Jangi va Yagona Uzukning Orodruin olovida yoʻq qilinishi (25-mart, Sh.H. 1419).',
+      3021: 'Elrond, Galadriel, Gandalf, Bilbo va Frodoning Kulrang Bandargohlardan Valinorga suzib ketishi (Uchinchi davr yakuni, Sh.H. 1421).',
+    };
+
+    function updateConverterFromTa(taYear: number) {
+      const clampedTa = Math.max(1601, Math.min(3021, Math.round(taYear || 3019)));
+      const srYear = clampedTa - 1600;
+      if (taInput && Number(taInput.value) !== clampedTa) taInput.value = String(clampedTa);
+      if (srInput) srInput.value = String(srYear);
+      if (convNote) {
+        const desc =
+          notableTaNotes[clampedTa] ||
+          `Uchinchi davrning ${clampedTa}-yili Qirol hisobida Shayr taqvimining ${srYear}-yiliga toʻgʻri keladi.`;
+        convNote.innerHTML = `<strong>U.D. ${clampedTa} = Sh.H. ${srYear}:</strong> ${desc}`;
+      }
+    }
+
+    if (taInput && srInput) {
+      taInput.addEventListener('change', () => {
+        updateConverterFromTa(Number(taInput.value));
+      });
+      srInput.addEventListener('change', () => {
+        const srVal = Math.max(1, Math.min(1421, Math.round(Number(srInput.value) || 1419)));
+        updateConverterFromTa(srVal + 1600);
+      });
+      presetBtns.forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const ta = Number(btn.dataset.ta || 3019);
+          if (taInput) taInput.value = String(ta);
+          updateConverterFromTa(ta);
+        });
+      });
+    }
+  }
+
+  // Sahifa yuklanganda yoki Astro view transitions orqali o'tganda ishga tushirish
+  setupTimelineFilters();
+  document.addEventListener('astro:page-load', setupTimelineFilters);
+</script>
+
+<style>
+  .section-lead {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+  }
+
+  .eras-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    margin-bottom: 3rem;
+  }
+
+  .era-card {
+    background-color: var(--color-bg-elevated);
+    border: 1px solid var(--color-border-subtle);
+    padding: 1.25rem 1.5rem;
+    border-radius: 4px;
+    position: relative;
+    border-left: 3px solid var(--color-accent-gold);
+  }
+
+  .era-tag {
+    font-family: var(--font-sans-ui);
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-accent-gold);
+    display: block;
+    margin-bottom: 0.25rem;
+  }
+
+  .era-card h3 {
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+
+  .era-card p {
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    color: var(--color-text-secondary);
+    margin: 0;
+  }
+
+  /* Timeline Controls */
+  .timeline-controls {
+    margin-bottom: 2.5rem;
+    padding: 1.5rem;
+    background-color: var(--color-bg-elevated);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  }
+
+  .era-chips-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.25rem;
+    padding-bottom: 1.25rem;
+    border-bottom: 1px solid var(--color-border-subtle);
+  }
+
+  .era-chip {
+    padding: 0.4rem 0.85rem;
+    font-family: var(--font-sans-ui);
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: var(--color-text-secondary);
+    background-color: var(--color-bg-subtle);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+  }
+
+  .era-chip:hover {
+    color: var(--color-text-primary);
+    border-color: var(--color-border-gold);
+  }
+
+  .era-chip.active {
+    background-color: var(--color-forest);
+    color: #FAF8F2;
+    border-color: var(--color-forest-deep);
+    font-weight: 700;
+  }
+
+  .chip-count {
+    font-size: 0.75rem;
+    margin-left: 0.2rem;
+    color: var(--color-text-muted);
+    opacity: 1;
+  }
+
+  .era-chip.active .chip-count {
+    color: inherit;
+    opacity: 0.95;
+  }
+
+  .filter-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    align-items: end;
+  }
+
+  @media (min-width: 640px) {
+    .filter-grid {
+      grid-template-columns: 2fr 1.5fr 1.5fr auto;
+    }
+  }
+
+  .filter-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+
+  .filter-label {
+    font-family: var(--font-sans-ui);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--color-text-muted);
+  }
+
+  .search-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .search-icon {
+    position: absolute;
+    left: 0.75rem;
+    color: var(--color-text-muted);
+    pointer-events: none;
+  }
+
+  .filter-input,
+  .filter-select {
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    font-family: var(--font-sans-ui);
+    font-size: 0.875rem;
+    color: var(--color-text-primary);
+    background-color: var(--color-bg-surface);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.15s ease;
+  }
+
+  .search-input {
+    padding-left: 2.25rem;
+  }
+
+  .filter-input:focus,
+  .filter-select:focus {
+    border-color: var(--color-accent-gold);
+  }
+
+  .clear-filters-btn {
+    padding: 0.55rem 1rem;
+    font-family: var(--font-sans-ui);
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: var(--color-text-secondary);
+    background-color: transparent;
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 4px;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.15s ease;
+  }
+
+  .clear-filters-btn:hover {
+    color: var(--color-accent-gold);
+    border-color: var(--color-accent-gold);
+  }
+
+  .results-bar {
+    margin-top: 1rem;
+    padding-top: 0.75rem;
+    border-top: 1px dashed var(--color-border-subtle);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .results-count {
+    font-family: var(--font-sans-ui);
+    font-size: 0.8125rem;
+    color: var(--color-text-muted);
+  }
+
+  .results-count strong {
+    color: var(--color-accent-gold);
+    font-weight: 700;
+  }
+
+  /* Events Catalog Section */
+  .events-catalog-section {
+    padding-top: 1rem;
+  }
+
+  .events-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  @media (min-width: 640px) {
+    .events-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .event-card {
+    display: flex;
+    flex-direction: column;
+    padding: 1.35rem;
+    background-color: var(--color-bg-elevated);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 3px;
+    box-shadow: var(--shadow-sm);
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  }
+
+  .event-card:hover {
+    border-color: var(--color-border-gold);
+    box-shadow: var(--shadow-md);
+  }
+
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75rem;
+  }
+
+  .event-era-pill {
+    font-family: var(--font-sans-ui);
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--color-accent-gold-text);
+  }
+
+  .card-title {
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 1.35;
+    margin-bottom: 0.25rem;
+  }
+
+  .card-title a {
+    color: var(--color-text-primary);
+    text-decoration: none;
+  }
+
+  .card-title a:hover {
+    color: var(--color-accent-gold-text);
+  }
+
+  .card-subtitle {
+    font-size: 0.8125rem;
+    color: var(--color-text-muted);
+    margin-bottom: 0.75rem;
+  }
+
+  .card-meta-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-bottom: 0.85rem;
+  }
+
+  .chars-chip-group {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+  }
+
+  .meta-chip {
+    display: inline-flex;
+    align-items: center;
+    font-family: var(--font-sans-ui);
+    font-size: 0.75rem;
+    padding: 0.2rem 0.5rem;
+    background-color: var(--color-bg-subtle);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 3px;
+    color: var(--color-text-secondary);
+  }
+
+  .meta-chip a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .meta-chip a:hover {
+    color: var(--color-accent-gold);
+    text-decoration: underline;
+  }
+
+  .char-chip {
+    color: var(--color-text-secondary);
+  }
+
+  .more-chip {
+    font-weight: 600;
+    color: var(--color-accent-gold);
+    background-color: var(--color-bg-surface);
+  }
+
+  .card-outcome {
+    font-size: 0.875rem;
+    line-height: 1.6;
+    color: var(--color-text-secondary);
+    margin-bottom: 1.25rem;
+    flex-grow: 1;
+  }
+
+  .card-link-wrapper {
+    margin-top: auto;
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--color-border-subtle);
+  }
+
+  .card-detail-link {
+    font-family: var(--font-sans-ui);
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: var(--color-accent-gold);
+    text-decoration: none;
+  }
+
+  .card-detail-link:hover {
+    text-decoration: underline;
+  }
+
+  /* Empty State */
+  .empty-state {
+    text-align: center;
+    padding: 3rem 1.5rem;
+    background-color: var(--color-bg-elevated);
+    border: 1px dashed var(--color-border-subtle);
+    border-radius: 6px;
+    margin-top: 1.5rem;
+  }
+
+  .empty-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    opacity: 0.7;
+  }
+
+  .empty-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--color-text-primary);
+    margin-bottom: 0.5rem;
+  }
+
+  .empty-desc {
+    font-size: 0.9375rem;
+    color: var(--color-text-secondary);
+    max-width: 480px;
+    margin: 0 auto 1.5rem;
+    line-height: 1.6;
+  }
+
+  .empty-reset-button {
+    padding: 0.6rem 1.25rem;
+    font-family: var(--font-sans-ui);
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #111827;
+    background-color: var(--color-accent-gold);
+    border: 1px solid var(--color-accent-gold);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: opacity 0.15s ease;
+  }
+
+  .empty-reset-button:hover {
+    opacity: 0.9;
+  }
+
+  /* Synchronism Matrix & Calendar Converter */
+  .synchronism-section {
+    margin-top: 3.5rem;
+    padding-top: 2.5rem;
+    border-top: 2px solid var(--color-border-subtle);
+  }
+
+  .sync-header {
+    margin-bottom: 1.5rem;
+  }
+
+  .sync-header h2 {
+    font-size: 1.5rem;
+    margin: 0.25rem 0 0.75rem;
+  }
+
+  .sync-lead {
+    font-size: 0.95rem;
+    line-height: 1.65;
+    color: var(--color-text-secondary);
+    margin: 0;
+  }
+
+  .sync-table-wrapper {
+    overflow-x: auto;
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 6px;
+    background-color: var(--color-bg-elevated);
+    margin-bottom: 1.75rem;
+  }
+
+  .sync-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.875rem;
+    text-align: left;
+  }
+
+  .sync-table th,
+  .sync-table td {
+    padding: 0.85rem 1rem;
+    border-bottom: 1px solid var(--color-border-subtle);
+    vertical-align: top;
+    line-height: 1.5;
+  }
+
+  .sync-table th {
+    font-family: var(--font-sans-ui);
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-accent-gold);
+    background-color: var(--color-bg-subtle);
+  }
+
+  .sync-table tr:last-child td {
+    border-bottom: none;
+  }
+
+  .sync-table a {
+    color: var(--color-link);
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .sync-table a:hover {
+    text-decoration: underline;
+  }
+
+  .table-sub {
+    display: block;
+    font-family: var(--font-sans-ui);
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+    margin-top: 0.15rem;
+  }
+
+  .calendar-converter-card {
+    padding: 1.35rem 1.5rem;
+    background-color: var(--color-bg-elevated);
+    border: 1px solid var(--color-border-subtle);
+    border-left: 3px solid var(--color-accent-gold);
+    border-radius: 6px;
+  }
+
+  .converter-info h3 {
+    font-size: 1.1rem;
+    margin: 0 0 0.4rem;
+  }
+
+  .converter-info p {
+    font-size: 0.875rem;
+    line-height: 1.6;
+    color: var(--color-text-secondary);
+    margin: 0 0 1rem;
+  }
+
+  .converter-controls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 0.85rem;
+    margin-bottom: 1rem;
+  }
+
+  .conv-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+
+  .conv-field label {
+    font-family: var(--font-sans-ui);
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--color-text-muted);
+  }
+
+  .conv-input {
+    width: 120px;
+    padding: 0.45rem 0.65rem;
+    font-family: var(--font-sans-ui);
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--color-text-primary);
+    background-color: var(--color-bg-surface);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 4px;
+  }
+
+  .conv-equals {
+    font-size: 1.25rem;
+    color: var(--color-accent-gold);
+    padding-bottom: 0.35rem;
+  }
+
+  .conv-presets {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+
+  .conv-preset-btn {
+    padding: 0.35rem 0.65rem;
+    font-family: var(--font-sans-ui);
+    font-size: 0.75rem;
+    color: var(--color-text-secondary);
+    background-color: var(--color-bg-subtle);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: border-color 0.15s ease, color 0.15s ease;
+  }
+
+  .conv-preset-btn:hover {
+    border-color: var(--color-accent-gold);
+    color: var(--color-accent-gold);
+  }
+
+  .conv-note {
+    font-size: 0.875rem;
+    line-height: 1.55;
+    color: var(--color-text-primary);
+    padding-top: 0.75rem;
+    border-top: 1px dashed var(--color-border-subtle);
+    margin: 0;
+  }
+</style>

@@ -1,0 +1,64 @@
+{
+  "id": "beleg",
+  "name": "Beleg Cúthalion",
+  "original_name": "Beleg Cúthalion",
+  "children": [],
+  "aliases": [
+    "Cúthalion (Kuchli Yoy / Strongbow)",
+    "Doriath Chegara Sardori"
+  ],
+  "titles": [
+    "Doriath Shimoliy Chegaralari Bosh Qoʻriqchisi",
+    "Thingolning Bosh Kamonchisi"
+  ],
+  "race": "elflar",
+  "sub_race": "Sindar",
+  "culture": "Doriath (Menegroth)",
+  "birth_year": "Daraxtlar davri",
+  "death_year": "Birinchi davr 489 (Taur-nu-Fuin oʻrmonida Túrin tomonidan yanglishib oʻldirilgan)",
+  "weapons_and_artifacts": [
+    "Belthronding (Qora тис daraxtidan yasalgan ulkan kamon)",
+    "Dailir (Hech qachon nishondan adashmaydigan va sinmaydigan sevimli oʻqi)",
+    "Anglachel (Eöl meteorit temiridan yasagan qora qilich — keyinchalik Gurthang)"
+  ],
+  "primary_locations": ["menegroth", "doriath", "beleriand"],
+  "textual_status": "posthumous_edited",
+  "summary": "Qirol Thingolning eng ulugʻ kamonchisi, izquvari va tabibi, Túrin Turambarning ustozi va sodiq quroldosh doʻsti. Asirga tushgan Túrinni qutqarish uchun Anglachel qilichi bilan Taur-nu-Fuin dahshatlaridan yolgʻiz oʻtib, doʻstining zanjirlarini kesayotganida, zulmatda hushini yoʻqotgan Túrin tomonidan oʻz qilichi bilan fojiaviy tarzda oʻldirilgan.",
+  "etymology": "Sindarin tilida 'Beleg' — 'Buyuk, qudratli' maʼnosini beradi. 'Cúthalion' unvoni esa cú ('kamon, yoy') va thalion ('mustahkam, kuchli') soʻzlaridan tuzilib, 'Kuchli Yoy' deganidir.",
+  "biography_sections": [
+    {
+      "title": "Doriath qoʻriqchisi va Túringa ustozlik",
+      "content": "Beleg Doriathning shimoliy chegaralarini qoʻriqlovchi eng mahoratli ovchi va jangchi boʻlib, Mablung bilan birga Berenning Carcharoth ovi hamda Nirnaeth Arnoediad jangida qatnashgan edi. Shuningdek u jarohatlarni davolashda Beleriandda tengi yoʻq tabib edi.\n\nYosh Túrin Menegrothga kelganida, Beleg uni oʻz qanoti ostiga olib, unga kamon otish, qilichbozlik va oʻrmon sirlarini oʻrgatdi. Saerosning oʻlimidan soʻng Túrin oʻzini aybdor sanab Doriathdan qochib ketganida, Beleg Qirol Thingoldan Túrinning afv etilgani haqida ruxsat oldi va doʻstini qidirish uchun Thingol xazinasidan qora qilich — Anglachelni tanladi (shunda Melian bu qilichda uni yasagan Eölning qora yuragi qolganini bashorat qildi)."
+    },
+    {
+      "title": "Amon Rûdh mudofaasi va Taur-nu-Fuin fojiasi",
+      "content": "Beleg Túrinni Gaurwaith (Qonundan tashqari qochqinlar) toʻdasi orasidan topdi; Túrin Doriathga qaytishdan bosh tortgach, Beleg keyinchalik unga sovgʻa sifatida Ajдар-dubulgʻani (Dragon-helm of Dor-lómin) va lembas nonini olib kelib, Amon Rûdh tepaligida u bilan yelkama-yelka jang qildi ('Ikki Sardor — Yoy va Dubulgʻa').\n\nMitti Mîmning xiyonati tufayli Amon Rûdh orqlar tomonidan bosib olindi; Túrin asirga tushib Angband tomon sudrab ketildi, yarador Beleg esa oʻliklar orasida tirik qoldi. Tuzalgach, Beleg Gwindor bilan birga tungi boʻronda orqlar qarorgohiga kirdi, qorovul boʻrilarni kamondan otib oʻldirdi va behush yotgan Túrinni lager tashqarisiga koʻtarib chiqdi. Biroq Beleg Anglachel tigʻi bilan doʻstining qoʻl kishanlarini kesayotganida, qilich Túrinning oyogʻini tilib yubordi. Zulmatda uygʻonib, oʻzini orqlar qiynoqqa solyapti deb oʻylagan Túrin qilichni tortib oldi va oʻzining eng sodiq doʻsti Belegni yuragiga sanchib oʻldirdi. Chaqqan chaqmoq yorugʻida Belegning yuzini koʻrgan Túrin qaygʻudan toshdek qotib qoldi."
+    }
+  ],
+  "sources": [
+    {
+      "book_slug": "the-children-of-hurin",
+      "chapter": "The Death of Beleg",
+      "page": "152"
+    },
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of Túrin Turambar",
+      "page": "201"
+    },
+    {
+      "book_slug": "unfinished-tales",
+      "chapter": "Narn i Hîn Húrin",
+      "page": "75"
+    }
+  ],
+  "related_characters": [
+    "turin",
+    "thingol",
+    "melian",
+    "beren",
+    "hurin",
+    "morwen"
+  ],
+  "adaptations": []
+}

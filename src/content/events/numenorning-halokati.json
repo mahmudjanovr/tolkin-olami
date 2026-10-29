@@ -1,0 +1,67 @@
+{
+  "id": "numenorning-halokati",
+  "title": "Númenorning Halokati (Akallabêth)",
+  "subtitle": "Ar-Pharazônning Aman yurishi, orolning dengizga choʻkishi va Dunyoning Dumaloqlashuvi",
+  "era": "ikkinchi_davr",
+  "year_text": "Ikkinchi davr 3319",
+  "location_id": "numenor",
+  "characters": [
+    "ar-pharazon",
+    "sauron",
+    "elendil",
+    "isildur",
+    "anarion"
+  ],
+  "belligerents": {
+    "side_a": [
+      "Sodiqlar (Elendili — Elendil, Isildur va Anárion)",
+      "Valar va Eru Ilúvatar irodasi"
+    ],
+    "side_b": [
+      "Ar-Pharazôn (Oltin Qirol) va Qirol Odamlarining Buyuk Armadasi",
+      "Sauron (Armenelosdagi Melkor ibodatxonasi bosh kohini)"
+    ]
+  },
+  "outcome": "Númenor oroli dengiz tubiga g'arq bo'ldi (Akallabêth); dunyo tekislikdan sferik (dumaloq) shaklga o'zgardi; Boqiy G'arb moddiy olamdan ajratildi; Sadoqatlilar O'rta-yerda Arnor va Gondorni tuzdilar.",
+  "preceding_event": "qudrat-uzuklarining-yasalishi",
+  "succeeding_event": "songgi-ittifoq-urushi",
+  "textual_status": "posthumous_edited",
+  "sources": [
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Akallabêth: The Downfall of Númenor",
+      "page": "278",
+      "notes": "Ar-Pharazôn armadasi, Númenorning gʻarq boʻlishi va Elendilning qutulishi."
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "Appendix A: The Numenorean Kings",
+      "page": "1036",
+      "notes": "Sodiqlar va surgundagi shohliklarning barpo etilishi."
+    },
+    {
+      "book_slug": "the-fall-of-numenor",
+      "chapter": "S.A. 3319: The Downfall of Númenor",
+      "page": "264",
+      "notes": "Ikkinchi davr solnomasi boʻyicha halokatning yigʻma xronologik tafsilotlari."
+    }
+  ],
+  "description_sections": [
+    {
+      "title": "Ar-Pharazôn kibri va Sauronning asir olinishi",
+      "content": "Ikkinchi Davrning 3261-yilida Númenorning so'nggi podshohi Ar-Pharazôn O'rta-yerga shunday ulkan va mahobatli flot bilan keldiki, Sauronning lashkarlari jangsiz qochib ketdilar. Sauron podshohning qudratiga teng kelolmasligini anglab, o'zini ixtiyoriy ravishda taslim qildi va Númenorga asir sifatida olib ketildi. Biroq bu uning eng ayyorona rejasi edi. Sauron o'zining o'tkir tili va munofiqligi bilan podshohning ishonchiga kirdi va tez orada uning bosh maslahatchisiga aylandi."
+    },
+    {
+      "title": "Melkorga sig'inish va Boqiy G'arbga qarshi fitna",
+      "content": "Sauron númenorliklarning o'limdan qo'rqish zaifligidan ustalik bilan foydalandi. U poytaxt Armenelosda Melkor (Morgoth) sharafiga bahaybat qora ibodatxona qurdirdi va u yerda Sadoqatlilar (Elendili) qurbonlik qilina boshlandi. Podshoh qarigani sayin o'lim qo'rquvi kuchayib bordi. Sauron uni agar u Boqiy G'arb – Valinorga bostirib kirsa va Valar yurtini egallasa, abadiy tiriklikka erishishiga ishontirdi. Ar-Pharazôn butun insoniyat tarixidagi eng ulkan harbiy flotni (Buyuk Qurol) yasashni buyurdi."
+    },
+    {
+      "title": "Valinor sohillari va Eru Ilúvatarning g'azabi",
+      "content": "Ikkinchi Davrning 3319-yilida Ar-Pharazôn boshchiligidagi son-sanoqsiz kemalar Valinor sohillariga yetib keldi va shoh muqaddas zaminga qadam qo'ydi. Valar jismoniy qurol ko'tarishdan bosh tortib, dunyo taqdirini Yaratuvchi Eru Ilúvatarning o'ziga topshirdilar. Shunda Eru o'zining mutlaq qudratini namoyon etdi: yer yuzida tasavvur qilib bo'lmas ulkan yoriq paydo bo'ldi; dengiz suvlari qaynab, bahaybat girdob vujudga keldi. Ar-Pharazôn va uning sohillardagi armiyasi qulagan qoyalar ostida qolib, 'Unutilganlar G'orlari'da qamaldi."
+    },
+    {
+      "title": "Akallabêth: Orolning cho'kishi va Dunyoning o'zgarishi",
+      "content": "Númenor oroli (Elenna) barcha saroylari, ibodatxonalari va kibrli aholisi bilan birga bir necha soat ichida dengiz qa'riga g'arq bo'ldi va 'Akallabêth' (Qulagan O'lka) deb ataldi. Dunyo tekis shakldan sferik (dumaloq) shaklga aylantirildi; Valinor esa moddiy koinotdan ajratilib, unga faqat elflarning oq kemalari 'To'g'ri Yo'l' (Straight Road) orqali borishi mumkin bo'lib qoldi. Faqat Elendil va uning o'g'illari Isildur hamda Anárion to'qqizta kemada qutulib qolib, O'rta-yerda Arnor va Gondor saltanatlariga asos soldilar."
+    }
+  ]
+}

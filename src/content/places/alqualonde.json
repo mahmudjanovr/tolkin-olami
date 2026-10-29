@@ -1,0 +1,48 @@
+{
+  "id": "alqualonde",
+  "name": "Alqualondë",
+  "elvish_name": "Oqqushlar Bandargohi (Swanhaven)",
+  "type": "shahar",
+  "region": "valinor",
+  "founded_era": "Daraxtlar davri",
+  "rulers": [
+    "Olwë"
+  ],
+  "notable_events": [
+    "Birinchi Qarindosh Qirgʻini",
+    "Noldorning qochishi",
+    "Gʻazab Urushi dengiz floti"
+  ],
+  "textual_status": "author_published",
+  "summary": "Alqualondë — Aman sharqiy sohilidagi Eldamar koʻrfazida joylashgan Teleri elflarining bosh shahri va oqqush shaklidagi oq kemalar bandargohi. Qirol Olwë hukmronlik qilgan ushbu goʻzal dengiz shahrida Fëanor boshchiligidagi Noldor oʻz qondoshlariga qarshi mashhur Birinchi Qarindosh Qirgʻinini sodir etgan.",
+  "sources": [
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of the Flight of the Noldor",
+      "page": "86",
+      "notes": "Alqualondëdagi fojea va Teleri kemalarining tortib olinishi."
+    }
+  ],
+  "description_sections": [
+    {
+      "title": "Oqqushlar Bandargohi va Olmos Qirgʻoq",
+      "content": "Alqualondë (Quenya tilida: 'Oqqushlar Bandargohi') — Boqiy Gʻarbdagi Eldamar qirgʻogʻida joylashgan Teleri elflarining bosh shahar-bandargohidir. Shahar dengiz marvaridlari, oq marmar toshlar va nafis qavariq arklar bilan bezatilgan boʻlib, uning bandargohida oqqush shaklidagi goʻzal oq kemalar suzib yurgan.\n\nDaraxtlar Davrining 1495-yilida Fëanor Noldor bilan Beleriandga oʻtish uchun kemalarni talab qilganida, Teleri rad etdi. Fëanor Alqualondëda Telerilarni qilichdan oʻtkazib (Birinchi Qardoshlar Qirgʻini), oq kemalarni zoʻrlik bilan tortib oldi."
+    },
+    {
+      "title": "Teleri kemasozligi va marvaridlar sohilidagi hayot",
+      "content": "Alqualondë (Oqqushlar Bandargohi) Valinordagi Eldamar sohilida joylashgan Teleri elflarining bosh shahri va portidir. Shahar darvozasi dengiz suvlari yuvib turuvchi tabiiy tosh arkadan iborat bo'lib, bandargohda Olwë xalqining afsonaviy oqqush shaklidagi kemalari suzib yurgan. Teleri xalqi dengiz sirlarini, marvarid terishni va kemasozlikni barcha xalqlardan yaxshi bilgan. Ularning kemalari shunchalik yengil va mustahkam ediki, go'yo tirik qushdek to'lqinlar ustida uchar edi."
+    },
+    {
+      "title": "Birinchi Qarindosh Qirg'ini va shaharning qonli fojiasi",
+      "content": "Fëanor Silmarillarni qaytarish uchun Noldorni O'rta-yerga boshlaganida, u Teleridan kemalarni berishni talab qildi. Olwë Valar irodasiga qarshi bormasligini aytib rad etgach, Fëanor jangchilari portga bostirib kirdilar. Teleri kemalarni himoya qilib Noldorni dengizga uloqtirdi, ammo Noldor qilich yalang'ochladi. Oqqushlar Bandargohi qardoshlar qoniga belandi; ko'plab dengizchilar qirib tashlandi va kemalar o'g'irlab ketildi. Bu voqea Valinor tarixidagi eng qora dog' bo'lib qoldi."
+    },
+    {
+      "title": "G'azab Urushidagi Teleri kemalari",
+      "content": "Garchi Teleri Noldorning qilgan jinoyatini uzoq vaqt kechira olmagan bo'lsa-da, Birinchi Davr oxirida Eärendilning iltijosiga ko'ra Valar qo'shini safarbar qilinganda, Teleri o'z kemalarini Boqiy G'arb lashkarlarini O'rta-yerga tashish uchun berdi. Biroq ularning birorta ham jangchisi O'rta-yer tuprog'iga qadam qo'ymadi; ular faqat kemalarni boshqarib sohillarda qoldilar. Alqualondë tozalangan bo'lsa-da, qirg'in xotirasi uning oq toshlarida mangu saqlandi."
+    },
+    {
+      "title": "Eldamar ko'rfazi tabiati va marvarid saroylar",
+      "content": "Alqualondë saroylari sof oq toshdan qurilgan bo'lib, ularning devorlari dengiz qirg'oqlaridan terilgan minglab yaltiroq marvaridlar va sadaflar bilan bezatilgan edi. Port kechalari Valinor nurlarida va elflarning qo'shiqlarida mislsiz go'zallik kasb etardi. Teleri elflari tabiatan tinchliksevar bo'lib, qurol-yarog' yasashga hech qachon qiziqmaganlar; ularning yagona quroli o'rmon va dengiz qushlarini ovlash uchun ishlatiladigan yengil kamonlar edi. Shu sababli Noldor qilichlari qarshisida ular butunlay himoyasiz qolgan edilar."
+    }
+  ]
+}

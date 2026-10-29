@@ -1,0 +1,73 @@
+{
+  "id": "elwing",
+  "name": "Elwing Oq",
+  "original_name": "Elwing",
+  "father_name": "Dior Eluchíl (Beren va Lúthien oʻgʻli)",
+  "mother_name": "Nimloth (Doriathlik Sindar)",
+  "spouse": "Eärendil Dengizchi",
+  "children": [
+    "Elros Tar-Minyatur",
+    "Elrond Yarim-elf"
+  ],
+  "aliases": [
+    "Elwing the White (Oq Elwing)"
+  ],
+  "titles": [
+    "Doriath va Thingol Merosxoʻri",
+    "Sirion Bandargohi Malikasi",
+    "Silmaril Saqlovchisi"
+  ],
+  "race": "elflar",
+  "sub_race": "Yarim-elf (Eldar, Edain va Maia Melian qoni)",
+  "culture": "Doriath / Sirion / Alqualondë (Eldamar)",
+  "birth_year": "Birinchi davr ~503 (Tol Galenda)",
+  "death_year": "Boqiy (Eldamar qirgʻogʻidagi oq minorada yashaydi)",
+  "house_id": "elros-va-gondor-shohlari",
+  "weapons_and_artifacts": [
+    "Silmaril va Nauglamír marjoni (ota-onasi Dior va Nimlothdan qolgan meros)"
+  ],
+  "primary_locations": ["menegroth", "doriath", "alqualonde", "beleriand"],
+  "textual_status": "posthumous_edited",
+  "summary": "Beren va Lúthienning oʻgʻli Diorning yagona omon qolgan qizi, Eärendilning umr yoʻldoshi hamda Elrond va Elrosning onasi. Sirion bandargohidagi Uchinchi Qarindosh Qirgʻinida Silmarilni Fëanor oʻgʻillariga bermaslik uchun koʻksida gavhar bilan dengizga sakragan va Ulmo tomonidan oq qushga aylantirilib, Eärendilning Vingilótë kemasiga yetkazilgan malika.",
+  "etymology": "Sindarin tilida 'Elwing' — êl ('yulduz') va gwing ('suv koʻpigi, sharshara sachratmasi') soʻzlaridan tuzilib, 'Yulduzli Koʻpik' maʼnosini beradi; chunki u Lanthir Lamath sharsharasi yulduz nurida porlab turgan kechada tugʻilgan.",
+  "biography_sections": [
+    {
+      "title": "Doriathdan qutulish va Sirion malikasi",
+      "content": "Elwing Tol Galenda Beren va Lúthienning oʻgʻli Dior hamda Nimloth oilasida dunyoga keldi. Fëanor oʻgʻillari Menegrothga bostirib kirib, ota-onasini va egizak akalari Eluréd hamda Elurínni halok qilganlarida, sodiq elflar yosh Elwingni boʻynidagi Silmarilli Nauglamír marjoni bilan birga Sirion daryosi quyilishiga olib qochdilar.\n\nU yerda Elwing Gondolindan chiqqan Tuor va Idrilning oʻgʻli Eärendil bilan birga ulgʻaydi va unga turmushga chiqib, Elros hamda Elrondni dunyoga keltirdi."
+    },
+    {
+      "title": "Dengizga sakrash, Oq Qush moʻjizasi va Eldamar minorasi",
+      "content": "Eärendil dengizda ekanida, Maedhros va uning ukalari Silmarilni talab qilib Sirionga hujum qildilar. Elwing bobokaloni Beren va buvisi Lúthien oʻz qonlari bilan olgan gavharni qotillarga topshirishdan koʻra oʻlimni afzal bilib, koʻksidagi Silmaril bilan qoyadan dengiz toʻlqinlariga sakradi.\n\nAmmo Vala Ulmo uni halokatdan asrab, koʻksida olmosдек chaqnab turgan ulkan oq dengiz qushiga aylantirdi. Elwing boʻronli tunlar osha uchib borib, Eärendilning Vingilótë kemasi palubasiga hushsiz yiqildi va tongda oʻzining asl qiyofasiga qaytdi. U Eärendil bilan Valinorga kirdi, Alqualondëdagi onasi tomonidan qarindosh Teleri elflariga oʻz dardini soʻzladi va Yarim-elflar tanlovida Ilúvatarning Toʻngʻich Farzandlari (Elflar) qismatini tanladi. Eldamar sohilida u uchun baland oq minora qurildi; u qushlar tilini oʻrganib, Vingilótë osmonda yaqinlashganida Eärendilga peshvoz uchib chiqadigan boʻldi."
+    }
+  ],
+  "sources": [
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of the Ruin of Doriath",
+      "page": "236"
+    },
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of the Voyage of Eärendil and the War of Wrath",
+      "page": "247"
+    },
+    {
+      "book_slug": "beren-and-luthien",
+      "chapter": "The Silmaril and the Ruin of Doriath",
+      "page": "235"
+    }
+  ],
+  "related_characters": [
+    "earendil",
+    "elrond",
+    "elros",
+    "beren",
+    "luthien",
+    "thingol",
+    "melian",
+    "ulmo",
+    "maedhros",
+    "maglor"
+  ],
+  "adaptations": []
+}

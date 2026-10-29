@@ -1,0 +1,63 @@
+{
+  "id": "isengard",
+  "name": "Isengard (Angrenost)",
+  "elvish_name": "Angrenost",
+  "type": "qalʼa",
+  "region": "orta-yer",
+  "coordinates": {
+    "map_id": "orta-yer",
+    "x": 890,
+    "y": 910
+  },
+  "founded_era": "Ikkinchi davr 3320",
+  "rulers": [
+    "Gondor noiblari",
+    "Saruman"
+  ],
+  "notable_events": [
+    "Gondor Dúnedainlari tomonidan Angrenost va Orthanc minorasining bunyod etilishi (Ikkinchi davr 3320-yil)",
+    "Saruman Oqning Orthanc kalitlarini qabul qilib, qalʼaga joylashishi (Uchinchi davr 2759-yil)",
+    "Entlarning Isengardga yurishi va suv toshqini orqali Saruman qudratining sindirilishi (Uchinchi davr 3019-yil 3-mart)"
+  ],
+  "textual_status": "author_published",
+  "summary": "Isengard (sindarincha: Angrenost — «Temir Qalʼa») — Tumanli togʻlarning eng janubiy etagida, Nan Curunír vodiysida joylashgan aylana tosh devorli mustahkam istehkom. Uning markazida qad rostlagan qora yemirilmangiz tosh minora — Orthancda Janubning muhim koʻruvchi toshi (Palantír) saqlangan. Uchinchi davrda afsungar Saruman ushbu qalʼani oʻzining xoinona harbiy bazasiga aylantirgan.",
+  "sources": [
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "The Road to Isengard",
+      "notes": "Isengardning doiraviy devori, Orthanc minorasi va entlar tomonidan vayron qilinishi."
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "The Voice of Saruman",
+      "notes": "Orthanc minorasida Saruman bilan muzokaralar va Palantír toshining otilishi."
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "Appendix A: Annals of the Kings and Rulers",
+      "notes": "Isengardning Gondor tomonidan barpo etilishi va Beren noib tomonidan Sarumanga topshirilishi tarixi."
+    }
+  ],
+  "description_sections": [
+    {
+      "title": "Orthanc minorasi va tosh xalqa",
+      "content": "Isengard (Sindarincha: Angrenost — 'Temir Qalʼa') — Tumanli Togʻlarning eng janubiy etagida, Isen daryosi vodiysida joylashgan ulkan doirasimon tosh qalʼadir. U Ikkinchi davrda Númenorliklar tomonidan Rohan Boʻgʻozini nazorat qilish uchun qurilgan.\n\nQalʼa markazida toʻrtta qora yaltiroq obsidian tosh ustunidan iborat, balandligi besh yuz fut keladigan yengilmas Orthanc minorasi qad rostlagan. Minorani hech qanday qurol, olov yoki manjaniq bilan sindirib boʻlmas edi."
+    },
+    {
+      "title": "Saruman xiyonati va sanoatlashtirish",
+      "content": "Uchinchi davrning 2759-yilida Gondor Bosh Noibi Beren Isengard kalitlarini Sarumanga topshirdi. Dastlab Oq Kengash tayanchi boʻlgan sehrgar, keyinchalik Yagona Uzuk va hokimiyat vasvasasiga tushib, qalʼani dahshatli sanoat va qurol-yarogʻ zavodiga aylantirdi.\n\nU goʻzal bogʻlarni yoʻq qilib, yerosti temirchilik oʻchoqlari, oʻrklar kazarmalari va Uruk-hai laboratoriyalarini ochdi."
+    },
+    {
+      "title": "Entlarning qasosi va Treegarth of Orthanc",
+      "content": "3019-yil martida daraxtlarning kesilishidan gʻazablangan Treebeard va Entlar Isengardga bostirib kirdilar. Ular tosh toʻgʻonlarni buzib, daryo suvini Isengard zaminiga burib yubordilar va barcha yerosti zavodlarini suvga choʻktirdilar.\n\nUrushdan soʻng Entlar bu yerga yangi daraxtlar va gullar ekib, uni 'Treegarth of Orthanc' deb atadilar va Qirol Elessar tasarrufiga berdilar."
+    },
+    {
+      "title": "Orthanc minorasining siri va sanoatlashuv fojiasi",
+      "content": "Isengard (Angrenost) qadimiy Númenor me'morlari tomonidan qattiq qora toshning to'rtta bahaybat ustunidan monolit shaklda birlashtirib qurilgan. Bu toshni hech qanday bolg'a yoki olov sindira olmas edi. Saruman ushbu qal'aga joylashgach, uning yashil bog'larini o'rk kazarmalariga, chuqur shaxtalarga va qurolsozlik domnalariga aylantirdi. Minora ichida Saruman Orthanc palantíridan foydalanib Sauron bilan bog'langan va o'z ongini qora vasvasaga topshirgan edi. Entlar daryoni burib, bu sanoat zaharini tozaladilar."
+    },
+    {
+      "title": "Treegarth of Orthanc va tozalangan tabiat bog'i",
+      "content": "Entlar Isengardni suv bosganidan so'ng, bu qora sanoat o'chog'ini to'liq qayta tikladilar. To'rtinchi Davrda shoh Elessar bu hududni abadiy Entlar ixtiyoriga berdi va u 'Treegarth of Orthanc' deb nomlandi. Orthanc minorasining o'zi esa Gondor tasarrufiga o'tdi; undan Saruman yashirib qo'ygan ko'plab qadimiy buyumlar, jumladan Arnorning yo'qolgan Elendilmir nishoni topildi. Shunday qilib, zo'ravonlik va mashina zaxri ekilgan yer yana yam-yashil daraxtzorga aylandi."
+    }
+  ]
+}

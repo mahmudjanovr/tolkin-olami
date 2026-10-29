@@ -1,0 +1,116 @@
+{
+  "id": "gandalf",
+  "name": "Gandalf",
+  "original_name": "Olórin",
+  "aliases": [
+    "Mithrandir (Kulrang Ziyoratchi)",
+    "Olórin",
+    "Oq Gandalf",
+    "Tharkûn (Mitti tilida)",
+    "Incánus (Janub tilida)",
+    "Oq Chavandoz",
+    "Boʻron Qargʻasi (Stormcrow)"
+  ],
+  "titles": [
+    "Istari (Sehrgarlar) yetakchisi",
+    "Oq Kengash aʼzosi",
+    "Narya (Olov Uzugi) Posboni"
+  ],
+  "race": "ainur",
+  "sub_race": "Maia (Istari)",
+  "culture": "Valinor Maiari",
+  "birth_year": "Dunyodan avval (Ainur Musiqasi)",
+  "death_year": "Boqiy (Uchinchi davr 3021-yilda Gʻarbga suzib ketgan)",
+  "weapons_and_artifacts": [
+    "Glamdring (Gondolin qadimiy qilichi)",
+    "Narya (Uch Elflar Uzugining biri — Olov Uzugi)",
+    "Sehrgar hassasi"
+  ],
+  "primary_locations": [
+    "rivendell",
+    "minas-tirith",
+    "hobbiton",
+    "bree"
+  ],
+  "textual_status": "author_published",
+  "uncertainty_notes": "Tolkienning 'Unfinished Tales' ('The Istari') asarida Olórin dastlab Oʻrta-yerga borishdan oʻzining Saurondan qoʻrqishi sababli ikkilangani, ammo Manwë unga aynan shu kamtarligi va qoʻrquvi sababli borishi lozimligini uqtirgani taʼkidlanadi. Oʻrta-yerga yuborilgan besh Istari orasida faqat Gandalf oʻz ilohiy burchiga toʻliq sodiq qolib, Sauron ustidan qozonilgan gʻalabani qudrat bilan emas, balki erkin xalqlar qalbida umid uygʻotish orqali taʼminlagan.",
+  "summary": "Manwë va Nienna xizmatidagi eng donishmand Maia — Olórin. Uchinchi davrning 1000-yillarida Oʻrta-yer xalqlariga Sauronga qarshi kurashda koʻmaklashish uchun Istari (Sehrgarlar) elchisi sifatida joʻnatilgan. Círdandan Olov Uzugi Naryani qabul qilgan. Bilbo va Frodoni buyuk safarlarga ilhomlantirgan, Moria tubsizligida Balrog bilan jangda halok boʻlib, Eru Ilúvatar inoyati bilan Oq Gandalf qiyofasida qayta tirilgan va Halqa Urushida Birlashgan Qirollik tiklanishiga boshchilik qilgan buyuk donishmand.",
+  "etymology": "Shimoliy insonlar tilida 'Gandalf' — gandr ('sehrli tayoq, hassa') va alfr ('elf') soʻzlaridan kelib chiqib, 'Hassali Elf' maʼnosini beradi. Sindarincha 'Mithrandir' — mith ('kulrang') va randir ('darbadar, ziyoratchi') soʻzlaridan tuzilgan. Asl ilohiy Quenya ismi 'Olórin' esa olor ('ravshan tush, ilhom, koʻngil koʻzi') tushunchasiga borib taqaladi.",
+  "biography_sections": [
+    {
+      "title": "Valinordagi hayot va Oʻrta-yerga joʻnatilish",
+      "content": "Olórin dunyo yaratilishidan avval Eru Ilúvatar fikridan yaralgan eng yuksak Maiardan biri edi. U Valinorda Manwë va Varda huzurida yashagan, shuningdek Nienna bogʻlarida sabr-toqat, achinish va hamdardlik fazilatlarini oʻrgangan. Tolkien oʻz asarlarida Olórinni Ainur orasida 'eng donishmandi' deb ataydi.\n\nUchinchi davrning taxminan 1000-yilida Oʻrta-yerda Sauron zulmati qayta bosh koʻtara boshlagach, Valar kengashi erkin xalqlarga yordam berish uchun besh nafar elchi — Istarini (Sehrgarlarni) joʻnatishga qaror qildi. Olórin dastlab oʻzini zaif hisoblab, Sauron qudratidan qoʻrqishini aytganida, Manwë unga aynan shu kamtarlik va ehtiyotkorlik sababli borishi shartligini uqtirdi.\n\nKulrang Bandargohlarga yetib kelganida, Círdan Kema-ustasi uning ichki ulugʻvorligini darhol sezdi va unga Uch Elflar Uzugining biri boʻlgan Naryani (Olov Uzugini) topshirdi. Naryaning xususiyati olov yoqish emas, balki sovuq tushkunlikka tushgan qalblarda umid va jasorat olovini almashtirish edi."
+    },
+    {
+      "title": "Erebor safari va Dol Guldur siri",
+      "content": "Uchinchi davrning 2850-yilida Gandalf Buyuk Yashil Oʻrmon (Mirkwood) janubidagi Dol Guldur qalʼasiga yashirincha kirib bordi. U yerdagi sirli 'Nekromant' (Qora Jodugar) aslida qayta tiklanayotgan Sauronning oʻzi ekanini fosh qildi. Qalʼa zindonida u aqldan ozgan Thráin II ni uchratib, undan Ereborning maxfiy eshigi kaliti va xaritasini qabul qilib oldi.\n\n2941-yilda u Thorin Oakenshield va Bilbo Bagginsni Erebor ekspeditsiyasiga undadi. Gandalfning bu harakati shunchaki xazina izlash emas, balki strategik uzoqni koʻra bilish edi: agar Sauron Shimoldagi Smaug ajdari bilan ittifoq tuzganida, Rivendell va Lorien ikki olov orasida qolib halok boʻlar edi. Safar Smaugning qulashi, Shimoliy yerlarning xalos boʻlishi va Bilbo tomonidan Yagona Uzukning topilishi bilan yakunlandi."
+    },
+    {
+      "title": "Uzuk Birodarligi, Balrog bilan duel va qayta tirilish",
+      "content": "Bilboning gʻaroyib uzugini koʻp yillar tekshirgan Gandalf, Minas Tirith arxivlarida Isildur bitiklarini oʻrganib, uning Yagona Qudrat Uzugi ekanini uzil-kesil isbotladi. Rivendellda Elrond Kengashida Uzuk Birodarligini tuzishda boshchilik qildi.\n\nMoria konlarida Gandalf qadimiy iblis — Durin Falakati (Moria Balrogi) bilan toʻqnashdi. Khazad-dûm koʻprigida 'Bu yerdan oʻtolmaysan!' deb hayqirib, koʻprikni parchaladi va maxluq bilan birga cheksiz tubsizlikka quladi. Zirakzigil choʻqqisidagi afsonaviy jangda Balrogni magʻlub etdi, ammo oʻz tanasi ham toliqib jon berdi. Uning ruhi vaqt va makondan tashqariga olinib, Eru Ilúvatarning bevosita amri bilan yangi buyuk qudrat sohibi — 'Oq Gandalf' sifatida Oʻrta-yerga qaytarildi."
+    },
+    {
+      "title": "Halqa Urushining intihosi va Gʻarbga qaytish",
+      "content": "Oq kiyimda qaytgan Gandalf Fangorn oʻrmonida Aragorn, Legolas va Gimli bilan birlashdi. Rohanda Qirol Théodenni Saruman va Gríma sehridan ozod qildi. Isengard qamalidan soʻng Sarumanning sehrgar hassasini sindirib, uni Kengashdan quvdi.\n\nMinas Tirith mudofaasida shahar darvozasi buzilgan dahshatli tunda Angmar Jodugar-shohi bilan yuzma-yuz turib dushmanning yurishini toʻxtatdi. Pelennor va Qora Darvoza janglarida erkin xalqlarni soʻnggi gʻalabaga yetakladi. Sauron qulagach, Aragorn II Elessarga Oliy Shoh toji kiydirildi. Oʻz ilohiy burchini toʻliq bajargan Gandalf Uchinchi davrning 3021-yilida Frodo, Bilbo, Elrond va Galadriel bilan birga Oq Kemada Boqiy Gʻarb tomon suzib ketdi."
+    },
+    {
+      "title": "Xarakter va axloqiy falsafa: Quvvat emas, balki qalb uygʻotuvchisi",
+      "content": "Gandalfning boshqa sehrgarlar (xususan Saruman)dan tub farqi uning hokimiyatga intilmaganligida edi. U odamlarni yoki elflarni oʻz irodasiga boʻysundirmadi; aksincha, ularning oʻzlaridagi yashirin qahramonlik va ezgulikni yuzaga chiqardi. Tolkien taʼkidlaganidek, Gandalf Oʻrta-yerda ilohiy inoyatning (grace) jonli vositachisi boʻlib xizmat qilgan. Uning oddiy xobbitlarga boʻlgan cheksiz mehri va ishonchi butun dunyo taqdirini hal qiluvchi buyuk omilga aylandi."
+    },
+    {
+      "title": "Meros va adabiy qiyos",
+      "content": "Jahon adabiyotida Gandalf donishmand yoʻlboshchi (arxetipik ustoz) timsolining choʻqqisi sanaladi. U skandinav mifologiyasidagi Odinning sayohatdagi qiyofasi (Vegtam) hamda afsonaviy Merlin siymosiga oʻxshasa-da, nasroniy teologiyasidagi qurbonlik, qayta tirilish va xizmatkorlik gʻoyalari bilan boyitilgan. Uchinchi davr tarixida u Oʻrta-yer xalqlariga berilgan eng buyuk himoyachi va najotkordir."
+    }
+  ],
+  "sources": [
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "The Council of Elrond",
+      "page": "239"
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "The White Rider",
+      "page": "488"
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "The Grey Havens",
+      "page": "1002"
+    },
+    {
+      "book_slug": "the-hobbit",
+      "chapter": "An Unexpected Party",
+      "page": "1"
+    },
+    {
+      "book_slug": "unfinished-tales",
+      "chapter": "The Istari",
+      "page": "388"
+    }
+  ],
+  "related_characters": [
+    "frodo-baggins",
+    "aragorn",
+    "bilbo-baggins",
+    "saruman",
+    "sauron",
+    "elrond",
+    "galadriel"
+  ],
+  "adaptations": [
+    {
+      "medium": "film",
+      "title": "The Lord of the Rings & The Hobbit Film Trilogies",
+      "creator": "Peter Jackson",
+      "year": 2001,
+      "divergence_notes": "Filmda Sir Ian McKellen gavdalantirgan Gandalf obrazi kitobdagi donishmandlik, olijanoblik va qudratni nihoyatda mukammal ifodalagan. Asosiy tafovut Minas Tirith qamalida: film kengaytirilgan talqinida Jodugar-shoh Gandalfning hassasini sindiradi, kitobda esa bunday sahna yo'q — ular tengma-teng to'qnashuv arafasida turganida Rohirrim karnaylari yangrab jang buriladi."
+    }
+  ],
+  "image": {
+    "src": "/images/characters/gandalf.webp",
+    "src_thumb": "/images/characters/gandalf-thumb.webp",
+    "alt": "Gandalf kulrang plashda, qoʻlida yogʻoch hassa va Narya uzugi bilan Rivendell ayvonida",
+    "caption": "Gandalf (Olórin) — Istari yetakchisi, Narya olov uzugi sohibi va Oq Kengash aʼzosi"
+  }
+}

@@ -1,0 +1,405 @@
+---
+import { getCollection, type CollectionEntry } from 'astro:content';
+import EntityLayout from '@/layouts/EntityLayout.astro';
+import { resolveEntityLink, resolveEntityLinks } from '@/utils/entity-resolver';
+
+export async function getStaticPaths() {
+  const events = await getCollection('events');
+  return events.map((event) => ({
+    params: { slug: event.data.id || event.id },
+    props: { event },
+  }));
+}
+
+interface Props {
+  event: CollectionEntry<'events'>;
+}
+
+const { event } = Astro.props;
+const data = event.data;
+
+const breadcrumbs = [
+  { label: 'Tarix va Xronologiya', href: '/tarix/' },
+  { label: data.title },
+];
+
+const eraLabels: Record<string, string> = {
+  ainur_musiqasi: 'Ainur Musiqasi Davri',
+  daraxtlar_davri: 'Valinor Daraxtlari Davri',
+  birinchi_davr: 'Birinchi Davr (Quyosh Yillari)',
+  ikkinchi_davr: 'Ikkinchi Davr (Númenor Davri)',
+  uchinchi_davr: 'Uchinchi Davr (Uzuk Urushi)',
+  tortinchi_davr: 'Toʻrtinchi Davr (Insonlar Davri)',
+};
+
+const resolvedLocation = data.location_id
+  ? resolveEntityLink(data.location_id, 'places')
+  : null;
+
+const resolvedCharacters = resolveEntityLinks(data.characters || [], 'characters');
+const resolvedPrev = data.preceding_event
+  ? resolveEntityLink(data.preceding_event, 'events')
+  : null;
+const resolvedNext = data.succeeding_event
+  ? resolveEntityLink(data.succeeding_event, 'events')
+  : null;
+
+const relatedGroups = [
+  {
+    title: 'Tarixiy Joylashuv',
+    items: resolvedLocation ? [resolvedLocation] : [],
+  },
+  {
+    title: 'Asosiy Qahramonlar',
+    items: resolvedCharacters,
+  },
+  {
+    title: 'Xronologik Ketma-ketlik',
+    items: [resolvedPrev, resolvedNext].filter((item): item is NonNullable<typeof item> => Boolean(item)),
+  },
+].filter((group) => group.items.length > 0);
+
+const crossLinkIds = [
+  ...(data.location_id ? [data.location_id] : []),
+  ...(data.characters || []),
+  ...(data.preceding_event ? [data.preceding_event] : []),
+  ...(data.succeeding_event ? [data.succeeding_event] : []),
+];
+const relatedItems = resolveEntityLinks(crossLinkIds);
+---
+
+<EntityLayout
+  title={data.title}
+  originalName={data.subtitle}
+  category={eraLabels[data.era] || data.era}
+  breadcrumbs={breadcrumbs}
+  textualStatus={data.textual_status}
+  sources={data.sources}
+  relatedItems={relatedItems}
+  relatedGroups={relatedGroups}
+  leadSummary={data.outcome}
+>
+  <div class="event-details">
+    <section class="event-summary-section">
+      <h2>Tarixiy Hodisa Tavsifi va Natijasi</h2>
+      <p class="outcome-text">
+        <strong>Oqibat va Tarixiy Burilish:</strong> {data.outcome}
+      </p>
+
+      {data.description_sections && data.description_sections.length > 0 && (
+        <div class="event-description-sections">
+          {data.description_sections.map((section) => (
+            <div class="event-section-block">
+              <h3>{section.title}</h3>
+              {section.content.split('\n\n').map((para) => (
+                <p>{para}</p>
+              ))}
+            </div>
+          ))}
+        </div>
+      )}
+
+      {resolvedCharacters.length > 0 && (
+        <div class="event-characters-block">
+          <h3>Asosiy Qahramonlar va Tarixiy Shaxslar</h3>
+          <div class="characters-pills">
+            {resolvedCharacters.map((char) => (
+              char.href ? (
+                <a href={char.href} class="character-pill">
+                  <span class="pill-dot" aria-hidden="true">✦</span>
+                  {char.name}
+                </a>
+              ) : (
+                <span class="character-pill unlinked">
+                  {char.name}
+                </span>
+              )
+            ))}
+          </div>
+        </div>
+      )}
+
+      {data.belligerents && (
+        <div class="belligerents-grid">
+          <div class="belligerent-side side-a">
+            <h3>Ittifoqchilar / Birinchi Tomon</h3>
+            <ul>
+              {data.belligerents.side_a.map((side) => (
+                <li>{side}</li>
+              ))}
+            </ul>
+          </div>
+          <div class="belligerent-side side-b">
+            <h3>Raqiblar / Ikkinchi Tomon</h3>
+            <ul>
+              {data.belligerents.side_b.map((side) => (
+                <li>{side}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      )}
+
+      {(data.preceding_event || data.succeeding_event) && (
+        <div class="event-sequence">
+          <h3>Xronologik Ketma-ketlik</h3>
+          <div class="sequence-nav">
+            {data.preceding_event && (
+              <div class="seq-item prev-item">
+                <span class="seq-label">Avvalgi hodisa:</span>
+                <span class="seq-val">
+                  {resolvedPrev?.href ? (
+                    <a href={resolvedPrev.href} class="seq-link">{resolvedPrev.name}</a>
+                  ) : (
+                    <span>{resolvedPrev?.name || data.preceding_event}</span>
+                  )}
+                </span>
+              </div>
+            )}
+            {data.succeeding_event && (
+              <div class="seq-item next-item">
+                <span class="seq-label">Keyingi hodisa:</span>
+                <span class="seq-val">
+                  {resolvedNext?.href ? (
+                    <a href={resolvedNext.href} class="seq-link">{resolvedNext.name}</a>
+                  ) : (
+                    <span>{resolvedNext?.name || data.succeeding_event}</span>
+                  )}
+                </span>
+              </div>
+            )}
+          </div>
+        </div>
+      )}
+    </section>
+  </div>
+
+  <div slot="metadata" class="event-metadata">
+    <div class="meta-row">
+      <span class="meta-label">Davr:</span>
+      <span class="meta-val">{eraLabels[data.era] || data.era}</span>
+    </div>
+    <div class="meta-row">
+      <span class="meta-label">Xronologik sana:</span>
+      <span class="meta-val">{data.year_text}</span>
+    </div>
+    {resolvedLocation && (
+      <div class="meta-row">
+        <span class="meta-label">Tarixiy Joylashuv:</span>
+        <span class="meta-val">
+          {resolvedLocation.href ? (
+            <a href={resolvedLocation.href} class="meta-link">{resolvedLocation.name}</a>
+          ) : (
+            <span>{resolvedLocation.name}</span>
+          )}
+        </span>
+      </div>
+    )}
+  </div>
+</EntityLayout>
+
+<style>
+  .event-details {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .outcome-text {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+  }
+
+  .event-description-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+    margin-bottom: 1.75rem;
+  }
+
+  .event-section-block h3 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--color-accent-gold-text);
+    margin: 0 0 0.5rem 0;
+  }
+
+  .event-section-block p {
+    font-size: 1rem;
+    line-height: 1.75;
+    color: var(--color-text-primary);
+    margin-bottom: 0.85rem;
+  }
+
+  .event-characters-block {
+    margin-block: 1.5rem;
+    padding: 1.25rem;
+    background-color: var(--color-bg-elevated);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 3px;
+    box-shadow: var(--shadow-sm);
+  }
+
+  .event-characters-block h3 {
+    font-size: 0.8125rem;
+    font-weight: 700;
+    color: var(--color-accent-gold-text);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.875rem;
+  }
+
+  .characters-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .character-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.3rem 0.65rem;
+    font-family: var(--font-sans-ui);
+    font-size: 0.8125rem;
+    font-weight: 500;
+    color: var(--color-text-primary);
+    background-color: var(--color-bg-subtle);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 3px;
+    text-decoration: none;
+    transition: border-color 0.15s ease, color 0.15s ease, background-color 0.15s ease;
+  }
+
+  .character-pill:hover {
+    border-color: var(--color-border-gold);
+    color: var(--color-accent-gold-text);
+    background-color: var(--color-accent-gold-subtle);
+  }
+
+  .pill-dot {
+    color: var(--color-accent-gold-text);
+    font-size: 0.65rem;
+  }
+
+  .character-pill.unlinked {
+    color: var(--color-text-muted);
+    cursor: default;
+  }
+
+  .belligerents-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-block: 1.5rem;
+    padding: 1.25rem;
+    background-color: var(--color-bg-subtle);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 4px;
+  }
+
+  @media (min-width: 640px) {
+    .belligerents-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .belligerent-side h3 {
+    font-size: 0.9375rem;
+    font-weight: 700;
+    color: var(--color-text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-bottom: 0.75rem;
+  }
+
+  .belligerent-side ul {
+    list-style: square;
+    padding-left: 1.25rem;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+
+  .event-sequence {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--color-border-subtle);
+  }
+
+  .sequence-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 0.75rem;
+  }
+
+  @media (min-width: 640px) {
+    .sequence-nav {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  .seq-item {
+    font-family: var(--font-sans-ui);
+    font-size: 0.875rem;
+  }
+
+  .seq-label {
+    color: var(--color-text-muted);
+    display: block;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-bottom: 0.2rem;
+  }
+
+  .seq-val {
+    color: var(--color-text-primary);
+    font-weight: 500;
+  }
+
+  .seq-link {
+    color: var(--color-accent-gold);
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .seq-link:hover {
+    text-decoration: underline;
+  }
+
+  .meta-row {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    margin-bottom: 0.75rem;
+    font-family: var(--font-sans-ui);
+    font-size: 0.875rem;
+  }
+
+  .meta-label {
+    color: var(--color-text-muted);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  .meta-val {
+    color: var(--color-text-primary);
+    font-weight: 500;
+  }
+
+  .meta-link {
+    color: var(--color-accent-gold);
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .meta-link:hover {
+    text-decoration: underline;
+  }
+</style>

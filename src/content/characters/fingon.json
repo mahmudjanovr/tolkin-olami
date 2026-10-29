@@ -1,0 +1,80 @@
+{
+  "id": "fingon",
+  "name": "Fingon Jasur",
+  "original_name": "Findekáno",
+  "father_name": "Fingolfin",
+  "mother_name": "Anairë",
+  "children": [
+    "Ereinion Gil-galad (Silmarillion 1977 anʼanasiga koʻra)"
+  ],
+  "aliases": [
+    "Findekáno (Quenya: Mahoratli Qoʻmondon)",
+    "Fingon the Valiant (Jasur Fingon)"
+  ],
+  "titles": [
+    "Surgun qilingan Noldor Oliy Qiroli",
+    "Dor-lómin va Hithlum Shahzodasi"
+  ],
+  "race": "elflar",
+  "sub_race": "Noldor",
+  "culture": "Tirion / Hithlum",
+  "birth_year": "Daraxtlar davri YT 1260",
+  "death_year": "Birinchi davr 472 (Nirnaeth Arnoediadda Gothmog tomonidan oʻldirilgan)",
+  "house_id": "finwe-xonadoni",
+  "weapons_and_artifacts": [
+    "Hithlumning Oltin Yoyi va Oltin Tasmalari",
+    "Kumush va koʻk qirollik bayrogʻi"
+  ],
+  "primary_locations": ["mithrim", "tirion", "alqualonde", "beleriand"],
+  "textual_status": "posthumous_edited",
+  "uncertainty_notes": "1977-yilgi 'The Silmarillion' matnida Gil-galad Fingonning oʻgʻli sifatida berilgan. Biroq Christopher Tolkien keyinchalik 'The Peoples of Middle-earth' (HoME XII) jildida bu oʻzining tahririy qarori boʻlganini, otasining kechki yozuvlarida esa Fingon uylanmagan va Gil-galad Orodrethning oʻgʻli boʻlganini tushuntirgan.",
+  "summary": "Fingolfinning toʻngʻich oʻgʻli va Turgonning akasi, Noldorning eng mard va sodiq shahzodasi. Thangorodrim qoyasida osib qoʻyilgan doʻsti Maedhrosni yolgʻiz oʻzi qutqarib, Noldor xonadonlari oʻrtasidagi adovatga barham bergan hamda otasining oʻlimidan soʻng Noldor Oliy Qiroli sifatida Nirnaeth Arnoediad jangida qahramonlarcha halok boʻlgan sarkarda.",
+  "etymology": "Sindarin tilidagi 'Fingon' Quenya tilidagi 'Findekáno' ismidan olingan boʻlib, findë ('soch oʻrimi') va káno ('qoʻmondon, qahramon') soʻzlaridan tuzilgan; u sochlariga oltin tasmalar oʻrab yurgani bilan mashhur edi.",
+  "biography_sections": [
+    {
+      "title": "Thangorodrim jasorati va Maedhrosning qutqarilishi",
+      "content": "Fingon Valinorda Fëanorning toʻngʻich oʻgʻli Maedhros bilan qalin doʻst edi. Fëanor Losgarda kemalarni yoqib, Fingolfin xalqini tashlab ketganiga qaramay, Fingon Mithrimga kelgach, Maedhros Morgoth tomonidan Thangorodrim qoyasiga oʻng qoʻlidan osib qoʻyilganini eshitdi va uni qutqarishga yolgʻiz yoʻl oldi.\n\nQoyaga chiqish yoʻlini topa olmagan Fingon arfa chalib, Valinor qoʻshigʻini kuyladi; Maedhros unga ovoz berdi. Maedhrosga yetib bora olmagach va doʻsti uni oʻldirib azobdan qutqarishni yolvorib soʻraganida, Fingon koʻzida yosh bilan kamonini tortib, Manwëga duo qildi. Shu on Burgutlar Shohi Thorondor osmondan tushib, Fingonni qoyaga koʻtardi; Fingon Maedhrosning bilagini kesib, uni qutqardi. Ushbu jasorat Fëanor va Fingolfin xonadonlarini yarashtirdi."
+    },
+    {
+      "title": "Hithlum himoyasi va Oliy Qirollik",
+      "content": "Fingolfin Hithlum hukmdori boʻlganida, Fingon Dor-lómin viloyatini boshqardi. Yosh ajdaho Glaurung ilk bor Angbanddan chiqqanida, Fingon otliq kamonchilari bilan uni oʻq yomgʻiriga tutib, orqaga qochishga majbur qildi.\n\nDagor Bragollach jangidan soʻng otasi Fingolfin Morgoth bilan yakkama-yakka jangda halok boʻlgach, Fingon chuqur qaygʻu ichida Noldor Oliy Qiroli tojini kiydi va Hithlum chegaralarini Morgoth hujumlaridan himoya qildi."
+    },
+    {
+      "title": "Nirnaeth Arnoediad va Gothmog bilan jang",
+      "content": "Birinchi davrning 472-yilida Fingon va Maedhros Morgothni yakson qilish uchun Elflar, Insonlar va Mittilarning buyuk ittifoqini tuzdilar. Jang maydonida Turgonning kutilmaganda Gondolin qoʻshini bilan yetib kelganini koʻrgan Fingon quvonchdan: 'Utúlieʼn aurë! Kun keldi!' deb hayqirdi.\n\nBiroq sharqlik insonlar xiyonati tufayli ittifoq qurshovda qoldi. Fingon Balroglar sardori Gothmog bilan yakkama-yakka jangga kirishdi; ammo ortdan boshqa bir Balrog uni olovli qamchi bilan bogʻlab oldi va Gothmog bolta bilan Fingonning dubulgʻasini yorib oʻldirdi. Uning kumush-koʻk bayrogʻi qon koʻlmagiga botirildi."
+    }
+  ],
+  "sources": [
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of the Return of the Noldor",
+      "page": "109"
+    },
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of the Ruin of Beleriand and the Fall of Fingolfin",
+      "page": "154"
+    },
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of the Fifth Battle: Nirnaeth Arnoediad",
+      "page": "192"
+    },
+    {
+      "book_slug": "the-children-of-hurin",
+      "chapter": "The Battle of Unnumbered Tears",
+      "page": "56"
+    }
+  ],
+  "related_characters": [
+    "fingolfin",
+    "turgon",
+    "maedhros",
+    "gil-galad",
+    "hurin",
+    "glaurung",
+    "melkor",
+    "manwe"
+  ],
+  "adaptations": []
+}

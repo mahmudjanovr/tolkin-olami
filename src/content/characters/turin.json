@@ -1,0 +1,95 @@
+{
+  "id": "turin",
+  "name": "Túrin Turambar",
+  "original_name": "Túrin",
+  "father_name": "Húrin Thalion (Bardoshli)",
+  "mother_name": "Morwen Eledhwen (Elf-chehra)",
+  "spouse": "Níniel (aslida singlisi Nienor)",
+  "children": [],
+  "aliases": [
+    "Neithan (Haqsizlangan)",
+    "Gorthol (Dahshatli Dubulgʻa)",
+    "Agarwaen (Qonli)",
+    "Mormegil (Qora Qilich)",
+    "Turambar (Taqdir Hukmdori)",
+    "Oʻrmon Yovvoyisi"
+  ],
+  "titles": [
+    "Dor-lómin Amiri",
+    "Nargothrond Sarkardasi",
+    "Brethil Bahodiri"
+  ],
+  "race": "insonlar",
+  "sub_race": "Edain",
+  "culture": "Hador xonadoni",
+  "birth_year": "Birinchi davr 464",
+  "death_year": "Birinchi davr 499",
+  "house_id": "edain-va-yarim-elflar",
+  "weapons_and_artifacts": [
+    "Gurthang (Qora qilich)",
+    "Hador Ajdaho Dubulgʻasi"
+  ],
+  "primary_locations": ["nargothrond", "menegroth"],
+  "textual_status": "posthumous_edited",
+  "uncertainty_notes": "Nashr va matn tarixi: Túrin dostoni 'The Children of Húrin' (2007) va 'Unfinished Tales' (1980) asarlarida batafsil tiklangan. Tolkienning dastlabki kosmologik qoralamalarida (Dagor Dagorath, HoME V va HoME XI) oxirat jangida aynan Túrin Gurthang qilichi bilan Morgothning qalbini teshib, butkul yo'q qilishi bashorat qilingan. Kechki tahrirlarda bu oxirat bashorati rasmiy kanondan chetlatilgan bo'lsa-da, Túrinning fojiaviy buyukligi saqlanib qolgan.",
+  "summary": "Húrin Thalion va Morwen Eledhwenning oʻgʻli, Hador xonadonining eng qahramonona va eng fojiali bahodiri. Morgothning Húrin avlodiga yogʻdirgan qora laʼnati ostida yashab, oʻzining shon-sharafi va oʻjar gʻururi bilan Nargothrond mudofaasini boshqargan, Glaurung ajdarini oʻldirgan, ammo mashʼum qismat fosh boʻlgach, oʻz qilichi Gurthang tigʻida halok boʻlgan mard jangchi.",
+  "etymology": "Sindarin va qadimgi tillarda 'Túrin' — tur ('iroda, qudrat, gʻoliblik') oʻzagidan olingan. 'Turambar' esa tur ('hukmron') va ambar ('taqdir') soʻzlaridan tuzilgan boʻlib, 'Taqdir Hukmdori' (Master of Doom) degan maʼnoni anglatadi. Eol soxtalagan va Belegdan qolgan qora meteorit qilichi tufayli Nargothrondda unga 'Mormegil' ('Qora Qilich') nomi berilgan.",
+  "biography_sections": [
+    {
+      "title": "Dor-lómindan Doriathgacha: yetimlik va Thingol homiyligi",
+      "content": "Túrin Birinchi davrning 464-yilida Dor-lómin oʻlkasida Húrin Thalion va Morwen xonadonida dunyoga keldi. Sanoqsiz Koʻz-yoshlar Jangida (Nirnaeth Arnoediad) Húrin Morgoth tomonidan asir olingach, Morwen oʻzining 8 yoshli oʻgʻli Túrinni orqlar zulmidan asrash uchun maxfiy tarzda Doriathga yubordi.\n\nQirol Thingol doʻsti Húringa hurmat yuzasidan bolani asrab oldi va oʻz oʻgʻlidek tarbiyaladi. Túrin ulgʻaygach, Doriathning mohir kamonchisi Beleg Cúthalion bilan doʻstlashdi va shimoliy chegaralarda orqlarga qarshi qahramonlarcha jang qildi. Biroq Thingolning maslahatchisi — takabbur Saeros Túrinni haqorat qilgach, ular oʻrtasida toʻqnashuv yuz berdi. Saeros qochayotib qoyadan yiqilib halok boʻldi. Túrin adolatsiz jazo olishdan qoʻrqib, Doriathni tark etdi va oʻrmonlarga qochib ketdi."
+    },
+    {
+      "title": "Qaroqchilar yetakchisi, Amon Rûdh va Belegning fojiali qatl etilishi",
+      "content": "Túrin Teiglin oʻrmonlarida qaroqchilar toʻdasi (Gaurwaith)ga qoʻshildi va oʻzini Neithan ('Haqsizlangan') deb atadi. Tez orada u toʻdaning sardoriga aylandi. Mitti Mîm xiyonati bilan ular Amon Rûdh tepaligiga joylashdilar. Túrin oʻzining ajdodlari faxri boʻlgan Hador Ajdaho Dubulgʻasini kiyib, 'Gorthol' ('Dahshatli Dubulgʻa') nomi bilan dovruq qozondi.\n\nBeleg uni qidirib topdi va unga Thingolning afv maktubini hamda Eol soxtalagan qora qilich — Anglachelni keltirdi. Biroq Mîm orqlarga ularning qarorgohini sotdi; qaroqchilar qirib tashlandi, Túrin esa zanjirband etildi. Beleg uni qutqarish uchun Angband yoʻlida orqlarni taʼqib qildi va kechasi uxlayotgan dushmandan Túrinni yashirincha olib chiqdi. Qorongʻida kishanlarni kesayotganda, qilich tigʻi Túrinning oyogʻiga botdi. Uygʻonib ketgan Túrin qorongʻuda uni orq deb oʻylab, qilichni tortib oldi va oʻzining eng yaqin doʻsti Belegni oʻldirib qoʻydi. Chaqmoq chaqqanda oʻz qilmishini koʻrgan Túrin dahshatli motamga botdi va uzoq vaqt aqlini yoʻqotib yurdi."
+    },
+    {
+      "title": "Nargothronddagi Mormegil va shaharning qulashi",
+      "content": "Gwindor hamrohligida Túrin Nargothrondning yerosti shohligiga keldi. U oʻz ismini yashirib, qora qilichi sharafiga 'Mormegil' ('Qora Qilich') deb nomlandi; qilichni qayta soxtalatib, unga 'Gurthang' ('Oʻlim Temiri') deb nom berdi. U Qirol Orodrethning bosh sarkardasiga aylandi va malika Finduilasning qalbini zabt etdi.\n\nTúrin Nargothrond elflarining qadimiy yashirinish taktikasini oʻzgartirib, ularni ochiq jangga chaqirdi va Narog daryosi ustiga bahaybat tosh koʻprik qurdirdi. Suvlar Hukmdori Vala Ulmo elchilar orqali koʻprikni buzib tashlashni ogohlantirgan boʻlsa-da, takabbur Túrin bunga quloq solmadi. Birinchi davrning 495-yilida Morgoth Glaurung boshchiligidagi bahaybat qoʻshinni yoʻlladi. Tumhalad jangida Nargothrond butkul yanchildi, Orodreth va Gwindor halok boʻldi.\n\nGlaurung tosh koʻprikdan oʻtib, Nargothrondni vayron qildi. U Túrinni oʻzining afsungar nigohlari bilan tosh qotirdi va unga yolgʻon soʻzlab, onasi va singlisi Dor-lóminda azob chekayotganini aytdi. Túrin asir olingan Finduilasni qutqarish oʻrniga Dor-lóminga qochdi."
+    },
+    {
+      "title": "Brethil oʻrmoni va Níniel bilan fojiali nikoh",
+      "content": "Dor-lómin boʻshab qolganini koʻrgan Túrin oʻz xatosini tushundi va Finduilasni qidirib Brethilga keldi, biroq uning qabri — Haudh-en-Elleth tepaligiga duch keldi. Shunda u oʻtmishini butkul unutishga qaror qilib, oʻzini 'Turambar' ('Taqdir Hukmdori') deb atadi va Brethil insonlari orasida yashay boshladi.\n\nKunlarning birida Finduilas qabri yonida u yalangʻoch, xotirasidan ayrilgan va yigʻlayotgan yosh qizni topib oldi. U qizga 'Níniel' ('Koʻz-yoshli qiz') deb nom berdi va unga mehr qoʻydi. Ular turmush qurishdi va Níniel homilador boʻldi. Biroq Túrin bilmasdiki, bu qiz Glaurung sehri bilan xotirasini yoʻqotgan uning oʻz tugʻishgan singlisi Nienor edi."
+    },
+    {
+      "title": "Glaurungning qatl etilishi va qora qilichdagi intiqom",
+      "content": "Birinchi davrning 499-yilida Glaurung Brethil tomon yurish boshladi. Turambar ikki sadoqatli jangchi bilan Cabed-en-Aras darasiga pistirma qoʻydi. Bahaybat ajdar daradan oʻrmalab oʻtayotganida, Túrin pastdan turib Gurthang qilichini uning qorniga sanchdi. Ajdarning qora qoni Túrinning qoʻlini kuydirdi va u hushidan ketdi.\n\nNíniel uni qidirib yetib kelganida, oʻlim talvasasidagi Glaurung koʻzini ochib, unga haqiqatni aytdi: 'Salom, Húrin qizi Nienor... sening ering — oʻz tugʻishgan akang Túrindan boshqa hech kim emas!'. Dahshatdan hushini yoʻqotgan Nienor oʻzini Cabed-en-Arasning joʻshqin daryosiga tashlab halok boʻldi. Oʻziga kelgan Túrin bu xabarni Brethil yetakchisi Brandirdan eshitgach, gʻazabda uni oʻldirib qoʻydi.\n\nBiroq Elflar malikasi Mablung unga mashʼum haqiqatni tasdiqlaganida, Túrinning butun vujudi larzaga keldi. U ajdar oʻldirilgan daraga qaytib bordi va oʻzining Gurthang qilichini yerga tirab: 'Sen oʻz sohibing qonini ichasanmi?', deb soʻradi. Qilich sovuq ovoz bilan: 'Ha, oʻldirilgan Beleg va Brandir qoni uchun senikini ham ichaman!', deb javob berdi. Túrin oʻzini qilich tigʻiga tashladi va oʻz joniga qasd qildi. Elflar va insonlar uni buyuk tosh tepalik ostiga dafn etib, uning qabriga: 'TÚRIN TURAMBAR DAGNIR GLAURUNGA' deb yozib qoʻydilar."
+    }
+  ],
+  "image": {
+    "src": "/images/characters/turin.webp",
+    "src_thumb": "/images/characters/turin-thumb.webp",
+    "alt": "Túrin Turambar qora sovutda, Gurthang qilichi va Dor-lómin Ajdar dubulgʻasi yonida",
+    "caption": "Túrin Turambar — Húrin oʻgʻli, qora qilich Gurthang va Dor-lómin Ajdar dubulgʻasi bilan"
+  },
+  "sources": [
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of Túrin Turambar",
+      "page": "198"
+    },
+    {
+      "book_slug": "unfinished-tales",
+      "chapter": "Narn i Chîn Húrin",
+      "page": "57"
+    },
+    {
+      "book_slug": "the-children-of-hurin",
+      "chapter": "The Childhood of Túrin va The Death of Túrin",
+      "page": "33"
+    }
+  ],
+  "related_characters": [
+    "hurin",
+    "morwen",
+    "nienor",
+    "beleg",
+    "glaurung",
+    "thingol",
+    "melian",
+    "ulmo",
+    "melkor",
+    "beren"
+  ],
+  "adaptations": []
+}

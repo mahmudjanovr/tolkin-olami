@@ -1,0 +1,64 @@
+{
+  "id": "nienor",
+  "name": "Niënor Níniel",
+  "original_name": "Niënor",
+  "father_name": "Húrin Thalion",
+  "mother_name": "Morwen Eledhwen",
+  "spouse": "Túrin Turambar (xotirasi oʻchirilgan holda bilmasdan)",
+  "children": [],
+  "aliases": [
+    "Níniel (Sindarin: Koʻz Yoshlari Qizi — Túrin bergan ism)",
+    "Niënor (Motam)"
+  ],
+  "titles": [
+    "Dor-lómin Qizi"
+  ],
+  "race": "insonlar",
+  "sub_race": "Edain (Hador va Bëor xonadonlari)",
+  "culture": "Dor-lómin / Doriath / Brethil",
+  "birth_year": "Birinchi davr 473",
+  "death_year": "Birinchi davr 499 (Cabed-en-Aras darasidan Teiglin daryosiga oʻzini tashlagan)",
+  "house_id": "edain-va-yarim-elflar",
+  "weapons_and_artifacts": [],
+  "primary_locations": ["menegroth", "doriath", "nargothrond", "beleriand"],
+  "textual_status": "posthumous_edited",
+  "summary": "Húrin Thalion va Morwen Eledhwenning kenja qizi, Túrin Turambarning singlisi. Nirnaeth Arnoediad motami kunlarida tugʻilgan, ajdaho Glaurungning koʻz sehri tufayli butun oʻtmish xotirasi oʻchirilgan va Brethil oʻrmonida oʻz akasi Túrinni tanimay turmushga chiqqan, haqiqat ochilgach esa daryoga oʻzini tashlagan fojiaviy qahramon.",
+  "etymology": "Sindarin tilida 'Niënor' — 'Motam, Qaygʻu' maʼnosini anglatadi. Xotirasi yoʻqolgach Túrin unga bergan 'Níniel' ismi esa nîn ('koʻz yoshi') va -iel ('qiz') soʻzlaridan boʻlib, 'Koʻz Yoshlari Qizi' deganidir.",
+  "biography_sections": [
+    {
+      "title": "Doriathda ulgʻayish va Glaurungning xotirani oʻchirish sehri",
+      "content": "Niënor otasi Húrin asir tushganidan va akasi Túrin Doriathga ketganidan soʻng Dor-lóminda tugʻildi, shu sababli u akasining yuzini hech qachon koʻrmagan edi. Onasi Morwen bilan Doriathga kelib, oltin sochli va mard qiz boʻlib voyaga yetdi.\n\nMorwen Túrinni qidirib Nargothrond tomon joʻnaganida, Niënor onasini yolgʻiz qoldirmaslik uchun Mablung qoʻriqchilari orasiga yashirincha qoʻshilib bordi. Amon Ethir tepaligida ajdaho Glaurung tuman koʻtarib, Niënor bilan yuzma-yuz keldi. Ajdaho oʻzining dahshatli ilon koʻzlari bilan Niënorga tikilib, uning ongiga zulmat va unutish afsunini soldi: qiz oʻz ismini ham, onasini ham, hatto gapirishni ham unutib qoʻydi."
+    },
+    {
+      "title": "Níniel — Brethildagi baxt va Cabed-en-Aras halokati",
+      "content": "Yomgʻir va boʻronda Brethil oʻrmoniga qochib kelib, Haudh-en-Elleth tepaligida hushsiz yotgan qizni 'Turambar' nomi bilan yashayotgan Túrin topib oldi. Qiz oʻz ismini eslay olmay yigʻlagani uchun Túrin uni 'Níniel' deb atadi. Ular bir-birlarining aka-singil ekanliklaridan mutlaqo bexabar holda sevishib, turmush qurdilar.\n\nGlaurung Brethilga hujum qilib, Túrin ajdahoning qorniga Gurthang qilichini sanchib hushidan ketganida, homilador Níniel uni qidirib Cabed-en-Aras darasiga keldi. Jon berayotgan Glaurung soʻnggi bor koʻzlarini ochib, Nínielga haqiqatni — yonida yotgan Turambar uning tugʻishgan akasi Túrin ekanini aytdi va ajdahoning oʻlimi bilan xotira sehri tarqaldi. Dahshatdan aqldan ozgan Niënor: 'Alvido, ey ikki karra suyukli zot! A Túrindo Turambar turún' ambartanen!' deb hayqirgancha, oʻzini Teiglin daryosining quturgan toʻlqinlariga tashlab halok boʻldi."
+    }
+  ],
+  "sources": [
+    {
+      "book_slug": "the-children-of-hurin",
+      "chapter": "The Coming of Níniel & The Death of Glaurung",
+      "page": "204"
+    },
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of Túrin Turambar",
+      "page": "217"
+    },
+    {
+      "book_slug": "unfinished-tales",
+      "chapter": "Narn i Hîn Húrin",
+      "page": "125"
+    }
+  ],
+  "related_characters": [
+    "turin",
+    "hurin",
+    "morwen",
+    "glaurung",
+    "thingol",
+    "melian",
+    "melkor"
+  ],
+  "adaptations": []
+}

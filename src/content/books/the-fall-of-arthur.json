@@ -1,0 +1,62 @@
+{
+  "id": "the-fall-of-arthur",
+  "title_uz": "Arturning Qulashi",
+  "title_original": "The Fall of Arthur",
+  "aliases": [
+    "Arturning Qulashi",
+    "The Fall of Arthur",
+    "Qirol Artur Dostoni",
+    "Tolkien Arturi"
+  ],
+  "publication_year": 2013,
+  "publisher": "HarperCollins",
+  "category": "posthumous_reconstructed",
+  "editor": "Christopher Tolkien",
+  "isbn": "978-0-00-748994-7",
+  "cover_image": {
+    "src": "/images/books/the-fall-of-arthur.webp",
+    "alt": "Arturning Qulashi birinchi nashri original changqopi (HarperCollins, 2013) — oʻrta asr tosh gravyurasi asosidagi qirol Arthur va otliq ritsarlar tasviri",
+    "edition_title": "First Edition (HarperCollins, 2013)",
+    "publisher": "HarperCollins",
+    "year": 2013,
+    "isbn": "978-0-00-748994-7",
+    "artist": "HarperCollins Editorial",
+    "source": "HarperCollins / British Library"
+  },
+  "synopsis": "«Arturning Qulashi» (The Fall of Arthur) — J.R.R. Tolkienning qadimgi alliterativ vaznda (Old English alliterative meter) yozilgan, ammo tugallanmay qolgan eng yirik ingliz epik dostoni. 1930-yillarda yozilib, 2013-yilda Christopher Tolkien tomonidan toʻliq matnshunoslik sharhlari bilan chop etilgan. Asar fransuzcha saroy ishqiy romanlari (Courtly Romance) taʼsiridan xoli holda, afsonaviy qirol Arthurni qadimgi brit va anglo-sakson jangovar dostonlari anʼanasida qayta tasvirlaydi. Unda Arthurning sharqdagi saksonlarga qarshi yurishi, jiyani Mordredning taxtni egallab olishi, Guinevere vasvasasi va Lancelotning fojiaviy dardi hikoya qilinadi.",
+  "detailed_sections": [
+    {
+      "title": "Alliterativ qayta tiklanish va asarning gʻoyasi",
+      "content": "Tolkien ingliz adabiyotining eng mashhur mifologik sikli — Qirol Arthur afsonasiga oʻzgacha yondashdi. U Thomas Malorining «Le Morte d'Arthur» kitobidagi kechki fransuzcha sentimentallik va saroy qoidalarini chetga surib, asarni qadimgi «Beowulf» davridagi qattiqqoʻl, vazmin va viqorli alliterativ vaznga koʻchirdi. Doston deyarli ming misrani tashkil etib, beshta kantoga boʻlingan. Bu Tolkienning milliy ingliz qahramonlik dostonini yaratishdagi eng dadil va jiddiy sheʼriy tajribasi edi."
+    },
+    {
+      "title": "Doston syujeti: Sharqiy yurish va Mordred fitnasi",
+      "content": "Doston Arthur va uning eng sodiq sarkardasi Sir Gawainning dengiz ortiga, sakson va butparast qabilalarga qarshi sharqqa («Mirkwood» deb atalgan qorongʻu oʻrmonlar sari) qilgan buyuk harbiy yurishi bilan boshlanadi. Qirol uzoqda ekanligida, uning noibi qilib qoldirilgan sotqin Mordred hokimiyatni tortib oladi. Mordred nafaqat taxtni, balki malika Guinevereni ham zoʻrlik bilan oʻziga xotin qilishga intiladi. Guinevere Camelotdan qochib, oʻzining oʻtmishdagi xatolari — Lancelot bilan nojoʻya muhabbati qirollikning parchalanishiga sabab boʻlayotganini anglab, chuqur iztirob chekadi."
+    },
+    {
+      "title": "Lancelot fojiasi va Christopher Tolkienning rekonstruksiyasi",
+      "content": "Tolkien dostonni Camlann jangiga yetkazmasdan toʻxtatgan boʻlsa-da, uning qoralamalarida doston qanday tugashi kerakligi batafsil saqlanib qolgan. Arthur vataniga qaytib keladi va Dover sohilida dahshatli jang boʻladi. Lancelot dengiz ortidagi Benwick qasrida oʻz gunohlaridan pushaymon boʻlib yotadi; u Arthurni qutqarish uchun shoshiladi, ammo juda kech yetib keladi. Christopher Tolkien kitobning ikkinchi yarmida otasining barcha rejalari, qoralamalari va manbalarini (ayniqsa XIV asr alliterativ «Morte Arthure» dostonini) sinchiklab tahlil qilib, dostonning kutilgan yakunini ilmiy rekonstruksiya qiladi."
+    },
+    {
+      "title": "«The Silmarillion» bilan tematik va poetik bogʻliqlik",
+      "content": "Christopher Tolkien taʼkidlaganidek, «The Fall of Arthur» dostoni Tolkienning oʻz Oʻrta-yer afsonalari, xususan Númenorning qulashi va Eärendil safari dostonlari bilan bir vaqtda yozilgan. Undagi dengiz tasvirlari, qadimgi oʻlkalarning gʻarq boʻlishi va qahramonlarning orqaga qaytmas yoʻqotish tuygʻusi «Silmarillion» bilan bir xil maʼnaviy ildizga ega. Ushbu nashr Tolkienning alliterativ sheʼriyat boʻyicha XX asrdagi eng buyuk virtuoz boʻlganini yana bir bor tasdiqlaydi."
+    }
+  ],
+  "key_themes": [
+    "Alliteratsion qadimiy ingliz vazni",
+    "Xiyonat, fojia va yoʻqolgan sivilizatsiya",
+    "Ritsarlik or-nomusi va qatʼiyat"
+  ],
+  "uzbek_editions": [
+    {
+      "title": "Arturning Qulashi",
+      "translator": "Tahririyat",
+      "publisher": "Nashrga tayyorlanmoqda",
+      "year": 2026,
+      "format": "Alliteratsion doston",
+      "notes": "Oʻzbek tilida nashr etilmagan.",
+      "status": "untranslated"
+    }
+  ],
+  "translation_status_summary": "Oʻzbek tilida toʻliq nashr etilmagan (untranslated)."
+}

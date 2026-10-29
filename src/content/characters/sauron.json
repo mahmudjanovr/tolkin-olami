@@ -1,0 +1,119 @@
+{
+  "id": "sauron",
+  "name": "Sauron",
+  "original_name": "Mairon",
+  "aliases": [
+    "Annatar (Tuhfalar Hukmdori)",
+    "Gorthaur (Dahshatli)",
+    "Artano (Oliy Usta)",
+    "Aulendil (Aulë xizmatkori)",
+    "Nekromant (Qora Jodugar)",
+    "Qora Hukmdor",
+    "Halqalar Sohibi"
+  ],
+  "titles": [
+    "Mordor Hukmdori",
+    "Barad-dûr Qora Minorasi Sohibi",
+    "Yagona Uzuk Yaratuvchisi",
+    "Oʻrta-yerning Qora Hukmdori"
+  ],
+  "race": "ainur",
+  "sub_race": "Maia",
+  "culture": "Aulë Maiari / Angband / Mordor",
+  "birth_year": "Dunyodan avval (Ainur Musiqasi)",
+  "death_year": "Uchinchi davr 3019 (ruhiy quvvati batamom soʻnib, zaif sharpaga aylangan)",
+  "weapons_and_artifacts": [
+    "Yagona Uzuk (Barcha Qudrat Uzuklarini boʻysundiruvchi Hukm Uzugi)",
+    "Barad-dûr qora istehkomi",
+    "Morgul pichogʻi"
+  ],
+  "primary_locations": [
+    "barad-dur",
+    "orodruin",
+    "morannon"
+  ],
+  "textual_status": "author_published",
+  "uncertainty_notes": "Tolkien 'Morgoth's Ring' (HoME X) va maktublarida Sauronning Morgothdan tub farqini tahlil qilgan: Morgoth butun moddiy olam va mavjudotni yoʻq qilishga, parchalashga uringan boʻlsa, Sauron oʻz mohiyatiga koʻra mutlaq tartib, rejalashtirish va mukammal boshqaruvga intilgan. U oʻzini xalqlarni 'qayta tartibga soluvchi' yagona qudrat deb bilgan, biroq bu maqsadga zoʻravonlik va aldov bilan erishish yoʻlini tanlab, oxir-oqibat Morgoth kabi tubanlikka qulagan.",
+  "summary": "Dastlab Aulë maktabining eng iqtidorli va qudratli Maiasi boʻlgan Mairon, keyinchalik Melkorning bosh leytenantiga aylangan. Birinchi davrda Angband qalʼasi va Tol-in-Gaurhothni boshqargan. Ikkinchi davrda 'Annatar' niqobi ostida Celebrimbor va Eregion elflarini aldab, Qudrat Uzuklarini yasatgan hamda Orodruin qaʼrida Yagona Uzukni zarb qilgan. Númenor halokatiga sabab boʻlgan. Soʻnggi Ittifoq va Halqa Urushlarida Oʻrta-yerni zulmatga burkagan, Yagona Uzuk Hukm Togʻida yoʻq qilinishi bilan abadiy qulagan bosh yovuz hukmdor.",
+  "etymology": "Sindarin tilida 'Sauron' — Quenya tilidagi *saura ('jirkanch, badboʻy, qabih') soʻzidan kelib chiqqan boʻlib, Eldar unga bergan nafratli nomdir. Uning dunyo yaratilishidagi asl Quenya ismi 'Mairon' boʻlib, 'Hayratlanarli, Goʻzal, Qoyilmaqom' degan maʼnoni anglatgan. Sindarincha yana bir qadimiy epitet 'Gorthaur' esa gor ('dahshat, vahima') va thaur ('jirkanch') soʻzlaridan olingan.",
+  "biography_sections": [
+    {
+      "title": "Mairon: Aulë ustaxonasidagi yuksak Maia",
+      "content": "Sauron aslida Dunyo yaratilishidan avval Eru Ilúvatar tomonidan yaratilgan eng qudratli Maiardan biri boʻlib, uning ilk ismi 'Mairon' ('Havas qilgulik, Qoyilmaqom') edi. U Temirchi Vala Aulë xizmatida hunarmandchilik, metallsozlik va tartibot ilmlarini mukammal egalladi.\n\nBiroq Maironning tartib va mutlaq mukammallikka boʻlgan haddan tashqari intilishi uni kutilmagan girdobga tortdi: u Melkorning (Morgoth) ulkan qudratiga mahliyo boʻldi va oʻz rejalarini tezroq amalga oshirish ilinjida Qorongʻulik Hukmdori safiga oʻtib ketdi."
+    },
+    {
+      "title": "Birinchi Davr: Angband noibi va boʻrilar sarkardasi",
+      "content": "Birinchi Davrda Sauron Morgothning eng sodiq va xavfli sarkardasiga aylandi. U Angband va Utumno qalʼalarini boshqargan, Dahshat Jangi (Dagor Bragollach)dan soʻng Tol Sirion qalʼasini egallab, uni 'Boʻrilar Oroli'ga (Tol-in-Gaurhoth) aylantirgan edi.\n\nU Beren va Finrod Felagundni asir oldi; Finrod bilan qadimiy sehr va qoʻshiqlar duelida gʻalaba qozondi. Biroq Lúthien va buyuk it Huan bilan toʻqnashuvda bahaybat boʻri qiyofasida magʻlubiyatga uchrab, sharmandalik bilan Taur-nu-Fuin oʻrmonlariga qochdi. Gʻazab Urushida Morgoth magʻlub boʻlgach, Sauron Valar qahriga uchrashdan qoʻrqib Oʻrta-yer qaʼriga yashirindi."
+    },
+    {
+      "title": "Ikkinchi Davr: Annatar niqobi va Qudrat Uzuklari",
+      "content": "Ikkinchi Davrning taxminan 1200-yillarida Sauron oʻzining dahshatli qiyofasini yashirib, goʻzal va donishmand elchi 'Annatar' ('Inʼomlar Hukmdori') qiyofasiga kirdi. Lindonda Gil-galad va Elrond unga ishonmagan boʻlsa-da, Eregiondagi Celebrimbor boshchiligidagi Noldor zargarlari uning taʼlimotiga ergashdilar.\n\nUlarga Qudrat Uzuklarini yasash sirlarini oʻrgatgan Sauron, 1600-yilda Mordordagi Orodruin vulqonida yashirincha Yagona Qudrat Uzugini (The One Ring) soxtalashtirdi. U oʻzining ilohiy qudrati va irodasining katta qismini ushbu Uzukka joyladi. Uzugini barmogʻiga taqib 'Barcha uzuklarni boshqarish'ga uringanida elflar uning xiyonatini sezib uzuklarini yashirdilar, bu esa Eregion qirgʻini va halokatli urushlarga olib keldi."
+    },
+    {
+      "title": "Númenorning qulashi va tana qiyofasining yoʻqolishi",
+      "content": "Ikkinchi davrning 3262-yilida Númenorning buyuk qiroli Ar-Pharazôn ulkan armada bilan Oʻrta-yerga kelib Sauronni taslim qildi. Sauron asir sifatida Númenorga olib ketildi, ammo u tez orada oʻzining makkor tili bilan qirolning bosh maslahatchisiga aylandi.\n\nU Númenorliklarni Morgothga sigʻinishga va Boqiy Gʻarbdagi Valinorga qarshi urush ochishga gijgijladi. Eru Ilúvatar Númenorni okean qaʼriga gʻarq qilganda, Sauronning goʻzal jismoniy vujudi manguga nobud boʻldi. Uning qora ruhi Mordorga qaytib, bundan buyon faqat dahshatli va qora qiyofada gavdalana oladigan boʻldi."
+    },
+    {
+      "title": "Soʻnggi Ittifoq, Yagona Uzukning uzilishi va Qora Koʻz",
+      "content": "Ikkinchi davr oxirida Elflar va Insonlarning Soʻnggi Ittifoqi Orodruin etagida Sauron bilan toʻqnashdi. Gil-galad va Elendil halok boʻldi, ammo Isildur singan Narsil qilichi bilan Sauronning barmogʻini kesib, Yagona Uzukni tortib oldi. Tanasi parchalangan Sauron ruhi Sharqqa qochdi.\n\nUchinchi davrda u avval Dol Guldurda 'Nekromant' sifatida kuch toʻpladi, soʻng Mordorga qaytib Barad-dûrni qayta tikladi. Uning jismoniy koʻrinishi oʻrniga Barad-dûr choʻqqisida yonib turuvchi ulkan 'Qora Koʻz' (The Lidless Eye) timsoli butun Oʻrta-yer uzra dahshat soldi."
+    },
+    {
+      "title": "Taqdir: Mutlaq parchalanish va boʻshliqqa badargʻa",
+      "content": "Uchinchi davrning 3019-yil 25-martida Frodo va Gollumning Hukm Togʻidagi toʻqnashuvi natijasida Yagona Uzuk olovli lavada erib ketdi. Oʻz qudratining asosini Uzukda saqlagan Sauron shu zahoti butkul kuchsizlandi: Barad-dûr quladi, qoʻshinlari tarqab ketdi.\n\nSauronning ruhi Mordor osmonida ulkan qora tutun kabi koʻtarilib, magʻrur qoʻlini choʻzdi, ammo Gʻarbdan esgan shiddatli shamol uni butkul tarqatib yubordi. U boshqa hech qachon jismoniy shakl ololmaydigan, faqat cheksiz boʻshliqda oʻz nafratida qovriluvchi zaif arvohga aylanib qoldi."
+    }
+  ],
+  "sources": [
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of the Rings of Power and the Third Age",
+      "page": "285"
+    },
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Akallabêth: The Downfall of Númenor",
+      "page": "260"
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "The Shadow of the Past",
+      "page": "42"
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "Mount Doom",
+      "page": "921"
+    },
+    {
+      "book_slug": "letters-of-jrr-tolkien",
+      "chapter": "Letter 131",
+      "page": "143"
+    }
+  ],
+  "related_characters": [
+    "melkor",
+    "gandalf",
+    "frodo-baggins",
+    "aragorn",
+    "isildur",
+    "elendil",
+    "gil-galad",
+    "galadriel",
+    "saruman",
+    "gollum"
+  ],
+  "adaptations": [
+    {
+      "medium": "film",
+      "title": "The Lord of the Rings Film Trilogy",
+      "creator": "Peter Jackson",
+      "year": 2001,
+      "divergence_notes": "Filmda Sauron jismoniy vujudga ega bo'lmagan, Barad-dûr cho'qqisida yonib turuvchi gigant 'Olovli Ko'z' sifatida tasvirlangan. Tolkienning asl matnlarida esa Sauron Uchinchi davrda to'rt barmoqli (Isildur kesib olgan barmog'idan mahrum) qora va dahshatli jismoniy gavdaga ega bo'lgan; 'Qizil Ko'z' esa uning gerbi va aqlan uzoqni ko'ruvchi qudrati timsolidir."
+    }
+  ],
+  "image": {
+    "src": "/images/characters/sauron.webp",
+    "src_thumb": "/images/characters/sauron-thumb.webp",
+    "alt": "Sauron qora temir sovutda va tikanli tojda, barmogʻida olovli Yagona Uzuk va Barad-dûr fonida",
+    "caption": "Sauron — Mordor Qora Hukmdori, Yagona Qudrat Uzugi yaratuvchisi va Yovuzlik yetakchisi"
+  }
+}

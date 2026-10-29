@@ -1,0 +1,57 @@
+{
+  "id": "hobbiton",
+  "name": "Hobbiton (Xobbiton / Bag End)",
+  "elvish_name": "Hobbiton",
+  "type": "shahar",
+  "region": "orta-yer",
+  "coordinates": {
+    "map_id": "orta-yer",
+    "x": 490,
+    "y": 1408
+  },
+  "founded_era": "Uchinchi Davr 1601",
+  "rulers": [],
+  "notable_events": [
+    "Erebor safari boshlanishi va Gandalf hamda mitti-odamlarning Bag Endga tashrifi (2941-yil)",
+    "Bilbo Bagginsning 111 yillik shonli tavallud ayyomi ziyofati (3001-yil)",
+    "Uzuk Qardoshligi safari boshlanishi va Frodoning Shirni tark etishi (3018-yil)",
+    "Shirni tozalash va Sarumanning Bag End ostonasida halok boʻlishi (3019-yil)"
+  ],
+  "textual_status": "author_published",
+  "summary": "Hobbiton — Shirning Gʻarbiy Toʻrtligida, Suv daryosi (The Water) vodiysi boʻyida joylashgan eng mashhur xobbitlar maskani. Bu yerda Tepalik (The Hill) ostida qazilgan qulay va dabdabali Bag End (Xalta Burchagi) qarorgohi — Bilbo va Frodo Bagginslarning vatanidir. Tepalik etagida Bagshot Row smiallari, Sandyman tegirmoni va Suvboʻyiga olib boruvchi qadimiy yoʻl tutashgan.",
+  "sources": [
+    {
+      "book_slug": "the-hobbit",
+      "chapter": "An Unexpected Party",
+      "notes": "Bilbo Baggins qarorgohi Bag End va Erebor safari boshlanishi."
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "Concerning Hobbits",
+      "notes": "Shir geografiyasi va Hobbiton xobbitlarining turmush tarzi."
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "A Long-expected Party",
+      "notes": "Tepalik ostidagi Bayram Daraxti maydoni va Bilboning 111 yillik toʻyi."
+    }
+  ],
+  "description_sections": [
+    {
+      "title": "Shayrning yuragi va Bag End tepaligi",
+      "content": "Hobbiton — Shayrning (The Shire) Gʻarbiy Farthing (Gʻarbiy Toʻrtlik) hududida, Suvboʻyi daryosi oqimi boʻyida joylashgan eng qulay va sokin qishloqdir. Qishloq tepasida mashhur Bag End (Xalta-burchak) xobbit ini joylashgan.\n\nBag End Uchinchi davrda Bungo Baggins tomonidan qazilgan boʻlib, uning mukammal yumaloq yashil eshigi, tilla mis dastagi, uzun shinam yoʻlaklari va bogʻlari butun Shayr boʻyicha eng namunali xobbit maskani hisoblangan. Tepalik etagida Bayram Daraxti (Party Tree) qad rostlagan."
+    },
+    {
+      "title": "Tarixiy voqealar va sayohatlarning boshlanishi",
+      "content": "Hobbiton butun Oʻrta-yer tarixini oʻzgartirgan ikki buyuk safarning boshlangʻich nuqtasi boʻldi: 2941-yilda Gandalf va oʻn uch mitti Bilboni Ereborga aynan shu yerdan olib ketdilar; 3018-yilda esa Frodo Yagona Uzuk bilan Mordorga xavfli safarini aynan Bag Enddan boshladi.\n\n3019-yilda Saruman Shirni egallab, tepalikdagi goʻzal daraxtlarni kestirdi va xunuk gʻisht uylar qurdirdi. Ammo xobbitlar Suvboʻyi jangida gʻalaba qozonib, Samwise Galadriel tuprogʻi yordamida Hobbitonni qayta jannatmonand maskanga aylantirdi."
+    },
+    {
+      "title": "Bywater jangi, Saruman xarobasi va Yangilanish bayrami",
+      "content": "Hobbiton Uchinchi Davr oxirida qora qaroqchilar va ularning yetakchisi 'Sharkey' (Saruman) tomonidan qattiq xo'rlandi: daraxtlar kesildi, qadimgi tegirmon buzilib badbo'y zavodga aylantirildi. Biroq Frodo, Sam, Merry va Pippin qaytib kelgach, 1419-yilgi Bywater jangida xobbitlar qo'zg'olon ko'tarib o'z vatanlarini ozod qildilar. Samwise Gamgee Galadriel in'om etgan sehrli tuproq va mallorn urug'i yordamida butun Shire tabiatini qayta tikladi; Hobbiton yanada yashil, mevali va gullagan jannatmakon qishloqqa aylandi."
+    },
+    {
+      "title": "Bagshot Row, Bayram Daraxti va Shire an'analari",
+      "content": "Hobbiton markazidagi 'Bayram Daraxti' (Party Tree) Bilbo Bagginsning 111 yoshlik mashhur to'yi nishonlangan joy bo'lib, butun Shire xalqi bu yerda bir necha kunlab bayram qilgan. Bag End tepaligi ostida esa Gamgee oilasining uyi bo'lgan Bagshot Row joylashgan. Qishloq hayoti tinch dehqonchilik, pivo tayyorlash, qovurilgan go'sht va trubka chekish kabi yoqimli mashg'ulotlarga to'la edi. Aynan mana shu sokin, beg'ubor hayot tarzi Uzuk tashuvchilari uchun O'rta-yerni qutqarish yo'lidagi eng buyuk ma'naviy tayanch bo'lib xizmat qildi."
+    }
+  ]
+}

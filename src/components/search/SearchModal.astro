@@ -1,0 +1,409 @@
+---
+/**
+ * SearchModal.astro — Accessible WAI-ARIA Modal for Static Search (Pagefind)
+ * Keyboard Shortcuts: Cmd+K / Ctrl+K
+ * Focus trap, Escape to close, focus restoration.
+ */
+---
+
+<dialog id="search-modal" class="search-dialog" aria-labelledby="search-modal-title" aria-modal="true">
+  <div class="search-dialog-container">
+    <div class="search-dialog-header">
+      <div class="search-input-wrapper">
+        <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <label for="modal-search-input" class="sr-only">Qidiruv soʻrovini kiriting</label>
+        <input
+          id="modal-search-input"
+          type="search"
+          placeholder="Qahramon, joy, maqola yoki asar nomini qidiring... (Esc - yopish)"
+          autocomplete="off"
+          spellcheck="false"
+        />
+      </div>
+      <button type="button" id="search-close-btn" class="search-close-button" aria-label="Qidiruv oynasini yopish">
+        <kbd class="key-hint">Esc</kbd>
+      </button>
+    </div>
+
+    <div class="search-dialog-body">
+      <div id="search-status" class="search-status" role="status" aria-live="polite">
+        Qidirish uchun soʻrov kiriting...
+      </div>
+      <ul id="search-results-list" class="search-results-list" role="listbox" aria-label="Qidiruv natijalari"></ul>
+    </div>
+
+    <div class="search-dialog-footer">
+      <span class="shortcut-tip"><kbd>↑</kbd> <kbd>↓</kbd> Tanlash</span>
+      <span class="shortcut-tip"><kbd>↵</kbd> Oʻtish</span>
+      <span class="shortcut-tip"><kbd>Esc</kbd> Yopish</span>
+    </div>
+  </div>
+</dialog>
+
+<script>
+  import { normalizeSearchQuery } from '@/utils/search';
+  import { loadPagefind } from '@/utils/pagefind';
+
+  let lastFocusedElement: HTMLElement | null = null;
+  let activeIndex = -1;
+
+  function initSearchModal() {
+    const dialog = document.getElementById('search-modal') as HTMLDialogElement | null;
+    const input = document.getElementById('modal-search-input') as HTMLInputElement | null;
+    const closeBtn = document.getElementById('search-close-btn');
+    const resultsList = document.getElementById('search-results-list');
+    const status = document.getElementById('search-status');
+
+    if (!dialog || !input || !resultsList || !status) return;
+
+    function openModal() {
+      lastFocusedElement = document.activeElement as HTMLElement;
+      dialog?.showModal();
+      input?.focus();
+      document.body.style.overflow = 'hidden';
+      loadPagefind();
+    }
+
+    function closeModal() {
+      dialog?.close();
+      document.body.style.overflow = '';
+      if (lastFocusedElement && typeof lastFocusedElement.focus === 'function') {
+        lastFocusedElement.focus();
+      }
+    }
+
+    // Global Cmd+K / Ctrl+K listener
+    window.addEventListener('keydown', (e) => {
+      if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
+        e.preventDefault();
+        if (dialog.open) {
+          closeModal();
+        } else {
+          openModal();
+        }
+      }
+    });
+
+    // Close button & Esc key
+    closeBtn?.addEventListener('click', closeModal);
+    dialog.addEventListener('cancel', (e) => {
+      e.preventDefault();
+      closeModal();
+    });
+
+    // Backdrop click to close
+    dialog.addEventListener('click', (e) => {
+      const rect = dialog.getBoundingClientRect();
+      const isInDialog = (
+        rect.top <= e.clientY &&
+        e.clientY <= rect.top + rect.height &&
+        rect.left <= e.clientX &&
+        e.clientX <= rect.left + rect.width
+      );
+      if (!isInDialog) {
+        closeModal();
+      }
+    });
+
+    // Expose open function to buttons
+    document.querySelectorAll('[data-open-search]').forEach((btn) => {
+      btn.addEventListener('click', () => openModal());
+    });
+
+    // Search input handler with debounce
+    let debounceTimer: any = null;
+    input.addEventListener('input', () => {
+      clearTimeout(debounceTimer);
+      debounceTimer = setTimeout(async () => {
+        const query = input.value.trim();
+        if (!query) {
+          resultsList.innerHTML = '';
+          status.textContent = 'Qidirish uchun soʻrov kiriting...';
+          status.style.display = 'block';
+          activeIndex = -1;
+          return;
+        }
+
+        status.textContent = 'Qidirilmoqda...';
+        status.style.display = 'block';
+
+        const pagefind = await loadPagefind();
+        if (!pagefind) {
+          status.textContent = "Qidiruv indeksi statik yig'ish (build) jarayonidan so'ng yuklanadi.";
+          return;
+        }
+
+        try {
+          const normalized = normalizeSearchQuery(query);
+          const search = await pagefind.search(normalized || query);
+          const results = search.results.slice(0, 8); // Top 8 results
+
+          if (results.length === 0) {
+            resultsList.innerHTML = '';
+            status.textContent = `"${query}" boʻyicha hech narsa topilmadi.`;
+            return;
+          }
+
+          status.style.display = 'none';
+          resultsList.innerHTML = '';
+          activeIndex = -1;
+
+          for (let i = 0; i < results.length; i++) {
+            const data = await results[i].data();
+            const li = document.createElement('li');
+            li.role = 'option';
+            li.className = 'search-result-item';
+            li.id = `search-result-${i}`;
+            li.setAttribute('aria-selected', 'false');
+
+            const a = document.createElement('a');
+            a.href = data.url;
+            a.className = 'search-result-link';
+
+            const title = document.createElement('span');
+            title.className = 'search-result-title';
+            title.textContent = data.meta?.title || data.url;
+
+            const excerpt = document.createElement('span');
+            excerpt.className = 'search-result-excerpt';
+            excerpt.innerHTML = data.excerpt || '';
+
+            a.appendChild(title);
+            a.appendChild(excerpt);
+            li.appendChild(a);
+            resultsList.appendChild(li);
+          }
+        } catch (err) {
+          console.error('Qidiruvda xatolik:', err);
+          status.textContent = 'Qidiruv jarayonida xatolik yuz berdi.';
+        }
+      }, 150);
+    });
+
+    // Keyboard navigation within results
+    input.addEventListener('keydown', (e) => {
+      const items = resultsList.querySelectorAll('.search-result-item');
+      if (items.length === 0) return;
+
+      if (e.key === 'ArrowDown') {
+        e.preventDefault();
+        activeIndex = (activeIndex + 1) % items.length;
+        updateActiveItem(items);
+      } else if (e.key === 'ArrowUp') {
+        e.preventDefault();
+        activeIndex = (activeIndex - 1 + items.length) % items.length;
+        updateActiveItem(items);
+      } else if (e.key === 'Enter') {
+        if (activeIndex >= 0 && activeIndex < items.length) {
+          e.preventDefault();
+          const activeItem = items[activeIndex];
+          const link = activeItem ? (activeItem.querySelector('a') as HTMLAnchorElement | null) : null;
+          link?.click();
+        }
+      }
+    });
+
+    function updateActiveItem(items: NodeListOf<Element>) {
+      items.forEach((item, idx) => {
+        if (idx === activeIndex) {
+          item.classList.add('selected');
+          item.setAttribute('aria-selected', 'true');
+          item.scrollIntoView({ block: 'nearest' });
+        } else {
+          item.classList.remove('selected');
+          item.setAttribute('aria-selected', 'false');
+        }
+      });
+    }
+  }
+
+  // Initialize on DOM ready and Astro page-load
+  document.addEventListener('DOMContentLoaded', initSearchModal);
+  document.addEventListener('astro:page-load', initSearchModal);
+</script>
+
+<style>
+  .search-dialog {
+    border: none;
+    border-radius: 8px;
+    padding: 0;
+    background-color: var(--color-bg-elevated);
+    color: var(--color-text-primary);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+    width: 90vw;
+    max-width: 640px;
+    max-height: 85vh;
+    margin: auto;
+    border: 1px solid var(--color-border-subtle);
+  }
+
+  .search-dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(2px);
+  }
+
+  .search-dialog-container {
+    display: flex;
+    flex-direction: column;
+    max-height: 85vh;
+  }
+
+  .search-dialog-header {
+    display: flex;
+    align-items: center;
+    padding: 0.875rem 1rem;
+    border-bottom: 1px solid var(--color-border-subtle);
+    gap: 0.75rem;
+  }
+
+  .search-input-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex: 1;
+  }
+
+  .search-icon {
+    color: var(--color-text-muted);
+    flex-shrink: 0;
+  }
+
+  #modal-search-input {
+    width: 100%;
+    border: none;
+    background: transparent;
+    font-family: var(--font-sans-ui);
+    font-size: 1rem;
+    color: var(--color-text-primary);
+    outline: none;
+  }
+
+  #modal-search-input::placeholder {
+    color: var(--color-text-muted);
+  }
+
+  .search-close-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+
+  .key-hint,
+  .search-dialog-footer kbd {
+    font-family: var(--font-sans-ui);
+    font-size: 0.6875rem;
+    padding: 2px 5px;
+    border-radius: 3px;
+    background-color: var(--color-bg-subtle);
+    border: 1px solid var(--color-border-subtle);
+    color: var(--color-text-secondary);
+  }
+
+  .search-dialog-body {
+    padding: 1rem;
+    overflow-y: auto;
+    flex: 1;
+    min-height: 160px;
+  }
+
+  .search-status {
+    font-family: var(--font-sans-ui);
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+    text-align: center;
+    padding-block: 2rem;
+  }
+
+  .search-results-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  :global(.search-result-item) {
+    border-radius: 4px;
+    transition: background-color 0.1s ease;
+  }
+
+  :global(.search-result-item.selected),
+  :global(.search-result-item:hover) {
+    background-color: var(--color-bg-subtle);
+  }
+
+  :global(.search-result-link) {
+    display: flex;
+    flex-direction: column;
+    padding: 0.75rem 0.875rem;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+
+  :global(.search-result-title) {
+    font-family: var(--font-serif-heading);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-text-primary);
+    margin-bottom: 0.25rem;
+  }
+
+  :global(.search-result-excerpt) {
+    font-family: var(--font-sans-ui);
+    font-size: 0.8125rem;
+    color: var(--color-text-secondary);
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  :global(.search-result-excerpt mark) {
+    background-color: transparent;
+    color: var(--color-accent-gold);
+    font-weight: 600;
+  }
+
+  .search-dialog-footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+    padding: 0.625rem 1rem;
+    border-top: 1px solid var(--color-border-subtle);
+    background-color: var(--color-bg-subtle);
+    font-family: var(--font-sans-ui);
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+  }
+
+  .shortcut-tip {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .search-dialog {
+      transition: none;
+    }
+  }
+
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+</style>

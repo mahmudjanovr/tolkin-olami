@@ -1,0 +1,24 @@
+# Build output
+dist/
+
+# Dependencies
+node_modules/
+
+# Astro generated types and cache
+.astro/
+
+# Environment variables
+.env
+.env.production
+.env.development
+.env.local
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+
+# Test artifacts and Playwright reports
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/

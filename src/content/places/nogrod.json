@@ -1,0 +1,38 @@
+{
+  "id": "nogrod",
+  "name": "Nogrod",
+  "elvish_name": "Tumunzahar (Chuqur Manzil)",
+  "type": "shahar",
+  "region": "beleriand",
+  "coordinates": {
+    "map_id": "beleriand",
+    "x": 1840,
+    "y": 720
+  },
+  "founded_era": "Daraxtlar davri",
+  "destroyed_era": "Birinchi davr 506",
+  "rulers": [
+    "Telchar (usta)"
+  ],
+  "notable_events": [
+    "Narsil va Angrist pichoqlarining yasalishi",
+    "Nauglamír mojarosi va Thingolning oʻldirilishi",
+    "Sarn Athrad jangi"
+  ],
+  "textual_status": "author_published",
+  "summary": "Nogrod — Moviy togʻlar (Ered Luin) janubida joylashgan mashhur mitti zargarlari va qurolsozlari makoni. Telchar bu yerda Narsil va Angristni yasagan. Keyinchalik Nauglamír mojarosi tufayli Doriath bilan urushib, Thingolni oʻldirganlar va Sarn Athradda Beren tomonidan yanchilganlar.",
+  "sources": [
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of the Ruin of Doriath",
+      "page": "231",
+      "notes": "Nogrod mittilarining Thingolga qarshi isyoni va Nauglamír fojiasi."
+    }
+  ],
+  "description_sections": [
+    {
+      "title": "Tumunzahar: Poʻlatsozlar va Nauglamír qasri",
+      "content": "Nogrod (Mitti tilida: Tumunzahar — 'Gʻorlar Shahri') — Belegostdan janubroqda, Dolmed togʻi etagida joylashgan ikkinchi buyuk mitti shahri. Nogrod ustalari qilichsozlik va pichoqchilikda, xususan qadimiy usta Telchar orqali mashhur boʻlganlar (Narsil va Angrist Telchar tomonidan yasalgan).\n\nNogrod ustalari Nauglamír marjoniga Silmarilni qadash chogʻida Thingolni oʻldirib, Doriathni taladilar. Qaytish yoʻlida Beren boshchiligidagi elflar va Entlar Nogrod armiyasini Sarn Athrada tor-mor qildi."
+    }
+  ]
+}

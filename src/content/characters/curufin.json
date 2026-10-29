@@ -1,0 +1,79 @@
+{
+  "id": "curufin",
+  "name": "Curufin",
+  "original_name": "Curufinwë (Atarinke)",
+  "father_name": "Fëanor",
+  "mother_name": "Nerdanel Dono",
+  "children": [
+    "Celebrimbor (Eregion Bosh Ustasi)"
+  ],
+  "aliases": [
+    "Curufinwë (Otasining asl ismi bilan)",
+    "Atarinke (Quenya: Kichik Ota)",
+    "Curufin the Crafty (Mohir/Ayyor Curufin)"
+  ],
+  "titles": [
+    "Himlad Hukmdori",
+    "Fëanorning Beshinchi Oʻgʻli"
+  ],
+  "race": "elflar",
+  "sub_race": "Noldor",
+  "culture": "Tirion / Himlad / Nargothrond",
+  "birth_year": "Daraxtlar davri",
+  "death_year": "Birinchi davr 506 (Menegrothda Ikkinchi Qarindosh Qirgʻinida halok boʻlgan)",
+  "house_id": "finwe-xonadoni",
+  "weapons_and_artifacts": [
+    "Angrist (Temir Kesuvchi — Nogrod ustasi Telchar yasagan xanjar; Beren u bilan Morgoth tojidan Silmarilni kesib olgan)"
+  ],
+  "primary_locations": ["nargothrond", "menegroth", "tirion", "beleriand"],
+  "textual_status": "posthumous_edited",
+  "summary": "Fëanor va Nerdanelning beshinchi va otasiga eng suyukli oʻgʻli, Uch Elf Uzugini yaratgan Celebrimborning otasi. Yuz qiyofasi, hunarmandchilik mahorati va oʻtkir notiqlik sanʼatida Fëanorning oʻzginasi boʻlib, akasi Celegorm bilan Nargothrondda fitna uyushtirgan va Doriathga qilingan hujumda halok boʻlgan.",
+  "etymology": "Sindarin tilidagi 'Curufin' otasi Fëanorning Quenya tilidagi asl ismi 'Curufinwë' ('Mohir Finwë') shaklidan olingan, chunki Fëanor sevimli beshinchi oʻgʻliga oʻz nomini bergan edi. Onasi Nerdanel esa uni 'Atarinke' ('Kichik Ota') deb atagan.",
+  "biography_sections": [
+    {
+      "title": "Otasining aksi va Himlad hukmronligi",
+      "content": "Curufin yetti aka-uka orasida tashqi koʻrinishi, feʼl-atvori va temirchilik isteʼdodi bilan Fëanorga eng koʻp oʻxshagan oʻgʻil edi. U Mitti-odamlar bilan yaqin aloqa oʻrnatib, Noldor shahzodalari ichida ularning maxfiy Khuzdul tilini oʻrgangan yagona shaxs boʻldi.\n\nBeleriandda u uchinchi akasi Celegorm bilan birga Himlad oʻlkasini va Aglon dovonini boshqardi. Dagor Bragollach jangida dovon yorib oʻtilgach, Curufin va Celegorm omon qolgan otliqlari bilan amakivachchalari Finrodning Nargothrond qalʼasidan panoh topdilar."
+    },
+    {
+      "title": "Nargothrond fitnasi va Angrist xanjarining yoʻqotilishi",
+      "content": "Beren Nargothrondga kelib, Finroddan Silmaril safarida yordam soʻraganida, Curufin oʻzining oʻtkir notiqligi bilan Nargothrond ahlida qoʻrquv uygʻotdi va ularni oʻz qirollari Finroddan yuz oʻgirishga koʻndirdi. Finrod halok boʻlib, Lúthien va Huan asirlarni qutqargach, Curufinlarning kirdikorlari fosh boʻldi.\n\nOrodreth Curufin va Celegormni Nargothronddan haydab chiqardi; Curufinning oʻgʻli Celebrimbor esa otasining qilmishlaridan nafratlanib, undan voz kechdi va Nargothrondda qoldi. Yoʻlda Curufin Berenni oʻldirishga urinib, Lúthienga oʻq uzdi; ammo Beren uni ot ustidan sakrab yiqitib, uning mashhur Angrist xanjarini tortib oldi."
+    },
+    {
+      "title": "Menegroth qirgʻinidagi oʻlim",
+      "content": "Silmaril Dior qoʻliga oʻtgach, Birinchi davrning 506-yil qishida Celegorm va Curufin akalari Maedhrosni Doriathga hujum qilishga undadilar. Menegrothning Ming Gʻorlarida yuz bergan Ikkinchi Qarindosh Qirgʻinida Curufin, Celegorm va Caranthir Dior hamda uning qoʻriqchilari bilan jangda halok boʻldilar."
+    }
+  ],
+  "sources": [
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of Eldamar and the Princes of the Eldalië",
+      "page": "60"
+    },
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of Beren and Lúthien",
+      "page": "170"
+    },
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of the Ruin of Doriath",
+      "page": "236"
+    },
+    {
+      "book_slug": "beren-and-luthien",
+      "chapter": "The Lay of Leithian",
+      "page": "155"
+    }
+  ],
+  "related_characters": [
+    "feanor",
+    "nerdanel",
+    "celebrimbor",
+    "maedhros",
+    "maglor",
+    "finrod",
+    "beren",
+    "luthien"
+  ],
+  "adaptations": []
+}

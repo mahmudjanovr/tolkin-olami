@@ -1,0 +1,27 @@
+{
+  "id": "anar-va-isil",
+  "name": "Anar va Isil (Quyosh, Oy va Eärendil Yulduzi)",
+  "concept_type": "celestial_body",
+  "associated_ainur": [
+    "varda",
+    "aule",
+    "yavanna",
+    "ulmo"
+  ],
+  "ontological_evolution": "Valinorning Ikki Daraxti Morgoth va Ungoliant tomonidan nobud qilingach, Laurelinning soʻnggi olovli mevasi (Anar — Quyosh, Maia Arien boshqaruvida) va Telperionning soʻnggi kumush guli (Isil — Oy, Maia Tilion boshqaruvida) Aulë yasagan kemalarda osmon gumbaziga koʻtarilgan. Birinchi davr soʻngida ularga Silmaril taqqan Eärendilning Vingilótë kemasi (Gil-Estel yulduzi) qoʻshilgan.",
+  "textual_status": "posthumous_edited",
+  "summary": "Anar (Quyosh), Isil (Oy) va Gil-Estel (Eärendilning Umid Yulduzi) — Ikki Daraxtning soʻnggi pokiza nurlaridan hamda Silmarildan yaralgan, Oʻrta-yerni zulmatdan himoya qiluvchi va Insonlarning uygʻonish davrini boshlab bergan muqaddas samoviy jismlar.",
+  "sources": [
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Chapter 11: Of the Sun and Moon and the Hiding of Valinor / Chapter 24: Of the Voyage of Eärendil",
+      "page": "98"
+    }
+  ],
+  "cosmology_sections": [
+    {
+      "title": "Ikki Daraxtning soʻnggi merosi",
+      "content": "Anar (Quyosh) va Isil (Oy) — Ikki Daraxt nobud boʻlganidan soʻng Aulë tomonidan yasalgan billur kemalarga joylangan samoviy jismlardir. Oyni Maiar Tilion, Quyoshni esa Maiar Arien boshqaradi.\n\nQuyoshning ilk bor Sharqdan koʻtarilishi bilan Birinchi Davr boshlandi va Oʻrta-yerda Insonlar — Ilúvatarning Ikkinchi Farzandlari uygʻondilar."
+    }
+  ]
+}

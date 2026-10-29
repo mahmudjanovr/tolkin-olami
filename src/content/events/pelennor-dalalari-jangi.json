@@ -1,0 +1,59 @@
+{
+  "id": "pelennor-dalalari-jangi",
+  "title": "Pelennor Dalalari Jangi",
+  "subtitle": "Minas Tirith qamali va Gondor mudofaasi",
+  "era": "uchinchi_davr",
+  "year_text": "Uchinchi davr 3019 (15-mart)",
+  "location_id": "minas-tirith",
+  "characters": [
+    "aragorn",
+    "theoden",
+    "eomer",
+    "eowyn",
+    "gandalf",
+    "witch-king",
+    "peregrin-took",
+    "faramir"
+  ],
+  "belligerents": {
+    "side_a": [
+      "Gondor garnizoni (Oq Gandalf, Faramir)",
+      "Rohan otliqlari (Qirol Théoden, Éomer)",
+      "Janubiy Gondor qoʻshinlari (Aragorn II boshchiligida)"
+    ],
+    "side_b": [
+      "Mordor qoʻshini (Angmar Jodugar-qiroli, Gothmog)",
+      "Harad otliqlari va jangovar Mûmakillar",
+      "Sharqliklar, Khand variaglari va Oʻrklar"
+    ]
+  },
+  "outcome": "Mordor va Harad armiyasi butunlay tor-mor qilindi; Angmar Jodugar-Qiroli Éowyn va Merry tomonidan yo'q qilindi; Théoden halok bo'ldi; Minas Tirith qutqarildi.",
+  "preceding_event": "pelargir-jangi",
+  "succeeding_event": "yagona-uzukning-yoq-qilinishi",
+  "textual_status": "author_published",
+  "sources": [
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "The Battle of the Pelennor Fields",
+      "page": "834"
+    }
+  ],
+  "description_sections": [
+    {
+      "title": "Minas Tirith ostonasidagi dahshatli qamal",
+      "content": "Uchinchi Davrning 3019-yil 14-mart tunida Sauronning bosh qo'mondoni – Nazgûllar sardori Angmar Jodugar-Qiroli yuz mingdan ortiq o'rklar, Harad o'qchilari, Mumakil (ulkan fillar) va Sharqiy vahshiylar bilan Oq Shaharni qamal qildi. Shahar darvozasini qadimiy la'nati to'qmoq – Grond bilan buzib tashladilar. Shahar noibi Denethor II umidsizlikka tushib, o'zini va yarador o'g'li Faramirni tiriklayin yoqib yuborishga urindi. Gondor mudofaasi faqat Gandalf Oqning metin irodasi va shaharliklarning jasorati evaziga arang dosh berib turgan edi."
+    },
+    {
+      "title": "Rohirrim otliqlarining yetib kelishi va Théoden xitobi",
+      "content": "15-mart tongida, Minas Tirith darvozasi buzilib, Jodugar-Qirol shahar ichiga qadam qo'ymoqchi bo'lgan eng xatarli pallada shimoldan minglab shoxlar sadosi yangradi. Podshoh Théoden boshchiligidagi olti ming Rohirrim otliqlari qutlug' tong shamoli ostida Pelennor dalalariga bostirib kirdilar. Théodenning jangovar xitobi ostida rohanliklar dushmanning orqa saflarini momaqaldiroqdek yorib o'tdilar. Harad kavaleriya va piyodalari tor-mor qilindi, biroq Jodugar-Qirol qora qanotli maxluqida osmondan tushib, Théodenga tashlandi va uni og'ir yaraladi."
+    },
+    {
+      "title": "Éowyn, Merry va qadimiy bashoratning ro'yobi",
+      "content": "Glorfindelning ming yillik bashoratiga ko'ra, Jodugar-Qirolni 'hech bir tirik erkak kishi o'ldira olmas' edi. Yarador shoh tepasida erkak jangchi qiyofasida kelgan Rohanning jasur malikasi Éowyn va xobbit Meriadoc Brandybuck turardilar. Éowyn maxluqning boshini bir zarbada chopib tashladi. Jodugar-Qirol unga og'ir gursi bilan tashlanganda, Merry qadimiy Dúnedain pichog'i bilan jodugarning tizzasiga orqadan zarba berib, uning sehrli himoyasini sindirdi. Shu lahzada Éowyn o'z qilichini qora niqob ostidagi ko'rinmas boshga sanchdi. Dushman sardori chinqirib, havoga singib ketdi."
+    },
+    {
+      "title": "Qora kemalar va Aragornning zafari",
+      "content": "Jang hali yakunlanmagan, Haradning ulkan Mûmakillari maydonni qonga botirayotgan bir paytda, Anduin daryosida Umbarning qora yelkanli kemalari paydo bo'ldi. Dushman g'alaba nidosi bilan qichqirdi, biroq kema ustida shohona Oq Daraxt va Yetti Yulduz tushirilgan Elendil bayrog'i yozildi. Pelargirda kemalarni egallagan Aragorn, Legolas, Gimli va janubiy Gondor qo'shinlari dushmanning qanotiga zarba berdilar. Ikki o't orasida qolgan Mordor lashkari butunlay yo'q qilindi; Oq Shahar najot topdi. Pelennor dalalarida toʻkilgan qon Gondor va Rohan xalqlarini abadiy birodarlik rishtalari bilan bogʻladi. Aragorn oʻzining shifobaxsh qoʻllari (Athelas oʻti) bilan yarador Faramir, Éowyn va Meriadocni qutqarib, oʻzining haqiqiy afsonaviy Shoh ekanini xalqqa isbotladi."
+    }
+  ]
+}

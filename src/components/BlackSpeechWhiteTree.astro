@@ -1,0 +1,1122 @@
+---
+// BlackSpeechWhiteTree.astro
+// Precision Redesign: A mathematically circular Black Speech inscription
+// and the canonical heraldic White Tree of Gondor beneath Seven Stars.
+// Seamlessly integrated with Light, Night, and Tizim (System) themes.
+---
+
+<div class="sigil-showcase-container" id="black-speech-white-tree" data-sigil-animation>
+  <div class="sigil-artwork-wrapper">
+    <svg
+      class="sigil-cinematic-svg"
+      viewBox="0 0 700 700"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      role="img"
+      aria-labelledby="sigil-title sigil-desc"
+    >
+      <title id="sigil-title">Qora Nutq Doiraviy Yozuvi va Gondor Oq Daraxti Emblemasi</title>
+      <desc id="sigil-desc">
+        Mukammal matematik doira boʻylab qadimiy oltin rangli Qora Nutq bitigi va uning markazida Yetti Yulduz ostidagi kanonik Gondor Oq Daraxti gerbi.
+      </desc>
+
+      <defs>
+        <!-- 1. Theme-Aware Card Surface Gradient -->
+        <radialGradient id="sigil-card-bg-grad" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" class="sigil-bg-stop-0" />
+          <stop offset="45%" class="sigil-bg-stop-45" />
+          <stop offset="78%" class="sigil-bg-stop-78" />
+          <stop offset="100%" class="sigil-bg-stop-100" />
+        </radialGradient>
+
+        <!-- Inner Circular Field Depth (Lighter blue-green in Night; delicate warm tone in Light) -->
+        <radialGradient id="sigil-inner-field-grad" cx="50%" cy="48%" r="40%">
+          <stop offset="0%" class="sigil-inner-stop-0" />
+          <stop offset="65%" class="sigil-inner-stop-65" />
+          <stop offset="100%" class="sigil-inner-stop-100" />
+        </radialGradient>
+
+        <!-- Subtle Ambient Gold Glow around the Inscription Ring -->
+        <radialGradient id="ambient-gold-spill" cx="50%" cy="50%" r="50%">
+          <stop offset="62%" class="sigil-spill-stop-0" />
+          <stop offset="78%" class="sigil-spill-stop-78" />
+          <stop offset="88%" class="sigil-spill-stop-88" />
+          <stop offset="100%" class="sigil-spill-stop-100" />
+        </radialGradient>
+
+        <!-- Subtle Lunar/Aura Glow Behind White Tree -->
+        <radialGradient id="tree-moon-glow" cx="50%" cy="46%" r="32%">
+          <stop offset="0%" class="tree-aura-stop-0" />
+          <stop offset="50%" class="tree-aura-stop-50" />
+          <stop offset="100%" class="tree-aura-stop-100" />
+        </radialGradient>
+
+        <!-- 2. Mathematically Circular SVG Text Path -->
+        <!-- Center: (350, 350). Compact Radius: R = 218.
+             Sweeps clockwise 360° from zenith back to zenith -->
+        <path
+          id="ring-verse-circle"
+          d="M 350,350 m 0,-218 a 218,218 0 1,1 0,436 a 218,218 0 1,1 0,-436"
+          fill="none"
+        />
+
+        <!-- Travelling Gold Light Sweep Gradient -->
+        <linearGradient id="flame-sweep-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" class="sweep-stop-0" />
+          <stop offset="25%" class="sweep-stop-25" />
+          <stop offset="50%" class="sweep-stop-50" />
+          <stop offset="75%" class="sweep-stop-75" />
+          <stop offset="100%" class="sweep-stop-100" />
+        </linearGradient>
+
+        <!-- 3. Heraldic Tree Shader:
+             Light Mode: Deep desaturated Oxford forest green
+             Night Mode: Luminous silver-white -->
+        <linearGradient id="heraldic-tree-grad" x1="50%" y1="100%" x2="50%" y2="0%">
+          <stop offset="0%" class="tree-grad-stop-0" />
+          <stop offset="30%" class="tree-grad-stop-30" />
+          <stop offset="65%" class="tree-grad-stop-65" />
+          <stop offset="100%" class="tree-grad-stop-100" />
+        </linearGradient>
+
+        <!-- 4. Restrained SVG Glow Filters (Refined, no oversized neon bloom) -->
+        <filter id="gold-glow-soft" x="-20%" y="-20%" width="140%" height="140%">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="1.5" result="blur" />
+          <feMerge>
+            <feMergeNode in="blur" />
+            <feMergeNode in="SourceGraphic" />
+          </feMerge>
+        </filter>
+
+        <filter id="tree-heraldic-glow" x="-20%" y="-20%" width="140%" height="140%">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="1.0" result="blur" />
+          <feMerge>
+            <feMergeNode in="blur" />
+            <feMergeNode in="SourceGraphic" />
+          </feMerge>
+        </filter>
+      </defs>
+
+      <!-- ====================================================================
+           LAYER 1: CARD SURFACE & HARMONIZED RING DETAILS
+           ==================================================================== -->
+      <!-- Sophisticated Tonal Card Surface (Ivory in Light, Blue-Green in Night) -->
+      <rect width="700" height="700" rx="16" class="sigil-card-rect" />
+
+      <!-- Subtle Ambient Gold Spill beneath the Inscription -->
+      <circle cx="350" cy="350" r="260" class="sigil-ambient-spill" aria-hidden="true" />
+
+      <!-- Delicate, Low-Contrast Outer Heraldic Ring (Replaces heavy green-black band) -->
+      <circle cx="350" cy="350" r="248" class="sigil-outer-ring" aria-hidden="true" />
+
+      <!-- ====================================================================
+           LAYER 2: GEOMETRICALLY CONTINUOUS CIRCULAR TENGWAR INSCRIPTION
+           A single, compact, nearly complete 360-degree circle of Tengwar script.
+           Muted antique gold calligraphy without neon-orange bloom.
+           ==================================================================== -->
+      <g class="circular-inscription-group" id="circular-inscription-sigil">
+        <!-- Concentric Seal Framing Guidelines (Fine, delicate antique gold hairlines) -->
+        <circle cx="350" cy="350" r="238" fill="none" class="guideline-outer" />
+        <circle cx="350" cy="350" r="198" fill="none" class="guideline-inner" />
+
+        <!-- Muted Antique Gold Bloom Under-Layer (Restrained, subtle soft warmth) -->
+        <text
+          font-family="'Tengwar Annatar', 'Tengwar Annatar Italic', serif"
+          font-style="italic"
+          font-size="19.5px"
+          letter-spacing="0.04em"
+          filter="url(#gold-glow-soft)"
+          class="inscription-text-bloom"
+          aria-hidden="true"
+        >
+          <textPath
+            href="#ring-verse-circle"
+            startOffset="0%"
+            textLength="1360"
+            lengthAdjust="spacing"
+          >
+            AE 5,Ex 26Nw1Dj^zĆ= AE 5,Ex xw%P1Dj^= AE 5,Ex 37zD1Dj^zĆ= X# w6Nkt^¬AT`B z7qGp1Dj^- = AE 5,Ex 26Nw1Dj^zĆ= AE 5,Ex xw%P1Dj^= AE 5,Ex 37zD1Dj^zĆ= X# w6Nkt^¬AT`B z7qGp1Dj^- = 
+          </textPath>
+        </text>
+
+        <!-- Antique Gold Core Calligraphy (Crisp, brilliantly legible Tengwar Annatar) -->
+        <text
+          font-family="'Tengwar Annatar', 'Tengwar Annatar Italic', serif"
+          font-style="italic"
+          font-size="19px"
+          letter-spacing="0.04em"
+          stroke-width="0.35"
+          class="inscription-text-core"
+        >
+          <textPath
+            href="#ring-verse-circle"
+            startOffset="0%"
+            textLength="1360"
+            lengthAdjust="spacing"
+          >
+            AE 5,Ex 26Nw1Dj^zĆ= AE 5,Ex xw%P1Dj^= AE 5,Ex 37zD1Dj^zĆ= X# w6Nkt^¬AT`B z7qGp1Dj^- = AE 5,Ex 26Nw1Dj^zĆ= AE 5,Ex xw%P1Dj^= AE 5,Ex 37zD1Dj^zĆ= X# w6Nkt^¬AT`B z7qGp1Dj^- = 
+          </textPath>
+        </text>
+
+        <!-- Travelling Gold Light Highlight (Gently sweeps along the circular baseline) -->
+        <circle
+          cx="350"
+          cy="350"
+          r="218"
+          fill="none"
+          stroke="url(#flame-sweep-grad)"
+          stroke-width="2"
+          stroke-linecap="round"
+          class="flame-sweep-circle"
+          aria-hidden="true"
+        />
+      </g>
+
+      <!-- Sparse Muted Gold Embers around the Inscription -->
+      <g class="sigil-embers" aria-hidden="true">
+        <circle cx="275" cy="165" r="1.3" class="sigil-ember emb-1" />
+        <circle cx="445" cy="185" r="1.5" class="sigil-ember emb-2" />
+        <circle cx="545" cy="320" r="1.6" class="sigil-ember emb-3" />
+        <circle cx="505" cy="460" r="1.4" class="sigil-ember emb-4" />
+        <circle cx="330" cy="545" r="1.5" class="sigil-ember emb-5" />
+        <circle cx="175" cy="435" r="1.4" class="sigil-ember emb-6" />
+        <circle cx="155" cy="265" r="1.6" class="sigil-ember emb-7" />
+      </g>
+
+      <!-- ====================================================================
+           LAYER 3: CANONICAL WHITE TREE OF GONDOR (Nimloth the Fair)
+           Symmetrical heraldic silhouette with visible roots, slender trunk,
+           four tiers of graceful curving boughs, and exactly SEVEN STARS.
+           Scaled to 83% to nest harmoniously inside the compact Tengwar circle.
+           ==================================================================== -->
+      <g class="white-tree-heraldry" id="white-tree-symbol" transform="translate(350, 350) scale(0.83) translate(-350, -350)">
+        <!-- Inner Circular Field Depth (Slightly lighter blue-green in Night; warm parchment in Light) -->
+        <circle cx="350" cy="350" r="215" class="sigil-inner-field" />
+        <circle cx="350" cy="350" r="215" class="sigil-inner-border" />
+
+        <!-- Subtle Atmospheric Aura radiating behind the White Tree -->
+        <ellipse cx="350" cy="335" rx="160" ry="160" class="tree-moon-aura" />
+
+        <!-- Heraldic Vector Artwork: Roots, Trunk, Symmetrical Boughs, Folia -->
+        <g class="tree-heraldic-silhouette" filter="url(#tree-heraldic-glow)">
+          <!-- 3.1 VISIBLE SPREADING ROOTS & DAIS ANCHOR -->
+          <g class="tree-roots" stroke="url(#heraldic-tree-grad)" stroke-linecap="round">
+            <!-- Center Root driving downward into the stone -->
+            <path d="M 347,458 L 350,480 L 353,458" stroke-width="2.6" fill="none" />
+            <!-- Left Spreading Root -->
+            <path d="M 344,454 C 334,461 320,467 304,473 C 300,474 302,477 306,476 C 322,471 336,464 345,456" stroke-width="2.2" fill="none" />
+            <!-- Right Spreading Root -->
+            <path d="M 356,454 C 366,461 380,467 396,473 C 400,474 398,477 394,476 C 378,471 364,464 355,456" stroke-width="2.2" fill="none" />
+            <!-- Minor lateral root tendrils -->
+            <path d="M 330,466 C 322,470 315,475 311,478" stroke-width="1.4" fill="none" />
+            <path d="M 370,466 C 378,470 385,475 389,478" stroke-width="1.4" fill="none" />
+          </g>
+
+          <!-- 3.2 SLENDER, ELEGANT CENTRAL TRUNK -->
+          <path
+            d="M 344,456
+               C 342,420 344,380 346,340
+               C 347,305 347,270 348,242
+               C 348,236 349,230 350,224
+               C 351,230 352,236 352,242
+               C 353,270 353,305 354,340
+               C 356,380 358,420 356,456 Z"
+            fill="url(#heraldic-tree-grad)"
+            class="tree-trunk-body"
+          />
+          <!-- Vertical Specular Fluting along Center of Trunk -->
+          <path d="M 350,454 L 350,224" stroke-width="1.2" stroke-linecap="round" class="tree-trunk-flute" />
+
+          <!-- Central Ascending Spire and Crowning Heraldic Blossom -->
+          <path d="M 350,224 L 350,196" stroke="url(#heraldic-tree-grad)" stroke-width="2.4" stroke-linecap="round" />
+          <!-- Crowning Heraldic Bud / Trefoil Shoot -->
+          <path
+            d="M 350,196
+               C 346,189 345,181 350,175
+               C 355,181 354,189 350,196 Z"
+            class="tree-crown-blossom"
+          />
+
+          <!-- 3.3 DISTINCT SYMMETRICAL BRANCH TIERS -->
+          <!-- TIER 1: LOWER GRAND BOUGHS -->
+          <path
+            d="M 346,408
+               C 328,408 306,416 288,425
+               C 274,432 260,442 248,452
+               M 288,425
+               C 280,414 270,404 258,397
+               C 248,392 238,391 228,391"
+            stroke="url(#heraldic-tree-grad)"
+            stroke-width="2.4"
+            stroke-linecap="round"
+            fill="none"
+          />
+          <path
+            d="M 354,408
+               C 372,408 394,416 412,425
+               C 426,432 440,442 452,452
+               M 412,425
+               C 420,414 430,404 442,397
+               C 452,392 462,391 472,391"
+            stroke="url(#heraldic-tree-grad)"
+            stroke-width="2.4"
+            stroke-linecap="round"
+            fill="none"
+          />
+
+          <!-- TIER 2: MID-LOWER BOUGHS -->
+          <path
+            d="M 347,362
+               C 325,357 300,351 280,338
+               C 264,327 252,312 244,293
+               M 280,338
+               C 276,324 274,310 276,296
+               C 278,287 284,279 292,274"
+            stroke="url(#heraldic-tree-grad)"
+            stroke-width="2.2"
+            stroke-linecap="round"
+            fill="none"
+          />
+          <path
+            d="M 353,362
+               C 375,357 400,351 420,338
+               C 436,327 448,312 456,293
+               M 420,338
+               C 424,324 426,310 424,296
+               C 422,287 416,279 408,274"
+            stroke="url(#heraldic-tree-grad)"
+            stroke-width="2.2"
+            stroke-linecap="round"
+            fill="none"
+          />
+
+          <!-- TIER 3: MID-UPPER BOUGHS -->
+          <path
+            d="M 348,312
+               C 334,302 320,288 310,271
+               C 302,258 300,244 304,232
+               M 320,288
+               C 324,277 330,266 338,258"
+            stroke="url(#heraldic-tree-grad)"
+            stroke-width="2.0"
+            stroke-linecap="round"
+            fill="none"
+          />
+          <path
+            d="M 352,312
+               C 366,302 380,288 390,271
+               C 398,258 400,244 396,232
+               M 380,288
+               C 376,277 370,266 362,258"
+            stroke="url(#heraldic-tree-grad)"
+            stroke-width="2.0"
+            stroke-linecap="round"
+            fill="none"
+          />
+
+          <!-- TIER 4: HIGH CROWN SHOOTS -->
+          <path
+            d="M 349,260
+               C 338,248 330,234 326,218
+               C 324,208 327,198 334,192"
+            stroke="url(#heraldic-tree-grad)"
+            stroke-width="1.7"
+            stroke-linecap="round"
+            fill="none"
+          />
+          <path
+            d="M 351,260
+               C 362,248 370,234 374,218
+               C 376,208 373,198 366,192"
+            stroke="url(#heraldic-tree-grad)"
+            stroke-width="1.7"
+            stroke-linecap="round"
+            fill="none"
+          />
+
+          <!-- 3.4 HERALDIC LEAF BUDS & TREFOIL TERMINALS -->
+          <!-- Left Terminals -->
+          <circle cx="228" cy="391" r="3.2" class="tree-folium" />
+          <circle cx="248" cy="452" r="2.6" class="tree-folium-subtle" />
+          <circle cx="258" cy="397" r="2.2" class="tree-folium" />
+          <circle cx="244" cy="293" r="3.2" class="tree-folium" />
+          <circle cx="292" cy="274" r="2.8" class="tree-folium-subtle" />
+          <circle cx="304" cy="232" r="3.0" class="tree-folium" />
+          <circle cx="338" cy="258" r="2.4" class="tree-folium-subtle" />
+          <circle cx="334" cy="192" r="2.6" class="tree-folium" />
+
+          <!-- Right Terminals (Exact Symmetrical Counterparts) -->
+          <circle cx="472" cy="391" r="3.2" class="tree-folium" />
+          <circle cx="452" cy="452" r="2.6" class="tree-folium-subtle" />
+          <circle cx="442" cy="397" r="2.2" class="tree-folium" />
+          <circle cx="456" cy="293" r="3.2" class="tree-folium" />
+          <circle cx="408" cy="274" r="2.8" class="tree-folium-subtle" />
+          <circle cx="396" cy="232" r="3.0" class="tree-folium" />
+          <circle cx="362" cy="258" r="2.4" class="tree-folium-subtle" />
+          <circle cx="366" cy="192" r="2.6" class="tree-folium" />
+        </g>
+
+        <!-- 3.5 THE SEVEN STARS OF THE DÛNEDAIN (Canonical Heraldic Motif)
+             Exactly SEVEN clearly separated stars arching majestically above the crown. -->
+        <g class="tree-seven-stars" filter="url(#tree-heraldic-glow)">
+          <!-- Star 1: Far Left (Low flank) -->
+          <polygon
+            points="245,236 248,230 251,236 257,237 252,241 254,247 248,243 242,247 244,241 239,237"
+            class="star-heraldic star-1"
+          />
+
+          <!-- Star 2: Mid-Left -->
+          <polygon
+            points="272,192 275,186 278,192 284,193 279,197 281,203 275,199 269,203 271,197 266,193"
+            class="star-heraldic star-2 star-subtle"
+          />
+
+          <!-- Star 3: Inner Left -->
+          <polygon
+            points="308,162 311,156 314,162 320,163 315,167 317,173 311,169 305,173 307,167 302,163"
+            class="star-heraldic star-3"
+          />
+
+          <!-- Star 4: High Zenith Center (Crown Star - 8-pointed royal emblem) -->
+          <polygon
+            points="350,132 353,143 364,146 353,149 350,160 347,149 336,146 347,143"
+            class="star-heraldic star-zenith"
+          />
+          <circle cx="350" cy="146" r="1.6" class="star-zenith-center" />
+
+          <!-- Star 5: Inner Right -->
+          <polygon
+            points="392,162 395,156 398,162 404,163 399,167 401,173 395,169 389,173 391,167 386,163"
+            class="star-heraldic star-5"
+          />
+
+          <!-- Star 6: Mid-Right -->
+          <polygon
+            points="428,192 431,186 434,192 440,193 435,197 437,203 431,199 425,203 427,197 422,193"
+            class="star-heraldic star-6 star-subtle"
+          />
+
+          <!-- Star 7: Far Right (Low flank) -->
+          <polygon
+            points="455,236 458,230 461,236 467,237 462,241 464,247 458,243 452,247 454,241 449,237"
+            class="star-heraldic star-7"
+          />
+        </g>
+
+        <!-- Upward Drifting Heraldic Motes / Starlight Particles -->
+        <g class="tree-silver-particles" aria-hidden="true">
+          <circle cx="310" cy="335" r="1.3" class="starlight-particle p-1" />
+          <circle cx="390" cy="350" r="1.2" class="starlight-particle p-2" />
+          <circle cx="285" cy="295" r="1.1" class="starlight-particle p-3" />
+          <circle cx="415" cy="305" r="1.3" class="starlight-particle p-4" />
+          <circle cx="350" cy="245" r="1.1" class="starlight-particle p-5" />
+          <circle cx="330" cy="195" r="1.2" class="starlight-particle p-6" />
+        </g>
+      </g>
+    </svg>
+  </div>
+</div>
+
+<style>
+  /* ==========================================================================
+     TENGWAR ANNATAR (Johan Winge) — Authentic One Ring Calligraphy
+     ========================================================================== */
+  @font-face {
+    font-family: 'Tengwar Annatar';
+    src: url('/fonts/tengwar/tngani-webfont.woff') format('woff'),
+         url('/fonts/tengwar/tngani.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+  }
+
+  /* ==========================================================================
+     THEME TOKENS: LIGHT (Warm Ivory & Deep Forest) vs NIGHT (Deep Blue-Green & Silver)
+     ========================================================================== */
+
+  /* 1. Base / Light Theme: Sophisticated warm ivory (#F8F5EE) & Oxford Forest */
+  .sigil-showcase-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 0.5rem;
+
+    /* Card Box & Border */
+    --sigil-card-bg: #F8F5EE;
+    --sigil-card-border: rgba(125, 96, 33, 0.22);
+    --sigil-card-shadow: 0 12px 32px rgba(26, 24, 22, 0.08), 0 2px 6px rgba(26, 24, 22, 0.04);
+
+    /* Background Tonal Radial Gradient */
+    --sigil-bg-stop-0: #FAF7F0;
+    --sigil-bg-stop-45: #F8F5EE;
+    --sigil-bg-stop-78: #EFE9DD;
+    --sigil-bg-stop-100: #E6DFCE;
+
+    /* Outer Ring: Delicate, low-contrast forest-green */
+    --sigil-outer-ring-stroke: #244033;
+    --sigil-outer-ring-opacity: 0.14;
+
+    /* Inner Circular Field: Harmonious warm parchment depth */
+    --sigil-inner-stop-0: #FCFAF4;
+    --sigil-inner-stop-65: #F5EFE3;
+    --sigil-inner-stop-100: #EAE1D0;
+    --sigil-inner-border: rgba(168, 135, 72, 0.20);
+
+    /* Ambient Spill & Guidelines: Antique gold/brass */
+    --sigil-spill-color: rgba(168, 135, 72, 0.08);
+    --sigil-spill-transparent: rgba(168, 135, 72, 0);
+    --sigil-guideline-color: #A88748;
+    --sigil-guideline-opacity: 0.22;
+
+    /* Inscription: Antique Gold / Muted Brass with high contrast */
+    --sigil-tengwar-core-fill: #84672D;
+    --sigil-tengwar-core-stroke: #6E5321;
+    --sigil-tengwar-bloom-fill: #A88748;
+    --sigil-tengwar-bloom-opacity: 0.35;
+
+    /* Flame Sweep Highlight */
+    --sigil-sweep-0: rgba(168, 135, 72, 0);
+    --sigil-sweep-25: rgba(197, 160, 89, 0.35);
+    --sigil-sweep-50: #FFF9EA;
+    --sigil-sweep-75: rgba(197, 160, 89, 0.35);
+    --sigil-sweep-100: rgba(168, 135, 72, 0);
+
+    /* White Tree: Deep Desaturated Oxford Forest Green (Magnificent on ivory paper) */
+    --sigil-tree-stop-0: #192E24;
+    --sigil-tree-stop-30: #223D30;
+    --sigil-tree-stop-65: #2D4E3E;
+    --sigil-tree-stop-100: #1B3528;
+    --sigil-tree-flute: #3F6352;
+    --sigil-tree-blossom: #1B3528;
+    --sigil-tree-folia: #20382C;
+    --sigil-tree-folia-subtle: #2D4E3E;
+
+    /* Stars & Embers */
+    --sigil-star-fill: #1A3326;
+    --sigil-star-subtle: #264636;
+    --sigil-ember-fill: #84672D;
+    --sigil-particle-fill: #2B4A3A;
+
+    /* Subtle Atmospheric Aura */
+    --sigil-tree-aura-0: rgba(250, 248, 242, 0.35);
+    --sigil-tree-aura-50: rgba(239, 233, 221, 0.15);
+    --sigil-tree-aura-100: rgba(230, 223, 206, 0);
+
+    /* Refined Theme Drop-Shadows (No neon orange) */
+    --sigil-tengwar-glow-idle: drop-shadow(0 0 1.5px rgba(168, 135, 72, 0.25));
+    --sigil-tengwar-glow-mid: drop-shadow(0 0 3px rgba(168, 135, 72, 0.40));
+    --sigil-tengwar-glow-peak: drop-shadow(0 0 4.5px rgba(168, 135, 72, 0.55)) drop-shadow(0 0 1px rgba(230, 205, 145, 0.6));
+    --sigil-tree-shimmer-idle: drop-shadow(0 0 1px rgba(32, 56, 44, 0.25));
+    --sigil-tree-shimmer-peak: drop-shadow(0 0 3px rgba(32, 56, 44, 0.45));
+  }
+
+  /* 2. Night Theme: Deep blue-green (#101D1A), lighter inner field, silver tree & muted gold */
+  :global([data-theme="night"]) .sigil-showcase-container,
+  :global(html[data-applied-mode="night"]) .sigil-showcase-container {
+    --sigil-card-bg: #101D1A;
+    --sigil-card-border: rgba(191, 169, 122, 0.25);
+    --sigil-card-shadow: 0 18px 44px rgba(0, 0, 0, 0.6), 0 0 20px rgba(182, 154, 97, 0.07);
+
+    /* Deep Blue-Green Tonal Surface */
+    --sigil-bg-stop-0: #152421;
+    --sigil-bg-stop-45: #12201D;
+    --sigil-bg-stop-78: #101D1A;
+    --sigil-bg-stop-100: #0B1513;
+
+    /* Outer Ring: Low-contrast forest slate */
+    --sigil-outer-ring-stroke: #254238;
+    --sigil-outer-ring-opacity: 0.38;
+
+    /* Inner Circular Field: Slightly lighter blue-green with restrained border */
+    --sigil-inner-stop-0: #172C26;
+    --sigil-inner-stop-65: #132420;
+    --sigil-inner-stop-100: #101D1A;
+    --sigil-inner-border: rgba(182, 154, 97, 0.22);
+
+    /* Ambient Spill & Guidelines: Muted antique gold */
+    --sigil-spill-color: rgba(182, 154, 97, 0.12);
+    --sigil-spill-transparent: rgba(182, 154, 97, 0);
+    --sigil-guideline-color: #B69A61;
+    --sigil-guideline-opacity: 0.25;
+
+    /* Inscription: Muted Antique Gold (#B69A61) */
+    --sigil-tengwar-core-fill: #DFC183;
+    --sigil-tengwar-core-stroke: #9C7F45;
+    --sigil-tengwar-bloom-fill: #B69A61;
+    --sigil-tengwar-bloom-opacity: 0.50;
+
+    /* Flame Sweep Highlight */
+    --sigil-sweep-0: rgba(182, 154, 97, 0);
+    --sigil-sweep-25: rgba(182, 154, 97, 0.4);
+    --sigil-sweep-50: #FFF5D8;
+    --sigil-sweep-75: rgba(182, 154, 97, 0.4);
+    --sigil-sweep-100: rgba(182, 154, 97, 0);
+
+    /* White Tree: Luminous Silver-White (#C8D0C7) */
+    --sigil-tree-stop-0: #8A9B90;
+    --sigil-tree-stop-30: #AFC0B5;
+    --sigil-tree-stop-65: #D2DCD4;
+    --sigil-tree-stop-100: #FFFFFF;
+    --sigil-tree-flute: #FFFFFF;
+    --sigil-tree-blossom: #FFFFFF;
+    --sigil-tree-folia: #FFFFFF;
+    --sigil-tree-folia-subtle: #D2DCD4;
+
+    /* Stars & Embers */
+    --sigil-star-fill: #FFFFFF;
+    --sigil-star-subtle: #E1EFFC;
+    --sigil-ember-fill: #C5A86B;
+    --sigil-particle-fill: #D2DCD4;
+
+    /* Lunar Aura */
+    --sigil-tree-aura-0: rgba(200, 208, 199, 0.25);
+    --sigil-tree-aura-50: rgba(175, 192, 181, 0.10);
+    --sigil-tree-aura-100: rgba(16, 29, 26, 0);
+
+    /* Refined Night Glow Keyframes (Muted gold aura, no neon orange) */
+    --sigil-tengwar-glow-idle: drop-shadow(0 0 2.5px rgba(182, 154, 97, 0.35));
+    --sigil-tengwar-glow-mid: drop-shadow(0 0 5px rgba(182, 154, 97, 0.50));
+    --sigil-tengwar-glow-peak: drop-shadow(0 0 8px rgba(182, 154, 97, 0.60)) drop-shadow(0 0 2px rgba(255, 241, 205, 0.65));
+    --sigil-tree-shimmer-idle: drop-shadow(0 0 2px rgba(200, 208, 199, 0.30));
+    --sigil-tree-shimmer-peak: drop-shadow(0 0 6px rgba(200, 208, 199, 0.65)) drop-shadow(0 0 1px #ffffff);
+  }
+
+  /* 3. System Dark Mode (Automatic OS dark fallback before JS hydration) */
+  @media (prefers-color-scheme: dark) {
+    :global(:root:not([data-theme="light"]):not([data-applied-mode="light"])) .sigil-showcase-container,
+    :global([data-theme="system"]) .sigil-showcase-container {
+      --sigil-card-bg: #101D1A;
+      --sigil-card-border: rgba(191, 169, 122, 0.25);
+      --sigil-card-shadow: 0 18px 44px rgba(0, 0, 0, 0.6), 0 0 20px rgba(182, 154, 97, 0.07);
+
+      --sigil-bg-stop-0: #152421;
+      --sigil-bg-stop-45: #12201D;
+      --sigil-bg-stop-78: #101D1A;
+      --sigil-bg-stop-100: #0B1513;
+
+      --sigil-outer-ring-stroke: #254238;
+      --sigil-outer-ring-opacity: 0.38;
+
+      --sigil-inner-stop-0: #172C26;
+      --sigil-inner-stop-65: #132420;
+      --sigil-inner-stop-100: #101D1A;
+      --sigil-inner-border: rgba(182, 154, 97, 0.22);
+
+      --sigil-spill-color: rgba(182, 154, 97, 0.12);
+      --sigil-spill-transparent: rgba(182, 154, 97, 0);
+      --sigil-guideline-color: #B69A61;
+      --sigil-guideline-opacity: 0.25;
+
+      --sigil-tengwar-core-fill: #DFC183;
+      --sigil-tengwar-core-stroke: #9C7F45;
+      --sigil-tengwar-bloom-fill: #B69A61;
+      --sigil-tengwar-bloom-opacity: 0.50;
+
+      --sigil-sweep-0: rgba(182, 154, 97, 0);
+      --sigil-sweep-25: rgba(182, 154, 97, 0.4);
+      --sigil-sweep-50: #FFF5D8;
+      --sigil-sweep-75: rgba(182, 154, 97, 0.4);
+      --sigil-sweep-100: rgba(182, 154, 97, 0);
+
+      --sigil-tree-stop-0: #8A9B90;
+      --sigil-tree-stop-30: #AFC0B5;
+      --sigil-tree-stop-65: #D2DCD4;
+      --sigil-tree-stop-100: #FFFFFF;
+      --sigil-tree-flute: #FFFFFF;
+      --sigil-tree-blossom: #FFFFFF;
+      --sigil-tree-folia: #FFFFFF;
+      --sigil-tree-folia-subtle: #D2DCD4;
+
+      --sigil-star-fill: #FFFFFF;
+      --sigil-star-subtle: #E1EFFC;
+      --sigil-ember-fill: #C5A86B;
+      --sigil-particle-fill: #D2DCD4;
+
+      --sigil-tree-aura-0: rgba(200, 208, 199, 0.25);
+      --sigil-tree-aura-50: rgba(175, 192, 181, 0.10);
+      --sigil-tree-aura-100: rgba(16, 29, 26, 0);
+
+      --sigil-tengwar-glow-idle: drop-shadow(0 0 2.5px rgba(182, 154, 97, 0.35));
+      --sigil-tengwar-glow-mid: drop-shadow(0 0 5px rgba(182, 154, 97, 0.50));
+      --sigil-tengwar-glow-peak: drop-shadow(0 0 8px rgba(182, 154, 97, 0.60)) drop-shadow(0 0 2px rgba(255, 241, 205, 0.65));
+      --sigil-tree-shimmer-idle: drop-shadow(0 0 2px rgba(200, 208, 199, 0.30));
+      --sigil-tree-shimmer-peak: drop-shadow(0 0 6px rgba(200, 208, 199, 0.65)) drop-shadow(0 0 1px #ffffff);
+    }
+  }
+
+  /* ==========================================================================
+     CARD CONTAINER & ARTWORK WRAPPER
+     ========================================================================== */
+
+  .sigil-artwork-wrapper {
+    width: 100%;
+    max-width: 520px;
+    aspect-ratio: 1 / 1;
+    position: relative;
+    border-radius: 14px;
+    overflow: hidden;
+    background-color: var(--sigil-card-bg);
+    box-shadow: var(--sigil-card-shadow);
+    border: 1px solid var(--sigil-card-border);
+    transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .sigil-cinematic-svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+    user-select: none;
+    pointer-events: none;
+  }
+
+  /* SVG Element Styling Driven by Scoped CSS Custom Properties */
+  .sigil-card-rect {
+    fill: url(#sigil-card-bg-grad);
+    transition: fill 0.3s ease;
+  }
+
+  .sigil-bg-stop-0 { stop-color: var(--sigil-bg-stop-0); }
+  .sigil-bg-stop-45 { stop-color: var(--sigil-bg-stop-45); }
+  .sigil-bg-stop-78 { stop-color: var(--sigil-bg-stop-78); }
+  .sigil-bg-stop-100 { stop-color: var(--sigil-bg-stop-100); }
+
+  .sigil-outer-ring {
+    fill: none;
+    stroke: var(--sigil-outer-ring-stroke);
+    stroke-width: 1.5;
+    opacity: var(--sigil-outer-ring-opacity);
+    transition: stroke 0.3s ease, opacity 0.3s ease;
+  }
+
+  .sigil-inner-field {
+    fill: url(#sigil-inner-field-grad);
+    transition: fill 0.3s ease;
+  }
+  .sigil-inner-stop-0 { stop-color: var(--sigil-inner-stop-0); }
+  .sigil-inner-stop-65 { stop-color: var(--sigil-inner-stop-65); }
+  .sigil-inner-stop-100 { stop-color: var(--sigil-inner-stop-100); }
+
+  .sigil-inner-border {
+    fill: none;
+    stroke: var(--sigil-inner-border);
+    stroke-width: 0.8;
+    transition: stroke 0.3s ease;
+  }
+
+  .sigil-ambient-spill {
+    fill: url(#ambient-gold-spill);
+  }
+  .sigil-spill-stop-0 { stop-color: var(--sigil-spill-transparent); }
+  .sigil-spill-stop-78 { stop-color: var(--sigil-spill-color); }
+  .sigil-spill-stop-88 { stop-color: var(--sigil-spill-color); opacity: 0.5; }
+  .sigil-spill-stop-100 { stop-color: var(--sigil-spill-transparent); }
+
+  .guideline-outer,
+  .guideline-inner {
+    stroke: var(--sigil-guideline-color);
+    stroke-width: 0.7;
+    opacity: var(--sigil-guideline-opacity);
+    transition: stroke 0.3s ease, opacity 0.3s ease;
+  }
+
+  .inscription-text-bloom {
+    font-family: 'Tengwar Annatar', 'Tengwar Annatar Italic', serif;
+    font-style: italic;
+    user-select: none;
+    -webkit-font-smoothing: antialiased;
+    fill: var(--sigil-tengwar-bloom-fill);
+    opacity: var(--sigil-tengwar-bloom-opacity);
+    transition: fill 0.3s ease, opacity 0.3s ease;
+  }
+
+  .inscription-text-core {
+    font-family: 'Tengwar Annatar', 'Tengwar Annatar Italic', serif;
+    font-style: italic;
+    user-select: none;
+    -webkit-font-smoothing: antialiased;
+    fill: var(--sigil-tengwar-core-fill);
+    stroke: var(--sigil-tengwar-core-stroke);
+    transition: fill 0.3s ease, stroke 0.3s ease;
+  }
+
+  .sweep-stop-0 { stop-color: var(--sigil-sweep-0); }
+  .sweep-stop-25 { stop-color: var(--sigil-sweep-25); }
+  .sweep-stop-50 { stop-color: var(--sigil-sweep-50); }
+  .sweep-stop-75 { stop-color: var(--sigil-sweep-75); }
+  .sweep-stop-100 { stop-color: var(--sigil-sweep-100); }
+
+  /* Tree Shaders & Details */
+  .tree-grad-stop-0 { stop-color: var(--sigil-tree-stop-0); }
+  .tree-grad-stop-30 { stop-color: var(--sigil-tree-stop-30); }
+  .tree-grad-stop-65 { stop-color: var(--sigil-tree-stop-65); }
+  .tree-grad-stop-100 { stop-color: var(--sigil-tree-stop-100); }
+
+  .tree-trunk-flute {
+    stroke: var(--sigil-tree-flute);
+    opacity: 0.85;
+    transition: stroke 0.3s ease;
+  }
+
+  .tree-crown-blossom {
+    fill: var(--sigil-tree-blossom);
+    transition: fill 0.3s ease;
+  }
+
+  .tree-folium {
+    fill: var(--sigil-tree-folia);
+    transition: fill 0.3s ease;
+  }
+
+  .tree-folium-subtle {
+    fill: var(--sigil-tree-folia-subtle);
+    transition: fill 0.3s ease;
+  }
+
+  .tree-moon-aura {
+    fill: url(#tree-moon-glow);
+  }
+  .tree-aura-stop-0 { stop-color: var(--sigil-tree-aura-0); }
+  .tree-aura-stop-50 { stop-color: var(--sigil-tree-aura-50); }
+  .tree-aura-stop-100 { stop-color: var(--sigil-tree-aura-100); }
+
+  .star-heraldic {
+    fill: var(--sigil-star-fill);
+    transition: fill 0.3s ease;
+  }
+
+  .star-subtle {
+    fill: var(--sigil-star-subtle);
+  }
+
+  .star-zenith-center {
+    fill: var(--sigil-star-fill);
+    transition: fill 0.3s ease;
+  }
+
+  .sigil-ember {
+    fill: var(--sigil-ember-fill);
+    transition: fill 0.3s ease;
+  }
+
+  .starlight-particle {
+    fill: var(--sigil-particle-fill);
+    transition: fill 0.3s ease;
+  }
+
+  /* ==========================================================================
+     ANIMATION ORCHESTRATION (12-Second Continuous Cinematic Loop)
+     ========================================================================== */
+
+  /* Default Static Fallback State */
+  .circular-inscription-group {
+    opacity: 0.92;
+    filter: var(--sigil-tengwar-glow-idle);
+  }
+
+  .flame-sweep-circle {
+    opacity: 0.25;
+    stroke-dasharray: 240 1130;
+    stroke-dashoffset: 300;
+  }
+
+  .white-tree-heraldry {
+    opacity: 0.94;
+  }
+
+  .sigil-embers {
+    opacity: 0.35;
+  }
+
+  .tree-silver-particles {
+    opacity: 0.50;
+  }
+
+  /* --------------------------------------------------------------------------
+     ACTIVE ANIMATION PIPELINE (Triggered when in viewport)
+     -------------------------------------------------------------------------- */
+
+  /* 1. Circular Inscription Restrained Glow Cycle */
+  .sigil-showcase-container.is-active .circular-inscription-group {
+    animation: inscription-flame-cycle 12s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    will-change: opacity, filter;
+  }
+
+  @keyframes inscription-flame-cycle {
+    0% {
+      opacity: 0.85;
+      filter: var(--sigil-tengwar-glow-idle);
+    }
+    20% {
+      opacity: 0.92;
+      filter: var(--sigil-tengwar-glow-mid);
+    }
+    40% {
+      opacity: 1;
+      filter: var(--sigil-tengwar-glow-peak);
+    }
+    60% {
+      opacity: 0.94;
+      filter: var(--sigil-tengwar-glow-mid);
+    }
+    78% {
+      opacity: 1;
+      filter: var(--sigil-tengwar-glow-peak);
+    }
+    92% {
+      opacity: 0.88;
+      filter: var(--sigil-tengwar-glow-idle);
+    }
+    100% {
+      opacity: 0.85;
+      filter: var(--sigil-tengwar-glow-idle);
+    }
+  }
+
+  /* 2. Light Sweep Traveling Along Circular Baseline */
+  .sigil-showcase-container.is-active .flame-sweep-circle {
+    stroke-dasharray: 240 1130;
+    animation: flame-sweep-run 12s cubic-bezier(0.3, 0, 0.2, 1) infinite;
+    will-change: stroke-dashoffset, opacity;
+  }
+
+  @keyframes flame-sweep-run {
+    0% {
+      stroke-dashoffset: 1370;
+      opacity: 0;
+    }
+    15% {
+      opacity: 0.25;
+    }
+    28% {
+      opacity: 0.65;
+    }
+    54% {
+      stroke-dashoffset: 0;
+      opacity: 0.55;
+    }
+    62% {
+      opacity: 0;
+    }
+    100% {
+      stroke-dashoffset: 0;
+      opacity: 0;
+    }
+  }
+
+  /* 3. Canonical White Tree of Gondor Light Surge & Radiance */
+  .sigil-showcase-container.is-active .white-tree-heraldry {
+    animation: tree-silver-surge 12s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    will-change: opacity;
+  }
+
+  @keyframes tree-silver-surge {
+    0%, 25% {
+      opacity: 0.80;
+    }
+    45% {
+      opacity: 0.90;
+    }
+    65% {
+      opacity: 0.98;
+    }
+    80% {
+      opacity: 1;
+    }
+    88% {
+      opacity: 0.98;
+    }
+    95% {
+      opacity: 0.86;
+    }
+    100% {
+      opacity: 0.80;
+    }
+  }
+
+  /* Shimmer Across Symmetrical Boughs */
+  .sigil-showcase-container.is-active .tree-heraldic-silhouette {
+    animation: tree-bough-shimmer 6s ease-in-out infinite alternate;
+  }
+
+  @keyframes tree-bough-shimmer {
+    0% {
+      filter: var(--sigil-tree-shimmer-idle);
+    }
+    50% {
+      filter: var(--sigil-tree-shimmer-peak);
+    }
+    100% {
+      filter: var(--sigil-tree-shimmer-idle);
+    }
+  }
+
+  /* Seven Stars Celestial Pulsing */
+  .sigil-showcase-container.is-active .star-zenith {
+    animation: star-glow-pulse 3s ease-in-out infinite alternate;
+  }
+  .sigil-showcase-container.is-active .star-1 { animation: star-glow-pulse 2.6s ease-in-out infinite alternate 0.3s; }
+  .sigil-showcase-container.is-active .star-2 { animation: star-glow-pulse 2.9s ease-in-out infinite alternate 0.6s; }
+  .sigil-showcase-container.is-active .star-3 { animation: star-glow-pulse 3.2s ease-in-out infinite alternate 0.9s; }
+  .sigil-showcase-container.is-active .star-5 { animation: star-glow-pulse 3.2s ease-in-out infinite alternate 0.9s; }
+  .sigil-showcase-container.is-active .star-6 { animation: star-glow-pulse 2.9s ease-in-out infinite alternate 0.6s; }
+  .sigil-showcase-container.is-active .star-7 { animation: star-glow-pulse 2.6s ease-in-out infinite alternate 0.3s; }
+
+  @keyframes star-glow-pulse {
+    0% {
+      opacity: 0.80;
+      transform: scale(0.95);
+      transform-origin: center;
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1.08);
+      transform-origin: center;
+    }
+  }
+
+  /* 4. Restrained Rising Embers */
+  .sigil-showcase-container.is-active .sigil-ember {
+    animation: ember-float 5.5s ease-in-out infinite alternate;
+  }
+  .sigil-showcase-container.is-active .emb-1 { animation-delay: 0.3s; }
+  .sigil-showcase-container.is-active .emb-2 { animation-delay: 1.2s; }
+  .sigil-showcase-container.is-active .emb-3 { animation-delay: 2.1s; }
+  .sigil-showcase-container.is-active .emb-4 { animation-delay: 3.0s; }
+  .sigil-showcase-container.is-active .emb-5 { animation-delay: 3.8s; }
+  .sigil-showcase-container.is-active .emb-6 { animation-delay: 4.5s; }
+  .sigil-showcase-container.is-active .emb-7 { animation-delay: 1.8s; }
+
+  @keyframes ember-float {
+    0% {
+      opacity: 0.20;
+      transform: translate(0, 0);
+    }
+    50% {
+      opacity: 0.70;
+    }
+    100% {
+      opacity: 0.15;
+      transform: translate(3px, -5px);
+    }
+  }
+
+  /* 5. Upward Drifting Motes */
+  .sigil-showcase-container.is-active .tree-silver-particles {
+    animation: particles-ascend 7s ease-in-out infinite alternate;
+  }
+
+  @keyframes particles-ascend {
+    0% {
+      opacity: 0.35;
+      transform: translateY(0);
+    }
+    50% {
+      opacity: 0.80;
+      transform: translateY(-4px);
+    }
+    100% {
+      opacity: 0.35;
+      transform: translateY(-8px);
+    }
+  }
+
+  /* ==========================================================================
+     REDUCED MOTION ACCESSIBILITY (Zero continuous motion fallback)
+     ========================================================================== */
+  @media (prefers-reduced-motion: reduce) {
+    .sigil-artwork-wrapper *,
+    .sigil-showcase-container.is-active * {
+      animation: none !important;
+      transition: none !important;
+    }
+
+    .circular-inscription-group {
+      opacity: 0.95 !important;
+      filter: var(--sigil-tengwar-glow-idle) !important;
+    }
+
+    .white-tree-heraldry {
+      opacity: 0.96 !important;
+    }
+
+    .flame-sweep-circle {
+      opacity: 0.25 !important;
+      stroke-dashoffset: 400 !important;
+    }
+
+    .tree-seven-stars polygon {
+      opacity: 0.95 !important;
+    }
+  }
+</style>
+
+<script>
+  // ==========================================================================
+  // PERFORMANCE & VISIBILITY CONTROLLER
+  // Only activates heavy CSS animations when visible on screen and tab active
+  // ==========================================================================
+  function initSigilAnimation() {
+    const container = document.querySelector('[data-sigil-animation]');
+    if (!container) return;
+    const targetElement = container;
+
+    // Check prefers-reduced-motion
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (prefersReducedMotion) {
+      targetElement.classList.remove('is-active');
+      return;
+    }
+
+    let isIntersecting = false;
+
+    // 1. Intersection Observer: Start when in viewport, stop when scrolled away
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          isIntersecting = entry.isIntersecting;
+          updateAnimationState();
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    observer.observe(targetElement);
+
+    // 2. Page Visibility Listener: Pause animation when user switches browser tabs
+    function handleVisibilityChange() {
+      updateAnimationState();
+    }
+
+    function updateAnimationState() {
+      if (isIntersecting && !document.hidden) {
+        targetElement.classList.add('is-active');
+      } else {
+        targetElement.classList.remove('is-active');
+      }
+    }
+
+    document.addEventListener('visibilitychange', handleVisibilityChange);
+
+    // Cleanup on Astro page transition
+    document.addEventListener(
+      'astro:before-swap',
+      () => {
+        observer.disconnect();
+        document.removeEventListener('visibilitychange', handleVisibilityChange);
+      },
+      { once: true }
+    );
+  }
+
+  // Initialize on initial page load and after Astro View Transitions
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initSigilAnimation);
+  } else {
+    initSigilAnimation();
+  }
+
+  document.addEventListener('astro:page-load', initSigilAnimation);
+</script>

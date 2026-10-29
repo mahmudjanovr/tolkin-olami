@@ -1,0 +1,690 @@
+---
+import type { JourneyDefinition } from '@/utils/atlas/journey-types';
+import { REGISTERED_JOURNEYS } from '@/data/journeys/journey-registry';
+
+interface Props {
+  journey: JourneyDefinition;
+  journeys?: Record<string, JourneyDefinition>;
+  initialStageNumber?: number;
+  isActive?: boolean;
+}
+
+const {
+  journey,
+  journeys = REGISTERED_JOURNEYS,
+  initialStageNumber = 1,
+  isActive = false,
+} = Astro.props;
+
+const currentStage =
+  journey.stages.find((s) => s.sequence === initialStageNumber) || journey.stages[0]!;
+const allJourneysList = Object.values(journeys);
+---
+
+<aside
+  id="atlas-journey-panel"
+  class:list={['atlas-journey-panel', { 'is-active': isActive }]}
+  aria-label="Tarixiy Sayohat Tafsilotlari"
+  data-active-journey={journey.id}
+  data-active-stage={currentStage.sequence}
+  data-total-stages={journey.totalStages}
+>
+  <!-- Mobil surish (drag) dastagi -->
+  <div class="mobile-drag-handle" aria-hidden="true">
+    <span class="handle-bar"></span>
+  </div>
+
+  <div class="journey-panel-header">
+    <div class="journey-meta">
+      <span class="journey-tag" id="journey-header-tag">Tarixiy Sayohat</span>
+      <span class="journey-era" id="journey-header-era">{journey.eraUz}, {journey.yearUz}</span>
+    </div>
+
+    <button
+      type="button"
+      id="journey-close-btn"
+      class="journey-close-btn"
+      aria-label="Sayohat panelini yopish va toʻliq xaritaga qaytish"
+      title="Sayohat rejimidan chiqish"
+    >
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="6"></line>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Sayohat yo'nalishlarini almashtirish tablari -->
+  <nav class="journey-selector-tabs" aria-label="Sayohatlar roʻyxati" role="tablist">
+    {allJourneysList.map((j) => (
+      <button
+        type="button"
+        class:list={['journey-tab-btn', { 'is-active': j.id === journey.id }]}
+        data-journey-id={j.id}
+        role="tab"
+        aria-selected={j.id === journey.id ? 'true' : 'false'}
+        title={j.titleUz}
+      >
+        <span class="tab-indicator-dot" style={`background-color: ${j.color}`} aria-hidden="true"></span>
+        <span class="tab-label">
+          {j.id === 'bilbo'
+            ? 'Bilbo Safari'
+            : j.id === 'fellowship'
+              ? 'Qardoshlik'
+              : j.id === 'ring-bearer'
+                ? 'Frodo va Sam'
+                : j.id === 'grey-company'
+                  ? 'Aragorn'
+                  : 'Beren va Lúthien'}
+        </span>
+      </button>
+    ))}
+  </nav>
+
+  <div class="journey-title-block">
+    <h3 class="journey-main-title" id="journey-main-title">{journey.titleUz}</h3>
+    <p class="journey-travelers" id="journey-travelers">{journey.travelerUz}</p>
+  </div>
+
+  <!-- Bosqichlar Stepperi (1 dan N gacha) -->
+  <div class="journey-stepper-container" role="region" aria-label="Sayohat bosqichlari navigatsiyasi">
+    <ol class="journey-stepper" id="journey-stepper-list">
+      {journey.stages.map((stage) => (
+        <li class="stepper-item">
+          <button
+            type="button"
+            class:list={['step-btn', { 'is-current': stage.sequence === currentStage.sequence }]}
+            data-stage-num={stage.sequence}
+            aria-current={stage.sequence === currentStage.sequence ? 'step' : 'false'}
+            aria-label={`${stage.sequence}-bosqich: ${stage.locationNameUz}`}
+            title={`${stage.sequence}. ${stage.locationNameUz}`}
+          >
+            <span class="step-num">{stage.sequence}</span>
+          </button>
+        </li>
+      ))}
+    </ol>
+  </div>
+
+  <!-- Joriy Bosqich Kartasi -->
+  <div class="journey-body">
+    <div class="stage-card" id="journey-stage-card">
+      <div class="stage-badge-row">
+        <span class="stage-counter" id="journey-stage-counter">
+          {currentStage.sequence} / {journey.totalStages}-bosqich
+        </span>
+        <span
+          class:list={['stage-direction-badge', currentStage.direction === 'return' ? 'is-return' : 'is-outbound']}
+          id="journey-stage-direction"
+        >
+          {currentStage.direction === 'return' ? 'Qaytish yoʻli' : 'Borish safari'}
+        </span>
+        <span class="stage-date" id="journey-stage-date">
+          {currentStage.dateUz}
+        </span>
+      </div>
+
+      <h4 class="stage-title" id="journey-stage-title">
+        {currentStage.titleUz}
+      </h4>
+
+      <div class="stage-location-box">
+        <span class="location-pin-icon" aria-hidden="true">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+            <circle cx="12" cy="10" r="3"></circle>
+          </svg>
+        </span>
+        <strong id="journey-stage-location">{currentStage.locationNameUz}</strong>
+        <span class="location-orig" id="journey-stage-location-orig">({currentStage.locationNameOriginal})</span>
+      </div>
+
+      <div class="stage-coords-row">
+        <span class="coords-text">Planar Koordinatalar:</span>
+        <code id="journey-stage-coords">
+          {currentStage.coordinates ? `X: ${currentStage.coordinates.x}, Y: ${currentStage.coordinates.y}` : 'Noaniq'}
+        </code>
+        <span class="coord-resolution-badge" id="journey-stage-res-badge">
+          {currentStage.coordinateResolution.status === 'confirmed' ? 'Kanonik Tasdiqlangan' : 'Taxminiy Nuqta'}
+        </span>
+      </div>
+
+      <div class="story-event-section">
+        <h5 class="event-title" id="journey-stage-event-title">
+          {currentStage.storyEvent.titleUz}
+        </h5>
+        <p class="event-desc" id="journey-stage-event-desc">
+          {currentStage.storyEvent.descriptionUz}
+        </p>
+        <div class="event-significance">
+          <strong>Tarixiy ahamiyati:</strong>
+          <span id="journey-stage-significance">{currentStage.storyEvent.significanceUz}</span>
+        </div>
+      </div>
+
+      <!-- Kontekstual Entiti Havolalari (Qahramon, Joy, Tarixiy Voqea) -->
+      <div class="stage-context-box" id="journey-stage-context-box">
+        <span class="context-heading">Bogʻliq Maqolalar:</span>
+        <div class="context-pills" id="journey-context-pills">
+          {currentStage.placeId && (
+            <a href={`/xaritalar/?joy=${currentStage.placeId}`} class="context-pill place-pill" data-place-id={currentStage.placeId}>
+              📍 {currentStage.locationNameUz}
+            </a>
+          )}
+        </div>
+      </div>
+
+      <!-- Kanonik Manba Iqtibosi -->
+      <div class="stage-source-box">
+        <div class="source-header">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+          </svg>
+          <span class="source-label">Kanonik Matn Manbasi:</span>
+        </div>
+        <p class="source-ref" id="journey-stage-source-ref">
+          <cite>{journey.source.titleUz}</cite>, {currentStage.source.chapterTitleUz}
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bosqichlararo Navigatsiya Tugmalari -->
+  <div class="journey-footer">
+    <button
+      type="button"
+      id="journey-prev-btn"
+      class="journey-nav-btn prev-btn"
+      disabled={currentStage.sequence <= 1}
+      aria-label="Oldingi bosqichga oʻtish"
+    >
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <polyline points="15 18 9 12 15 6"></polyline>
+      </svg>
+      <span>Oldingi</span>
+    </button>
+
+    <div class="footer-step-indicator" id="journey-footer-indicator">
+      {currentStage.sequence} / {journey.totalStages}
+    </div>
+
+    <button
+      type="button"
+      id="journey-next-btn"
+      class="journey-nav-btn next-btn"
+      disabled={currentStage.sequence >= journey.totalStages}
+      aria-label="Keyingi bosqichga oʻtish"
+    >
+      <span>Keyingi</span>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <polyline points="9 18 15 12 9 6"></polyline>
+      </svg>
+    </button>
+  </div>
+</aside>
+
+<style>
+  .atlas-journey-panel {
+    position: absolute;
+    top: 1.25rem;
+    right: 1.25rem;
+    width: 410px;
+    max-width: calc(100% - 2.5rem);
+    max-height: calc(100% - 2.5rem);
+    background-color: var(--color-bg-elevated);
+    border: 1px solid var(--color-border-strong);
+    border-radius: 8px;
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.35);
+    display: none;
+    flex-direction: column;
+    overflow-y: auto;
+    font-family: var(--font-sans-ui);
+    box-sizing: border-box;
+    z-index: 1000;
+  }
+
+  .atlas-journey-panel.is-active {
+    display: flex;
+  }
+
+  .mobile-drag-handle {
+    display: none;
+    justify-content: center;
+    padding: 0.75rem 0 0.25rem;
+  }
+
+  .handle-bar {
+    width: 40px;
+    height: 4px;
+    background-color: var(--color-border-strong);
+    border-radius: 2px;
+  }
+
+  .journey-panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.25rem 0.5rem;
+    border-bottom: 1px solid var(--color-border-subtle);
+  }
+
+  .journey-meta {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .journey-tag {
+    font-size: 0.6875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    background-color: rgba(197, 155, 39, 0.15);
+    color: var(--color-accent-gold);
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    border: 1px solid rgba(197, 155, 39, 0.3);
+  }
+
+  .journey-era {
+    font-size: 0.75rem;
+    color: var(--color-text-secondary);
+  }
+
+  .journey-close-btn {
+    background: none;
+    border: none;
+    color: var(--color-text-secondary);
+    cursor: pointer;
+    padding: 0.25rem;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.15s ease;
+  }
+
+  .journey-close-btn:hover {
+    color: var(--color-text-primary);
+    background-color: var(--color-bg-subtle);
+  }
+
+  /* Journey Tabs Bar */
+  .journey-selector-tabs {
+    display: flex;
+    gap: 0.35rem;
+    padding: 0.65rem 1.25rem;
+    background-color: var(--color-bg-subtle);
+    border-bottom: 1px solid var(--color-border-subtle);
+  }
+
+  .journey-tab-btn {
+    flex: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.35rem;
+    padding: 0.35rem 0.5rem;
+    font-family: var(--font-sans-ui);
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--color-text-secondary);
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    white-space: nowrap;
+  }
+
+  .journey-tab-btn:hover {
+    color: var(--color-text-primary);
+    background-color: var(--color-bg-surface);
+  }
+
+  .journey-tab-btn.is-active {
+    color: var(--color-text-primary);
+    background-color: var(--color-bg-elevated);
+    border-color: var(--color-border-strong);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  }
+
+  .tab-indicator-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+  }
+
+  .journey-title-block {
+    padding: 0.85rem 1.25rem 0.5rem;
+  }
+
+  .journey-main-title {
+    font-family: var(--font-serif-heading);
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.3;
+    color: var(--color-text-primary);
+    margin: 0 0 0.25rem;
+  }
+
+  .journey-travelers {
+    font-size: 0.8125rem;
+    line-height: 1.4;
+    color: var(--color-text-secondary);
+    margin: 0;
+  }
+
+  /* Stepper */
+  .journey-stepper-container {
+    padding: 0.5rem 1.25rem 0.75rem;
+    border-bottom: 1px solid var(--color-border-subtle);
+    overflow-x: auto;
+  }
+
+  .journey-stepper {
+    display: flex;
+    gap: 0.4rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .stepper-item {
+    flex-shrink: 0;
+  }
+
+  .step-btn {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 1px solid var(--color-border-strong);
+    background-color: var(--color-bg-subtle);
+    color: var(--color-text-secondary);
+    font-size: 0.75rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.15s ease;
+  }
+
+  .step-btn:hover {
+    border-color: var(--color-accent-gold);
+    color: var(--color-accent-gold);
+    transform: scale(1.08);
+  }
+
+  .step-btn.is-current {
+    background-color: var(--color-accent-gold);
+    border-color: var(--color-accent-gold);
+    color: #111827;
+    font-weight: 700;
+    box-shadow: 0 0 8px rgba(197, 155, 39, 0.4);
+  }
+
+  /* Body & Card */
+  .journey-body {
+    padding: 1rem 1.25rem;
+    flex-grow: 1;
+  }
+
+  .stage-badge-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .stage-counter {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--color-accent-gold);
+  }
+
+  .stage-direction-badge {
+    font-size: 0.6875rem;
+    padding: 0.15rem 0.45rem;
+    border-radius: 3px;
+    font-weight: 600;
+  }
+
+  .stage-direction-badge.is-outbound {
+    background-color: rgba(197, 155, 39, 0.12);
+    color: var(--color-accent-gold);
+  }
+
+  .stage-direction-badge.is-return {
+    background-color: rgba(74, 124, 89, 0.18);
+    color: #4a7c59;
+  }
+
+  .stage-date {
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+    margin-left: auto;
+  }
+
+  .stage-title {
+    font-family: var(--font-serif-heading);
+    font-size: 1.15rem;
+    font-weight: 700;
+    line-height: 1.35;
+    color: var(--color-text-primary);
+    margin: 0 0 0.5rem;
+  }
+
+  .stage-location-box {
+    display: flex;
+    align-items: baseline;
+    gap: 0.4rem;
+    font-size: 0.875rem;
+    color: var(--color-text-primary);
+    margin-bottom: 0.5rem;
+  }
+
+  .location-pin-icon {
+    color: var(--color-accent-gold);
+  }
+
+  .location-orig {
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+    font-style: italic;
+  }
+
+  .stage-coords-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    font-size: 0.75rem;
+    margin-bottom: 0.85rem;
+    padding-bottom: 0.65rem;
+    border-bottom: 1px dashed var(--color-border-subtle);
+  }
+
+  .coords-text {
+    color: var(--color-text-muted);
+  }
+
+  .stage-coords-row code {
+    font-family: var(--font-mono-code);
+    background-color: var(--color-bg-subtle);
+    padding: 0.1rem 0.35rem;
+    border-radius: 3px;
+    border: 1px solid var(--color-border-subtle);
+    color: var(--color-text-primary);
+  }
+
+  .coord-resolution-badge {
+    font-size: 0.6875rem;
+    color: #2d6a4f;
+    background-color: rgba(45, 106, 79, 0.12);
+    padding: 0.1rem 0.4rem;
+    border-radius: 3px;
+  }
+
+  .story-event-section {
+    background-color: var(--color-bg-subtle);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 6px;
+    padding: 0.85rem;
+    margin-bottom: 0.85rem;
+  }
+
+  .event-title {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: var(--color-text-primary);
+    margin: 0 0 0.4rem;
+  }
+
+  .event-desc {
+    font-size: 0.8125rem;
+    line-height: 1.55;
+    color: var(--color-text-secondary);
+    margin: 0 0 0.6rem;
+  }
+
+  .event-significance {
+    font-size: 0.75rem;
+    line-height: 1.5;
+    color: var(--color-text-muted);
+    padding-top: 0.5rem;
+    border-top: 1px dashed var(--color-border-subtle);
+  }
+
+  .event-significance strong {
+    color: var(--color-text-secondary);
+  }
+
+  /* Context Links */
+  .stage-context-box {
+    margin-bottom: 0.85rem;
+  }
+
+  .context-heading {
+    display: block;
+    font-size: 0.6875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-muted);
+    margin-bottom: 0.35rem;
+  }
+
+  .context-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+  }
+
+  .context-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-size: 0.75rem;
+    padding: 0.2rem 0.55rem;
+    background-color: var(--color-bg-surface);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 9999px;
+    color: var(--color-text-secondary);
+    text-decoration: none;
+    transition: all 0.15s ease;
+  }
+
+  .context-pill:hover {
+    border-color: var(--color-accent-gold);
+    color: var(--color-accent-gold);
+  }
+
+  .stage-source-box {
+    padding: 0.65rem 0.85rem;
+    background-color: var(--color-bg-subtle);
+    border-left: 2px solid var(--color-accent-gold);
+    border-radius: 0 4px 4px 0;
+  }
+
+  .source-header {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: 0.6875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--color-accent-gold);
+    margin-bottom: 0.2rem;
+  }
+
+  .source-ref {
+    font-size: 0.75rem;
+    color: var(--color-text-secondary);
+    margin: 0;
+    line-height: 1.4;
+  }
+
+  /* Footer Navigation */
+  .journey-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 1.25rem;
+    background-color: var(--color-bg-subtle);
+    border-top: 1px solid var(--color-border-subtle);
+  }
+
+  .journey-nav-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.4rem 0.8rem;
+    font-family: var(--font-sans-ui);
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: var(--color-text-primary);
+    background-color: var(--color-bg-elevated);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+  }
+
+  .journey-nav-btn:hover:not(:disabled) {
+    border-color: var(--color-accent-gold);
+    color: var(--color-accent-gold);
+  }
+
+  .journey-nav-btn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
+
+  .footer-step-indicator {
+    font-size: 0.8125rem;
+    font-weight: 700;
+    color: var(--color-text-secondary);
+  }
+
+  @media (max-width: 768px) {
+    .atlas-journey-panel {
+      top: auto;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      width: 100%;
+      max-width: 100%;
+      max-height: 65vh;
+      border-radius: 12px 12px 0 0;
+      box-shadow: 0 -8px 24px rgba(0, 0, 0, 0.4);
+    }
+
+    .mobile-drag-handle {
+      display: flex;
+    }
+  }
+</style>

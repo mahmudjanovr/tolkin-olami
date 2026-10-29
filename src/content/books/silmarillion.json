@@ -1,0 +1,76 @@
+{
+  "id": "silmarillion",
+  "title_uz": "Silmarillion",
+  "title_original": "The Silmarillion",
+  "aliases": [
+    "Silmarillion",
+    "The Silmarillion",
+    "Silmarillar Tarixi",
+    "Birinchi Davr Tarixi"
+  ],
+  "publication_year": 1977,
+  "publisher": "George Allen & Unwin",
+  "category": "posthumous_reconstructed",
+  "editor": "Christopher Tolkien (Guy Gavriel Kay koʻmagida)",
+  "isbn": "978-0-261-10273-6",
+  "cover_image": {
+    "src": "/images/books/silmarillion.webp",
+    "alt": "Silmarillion birinchi nashri original changqopi (George Allen & Unwin, 1977) — J.R.R. Tolkien chizgan Lúthien Tinúviel nishoni va toʻq koʻk-oltin fon",
+    "edition_title": "First Edition Dust Jacket (George Allen & Unwin, 1977)",
+    "publisher": "George Allen & Unwin",
+    "year": 1977,
+    "isbn": "978-0-261-10273-6",
+    "artist": "J.R.R. Tolkien",
+    "source": "George Allen & Unwin / British Library"
+  },
+  "synopsis": "«Silmarillion» (The Silmarillion) — J.R.R. Tolkien vafotidan soʻng, uning oʻgʻli Christopher Tolkien tomonidan yozuvchining yarim asrlik qoʻlyozmalari asosida tuzilib, 1977-yilda chop etilgan fundamental mifologik doston. Ushbu asar butun Tolkien legendariumining poydevori boʻlib, koinotning yaratilishi (Ainulindalë), xudolar va farishtasimon qudratlar (Valaquenta), Noldor elflarining Valinordan Beleriandga koʻchishi, uch muqaddas javohir — Silmarillar uchun Melkorga (Morgoth) qarshi olib borilgan fojiaviy urushlar (Quenta Silmarillion), Númenor orolining qulashi (Akallabêth) va Uchinchi Davrdagi Qudrat Uzuklari tarixini qamrab oladi.",
+  "detailed_sections": [
+    {
+      "title": "Besh qismli kompozitsiya va koinotning yaratilishi",
+      "content": "Asar bir-biri bilan chambarchas bogʻlangan beshta qismdan tashkil topgan. 1. «Ainulindalë» (Ainur Musiqasi) — Yagona Yaratuvchi Eru Ilúvatar va Uning fikridan yaralgan Ainurlar tomonidan koinotning (Eä) musiqiy ohanglar orqali barpo etilishi. Melkorning bu musiqaga oʻz kibrli ohanglarini tiqishtirishi orqali olamga yovuzlik va fojianing kirib kelishi tasvirlanadi. 2. «Valaquenta» (Valar va Maiar haqida rivoyat) — Arda dunyosini boshqaruvchi 14 buyuk Vala va ularning yordamchilari Maiar (shu jumladan Sauron, Olórin, Melian) xarakteristikasi beriladi. 3. «Quenta Silmarillion» (Silmarillar tarixi) — kitobning eng yirik markaziy qismi boʻlib, Birinchi Davr voqealarini toʻliq hikoya qiladi. 4. «Akallabêth» (Qulagan Oʻlka) — Ikkinchi Davrda buyuk dengiz orol-qirolligi Númenorning yuksalishi, kibrga berilishi va okean qaʼriga gʻarq boʻlishi fojiasi. 5. «Qudrat Uzuklari va Uchinchi Davr haqida» — «Uzuklar Hukmdori» voqealarini qisqa mifologik xulosa sifatida afsonalar zanjiriga ulovchi qismdir."
+    },
+    {
+      "title": "Fëanor, Silmarillar va Qasam fojiasi",
+      "content": "«Quenta Silmarillion»ning markaziy oʻqi Noldorning eng buyuk ustasi Fëanorning ijodi bilan bogʻliq. Fëanor Valinordagi Ikki Daraxt (Telperion va Laurelin) nurini uchta oʻxshashi yoʻq javohir — Silmarillarga jo qiladi. Morgoth ulkan oʻrgimchak Ungoliant bilan birgalikda Daraxtlarni zaharlab yoʻq qiladi, Finwëni oʻldirib, Silmarillarni oʻgʻirlab Belerianddagi Angband qalʼasiga qochadi. Gʻazab va kibrga toʻlgan Fëanor va uning yetti oʻgʻli dahshatli Qasam ichadilar: kim boʻlishidan qatʼi nazar, Silmarilni ushlab turgan har qanday mavjudotga qarshi soʻnggi nafasgacha urushadilar. Bu qasam Alqualondëdagi Birinchi Qarindosh Qirgʻiniga, Mandosning Laʼnatiga va Noldorning Belerianddagi fojiaviy taqdiriga sabab boʻladi."
+    },
+    {
+      "title": "Beleriand urushlari va buyuk qahramonlik dostonlari",
+      "content": "Kitobda Morgothga qarshi olib borilgan beshta buyuk jang tasvirlanadi: Dagor-nuin-Giliath (Yulduzlar ostidagi jang), Dagor Aglareb (Shonli jang), Dagor Bragollach (Toʻsatdan alanga jangi) va Nirnaeth Arnoediad (Sanoqsiz koʻz yoshlari jangi). Har bir jangda elflarning qudrati kamayib, insonlar bilan ittifoqlari sinovga uchraydi. Asar ichida uchta buyuk mustaqil afsona oʻrin olgan: oʻlik inson Beren va boqiy elf qizi Lúthienning Angband tojidagi Silmarilni qoʻlga kiritish yoʻlidagi tengsiz muhabbati; Túrin Turambarning fojiaviy qismati va ajdar Glaurung bilan jangi; hamda Tuorning dengiz orqali sirlar shahri Gondolinga kelishi va uning fojiaviy qulashi. Barcha umidlar soʻngan damda Yarim-elf Eärendil Silmaril nurini peshonasiga taqib, osmon orqali Valinorga yetib boradi va Valardan najot soʻraydi. Gʻazab Urushi (War of Wrath) bilan Morgoth tubsiz Zulmatga uloqtiriladi, ammo Beleriand zaminining oʻzi dengiz qaʼriga choʻkib ketadi."
+    },
+    {
+      "title": "Christopher Tolkienning matnshunoslik mehnati va nashr qimmati",
+      "content": "Tolkien 1917-yildan to 1973-yildagi vafotigacha «Silmarillion» ustida ishlagan boʻlsa-da, uni yakuniy nashr holatiga keltira olmagan edi. Christopher Tolkien kanadalik yozuvchi Guy Gavriel Kay yordamida otasining turli davrlardagi, baʼzan bir-biriga zid boʻlgan qoralamalarini (1930-yillardagi «Quenta», 1950-yillardagi qayta ishlanmalar, «Kulrang Yilnomalar») sinchkovlik bilan solishtirib chiqdi va ichki xronologiyasi mos keluvchi yaxlit nashr yaratdi. 1977-yilda kitob chiqqanda, u jahon adabiyotidagi eng buyuk adabiy rekonstruksiya hodisasi deb baholandi. «Silmarillion»siz «Uzuklar Hukmdori» va «Hobbit»dagi koʻplab sirli ishoralar, Galadrielning kelib chiqishi, Elrondning shajarasi va Aragornning taxt huquqi tushunarsiz boʻlib qolar edi."
+    },
+    {
+      "title": "Akallabêth: Atlantida afsonasi va Insonning oʻlimdan qoʻrquvi",
+      "content": "«Silmarillion»ning toʻrtinchi qismi boʻlgan «Akallabêth» Tolkienning butun umri davomida uni taʼqib qilgan «Atlantida sindromi» (oʻz tushlarida ulkan toʻlqin ostida qolgan qadimiy shahar manzarasi)ning yuksak badiiy inʼikosidir. Númenor afsonasi inson tabiatining eng chuqur fojiasini — vaqt va oʻlim muqarrarligini qabul qila olmaslik dardini ochib beradi. Eru tomonidan insonlarga berilgan «Oʻlim Inʼomi» (Gift of Men) dastlab ozodlik va cheksizlik sari yoʻl boʻlsa-da, Sauronning makkorona taʼsiri ostida númenorliklar unga dushman va laʼnat sifatida qaray boshlaydilar. Ular tosh maqbaralar quradilar, jasadlarni mumiyolaydilar va Boqiy Yerlarga hujum qiladilar. Natijada yulduz oroli okean qaʼriga gʻarq boʻladi; bu voqea insoniyat kibri qanchalik yuksak texnika va qudratga ega boʻlmasin, axloqiy va maʼnaviy qulash oldida ojiz ekanligini fosh etadi."
+    },
+    {
+      "title": "Mifologiyaning teologik asoslari: Monoteizm va Ilohiy Inoyat",
+      "content": "Garchi «Silmarillion» yuzaki qaraganda koʻp xudolik (politeizm) panteoniga oʻxshasa-da, uning zamirida qatʼiy monoteistik teologiya yotadi. Yagona Yaratuvchi Eru Ilúvatar koinotdan mutlaq ustun turadi; Valar esa faqat Uning fikridan yaralgan, dunyoni boshqaruvchi farishtasimon qudratlardir. Melkor qanchalik urinmasin, Eruning buyuk rejasini buza olmaydi, balki har bir yovuzlik oxir-oqibat yanada yuksakroq goʻzallik va jasoratning namoyon boʻlishiga xizmat qiladi («Musiqada shunday ohanglar paydo boʻlgayki, ularning goʻzalligi qaygʻudan tugʻilgay»). Tolkien «Silmarillion» orqali nasroniy ilohiyotini toʻgʻridan-toʻgʻri daʼvat qilmasdan, balki sof mifologik shakllar vositasida chuqur aks ettirgan."
+    },
+    {
+      "title": "Eärendil yulduzi, Gʻazab Urushi va Beleriandning gʻarq boʻlishi",
+      "content": "«Quenta Silmarillion»ning soʻnggi bobi Arda tarixidagi eng buyuk kosmologik burilishni yoritadi. Barcha elflar qirolliklari (Nargothrond, Gondolin, Doriath) qulab, omon qolganlar Sirion etaklariga toʻplangan damda, Yarim-elf Eärendil oʻzining Vingilot nomli oq kemasida xotini Elwing bilan birga Boqiy Gʻarb sari suzib boradi. Uning peshonasidagi Silmaril nuri Valinor tumanlarini yorib oʻtadi va u Valar oyoqlari ostiga yiqilib, oʻlik insonlar va azoblangan elflar nomidan shafqat soʻraydi. Valar qoʻshini, Maiar va Vanyar elflari oq bayroqlar ostida Beleriandga bostirib keladilar. Gʻazab Urushi (War of Wrath) qirq yil davom etadi; Morgoth qora qanotli ajdarlar toʻdasi — Ancalagon the Blackni jangga tashlaydi, biroq Eärendil osmon orqali uchib kelib, ajdarni yanchib tashlaydi. Morgoth asir olinib, Dunyo Devorlari ortidagi Abadiy Boʻshliqqa (Void) uloqtiriladi, ammo buyuk janglar oqibatida Beleriand zamini darz ketib, Buyuk Dengiz qaʼriga butunlay gʻarq boʻladi."
+    }
+  ],
+  "key_themes": [
+    "Koinotning ilohiy uygʻunligi va yovuzlikning musiqadagi ildizlari",
+    "Kibr, egalik hirs va Fëanor qasamyodining halokati",
+    "Fojiaviy qahramonlik va fëa (ruh) hamda hröa (tana) munosabatlari",
+    "Oʻlimning insonlarga inʼom etilgan neʼmat (Gift of Men) ekani",
+    "Buzilgan dunyoning tiklanishi va soʻnmas umid"
+  ],
+  "uzbek_editions": [
+    {
+      "title": "Silmarillion",
+      "translator": "Tahririyat / Ilmiy guruh",
+      "publisher": "Nashrga tayyorlanmoqda",
+      "year": 2026,
+      "format": "Akademik nashr",
+      "notes": "Ushbu asar hozircha oʻzbek tilida toʻliq rasmiy kitob shaklida chop etilmagan. Ensiklopediyamizdagi barcha iqtiboslar 1977-yilgi asl nusxadan toʻgʻridan-toʻgʻri ilmiy tarjima qilingan.",
+      "status": "untranslated"
+    }
+  ],
+  "translation_status_summary": "Oʻzbek tilida hozircha rasmiy toʻliq nashr etilmagan (untranslated); ilmiy tarjimasi loyihalashtirilgan."
+}

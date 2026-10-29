@@ -1,0 +1,39 @@
+{
+  "id": "brethil",
+  "name": "Brethil Oʻrmoni",
+  "elvish_name": "Brethil",
+  "type": "oʻlka",
+  "region": "beleriand",
+  "coordinates": {
+    "map_id": "beleriand",
+    "x": 860,
+    "y": 760
+  },
+  "founded_era": "Birinchi davr",
+  "destroyed_era": "Birinchi davr 587",
+  "rulers": [
+    "Haleth",
+    "Brandir"
+  ],
+  "notable_events": [
+    "Haleth xalqining koʻchishi",
+    "Carcharoth ovi",
+    "Glaurungning halokati"
+  ],
+  "textual_status": "author_published",
+  "summary": "Brethil — Teiglin va Sirion daryolari oraligʻidagi ulugʻvor qayin oʻrmoni. Edainning Haleth xalqi (Haladin) maskani boʻlgan. Beren va Huan ishtirokidagi Carcharoth ovi hamda keyinchalik Túrin Turambar tomonidan Glaurungning oʻldirilishi shu yerda roʻy bergan.",
+  "sources": [
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of the Coming of Men into the West",
+      "page": "142",
+      "notes": "Haleth xalqining Brethilga joylashishi."
+    }
+  ],
+  "description_sections": [
+    {
+      "title": "Haleth xalqi va Teiglin daryosi",
+      "content": "Brethil — Doriath gʻarbida, Sirion va Teiglin daryolari oraligʻida joylashgan qalin qayin oʻrmonidir. Birinchi Davrda Thingolning ruxsati bilan bu yerga Edainning uch xonadonidan biri boʻlgan Haleth Xalqi (Haladin) joylashgan.\n\nOʻrmon markazida Amon Obel tepaligi va Ephel Brandir istehkomi joylashgan. Túrin Turambar oʻz hayotining soʻnggi yillarini shu yerda oʻtkazgan va Cabed-en-Aras darasida bahaybat ajdar Glaurungni oʻldirgan."
+    }
+  ]
+}

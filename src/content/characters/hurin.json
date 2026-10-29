@@ -1,0 +1,96 @@
+{
+  "id": "hurin",
+  "name": "Húrin Thalion",
+  "original_name": "Húrin Thalion",
+  "father_name": "Galdor Baland",
+  "mother_name": "Hareth (Haladin xonadonidan)",
+  "spouse": "Morwen Eledhwen",
+  "children": [
+    "Túrin Turambar",
+    "Urwen Lalaith (bolaligida vafot etgan)",
+    "Niënor Níniel"
+  ],
+  "aliases": [
+    "Thalion (Sindarin: Qatʼiyatli, Mustahkam)",
+    "Úmarth (Yomon Qismat — oʻzi tanlagan laqab)"
+  ],
+  "titles": [
+    "Dor-lómin Hukmdori",
+    "Hador Xonadoni Boshligʻi",
+    "Shimol Foniylarining Eng Buyuk Jangchisi"
+  ],
+  "race": "insonlar",
+  "sub_race": "Edain (Hador Xonadoni)",
+  "culture": "Dor-lómin (Hithlum)",
+  "birth_year": "Birinchi davr 441",
+  "death_year": "Birinchi davr ~502 (Gʻarbiy Dengizga oʻzini tashlab halok boʻlgan)",
+  "house_id": "edain-va-yarim-elflar",
+  "weapons_and_artifacts": [
+    "Ikki qoʻlli jangovar bolta ('Aurë entuluva!' hayqirigʻi bilan)",
+    "Dor-lómin Ajdar-dubulgʻasi (oilaviy meros)",
+    "Nauglamír marjoni (Nargothrond vayronalaridan olib chiqqan)"
+  ],
+  "primary_locations": [
+    "mithrim",
+    "gondolin",
+    "nargothrond",
+    "menegroth",
+    "beleriand"
+  ],
+  "textual_status": "posthumous_edited",
+  "summary": "Hador Xonadonining va Dor-lóminning buyuk hukmdori, Morwenning eri hamda Túrin va Niënorning otasi. Nirnaeth Arnoediad jangida Turgon chekinishini himoya qilib, yolgʻiz oʻzi yetmish nafar troll va orqni bolta bilan qirib tashlagan, Morgothga boʻysunishdan bosh tortib 28 yil Thangorodrim choʻqqisidagi tosh kursiga bogʻlab qoʻyilgan eng jasur foniy jangchi.",
+  "etymology": "Sindarin tilida 'Húrin' — hûr ('gʻayrat, shiddatli olov') va ind ('yurak, ruh') soʻzlaridan tuzilib, 'Olovli Ruh' maʼnosini anglatadi. 'Thalion' unvoni esa 'Mustahkam, yengilmas qahramon' deganidir.",
+  "biography_sections": [
+    {
+      "title": "Gondolinga tashrif va Nirnaeth Arnoediad qahramonligi",
+      "content": "Yoshligida Húrin va uning ukasi Huor orqlar taʼqibidan qochib yurganlarida, Burgutlar Shohi Thorondor ularni yashirin Gondolin shahriga olib kirdi. Qirol Turgon ularni bir yil mehmon qilib, Gondolin sirini hech kimga aytmaslik qasamyodi bilan Dor-lóminga qaytardi.\n\nNirnaeth Arnoediad (Sanoqsiz Koʻz Yoshlari Jangi) halokat bilan tugayotganida, Húrin va Huor Turgonning Gondolinga eson-omon qaytishini taʼminlash uchun Rivil botqoqligida oxirgi toʻsiq boʻlib qoldilar. Huor va barcha jangchilar halok boʻlgach, Húrin ikki qoʻlli boltasini olib, har bir zarbada: 'Aurë entuluva! Kun yana qaytadi!' deb yetmish marta hayqirdi va Gothmogning troll qoʻriqchilarini yer tishlatdi, toki oʻliklar uyumi ostida tiriklayin tutib olinmaguncha."
+    },
+    {
+      "title": "Thangorodrimdagi 28 yillik laʼnat va Ozodlik fojiasi",
+      "content": "Morgoth Húrinni Angbandga keltirib, undan Gondolin joylashuvini aytishni talab qildi. Húrin Morgothning ustidan kulib, uning yuziga tik boqdi va qasamyodini buzmadi. Shunda gʻazablangan Morgoth Húrinning xotini va bolalarini laʼnatladi hamda Húrinni Thangorodrim choʻqqisidagi tosh kursiga sehr bilan mixlab qoʻydi.\n\nYigirma sakkiz yil davomida Húrin Morgothning qora koʻz va quloqlari orqali oʻgʻli Túrin va qizi Niënorning har bir baxtsizligini hamda oʻz jonlariga qasd qilishlarini chorasiz kuzatib oʻtirdi. Farzandlari halok boʻlgach, Morgoth oqsoch Húrinni oʻz yovuz maqsadiga xizmat qildirish uchun ozod etdi. Húrin beixtiyor Gondolin darvozasini qidirib chaqirganida, Morgoth josuslari shahar joylashgan hududni bilib oldilar; Cabed-en-Arasda u soʻnggi bor xotini Morwenni quchoqlab dafn etdi, Nargothronddan Mimni oʻldirib Nauglamírni Thingolga olib bordi va Melianning soʻzlari bilan koʻzi ochilgach, umidsizlik ichida oʻzini Gʻarbiy Dengizga tashladi."
+    },
+    {
+      "title": "Insonlarning eng qudratli jangchisi va Sererech botqog'i",
+      "content": "Húrin Thalion (Galdorning o'g'li, Dor-lómin hukmdori) Birinchi Davr insonlari orasida eng kuchli va jasur jangchi edi. Nirnaeth Arnoediad jangida u Turgonning chekinishini ta'minlash uchun Sererech botqog'ida so'nggi mudofaani boshqardi. Yetmishdan ortiq troll va o'rk sardorlarini o'z boltasi bilan qirib tashlagan Húrin har bir zarbasida 'Aurë entuluva!' ('Tong yana otadi!') deb na'ra tortdi. Oxir-oqibat o'rklarning kesilgan qo'llari va murdalari ostida qolib, Morgoth tomonidan asir olindi."
+    },
+    {
+      "title": "Thangorodrimdagi zanjirbandlik, la'nat va so'nggi dard",
+      "content": "Morgoth Húrindan Gondolin sirlarini talab qildi, ammo Húrin uni masxara qilib rad etdi. Morgoth uni Thangorodrim cho'qqisidagi tosh taxtga zanjirlab, uning butun oilasini la'natladi. Húrin yigirma sakkiz yil davomida o'z farzandlari – Túrin va Nienorning boshiga tushgan barcha dahshatli fojialarni sehrli ko'zguda ko'rib azob chekdi. Ozod qilingach, qarigan va ruhi singan Húrin Nargothrond xarobalaridan Nauglamírni olib Thingol huzuriga tashladi va nihoyat G'arbiy Dengiz qoyalaridan o'zini suvga tashlab fojiali hayotiga xotima berdi. Húrinning irodasi hatto Qora Lord Morgothning eng qora laʼnatlari va qiynoqlaridan ham ustun turdi. U insoniyat tarixida jismonan yengilgan boʻlsa-da, maʼnan yengilmas qolgan eng buyuk qahramon sifatida dostonlarda mangu yashaydi."
+    }
+  ],
+  "sources": [
+    {
+      "book_slug": "the-children-of-hurin",
+      "chapter": "The Words of Húrin and Morgoth",
+      "page": "61"
+    },
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of the Fifth Battle: Nirnaeth Arnoediad",
+      "page": "194"
+    },
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of the Ruin of Doriath",
+      "page": "227"
+    },
+    {
+      "book_slug": "history-of-middle-earth",
+      "chapter": "The War of the Jewels (The Wanderings of Húrin)",
+      "page": "251"
+    }
+  ],
+  "related_characters": [
+    "turin",
+    "morwen",
+    "nienor",
+    "turgon",
+    "tuor",
+    "fingon",
+    "thingol",
+    "melian",
+    "melkor",
+    "glaurung"
+  ],
+  "adaptations": []
+}

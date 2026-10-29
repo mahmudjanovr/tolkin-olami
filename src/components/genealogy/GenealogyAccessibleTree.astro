@@ -1,0 +1,249 @@
+---
+/**
+ * TOLKIEN OLAMI — Semantik va Oʻqilishi Qulay Nasabnoma Roʻyxati
+ *
+ * JavaScriptsiz ham 100% toʻliq oʻqiladigan, skrinriderlar uchun
+ * qatʼiy ierarxik semantik HTML (<nav>, <ol>, <li>) strukturasi.
+ */
+
+import type { TreeLayout } from '@/utils/genealogy/layout';
+
+interface Props {
+  dynastyId: string;
+  dynastyTitle: string;
+  houseName: string;
+  layout: TreeLayout;
+}
+
+const { dynastyId, dynastyTitle, houseName, layout } = Astro.props;
+
+// Avlodlar bo'yicha guruhlash
+const generationsMap = new Map<number, typeof layout.nodes>();
+for (const node of layout.nodes) {
+  const list = generationsMap.get(node.generation) || [];
+  list.push(node);
+  generationsMap.set(node.generation, list);
+}
+
+const sortedGens = Array.from(generationsMap.keys()).sort((a, b) => a - b);
+---
+
+<div id={`accessible-tree-${dynastyId}`} class="accessible-genealogy-container" aria-label={`${dynastyTitle} matnli shajarasi`}>
+  <div class="accessible-tree-header">
+    <h3 class="accessible-dynasty-title">{houseName}</h3>
+    <p class="accessible-hint">
+      Quyidagi roʻyxat avlodlar pogʻonasi (I, II, III...) boʻyicha saralangan toʻliq nasabnoma ierarxiyasini taqdim etadi.
+    </p>
+  </div>
+
+  <nav class="accessible-tree-nav" aria-label="Sulolaning avlodlar ierarxiyasi">
+    <ol class="generation-list">
+      {sortedGens.map((genNum) => {
+        const members = generationsMap.get(genNum) || [];
+        return (
+          <li class="generation-item" id={`gen-${dynastyId}-${genNum}`}>
+            <div class="generation-badge">
+              <span class="gen-num-roman">
+                {genNum === 1 ? 'I' : genNum === 2 ? 'II' : genNum === 3 ? 'III' : genNum === 4 ? 'IV' : genNum === 5 ? 'V' : genNum === 6 ? 'VI' : genNum === 7 ? 'VII' : `Avlod ${genNum}`}
+              </span>
+              <span class="gen-title">{genNum}-Avlod</span>
+            </div>
+
+            <ul class="members-sublist">
+              {members.map((member) => (
+                <li class="member-entry" id={`person-entry-${member.id}`} data-person-id={member.id}>
+                  <div class="member-card">
+                    <div class="member-main">
+                      <div class="member-heading-row">
+                        <h4 class="member-name">{member.name}</h4>
+                        {member.isUncertain && (
+                          <span class="uncertainty-tag" title="Matnshunoslikda ziddiyatli yoki taxminiy nasab">
+                            [Ziddiyatli / Taxminiy]
+                          </span>
+                        )}
+                      </div>
+
+                      {member.titles && member.titles.length > 0 && (
+                        <p class="member-title-text">{member.titles.join(' • ')}</p>
+                      )}
+
+                      <div class="member-details-row">
+                        <span class="member-dates">📅 {member.dates}</span>
+                        {member.culture && (
+                          <span class="member-culture">🏛️ {member.culture}</span>
+                        )}
+                        {member.bridgeNote && (
+                          <span class="member-bridge">🔗 {member.bridgeNote}</span>
+                        )}
+                      </div>
+                    </div>
+
+                    {member.uncertaintyNotes && (
+                      <div class="member-uncertainty-note">
+                        <strong>Matn tarixi:</strong> {member.uncertaintyNotes}
+                      </div>
+                    )}
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </li>
+        );
+      })}
+    </ol>
+  </nav>
+</div>
+
+<style>
+  .accessible-genealogy-container {
+    padding: 1.5rem;
+    background-color: var(--color-bg-base);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 0 0 8px 8px;
+  }
+
+  .accessible-tree-header {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--color-border-subtle);
+  }
+
+  .accessible-dynasty-title {
+    font-family: var(--font-serif-heading);
+    font-size: 1.375rem;
+    font-weight: 700;
+    margin: 0 0 0.35rem 0;
+    color: var(--color-text-primary);
+  }
+
+  .accessible-hint {
+    font-family: var(--font-sans-ui);
+    font-size: 0.8125rem;
+    color: var(--color-text-secondary);
+    margin: 0;
+  }
+
+  .generation-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+  }
+
+  .generation-item {
+    position: relative;
+    padding-left: 1.5rem;
+    border-left: 2px solid var(--color-border-strong);
+  }
+
+  .generation-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.85rem;
+    background-color: var(--color-bg-elevated);
+    padding: 0.25rem 0.65rem;
+    border-radius: 4px;
+    border: 1px solid var(--color-border-subtle);
+  }
+
+  .gen-num-roman {
+    font-family: var(--font-serif-heading);
+    font-weight: 700;
+    font-style: italic;
+    color: var(--color-accent-gold);
+    font-size: 0.9375rem;
+  }
+
+  .gen-title {
+    font-family: var(--font-sans-ui);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-primary);
+  }
+
+  .members-sublist {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 0.85rem;
+  }
+
+  .member-entry {
+    background-color: var(--color-bg-elevated);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 6px;
+    padding: 0.85rem 1rem;
+    transition: border-color 150ms ease, box-shadow 150ms ease;
+  }
+
+  .member-entry:hover {
+    border-color: var(--color-accent-gold);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  }
+
+  .member-heading-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .member-name {
+    font-family: var(--font-serif-heading);
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin: 0;
+    color: var(--color-text-primary);
+  }
+
+  .uncertainty-tag {
+    font-family: var(--font-sans-ui);
+    font-size: 0.6875rem;
+    font-weight: 600;
+    color: var(--color-status-variant);
+    background-color: var(--color-bg-base);
+    padding: 0.15rem 0.4rem;
+    border-radius: 3px;
+    border: 1px solid var(--color-status-variant);
+  }
+
+  .member-title-text {
+    font-family: var(--font-serif-heading);
+    font-style: italic;
+    font-size: 0.875rem;
+    color: var(--color-text-secondary);
+    margin: 0 0 0.5rem 0;
+  }
+
+  .member-details-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.65rem;
+    font-family: var(--font-sans-ui);
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+  }
+
+  .member-bridge {
+    color: var(--color-accent-gold);
+    font-weight: 500;
+  }
+
+  .member-uncertainty-note {
+    margin-top: 0.65rem;
+    padding-top: 0.5rem;
+    border-top: 1px dashed var(--color-border-subtle);
+    font-family: var(--font-sans-ui);
+    font-size: 0.75rem;
+    line-height: 1.45;
+    color: var(--color-status-variant);
+  }
+</style>

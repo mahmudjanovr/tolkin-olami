@@ -1,0 +1,232 @@
+---
+/**
+ * TOLKIEN OLAMI — Sulolalar va Nasabnomalar Sahifasi (Genealogy Atlas)
+ *
+ * Elflar, Insonlar va Mittilarning buyuk sulolalari, avlodlar zanjiri,
+ * nikoh rishtalari hamda matnshunoslik variantlarini oʻz ichiga oladi.
+ */
+import EditorialLayout from '@/layouts/EditorialLayout.astro';
+import GenealogyAtlas from '@/components/genealogy/GenealogyAtlas.astro';
+
+const breadcrumbs = [
+  { label: 'Nasabnomalar' },
+];
+---
+
+<EditorialLayout
+  title="Sulolalar va Nasabnomalar"
+  category="Genealogiya va Shajaralar"
+  description="Finwë, Elros (Gondor), Eorl (Rohan) va Durin xonadonlarining shajaralari, avlodlar bogʻliqligi, nikoh rishtalari va matn tarixi."
+  breadcrumbs={breadcrumbs}
+>
+  <div class="genealogy-page-content">
+    <p class="section-lead">
+      J.R.R. Tolkien Legendariumida nasabnoma va irsiyat afsonalarning markaziy falsafiy ustunlaridan biridir.
+      Ushbu atlasda Iluvatar Farzandlarining olti buyuk xonadoni — <strong>Finwëning Noldorin sulolasi</strong>,
+      <strong>Edain va Yarim-elflar (Peredhil)</strong>, <strong>Elros va Gondor shohlari</strong>,
+      <strong>Mark (Rohan) otliq hukmdorlari</strong>, <strong>Durin (Uzunsoqollar) avlodlari</strong> hamda
+      <strong>Shayr xobbit xonadonlari</strong>ning kanonik shajaralari taqdim etiladi.
+    </p>
+
+    <!-- Interaktiv Nasabnoma Atlasi Oroli -->
+    <GenealogyAtlas />
+
+    <!-- Sulolalar haqida Ilmiy Sharh -->
+    <section class="dynasties-scholarly-notes">
+      <h2 class="section-heading">Kanonik Sulolalar Haqida</h2>
+      
+      <div class="dynasties-grid">
+        <article class="dynasty-note-card">
+          <h3 class="card-title">
+            <a href="/nasabnomalar/finwe-xonadoni/">Finwë Xonadoni →</a>
+          </h3>
+          <p class="card-desc">
+            Valinordagi Noldor Oliy qirollari sulolasi. Finwëning Míriel va Indis bilan tuzgan ikki nikohi
+            tufayli Noldor uch yirik shajaraviy tarmoqqa — Fëanor, Fingolfin va Finarfin xonadonlariga ajralgan.
+            Beleriand fojialari va Silmarillar urushlari bevosita ushbu sulola taqdiri bilan bogʻliq.
+          </p>
+          <span class="card-meta">Manba: The Silmarillion, 5-bob; HoME XII.</span>
+        </article>
+
+        <article class="dynasty-note-card">
+          <h3 class="card-title">
+            <a href="/nasabnomalar/edain-va-yarim-elflar/">Edain va Yarim-Elflar →</a>
+          </h3>
+          <p class="card-desc">
+            Doriath Qiroli Thingol va Maia Melian xonadoni bilan Edainning Bëor hamda Hador sulolalarining birlashuvi.
+            Beren va Lúthien hamda Tuor va Idril nikohlari orqali Eärendil, Elwing, Elrond va Elros — Yarim-elflar
+            shajarasi vujudga kelgan.
+          </p>
+          <span class="card-meta">Manba: The Silmarillion; The Children of Húrin.</span>
+        </article>
+
+        <article class="dynasty-note-card">
+          <h3 class="card-title">
+            <a href="/nasabnomalar/elros-va-gondor-shohlari/">Elros va Gondor Shohlari →</a>
+          </h3>
+          <p class="card-desc">
+            Eärendil va Elwing oʻgʻli Elros Tar-Minyatur asos solgan Númenor shohlari va Andúnië Knyazlari orqali
+            Elendil, Isildur, Anárion va Birlashgan Qirollikni tiklagan Elessar (Aragorn II) gacha boʻlgan
+            Dúnedain shohona insonlar nasabi.
+          </p>
+          <span class="card-meta">Manba: The Lord of the Rings, App. A; Unfinished Tales.</span>
+        </article>
+
+        <article class="dynasty-note-card">
+          <h3 class="card-title">
+            <a href="/nasabnomalar/rohan-shohlari/">Eorl Xonadoni (Rohan) →</a>
+          </h3>
+          <p class="card-desc">
+            Shimoldagi Éothéod elidan kelib, Calenardhon yerlariga asos solgan Eorl the Young va uning jasur otliq
+            hukmdorlari shajarasi. Shajara uch sulolaviy tarmoqqa boʻlinadi: Eorldan Helmgacha, Fréaláfdan Théodengacha
+            va Éomerdan boshlangan Uchinchi tarmoq.
+          </p>
+          <span class="card-meta">Manba: The Lord of the Rings, Appendix A (II).</span>
+        </article>
+
+        <article class="dynasty-note-card">
+          <h3 class="card-title">
+            <a href="/nasabnomalar/durin-avlodlari/">Durin Avlodlari (Khazad) →</a>
+          </h3>
+          <p class="card-desc">
+            Aulë yaratgan Mittilarning eng ulugʻ Oqsoqoli — Oʻlimsiz Durin I nasabi. Khazad-dûm (Moria) va
+            Togʻosti Qirolligi (Erebor) hukmdorlari boʻlgan Uzunsoqollar sulolasi hamda Mittilar va Oʻrklar
+            urushlarining qonli xronikasi.
+          </p>
+          <span class="card-meta">Manba: The Hobbit; The Lord of the Rings, App. A (III).</span>
+        </article>
+
+        <article class="dynasty-note-card">
+          <h3 class="card-title">
+            <a href="/nasabnomalar/shayr-xonadonlari/">Shayr Xonadonlari (Hobbitlar) →</a>
+          </h3>
+          <p class="card-desc">
+            Shayr oʻlkasining eng mashhur xobbit urugʻlari — Bagginslar, Buyuk Smial Tuklari, Bukland Brendibaklari
+            va Gemjilarning oʻzaro qarindoshlik rishtalari hamda Halqa Urushi qahramonlari shajarasi.
+          </p>
+          <span class="card-meta">Manba: The Lord of the Rings, Appendix C.</span>
+        </article>
+      </div>
+    </section>
+  </div>
+
+  <div slot="margin">
+    <div class="margin-card">
+      <h3 class="margin-title">Filologik Qatʼiyat</h3>
+      <p>
+        Barcha qarindoshlik rishtalari, nikohlar va xronologiyalar J.R.R. Tolkienning rasmiy matnlariga
+        tayanadi. Ensiklopediya unvonlar yoki sanalarni toʻqib chiqarmaydi; nomaʼlum jihatlar
+        <em>"Nomaʼlum"</em> belgisi bilan ifodalanadi.
+      </p>
+    </div>
+
+    <div class="margin-card">
+      <h3 class="margin-title">Ziddiyatli Matnlar</h3>
+      <p>
+        Gil-galadning nasabi kabi masalalarda <em>The Silmarillion</em> (1977) nashri va Tolkienning
+        soʻnggi qoralamalari (<em>HoME XII</em>) oʻrtasidagi tafovutlar uzuq-uzuq chiziqlar va maxsus
+        izohlar bilan koʻrsatilgan.
+      </p>
+    </div>
+
+    <div class="margin-card">
+      <h3 class="margin-title">White Tree Estetikasi</h3>
+      <p>
+        Shajaraviy aloqalar Gondorning Oq Daraxti arxitekturasidan ilhomlangan: nafis kubik Bezye egri chiziqlari,
+        vazmin Oksford tillasi va toza paxta qogʻozi/qora siyoh palitrasi.
+      </p>
+    </div>
+  </div>
+</EditorialLayout>
+
+<style>
+  .section-lead {
+    font-size: 1.125rem;
+    line-height: 1.75;
+    margin-bottom: 1.75rem;
+    color: var(--color-text-primary);
+  }
+
+  .dynasties-scholarly-notes {
+    margin-top: 2.5rem;
+    padding-top: 1.75rem;
+    border-top: 1px solid var(--color-border-subtle);
+  }
+
+  .section-heading {
+    font-family: var(--font-serif-heading);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 0 1.25rem 0;
+    color: var(--color-text-primary);
+  }
+
+  .dynasties-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.25rem;
+  }
+
+  .dynasty-note-card {
+    background-color: var(--color-bg-elevated);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 3px;
+    padding: 1.25rem;
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .card-title {
+    font-family: var(--font-serif-heading);
+    font-size: 1.1875rem;
+    font-weight: 700;
+    margin: 0;
+    color: var(--color-text-primary);
+  }
+
+  .card-desc {
+    font-family: var(--font-serif-body);
+    font-size: 0.875rem;
+    line-height: 1.6;
+    color: var(--color-text-secondary);
+    margin: 0;
+    flex-grow: 1;
+  }
+
+  .card-meta {
+    font-family: var(--font-sans-ui);
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+    font-style: italic;
+    border-top: 1px dashed var(--color-border-subtle);
+    padding-top: 0.5rem;
+    margin-top: 0.5rem;
+  }
+
+  .margin-card {
+    background-color: var(--color-bg-elevated);
+    border: 1px solid var(--color-border-subtle);
+    padding: 1rem;
+    border-radius: 3px;
+    box-shadow: var(--shadow-sm);
+    font-family: var(--font-sans-ui);
+    font-size: 0.8125rem;
+    line-height: 1.55;
+    margin-bottom: 1rem;
+  }
+
+  .margin-card:last-child {
+    margin-bottom: 0;
+  }
+
+  .margin-title {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-accent-gold);
+    margin-bottom: 0.5rem;
+  }
+</style>

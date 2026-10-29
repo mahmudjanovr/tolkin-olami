@@ -1,0 +1,13 @@
+{
+  "map_id": "orta-yer",
+  "title": "Gʻarbiy Oʻrta-yer (Endor) Tarixiy Planar Xaritasi",
+  "projection": "Planar Coordinate System (CRS.Simple)",
+  "dimensions": {
+    "width": 2048,
+    "height": 2048
+  },
+  "cartographer": "Tolkien Olami Kartografik Arxiv Guruhi",
+  "license": "CC-BY-SA-4.0 / Scholar Archive",
+  "canon_basis": "The Lord of the Rings (1954–1955) General Map of Middle-earth",
+  "provenance_notes": "Uchinchi davr geografik relyefi va J.R.R. Tolkien koʻrsatmalari asosidagi original planar vektor kartografiyasi. Ilmiy va xolis filologik me'yorlar asosida tayyorlangan."
+}

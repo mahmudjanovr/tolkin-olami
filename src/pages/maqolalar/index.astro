@@ -1,0 +1,375 @@
+---
+import { getCollection } from 'astro:content';
+import EditorialLayout from '@/layouts/EditorialLayout.astro';
+import { resolveEntityLinks } from '@/utils/entity-resolver';
+
+const allArticles = await getCollection('articles');
+const articles = allArticles
+  .filter((a) => a.data.category !== 'tolkienshunoslik')
+  .sort((a, b) => b.data.published_date.localeCompare(a.data.published_date));
+
+const breadcrumbs = [
+  { label: 'Ilmiy Maqolalar' },
+];
+
+const categoryLabels: Record<string, string> = {
+  falsafa_va_teologiya: 'Falsafa va Teologiya',
+  adabiy_tahlil: 'Adabiy Tahlil',
+  matnshunoslik: 'Matnshunoslik',
+  tolkienshunoslik: 'Tolkienshunoslik',
+  zamonaviy_adaptatsiyalar: 'Zamonaviy Adaptatsiyalar',
+};
+
+const filterCategories = [
+  { id: 'all', label: 'Barcha Maqolalar', count: articles.length },
+  {
+    id: 'falsafa_va_teologiya',
+    label: 'Falsafa va Teologiya',
+    count: articles.filter((a) => a.data.category === 'falsafa_va_teologiya').length,
+  },
+  {
+    id: 'adabiy_tahlil',
+    label: 'Adabiy Tahlil',
+    count: articles.filter((a) => a.data.category === 'adabiy_tahlil').length,
+  },
+  {
+    id: 'matnshunoslik',
+    label: 'Matnshunoslik',
+    count: articles.filter((a) => a.data.category === 'matnshunoslik').length,
+  },
+  {
+    id: 'zamonaviy_adaptatsiyalar',
+    label: 'Zamonaviy Adaptatsiyalar',
+    count: articles.filter((a) => a.data.category === 'zamonaviy_adaptatsiyalar').length,
+  },
+];
+---
+
+<EditorialLayout
+  title="Ilmiy va Adabiy Maqolalar"
+  category="Tahririyat Tadqiqotlari"
+  description="Tolkien filologiyasi, kosmologik qarashlari, falsafiy gʻoyalari, matn tarixi va ekranlashtirish tahlillari boʻyicha akademik maqolalar toʻplami."
+  breadcrumbs={breadcrumbs}
+>
+  <div class="articles-overview">
+    <p class="articles-intro">
+      Ensiklopediya qoshidagi ilmiy maqolalar boʻlimi Oʻrta-yer mifologiyasining chuqur maʼnaviy,
+      teologik, matnshunoslik va qiyosiy-adabiy asoslarini tahlil qiluvchi tadqiqotlarni taqdim etadi.
+    </p>
+
+    <div class="category-filter-bar" role="toolbar" aria-label="Maqolalarni yoʻnalish boʻyicha saralash">
+      {filterCategories.map((cat, idx) => (
+        <button
+          type="button"
+          class={`cat-filter-btn ${idx === 0 ? 'is-active' : ''}`}
+          data-category-filter={cat.id}
+          aria-pressed={idx === 0 ? 'true' : 'false'}
+        >
+          <span>{cat.label}</span>
+          <span class="cat-count">{cat.count}</span>
+        </button>
+      ))}
+    </div>
+
+    <div class="articles-grid" id="articles-grid">
+      {
+        articles.map((art) => {
+          const resolvedEntities = resolveEntityLinks(art.data.related_entities).slice(0, 4);
+          return (
+            <article class="article-card" data-article-category={art.data.category}>
+              <div class="card-meta">
+                <span class="card-cat">{categoryLabels[art.data.category] || art.data.category}</span>
+                <span class="card-date">{art.data.published_date}</span>
+              </div>
+              <h2 class="card-title">
+                <a href={`/maqolalar/${art.data.slug || art.id}/`}>
+                  {art.data.title}
+                </a>
+              </h2>
+              <p class="card-abstract">{art.data.abstract}</p>
+              {resolvedEntities.length > 0 && (
+                <div class="card-entities" aria-label="Bogʻliq mavzular">
+                  {resolvedEntities.map((item) =>
+                    item.href ? (
+                      <a href={item.href} class="entity-chip">{item.name}</a>
+                    ) : (
+                      <span class="entity-chip">{item.name}</span>
+                    )
+                  )}
+                </div>
+              )}
+              <div class="card-footer">
+                <span class="card-author">
+                  Muallif: {art.data.author} · {art.data.sources.length} ta manba
+                </span>
+                <a href={`/maqolalar/${art.data.slug || art.id}/`} class="card-link">
+                  Mutolaa qilish →
+                </a>
+              </div>
+            </article>
+          );
+        })
+      }
+    </div>
+  </div>
+
+  <div slot="margin" class="articles-sidebar">
+    <div class="margin-card">
+      <h3 class="margin-title">Ilmiy Mezon</h3>
+      <p>
+        Barcha maqolalar Tolkienning birlamchi asarlari, 12 jildlik «The History of Middle-earth» korpusi hamda xatlariga («The Letters of J.R.R. Tolkien») tayangan holda tahrir qilinadi.
+      </p>
+    </div>
+
+    <div class="margin-card">
+      <h3 class="margin-title">Tolkienshunoslik</h3>
+      <p class="margin-desc">
+        Professor Tolkienning hayot yoʻli va filologik metodi boʻyicha maxsus monografiyalar:
+      </p>
+      <ul class="margin-links">
+        <li>
+          <a href="/tolkien/tarjimai-hol/">J.R.R. Tolkien: Hayot Yoʻli va Meros →</a>
+        </li>
+        <li>
+          <a href="/tolkien/filologiya-va-beowulf/">Filologik Metod va «Beowulf» →</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</EditorialLayout>
+
+<script>
+  function initArticleFilters() {
+    const buttons = document.querySelectorAll<HTMLButtonElement>('[data-category-filter]');
+    const cards = document.querySelectorAll<HTMLElement>('[data-article-category]');
+    if (!buttons.length || !cards.length) return;
+
+    buttons.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const selected = btn.getAttribute('data-category-filter') || 'all';
+        buttons.forEach((b) => {
+          const active = b === btn;
+          b.classList.toggle('is-active', active);
+          b.setAttribute('aria-pressed', active ? 'true' : 'false');
+        });
+
+        cards.forEach((card) => {
+          const cat = card.getAttribute('data-article-category');
+          const visible = selected === 'all' || cat === selected;
+          card.style.display = visible ? '' : 'none';
+        });
+      });
+    });
+  }
+
+  initArticleFilters();
+  document.addEventListener('astro:after-swap', initArticleFilters);
+</script>
+
+<style>
+  .articles-intro {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+  }
+
+  .category-filter-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.75rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--color-border-subtle);
+  }
+
+  .cat-filter-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.4rem 0.75rem;
+    font-family: var(--font-sans-ui);
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--color-text-secondary);
+    background-color: var(--color-bg-elevated);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+  }
+
+  .cat-filter-btn:hover {
+    border-color: var(--color-border-gold);
+    color: var(--color-text-primary);
+  }
+
+  .cat-filter-btn.is-active {
+    background-color: var(--color-forest);
+    border-color: var(--color-forest-deep);
+    color: #FAF8F2;
+  }
+
+  .cat-count {
+    font-size: 0.6875rem;
+    opacity: 0.85;
+  }
+
+  .articles-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .article-card {
+    background-color: var(--color-bg-elevated);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 3px;
+    padding: 1.5rem;
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  }
+
+  .article-card:hover {
+    border-color: var(--color-border-gold);
+    box-shadow: var(--shadow-md);
+  }
+
+  .card-meta {
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--font-sans-ui);
+    font-size: 0.75rem;
+  }
+
+  .card-cat {
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-accent-gold);
+  }
+
+  .card-date {
+    color: var(--color-text-muted);
+  }
+
+  .card-title {
+    font-family: var(--font-serif-heading);
+    font-size: 1.5rem;
+    margin: 0;
+  }
+
+  .card-title a {
+    color: var(--color-text-primary);
+    text-decoration: none;
+  }
+
+  .card-title a:hover {
+    color: var(--color-accent-gold);
+  }
+
+  .card-abstract {
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    color: var(--color-text-secondary);
+    margin-top: 0.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .card-entities {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.375rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .entity-chip {
+    font-family: var(--font-sans-ui);
+    font-size: 0.72rem;
+    padding: 0.15rem 0.5rem;
+    background-color: var(--color-bg-base);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 3px;
+    color: var(--color-text-secondary);
+    text-decoration: none;
+  }
+
+  a.entity-chip:hover {
+    border-color: var(--color-accent-gold);
+    color: var(--color-accent-gold);
+  }
+
+  .card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    font-family: var(--font-sans-ui);
+    font-size: 0.8125rem;
+  }
+
+  .card-author {
+    color: var(--color-text-muted);
+  }
+
+  .card-link {
+    font-weight: 600;
+    color: var(--color-text-primary);
+    text-decoration: none;
+  }
+
+  .card-link:hover {
+    color: var(--color-accent-gold);
+    text-decoration: underline;
+  }
+
+  .articles-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .articles-sidebar .margin-card {
+    background-color: var(--color-bg-elevated);
+    border: 1px solid var(--color-border-subtle);
+    padding: 1rem;
+    border-radius: 4px;
+    font-family: var(--font-sans-ui);
+    font-size: 0.8125rem;
+  }
+
+  .margin-title {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-muted);
+    margin-bottom: 0.5rem;
+  }
+
+  .margin-desc {
+    margin-bottom: 0.5rem;
+    color: var(--color-text-secondary);
+  }
+
+  .margin-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .margin-links a {
+    color: var(--color-accent-gold);
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .margin-links a:hover {
+    text-decoration: underline;
+  }
+</style>

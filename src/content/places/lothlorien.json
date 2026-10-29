@@ -1,0 +1,61 @@
+{
+  "id": "lothlorien",
+  "name": "Lothlórien (Oltin Oʻrmon)",
+  "elvish_name": "Lórien / Laurelindórenan",
+  "type": "oʻlka",
+  "region": "orta-yer",
+  "coordinates": {
+    "map_id": "orta-yer",
+    "x": 1080,
+    "y": 1058
+  },
+  "founded_era": "Birinchi davr",
+  "rulers": [
+    "Amdír",
+    "Amroth",
+    "Celeborn",
+    "Galadriel"
+  ],
+  "notable_events": [
+    "Nenya uzugi qudrati orqali Lórienning vaqt yemirishi va yovuzlikdan himoyalanishi",
+    "Uzuk Qardoshligining Moria fojiasidan soʻng Caras Galadhonga kelishi va Galadriel Koʻzgusi (Uchinchi davr 3019-yil)",
+    "Dol Guldur qoʻshinlarining uch karra hujumining qaytarilishi va qalʼaning vayron qilinishi"
+  ],
+  "textual_status": "author_published",
+  "summary": "Lothlórien (shuningdek, Lórien yoki Laurelindórenan — «Oltin Qoʻshiqlar Vodiysi») — Buyuk Anduin va Celebrant daryolari oraligʻida joylashgan afsonaviy elflar saltanati. Bu yerda mallorn daraxtlari oʻsib, Galadriel xonimning Nenya uzugi sharofati bilan qadimiy dunyoning goʻzalligi va sofligi saqlangan. Markaziy shahri — ulkan mallorn shoxlarida qurilgan Caras Galadhondir.",
+  "sources": [
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "Lothlórien",
+      "notes": "Uzuk Qardoshligining Nimrodel kechuvidan oʻtib Oltin Oʻrmon chegarasiga qadam qoʻyishi."
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "The Mirror of Galadriel",
+      "notes": "Caras Galadhon shahri, Galadriel koʻzgusi va Nenya uzugining namoyon boʻlishi."
+    },
+    {
+      "book_slug": "unfinished-tales",
+      "chapter": "The History of Galadriel and Celeborn",
+      "notes": "Lórienning qadimiy tarixi, Amroth fojiasi va Galadriel hamda Celeborn hukmronligi."
+    }
+  ],
+  "description_sections": [
+    {
+      "title": "Oltin Oʻrmon va Caras Galadhon",
+      "content": "Lothlórien (Sindarincha: 'Gullar Orzusi Oʻlkasi') — Tumanli Togʻlar sharqida, Anduin va Celebrant daryolari oraligʻida joylashgan eng sirli va muqaddas elf saltanatidir. Bu yerda tillarang poʻstloqli va kumush bargli bahaybat Mallorn daraxtlari oʻsadi.\n\nSaltanat markazida daraxtlar shoxiga qurilgan 'Yashil Shahar' — Caras Galadhon qad rostlagan. Shahar Lord Celeborn va Xonim Galadriel tomonidan Nenya uzugi qudrati bilan asrlar davomida dushman koʻzidan va vaqtning yemirilishidan asrab kelingan."
+    },
+    {
+      "title": "Uzuk Birodarligi va Galadriel Koʻzgusi",
+      "content": "3019-yil yanvarida Moria fojiasidan soʻng holdan toygan Uzuk Birodarligi Lórienga panoh tortdi. Galadriel Frodoga oʻz Koʻzgusini koʻrsatib, unga Eärendil nuri joylangan billur shishani sovgʻa qildi.\n\nHalqa Urushidan soʻng Nenya quvvati soʻngach, Galadriel Boqiy Gʻarbga ketdi va Lothlórien asta-sekin boʻshab, uning oltin barglari soʻndi."
+    },
+    {
+      "title": "Caras Galadhon, Nenya nuri va Oltin O'rmon sehri",
+      "content": "Lothlórien (Oltin O'rmon) Anduin va Celebrant daryolari oralig'ida joylashgan bo'lib, uning markazi mallorn daraxtlari ustida qurilgan Caras Galadhon shahri edi. Galadriel o'zining suv uzugi Nenya yordamida o'rmonni tashqi dunyoning buzilishi, vaqtning shiddati va yovuzlikdan himoya qilgan. O'rmon ichida uning afsonaviy Ko'zgusi (Mirror of Galadriel) joylashgan bo'lib, u suv yuzasida o'tmish, bugun va bo'lishi mumkin bo'lgan kelajak sirlarini ko'rsatar edi. Uzuk yo'q qilingach, Lórien sehri ham so'ndi va elflar G'arbga jo'nadilar."
+    },
+    {
+      "title": "Cerin Amroth tepaligi, elflar kemalari va xayrlashuv nuri",
+      "content": "Lórienning eng muqaddas maskani Cerin Amroth tepaligi bo'lib, u yerda doimo oltin elanor va oq niphredil gullari barq urib turgan. Aynan shu tepalikda Aragorn va Arwen o'zlarining abadiy sevgilarini bir-birlariga qasamyod qilgan edilar. Galadriel Uzuk Birodarligiga mashhur elf plashlari, lembas nonlari va sehrli sovg'alar (Aragorn uchun Elessar gavhari, Gimli uchun uch tola oltin soch) ulashgan. Lórien xalqi tabiatning so'lishini to'xtatuvchi boqiy osoyishtalikda yashagan eng go'zal elflar jamoasi edi."
+    }
+  ]
+}

@@ -1,0 +1,188 @@
+---
+import AtlasControls from '@/components/atlas/AtlasControls.astro';
+import AtlasDirectoryFallback from '@/components/atlas/AtlasDirectoryFallback.astro';
+import AtlasInspector from '@/components/atlas/AtlasInspector.astro';
+import AtlasJourneyPanel from '@/components/atlas/AtlasJourneyPanel.astro';
+import AtlasMap from '@/components/atlas/AtlasMap.astro';
+import Breadcrumbs from '@/components/editorial/Breadcrumbs.astro';
+import {
+  DEFAULT_JOURNEY_ID,
+  REGISTERED_JOURNEYS,
+  getJourneyById,
+  isValidJourneyId,
+} from '@/data/journeys/journey-registry';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { getMapDefinition, isValidMapId } from '@/utils/atlas/map-registry';
+import { parseAtlasParams } from '@/utils/atlas/url-state';
+import { getCollection } from 'astro:content';
+
+// 1. Barcha toponimlarni to'plamdan olish
+const allPlacesEntries = await getCollection('places');
+const rawPlaces = allPlacesEntries.map((e) => e.data);
+
+// 1b. Bog'liq qahramonlarni teskari yo'nalishda yechish (Reverse relationship derivation)
+const allCharactersEntries = await getCollection('characters');
+const placeToCharacters: Record<string, Array<{ id: string; name: string; href: string }>> = {};
+
+for (const char of allCharactersEntries) {
+  const cData = char.data;
+  const cId = cData.id || char.id;
+  const cHref = `/qahramonlar/${cId}/`;
+  for (const locId of cData.primary_locations) {
+    if (!placeToCharacters[locId]) {
+      placeToCharacters[locId] = [];
+    }
+    if (!placeToCharacters[locId].some((c) => c.id === cId)) {
+      placeToCharacters[locId].push({
+        id: cId,
+        name: cData.name,
+        href: cHref,
+      });
+    }
+  }
+}
+
+// Toponimlarga bog'liq qahramonlar ro'yxatini biriktirish
+const allPlaces = rawPlaces.map((p) => ({
+  ...p,
+  associated_characters: placeToCharacters[p.id] || [],
+}));
+
+// 2. URL parametrlarini tahlil qilish (SSR vaqtida)
+const searchParams = Astro.url.searchParams;
+const parsedParams = parseAtlasParams(searchParams);
+
+const activeJourneyId = parsedParams.sayr;
+const isJourneyActive = !!activeJourneyId && isValidJourneyId(activeJourneyId);
+const activeJourney = (activeJourneyId && getJourneyById(activeJourneyId)) || REGISTERED_JOURNEYS[DEFAULT_JOURNEY_ID]!;
+const initialStageNumber = parsedParams.bosqich ?? 1;
+
+const activeRegion = isJourneyActive
+  ? (activeJourney.region || 'orta-yer')
+  : (isValidMapId(parsedParams.hudud) ? parsedParams.hudud : 'orta-yer');
+const activeMapDef = getMapDefinition(activeRegion)!;
+
+// Boshlang'ich joyni aniqlash
+const initialPlace = parsedParams.joy
+  ? allPlaces.find((p) => p.id === parsedParams.joy)
+  : undefined;
+
+const breadcrumbs = [
+  { label: 'Geografik Atlas', href: '/xaritalar/' },
+  { label: activeMapDef.titleUz },
+];
+---
+
+<BaseLayout
+  title={`${activeMapDef.titleUz} — Tolkien Tarixiy Atlasi`}
+  description="Beleriand va Oʻrta-yerning matnshunoslikka asoslangan, planar koordinatali interaktiv tarixiy geografik atlasi."
+>
+  <div class="atlas-page-container container">
+    <header class="atlas-page-header">
+      <Breadcrumbs items={breadcrumbs} />
+      <div class="header-content">
+        <span class="atlas-kicker">Ilmiy Tarixiy Kartografiya</span>
+        <h1 class="atlas-heading" data-pagefind-meta="title">Tolkien Tarixiy Atlasi</h1>
+        <p class="atlas-lead">
+          J.R.R. Tolkien va Christopher Tolkienning asl chizmalariga asoslangan planar kartografiya.
+          Birinchi davr Beleriandi va Uchinchi davr Oʻrta-yerining toponimikasi va geografik relyefi.
+        </p>
+      </div>
+    </header>
+
+    <!-- Atlas boshqaruv paneli (Hududlar, Zoom, Katalog havolasi, Sayr tugmasi) -->
+    <AtlasControls
+      activeRegion={activeRegion}
+      isJourneyActive={isJourneyActive}
+      activeJourneyId={isJourneyActive ? activeJourney.id : undefined}
+    />
+
+    <!-- Yagona dominant interaktiv xarita kanvasi (Single Dominant Canvas) -->
+    <main class="atlas-canvas-container" id="atlas-canvas-container" aria-label="Xarita koʻrish maydoni">
+      <AtlasMap
+        activeRegion={activeRegion}
+        places={allPlaces}
+        initialPlaceId={initialPlace?.id}
+        initialCoords={{ x: parsedParams.x, y: parsedParams.y, z: parsedParams.z }}
+        journey={activeJourney}
+        journeys={REGISTERED_JOURNEYS}
+        activeJourneyId={isJourneyActive ? activeJourney.id : undefined}
+        activeStageNumber={initialStageNumber}
+      />
+      <!-- Suzuvchi ma'lumot paneli (Desktopda overlay, mobilda bottom sheet) -->
+      <AtlasInspector initialPlace={initialPlace} />
+      <!-- Tarixiy sayohat paneli (Bilbo, Qardoshlik, Aragorn sayri) -->
+      <AtlasJourneyPanel
+        journey={activeJourney}
+        journeys={REGISTERED_JOURNEYS}
+        initialStageNumber={initialStageNumber}
+        isActive={isJourneyActive}
+      />
+    </main>
+
+    <!-- 100% No-JS va Skrinriderlar uchun serverda yig'ilgan toponimlar katalogi -->
+    <AtlasDirectoryFallback places={allPlaces} />
+  </div>
+</BaseLayout>
+
+<style>
+  .atlas-page-container {
+    padding-block: 2rem 4rem;
+  }
+
+  .atlas-page-header {
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--color-border-subtle);
+    padding-bottom: 1.5rem;
+  }
+
+  .header-content {
+    margin-top: 1rem;
+    max-width: 820px;
+  }
+
+  .atlas-kicker {
+    display: inline-block;
+    font-family: var(--font-sans-ui);
+    font-size: 0.8125rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-accent-gold);
+    margin-bottom: 0.5rem;
+  }
+
+  .atlas-heading {
+    font-family: var(--font-serif-heading);
+    font-size: 2.25rem;
+    color: var(--color-text-primary);
+    margin: 0 0 0.5rem;
+    line-height: 1.2;
+  }
+
+  .atlas-lead {
+    font-family: var(--font-serif-body);
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: var(--color-text-secondary);
+    margin: 0;
+  }
+
+  /* Yagona dominant kanvas maketi */
+  .atlas-canvas-container {
+    position: relative;
+    width: 100%;
+    height: clamp(620px, 78vh, 860px);
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: #f2ece0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  }
+
+  @media (max-width: 768px) {
+    .atlas-canvas-container {
+      height: 72vh;
+      min-height: 480px;
+    }
+  }
+</style>

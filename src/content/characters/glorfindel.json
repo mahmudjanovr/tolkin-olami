@@ -1,0 +1,100 @@
+{
+  "id": "glorfindel",
+  "name": "Glorfindel",
+  "original_name": "Laurefindil (Glorfindel)",
+  "children": [],
+  "aliases": [
+    "Laurefindil (Quenya: Oltin Soch)",
+    "Oltin Gul Xonadoni Sardori",
+    "Rivendell Oq Elchisi"
+  ],
+  "titles": [
+    "Gondolinning Oltin Gul Xonadoni Boshligʻi",
+    "Rivendell (Imladris) Bosh Sarkardasi",
+    "Valinorning Qayta Tirilgan Elchisi"
+  ],
+  "race": "elflar",
+  "sub_race": "Noldor (Calaquendi)",
+  "culture": "Tirion / Gondolin / Rivendell",
+  "birth_year": "Daraxtlar davri (Valinor)",
+  "death_year": "Birinchi davr 510 (Cirith Thoronathda Balrog bilan jangda halok boʻlib, Valinorda qayta tirilgan va Oʻrta-yerga qaytgan)",
+  "weapons_and_artifacts": [
+    "Asfaloth (Oq uchqur elf tulpori — Frodoni Bruinen kechuvidan olib oʻtgan)",
+    "Oltin quyosh naqshli qalqon va kumush zirh"
+  ],
+  "primary_locations": [
+    "gondolin",
+    "rivendell",
+    "tirion"
+  ],
+  "textual_status": "author_published",
+  "uncertainty_notes": "'The Peoples of Middle-earth' (HoME XII) jildidagi maxsus esseda Tolkien Gondolindagi Glorfindel va 'The Lord of the Rings'dagi Rivendelllik Glorfindel aynan bitta shaxs ekanini tasdiqlagan: u Gondolin qochqinlarini qutqarish yoʻlidagi fidokorona oʻlimi uchun Mandos tomonidan tezda tiriltirilgan, ruhiy qudrati Maiar darajasiga yaqinlashtirilib, Ikkinchi davrda Elrond va Gil-galadga yordamga Oʻrta-yerga qaytarib yuborilgan.",
+  "summary": "Yashirin Gondolin shahridagi Oltin Gul xonadoni sardori. Gondolin qulaganida Cirith Thoronath darasida Tuor va Idril boshchiligidagi qochqinlarni himoya qilib, Balrog bilan yakkama-yakka jangda halok boʻlgan; Valar tomonidan qayta tiriltirilib, Oʻrta-yerga qaytarilgan va Uchinchi davrda Angmar Jodugar-qiroli haqida mashhur bashoratni aytgan hamda Frodo Bagginsni Toʻqqiz Qora Chavandozdan qutqargan ulugʻvor Noldor sarkardasi.",
+  "etymology": "Sindarin tilida 'Glorfindel' — glaur ('oltin yorugʻlik') va findel ('soch oʻrimi') soʻzlaridan tuzilib, 'Oltin Sochli' maʼnosini beradi (Quenya tilida 'Laurefindil').",
+  "biography_sections": [
+    {
+      "title": "Gondolin qahramoni va Cirith Thoronathdagi Balrog jangi",
+      "content": "Glorfindel Valinorda tugʻilgan Noldor zodagonlaridan boʻlib, Turgon ketidan Oʻrta-yerga oʻtdi va Gondolinning oʻn ikki xonadonidan biri — Oltin Gul xonadoniga boshchilik qildi. Nirnaeth Arnoediad jangida u Turgonning chekinishini himoya qildi.\n\nGondolin qulagan kechada Glorfindel oʻz jangchilari bilan Tuor, Idril va kichik Eärendilni qutqarib, togʻ dovonlariga olib chiqdi. Cirith Thoronath (Burgutlar Darasi)ning tor qoyasida qochqinlar yoʻlini ulkan Balrog toʻsib chiqdi. Glorfindel olovli iblis bilan yakkama-yakka jangga kirishib, uning temir qamchisini kesdi va qorniga xanjar sanchdi; biroq Balrog tubsizlikka qulayotganida Glorfindelning oltin sochlaridan changallab tortib ketdi va har ikkisi jarlik tubida halok boʻldi. Burgutlar Shohi Thorondor uning jasadini olib chiqdi va qabri ustida sariq gullar oʻsib chiqdi."
+    },
+    {
+      "title": "Qayta tirilish, Angmar urushi va Bruinen kechuvi",
+      "content": "Oʻz jonini boshqalar uchun fido qilgan Glorfindel Mandos Zallaridan tezda ozod etildi; Manwë uning ruhiy nurini kuchaytirib, Ikkinchi davrda Oʻrta-yerga yubordi. Uchinchi davrning 1975-yilida Fornost Jangida Glorfindel Rivendell qoʻshinini boshqarib, Angmar Jodugar-qirolini qochishga majbur qildi va Eärnurga mashhur bashoratini aytdi: 'Uning ortidan quvma! U bu yerga qaytmaydi; uning halokati hali uzoq va u erkak kishining qoʻli bilan oʻldirilmaydi' (bu bashorat ming yildan soʻng Éowyn va Merry tomonidan roʻyobga chiqdi).\n\nHalqa Urushida Elrond Frodoni qidirish uchun Glorfindelni joʻnatdi. Oʻzining Koʻrinmas Olamdagi porloq oq nuri bilan Qora Chavandozlarni dahshatga solgan Glorfindel yarador Frodoni oq tulpori Asfalothga mindirib, Bruinen kechuvidan Rivendellga omon olib oʻtdi."
+    },
+    {
+      "title": "Balrog qotili, Mandosdan qaytish va yangi ilohiy vazifa",
+      "content": "Glorfindel (Oltin Gul Xonadoni sardori) Gondolin qulashida Balrog bilan Cirith Thoronath qoyasida olishib, Tuor, Idril va yosh Eärendilni qutqarib qolgan edi. Uning ruhi Mandos zallariga borganida, uning fidoyiligi va gunohsizligi sababli Manwë uni o'z jismoniy tanasida qayta tiriltirdi va unga deyarli Mayar darajasidagi qudrat baxsh etdi. Ikkinchi Davrning 1600-yillari atrofida u Sauronga qarshi kurashda elflar va insonlarga yordam berish uchun O'rta-yerga qaytarib yuborildi."
+    },
+    {
+      "title": "Fornost jangi bashorati va Bruinen kechuvidagi najot",
+      "content": "Uchinchi Davrda Glorfindel Fornost jangida Angmar Jodugar-Qirolini quvib, mashhur bashoratni aytdi: 'Uni quvma! U bu yerga qaytmaydi. Uning halokati hali uzoqda va u erkak kishi qo'lidan o'lmaydi'. Bu bashorat ming yil o'tib Pelennor dalalarida Éowyn va Merry tomonidan amalga oshirildi. Uzuk Urushida esa Glorfindel o'zining Asfaloth tulporida Nazgûllarni Bruinen daryosigacha quvib, yarador Frodo Bagginsni qutqarib Rivendellga yetkazishda hal qiluvchi rol o'ynadi."
+    }
+  ],
+  "sources": [
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of Tuor and the Fall of Gondolin",
+      "page": "243"
+    },
+    {
+      "book_slug": "the-fall-of-gondolin",
+      "chapter": "The Fall of Gondolin",
+      "page": "190"
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "Flight to the Ford",
+      "page": "221"
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "Appendix A (Eriador, Arnor, and the Heirs of Isildur)",
+      "page": "1051"
+    },
+    {
+      "book_slug": "history-of-middle-earth",
+      "chapter": "The Peoples of Middle-earth (Last Writings: Glorfindel)",
+      "page": "377"
+    }
+  ],
+  "related_characters": [
+    "turgon",
+    "tuor",
+    "idril",
+    "earendil",
+    "elrond",
+    "frodo-baggins",
+    "aragorn",
+    "gandalf",
+    "witch-king",
+    "eowyn"
+  ],
+  "adaptations": [
+    {
+      "medium": "film",
+      "title": "The Lord of the Rings: The Fellowship of the Ring",
+      "creator": "Peter Jackson",
+      "year": 2001,
+      "divergence_notes": "Peter Jackson filmida Frodoni Bruinen kechuvida qutqarish vazifasi Glorfindel o'rniga Arwen Undómielga berilgan. Kanonik matnda esa Arwen Rivendellda bo'ladi, Nazgûllarga qarshi shaxsan Glorfindel chiqib, Frodoni o'zining Asfaloth tulporiga mindiradi."
+    }
+  ]
+}

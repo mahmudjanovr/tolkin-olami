@@ -1,0 +1,71 @@
+{
+  "id": "bard-the-bowman",
+  "name": "Kamonchi Bard (Bard I)",
+  "original_name": "Bard the Bowman",
+  "father_name": "Girion avlodi",
+  "mother_name": "Nomaʼlum",
+  "spouse": "Nomaʼlum",
+  "children": [
+    "Bain (Deyl qiroli)"
+  ],
+  "aliases": [
+    "Kamonchi Bard",
+    "Ajdar-qotili (Dragon-shooter)",
+    "Bard I"
+  ],
+  "titles": [
+    "Deylning Qayta Tiklangan Qirolligi Shohi",
+    "Esgarot kamonchilari sardori"
+  ],
+  "race": "insonlar",
+  "sub_race": "Shimol insonlari (Northmen)",
+  "culture": "Esgarot (Koʻl-shahar) va Deyl",
+  "birth_year": "U.D. 2900-yillar atrofida",
+  "death_year": "U.D. 2977",
+  "weapons_and_artifacts": [
+    "Qora oʻq (Black Arrow — ajdar Smaugni oʻldirgan merosiy oʻq)",
+    "Qora tistkanli katta kamon",
+    "Girionning zumrad marjoni"
+  ],
+  "primary_locations": [
+    "erebor",
+    "mirkwood"
+  ],
+  "textual_status": "author_published",
+  "summary": "Qadimgi Deyl hukmdori Girionning bevosita avlodi va Esgarot (Koʻl-shahar) himoyachisi. Qora oʻq bilan dahshatli ajdar Smaugni urib tushirgan, Besh Qoʻshin Jangida insonlar qoʻshinini boshqargan va vayron boʻlgan Deyl shahrini qayta tiklab, uning birinchi yangi qiroli boʻlgan.",
+  "biography_sections": [
+    {
+      "title": "Girion merosi va Smaugning halokati",
+      "content": "Bard U.D. 2770-yilda ajdar Smaug tomonidan vayron qilingan Deylning soʻnggi hukmdori Girionning avlodi edi. U Uzun Koʻl ustidagi Esgarot shahrida soqchilar sardori boʻlib xizmat qilgan; jiddiy va tund feʼl-atvori tufayli shaharliklar uni koʻpincha shumxabar keltiruvchi deb bilishardi. U.D. 2941-yilda gʻazablangan Smaug Esgarotga olov yogʻdirib hujum qilganida, shahar hokimi qochib ketgan, Bard esa oxirgi oʻqi qolguncha koʻprikda turib kurashgan. Shu paytda Yolgʻiz Togʻdan uchib kelgan keksa qorayaloq (thrush) qushi qadimgi Deyl tilida ajdarning koʻkrak zirhidagi yagona ochiq joy haqida Bardning qulogʻiga shivirlagan. Bard oʻzining ota-bobosidan qolgan «Qora oʻq»ni uzib, Smaugni yuragidan urib oʻldirgan."
+    },
+    {
+      "title": "Erebor qamali va Besh Qoʻshin Jangi",
+      "content": "Vayron boʻlgan Esgarot aholisini qishki ochlikdan qutqarish uchun Bard elflar qiroli Tranduil yordamida Ereborga kelib, Torin Emanqalqondan Deylning oʻgʻirlangan xazinasidan ulush soʻragan. Torin rad etib, urush xavfi tugʻilganda, Bilbo Beggins tunda yashirincha Arkenstoun toshini Bardga keltirib bergan. Koʻp oʻtmay shimoldan Bolg boshchiligidagi ork va varg qoʻshinlari hujum qilgach, Bard Besh Qoʻshin Jangida insonlar safini mardonavor boshqargan."
+    },
+    {
+      "title": "Deylning qayta tiklanishi",
+      "content": "Jangdan soʻng yangi mitti-odamlar qiroli Dain II Arkenstounni Torin koʻkragiga qoʻyish uchun Bardga xazinaning oʻn toʻrtdan bir ulushini topshirgan. Bard bu oltinlarning katta qismini Esgarotni tiklashga bergan, Tranduilga Girionning zumrad marjonini sovgʻa qilgan, Bilboga esa saxovat koʻrsatgan. Oʻzi esa Deyl shahrini qayta bunyod etib, U.D. 2977-yilda vafot etguniga qadar tinchlik va farovonlikda hukmronlik qilgan; uning sulolasi (oʻgʻli Bain va nevarasi Brand) Uzuk Urushida ham Ereborning eng sodiq ittifoqchisi boʻlib qolgan."
+    }
+  ],
+  "etymology": "Bard nomi qadimgi kelt va german tillarida «shoir, baxshi» yoki skandinavcha Bárðr («jangovar bolta sohibi») maʼnosiga ega.",
+  "sources": [
+    {
+      "book_slug": "the-hobbit",
+      "chapter": "14-bob (Olov va suv) hamda 17-bob (Bulutlar yorildi)",
+      "page": "234"
+    },
+    {
+      "book_slug": "the-return-of-the-king",
+      "chapter": "Ilova A, III qism va Ilova B",
+      "page": "1076"
+    }
+  ],
+  "related_characters": [
+    "smaug",
+    "thorin-oakenshield",
+    "bilbo-baggins",
+    "thranduil",
+    "dain-ironfoot"
+  ],
+  "adaptations": []
+}

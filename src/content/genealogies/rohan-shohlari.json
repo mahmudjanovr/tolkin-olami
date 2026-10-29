@@ -1,0 +1,99 @@
+{
+  "id": "rohan-shohlari",
+  "title": "Eorl va Rohan Shohlari Nasabnomasi",
+  "house_name": "Eorl xonadoni (Mark Shohlari)",
+  "founder_id": "eorl",
+  "era": "Uchinchi davr — Toʻrtinchi davr",
+  "summary": "Shimoldagi Éothéod elidan kelib, Cirion Qasamyodi orqali Calenardhon (Rohan) yerlariga ega boʻlgan Eorl the Young va uning uch sulolaviy tarmoqdan iborat jasur otliq hukmdorlari nasabi.",
+  "members": [
+    {
+      "character_id": "eorl",
+      "spouse_ids": [],
+      "parent_ids": ["leod"],
+      "generation": 1,
+      "order": 1,
+      "is_uncertain": false
+    },
+    {
+      "character_id": "brego",
+      "spouse_ids": [],
+      "parent_ids": ["eorl"],
+      "generation": 2,
+      "order": 1,
+      "is_uncertain": false
+    },
+    {
+      "character_id": "helm-hammerhand",
+      "spouse_ids": [],
+      "parent_ids": ["gram"],
+      "generation": 3,
+      "order": 1,
+      "is_uncertain": false
+    },
+    {
+      "character_id": "frealaf",
+      "spouse_ids": [],
+      "parent_ids": ["hild"],
+      "generation": 4,
+      "order": 1,
+      "is_uncertain": false
+    },
+    {
+      "character_id": "thengel",
+      "spouse_ids": ["morwen-lossarnach"],
+      "parent_ids": ["fengel"],
+      "generation": 5,
+      "order": 1,
+      "is_uncertain": false
+    },
+    {
+      "character_id": "theoden",
+      "spouse_ids": ["elfhild"],
+      "parent_ids": ["thengel", "morwen-lossarnach"],
+      "generation": 6,
+      "order": 1,
+      "is_uncertain": false
+    },
+    {
+      "character_id": "theodwyn",
+      "spouse_ids": ["eomund"],
+      "parent_ids": ["thengel", "morwen-lossarnach"],
+      "generation": 6,
+      "order": 2,
+      "is_uncertain": false
+    },
+    {
+      "character_id": "theodred",
+      "spouse_ids": [],
+      "parent_ids": ["theoden", "elfhild"],
+      "generation": 7,
+      "order": 1,
+      "is_uncertain": false
+    },
+    {
+      "character_id": "eomer",
+      "spouse_ids": ["lothiriel"],
+      "parent_ids": ["theodwyn", "eomund"],
+      "generation": 7,
+      "order": 2,
+      "is_uncertain": false
+    },
+    {
+      "character_id": "eowyn",
+      "spouse_ids": ["faramir"],
+      "parent_ids": ["theodwyn", "eomund"],
+      "generation": 7,
+      "order": 3,
+      "is_uncertain": false
+    }
+  ],
+  "branches": ["Birinchi Tarmoq (Eorldan Helmgacha)", "Ikkinchi Tarmoq (Fréaláfdan Théodengacha)", "Uchinchi Tarmoq (Éomerdan boshlab)"],
+  "sources": [
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "Appendix A: Annals of the Kings and Rulers (II: The House of Eorl)",
+      "page": "1064",
+      "notes": "Rohan shohlarining toʻliq nasabnomasi va uch sulolaviy tarmoq tarixi."
+    }
+  ]
+}

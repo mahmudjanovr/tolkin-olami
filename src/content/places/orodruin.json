@@ -1,0 +1,56 @@
+{
+  "id": "orodruin",
+  "name": "Orodruin (Hukm Togʻi)",
+  "elvish_name": "Orodruin / Amon Amarth",
+  "type": "togʻ",
+  "region": "orta-yer",
+  "coordinates": {
+    "map_id": "orta-yer",
+    "x": 1380,
+    "y": 620
+  },
+  "founded_era": "Birinchi davr (Melkor tomonidan koʻtarilgan vulqon)",
+  "destroyed_era": "Uchinchi davr 3019 (25-mart — buyuk otilishda parchalanishi)",
+  "rulers": [
+    "Sauron"
+  ],
+  "notable_events": [
+    "Ikkinchi davr taxminan 1600-yilda Sauron tomonidan Sammath Naurda Yagona Uzukning yasalishi",
+    "Ikkinchi davr 3441-yilda Isildurning Elrond maslahatini rad etib, Uzukni olovga tashlamasligi",
+    "Uchinchi davr 3019-yil 25-martda Frodo, Sam va Gollum ishtirokida Yagona Uzukning Hukm Olovida erib yoʻq qilinishi"
+  ],
+  "textual_status": "author_published",
+  "summary": "Mordorning Gorgoroth tekisligi markazida qad rostlagan olovli vulqon (sindarincha Orodruin — «Alangali Olov Togʻi» va Amon Amarth — «Taqdir / Hukm Togʻi»). Uning qaʼridagi Sammath Naur («Olov Hujralari») deb ataluvchi gʻor-ustaxonada Sauron Yagona Uzukni yasagan va aynan shu yerda Uzuk qayta eritilib, Sauron saltanatiga chek qoʻyilgan.",
+  "sources": [
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "Mount Doom",
+      "page": "936",
+      "notes": "Frodo va Samning Orodruin choʻqqisidagi Sammath Naurga yetib borishi va Uzukning halokati."
+    },
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of the Rings of Power and the Third Age",
+      "page": "287",
+      "notes": "Sauronning Orodruin olovida Yagona Uzukni zarb etishi."
+    }
+  ],
+  "description_sections": [
+    {
+      "title": "Hukm Togʻi va Gorgoroth olovi",
+      "content": "Orodruin (Sindarincha: 'Olovli Togʻ'), xalq orasida Hukm Togʻi (Mount Doom) va Amon Amarth ('Halokat Togʻi') deb atalgan faol vulqon Mordorning Gorgoroth tekisligida yolgʻiz qad rostlagan. Togʻ tubidagi yerosti olovi Arda yaratilishidagi birlamchi xaos kuchlari bilan tutashgan.\n\nSauron Mordorni aynan shu vulqonning dahshatli olovi sababli oʻziga maskan qilgan edi. U vulqonning tubsiz qaʼridan temirchilik oʻchogʻi sifatida foydalandi va Ikkinchi davrning 1600-yilida Yagona Qudrat Uzugini aynan shu yerda soxtalashtirdi."
+    },
+    {
+      "title": "Sammath Naur: Taqdir Palatasi",
+      "content": "Togʻning sharqiy yonbagʻridan Sauron tomonidan qazilgan 'Sauron Yoʻli' (Sauron's Road) oʻtgan boʻlib, u Barad-dûrdan to Sammath Naur ('Olov Palatasi') deb ataluvchi gʻorga olib borgan. Ushbu palata markazida 'Hukm Qoriqlari' (Cracks of Doom) deb ataluvchi tubsiz olovli yoriq joylashgan edi.\n\nYagona Uzukni faqat uni yaratgan joyda — Sammath Naur olovidagina eritish mumkin edi; butun Oʻrta-yerda boshqa hech bir olov yoki ajdar nafasi unga taʼsir qilolmasdi."
+    },
+    {
+      "title": "Uchinchi Davr intihosi va portlash",
+      "content": "3019-yil 25-martida Frodo Baggins va Gollum Sammath Naurga yetib kelishdi. Gollum Uzuk bilan birga olovli yoriqqa qulagach, Orodruin misli koʻrilmagan kuch bilan portladi. Vulqon otilishi Gorgoroth tekisligini lavaga koʻmdi, Sauron qoʻshinlarini sarosimaga soldi va Qora Hukmdor saltanatiga soʻnggi nuqtani qoʻydi."
+    },
+    {
+      "title": "Sammath Naur o'chog'i va Yagona Uzukning tug'ilgan maskani",
+      "content": "Orodruin (Hukm Tog'i / Amon Amarth) Mordorning Gorgoroth tekisligida yolg'iz qad rostlagan faol vulqondir. Vulqon yonbag'rida Sauron tomonidan o'yilgan Sauron Yo'li va Sammath Naur (Taqdir Xonalari) joylashgan edi. Bu yerosti g'ori to'g'ridan-to'g'ri tog' yuragidagi erigan lava daryosiga ochilgan. Yagona Uzuk aynan shu erda yasalgani uchun uni faqat shu o'choq olovigina eritishi mumkin edi. Vulqon Sauronning irodasiga bog'liq bo'lib, Sauron kuchayganda kul va lava otilar, u zaiflashganda esa sokinlashar edi."
+    }
+  ]
+}

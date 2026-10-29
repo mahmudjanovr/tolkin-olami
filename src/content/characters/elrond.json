@@ -1,0 +1,124 @@
+{
+  "id": "elrond",
+  "name": "Elrond",
+  "original_name": "Elrond Peredhel",
+  "father_name": "Eärendil Dengizchi",
+  "mother_name": "Elwing",
+  "spouse": "Celebrían",
+  "children": [
+    "Elladan (katta oʻgʻil)",
+    "Elrohir (egizak oʻgʻil)",
+    "Arwen Undómiel (qizi)"
+  ],
+  "aliases": [
+    "Elrond Yarim-elf",
+    "Imladris Hukmdori",
+    "Rivendell Oqsoqoli",
+    "Peredhel"
+  ],
+  "titles": [
+    "Imladris (Rivendell) Hukmdori",
+    "Gil-galadning Oliy Noibi va Sarkardasi",
+    "Vilya (Havo Uzugi) Posboni",
+    "Oq Kengash aʼzosi"
+  ],
+  "race": "elflar",
+  "sub_race": "Yarim-elf (Peredhel)",
+  "culture": "Rivendell (Imladris) / Lindon",
+  "birth_year": "Birinchi davr 532",
+  "death_year": "Boqiy (Uchinchi davr 3021-yilda Boqiy Gʻarbga suzib ketgan)",
+  "house_id": "edain-va-yarim-elflar",
+  "weapons_and_artifacts": [
+    "Vilya (Uch Elflar Uzugining eng qudratlisi — Sapfir / Havo Uzugi)",
+    "Qadimiy Eldar va Númenor solnomalari",
+    "Barahir uzugi va Narsil parchalari (Aragorn voyaga yetguncha asragan)"
+  ],
+  "primary_locations": [
+    "rivendell"
+  ],
+  "textual_status": "author_published",
+  "uncertainty_notes": "Tolkienning 'The Letters of J.R.R. Tolkien' (153-maktub) asarida Elrond va uning egizagi Elrosga Eru Ilúvatar va Valar tomonidan berilgan buyuk tanlov tahlil qilingan: ikkala aka-uka ham insonlar va elflarning eng olijanob qonini oʻzida mujassam etgani bois, oʻz taqdirlarini erkin tanlash huquqiga ega edilar. Elros insonlik foniyligini tanlab, Númenorning birinchi shohi boʻldi; Elrond esa Elflar boqiyligini qabul qilib, Oʻrta-yerda ming yillar davomida donishmandlik, tabobat va xotira homiysiga aylandi.",
+  "summary": "Eärendil va Elwingning oʻgʻli, Númenor asoschisi Elrosning egizagi, Imladris (Rivendell) vodiysi asoschisi va hukmdori. Soʻnggi Ittifoq urushida Oliy Qirol Gil-galadning bosh bayroqdori boʻlgan. Uch Elflar Uzugining eng ulugʻi — Vilyaning sohibi. Oʻrta-yerda Isildur merosini va Shimol Dúnedain naslini asrab-avaylagan, Uzuk Kengashiga rahbarlik qilgan buyuk tabib, donishmand va xaloskor.",
+  "etymology": "Sindarin tilida 'Elrond' — el ('yulduz') va rond ('gumbaz, gʻor, kamar') soʻzlaridan olingan boʻlib, 'Yulduzlar Gumbazi' yoki 'Gʻor Yulduzi' maʼnosini beradi (bolaligida Fëanor oʻgʻillari hujumi paytida gʻorda topilgani sababli berilgan). Uning Quenya unvoni 'Peredhel' esa per- ('yarim') va edhel ('elf') soʻzlaridan boʻlib, 'Yarim-elf' deganidir.",
+  "biography_sections": [
+    {
+      "title": "Eärendil oʻgʻli va Yarim-elflar tanlovi",
+      "content": "Elrond Peredhel (Yarim-elf) Birinchi Davrning 532-yilida Sirion Bandargohida buyuk dengizchi Eärendil va Elwing oilasida egizak akasi Elros bilan birga dunyoga kelgan. U Lúthien, Beren, Turgon va Idrilning bevosita avlodi boʻlib, uning tomirlarida Elflar, Insonlar va Maiar (Melian) qoni birlashgan edi.\n\nGʻazab Urushidan soʻng Valar yarim-elflarga taqdir tanlash imkonini berdi: Elros insonlar taqdirini tanlab Númenorning birinchi shohi boʻldi, Elrond esa elflar taqdirini tanlab Oʻrta-yerda qoldi va Oliy Qirol Gil-galadning bosh maslahatchisi va sarkardasi boʻlib xizmat qildi."
+    },
+    {
+      "title": "Eregion qulashi va Rivendellning (Imladris) asos solinishi",
+      "content": "Ikkinchi Davrning 1695-yilida Sauron Eregionga bostirib kirganida, Gil-galad Elrond boshchiligida qoʻshin joʻnatdi. Celebrimbor halok boʻlib, Eregion vayron boʻlgach, Elrond omon qolgan Noldor elflarini shimolga olib chiqdi va 1697-yilda Tumanli Togʻlar etagidagi yashirin Imladris (Rivendell / Ayrondell) vodiysiga asos soldi.\n\nImladris koʻp asrlar davomida erkin xalqlarning eng mustahkam boshpanasi, qadimiy donishmandlik, tarix, tabobat va sanʼat markaziga aylandi. Gil-galad oʻlimidan avval Elrondga Uch Elflar Uzugining eng qudratlisi boʻlgan Vilyani (Sapfir / Havo Uzugi) topshirdi."
+    },
+    {
+      "title": "Soʻnggi Ittifoq va Isildur fojiasi",
+      "content": "Ikkinchi davr oxirida Elrond Soʻnggi Ittifoq Urushida Gil-galadning shaxsiy bayroqdori sifatida qatnashdi. Orodruin etagidagi qonli toʻqnashuvda Gil-galad va Elendil halok boʻlganida, Elrond ularning yonida turgan edi.\n\nIsildur Sauron barmogʻidan Uzukni kesib olgach, Elrond va Círdan uni zudlik bilan Orodruin oloviga tashlab, yovuzlikni ildizi bilan yoʻq qilishga undadilar. Biroq Isildur Uzukni otasi va ukasi uchun 'toʻlov' deb atab, uni olib qoldi. Elrond bu fojiaviy xatoning butun Uchinchi davr davomida dahshatli oqibatlar keltirishini oldindan koʻrgan edi."
+    },
+    {
+      "title": "Dúnedain homiysi, Oq Kengash va Halqa Urushi",
+      "content": "Shimoldagi Arnor qirolligi qulagach, Elrond Isildur avlodlariga oʻz uyidan boshpana berdi. U Isildur vorislarini (jumladan yosh Aragornni) oʻz oʻgʻlidek tarbiyaladi, ularga Narsil qilichi siniqlari va Barahir uzugini asrab berdi.\n\n3018-yil oktyabrida Elrond Nazgûl zahridan oʻlim toʻshagida yotgan Frodoning tanasidan Morgul tigʻi parchasini olib tashlab, uni moʻjizaviy tarzda davoladi. Mashhur Elrond Kengashini chaqirib, butun Oʻrta-yer erkin xalqlari vakillarini bir davraga toʻpladi va Uzuk Birodarligiga oq fotiha berdi."
+    },
+    {
+      "title": "Boqiy Gʻarbga ketish va abadiy meros",
+      "content": "Halqa Urushi gʻalaba bilan tugagach, Elrond oʻz qizi Arwenni Qirol Aragorn II Elessarga turmushga berdi. Bu Elrond uchun buyuk fojiaviy ayriliq edi, chunki Arwen insonlar taqdirini tanlab foniy boʻldi va otasi bilan manguga vidolashdi.\n\n3021-yilda, Yagona Uzuk yoʻq qilinishi bilan Vilyaning sehrli qudrati soʻngach, Elrond Imladrisni tark etdi. U Gandalf, Galadriel, Bilbo va Frodo bilan birga Oq Kemada Boqiy Gʻarbga — oʻz ota-onasi Eärendil va Elwing maskaniga suzib ketdi."
+    }
+  ],
+  "sources": [
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "Many Meetings",
+      "page": "218"
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "The Council of Elrond",
+      "page": "233"
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "Appendix A: Annals of the Kings and Rulers",
+      "page": "1032"
+    },
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of the Rings of Power and the Third Age",
+      "page": "286"
+    },
+    {
+      "book_slug": "letters-of-jrr-tolkien",
+      "chapter": "Letter 153",
+      "page": "189"
+    }
+  ],
+  "related_characters": [
+    "earendil",
+    "elwing",
+    "elros",
+    "maglor",
+    "cirdan",
+    "glorfindel",
+    "arwen",
+    "aragorn",
+    "gandalf",
+    "gil-galad",
+    "galadriel",
+    "isildur",
+    "elendil",
+    "bilbo-baggins",
+    "frodo-baggins"
+  ],
+  "adaptations": [
+    {
+      "medium": "film",
+      "title": "The Lord of the Rings & The Hobbit Film Trilogies",
+      "creator": "Peter Jackson",
+      "year": 2001,
+      "divergence_notes": "Filmda Hugo Weaving ijrosidagi Elrond insonlarning zaifligiga shubha bilan qaraydigan, Aragornning taxtga o'tirishiga dastlab qarshi bo'lgan ancha sovuqqon rahbar sifatida tasvirlangan. Kitobda esa Elrond Aragornga mehrli ota bo'lgan, insoniyatga doimo hamdardlik bildirgan va Narsil qilichini Birodarlik yo'lga chiqishidan oldinoq Rivendellda qayta soxtalatgan."
+    }
+  ],
+  "image": {
+    "src": "/images/characters/elrond.webp",
+    "src_thumb": "/images/characters/elrond-thumb.webp",
+    "alt": "Elrond Yarim-elf Rivendell balkonida, boshida kumush gulchambar-toj va barmogʻida Vilya uzugi bilan",
+    "caption": "Elrond — Rivendell Hukmdori, Eärendil oʻgʻli, Vilya (Sapfir / Havo uzugi) posboni"
+  }
+}

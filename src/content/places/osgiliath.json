@@ -1,0 +1,61 @@
+{
+  "id": "osgiliath",
+  "name": "Osgiliath",
+  "elvish_name": "Osgiliath",
+  "type": "shahar",
+  "region": "orta-yer",
+  "coordinates": {
+    "map_id": "orta-yer",
+    "x": 1250,
+    "y": 568
+  },
+  "founded_era": "Ikkinchi davr 3320",
+  "destroyed_era": "Uchinchi davr 2475",
+  "rulers": [
+    "Isildur",
+    "Anárion",
+    "Gondor qirollari"
+  ],
+  "notable_events": [
+    "Isildur va Anárionning Osgiliathda birgalikda taxtga oʻtirishi va Bosh Palantírning Yulduzlar Gumbaziga oʻrnatilishi",
+    "Qarindoshlar qirgʻini (Kin-strife) vaqtida Yulduzlar Gumbazining yonib ketishi va Bosh Palantírning daryoga choʻkishi (Uchinchi davr 1437-yil)",
+    "Uchinchi davr 3019-yilda Boromir va Faramir tomonidan Anduin kechuvining Nazgûl va Mordor qoʻshinlaridan qahramonona himoya qilinishi"
+  ],
+  "textual_status": "author_published",
+  "summary": "Osgiliath (sindarincha: «Yulduzlar Qalʼasi») — Buyuk Anduin daryosining har ikki qirgʻogʻida barpo etilgan Gondorning qadimiy birinchi poytaxti. Shaharning ikki qismini ulkan tosh koʻpriklar bogʻlab turgan va uning markaziy Yulduzlar Gumbazida (Dome of Stars) Janubning asosiy boshqaruvchi Palantíri saqlangan. Fuqarolar urushlari va Mordorning doimiy qamalidan soʻng vayronaga aylanib, harbiy chegara postiga aylangan.",
+  "sources": [
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "The Siege of Gondor",
+      "notes": "Faramirning Osgiliath chekinishi va Anduin daryosining Mordor qoʻshinlari tomonidan kesib oʻtilishi."
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "Appendix A: Annals of the Kings and Rulers",
+      "notes": "Osgiliathning poytaxt sifatida gullab-yashnashi, Kin-strife fojiasi va poytaxtning Minas Anorga koʻchirilishi."
+    },
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of the Rings of Power and the Third Age",
+      "notes": "Elendil oʻgʻillari tomonidan Osgiliath poydevorining solinishi va taxtning barpo etilishi."
+    }
+  ],
+  "description_sections": [
+    {
+      "title": "Anduin ustidagi qadimiy poytaxt",
+      "content": "Osgiliath (Sindarincha: 'Yulduzlar Qalʼasi') — Gondor qirolligining qadimiy poytaxti boʻlib, buyuk Anduin daryosining har ikki sohilida joylashgan. Shaharning ikki qismini bir nechta ulkan tosh koʻpriklar bogʻlab turgan, ularning eng kattasi ustida Yulduzlar Gumbazi (Dome of the Stars) qad rostlagan edi.\n\nUshbu gumbaz ostida Gondorning bosh Palantíri — Osgiliath Koʻruvchi Toshi saqlangan boʻlib, u butun Oʻrta-yerdagi barcha boshqa toshlarni nazorat qila olar edi."
+    },
+    {
+      "title": "Qarindoshlar urushi va Buyuk Vabo halokati",
+      "content": "Uchinchi davrning 1432-yilida boshlangan Qardoshlar Urushi (Kin-strife) paytida Osgiliath shafqatsiz qamalga uchradi. Yulduzlar Gumbazi yonib ketdi va buyuk Palantír Anduin suvlariga qulab, manguga yoʻqoldi.\n\n1636-yildagi Buyuk Vabo shahar aholisini qirib tashladi. Shahar kimsasizlanib, xarobaga aylangach, poytaxt Minas Anorga koʻchirildi va Osgiliath asrlar davomida faqat chegaradagi harbiy forpost boʻlib qoldi."
+    },
+    {
+      "title": "Halqa Urushidagi qonli toʻqnashuvlar",
+      "content": "3018-yil iyunida Sauronning toʻsatdan qilgan hujumida Boromir va Faramir soʻnggi tosh koʻprikni buzib tashlab dushmanni toʻxtatdilar. 3019-yil martida Mordor armiyasi qayiqlar va sallarda daryodan oʻtib, shaharning gʻarbiy qismini ham egalladi.\n\nUrushdan soʻng Qirol Elessar davrida Osgiliath xarobalardan qisman tozalandi, ammo u poytaxtlik maqomini Minas Tirithga qoldirdi."
+    },
+    {
+      "title": "Yulduzlar Gumbazi (Dome of Stars) va buyuk palantír yo'qolishi",
+      "content": "Osgiliathning eng ulug'vor binosi Anduin daryosi uzra qurilgan bahaybat tosh ko'prik ustidagi Osgiliath Yulduzlar Gumbazi (Dome of Stars) edi. Unda butun O'rta-yerdagi barcha palantírlarni boshqara oluvchi bosh tosh saqlangan. 1432-yilgi Gondor Qardoshlar Urushida (Kin-strife) isyonchilar shaharni yondirganlarida, bu muqaddas gumbaz qulab, ulug'vor Osgiliath toshi daryo qa'riga g'arq bo'ldi va abadiy yo'qoldi. Shahar asta-sekin mudofaa qal'asiga, so'ngra qonli jang maydoniga aylanib, o'zining shon-sharafini Minas Tirithga topshirdi."
+    }
+  ]
+}

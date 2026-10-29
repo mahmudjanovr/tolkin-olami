@@ -1,0 +1,75 @@
+{
+  "id": "balin",
+  "name": "Balin",
+  "original_name": "Balin",
+  "father_name": "Fundin",
+  "mother_name": "Nomaʼlum",
+  "spouse": "Yoʻq",
+  "children": [],
+  "aliases": [
+    "Moria Xoʻjayini (Lord of Moria)",
+    "Fundin oʻgʻli Balin"
+  ],
+  "titles": [
+    "Moria Hukmdori (Lord of Moria)",
+    "Torin Emanqalqon guruhining oqsoqoli va kuzatuvchisi"
+  ],
+  "race": "mitti-odamlar",
+  "sub_race": "Uzunsoqollar (Longbeards)",
+  "culture": "Erebor va Moria mitti-odamlari",
+  "birth_year": "U.D. 2763",
+  "death_year": "U.D. 2994 (10-noyabr)",
+  "house_id": "durin-avlodlari",
+  "weapons_and_artifacts": [
+    "Durin boltasi (Moria ekspeditsiyasida topilgan)",
+    "Mazarbul kitobi (Balin solnomasi)"
+  ],
+  "primary_locations": [
+    "erebor",
+    "khazad-dum",
+    "hobbiton"
+  ],
+  "textual_status": "author_published",
+  "summary": "Durin xonadonining olijanob vakili, Fundinning oʻgʻli, Torin Emanqalqonning Ereborga yurishidagi eng yaqin maslahatchisi va Bilbo Begginsning samimiy doʻsti. Keyinchalik qadimgi Khazad-dûmni qayta tiklash uchun Moria ekspeditsiyasini boshqargan va Mazarbul zalida dafn etilgan.",
+  "biography_sections": [
+    {
+      "title": "Surgundagi yillar va Erebor yurishi",
+      "content": "Balin U.D. 2770-yilda ajdar Smaug Ereborga hujum qilganida otasi Fundin va shahzoda Torin bilan birga togʻdan qochib chiqqan yosh mitti-odamlardan biri edi. Uning otasi Fundin U.D. 2799-yilda Azanulbizar jangida halok boʻlgan. U.D. 2841-yilda Balin va uning ukasi Dvalin qirol Train II ga Ereborga qaytish safarida hamrohlik qilishgan. Oradan yuz yil oʻtib, U.D. 2941-yilda Balin Torin Emanqalqonning oʻn uch mitti-odamdan iborat guruhida ikkinchi eng keksa aʼzo va doimiy kuzatuvchi boʻlib xizmat qilgan."
+    },
+    {
+      "title": "Bilbo Beggins bilan doʻstlik",
+      "content": "Torin guruhidagi barcha mitti-odamlar orasida Balin Bilbo Begginsga eng koʻp hurmat va mehr koʻrsatgan hamroh edi. Yolgʻiz Togʻning maxfiy tunneliga Bilbo bilan birga faqat Balin kirishga jurʼat etgan. Besh Qoʻshin Jangidan soʻng u Ereborda boy va farovon yashagan hamda U.D. 2949-yilda Gendalf bilan birga Shayrga, Xobbitonga kelib Bilbo Begginsni ziyorat qilgan."
+    },
+    {
+      "title": "Moria ekspeditsiyasi va Mazarbul qabri",
+      "content": "Erebordagi farovonlikka qaramay, Balinning qalbini qadimgi Khazad-dûm (Moria) ulugʻvorligini tiklash orzusi tark etmagan. Qirol Dain II ning ogohlantirishiga qaramay, U.D. 2989-yilda Balin Ori, Oin va koʻplab mitti-odamlarni boshlab Moriaga kirgan, orklarni quvib chiqarib, oʻzini «Moria Hukmdori» deb eʼlon qilgan va Durin boltasini topgan. Biroq U.D. 2994-yil 10-noyabrda Balin Koʻzgu-koʻl (Kheled-zâram)ga yolgʻiz qarash uchun chiqqanida, tosh ortiga yashiringan ork kamonchisi tomonidan otib oʻldirilgan. Uzuk Birodarligi U.D. 3019-yilda Mazarbul zalida uning «Fundin oʻgʻli Balin, Moria Hukmdori» degan runik yozuvli oq tosh qabrini topgan."
+    }
+  ],
+  "etymology": "Balin ismi Qadimgi Skandinav manbalaridan emas, balki Malorining Artur haqidagi rivoyatlaridagi ser Balin nomidan ilhomlangan boʻlib, qadimgi germancha ildizda «olovli, jasur» maʼnosiga yaqin.",
+  "sources": [
+    {
+      "book_slug": "the-hobbit",
+      "chapter": "1-bob (Kutilmagan ziyofat) va 12-bob (Ichkaridagi maʼlumotlar)",
+      "page": "18"
+    },
+    {
+      "book_slug": "the-fellowship-of-the-ring",
+      "chapter": "II kitob, 4-bob (Qorongʻulikdagi sayohat) va 5-bob (Khazad-dûm koʻprigi)",
+      "page": "319"
+    },
+    {
+      "book_slug": "the-return-of-the-king",
+      "chapter": "Ilova A, III qism (Durin xalqi)",
+      "page": "1077"
+    }
+  ],
+  "related_characters": [
+    "thorin-oakenshield",
+    "bilbo-baggins",
+    "gandalf",
+    "gimli",
+    "dain-ironfoot",
+    "durin-i"
+  ],
+  "adaptations": []
+}

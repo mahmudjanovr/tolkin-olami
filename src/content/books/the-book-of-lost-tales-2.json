@@ -1,0 +1,59 @@
+{
+  "id": "the-book-of-lost-tales-2",
+  "title_uz": "Yoʻqolgan Qissalar Kitobi: 2-qism",
+  "title_original": "The Book of Lost Tales, Part Two",
+  "aliases": [
+    "The Book of Lost Tales 2",
+    "BoLT 2",
+    "HoME 2",
+    "The History of Middle-earth: Volume 2"
+  ],
+  "publication_year": 1984,
+  "publisher": "George Allen & Unwin",
+  "editor": "Christopher Tolkien",
+  "category": "textual_history",
+  "isbn": "978-0-04-823265-6",
+  "synopsis": "«The History of Middle-earth» turkumining ikkinchi jildi boʻlib, unda Birinchi Davrning uchta buyuk fojiaviy eposining eng dastlabki toʻliq matnlari jamlangan: Beren va Lúthien (Tevildo Mushuklar Knyazi bilan ilk versiyasi), Túrin Turambar qissasi hamda Eärendilning buyuk dengiz safari.",
+  "cover_image": {
+    "src": "/images/books/the-book-of-lost-tales-2.webp",
+    "alt": "Yoʻqolgan Qissalar Kitobi 2-qism muqovasi",
+    "edition_title": "George Allen & Unwin 1984 First Edition (Archival Design)",
+    "publisher": "George Allen & Unwin",
+    "year": 1984,
+    "isbn": "978-0-04-823265-6",
+    "artist": "Christopher Tolkien (matnshunoslik loyihasi)",
+    "source": "Bibliografik arxiv dizayni (unverified authentic cover)"
+  },
+  "key_themes": [
+    "Beren va Tinúvielning ibtidoiy varianti va Tevildo bilan ertaknamo kurash",
+    "Túrin Turambar va ajdaho Glorund (Glaurung) fojiasi",
+    "Nauglafring (Mittilar Boʻyinbogʻi) va Doriathning qulashi",
+    "Eärendilning yulduzli kemasi va anglo-sakson Éarendel afsonasi"
+  ],
+  "detailed_sections": [
+    {
+      "title": "Tarixiy kontekst: Qahramonlik dostonlarining shakllanishi",
+      "content": "1917–1920 yillarda yaratilgan ushbu qissalar Tolkienning mifologik olamining eng dramatik sahifalarini ochib beradi. Birinchi jild koʻproq kosmogoniya va xudolar haqida boʻlsa, ikkinchi jild toʻliq insonlar va elflarning fojiaviy qahramonliklariga bagʻishlangan. Unda qadimiy ertak unsurlari (masalan, Sauron oʻrnida bahaybat sehrgar mushuk Tevildoning boʻlishi) asta-sekin jiddiy va yuksak epik tragediyaga aylanib boradi."
+    },
+    {
+      "title": "Kitobning markaziy matnlari tahlili",
+      "content": "Ushbu jildda «Tinúviel Qissasi» (Tale of Tinúviel), «Turambar va Foalókë» (Turambar and the Foalókë), «Nauglafring» (The Nauglafring) hamda «Eärendelning Soʻnggi Safari» (The Tale of Eärendel) oʻrin olgan. Ayniqsa Turambar qissasi oʻzining qorongʻi fatalizmi va qadimiy fin «Kalevala» eposidagi Kullervo taqdiri bilan bevosita bogʻliqligi bilan ajralib turadi. Ushbu dastlabki versiyalar keyinchalik «Húrin Farzandlari» romaniga aylangan."
+    },
+    {
+      "title": "Matnshunoslik ahamiyati va sheʼriy parchalari",
+      "content": "Christopher Tolkien ushbu jildda otasining eng qadimgi alliteratsion sheʼriy tajribalarini va qoralamalardagi nomlar lugʻatini ham ilova qilgan. Kitob oxirida Eriolning kimligi, uning ingliz xalqining afsonaviy ajdodi Ælfwine bilan qanday birlashtirilgani va afsonalarning zamonaviy Angliya geografiyasi bilan bogʻlanish rejalari ochib beriladi."
+    },
+    {
+      "title": "Oʻzbek tilidagi ahamiyati",
+      "content": "Ushbu asar Tolkien ijodida fantastik ertakdan jiddiy falsafiy eposga oʻtish bosqichini oʻrganish uchun bebaho manbadir. Oʻzbek kitobxonlari uchun Tolkienning mifologik evolyutsiyasini, personajlarning qanday sayqallanganini koʻrsatuvchi muhim ilmiy boylik sanaladi."
+    }
+  ],
+  "uzbek_editions": [
+    {
+      "title": "Yoʻqolgan Qissalar Kitobi: 2-qism",
+      "status": "untranslated",
+      "notes": "Oʻzbek tiliga tarjima qilinmagan. Maxsus akademik izohlar talab qiladi."
+    }
+  ],
+  "translation_status_summary": "Hozircha oʻzbek tilida nashr etilmagan. Ilmiy-tadqiqot nashri sifatida rejalashtirilgan."
+}

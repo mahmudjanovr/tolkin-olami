@@ -1,0 +1,164 @@
+---
+import { getCollection, type CollectionEntry } from 'astro:content';
+import EntityLayout from '@/layouts/EntityLayout.astro';
+import { resolveEntityLinks } from '@/utils/entity-resolver';
+
+export async function getStaticPaths() {
+  const concepts = await getCollection('cosmology');
+  return concepts.map((concept) => ({
+    params: { slug: concept.data.id || concept.id },
+    props: { concept },
+  }));
+}
+
+interface Props {
+  concept: CollectionEntry<'cosmology'>;
+}
+
+const { concept } = Astro.props;
+const data = concept.data;
+
+const breadcrumbs = [
+  { label: 'Arda va Kosmologiya', href: '/olam/' },
+  { label: data.name },
+];
+
+const conceptTypeLabels: Record<string, string> = {
+  cosmic_realm: 'Kosmik Makon / Olam',
+  primeval_light: 'Ibtidoiy Nur Manbai',
+  celestial_body: 'Samoviy Jism',
+  metaphysical_force: 'Metafizik Kuch / Ilohiy Mohiyat',
+};
+
+const relatedItems = resolveEntityLinks(data.associated_ainur);
+---
+
+<EntityLayout
+  title={data.name}
+  category={conceptTypeLabels[data.concept_type] || data.concept_type}
+  breadcrumbs={breadcrumbs}
+  textualStatus={data.textual_status}
+  sources={data.sources}
+  relatedItems={relatedItems}
+  leadSummary={data.summary}
+>
+  <div class="cosmology-details">
+    <section class="cosmology-main-section">
+      <h2>Ontologik Tuzilishi va Tafsiri</h2>
+      <p class="concept-summary-text">{data.summary}</p>
+
+      {data.cosmology_sections && data.cosmology_sections.length > 0 && (
+        <div class="cosmology-sections">
+          {data.cosmology_sections.map((section) => (
+            <div class="cosmology-section-block">
+              <h3>{section.title}</h3>
+              {section.content.split('\n\n').map((para) => (
+                <p>{para}</p>
+              ))}
+            </div>
+          ))}
+        </div>
+      )}
+
+      {data.ontological_evolution && (
+        <div class="ontological-evolution-block">
+          <h3>Ontologik Evolyutsiya va Matn Tarixi</h3>
+          <p>{data.ontological_evolution}</p>
+        </div>
+      )}
+    </section>
+  </div>
+
+  <div slot="metadata" class="cosmology-metadata">
+    <div class="meta-row">
+      <span class="meta-label">Konsept turi:</span>
+      <span class="meta-val">{conceptTypeLabels[data.concept_type] || data.concept_type}</span>
+    </div>
+    {data.associated_ainur.length > 0 && (
+      <div class="meta-row">
+        <span class="meta-label">Bogʻliq Ainur:</span>
+        <span class="meta-val">
+          {data.associated_ainur.map((ainu) => ainu.charAt(0).toUpperCase() + ainu.slice(1)).join(', ')}
+        </span>
+      </div>
+    )}
+  </div>
+</EntityLayout>
+
+<style>
+  .cosmology-details {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .concept-summary-text {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    margin-bottom: 1.75rem;
+  }
+
+  .ontological-evolution-block {
+    padding: 1.25rem;
+    background-color: var(--color-bg-subtle);
+    border-left: 3px solid var(--color-accent-gold);
+    border-radius: 0 4px 4px 0;
+  }
+
+  .ontological-evolution-block h3 {
+    font-size: 0.9375rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--color-text-secondary);
+    margin-bottom: 0.5rem;
+  }
+
+  .ontological-evolution-block p {
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    margin: 0;
+    color: var(--color-text-secondary);
+  }
+
+  .meta-row {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    margin-bottom: 0.75rem;
+    font-family: var(--font-sans-ui);
+    font-size: 0.875rem;
+  }
+
+  .meta-label {
+    color: var(--color-text-muted);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+  }
+
+  .meta-val {
+    color: var(--color-text-primary);
+    font-weight: 500;
+  }
+
+  .cosmology-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+    margin-bottom: 1.75rem;
+  }
+
+  .cosmology-section-block h3 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--color-accent-gold-text);
+    margin: 0 0 0.5rem 0;
+  }
+
+  .cosmology-section-block p {
+    font-size: 1rem;
+    line-height: 1.75;
+    color: var(--color-text-primary);
+    margin-bottom: 0.85rem;
+  }
+</style>

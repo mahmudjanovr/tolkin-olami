@@ -1,0 +1,70 @@
+---
+interface Props {
+  title?: string;
+  items: Array<{
+    name: string;
+    href?: string;
+  }>;
+}
+
+const { title = "Bog'liq Qahramonlar va Tushunchalar", items = [] } = Astro.props;
+---
+
+{
+  items.length > 0 && (
+    <div class="related-container">
+      {title && <h3 class="related-heading">{title}</h3>}
+      <div class="related-pills">
+        {items.map((item) =>
+          item.href ? (
+            <a href={item.href} class="related-pill-link">
+              {item.name}
+            </a>
+          ) : (
+            <span class="related-pill-static">{item.name}</span>
+          )
+        )}
+      </div>
+    </div>
+  )
+}
+
+<style>
+  .related-container {
+    font-family: var(--font-sans-ui);
+    margin-top: 1rem;
+  }
+
+  .related-heading {
+    font-size: 0.75rem; /* 12px */
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-muted);
+    margin-bottom: 0.5rem;
+  }
+
+  .related-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.375rem;
+  }
+
+  .related-pill-link,
+  .related-pill-static {
+    font-size: 0.8125rem; /* 13px */
+    padding: 3px 8px;
+    border-radius: 3px;
+    background-color: var(--color-bg-subtle);
+    border: 1px solid var(--color-border-subtle);
+    color: var(--color-text-secondary);
+    text-decoration: none;
+    transition: all 0.15s ease;
+  }
+
+  .related-pill-link:hover {
+    color: var(--color-text-primary);
+    border-color: var(--color-accent-gold);
+    background-color: var(--color-bg-elevated);
+  }
+</style>

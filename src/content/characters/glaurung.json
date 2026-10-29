@@ -1,0 +1,69 @@
+{
+  "id": "glaurung",
+  "name": "Glaurung",
+  "original_name": "Glaurung",
+  "father_name": "Morgot tomonidan Angbandda yetishtirilgan",
+  "mother_name": "Yoʻq",
+  "spouse": "Yoʻq",
+  "children": [],
+  "aliases": [
+    "Ajdarlar Otasi (Father of Dragons)",
+    "Morgotning Buyuk Chuvalchangi (Great Worm of Morgoth)",
+    "Oltin Chuvalchang"
+  ],
+  "titles": [
+    "Urulóki (Olov-ajdarlar)ning Toʻngʻichi"
+  ],
+  "race": "boshqa",
+  "sub_race": "Qanotsiz olov-ajdar (Urulóki)",
+  "culture": "Angband maxluqlari",
+  "birth_year": "Birinchi Davr (Angband)",
+  "death_year": "B.D. 499 (Cabed-en-Aras)",
+  "weapons_and_artifacts": [
+    "Ajdar afsuni (koʻz qarashi orqali irodani falaj qilish va xotirani oʻchirish qudrati)"
+  ],
+  "primary_locations": [
+    "angband",
+    "nargothrond",
+    "doriath"
+  ],
+  "textual_status": "posthumous_edited",
+  "summary": "Morgot tomonidan yaratilgan Olovli Ajdarlarning (Urulóki) birinchisi va Ajdarlar Otasi. Qanotsiz boʻlishiga qaramay, olov purkashi va gipnozchi yovuz nigohi bilan Dagor Bragollach hamda Nirnaeth Arnoediad janglarida hal qiluvchi kuch boʻlgan, Nargotrondni vayron qilib, Xurin farzandlari — Turin va Nienorni fojiali halokatga yetaklagan.",
+  "biography_sections": [
+    {
+      "title": "Ilk chiqish va Buyuk Janglar",
+      "content": "Glaurung Angband zindonlarida Morgot tomonidan uzoq asrlar davomida yashirincha parvarish qilingan. B.D. 260-yilda hali toʻliq voyaga yetmasdan turib Ard-galen tekisligiga chiqqanida, shahzoda Fingonning otliq kamonchilari uning hali yumshoq zirhini oʻqqa tutib Angbandga chekinishga majbur qilgan. Ikki yuz yildan soʻng, B.D. 455-yilda Qoʻqqisdan Alanga Jangida (Dagor Bragollach) Glaurung toʻliq qudratga toʻlib oldingi safda chiqqan va Beleriyandning yashil tekisliklarini kulga aylantirgan. B.D. 472-yildagi Behisob Koʻz Yoshlar Jangida (Nirnaeth Arnoediad) unga Belegost mitti-odamlari va ularning qiroli Azaghal mardona qarshi turgan; Glaurung Azaghalni ezib oʻldirgan boʻlsa-da, mitti-odam qiroli soʻnggi nafasida uning qorniga xanjar sanchib, ajdarni jang maydonidan qochishga majbur etgan."
+    },
+    {
+      "title": "Nargotrondning qulashi va Ajdar Afsuni",
+      "content": "B.D. 495-yilda Glaurung katta ork qoʻshini bilan Nargotrondga yurish qilib, Tumhalad jangida elflarni tor-mor etgan va Turin qurdirgan tosh koʻprik orqali yashirin qalʼaga bostirib kirgan. Qalʼa darvozasi oldida Glaurung Turin Turambarning koʻzlariga tik qarab, uni toshdek qotirib qoʻygan: ajdar uni Finduilasni qutqarish oʻrniga Dor-lomindagi onasi va singlisini izlashga yoʻnaltirib, Finduilasning oʻlimiga sababchi boʻlgan. Glaurung Nargotrond xazinalarini toʻplab, oʻzini shoh deb eʼlon qilgan. Keyinchalik Morven va Nienor Nargotrondga yaqinlashganda, ajdar daryo suviga tushib tuman koʻtargan va Nienorning koʻzlariga boqib, uning butun xotirasini oʻchirib tashlagan."
+    },
+    {
+      "title": "Cabed-en-Aras darasida oʻlim",
+      "content": "B.D. 499-yilda Glaurung Brethil oʻrmonidagi Haleth xalqiga hujum qilish uchun Nargotronddan chiqqan va Teiglin daryosining tik qoyali Cabed-en-Aras darasidan oʻtmoqchi boʻlgan. Turin Turambar dara tubidan yuqoriga tirmashib chiqib, Glaurung dara ustidan qornini sudrab oʻtayotgan lahzada qora qilichi Gurthangni ajdarning yumshoq qorniga dastasigacha sanchgan. Oʻlim talvasasidagi Glaurung soʻnggi bor koʻzlarini ochib, Nienorning xotirasini qaytargan va unga oʻz tugʻishgan akasi Turinning xotini boʻlganini aytib, ikki aka-ukaning oʻz joniga qasd qilishiga sabab boʻlgan holda jon bergan."
+    }
+  ],
+  "etymology": "Sindarin tilida Glaurung nomi glaur («oltin nuri, oltin shuʼla») oʻzagidan kelib chiqib, «Oltin ajdar» maʼnosini anglatadi.",
+  "sources": [
+    {
+      "book_slug": "the-silmarillion",
+      "chapter": "Quenta Silmarillion, 18-bob, 20-bob va 21-bob (Turin Turambar haqida)",
+      "page": "151"
+    },
+    {
+      "book_slug": "the-children-of-hurin",
+      "chapter": "11-bob (Nargotrondning qulashi) va 16-bob (Glaurungning oʻlimi)",
+      "page": "176"
+    }
+  ],
+  "related_characters": [
+    "melkor",
+    "turin",
+    "nienor",
+    "morwen",
+    "hurin",
+    "fingon",
+    "smaug"
+  ],
+  "adaptations": []
+}

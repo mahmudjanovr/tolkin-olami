@@ -1,0 +1,37 @@
+{
+  "id": "vinyamar",
+  "name": "Vinyamar",
+  "elvish_name": "Vinyamar (Yangi Makon)",
+  "type": "shahar",
+  "region": "beleriand",
+  "coordinates": {
+    "map_id": "beleriand",
+    "x": 420,
+    "y": 920
+  },
+  "founded_era": "Birinchi davr",
+  "destroyed_era": "Birinchi davr 587",
+  "rulers": [
+    "Turgon"
+  ],
+  "notable_events": [
+    "Turgonning dengiz boʻyidagi hukmronligi",
+    "Tuorning qurollarni topishi"
+  ],
+  "textual_status": "author_published",
+  "summary": "Vinyamar — Taras togʻi etagida, Nevrast sohilida Turgon tomonidan barpo etilgan Noldorning ilk shahri. Gondolinga koʻchishdan avval Turgon Ulmo amri bilan bu yerda qalqon va sovut qoldirgan, keyinchalik ularni Tuor topgan.",
+  "sources": [
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of Tuor and the Fall of Gondolin",
+      "page": "238",
+      "notes": "Vinyamarning barpo etilishi va Tuorning Ulmo bilan uchrashuvi."
+    }
+  ],
+  "description_sections": [
+    {
+      "title": "Nevrastdagi Birinchi Qalʼa va Ulmo qurollari",
+      "content": "Vinyamar (Sindarincha: 'Yangi Maskanning Boshlanishi') — Nevrast oʻlkasida Taras togʻi etagida Turgon tomonidan barpo etilgan Noldorning ilk poytaxtidir. Turgon xalqi bilan yashirin Gondolinga koʻchib ketayotganida, dengiz xudosi Ulmo amri bilan saroy zalida oʻzining dubulgʻasi, sovuti, qalqoni va qilichini qoldirgan.\n\nOradan asrlar oʻtgach, inson Tuor Vinyamarga yetib kelib, ushbu ilohiy qurollarni kiydi va Ulmoning buyrugʻi bilan Gondolinni ogohlantirish uchun yoʻlga chiqdi."
+    }
+  ]
+}

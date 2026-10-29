@@ -1,0 +1,78 @@
+{
+  "id": "finarfin",
+  "name": "Finarfin",
+  "original_name": "Arafinwë",
+  "father_name": "Finwë",
+  "mother_name": "Indis Goʻzal",
+  "spouse": "Eärwen (Alqualondë malikasi)",
+  "children": [
+    "Finrod Felagund",
+    "Angrod",
+    "Aegnor",
+    "Galadriel"
+  ],
+  "aliases": [
+    "Arafinwë (Quenya: Olijanob va dono Finwë)",
+    "Ingoldo"
+  ],
+  "titles": [
+    "Valinordagi Noldor Oliy Qiroli",
+    "Finarfin Xonadoni Asoschisi"
+  ],
+  "race": "elflar",
+  "sub_race": "Noldor (Vanyar va Teleri qoni bilan)",
+  "culture": "Tirion (Aman Noldori)",
+  "birth_year": "Daraxtlar davri YT 1230",
+  "death_year": "Boqiy (Valinorda hukmronlik qiladi)",
+  "house_id": "finwe-xonadoni",
+  "weapons_and_artifacts": [
+    "Tirion Noldor Toji"
+  ],
+  "primary_locations": ["tirion", "alqualonde"],
+  "textual_status": "posthumous_edited",
+  "summary": "Finwë va Vanyar malikasi Indisning kenja oʻgʻli, Fëanor va Fingolfinning ukasi, Finrod hamda Galadrielning otasi. Finwë oʻgʻillari ichida eng bosiq va donishmandi boʻlib, Mandos Hukmidan soʻng tavba qilib Tirionga qaytgan, Valinorda qolgan Noldor Oliy Qiroli va Gʻazab Urushidagi Noldor qoʻshini sarkardasi.",
+  "etymology": "Sindarin tilidagi 'Finarfin' ismi Quenya tilidagi 'Arafinwë' shaklidan olingan boʻlib, ara- ('olijanob, shohona') va Finwë — 'Olijanob Finwë' maʼnosini anglatadi.",
+  "biography_sections": [
+    {
+      "title": "Tirion shahzodasi va Eärwen bilan nikoh",
+      "content": "Finarfin onasi Indisdan Vanyar xalqining oltin sochlari hamda tinchliksevar, bosiq tabiatini meros qilib oldi. U Alqualondëdagi Teleri qiroli Olwëning qizi Eärwenga uylandi, bu esa uning xonadonini dengiz elflari va Elu Thingol bilan yaqin qarindoshga aylantirdi.\n\nFëanor va Fingolfin oʻrtasida Tirionda adovat kuchayganida, Finarfin doimo yarashuv va vazminlik tarafdori boʻldi hamda janjallardan uzoq yurishga intildi."
+    },
+    {
+      "title": "Mandos Hukmi va Tirion taxtiga qaytish",
+      "content": "Ikki Daraxt soʻnib, Finwë oʻldirilgach, Finarfin oʻz xalqini va farzandlarini yolgʻiz qoldirmaslik uchun Noldor yurishining eng oxirgi safida yoʻlga chiqdi. U Alqualondëdagi qirgʻinda qatnashmadi va bundan qattiq iztirob chekdi.\n\nAraman qirgʻogʻida Mandos Shimol Qargʻishini oʻqib eshittirgach, Finarfin oʻz qoʻshinining bir qismi bilan ortga qaytishga qaror qildi. Valar uni kechirib, muqaddas Tirion shahridagi Noldor Oliy Qiroli etib tayinladilar."
+    },
+    {
+      "title": "Gʻazab Urushidagi gʻalaba",
+      "content": "Birinchi davrning barcha fojialari davomida Finarfin Oʻrta-yerdagi farzandlari (Finrod, Angrod, Aegnorning halokati) uchun qaygʻuda yashadi. Eärendil Valinorga yetib kelib, Valar Morgothga qarshi Buyuk Qoʻshin joʻnatganida, Finarfin Valinor Noldori bayrogʻini koʻtarib, shaxsan Oʻrta-yerga yurish qildi va Morgothning yakuniy tor-mor etilishiga boshchilik qildi."
+    }
+  ],
+  "sources": [
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of Eldamar and the Princes of the Eldalië",
+      "page": "60"
+    },
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of the Flight of the Noldor",
+      "page": "88"
+    },
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of the Voyage of Eärendil and the War of Wrath",
+      "page": "251"
+    }
+  ],
+  "related_characters": [
+    "finwe",
+    "indis",
+    "feanor",
+    "fingolfin",
+    "finrod",
+    "galadriel",
+    "thingol",
+    "turgon",
+    "mandos"
+  ],
+  "adaptations": []
+}

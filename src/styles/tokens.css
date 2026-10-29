@@ -1,0 +1,182 @@
+/* ==========================================================================
+   TOLKIEN OLAMI — Semantik Rang va Tipografiya Tokenlari (Design System)
+   Koncepsiya: Oxford Akademik Kutubxonasi × Adabiy Monografiya × Oʻrta-yer Kartografiyasi
+   Rejimlar: Light (Paxta qogʻozi va Siyoh), Night (Tungi Arxiv va Oʻrmon), System
+   Matematik kontrast: WCAG 2.1 AA/AAA mezonlariga 100% moslashtirilgan
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. ASOSIY VA LIGHT REJIMI (Oxford Kutubxonasi: Paxta Qogʻozi & Chuqur Siyoh)
+   -------------------------------------------------------------------------- */
+:root,
+[data-theme="light"],
+[data-theme="system"] {
+  /* Asosiy Sirtlar (Material-inspired paper surfaces) */
+  --color-bg-base: #F7F5F0;          /* Tabiiy paxta qogʻozi foni */
+  --color-bg-elevated: #FAF8F2;      /* Koʻtarilgan oʻqish paneli */
+  --color-bg-subtle: #EFECE6;        /* Subtil arxiv panellari */
+  --color-paper: #F7F5F0;
+  --color-paper-raised: #FAF8F2;
+  --color-paper-subtle: #EFECE6;
+
+  /* Boʻlim va hoshiya chiziqlari (Fine editorial rules) */
+  --color-border-subtle: #DCD7CE;    /* Nozik kitob hoshiyasi */
+  --color-border-strong: #C8C2B6;    /* Ajratuvchi qatʼiy chiziq */
+  --color-rule: #DCD7CE;
+  --color-rule-strong: #C8C2B6;
+
+  /* Matn Iyerarxiyasi (Ink typography) */
+  --color-text-primary: #1A1816;      /* Qadimgi bosma siyohi (Kontrast: 16.35:1 AAA) */
+  --color-text-secondary: #4A4641;    /* Ikkilamchi matn (Kontrast: 8.69:1 AAA) */
+  --color-text-muted: #68635B;        /* Izoh va etiketkalar (Kontrast: 5.05:1 AA) */
+  --color-text-faint: #68635B;        /* Subtil tafsilotlar */
+  --color-ink: #1A1816;
+  --color-ink-secondary: #4A4641;
+  --color-ink-muted: #68635B;
+
+  /* Oksford Akademik Urgʻulari (Forest Green & Antique Brass) */
+  --color-forest: #244033;           /* Chuqur Oksford oʻrmon yashili */
+  --color-forest-deep: #162B22;      /* Qora-yashil sarhad */
+  --color-forest-subtle: #EAF1EC;    /* Subtil yashil orqa fon */
+  --color-forest-text: #1C3429;
+
+  --color-accent-gold: #7D6021;       /* Muted antique brass (Kontrast: 5.54:1 AA) */
+  --color-accent-gold-text: #7D6021;  /* Matn kontrasti: 5.54:1 AA */
+  --color-accent-gold-hover: #5E4817;
+  --color-accent-gold-subtle: #F4EEDF;
+  --color-border-gold: #D1B87D;
+  --color-brass: #7D6021;
+  --color-brass-text: #7D6021;
+  --color-brass-muted: #BFA97A;
+
+  /* Havolalar (Links) */
+  --color-link: #7A5E24;              /* Qadimiy oltin jilo (Kontrast: 5.60:1 AA) */
+  --color-link-hover: #5A4315;
+
+  /* Kanonik Matnshunoslik Maqomlari */
+  --color-status-canonical: #2B5738;
+  --color-status-variant: #8C5B32;
+  --color-status-apocrypha: #7B3E3E;
+
+  /* Fokus va Soyalar */
+  --color-focus-ring: #9E7E38;
+  --shadow-sm: 0 1px 2px rgba(26, 24, 22, 0.04);
+  --shadow-md: 0 4px 12px rgba(26, 24, 22, 0.06);
+  --shadow-lg: 0 12px 28px rgba(26, 24, 22, 0.09);
+  --shadow-overlay: 0 20px 48px rgba(26, 24, 22, 0.16);
+}
+
+/* --------------------------------------------------------------------------
+   2. NIGHT REJIMI (Tungi Arxiv: Chuqur Oʻrmon, Slanets & Oltin Yozuv)
+   -------------------------------------------------------------------------- */
+[data-theme="night"],
+html[data-applied-mode="night"] {
+  /* Asosiy Sirtlar (Deep forest-black & blue-green slate surfaces) */
+  --color-bg-base: #0F1715;           /* Chuqur oʻrmon foni (#000000 emas) */
+  --color-bg-elevated: #162220;       /* Koʻtarilgan oʻqish yuzasi */
+  --color-bg-subtle: #1D2D2A;         /* Ajratilgan panellar */
+  --color-paper: #0F1715;
+  --color-paper-raised: #162220;
+  --color-paper-subtle: #1D2D2A;
+
+  /* Boʻlim va hoshiya chiziqlari */
+  --color-border-subtle: #273B37;     /* Subtil oʻrmon hoshiyasi */
+  --color-border-strong: #36504A;     /* Aniq ajratuvchi chiziq */
+  --color-rule: #273B37;
+  --color-rule-strong: #36504A;
+
+  /* Matn Iyerarxiyasi */
+  --color-text-primary: #E3DEC3;      /* Qadimgi iliq fil suyagi (Kontrast: 13.44:1 AAA) */
+  --color-text-secondary: #B5B099;    /* Muted adaçayı / zangori (Kontrast: 8.35:1 AAA) */
+  --color-text-muted: #8E8A78;        /* Izoh va sanalar (Kontrast: 5.25:1 AA) */
+  --color-text-faint: #8E8A78;
+  --color-ink: #E3DEC3;
+  --color-ink-secondary: #B5B099;
+  --color-ink-muted: #8E8A78;
+
+  /* Oksford Urgʻulari (Sage Forest & Antique Brass) */
+  --color-forest: #7F9B84;
+  --color-forest-deep: #4E6853;
+  --color-forest-subtle: #172420;
+  --color-forest-text: #96B29B;
+
+  --color-accent-gold: #C5A059;       /* Antique brass (Kontrast: 7.41:1 AAA) */
+  --color-accent-gold-text: #DEC078;  /* Yorqin oltin matn (Kontrast: 8.45:1 AAA) */
+  --color-accent-gold-hover: #E8D196;
+  --color-accent-gold-subtle: #1F2C24;
+  --color-border-gold: #8C733E;
+  --color-brass: #C5A059;
+  --color-brass-text: #DEC078;
+  --color-brass-muted: #8C733E;
+
+  /* Havolalar */
+  --color-link: #D4B36A;              /* Oltin jilo (Kontrast: 9.06:1 AAA) */
+  --color-link-hover: #E8D196;
+
+  /* Kanonik Matnshunoslik Maqomlari */
+  --color-status-canonical: #5C8E64;
+  --color-status-variant: #C48651;
+  --color-status-apocrypha: #B45E5E;
+
+  /* Fokus va Soyalar */
+  --color-focus-ring: #C5A059;
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.25);
+  --shadow-md: 0 4px 14px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 14px 32px rgba(0, 0, 0, 0.45);
+  --shadow-overlay: 0 24px 56px rgba(0, 0, 0, 0.65);
+}
+
+/* --------------------------------------------------------------------------
+   3. SYSTEM REJIMI (OS Dark Mode boʻyicha avtomatik oʻzgarish)
+   -------------------------------------------------------------------------- */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]):not([data-theme="night"]),
+  [data-theme="system"] {
+    --color-bg-base: #0F1715;
+    --color-bg-elevated: #162220;
+    --color-bg-subtle: #1D2D2A;
+    --color-paper: #0F1715;
+    --color-paper-raised: #162220;
+    --color-paper-subtle: #1D2D2A;
+
+    --color-border-subtle: #273B37;
+    --color-border-strong: #36504A;
+    --color-rule: #273B37;
+    --color-rule-strong: #36504A;
+
+    --color-text-primary: #E3DEC3;
+    --color-text-secondary: #B5B099;
+    --color-text-muted: #8E8A78;
+    --color-text-faint: #8E8A78;
+    --color-ink: #E3DEC3;
+    --color-ink-secondary: #B5B099;
+    --color-ink-muted: #8E8A78;
+
+    --color-forest: #7F9B84;
+    --color-forest-deep: #4E6853;
+    --color-forest-subtle: #172420;
+    --color-forest-text: #96B29B;
+
+    --color-accent-gold: #C5A059;
+    --color-accent-gold-text: #DEC078;
+    --color-accent-gold-hover: #E8D196;
+    --color-accent-gold-subtle: #1F2C24;
+    --color-border-gold: #8C733E;
+    --color-brass: #C5A059;
+    --color-brass-text: #DEC078;
+    --color-brass-muted: #8C733E;
+
+    --color-link: #D4B36A;
+    --color-link-hover: #E8D196;
+
+    --color-status-canonical: #5C8E64;
+    --color-status-variant: #C48651;
+    --color-status-apocrypha: #B45E5E;
+
+    --color-focus-ring: #C5A059;
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.25);
+    --shadow-md: 0 4px 14px rgba(0, 0, 0, 0.35);
+    --shadow-lg: 0 14px 32px rgba(0, 0, 0, 0.45);
+    --shadow-overlay: 0 24px 56px rgba(0, 0, 0, 0.65);
+  }
+}

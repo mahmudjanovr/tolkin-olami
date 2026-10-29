@@ -1,0 +1,27 @@
+{
+  "id": "ea",
+  "name": "Eä (Moddiy Olam)",
+  "concept_type": "cosmic_realm",
+  "associated_ainur": [
+    "manwe",
+    "ulmo",
+    "aule",
+    "varda"
+  ],
+  "ontological_evolution": "Eru Ilúvatar tomonidan 'Eä!' (Boʻl!) amri bilan Ainur koʻrgan viziyaning Boʻshliq ichida moddiy borliqqa aylantirilishi. Arda shu olamning kichik bir qismidir.",
+  "textual_status": "author_published",
+  "summary": "Eä — mavjud boʻlgan butun moddiy koinot boʻlib, Ainulindalë (Ainur musiqasi)ning moddiylashgan shaklidir. Uning tashqarisida faqat Kúma (Cheksiz Boʻshliq) va Ilúvatar huzuri (Abadiy Zallar) joylashgan.",
+  "sources": [
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Ainulindalë: The Music of the Ainur",
+      "page": "20"
+    }
+  ],
+  "cosmology_sections": [
+    {
+      "title": "Ilohiy 'Boʻlsin!' amri va Oʻchmas Olov",
+      "content": "Eä (Quenya tilida: 'Boʻlsin!' yoki 'Mavjud boʻlgan Olam') — Eru Ilúvatar tomonidan Boʻshliq qaʼriga Oʻchmas Olovni (Secret Fire) yuborish orqali haqiqiy jismoniy mavjudlikka keltirilgan moddiy koinotdir.\n\nAinur faqat tushda koʻrgan olam endi haqiqiy vaqt, makon, materiya va yulduzlarga ega boʻldi. Ainurning bir qismi ushbu yaratilgan olamga tushib, uning qonuniyatlarini boshqarishga kirishdilar; ular Valar va Maiar deb ataldi."
+    }
+  ]
+}

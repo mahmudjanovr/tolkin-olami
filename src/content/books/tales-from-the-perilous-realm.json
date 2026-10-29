@@ -1,0 +1,61 @@
+{
+  "id": "tales-from-the-perilous-realm",
+  "title_uz": "Xatarli Saltanat Qissalari",
+  "title_original": "Tales from the Perilous Realm",
+  "aliases": [
+    "Xatarli Saltanat Qissalari",
+    "Tales from the Perilous Realm",
+    "Sehrli Olam Ertaklari",
+    "Tolkien Kichik Qissalari"
+  ],
+  "publication_year": 1997,
+  "publisher": "HarperCollins",
+  "category": "posthumous_reconstructed",
+  "isbn": "978-0-00-725754-6",
+  "cover_image": {
+    "src": "/images/books/tales-from-the-perilous-realm.webp",
+    "alt": "Xatarli Saltanat Qissalari muqovasi (HarperCollins, 2008) — Alan Lee chizgan bahaybat oltin ajdar Chrysophylax va ritsar",
+    "edition_title": "Definitive Expanded Edition (HarperCollins, 2008)",
+    "publisher": "HarperCollins",
+    "year": 1997,
+    "isbn": "978-0-00-725754-6",
+    "artist": "Alan Lee",
+    "source": "HarperCollins / British Library"
+  },
+  "synopsis": "«Xatarli Saltanat Qissalari» (Tales from the Perilous Realm) — J.R.R. Tolkienning Oʻrta-yer chegarasidan tashqaridagi eng mashhur qisqa qissalari, ertaklari va sheʼrlarini oʻz ichiga olgan fundamental toʻplam. 1997-yilda chop etilgan va 2008-yilda Alan Leening keng qamrovli qalamtasvir va rangli illyustratsiyalari hamda mashhur olim Tom Shippeyning ilmiy soʻzboshisi bilan boyitilgan ushbu mukammal nashr oʻz ichiga «Roverandom», «Farmer Giles of Ham», «The Adventures of Tom Bombadil», «Smith of Wootton Major», «Leaf by Niggle» asarlarini hamda Tolkienning «On Fairy-Stories» nazariy inshosini jamlagan.",
+  "detailed_sections": [
+    {
+      "title": "Toʻplamning kontseptual yaxlitligi va «Xatarli Saltanat» tushunchasi",
+      "content": "«Xatarli Saltanat» (The Perilous Realm) iborasi Tolkien ijodida Sehrli Dunyo (Faerie) tushunchasining sinonimi hisoblanadi. Bu dunyo bolalar uchun qiziqarli oʻyinchoq emas, balki chuqur xavf-xatarlar, sirli qonuniyatlar, oʻlmas goʻzallik va jiddiy maʼnaviy sinovlar makonidir. Ushbu toʻplamdagi har bir asar — xoh u kuchukcha Roverning Oydagi sayohati boʻlsin, xoh temirchining elflar malikasi bilan uchrashuvi boʻlsin — insonning oʻz oddiy dunyosi chegarasidan chiqib, gʻayritabiiy olam bilan toʻqnashuvi jarayonini tahlil qiladi."
+    },
+    {
+      "title": "Alan Leening illyustratsion sintezi va Tom Shippey tahlili",
+      "content": "2008-yilgi kengaytirilgan nashrning eng katta fazilati Alan Leening oltmishdan ortiq yangi rasmlari bilan bezatilganidir. Lee ushbu rasmlarda oʻziga xos tumanli, qadimiy akvarel uslubidan foydalanib, har bir ertakning individual ruhini ochib bergan. Kitobga Oksford va Lids universitetlari professori, yetakchi Tolkienshunos Tom Shippey yozgan soʻzboshi kiritilgan. Shippey unda Tolkien qisqa nasrining har bir detalida yashiringan chuqur filologik oʻyinlar, qadimgi rivoyatlar bilan uzviy bogʻliqlik va muallifning oʻziga xos kinoyali yumorini batafsil yoritib beradi."
+    },
+    {
+      "title": "Toʻplam tarkibidagi asarlarning ichki polifoniyasi",
+      "content": "Kitob oʻquvchiga Tolkien isteʼdodining barcha qirralarini bir joyda koʻrish imkonini beradi. «Roverandom» yosh bolalar uchun begʻubor quvnoqlik baxsh etsa, «Farmer Giles of Ham» oʻrta asr ritsarlik dostonlarini nozik satira ostiga oladi. «The Adventures of Tom Bombadil» kitobxonga Oʻrta-yer poetikasining boy musiqiyligini taqdim etadi. «Leaf by Niggle» rassomning oʻlim va narigi dunyo haqidagi fojiaviy allegoriyasi boʻlsa, «Smith of Wootton Major» inson umrining poyonida sehrli dunyo bilan xayrlashuvining mungli madhiyasidir."
+    },
+    {
+      "title": "Oʻzbek kitobxonlari uchun ahamiyati",
+      "content": "Ushbu toʻplam oʻzbek kitobxoniga Tolkienni faqat ulkan epopeyalar («Uzuklar Hukmdori», «Silmarillion») muallifi sifatidagina emas, balki qisqa ertak va psixologik novella janrining tengsiz ustasi sifatida kashf etishga yordam beradi. Kitobdagi asarlar ixcham hajmiga qaramasdan, insoniylik, kamtarlik, tabiatga mehr va kibrdan xoli boʻlish kabi abadiy qadriyatlarni bolalarga ham, kattalarga ham birdek tushunarli tilda uqtiradi."
+    }
+  ],
+  "key_themes": [
+    "Faerie (Sehrli Saltanat)ning xatarli goʻzalligi",
+    "Sub-creation (quyi-yaratilish) sanʼati",
+    "Oddiy insonning gʻayritabiiy olam bilan toʻqnashuvi"
+  ],
+  "uzbek_editions": [
+    {
+      "title": "Xatarli Saltanat Qissalari",
+      "translator": "Ilmiy guruh",
+      "publisher": "Tayyorlanmoqda",
+      "year": 2026,
+      "format": "Akademik nashr",
+      "notes": "Toʻplamdagi alohida qissalar oʻzbekchaga tarjima qilinmoqda.",
+      "status": "untranslated"
+    }
+  ],
+  "translation_status_summary": "Oʻzbek tilida toʻliq nashr etilmagan (untranslated)."
+}

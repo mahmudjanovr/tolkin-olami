@@ -1,0 +1,90 @@
+{
+  "id": "witch-king",
+  "name": "Angmar Jodugar-qiroli",
+  "original_name": "Witch-king of Angmar",
+  "father_name": "Nomaʼlum (qadimgi Numenor zodagonlari avlodi)",
+  "mother_name": "Nomaʼlum",
+  "spouse": "Yoʻq",
+  "children": [],
+  "aliases": [
+    "Nazgullar Hukmdori (Lord of the Nazgûl)",
+    "Toʻqqizlar Sardori",
+    "Qora Sardor (Black Captain)",
+    "Morgul Qiroli"
+  ],
+  "titles": [
+    "Uzuk-sharpalar (Nazgûl) Sardori",
+    "Angmar Jodugar-qiroli",
+    "Minas Morgul Hukmdori"
+  ],
+  "race": "insonlar",
+  "sub_race": "Uzuk-sharpa (Nazgûl / Úlairi)",
+  "culture": "Qora Numenorliklar (Mordor va Angmar)",
+  "birth_year": "Ikkinchi Davr",
+  "death_year": "U.D. 3019 (15-mart, Pelennor tekisliklari)",
+  "weapons_and_artifacts": [
+    "Toʻqqizta Insonlar Uzugidan birinchisi",
+    "Morgul tigʻi (Frodoni Shamoltepada yaralagan sehrli xanjar)",
+    "Qora gurzi va alangali qilich",
+    "Temir toj"
+  ],
+  "primary_locations": [
+    "cirith-ungol",
+    "amon-sul",
+    "minas-tirith",
+    "barad-dur"
+  ],
+  "textual_status": "author_published",
+  "summary": "Toʻqqizta Nazgul (Uzuk-sharpa)ning sardori va Sauronning eng dahshatli xizmatkori. Uchinchi Davrda Shimoliy Arnor qirolligini vayron qilgan, Minas Itilni egallab Minas Morgulga aylantirgan, Frodo Begginsni Shamoltepada yaralagan va Pelennor tekisliklari jangida Eovin hamda Merri tomonidan mahv etilgan.",
+  "biography_sections": [
+    {
+      "title": "Toʻqqizlarning sardori va Angmar qirolligi",
+      "content": "Ikkinchi Davrda Sauron Insonlarga moʻljallangan Toʻqqizta Qudrat Uzugini ulashganida, ularning eng ulugʻini olgan qudratli qirol va sehrgar (ehtimol Numenorlik zodagon) koʻrinmas arvohlar — Nazgullarning sardoriga aylangan. Uchinchi Davrning 1300-yillarida u Tumangli Togʻlarning shimoliy chekkasida yovuz Angmar qirolligiga asos solgan va oʻzini «Angmar Jodugar-qiroli» deb eʼlon qilgan. Olti asrdan ortiq vaqt davomida u Elendil asos solgan Shimoliy Arnor qirolligining uchta boʻlagi (Arthedain, Cardolan va Rhudaur)ga qarshi urush olib borib, U.D. 1974-yilda Fornostni vayron qilgan. U.D. 1975-yilda Fornost jangida Gondor shahzodasi Earnur va elflar qoʻshini Angmarni tor-mor etganida, Glorfindel: «Uni tirik erkak zoti oʻldira olmaydi!» — deb bashorat qilgan."
+    },
+    {
+      "title": "Minas Morgul va Uzuk ovi",
+      "content": "U.D. 2000-yilda Jodugar-qirol Nazgullarni toʻplab Minas Itilni qamal qilgan va ikki yildan soʻng shaharni zabt etib, uni qoʻrquv maskani — Minas Morgulga aylantirgan hamda Itil Palantirini qoʻlga kiritgan. U.D. 2050-yilda Gondorning soʻnggi qiroli Earnurni yakkama-yakka jangga chorlab, tuzoqqa tushirgan va Gondorda shohlar sulolasini uzib qoʻygan. U.D. 3018-yilda Yagona Uzukni izlab Shayrga kirgan va 6-oktabr kechasi Shamoltepa (Amon Sûl)da Frodo Begginsning yelkasiga Morgul tigʻini sanchgan."
+    },
+    {
+      "title": "Minas Tirit darvozasi va Glorfindel bashoratining amalga oshishi",
+      "content": "Uzuk Urushida Sauronning bosh sarkardasi sifatida Minas Tirit qamalini boshqargan Jodugar-qirol Grond tarani va qora afsunlar bilan Shaharning Buyuk Darvozasini parchalab, Oq Gendalf bilan yuzma-yuz toʻqnashgan. Shu lahzada Rohirrim burgʻulari yangrab, u jang maydoniga qanotli maxluq ustida uchib tushgan va qirol Teodenni halokatli yaralagan. Teodenning jasadini himoya qilib turgan jangchi Dernxelm dubulgʻasini yechib, oʻzining erkak emas, balki ayol — malika Eovin ekanini aytgan; xobbit Meriadok Brendibak oʻzining qadimgi Cardolan (Arnor) xanjari bilan Jodugar-qirolning payini kesib himoya afsunini sindirgan, Eovin esa qilichini uning toj va zirhi orasidagi koʻrinmas boshiga sanchib, Nazgullar Hukmdorini yoʻq qilgan."
+    },
+    {
+      "title": "Nazgûllar Sardori, Angmar saltanati va Arnorning yo'q qilinishi",
+      "content": "Angmar Jodugar-Qiroli (Witch-king of Angmar) Sauronning to'qqiz xizmatkori – Nazgûllarning eng qudratlisi va Sauronning bosh qo'mondoni edi. Dastlab Ikkinchi Davrda Númenor aslzodasi va qora jodugar bo'lgan bu inson Qudrat Uzugi vasvasasiga uchrab, abadiy qorong'u soyaga aylandi. Uchinchi Davrda u shimolda Angmar jodugarlik shohligiga asos soldi va ko'p asrlar davomida Arnorning uch shohligini (Arthedain, Cardolan, Rhudaur) birin-ketin tor-mor qilib, Dúnedainning shimoliy sulolasini yo'q qildi."
+    },
+    {
+      "title": "Minas Morgul hukmronligi va Pelennordagi kutilmagan halokati",
+      "content": "Shimolni vayron qilgach, u janubga qaytib Minas Ithilni zabt etdi va uni Minas Morgulga aylantirdi. Halqa Urushida Sauron uni barcha lashkarlarning oliy sarkardasi qilib Minas Tirithga yo'lladi. U Pelennor darvozasini buzib kirishda mislsiz dahshat sochdi. Biroq Glorfindelning 'Uni erkak kishi o'ldira olmas' degan bashorati ro'yobga chiqdi: xobbit Meriadoc uni Dúnedain xanjari bilan yaraladi, Rohanning jasur malikasi Éowyn esa uning ko'rinmas yuziga qilich sanchib, dushman sardorini abadiy yo'qlikka uloqtirdi. Jodugar-Qirol Uchinchi Davrda yovuzlikning eng qoʻrqinchli va faol quroli boʻldi. Uning ruhiy zulmati va sovuq nafasi dushmanlar yuragiga tasvirlab boʻlmas vahima solar edi. Uning yakuniy halokati Oʻrta-yer tarixida yangi yorugʻlik va ozodlik tongini ochib berdi."
+    }
+  ],
+  "etymology": "Qora Nutqda Nazgûl «Uzuk-sharpa» (nazg — «uzuk» + gûl — «sharpa, arvoh»), Quenyada esa Úlairi deb ataladi. Uning tiriklikdagi haqiqiy ismi Tolkien asarlarida hech qachon tilga olinmagan.",
+  "sources": [
+    {
+      "book_slug": "the-fellowship-of-the-ring",
+      "chapter": "I kitob, 11-bob (Qorongʻulikdagi pichoq)",
+      "page": "195"
+    },
+    {
+      "book_slug": "the-return-of-the-king",
+      "chapter": "V kitob, 4-bob (Shahar qamali) va 6-bob (Pelennor tekisliklari jangi)",
+      "page": "829"
+    },
+    {
+      "book_slug": "the-return-of-the-king",
+      "chapter": "Ilova A, I qism (Shimoliy shohlik va Gondor)",
+      "page": "1043"
+    }
+  ],
+  "related_characters": [
+    "sauron",
+    "frodo-baggins",
+    "gandalf",
+    "eowyn",
+    "meriadoc-brandybuck",
+    "theoden",
+    "glorfindel",
+    "aragorn"
+  ],
+  "adaptations": []
+}

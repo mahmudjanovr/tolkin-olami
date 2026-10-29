@@ -1,0 +1,98 @@
+{
+  "id": "boromir",
+  "name": "Boromir",
+  "original_name": "Boromir",
+  "father_name": "Denethor II",
+  "mother_name": "Finduilas of Dol Amroth",
+  "children": [],
+  "aliases": [
+    "Gondor Qalqoni",
+    "Oq Minora Sardori",
+    "Katta Boromir"
+  ],
+  "titles": [
+    "Gondor Oliy Noibi Valiahdi",
+    "Oq Minora Bosh Kapitani",
+    "Uzuk Birodarligi aʼzosi"
+  ],
+  "race": "insonlar",
+  "sub_race": "Dúnedain",
+  "culture": "Gondor / Minas Tirith",
+  "birth_year": "Uchinchi davr 2978",
+  "death_year": "Uchinchi davr 3019 (Amon Hen yaqinida qahramonlarcha halok boʻlgan)",
+  "weapons_and_artifacts": [
+    "Gondor Buyuk Shoxi (Vorothorn kiyigi shoxidan ishlangan sulolaviy karnay)",
+    "Keng poʻlat Gondor qilichi va kumush qirrali dumaloq qalqon"
+  ],
+  "primary_locations": [
+    "minas-tirith",
+    "osgiliath",
+    "rivendell"
+  ],
+  "textual_status": "author_published",
+  "uncertainty_notes": "Tolkien oʻz maktublarida Boromirni oʻrta asr ritsarlik dostonlari (xususan, 'Roland haqida qoʻshiq') qahramonlariga qiyoslagan: Boromir mutlaqo yovuz shaxs emas edi, u oʻz vatani va xalqini jondan ortiq sevadigan olijanob bahodir edi. Uning fojiasi shundaki, u Yagona Uzukning axloqiy tabiatini tushunmadi va uni Mordorga qarshi qurol sifatida ishlatish mumkin deb oʻyladi. Uning Uzuk vasvasasiga tushishi va darhol tavba qilib, xobbitlarni himoyalashda oʻz hayotini qurbon qilishi Tolkienning insoniy iroda va tavba haqidagi eng yuksak dramatik choʻqqisidir.",
+  "summary": "Gondor Noibi Denethor II va Finduilasning toʻngʻich oʻgʻli, Faramirning akasi, Minas Tirithning bosh sarkardasi. Osgiliath kechuvida Sauron qoʻshinlarini qaytargan, koʻrgan tushi ortidan 110 kunlik mashaqqatli safar qilib Rivendellga kelgan va Uzuk Birodarligi safiga qoʻshilgan. Caradhras qorlarida va Moria zallarida sherdek jang qilgan. Amon Henda Uzuk vasvasasiga tushgan boʻlsa-da, darhol hushiga kelib, Merry va Pippinni himoya qilish yoʻlida oʻnlab orqlar bilan yakkama-yakka jangda mardlarcha halok boʻlgan buyuk Gondor bahodiri.",
+  "etymology": "Sindarin tilida 'Boromir' — boron ('sodiq, sobit, matonatli') va mîr ('javohir, gavhar') soʻzlaridan tuzilgan boʻlib, 'Sodiq Gavhar' maʼnosini beradi. Bu ism Birinchi davrda yashagan Bëor xonadonining afsonaviy inson yoʻlboshchisi Boromir xotirasiga qoʻyilgan.",
+  "biography_sections": [
+    {
+      "title": "Kelib chiqishi va Gondorning suyukli sarkardasi",
+      "content": "Boromir Uchinchi davrning 2978-yilida Gondor Bosh Noibi (Ruling Steward) Denethor II va Finduilas oilasida dunyoga kelgan. U otasining eng suyukli toʻngʻich oʻgʻli, Minas Tirith xalqining faxri va yosh ukasi Faramirning mehribon himoyachisi edi. U jismoniy jihatdan tengsiz kuchga, yuksak harbiy iqtidorga va magʻrur jasoratga ega boʻlib, siyosat va kitoblardan koʻra jang sanʼatini afzal koʻrgan.\n\n3018-yil iyun oyida Sauron qoʻshinlari Osgiliathga toʻsatdan hujum qilganida, Boromir va Faramir soʻnggi koʻprikni buzib tashlab, qahramonona mudofaa uyushtirdilar va dushmanning Anduin daryosidan oʻtishiga yoʻl qoʻymadilar."
+    },
+    {
+      "title": "Bashoratli tush va Rivendell safari",
+      "content": "Osgiliath jangidan soʻng Faramir va Boromir bir xil sirli bashoratli tush koʻrdilar: 'Singan qilichni izlang... U yerda Isildur Falakati uygʻonadi va Yarim-odam maydonga chiqadi'. Denethor bu tush sirlarini yechish uchun Boromirni 110 kunlik mashaqqatli safarga joʻnatdi.\n\nOʻzining tulporini yoʻqotib, yayov kezgan Boromir nihoyat 3018-yil oktyabrida Rivendellga yetib keldi va mashhur Elrond Kengashida ishtirok etdi."
+    },
+    {
+      "title": "Elrond Kengashidagi bahs va Birodarlik burchi",
+      "content": "Kengashda Boromir Gondor xalqi butun Oʻrta-yerni Sauron zulmatidan qoni bilan himoya qilib turgan qalqon ekanini gʻurur bilan taʼkidladi. U Yagona Uzukni yoʻq qilish oʻrniga, undan Gondor quroli sifatida Sauronning oʻziga qarshi foydalanishni taklif qildi; ammo Elrond va Gandalf Uzukni faqat yovuzlikka xizmat qilishi va egasini muqarrar qulga aylantirishini uqtirdilar.\n\nBoromir Aragornning Isildur vorisi ekanini dastlab shubha bilan qarshi olgan boʻlsa-da, Birodarlik aʼzosi sifatida qasamyod qildi va safar davomida oʻzining mislsiz jismoniy kuchi bilan qor boʻronlarida va Moria janglarida yoʻl ochuvchi posbon boʻldi."
+    },
+    {
+      "title": "Amon Hendagi vasvasa va qulash",
+      "content": "Birodarlik Amon Henga yetib kelganida, Boromirning qalbida Gondorning xarobalari, otasining tushkunligi va oʻz xalqining muqarrar qirgʻini haqidagi dahshatli xavotirlar kuchaydi. Bu zaif nuqtadan foydalangan Yagona Uzuk uning irodasini zaharladi.\n\nOʻrmonda Frodo bilan yolgʻiz qolgan Boromir dastlab xobbitni koʻndirishga urindi, soʻngra gʻazab otiga minib Uzukni kuch bilan tortib olmoqchi boʻldi. Frodo Uzukni taqib koʻzdan gʻoyib boʻlgach, Boromir yiqilib, oʻzining nima qilib qoʻyganini angladi va qattiq koʻzyosh toʻkib pushaymon boʻldi."
+    },
+    {
+      "title": "Soʻnggi qahramonlik, poklanish va afsonaviy dafn",
+      "content": "Uruk-hailar toʻsatdan hujum qilganda, Boromir oʻz gunohini yuvish uchun jangga otildi. U Merry va Pippinni himoya qilib, yuzlab dushmanlar qurshovida yolgʻiz oʻzi jang qildi. U oʻzining Buyuk Shoxini chalib butun oʻrmonni larzaga keltirdi; yigirmadan ortiq Uruk-haini yer tishlatdi, biroq dushmanning koʻplab zaharli oʻqlari uning koʻkragiga qadaldi.\n\nAragorn yetib kelganida, jon berayotgan Boromir: 'Men Frododan Uzukni tortib olmoqchi boʻldim... xato qildim. Shahrimizni qutqaring... Men magʻlub boʻldim', deb iqror boʻldi. Aragorn esa uning qoʻlini ushlab: 'Yoʻq! Sen gʻalaba qozonding. Juda kam odam bunday zafarga erishgan. Bizning shahrimiz qulashiga yoʻl qoʻymayman, ey mening Qirolim!' deb javob berdi. Aragorn, Legolas va Gimli uning jasadini elflar qayigʻiga, qurollari va singan Buyuk Shoxi bilan birga joylab, Rauros sharsharasidan Anduin suvlariga oqizdilar."
+    }
+  ],
+  "sources": [
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "The Council of Elrond",
+      "page": "236"
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "The Great River",
+      "page": "388"
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "The Departure of Boromir",
+      "page": "403"
+    }
+  ],
+  "related_characters": [
+    "faramir",
+    "aragorn",
+    "frodo-baggins",
+    "gandalf",
+    "legolas",
+    "gimli"
+  ],
+  "adaptations": [
+    {
+      "medium": "film",
+      "title": "The Lord of the Rings Film Trilogy",
+      "creator": "Peter Jackson",
+      "year": 2001,
+      "divergence_notes": "Filmda Sean Bean ijrosidagi Boromir kino tarixidagi eng ta'sirli va fojiali qahramonlik o'limlaridan birini namoyish etgan. Asosiy tafovut: filmda Boromirni o'ldirgan orqlar sardori 'Lurtz' deb nomlanadi va u Aragorn tomonidan qatl etiladi; Tolkien kitoblarida esa 'Lurtz' degan personaj umuman mavjud emas — Boromir nomsiz orq kamonchilari tomonidan o'ldirilgan."
+    }
+  ],
+  "image": {
+    "src": "/images/characters/boromir.webp",
+    "src_thumb": "/images/characters/boromir-thumb.webp",
+    "alt": "Boromir Gondor daraxti naqshli qizil choponda, qoʻlida qilich va boʻynida Gondor Shoxi bilan",
+    "caption": "Boromir — Gondor Bosh Noibi Denethor II ning toʻngʻich oʻgʻli, Oq Shahar sarkardasi"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "id": "morgoths-ring",
+  "title_uz": "Morgoth Halqasi",
+  "title_original": "Morgoth's Ring: The Later Silmarillion, Part One",
+  "aliases": [
+    "Morgoths Ring",
+    "HoME 10",
+    "The History of Middle-earth: Volume 10"
+  ],
+  "publication_year": 1993,
+  "publisher": "HarperCollins",
+  "editor": "Christopher Tolkien",
+  "category": "textual_history",
+  "isbn": "978-0-261-10300-9",
+  "synopsis": "«The History of Middle-earth» turkumining oʻninchi jildi boʻlib, Tolkien falsafasi va teologiyasining eng chuqur va muhim matnlarini oʻz ichiga oladi. Unda Sauron oʻz kuchini Yagona Uzukka joylaganidek, Morgoth butun Arda moddiy materiyasini oʻzining «halqasi»ga aylantirib buzgani haqidagi metafizik konsepsiya hamda inson oʻlimi va elf ruhiyati haqidagi «Athrabeth Finrod ah Andreth» asari keltirilgan.",
+  "cover_image": {
+    "src": "/images/books/morgoths-ring.webp",
+    "alt": "Morgoth Halqasi kitobi muqovasi",
+    "edition_title": "HarperCollins 1993 First Edition (Archival Design)",
+    "publisher": "HarperCollins",
+    "year": 1993,
+    "isbn": "978-0-261-10300-9",
+    "artist": "Christopher Tolkien (matnshunoslik loyihasi)",
+    "source": "Bibliografik arxiv dizayni (unverified authentic cover)"
+  },
+  "key_themes": [
+    "Morgothning Arda materiyasini zaharlashi (Arda Marred konsepsiyasi)",
+    "Athrabeth Finrod ah Andreth: Inson oʻlimi va ilohiy najot bahsi",
+    "Qadimgi Elflarning qonunlari va odatlari (Laws and Customs among the Eldar)",
+    "Oʻrklarning kelib chiqishi va axloqiy muammolar (Myths Transformed)"
+  ],
+  "detailed_sections": [
+    {
+      "title": "Tarixiy va falsafiy ahamiyati: Tolkien teologiyasining choʻqqisi",
+      "content": "«Morgoth Halqasi» 1950-yillarda, «Uzuklar Hukmdori» nashr etilganidan soʻng Tolkien tomonidan yozilgan eng teran falsafiy matnlarni oʻz ichiga oladi. Kitobning bosh gʻoyasi shundan iboratki, agar Sauron oʻz qudratini kichik oltin Uzukka joylagan boʻlsa, Morgoth oʻzining ilohiy kuchini butun Arda moddiy olamiga – toshlar, suvlar, havo va barcha materiyaga singdirib yuborgan. Shu sababli dunyodagi har qanday materiyada yovuzlik va soʻlish moyilligi mavjud."
+    },
+    {
+      "title": "Athrabeth Finrod ah Andreth: Oʻlim va Najot dialogi",
+      "content": "Ushbu jildning eng buyuk yodgorligi Finrod Felagund va donishmand inson ayoli Andreth oʻrtasidagi «Athrabeth» (Bahs) dialogidir. Unda insoniyatning qadimgi gunohi, oʻlimning tabiatdagi oʻrni, elflarning dunyodan charchashi va Eru Ilúvatarning Olam ichiga inson qiyofasida kirib kelishi (Incarnation) haqidagi yashirin umid muhokama qilinadi. Bu Tolkien nasroniy eʼtiqodining legendarium bilan eng nozik va yuksak sintezidir."
+    },
+    {
+      "title": "Elflar qonunlari va reinkarnatsiya masalalari",
+      "content": "Kitobda «Laws and Customs among the Eldar» (L&COE) boʻlimi oʻrin olgan boʻlib, unda elflarning nikohi, farzand koʻrishi, tana (Hröa) va ruh (Fëa) munosabatlari hamda Finwë va Míriel fojiasi chuqur tahlil qilinadi. Shuningdek, «Myths Transformed» (Oʻzgargan Afsonalar) boʻlimida Tolkien Quyosh va Oyni daraxtlardan emas, balki dunyo yaratilishidanoq mavjud boʻlgan yulduzlar sifatida qayta loyihalashtirishga uringan ilmiy qoralamalari keltiriladi."
+    },
+    {
+      "title": "Oʻzbekistonda oʻrganilishi va tarjima istiqboli",
+      "content": "«Morgoth Halqasi» adabiyotshunoslar, faylasuflar va teologlar uchun tengsiz manbadir. Asar oʻzbek tilida Tolkien olamining axloqiy va ruhiy qonuniyatlarini tushunish uchun nihoyatda zarur boʻlib, kelajakda toʻliq tarjima qilinishi lozim boʻlgan fundamental matnlardan biridir."
+    }
+  ],
+  "uzbek_editions": [
+    {
+      "title": "Morgoth Halqasi",
+      "status": "untranslated",
+      "notes": "Oʻzbek tiliga tarjima qilinmagan. Yuksak falsafiy va teologik terminologiyani talab qiladi."
+    }
+  ],
+  "translation_status_summary": "Oʻzbek tiliga tarjima qilinmagan. Maxsus falsafiy va mifologik izohlar bilan nashr etilishi tavsiya etiladi."
+}

@@ -1,0 +1,62 @@
+{
+  "id": "nandor-va-silvan",
+  "name": "Nandor va Oʻrmon Elflari",
+  "other_names": [
+    "Silvan Elflari",
+    "Tawarwaith",
+    "Danianlar",
+    "Laiquendi (Yashil Elflar)"
+  ],
+  "race_category": "elflar",
+  "divisions_and_clans": [
+    "Laiquendi (Ossiriand Yashil Elflari)",
+    "Tawarwaith (Buyuk Yashil Oʻrmon Silvan Elflari)",
+    "Galadhrim (Lothlórien Oʻrmon Elflari)"
+  ],
+  "origin_era": "Daraxtlar davri",
+  "associated_languages": [
+    "sindarin"
+  ],
+  "primary_realms": [
+    "lothlorien",
+    "doriath"
+  ],
+  "textual_status": "posthumous_edited",
+  "summary": "Nandor va Silvan Elflari (Oʻrmon Elflari / Tawarwaith) — Buyuk Sayohat chogʻida Tumanli Togʻlar viqoridan choʻchib yoʻldan qaytgan Teleri qavmi avlodlari boʻlib, Anduin vodiysi, Greenwood the Great (Mirkwood) va Lothlórien oʻrmonlarida tabiat bilan uygʻun, sokin hayot kechirgan xalqdir.",
+  "sources": [
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of the Coming of the Elves and the Captivity of Melkor",
+      "page": "54",
+      "notes": "Lenwë boshchiligida Nandor elflarining ajralib chiqishi."
+    },
+    {
+      "book_slug": "unfinished-tales",
+      "chapter": "The History of Galadriel and Celeborn",
+      "page": "256",
+      "notes": "Silvan elflari madaniyati, Amdír va Oropher hukmronligi."
+    }
+  ],
+  "description_sections": [
+    {
+      "title": "Lenwëning orqaga qaytishi va Nandorning ajralishi",
+      "content": "Elflarning Buyuk Sayohati chogʻida Teleri qavmi ulkan Tumanli Togʻlar (Misty Mountains) etagiga yetib kelganida, ularning koʻziga bu qorli choʻqqilar bulutlarni teshib turgan dahshatli toʻsiq boʻlib koʻrindi. Shunda Teleri yoʻlboshchilaridan biri Lenwë qavmning bir qismini ajratib olib, togʻlardan oshishdan bosh tortdi va ularni Buyuk Anduin daryosi boʻylab janubga boshlab ketdi. Bu xalq Nandor («Orqaga qaytganlar») deb ataldi. Ular oʻrmonlar, oqar suvlar va qushlar tilini chuqur oʻrgandilar, ammo Valinor nurini koʻrmaganlari sababli Moriquendi (Zulmat Elflari) qatorida qoldilar."
+    },
+    {
+      "title": "Denethor va Ossiriand Yashil Elflari (Laiquendi)",
+      "content": "Asrlar oʻtib, Lenwëning oʻgʻli Denethor oʻz xalqining bir qismini Moviy Togʻlardan oshirib Beleriandning sharqiy hududi — Ossiriandga («Yetti Daryo Zamini») boshlab keldi. Qirol Thingol ularni qardosh sifatida qabul qildi. Bu xalq Laiquendi (Yashil Elflar) deb ataldi, chunki ular oʻrmon barglari kabi yashil liboslar kiyib, koʻrinmas holda yashardilar. Birinchi Beleriand Jangida Denethor Amon Ereb tepaligida orklar qurshovida qahramonlarcha halok boʻlgach, Yashil Elflar boshqa hech qachon shoh saylamadilar va ochiq urushlardan chetlanib, faqat yashirin pistirmalar orqali oʻzlarini himoya qildilar."
+    },
+    {
+      "title": "Mirkwood va Lothlórienda Silvan madaniyati",
+      "content": "Tumanli Togʻlarning sharqida qolgan Nandorlar asta-sekin Greenwood the Great (katta oʻrmon) va Lothlórien hududlariga tarqaldilar va Silvan («Oʻrmonliklar») deb atala boshladilar. Ular daraxtlar ustida qurilgan maydonchalarda (Flet / Telain) yashashni yaxshi koʻrardilar. Garchi ular Noldor kabi kitoblar yozmagan yoki tosh qalʼalar qurmagan boʻlsalar-da, tabiatning ichki ruhiyati va sehrini barcha elflardan koʻra nozikroq his qilardilar."
+    },
+    {
+      "title": "Sindar zodagonlari yetakchiligi va Uzuk Urushi",
+      "content": "Birinchi Davr oxirida Beleriand gʻarq boʻlgach, omon qolgan ayrim Sindar zodagonlari sharqqa kelib, Silvan elflariga rahbarlik qildilar. Oropher va uning oʻgʻli Thranduil Shimoliy Mirkwoodda oʻrmon qirolligiga asos soldilar (Legolas aynan shu suloladan). Lothlórienda esa Amdír va uning oʻgʻli Amroth shohlik qildilar, keyinchalik esa bu maskan Galadriel va Celeborn boshqaruviga oʻtdi. Silvan elflari Soʻnggi Ittifoq va Halqa Urushlarida mardonavor kurashib, Dol Guldur qalʼasini yer bilan yakson qildilar va Mirkwoodni qora kuchlardan tozalab, oʻrmonlarga yangi Eryn Lasgalen (Yashil Barglar Oʻrmoni) nomini berdilar."
+    },
+    {
+      "title": "Tabiat bilan uygʻunlik va oʻrmon kamonbozlari mahorati",
+      "content": "Nandor va Silvan elflari shaharlar va tosh qalʼalar qurishga qiziqmaganlar. Ular ulkan mallorn daraxtlari tepasida \"flet\" (talan) deb ataluvchi platformalarda yashab, oʻrmon florasi va faunasi bilan toʻliq uygʻunlikda hayot kechirganlar. Ularning kamondan otish mahorati Oʻrta-yerda tengsiz boʻlib, ular tun qorongʻisida ham shoxlar orasidan dushman koʻziga kamon urishga qodir edilar. Legolasning jangovar fazilatlari aynan mana shu Silvan harbiy anʼanalari va oʻrmonchini tarbiyalagan tabiat qudratining mevasidir. Silvan elflarining oʻrmon sirlari bilan yaqinligi ularni tashqi dunyo nizolaridan asragan. Ular oʻz oʻrmonlarini qadimgi sehr va kamon oʻqlari bilan oʻrab, dushman oyoq bosolmaydigan sokin maskanlarga aylantirgan edilar."
+    }
+  ]
+}

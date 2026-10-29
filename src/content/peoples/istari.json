@@ -1,0 +1,69 @@
+{
+  "id": "istari",
+  "name": "Istari (Sehrgarlar Ordeni)",
+  "other_names": [
+    "Heren Istarion",
+    "Donishmandlar",
+    "Valar Elchilari"
+  ],
+  "race_category": "ainur",
+  "divisions_and_clans": [
+    "Oq Sehrgar (Curumo / Saruman — Aulë xizmatkori)",
+    "Kulrang Ziyoratchi (Olórin / Mithrandir / Gandalf — Manwë va Varda elchisi)",
+    "Qoʻngʻir Sehrgar (Aiwendil / Radagast — Yavanna tanlovi)",
+    "Moviy Sehrgarlar (Ithryn Luin: Alatar / Morinehtar va Pallando / Rómestámo — Oromë elchilari)"
+  ],
+  "origin_era": "Uchinchi davr (taxminan U.D. 1000)",
+  "associated_languages": [
+    "quenya",
+    "sindarin",
+    "westron"
+  ],
+  "primary_realms": [
+    "valinor",
+    "isengard",
+    "rivendell",
+    "lothlorien"
+  ],
+  "textual_status": "posthumous_edited",
+  "summary": "Istari (Sehrgarlar / Donishmandlar) — Uchinchi Davrning taxminan 1000-yillarida Valar tomonidan Oʻrta-yer xalqlariga Sauron zulmatiga qarshi kurashda koʻmaklashish, ularni birlashtirish va ruhlantirish uchun yuborilgan Maiar ruhlaridan iborat beshta muqaddas elchidir. Ular qudratli farishta qiyofasida emas, balki qari, charchagan, ammo baquvvat insonlar qiyofasida zaminga tushganlar.",
+  "sources": [
+    {
+      "book_slug": "unfinished-tales",
+      "chapter": "Part Four, II: The Istari",
+      "page": "388"
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "Appendix B: The Tale of Years (The Third Age)",
+      "page": "1084"
+    },
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of the Rings of Power and the Third Age",
+      "page": "299"
+    }
+  ],
+  "description_sections": [
+    {
+      "title": "Valinor Kengashi va elchilik vazifasi",
+      "content": "Uchinchi Davrda Sauronning ruhi yana Oʻrta-yerda kuchayib, Dol Guldurda yashiringanida, Valinor hukmdori Manwë buyuk Kengash chaqirdi. Valar Sauronga qarshi toʻgʻridan-toʻgʻri harbiy kuch bilan aralashmaslikka, Birinchi Davrdagi kabi qitʼalarni vayron qiluvchi urush ochmaslikka qaror qildilar. Buning oʻrniga kamtarin, keksaygan inson tanasiga (Hröa) kiritilgan elchilar joʻnatilishi belgilandi. Ularga oʻzlarining asl ilohiy qudratini ochiq koʻrsatish, qoʻrquv yoki kuch vositasida insonlar va elflarni boʻysundirish qatʼiyan man etildi; ularning burchi faqat maslahat berish, donishmandlik ulashish va xalqlarning ichki irodasini uygʻotish edi."
+    },
+    {
+      "title": "Besh Sehrgar va ularning taqdirlari",
+      "content": "Oʻrta-yerga jami beshta Istari yetib keldi: 1. Saruman Oq (Curunír / Curumo) — Aulë xizmatkori boʻlib, ordenning birinchi va eng bilimdon yetakchisi edi; 2. Gandalf Kulrang (Mithrandir / Olórin) — Manwë va Nienna shogirdi, rahm-shafqat va sabr-toqat egasi; 3. Radagast Jigarrang (Aiwendil) — Yavanna xizmatkori boʻlib, hayvonlar va qushlarning eng yaqin doʻsti; 4 va 5. Alatar va Pallando (Ithryn Luin — Moviy Sehrgarlar) — Oromë xizmatkorlari boʻlib, Sauronning sharqdagi va janubdagi mustamlakalariga qarshi harakat qilish uchun Uzoq Sharqqa ketganlar va u yerda sirli taqdirga uchraganlar."
+    },
+    {
+      "title": "Círdanning koʻrishi va Olov Uzugi Narya",
+      "content": "Sehrgarlar Kulrang Bandargohlarga (Mithlond) kemada yetib kelganlarida, ularni Kema Ustasi Círdan kutib oldi. Círdan oʻzining bashoratomuz nigohi bilan Sarumanning buyukligiga qaramasdan, eng toza, eng sodiq va eng chuqur qalb egasi Gandalf ekanini darhol angladi. Shu sababli Círdan oʻzida saqlanayotgan Elflarning Uch Uzugidan biri — Olov Uzugi Naryani yashirincha Gandalfga topshirdi: «Bu Uzuk bilan sen odamlarning sovuq qotgan qalblariga jasorat va umid olovini yoqasan». Saruman buni bilib qolib, oʻz qalbida Gandalfga nisbatan yashirin hasad va gina saqlay boshladi."
+    },
+    {
+      "title": "Saruman xiyonati va Gandalfning gʻalabasi",
+      "content": "Saruman yillar davomida Orthanc minorasida Palantírdan foydalanib, Yagona Uzuk va Sauron qudratini oʻrganishga berilib ketdi. Kibr va hokimiyat hirsiga berilgan Oq Sehrgar oʻz burchiga xiyonat qildi va Sauron bilan ittifoq tuzib, orklar armiyasini yigʻdi. Unga qarama-qarshi oʻlaroq, Gandalf xobbitlar, odamlar va elflar orasida tinimsiz kezib, kichik narsalarning buyuk ahamiyatiga ishondi. Moria qulashida Balrog bilan jangda Gandalf oʻz hayotini fido qildi, biroq Eru Ilúvatarning bevosita inoyati bilan u «Gandalf Oq» qiyofasida qaytarildi. Gandalf Sarumanning hassasini sindirib, uni ordendan quvib chiqardi va Uzuk Urushini gʻalabaga yetaklagan yagona sodiq elchiga aylandi."
+    },
+    {
+      "title": "Cheklangan jismoniy vujud va vasvasalar imtihoni",
+      "content": "Istari (Sehrgarlar) Oʻrta-yerga qad rostlagan qudratli mayar ruhlari boʻlsa-da, Valar ularga oʻzlarining asl qudratini koʻrsatishni va jismoniy zoʻravonlik orqali hukmronlik qilishni qatʼiyan taqiqlagan edi. Ular qari, ammo baquvvat insonlar qiyofasida gavdalandilar; ular charchoq, ochlik, ogʻriq va ruhiy azoblarni oddiy insonlar kabi his qilar edilar. Bu cheklov ularning irodasini sinash uchun moʻljallangan edi. Saruman oʻz kibriga magʻlub boʻlib qulagan boʻlsa, Gandalf kamtarlik va cheksiz mehr-oqibat orqali oʻz vazifasini toʻliq bajardi va Vazifador Ruh sifatida Valinorga gʻalaba bilan qaytdi."
+    }
+  ]
+}

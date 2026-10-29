@@ -1,0 +1,46 @@
+{
+  "id": "henneth-annun",
+  "name": "Henneth Annûn",
+  "elvish_name": "Henneth Annûn (Botayotgan Quyosh Derazasi)",
+  "type": "qalʼa",
+  "region": "orta-yer",
+  "coordinates": {
+    "map_id": "orta-yer",
+    "x": 1255,
+    "y": 640
+  },
+  "founded_era": "Uchinchi davr 2901 (Hukmdor Noib Túrin II davrida)",
+  "rulers": [
+    "Faramir (Ithilien qoʻriqchilari sardori)"
+  ],
+  "notable_events": [
+    "Faramirning Frodo Baggins va Samwise Gamgeeni qabul qilishi va Yagona Uzuk vasvasasidan voz kechishi",
+    "Gollumning Taqiqlangan Hovuzda (Forbidden Pool) tutib olinishi va Frodo tomonidan oʻlimdan qutqarilishi"
+  ],
+  "textual_status": "author_published",
+  "summary": "Shimoliy Ithilien oʻrmonlarida joylashgan, Gondor qoʻriqchilarining eng maxfiy gʻor-qoʻrgʻoni. Sindarin tilida «Gʻarb Derazasi» (Window of the Sunset) maʼnosini anglatadi; gʻor ogʻzidan gʻarbga qaragan sharshara otilib tushib, quyosh botayotganda suv pardasi oltin rangda jilvalanadi va pastda Taqiqlangan Hovuzni hosil qiladi.",
+  "sources": [
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "The Window on the West",
+      "page": "669",
+      "notes": "Henneth Annûn sharsharasi va Faramirning Frodo bilan suhbati."
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "The Forbidden Pool",
+      "page": "684",
+      "notes": "Gollumning Taqiqlangan Hovuzda baliq ovlashi va Faramir oldidagi soʻroq."
+    }
+  ],
+  "description_sections": [
+    {
+      "title": "Botayotgan Quyosh Darchasi",
+      "content": "Henneth Annûn (Sindarincha: 'Gʻarbiy Darcha' yoki 'Botayotgan Quyosh Darchasi') — goʻzal Ithilien oʻrmonlarida, sharsharalar ortida yashiringan maxfiy gʻor-qalʼadir. Uchinchi davrning 2901-yilida Gondor Bosh Noibi Túrin II buyrugʻi bilan Ithilien chegarachilari (Rangers of Ithilien) uchun maxfiy tayanch nuqtasi sifatida barpo etilgan.\n\nGʻorning ogʻzini sharqirab oqayotgan baland sharshara toʻsib turadi, uning ortidan botayotgan quyosh nuri suv tomchilarida yetti rangda jilolanadi. Gʻorga faqat yashirin suvosti yoʻllari orqali, koʻzlari bogʻlangan holda kirish mumkin edi."
+    },
+    {
+      "title": "Faramir, Frodo va Gollum uchrashuvi",
+      "content": "3019-yil mart oyida Faramir boshchiligidagi chegarachilar Harad karvoniga pistirma qoʻyganlarida, tasodifan Frodo va Samwiseni asir oldilar. Xobbitlar koʻzlari bogʻlangan holda Henneth Annûnga keltirildi.\n\nGollum gʻor yaqinidagi Taqiqlangan Havzada (Forbidden Pool) baliq ovlayotganda qoʻlga olindi. Gondor qonunlariga koʻra bu yerga ruxsatsiz kelgan har qanday zot qatl qilinishi shart edi, ammo Frodoning oʻtinishi bilan Faramir uning jonini saqlab qoldi va xobbitlarni oziq-ovqat bilan taʼminlab Mordorga yoʻlga soldi."
+    }
+  ]
+}

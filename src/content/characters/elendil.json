@@ -1,0 +1,96 @@
+{
+  "id": "elendil",
+  "name": "Elendil",
+  "original_name": "Elendil Voronda",
+  "father_name": "Amandil (Andúniëning soʻnggi knyazi)",
+  "children": [
+    "Isildur (toʻngʻich oʻgʻil, Arnor va Gondor shohi)",
+    "Anárion (kenja oʻgʻil, Gondor asoschisi)"
+  ],
+  "aliases": [
+    "Elendil Boʻyi-baland (Elendil the Tall)",
+    "Elendil Voronda (Sodiq Elendil)",
+    "Arnor va Gondor Oliy Shohi",
+    "Gʻarbiy Kemalar Sardori"
+  ],
+  "titles": [
+    "Arnor va Gondor Birlashgan Qirolligi Oliy Shohi (1-shoh)",
+    "Shimol Dúnedainining Oliy Qiroli",
+    "Soʻnggi Ittifoq Bosh Qoʻmondoni"
+  ],
+  "race": "insonlar",
+  "sub_race": "Dúnedain (Númenórean)",
+  "culture": "Númenor / Arnor / Gondor",
+  "birth_year": "Ikkinchi davr 3119 (Númenor)",
+  "death_year": "Ikkinchi davr 3441 (Orodruin etagida Sauron bilan duelda halok boʻlgan)",
+  "house_id": "elros-va-gondor-shohlari",
+  "weapons_and_artifacts": [
+    "Narsil qilichi (Nogrod ustasi Telchar yasagan, quyosh va oydek nur sochuvchi qilich)",
+    "Elendilmir (Shimol Yulduzi — kumush tasmali oq gavhar toji)",
+    "Yetti Palantíri (Númenordan olib kelingan koʻrish toshlari)"
+  ],
+  "primary_locations": ["amon-sul", "minas-tirith"],
+  "textual_status": "author_published",
+  "uncertainty_notes": "Tolkien 'The Silmarillion' ('Akallabêth') va 'The Lord of the Rings' asarlarida Elendilning boʻyini qariyb 7 fut 11 dyuym (taxminan 241 sm) deb qayd etgan — u Oʻrta-yer tarixidagi barcha Dúnedainlar orasida eng boʻyi balandi boʻlgan ('Elendil the Tall'). Uning Oʻrta-yer sohiliga qadam qoʻyganida Quenya tilida aytgan mashhur qasamyodi: 'Et Eärello Endorenna utúlien. Sinome maruvan ar Hildinyar tenn' Ambar-metta!' ('Buyuk Ummon ortidan Oʻrta-yerga yetib keldim. Bu yerda men va mening vorislarim dunyo oxirigacha yashajakmiz!') oradan uch ming yil oʻtib, uning 39-toʻgʻridan-toʻgʻri avlodi Aragorn II Elessar toj kiyish marosimida takrorlagan muqaddas ontga aylandi.",
+  "summary": "Andúniëning soʻnggi knyazi Amandilning toʻngʻich oʻgʻli, Silmarien naslidan boʻlgan Númenor sadoqatlilari yoʻlboshchisi. Orolning qulashi (Akallabêth) chogʻida toʻqqiz kema bilan qutulib, Oʻrta-yerda Arnor va Gondor qudratli qirolliklariga asos solgan buyuk Oliy Shoh. Narsil qilichi egasi. Ikkinchi davr oxirida Gil-galad bilan Elflar va Insonlarning Soʻnggi Ittifoqini tuzib, Barad-dûr qamaliga boshchilik qilgan va Hukm Togʻi etagida Sauronni yengish chogʻida qahramonlarcha shahid boʻlgan zot.",
+  "etymology": "Quenya tilida 'Elendil' — elen ('yulduz') va -ndil ('doʻst, oshiq, sadoqatli') soʻzlaridan olinib, 'Yulduzlar Doʻsti' yoki 'Elflar Doʻsti' (Elf-friend) degan maʼnoni anglatadi. Unga berilgan unvon 'Voronda' esa 'Sodiq, Matonatli' maʼnosiga ega.",
+  "biography_sections": [
+    {
+      "title": "Númenor sadoqatlilari va Akallabêthdan najot",
+      "content": "Elendil Ikkinchi davrning 3119-yilida Númenorning gʻarbidagi Andúnië shahrida tavallud topdi. U shohona Elros sulolasining toʻngʻich qizi Silmarienning toʻgʻridan-toʻgʻri avlodi edi. Qirol Ar-Pharazôn Sauronning aldoviga uchib, Valarga qarshi isyon koʻtargan yillarda, Elendil va uning otasi Amandil 'Sadoqatlilar' (Elendili) harakatiga bosh boʻlib, Eldar va Ilúvatarga sodiq qoldilar.\n\nAmandil Valinordan kechirim soʻrash uchun gʻarbga suzib ketib gʻoyib boʻlgach, Elendil oʻz oʻgʻillari Isildur va Anárion bilan toʻqqizta kemaga xalqni, Yetti Palantír toshini hamda Isildur qutqargan Oq Daraxt koʻchatini ortdi. 3319-yilda orol tubsiz ummonga gʻarq boʻlganida, ulkan toʻlqinlar ularning kemalarini Oʻrta-yer sohillariga uloqtirdi."
+    },
+    {
+      "title": "Arnor va Gondor Birlashgan Qirolligiga asos solinishi",
+      "content": "Shimolga tushgan Elendil Eriador yerlarida Arnor Oliy Qirolligiga asos soldi va Annúminas shahrini oʻz poytaxti qildi. U Amon Sûl (Weathertop) tepaligida ulkan kuzatuv minorasini qurib, unga bosh Palantírni oʻrnatdi.\n\nJanubga tushgan uning oʻgʻillari Isildur va Anárion esa Gondor qirolligiga asos soldilar. Elendil butun Dúnedainning Oliy Shohi sifatida tan olindi. U Lindon Oliy Qiroli Gil-galad bilan mustahkam ittifoq tuzdi va Oʻrta-yerda sivilizatsiya, ilm-fan va obodonchilikning yangi oltin davrini boshlab berdi."
+    },
+    {
+      "title": "Soʻnggi Ittifoq va Barad-dûr qamali",
+      "content": "Sauron jismoniy qiyofasini yoʻqotgan boʻlsa-da, Mordorga qaytib, oʻz kuchini tikladi va 3429-yilda Gondorga hujum qilib, Minas Ithilni yoqib yubordi. Xavfning muqarrarligini anglagan Elendil va Gil-galad Amon Sûl choʻqqisida uchrashib, 'Elflar va Insonlarning Soʻnggi Ittifoqi'ni tuzdilar.\n\n3434-yilda birlashgan qudratli armiya Imladrisdan chiqib, Dagorlad jangida Sauron qoʻshinini tor-mor keltirdi. Ular Mordorning Qora Darvozasini buzib kirib, Barad-dûr qalʼasini naq yetti yil davomida qamalda ushlab turdilar. Qamal paytida Anárion dushmanning tosh zarbasidan halok boʻldi."
+    },
+    {
+      "title": "Hukm Togʻidagi soʻnggi duel va Narsilning sinishi",
+      "content": "3441-yilda qamal yorib oʻtilgach, Sauronning shaxsan oʻzi jangga chiqdi. Orodruin etaklarida Sauron, Gil-galad va Elendil oʻrtasida dahshatli titanlar toʻqnashuvi yuz berdi. Gil-galad Aiglos nayzasi bilan, Elendil esa quyosh va oydek chaqnovchi Narsil qilichi bilan Sauronni yerga qulatdilar; biroq Sauronning olovli qoʻllari taʼsirida Gil-galad yonib ketdi, Elendil esa ogʻir yaralanib jon berdi.\n\nShoh qulaganida, uning ogʻir tanasi ostida Narsil qilichi ikkiga sinib ketdi. Isildur singan qilich parchasi bilan Sauronning barmogʻini va Yagona Uzukni kesib oldi. Elendilning xoki keyinchalik maxfiy ravishda Halifirien tepaligida dafn etildi va uning qabri ming yillar davomida Gondorning eng muqaddas ziyoratgohi boʻlib qoldi."
+    }
+  ],
+  "sources": [
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Akallabêth: The Downfall of Númenor",
+      "page": "272"
+    },
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of the Rings of Power and the Third Age",
+      "page": "291"
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "The Council of Elrond",
+      "page": "243"
+    },
+    {
+      "book_slug": "unfinished-tales",
+      "chapter": "The Line of Elros: Kings of Númenor",
+      "page": "218"
+    }
+  ],
+  "related_characters": [
+    "isildur",
+    "anarion",
+    "ar-pharazon",
+    "elros",
+    "aragorn",
+    "gil-galad",
+    "sauron",
+    "elrond"
+  ],
+  "adaptations": [
+    {
+      "medium": "film",
+      "title": "The Lord of the Rings: The Fellowship of the Ring",
+      "creator": "Peter Jackson",
+      "year": 2001,
+      "divergence_notes": "Film muqaddimasida (Prologue) Peter McKenzie gavdalantirgan Elendil So'nggi Ittifoq jangida Sauronning gurzisi zarbasidan qoyaga urilib halok bo'ladi va Sauron uning qilichini oyog'i bilan bosib sindiradi. Kitobda esa Elendil va Gil-galad ikkalasi birgalikda Sauronni yerga qulatishadi (Sauron o'limli yaralanadi) va Elendil jon bergach, uning o'z tanasi ostida Narsil sinib ketadi."
+    }
+  ]
+}

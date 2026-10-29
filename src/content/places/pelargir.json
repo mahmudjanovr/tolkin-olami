@@ -1,0 +1,63 @@
+{
+  "id": "pelargir",
+  "name": "Pelargir",
+  "elvish_name": "Pelargir",
+  "type": "shahar",
+  "region": "orta-yer",
+  "coordinates": {
+    "map_id": "orta-yer",
+    "x": 1180,
+    "y": 448
+  },
+  "founded_era": "Ikkinchi davr 2350",
+  "rulers": [
+    "Sodiq Númenor knyazlari",
+    "Gondor Dengiz qirollari"
+  ],
+  "notable_events": [
+    "Sodiq Númenorliklarning Oʻrta-yerdagi bosh dengiz boshpanasi sifatida asos solinishi (Ikkinchi davr 2350-yil)",
+    "Dengiz qirollari davrida ulkan harbiy flot va kema taʼmirlash maydonlarining kengaytirilishi",
+    "Aragorn boshchiligidagi Oʻliklar Qoʻshini tomonidan Umbar Qaroqchilari flotining egallanishi (Uchinchi davr 3019-yil 13-mart)"
+  ],
+  "textual_status": "author_published",
+  "summary": "Pelargir — Buyuk Anduin va Sirith daryolari tutashgan joyda joylashgan Gondorning eng qadimiy va eng yirik port shahri. Shaharga Númenor botishidan ancha oldin Sodiqlar (The Faithful) tomonidan asos solingan. Uchinchi davrda Pelargir Gondor dengiz qudratining markazi boʻlgan; Uzuk Jangi davrida aynan shu yerda Aragorn Oʻliklar Armiyasi yordamida Umbar qora kemalarini qoʻlga kiritib, Pelennor dalalariga najot olib borgan.",
+  "sources": [
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "The Last Debate",
+      "notes": "Legolas va Gimlining Pelargirda Umbar qora kemalarining qoʻlga olinishi haqidagi hikoyasi."
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "Appendix A: Annals of the Kings and Rulers",
+      "notes": "Pelargirning Sodiqlar tomonidan barpo etilishi va Gondor Dengiz Qirollarining dengiz ekspansiyasi."
+    },
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Akallabêth",
+      "notes": "Númenorning soʻnggi kunlarida Pelargir portining Sodiqlar uchun boshlangʻich boshpana boʻlishi."
+    }
+  ],
+  "description_sections": [
+    {
+      "title": "Númenorning janubiy buyuk bandargohi",
+      "content": "Pelargir (Sindarincha: 'Qirol Kemalarining Maskani') — Anduin daryosining Sirith daryosi bilan tutashgan joyida, dengiz oqimidan yuqoriroqda barpo etilgan eng qadimiy shahar-bandargohlardan biridir. Ikkinchi davrning 2350-yilida Númenorning 'Sodiqlar' (The Faithful) guruhi tomonidan asos solingan.\n\nShahar Gondorning asosiy harbiy-dengiz bazasi va janubiy viloyatlarining (Lebennin) iqtisodiy markazi hisoblangan. Númenor qirollari kemalari aynan shu yerga kelib langar tashlagan."
+    },
+    {
+      "title": "Umbar qaroqchilari va Qardoshlar Urushi",
+      "content": "Qardoshlar Urushida isyonkor sarkarda Castamir tarafdorlari Pelargirda mustahkam oʻrnashdilar. Magʻlubiyatga uchragach, ular flot bilan Umbarga qochib, mashhur Umbar Qaroqchilari (Corsairs of Umbar) toʻdasini tuzdilar.\n\nPelargir koʻp asrlar davomida Umbar qaroqchilarining tungi qaroqchilik hujumlariga qarshi janubiy qalqon boʻlib xizmat qildi."
+    },
+    {
+      "title": "Aragorn va Oʻliklar Armiyasining gʻalabasi",
+      "content": "3019-yil 13-martida Aragorn 'Oʻliklar Qoʻshini' bilan Pelargirga yetib keldi. U yerda Umbar qaroqchilarining ellikta yirik harbiy kemasi Minas Tirithni zabt etish uchun qoʻshin yuklayotgan edi.\n\nArvohlar qoʻshini qaroqchilarni vahimaga solib dengizga uloqtirdi. Aragorn kemalarni egallab, qullarni ozod qildi va janubiy Gondor jangchilarini kemalarga mindirib, Minas Tirithni xalos etish uchun Pelennorga yoʻl oldi."
+    },
+    {
+      "title": "Oq kemalar havzasi, Lebennin tabiati va Elessar floti",
+      "content": "Pelargir Anduin va Sirith daryolari qo'shilish joyida joylashgan bo'lib, uning keng chuqur havzalari va tosh pristanlari minglab katta kemalarni sig'dira olgan. Uchinchi Davrda shahar bir necha bor Qora Númenorliklar va Umbar qaroqchilari tomonidan qamal qilingan bo'lsa-da, o'zining strategik ahamiyatini yo'qotmadi. Aragorn g'alabasidan so'ng, Pelargir Qayta Birlashgan Qirollikning bosh dengiz bazasiga aylandi; shoh Elessar bu yerda yangi shohona flot qurdirib, dengiz yo'llarini qaroqchilardan butunlay tozaladi va janubiy mamlakatlar bilan tinch savdo aloqalarini o'rnatdi."
+    },
+    {
+      "title": "Anduin deltasining savdo va harbiy markazi",
+      "content": "Pelargir Ikkinchi Davrda 'Sadoqatlilar' (Elendili) uchun O'rta-yerdagi eng boshlang'ich va asosiy port bo'lib xizmat qilgan. Shahar orqali Númenorning madaniyati, qonunlari va me'morchiligi O'rta-yerga kirib kelgan. Uchinchi Davrda ham shahar o'zining mahobatli tosh devorlari, navigatsiya maktablari va kemasozlik ustaxonalari bilan mashhur bo'lgan. Aragorn bu yerda dushman flotini yo'q qilgach, Pelargir yana o'zining tinch savdo va kemasozlik salohiyatini to'liq tikladi."
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "id": "melian",
+  "name": "Melian",
+  "original_name": "Melian",
+  "spouse": "Elu Thingol (Elwë Singollo)",
+  "children": [
+    "Lúthien Tinúviel"
+  ],
+  "aliases": [
+    "Melyanna (Quenya: Aziz Tuhfa)",
+    "Doriath Malikasi",
+    "Bulbullar Xonimasi"
+  ],
+  "titles": [
+    "Doriath Malikasi",
+    "Sindar Oliy Malikasi",
+    "Vána va Estëning Maia ruhi"
+  ],
+  "race": "ainur",
+  "sub_race": "Maia",
+  "culture": "Valinor / Doriath (Sindar)",
+  "birth_year": "Zamon yaralishidan avval",
+  "death_year": "Boqiy (Birinchi davr 502-yilda Valinorga qaytgan)",
+  "house_id": "edain-va-yarim-elflar",
+  "weapons_and_artifacts": [
+    "Melian Kamari (Doriathni oʻrab turgan koʻrinmas sehrli himoya devori)",
+    "Lembas (yoʻl noni) tayyorlash siri"
+  ],
+  "primary_locations": [
+    "menegroth",
+    "doriath",
+    "beleriand"
+  ],
+  "textual_status": "posthumous_edited",
+  "summary": "Vána va Estëga xizmat qilgan donishmand va goʻzal Maia ruhi. Belerianddagi Nan Elmoth oʻrmonida Elflar qiroli Elwë (Thingol)ga koʻngil qoʻyib, oʻz ilohiy qonini Elflar va Insonlar nasliga qoʻshgan yagona Ainu; Doriath qirolligi va mashhur 'Melian Kamari' asoschisi, Lúthienning onasi.",
+  "etymology": "Quenya tilidagi 'Melyanna' soʻzidan Sindarin tiliga oʻtgan boʻlib, mel ('sevgi') va anna ('sovgʻa, tuhfa') — 'Sevgi Tuhfasi, Aziz Inʼom' maʼnosini anglatadi.",
+  "biography_sections": [
+    {
+      "title": "Lórien bogʻlari va Nan Elmoth uchrashuvi",
+      "content": "Melian Valinorda Irmo bogʻlarini oʻzining sehrli qoʻshiqlari bilan toʻldiruvchi eng dono va nurli Maiardan biri edi; u kuylaganida hatto Valar ham ishlarini toʻxtatib tinglashar, uning yonida doimo bulbullar uchib yurar edi.\n\nElflar uygʻonishi arafasida u Oʻrta-yerga oʻtib, Beleriandning Nan Elmoth oʻrmonida Teleri sardori Elwë Singolloni uchratdi. Ular bir-birlarining qoʻlini tutgan zahoti sehrli trans holatiga tushib, yulduzlar ostida uzoq yillar qimirlamay turib qoldilar. Shu tariqa Melian Elwëga boʻlgan muhabbati tufayli Elf ayoli qiyofasini oldi va Arda tarixida Farzandlar nasliga oʻz ilohiy qonini qoʻshgan yagona Ainu boʻldi."
+    },
+    {
+      "title": "Doriath Qirolligi va Melian Kamari",
+      "content": "Elwë (Endilikda Elu Thingol) va Melian Belerianddagi barcha Sindar elflarini birlashtirib, Ming Gʻorlar saroyi — Menegrothni barpo etdilar. Ulardan dunyodagi eng goʻzal qiz — Lúthien Tinúviel tugʻildi. Galadriel Menegrothda uzoq yillar yashab, Meliandan donishmandlik va Lembas nonini yopish sanʼatini oʻrgandi.\n\nMorgoth Shimolga qaytgach, Melian oʻzining Maia qudratini ishga solib, Neldoreth va Region oʻrmonlari atrofida 'Melian Kamari' (Girdle of Melian) deb atalgan koʻrinmas tuman va sehr devorini oʻrnatdi. Thingol yoki Melian ruxsatisiz hech bir maxluq (faqat undan buyukroq taqdir bilan bogʻlangan Beren ва Carcharothdan tashqari) bu chegaradan oʻta olmas edi."
+    },
+    {
+      "title": "Silmaril ogohlantirishi va Valinorga qaytish",
+      "content": "Melian uzoqni koʻra bilish qobiliyatiga ega boʻlib, Thingolni Fëanor oʻgʻillarining qasamyodi va Silmaril laʼnatidan bir necha bor ogohlantirdi. U Túrin va uning onasi Morwenga mehribonlik koʻrsatib, Húrin xonadoniga panoh berdi.\n\nBiroq Húrin Nargothrond xazinasidan Nauglamír marjonini olib kelgach, Thingol Silmaril bilan marjonni birlashtirishni buyurdi va Nogrod mittilari tomonidan oʻldirildi. Umr yoʻldoshining oʻlimi bilan Melianning Oʻrta-yerdagi bogʻliqligi uzildi: Melian Kamari tarqalib ketdi, u Mablungga Silmaril va Elwingni himoya qilishni vasiyat qilib, Valinordagi Lórien bogʻlariga qaytdi."
+    },
+    {
+      "title": "Doriath Malakasi, Vala Lorien bog'lari va ilohiy qo'shiq",
+      "content": "Melian Mayar irqiga mansub bo'lib, dastlab Vala Irmoning Lórien bog'larida yashagan va bulbullarga qo'shiq aytishni o'rgatgan. Birlamchi Davrda O'rta-yerga kelib, Nan Elmoth o'rmonida Elwë Singollo (Thingol) bilan uchrashdi. Ular bir-birlarining ko'zlariga qarab asrlar davomida harakatsiz turdilar; bu sevgi ilohiy ruh va elflar podshohi o'rtasidagi yagona nikohni vujudga keltirdi. Melian Doriath shohligini barpo etishda Thingolga hamroh bo'ldi va unga cheksiz donolik hamda sehr baxsh etdi."
+    },
+    {
+      "title": "Melian Kamari va Thingol o'limidan so'ng ketishi",
+      "content": "Morgoth Beleriandga qaytgach, Melian o'zining ilohiy qudrati bilan butun Doriath chegaralari bo'ylab 'Melian Kamari' (Girdle of Melian) deb ataluvchi ko'rinmas sehrli to'siq o'rnatdi. Bu to'siqdan Melianning irodasisiz hech bir maxluq yoki dushman o'ta olmas edi. Biroq Thingol Silmaril kulfati tufayli gnomlar tomonidan o'ldirilgach, Melian chuqur qayg'uga botdi. Uning sehrli kamari yo'qoldi; Melian o'z qizi Lúthien va nabirasi Dior taqdirini vasiyat qilib, O'rta-yerni abadiy tark etdi va Valinorga qaytib, o'z dardi bilan yolg'iz qoldi. Melian Oʻrta-yerda oʻzining ilohiy nuri va donoligi bilan elflar va insonlarning madaniy kamolotiga beqiyos hissa qoʻshdi. Uning Doriathdagi qoldirgan izi va uning qonidan tarqalgan nasl Oʻrta-yerning barcha keyingi buyuk shohlari tomirlarida oqdi."
+    }
+  ],
+  "sources": [
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of Thingol and Melian",
+      "page": "55"
+    },
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of the Sindar",
+      "page": "91"
+    },
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of the Ruin of Doriath",
+      "page": "231"
+    },
+    {
+      "book_slug": "beren-and-luthien",
+      "chapter": "Of Beren and Lúthien",
+      "page": "35"
+    }
+  ],
+  "related_characters": [
+    "thingol",
+    "luthien",
+    "beren",
+    "galadriel",
+    "turin",
+    "morwen",
+    "hurin",
+    "elwing",
+    "elrond"
+  ],
+  "adaptations": []
+}

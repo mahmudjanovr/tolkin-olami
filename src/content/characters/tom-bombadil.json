@@ -1,0 +1,75 @@
+{
+  "id": "tom-bombadil",
+  "name": "Tom Bombadil",
+  "original_name": "Tom Bombadil (Iarwain Ben-adar)",
+  "father_name": "Yoʻq (Otasiz — Ben-adar)",
+  "mother_name": "Yoʻq",
+  "spouse": "Oltinmeva (Goldberry — Daryo qizi)",
+  "children": [],
+  "aliases": [
+    "Iarwain Ben-adar (Elflar tilida: Eng Qadimgi va Otasiz)",
+    "Forn (Mitti-odamlar tilida)",
+    "Orald (Shimol insonlari tilida)",
+    "Oʻrmon Xoʻjayini (Master of Wood, Water and Hill)"
+  ],
+  "titles": [
+    "Qadimgi Oʻrmon Xoʻjayini (Master)"
+  ],
+  "race": "boshqa",
+  "sub_race": "Nomaʼlum (Arda tabiatining ilk ruhi)",
+  "culture": "Qadimgi Oʻrmon (Old Forest)",
+  "birth_year": "Arda yaratilganidan beri (Ilk yomgʻir tomchisi va ilk eman urugʻidan oldin)",
+  "death_year": "Oʻlmas",
+  "weapons_and_artifacts": [
+    "Qoʻshiqlar va soʻz qudrati (oʻz hududida mutlaq tabiiy uygʻunlik)",
+    "Moviy kamzul, sariq etik va pat qadalgan eski shlyapa"
+  ],
+  "primary_locations": [
+    "the-shire",
+    "rivendell"
+  ],
+  "textual_status": "disputed_variant",
+  "uncertainty_notes": "Tolkien oʻz maktublarida (144 va 153-xatlar) Tom Bombadilning biologik yoki kosmologik kelib chiqishini ataylab jumboq sifatida qoldirganini yozgan: u na Eru Ilúvatarning tajassumi, na Valar, balki tabiatni hukmronliksiz kuzatuvchi va quvonuvchi «sof tabiatshunoslik hamda sheʼriyat ruhi» timsolidir.",
+  "summary": "Shayr sharqidagi Qadimgi Oʻrmon va Gʻarbqoʻrgʻon tepaliklari xoʻjayini, Oʻrta-yerdagi eng sirli va qadimgi mavjudot. Uning ustidan Yagona Uzuk hech qanday hokimiyatga ega emas; u Frodo va uning doʻstlarini Qari Majnuntol hamda Qoʻrgʻon-arvohlari (Barrow-wights) tuzogʻidan ikki marta qutqarib qolgan.",
+  "biography_sections": [
+    {
+      "title": "Eng Qadimgi va Otasiz",
+      "content": "Tom Bombadil oʻzi haqida: «Birinchi yomgʻir tomchisini va birinchi eman yongʻogʻini eslayman... Qorongʻu Hukmdor Tashqaridan kirib kelishidan oldin men shu yerda edim», — deb aytadi. Elflar uni Iarwain Ben-adar («Eng qadimgi va otasiz») deb atashgan. Vaqt oʻtishi bilan u oʻz chegaralarini Brendivayn daryosi va Gʻarbqoʻrgʻon tepaliklari orasidagi Qadimgi Oʻrmon bilan cheklab, u yerda Daryo qizi — goʻzal Oltinmeva (Goldberry) bilan yashagan. Oʻz hududida u «Xoʻjayin» (Master) boʻlsa-da, bu egalik qilish emas, balki har bir oʻsimlik, suv va jonivorning asl tabiatini bilish hamda qoʻshiq orqali ularni tinchlantirish qobiliyati edi."
+    },
+    {
+      "title": "Xobbitlarning qutqarilishi va Yagona Uzuk sinovi",
+      "content": "U.D. 3018-yil sentabr oyida Frodo, Sem, Merri va Pippin Qadimgi Oʻrmonda yovuz Qari Majnuntol (Old Man Willow) tuzogʻiga tushib qolganida, tasodifan oʻtib ketayotgan Tom Bombadil qoʻshiq kuylab daraxtga xobbitlarni qoʻyib yuborishni buyurgan. Oʻz uyida ularni ikki kun mehmon qilganda, Tom Frododan Yagona Uzukni soʻrab olgan: Tom Uzukni barmogʻiga taqqanida koʻrinmas boʻlib qolmagan, keyin esa Frodo Uzukni taqib yashirinmoqchi boʻlganida Tom uni bemalol koʻrib turavergan. Soʻngra Gʻarbqoʻrgʻon tepaliklarida xobbitlar Qoʻrgʻon-arvohi tomonidan asir olinganida, Frodo Tomning qoʻshigʻini aytib uni chaqirgan; Tom arvohni quvib yuborib, xobbitlarga qadimgi Arnor xanjarlarini ulashgan."
+    },
+    {
+      "title": "Elrond kengashi va Gendalf bilan soʻnggi suhbat",
+      "content": "Rivendelldagi Elrond kengashida Yagona Uzukni Tom Bombadilga topshirish taklifi koʻrilganida, Gendalf buni rad etgan: chunki Tom Uzuk ustidan hokimiyatga ega emas, balki Uzuk uning ustidan hokimiyatga ega emas — Tom bu buyumning ahamiyatini tushunmay, uni unutib yoki tashlab yuborishi mumkin edi. Uzuk Urushi tugab, Gendalf xobbitlarni Shayr ostonasigacha kuzatib kelgach, Oʻrta-yerdagi soʻnggi kunlarini aynan Tom Bombadil bilan uzoq suhbatda oʻtkazish uchun uning uyiga burilgan."
+    }
+  ],
+  "etymology": "Tom Bombadil nomi dastlab Tolkien farzandlarining Gollandiya qoʻgʻirchogʻiga berilgan ism boʻlib, 1934-yildagi «The Adventures of Tom Bombadil» sheʼri orqali Oʻrta-yer mifologiyasiga kirgan. Sindarincha Iarwain Ben-adar «Eng qadimgi va otasiz» demakdir.",
+  "sources": [
+    {
+      "book_slug": "the-fellowship-of-the-ring",
+      "chapter": "I kitob, 6-bob (Qadimgi Oʻrmon), 7-bob (Tom Bombadilning uyida) va 8-bob (Qoʻrgʻon tepaliklaridagi tuman)",
+      "page": "119"
+    },
+    {
+      "book_slug": "the-fellowship-of-the-ring",
+      "chapter": "II kitob, 2-bob (Elrond kengashi)",
+      "page": "265"
+    },
+    {
+      "book_slug": "the-return-of-the-king",
+      "chapter": "VI kitob, 7-bob (Uyga qaytish)",
+      "page": "996"
+    }
+  ],
+  "related_characters": [
+    "frodo-baggins",
+    "samwise-gamgee",
+    "meriadoc-brandybuck",
+    "peregrin-took",
+    "gandalf",
+    "elrond"
+  ],
+  "adaptations": []
+}

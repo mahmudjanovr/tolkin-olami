@@ -1,0 +1,42 @@
+{
+  "id": "tuckborough",
+  "name": "Tuckborough (Tukborog / Buyuk Smiallar)",
+  "elvish_name": "Tuckborough",
+  "type": "shahar",
+  "region": "orta-yer",
+  "coordinates": {
+    "map_id": "orta-yer",
+    "x": 486,
+    "y": 1380
+  },
+  "founded_era": "Uchinchi Davr 2683",
+  "rulers": [
+    "Shir Teyni (Thain of the Shire)",
+    "Tuk xonadoni (Took family)"
+  ],
+  "notable_events": [
+    "Buyuk Smiallar (Great Smials) yerosti majmuasining Isengrim II tomonidan barpo etilishi (2683-yil)",
+    "Shir Teyni martabasining Tuklar sulolasiga oʻtishi",
+    "Shir tarixi va shajaralari bitilgan qadimiy Sariq Teri (Yellowskin) kitobining yuritilishi"
+  ],
+  "textual_status": "author_published",
+  "summary": "Tukborog — Shirning Yashil Tepaliklar oʻlkasida (Green Hill Country), Tuklar yeri (Tookland) markazida joylashgan eng qadimiy va nufuzli qasaba. Bu yerda Tuklar sulolasining koʻp asrlik chuqur yerosti xiyobonlari boʻlgan Buyuk Smiallar (Great Smials) joylashgan. Tukborog Shirning anʼanaviy harbiy yetakchisi — Teynning doimiy qarorgohi hisoblanadi.",
+  "sources": [
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "Prologue: Of the Ordering of the Shire",
+      "notes": "Tuk sulolasi, Teyn lavozimi va Buyuk Smiallarning qurilish tarixi."
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "Appendix C: Family Trees",
+      "notes": "Tukborog Tuklarining shajaraviy nasabnomasi va Sariq Teri manbasi."
+    }
+  ],
+  "description_sections": [
+    {
+      "title": "Buyuk Smiallar va Tan qarorgohi",
+      "content": "Tuckborough — Yashil Tepaliklar (Green Hills) etagida joylashgan Took xonadonining qadimiy poytaxtidir. Bu yerda Shayrning harbiy boshligʻi boʻlgan Tan (Thain of the Shire) yashagan.\n\nShahar markazida yuzlab xonalar, yoʻlaklar va zallardan iborat mashhur 'Buyuk Smiallar' (Great Smials) joylashgan boʻlib, u Peregrin Took (Pippin) va uning ajdodlari istiqomat qilgan qudratli yerosti qalʼasi boʻlgan."
+    }
+  ]
+}

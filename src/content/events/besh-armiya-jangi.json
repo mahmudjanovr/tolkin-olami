@@ -1,0 +1,58 @@
+{
+  "id": "besh-armiya-jangi",
+  "title": "Besh Armiya Jangi",
+  "subtitle": "Erebor etagidagi buyuk toʻqnashuv",
+  "era": "uchinchi_davr",
+  "year_text": "Uchinchi davr 2941",
+  "location_id": "erebor",
+  "characters": [
+    "thorin-oakenshield",
+    "bilbo-baggins",
+    "gandalf",
+    "bard-the-bowman",
+    "thranduil",
+    "dain-ironfoot",
+    "balin"
+  ],
+  "belligerents": {
+    "side_a": [
+      "Erebor va Temir tepaliklar mittilari (Thorin, Dáin)",
+      "Moviy oʻrmon elflari (Thranduil)",
+      "Koʻl shahri insonlari (Bard)",
+      "Tumanli togʻlar burgutlari va Beorn"
+    ],
+    "side_b": [
+      "Tumanli togʻlar va Gundabad oʻrklari (Bolg boshchiligida)",
+      "Varglar (yirtqich boʻrilar)"
+    ]
+  },
+  "outcome": "Shimol o'rklari va varglar butunlay tor-mor qilindi; Bolg halok bo'ldi; Erebor va Dale ozod qilinib qayta tiklandi; Thorin Oakenshield sharaf bilan halok bo'ldi.",
+  "preceding_event": "khazad-dumning-qulashi",
+  "succeeding_event": "hornburg-jangi",
+  "textual_status": "author_published",
+  "sources": [
+    {
+      "book_slug": "the-hobbit",
+      "chapter": "The Clouds Burst",
+      "page": "256"
+    }
+  ],
+  "description_sections": [
+    {
+      "title": "Smaugning o'limi va xazina ustidagi nizo",
+      "content": "Ajdaho Smaug Bard Kamonboz tomonidan Esgaroth (Ko'l Shahri) osmonida o'ldirilgach, Yolg'iz Tog' (Erebor) qa'ridagi hisobsiz boyliklar egasiz qoldi deb o'ylandi. Bard boshchiligidagi Ko'l odamlari va Thranduil boshchiligidagi Mirkwood elflari tovon to'lash va xazinani adolatli taqsimlash talabi bilan Erebor darvozasiga yetib keldilar. Biroq ajdaho oltinlari vasvasasiga tushgan Thorin Oakenshield muzokaralarni rad etdi va Temir Tepaliklardan (Iron Hills) o'z amakivachchasi Dáin Temiroyoqni qurolli mitti qo'shini bilan yordamga chaqirdi. Uch xalq o'rtasida qonli to'qnashuv muqarrar bo'lib qoldi."
+    },
+    {
+      "title": "Umumiy dushmanning to'satdan bostirib kelishi",
+      "content": "Aynan mitti, elf va insonlar o'zaro qilich yalang'ochlamoqchi bo'lgan daqiqada osmonni qora ko'rshapalaklar buluti qopladi. Gandalf oraga tushib, Tumanli Tog'lar va Gundobad qoyalaridan Bolg boshchiligidagi ulkan o'rklar va bahaybat varglar (bo'rilar) armiyasi bostirib kelayotganini xabar qildi. O'rklar Smaugning o'limi va Buyuk Goblinning o'ldirilishi uchun qasos olmoqchi, shuningdek shimol xazinalarini qo'lga kiritmoqchi edilar. Bu dahshatli tahdid oldida elflar, insonlar va mittilar o'zaro nizolarni darhol chetga surib, yagona ittifoqqa birlashdilar."
+    },
+    {
+      "title": "Jangning borishi va Thorinning so'nggi jasorati",
+      "content": "Jang Erebor etaklaridagi pasttekislikda boshlandi. Elflar va insonlar tog' yonbag'irlaridan o'q yog'dirdilar, Dáin mittilari esa metin devor bo'lib markazda dushmanning asosiy zarbasini qaytardilar. Biroq o'rklarning soni haddan ortiq ko'p bo'lib, ular tog' tepasidan aylanib o'tib, ittifoqchilarni qurshovga ola boshladilar. Shunda Thorin Oakenshield o'zining o'n ikki safdoshi bilan tog' darvozasining tosh to'sig'ini buzib chiqdi. Ularning zarbasi o'rk qo'shinini qoq ikkiga bo'ldi, biroq ular Bolg tansoqchilarining qurshovida qolib, qattiq yaralandilar; Kíli va Fíli o'z amakilarini himoya qilib halok bo'ldilar."
+    },
+    {
+      "title": "Burgutlar, Beorn va yangi Shimol davri",
+      "content": "Eng tang daqiqada osmondan Tumanli Tog'larning Buyuk Burgutlari yetib keldilar; ular tog' qoyalaridagi o'rklarni pastga uloqtirdilar. So'ngra maydonga dahshatli bahaybat ayiq qiyofasida Beorn bostirib kirdi. Beorn o'rklarni bir zarbada talqon qilib, Bolgni g'ajidi va Thorinning tanasini jang maydonidan olib chiqdi. Boshsiz qolgan o'rklar armiyasi qirg'in qilindi. Thorin o'lim to'shagida Bilbo bilan yarashdi va vafot etdi. Dáin II Erebor Shohi bo'ldi, Dale qayta tiklandi va shimolda ko'p yillik tinchlik hamda farovonlik o'rnatildi. Ushbu jang Shimol erlarining kelgusi yuz yillik tinchligini kafolatladi. Agar mitti, inson va elflar birlashmaganida, Angmar qoldiqlari va Sauronning shimoliy rejalari amalga oshib, butun Eriador dushman oyogʻi ostida qolgan boʻlardi."
+    }
+  ]
+}

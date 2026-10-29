@@ -1,0 +1,135 @@
+{
+  "id": "samwise-gamgee",
+  "name": "Samwise Gamgee",
+  "original_name": "Samwise Gamgee (Kuduktuk: Banazîr Galbasi)",
+  "father_name": "Hamfast Gamgee (Gaffer)",
+  "mother_name": "Bell Goodchild",
+  "spouse": "Rose Cotton (Rosie)",
+  "children": [
+    "Elanor Fairbairn (Goʻzal Elanor)",
+    "Frodo Gardner",
+    "Rose",
+    "Merry",
+    "Pippin",
+    "Goldilocks",
+    "Hamfast",
+    "Daisy",
+    "Primrose",
+    "Bilbo",
+    "Ruby",
+    "Robin",
+    "Tolman"
+  ],
+  "aliases": [
+    "Sam",
+    "Jasur Samwise (Samwise the Brave)",
+    "Bogʻbon Gamgee (Gardner)",
+    "Uzuk Posboni (vaqtincha)"
+  ],
+  "titles": [
+    "Shir Meri (yetti marotaba ketma-ket saylangan)",
+    "Bag End Xoʻjayini",
+    "Gondor Maslahatchisi",
+    "Qizil Kitob Posboni"
+  ],
+  "race": "xobbitlar",
+  "sub_race": "Harfoot nasli",
+  "culture": "Shire (Shir) / Hobbiton",
+  "birth_year": "Uchinchi davr 2980 (Shir hisobi 1380)",
+  "death_year": "Boqiy Gʻarbga oʻtgan (Toʻrtinchi davr 61 / Shir hisobi 1482)",
+  "house_id": "shayr-xonadonlari",
+  "weapons_and_artifacts": [
+    "Sting qilichi (vaqtincha Frodo oʻrniga koʻtargan)",
+    "Galadriel tuprogʻi va Mallorn urugʻi solingan quticha",
+    "Lothlórien elflar arqoni",
+    "Gʻarbiy Chegara Qizil Kitobi"
+  ],
+  "primary_locations": [
+    "hobbiton",
+    "bywater",
+    "rivendell",
+    "cirith-ungol",
+    "orodruin"
+  ],
+  "textual_status": "author_published",
+  "uncertainty_notes": "Tolkien 131-maktubida Samwise Gamgeeni butun 'The Lord of the Rings' epopeyasining 'bosh qahramoni' (chief hero) deb atagan. Tolkien Birinchi jahon urushi frontlaridagi oddiy ingliz askarlarining (batman) sadoqati, halolligi va dabdabasiz matonatini Sam obrazida mujassam etgan. Sam Yagona Uzukni oʻz ixtiyori bilan taqqan va hech qanday shon-shuhrat yoki qudrat vasvasasiga uchramasdan, oʻz xohishi bilan uni Frodoga qaytargan yagona jonzotdir.",
+  "summary": "Hamfast Gamgeening oʻgʻli, Bilbo va Frodo Bagginslarning sadoqatli bogʻboni va eng yaqin doʻsti. Uzuk Birodarligi aʼzosi. Safar davomida Frodoni bir zum ham yolgʻiz qoldirmagan, Cirith Ungolda bahaybat oʻrgimchak Shelobni yakka oʻzi yaralab Frodoni qutqargan, Uzukni qisqa muddat saqlagan va Hukm Togʻiga charchagan xoʻjayinini yelkasida koʻtarib chiqqan buyuk xobbit. Halqa Urushidan soʻng Shirni qayta obod qilgan, yetti bor Shir Meri etib saylangan va oxirgi Uzuk Posboni sifatida Boqiy Gʻarbga — Valinorga suzib ketgan.",
+  "etymology": "Eski ingliz tilida 'Samwise' — sam- ('yarim, sodda') va wīs ('aqlli, dono') soʻzlaridan tuzilgan boʻlib, 'Sodda-dono, samimiy aqlli' maʼnosini beradi. Xobbitlarning oʻz asl tilida (Westron) uning ismi 'Banazîr Galbasi' boʻlib, ban- ('yarim') va zîr ('aqlli') oʻzagiga ega. Familiyasi 'Gamgee' esa Galabas qishlogʻi nomidan olingan toʻqimachilik paxtasi matosi turiga borib taqaladi.",
+  "biography_sections": [
+    {
+      "title": "Kelib chiqishi, bogʻbonlik va Bilbo ertaklari",
+      "content": "Samwise Gamgee Uchinchi davrning 2983-yilida Hamfast Gamgee (Gaffer) oilasida dunyoga keldi. U Bag End bogʻlarida amakisi Bilbo va keyinchalik Frodo qoʻlida xizmat qilib ulgʻaydi. Bilbo unga savod oʻrgatgan, elflar haqidagi afsonalar va sheʼrlarni aytib bergan edi.\n\n3018-yil bahorida Gandalf Frodo bilan Uzuk sirini muhokama qilayotganda, deraza ostida gul kesib yurgan Samwise bexosdan ularning suhbatini eshitib qoldi. Gandalf uni 'jazo' tariqasida Frodoning safardagi shaxsiy hamrohi va xizmatkori etib tayinladi — bu Samning hayotidagi eng buyuk burilish boʻldi."
+    },
+    {
+      "title": "Uzuk Birodarligi va Galadriel inʼomi",
+      "content": "Samwise Shir boʻylab, Weathertop orqali Rivendellgacha boʻlgan xavfli yoʻlda Frododan bir qadam ham ortda qolmadi. Elrond Kengashida u yashiringan joyidan otilib chiqib, 'Janob Frodo qayerga borsa, men ham oʻsha yerga boraman!' deb qasamyod qildi.\n\nLothlórienda xonim Galadriel Samwisega elflar zaminining muqaddas tuprogʻi va kumush mallorn yongʻogʻi solingan qutichani sovgʻa qildi. Galadriel Koʻzgusida Sam Shirning vayron boʻlayotganini koʻrib yuragi ezilgan boʻlsa-da, Frodoni tashlab ketmaslikka, oʻz burchiga sodiq qolishga qaror qildi."
+    },
+    {
+      "title": "Cirith Ungoldagi tengsiz jasorat",
+      "content": "Frodo bilan birga Amon Hendan ajralib chiqqan Sam Mordor chegaralaridagi barcha mashaqqatlarni birga yengdi. Gollumning xiyonatkor niyatlarini Samwise darhol payqagan edi, garchi Frodo unga rahm qilgan boʻlsa-da.\n\nCirith Ungol qorongʻiligida bahaybat Shelob Frodoni falajlaganida, Sam misli koʻrilmagan jasorat koʻrsatdi: u Sting qilichi va Galadriel billurini qoʻlga olib, iblisona maxluqni ogʻir yaraladi va qochishga majbur qildi. Frodo oʻldi deb oʻylab, vazifani davom ettirish uchun Yagona Uzukni vaqtincha boʻyniga osdi va qisqa muddat 'Uzuk Elchisi'ga aylandi. Biroq oʻrklarning suhbatidan xoʻjayini tirikligini bilib, yolgʻiz oʻzi Cirith Ungol minorasiga bostirib kirdi va Frodoni ozod qildi."
+    },
+    {
+      "title": "Hukm Togʻi tomon soʻnggi qadamlar",
+      "content": "Mordorning zaharli kuli va suvsiz choʻllarida Frodo holdan toyib yiqilganida, Samwise uni yelkasiga koʻtarib Hukm Togʻi qoyalariga olib chiqdi: 'Men Uzukni siz uchun koʻtarolmayman, ammo sizni va Uzukni birga koʻtara olaman!' degan xitobi adabiyot tarixidagi eng buyuk sadoqat namunasi boʻldi.\n\nUzuk yoʻq qilinib, Orodruin portlaganida ikki xobbit qoyatosh ustida halokatni kutib turganlarida ularni Gwaihir boshchiligidagi buyuk burgutlar qutqardi."
+    },
+    {
+      "title": "Shirning qayta gullashi, Merlik va Boqiy Gʻarb",
+      "content": "Shirga qaytgach, Samwise Galadrielning muqaddas tuprogʻi bilan butun mamlakat boʻylab urugʻlar qadadi, qirqilgan daraxtlar oʻrniga yangi nihollar oʻstirdi. 3020-yil bahorida u goʻzal Rosie Cottonga uylandi va Bag Endda yashay boshladi.\n\nSamwise Michel Delving shahrining Meri etib ketma-ket yetti marta (jami 49 yil) saylandi. Uning oʻn uch nafar farzandi dunyoga keldi. Xotini vafot etganidan soʻng, Toʻrtinchi davrning 61-yilida Samwise oʻzi ham bir muddat Uzuk Elchisi boʻlgani sababli, Kulrang Bandargohlardan Boqiy Gʻarbga — sevimli doʻsti Frodo huzuriga suzib ketdi."
+    }
+  ],
+  "sources": [
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "The Choices of Master Samwise",
+      "page": "710"
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "Mount Doom",
+      "page": "917"
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "The Scouring of the Shire",
+      "page": "975"
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "The Grey Havens",
+      "page": "1005"
+    },
+    {
+      "book_slug": "letters-of-jrr-tolkien",
+      "chapter": "Letter 131",
+      "page": "145"
+    }
+  ],
+  "related_characters": [
+    "frodo-baggins",
+    "meriadoc-brandybuck",
+    "peregrin-took",
+    "bilbo-baggins",
+    "gandalf",
+    "aragorn",
+    "gollum",
+    "shelob",
+    "faramir",
+    "tom-bombadil",
+    "galadriel"
+  ],
+  "adaptations": [
+    {
+      "medium": "film",
+      "title": "The Lord of the Rings Film Trilogy",
+      "creator": "Peter Jackson",
+      "year": 2001,
+      "divergence_notes": "Filmda Sean Astin ijro etgan Samwise Gamgee kitobdagi fidoyilik, mehr va qahramonlikni tomoshabinga beqiyos yetkazgan va kino tarixidagi eng sevimli qahramonlardan biriga aylangan. Yagona jiddiy tafovut — Cirith Ungol yo'lida Gollumning non uvog'i orqali Samga tuhmat qilishi va Frodoning Samni haydab yuborishi faqat film dramaturgiyasi uchun qo'shilgan; kitobda bunday ajralish hech qachon yuz bermagan."
+    }
+  ],
+  "image": {
+    "src": "/images/characters/samwise-gamgee.webp",
+    "src_thumb": "/images/characters/samwise-gamgee-thumb.webp",
+    "alt": "Samwise Gamgee Cirith Ungol qoyalarida, yelkasida sayohat yuki va qoʻlida Galadriel billuri bilan",
+    "caption": "Samwise Gamgee — sadoqatli xobbit bogʻbon, Frodoni Orodruin choʻqqisigacha kuzatib borgan fidoyi doʻst"
+  }
+}

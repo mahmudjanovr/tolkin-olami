@@ -1,0 +1,63 @@
+{
+  "id": "qudrat-uzuklarining-yasalishi",
+  "title": "Qudrat Uzuklarining Yasalishi",
+  "subtitle": "Eregion hunarmandlari, Yagona Uzukning zarb etilishi va Elflar-Sauron urushi",
+  "era": "ikkinchi_davr",
+  "year_text": "Ikkinchi davr 1500–1697",
+  "location_id": "orodruin",
+  "characters": [
+    "celebrimbor",
+    "sauron",
+    "galadriel",
+    "gil-galad",
+    "elrond",
+    "durin-i"
+  ],
+  "belligerents": {
+    "side_a": [
+      "Eregion (Hollin) Noldor hunarmandlari — Gwaith-i-Mírdain (Celebrimbor)",
+      "Lindon Oliy Qirolligi (Gil-galad va Elrond)",
+      "Khazad-dûm mittilari va Lothlórien elflari"
+    ],
+    "side_b": [
+      "Sauron (Annatar — «Tuhfalar Hukmdori» qiyofasida)",
+      "Mordor qoʻshinlari"
+    ]
+  },
+  "outcome": "O'n to'qqizta Qudrat Uzugi va Yagona Uzuk yasaldi; Sauron Eregionni vayron qildi va Celebrimborni o'ldirdi; Elflar va Sauron o'rtasidagi birinchi buyuk urush boshlandi.",
+  "preceding_event": "gazab-urushi",
+  "succeeding_event": "numenorning-halokati",
+  "textual_status": "posthumous_edited",
+  "sources": [
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of the Rings of Power and the Third Age",
+      "page": "286",
+      "notes": "Gwaith-i-Mírdain ustalari, Uch Uzuk va Sammath Naurda Yagona Uzukning yasalishi."
+    },
+    {
+      "book_slug": "unfinished-tales",
+      "chapter": "The History of Galadriel and Celeborn",
+      "page": "237",
+      "notes": "Eregionning qulashi, Celebrimborning qarshiligi va Khazad-dûm yordami."
+    }
+  ],
+  "description_sections": [
+    {
+      "title": "Annatar niqobi va Eregion zargarlarining orzusi",
+      "content": "Ikkinchi Davrning 1500-yillari atrofida Sauron go'zal va nuroniy qiyofa kasb etib, o'zini Valar elchisi 'Annatar' (Tuhfalar Hukmdori) deb tanishtirdi. Gil-galad va Elrond Lindonda unga ishonmay darvozalarni yopgan bo'lsalar-da, Eregiondagi Noldor zargarlari jamiyati – Gwaith-i-Mírdan uni quchoq ochib kutib oldilar. Celebrimbor boshchiligidagi zargarlar O'rta-yerni xuddi Valinor kabi go'zal qilish, so'lish va qariylikning oldini olish hamda tabiatni saqlab qolish orzusida edilar. Annatar ularga metallurgiya va sehr ilmining eng nozik sirlarini o'rgatdi."
+    },
+    {
+      "title": "O'n to'qqiz Uzukning yaratilishi va Fëanorsimon daho",
+      "content": "Eregion ustalari Annatar nazorati ostida Insonlar va Mittilar uchun mo'ljallangan o'n oltita Qudrat Uzuklarini yasadilar. Bu uzuklar egasining tabiiy qobiliyatlarini kuchaytirar, ko'rinmaslik va ta'sir o'tkazish qudratini berar edi. Shundan so'ng Celebrimbor yolg'iz o'zi, Annatar ishtirokisiz elflarning eng qudratli va sof Uch Uzugini – Narya (Olov Uzugi), Nenya (Suv Uzugi) va Vilya (Havo Uzugi)ni yaratdi. Bu uch uzuk hech qachon Sauronning nopok qo'li bilan tegilmagan va faqat shifo berish, go'zallikni saqlash hamda himoya qilish niyatida yasalgan edi."
+    },
+    {
+      "title": "Yagona Uzuk va Mordor xiyonatining fosh bo'lishi",
+      "content": "Barcha uzuklar tayyor bo'lgach, Sauron yashirincha Mordorga qaytdi va Orodruin (Hukm Tog'i) olovida barcha uzuklarni bo'ysundiruvchi Yagona Uzukni (The One Ring) yasadi. Uzuk ustidan mutlaq hukmronlikka erishish uchun Sauron o'zining shaxsiy irodasi, kuchi va mayar qudratining eng katta qismini ushbu oltin halqaga singdirdi. Biroq Sauron Yagona Uzukni barmog'iga taqib, o'zining mashhur hukmronlik afsunini aytgan zahoti, Celebrimbor va elf hukmdorlari uning xiyonatini his qildilar va zudlik bilan o'z uzuklarini barmoqlaridan yechib yashirdilar."
+    },
+    {
+      "title": "Eregion qirg'ini va Celebrimborning fojiali o'limi",
+      "content": "Rejasi fosh bo'lganidan g'azablangan Sauron bahaybat lashkar bilan Eregionga bostirib kirdi. Shahar qonli jangda quladi; Gwaith-i-Mírdan xazinasi talandi. Sauron to'qqizta va yettita uzukni zo'rlik bilan tortib oldi. Celebrimbor eng dahshatli qiynoqlarga qaramay, Uch Uzukning joyini oshkor qilmadi. Sauron uni o'ldirib, jasodini nayzaga sanchib, o'z qo'shiniga bayroq qilib ko'tardi. Bu voqea O'rta-yer tarixida ko'p asrlar davom etgan qonli to'qnashuvlar va Uzuklar fojiasini boshlab berdi."
+    }
+  ]
+}

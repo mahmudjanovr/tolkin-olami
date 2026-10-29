@@ -1,0 +1,64 @@
+{
+  "id": "erebor",
+  "name": "Erebor (Yolgʻiz Togʻ / The Lonely Mountain)",
+  "elvish_name": "Erebor",
+  "type": "qirollik",
+  "region": "orta-yer",
+  "coordinates": {
+    "map_id": "orta-yer",
+    "x": 1480,
+    "y": 1573
+  },
+  "founded_era": "Uchinchi davr 1999",
+  "rulers": [
+    "Thráin I",
+    "Thorin I",
+    "Thrór",
+    "Thráin II",
+    "Thorin II Oakenshield",
+    "Dáin II Ironfoot"
+  ],
+  "notable_events": [
+    "Thráin I tomonidan Arkenstone — Togʻ Yuragining topilishi va Togʻ Osti Qirolligining tashkil etilishi (Uchinchi davr 1999-yil)",
+    "Ajdaho Smaugning toʻsatdan hujumi, shaharning vayron qilinishi va xazinalarning egallanishi (Uchinchi davr 2770-yil)",
+    "Thorin Oakenshield, Bilbo Baggins va oʻn ikki mittivoyning maxfiy darvoza orqali togʻga kirishi (Uchinchi davr 2941-yil)",
+    "Besh Armiya Jangi va Togʻ Osti Qirolligining Dáin II Ironfoot boshchiligida qayta tiklanishi"
+  ],
+  "textual_status": "author_published",
+  "summary": "Erebor (Yolgʻiz Togʻ) — Rhovanion tekisligida yakkalangan ulkan qoyali choʻqqi ostida joylashgan afsonaviy Togʻ Osti Qirolligi (Kingdom under the Mountain). Moria qulaganidan soʻng Durin avlodlari tomonidan asos solingan bu shahar Deyl insonlari bilan mustahkam savdo va hunarmandchilik aloqalarini oʻrnatgan. Ajdaho Smaug istilosidan soʻng 2941-yilda Torin Oakenshield va Bilbo Baggins safari orqali qirollik ozod etilgan.",
+  "sources": [
+    {
+      "book_slug": "the-hobbit",
+      "chapter": "On the Doorstep",
+      "notes": "Yolgʻiz Togʻning maxfiy gʻarbiy eshigi va Durin kuni oy harflari ochilishi."
+    },
+    {
+      "book_slug": "the-hobbit",
+      "chapter": "Inside Information",
+      "notes": "Bilboning Smaug uyasiga kirishi va Arkenstone xazinasi."
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "Appendix A: Annals of the Kings and Rulers",
+      "notes": "Durin xonadonining Ereborga koʻchishi, Smaug hujumi va Besh Armiya jangidan soʻng qayta tiklanishi."
+    }
+  ],
+  "description_sections": [
+    {
+      "title": "Yolgʻiz Togʻ va Boylik Saltanati",
+      "content": "Erebor (Sindarincha: 'Yolgʻiz Togʻ') — Mirkwood oʻrmonidan sharqda, Running daryosi (Celduin) boshlanishida keng tekislikda yolgʻiz qad rostlagan ulkan togʻdir. Uchinchi davrning 1999-yilida Moria qulaganidan soʻng Thráin I tomonidan yangi mitti qirolligi sifatida asos solingan.\n\nTogʻ qaʼrida Mittilarning eng muqaddas gavhari — Arkenstone (Togʻ Yuragi) topilgan. Erebor tez orada ulkan boylik, zargarlik, savdo va metallsozlik markaziga aylandi; uning etagida insonlarning boy Dale shahri qad rostladi."
+    },
+    {
+      "title": "Smaugning qulashi va Besh Armiya Jangi",
+      "content": "2770-yilda oltin ajdar Smaug toʻsatdan Ereborni zabt etib, gnomlar va odamlarni qirib tashladi. 2941-yilda Thorin Oakenshield va Bilbo Baggins safar uyushtirib, Smaugni magʻlub etishga erishdilar.\n\nSmaug halok boʻlgach, togʻ ostonasida mashhur Besh Armiya Jangi boʻlib oʻtdi. Mittilar, Elflar va Insonlar birlashib oʻrklarni tor-mor qildilar va Togʻosti Qirolligi qayta tiklandi."
+    },
+    {
+      "title": "Halqa Urushidagi qahramonona mudofaa",
+      "content": "Halqa Urushida Sauron Shimolga ham ulkan armiya joʻnatdi. Dale jangida Qirol Dáin II Ironfoot va Qirol Brand Erebor darvozasi oldida mardlarcha halok boʻldilar, ammo mittilar va insonlar qalʼada mustahkam turib qamalni yorib chiqdilar. Janubda Sauron qulagach, ular dushmanni Shimoldan butkul quvib chiqardilar."
+    },
+    {
+      "title": "Arkenstone javohiri, Shohlar Taxti va qayta tiklangan shon-sharaf",
+      "content": "Erebor zallari faqat oltin bilan emas, balki 'Tog' Yuragi' deb atalgan afsonaviy Arkenstone (Arkenston) javohiri bilan mashhur bo'lgan. Thráin I tomonidan topilgan bu yorqin oq gavhar butun tog'ning nuri hisoblangan. Thrór davrida mitti ustalari tog' ichida ulkan favvoralar, musiqa zallari va qurolsozlik o'choqlarini barpo etdilar. Smaug haydalgach va Dáin II taxtga o'tirgach, Erebor yana O'rta-yerning eng qudratli mitti davlatiga aylandi. Halqa Urushida mitti va insonlar dushmanning sharqiy armiyasiga qarshi birgalikda mardonavor mudofaa qildilar."
+    }
+  ]
+}

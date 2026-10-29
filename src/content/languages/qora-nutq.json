@@ -1,0 +1,49 @@
+{
+  "id": "qora-nutq",
+  "name": "Qora Nutq (Black Speech)",
+  "family": "Sauronning Sunʼiy Tili",
+  "writing_systems": [
+    "tengwar"
+  ],
+  "inventor": "Sauron",
+  "phonology_overview": "Qora Nutq (Black Speech) tabiiy ravishda vujudga kelmagan, balki Sauron tomonidan Barad-dûrda maxsus loyihalashtirilgan sun'iy tildir. Uning fonetikasi quloqqa qo'pol, bo'g'iq, g'ijirlagan va tajovuzkor eshitiladi. Unda qattiq bo'g'iz tovushlari, jarangli frikativlar (gh, z) va tish-tomoq birikmalari (sh, sk, thr) ko'p uchraydi. Elflar bu tildan nafratlanganlar va uning tovushlarini jirkanch deb bilganlar ('Birorta elf bu tilning so'zlarini aytishga o'z tilini bulg'amaydi'). Fonetikaning maqsadi qo'rquv uyg'otish va buyruqlarni qat'iy, shartsiz tarzda yetkazish bo'lgan.",
+  "sample_text_original": "Ash nazg durbatulûk, ash nazg gimbatul, ash nazg thrakatulûk agh burzum-ishi krimpatul.",
+  "sample_text_uz": "Barchasini boshqarish uchun Yagona Uzuk, barchasini topish uchun Yagona Uzuk, barchasini chorlash va zulmatda kishanlash uchun Yagona Uzuk.",
+  "textual_status": "author_published",
+  "sources": [
+    {
+      "book_slug": "lotr-fellowship",
+      "chapter": "The Shadow of the Past",
+      "page": "59",
+      "notes": "Yagona Uzukdagi alanga bilan ochiluvchi Fëanor tengvarida bitilgan Qora Nutq yozuvi."
+    },
+    {
+      "book_slug": "lotr-return",
+      "chapter": "Appendix F: The Languages and Peoples of the Third Age",
+      "page": "1131",
+      "notes": "Sauron tomonidan yaratilgan Qora Nutq va Oglok/Oʻrk lahjalari tahlili."
+    }
+  ],
+  "grammar_and_vocabulary_sections": [
+    {
+      "title": "Sauronning sun'iy imperiya tili loyihasi",
+      "content": "Ikkinchi Davrda Sauron O'rta-yerni zabt etish rejasini tuzar ekan, o'z qo'l ostidagi son-sanoqsiz o'rk qabilalari, trollar va sharqlik xalqlarning yuzlab betartib lahjalarini yagona mafkuraviy tizmga bo'ysundirishni xohladi. Shu maqsadda u barcha xizmatkorlari uchun majburiy bo'lgan Qora Nutqni (Ash Nazg) yaratdi. Sauronning niyati ushbu tilni butun O'rta-yer ustidan o'rnatiladigan mutlaq zulm saltanatining yagona rasmiy tiliga aylantirish edi. Biroq o'rklar o'zlarining aqliy qobiliyatlari pastligi va betartib tabiati tufayli bu murakkab tizimni to'liq o'zlashtira olmadilar va undan faqat qo'pol qarg'ishlar va harbiy buyruqlarni o'zlashtirib, o'zlarining buzuq jargonlariga (Orkish) qo'shib yubordilar."
+    },
+    {
+      "title": "Agglyutinativ morfologiya va Uzuk bitigi tahlili",
+      "content": "Qora Nutq grammatik tuzilishiga ko'ra qat'iy agglyutinativ til bo'lib, xurriy (hurrian) va qadimgi elam tillariga o'xshash belgilarga ega. Tolkien qoldirgan eng to'liq va sof Qora Nutq namunasi Yagona Uzuk sirtiga o'yilgan mashhur bayt hisoblanadi: 'Ash nazg durbatulûk, ash nazg gimbatul, ash nazg thrakatulûk agh burzum-ishi krimpatul' (Barchasini boshqarish uchun Yagona Uzuk, barchasini topish uchun Yagona Uzuk, barchasini chorlash va zulmatda kishanlash uchun Yagona Uzuk). Ushbu matnda: 'ash' - bir; 'nazg' - uzuk; 'durba-' - bo'ysundirmoq, hukm qilmoq; '-at' - maqsad/kelasi zamon affiksi; '-ul' - ularni (3-shaxs ko'plik olmoshi); '-ûk' - butunlay, to'liq; 'agh' - va; 'burzum' - zulmat ('burz' qora/zulmat sifatidan olingan ot); '-ishi' - ichida (o'rin kelishigi); 'krimpa-' - kishanlamoq, bog'lamoq."
+    },
+    {
+      "title": "Toza Qora Nutq va O'rk jargonlari o'rtasidagi farq",
+      "content": "Tolkien asarlarida sof Qora Nutq faqat Sauron, Nazgûl (Uzuk arvohlari) va Barad-dûrning oliy zobitlari (masalan, Olog-hai trollari va Sauron Og'zi) tomonidan qo'llanilgan. Oddiy o'rklar esa bu tilning buzilgan, mahalliy so'zlar bilan qorishgan shakllarida gaplashishgan. Masalan, Uglúk va Grishnákh o'rtasidagi mojaroda o'rklarning haqoratomuz iborasi ('Uglúk u bagronk sha pushdug Saruman-glob búbhosh...') Qora Nutqning degeneratsiyaga uchragan variantini ko'rsatadi. Uchinchi Davr oxirida Sauron halok bo'lgach, Qora Nutq ham deyarli butunlay unutilib, tarix qa'riga g'arq bo'ldi."
+    },
+    {
+      "title": "Tolkienning badiiy va falsafiy niyati",
+      "content": "Tolkien Qora Nutq orqali totalitarizm, mexanizatsiya va individual ongni yo'q qilishga qaratilgan sun'iy mafkura tilining ramziy qiyofasini yaratgan. George Orwellning '1984' asaridagi 'Newspeak' (Yangi til) kabi, Qora Nutq ham erkin fikrlash, go'zallik va ma'naviyat tushunchalarini ifodalash uchun so'zlarga ega emas edi. U faqat zo'ravonlik, itoat, azob va qullik tushunchalarini ifodalovchi qat'iy leksikaga tayangan."
+    },
+    {
+      "title": "Barad-dûr devonxonasi va harbiy unvonlar tizimi",
+      "content": "Sauron Qora Nutqni faqat qargʻishlar uchun emas, balki Mordor harbiy mashinasining murakkab buyruqlarini aniq yetkazish uchun loyihalashtirgan edi. Tilda noaniq maʼnolar yoki koʻp maʼnolilikka (polysemy) oʻrin berilmagan: har bir soʻz faqat bitta mutlaq va qatʼiy buyruqni anglatgan. Barad-dûr devonxonasida barcha solnomalar, hisob-kitoblar va qora sehr bitiklari ushbu tilda olib borilgan. Uchinchi Davrda Olog-hai deb ataluvchi yangi kuchli trollar zoti yaratilganda, ular faqat Qora Nutqni tushunadigan va gapiradigan qilib tarbiyalangan. Bu til Sauronning oʻz xizmatkorlari ongini toʻliq nazorat qilishga qaratilgan lingvistik kishan edi."
+    }
+  ]
+}

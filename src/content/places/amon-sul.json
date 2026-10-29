@@ -1,0 +1,61 @@
+{
+  "id": "amon-sul",
+  "name": "Amon Sûl (Shamol Choʻqqisi / Weathertop)",
+  "elvish_name": "Amon Sûl",
+  "type": "qalʼa",
+  "region": "orta-yer",
+  "coordinates": {
+    "map_id": "orta-yer",
+    "x": 720,
+    "y": 1425
+  },
+  "founded_era": "Ikkinchi Davr 3320",
+  "destroyed_era": "Uchinchi Davr 1409",
+  "rulers": [
+    "Elendil",
+    "Arnor va Arthedain qirollari"
+  ],
+  "notable_events": [
+    "Elendil tomonidan Amon Sûl qoʻriqchi minorasining bunyod etilishi va Shimolning bosh Palantír toshining oʻrnatilishi (Ikkinchi Davr 3320-yil)",
+    "Angmar Jodugar-shohi qoʻshinlari hujumi natijasida minoraning yoqib yuborilishi va vayron qilinishi (Uchinchi Davr 1409-yil)",
+    "Gandalfning Amon Sûl choʻqqisida Nazgûllar bilan tungi jangi (Uchinchi Davr 3018-yil 3-oktabr)",
+    "Frodo Bagginsning Amon Sûl etagida Jodugar-shohning Morgul tigʻi bilan yaralanishi (3018-yil 6-oktabr)"
+  ],
+  "textual_status": "author_published",
+  "summary": "Amon Sûl (Shamol Choʻqqisi / Weathertop) — Ob-havo Adirlarining (Weather Hills) eng janubiy va eng baland choʻqqisi boʻlib, Katta Sharqiy Yoʻlning shimolida qad rostlagan qadimiy Dúnedain qalʼasi vayronalaridir. Arnor qirolligi davrida bu yerda Shimolning eng yirik va asosiy koʻruvchi toshi — Amon Sûl Palantíri saqlangan baland qoʻriqchi minora boʻlgan. Arnor uchga boʻlingach, Arthedain, Cardolan va Rhudaur chegaralari aynan shu choʻqqida tutashgan va 1409-yilda Angmar hujumi vaqtida minora vayron qilingan.",
+  "sources": [
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "A Knife in the Dark",
+      "notes": "Shamol Choʻqqisi (Weathertop) tosh halqasi vayronalari va Nazgûllarning Frodo guruhiga hujumi."
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "The Council of Elrond",
+      "notes": "Gandalfning Amon Sûl choʻqqisida toʻqqiz suvoriiga qarshi olib borgan jangi haqidagi hikoyasi."
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "Appendix A: Annals of the Kings and Rulers",
+      "notes": "Amon Sûl minorasining Arnor qirolliklari oʻrtasidagi strategik ahamiyati, Palantír toshi va 1409-yilgi qamal."
+    }
+  ],
+  "description_sections": [
+    {
+      "title": "Ob-havo Choʻqqisi va Arnorning bosh minorasi",
+      "content": "Amon Sûl (Sindarincha: 'Shamol Choʻqqisi'), insonlar tilida Weathertop — Shamol Tepaliklarining (Weather Hills) eng baland choʻqqisidir. U Buyuk Sharqiy Yoʻl ustida qad rostlagan boʻlib, keng Eriador tekisliklarini toʻliq nazorat qilgan.\n\nIkkinchi davrda Elendil bu yerda ulkan qoʻriqchi minora barpo etgan va unda Shimoliy Arnor qirolligining bosh Palantíri saqlangan. Ushbu tosh orqali Gondordagi Osgiliath va Minas Anor bilan toʻgʻridan-toʻgʻri aloqa bogʻlangan."
+    },
+    {
+      "title": "Arnorning boʻlinishi va minoraning yonishi",
+      "content": "Arnor uchta kichik qirollikka (Arthedain, Cardolan, Rhudaur) boʻlingach, Amon Sûl va uning Palantíri sababli qonli qardoshlar urushlari boʻlib oʻtdi. Uchinchi davrning 1409-yilida Angmar Jodugar-shohi qoʻshinlari tepalikni qamal qilib, minorani yoqib yubordi va yer bilan yakson qildi; biroq Palantír Fornostga olib chiqib ketildi."
+    },
+    {
+      "title": "Frodoning yaralanishi va Gandalf jangi",
+      "content": "3018-yil oktyabr oyida Gandalf minora xarobalarida toʻqqiz Nazgûl bilan tungi shiddatli jang olib bordi va chaqmoqlar chaqnatdi. Bir necha kundan soʻng Aragorn va toʻrt xobbit bu yerga yetib kelib tunadilar.\n\nKechasi Angmar Jodugar-shohi boshchiligidagi beshta Nazgûl ularga hujum qildi. Frodo Uzukni taqqanida Jodugar-shoh uni koʻrib, yelkasiga zaharli Morgul pichogʻi bilan halokatli jarohat yetkazdi."
+    },
+    {
+      "title": "Amon Sûl palantíri va Angmar urushlaridagi fojia",
+      "content": "Amon Sûl (Shamol Cho'qqisi) minorasi Arnor saltanatining eng asosiy strategik va aloqa tayanchi bo'lgan, chunki unda shimoliy o'lkalarning eng yirik va qudratli palantíri (ko'ruvchi toshi) saqlangan. Arnor uchga bo'lingach, Arthedain, Cardolan va Rhudaur bu minora va tosh uchun ko'p yillar davomida nizolashdilar. 1409-yilda Angmar Jodugar-Qiroli ulkan qo'shin bilan kelib, minorani qamal qildi va yoqib yubordi. Tosh qutqarib qolingan bo'lsa-da, qadimiy baland minora butunlay qulab, Uchinchi Davrga kelib faqat qoraygan tosh halqa va xarobalar qoldi."
+    }
+  ]
+}

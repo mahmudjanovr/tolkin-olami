@@ -1,0 +1,37 @@
+{
+  "id": "himring",
+  "name": "Himring",
+  "elvish_name": "Himring (Doimiy Sovuq)",
+  "type": "qalʼa",
+  "region": "beleriand",
+  "coordinates": {
+    "map_id": "beleriand",
+    "x": 1420,
+    "y": 1060
+  },
+  "founded_era": "Birinchi davr",
+  "destroyed_era": "Birinchi davr 587",
+  "rulers": [
+    "Maedhros"
+  ],
+  "notable_events": [
+    "Dagor Bragollachda Himring mudofaasi",
+    "Maedhros Ittifoqi"
+  ],
+  "textual_status": "author_published",
+  "summary": "Himring — Beleriand shimoli-sharqidagi baland, daraxtsiz tepalik ustida Maedhros barpo etgan eng mustahkam Noldor qalʼasi. Dagor Bragollachda yagona boʻlib dushman zarbasini qaytargan.",
+  "sources": [
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of Beleriand and its Realms",
+      "page": "124",
+      "notes": "Himring tepaligi va Maedhros chegaralari."
+    }
+  ],
+  "description_sections": [
+    {
+      "title": "Maedhrosning sovuq qalʼasi",
+      "content": "Himring (Sindarincha: 'Doimiy Sovuq') — Sharqiy Belerianddagi keng tepaliklarning eng baland choʻqqisidir. Uning choʻqqisida Fëanorning toʻngʻich oʻgʻli Maedhros oʻzining mustahkam tosh qalʼasini barpo etgan.\n\nDagor Bragollach dahshatida boshqa barcha shimoliy qalʼalar qulaganida ham, faqat Himring Maedhrosning jasorati tufayli dushmanga boʻyin bermay qoldi. Beleriand dengizga choʻkkach, Himring choʻqqisi orol boʻlib omon qoldi va Uchinchi davrda ham dengiz oʻrtasida saqlanib turdi."
+    }
+  ]
+}

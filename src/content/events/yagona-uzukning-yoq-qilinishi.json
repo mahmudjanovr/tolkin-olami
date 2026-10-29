@@ -1,0 +1,60 @@
+{
+  "id": "yagona-uzukning-yoq-qilinishi",
+  "title": "Yagona Uzukning Yoʻq Qilinishi",
+  "subtitle": "Hukm Togʻi alangasi va Barad-dûrning qulashi",
+  "era": "uchinchi_davr",
+  "year_text": "Uchinchi davr 3019 (25-mart)",
+  "location_id": "orodruin",
+  "characters": [
+    "frodo-baggins",
+    "samwise-gamgee",
+    "gollum",
+    "aragorn",
+    "gandalf",
+    "sauron"
+  ],
+  "belligerents": {
+    "side_a": [
+      "Halqa Sohibi (Frodo Baggins)",
+      "Samwise Gamgee",
+      "Gʻarb lashkari (Morannon oldidagi diqqatni chalgʻituvchi ittifoq)"
+    ],
+    "side_b": [
+      "Sauron (Zulmat Hukmdori)",
+      "Gollum (Sméagol)",
+      "Mordor qora kuchlari"
+    ]
+  },
+  "outcome": "Yagona Uzuk Orodruin olovida erib ketdi; Sauronning ruhiyati butunlay parchalanishga yuz tutdi, Barad-dûr quladi va Uchinchi Davr yakunlandi.",
+  "preceding_event": "pelennor-dalalari-jangi",
+  "textual_status": "author_published",
+  "sources": [
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "Mount Doom",
+      "page": "945"
+    }
+  ],
+  "description_sections": [
+    {
+      "title": "Orodruin qa'ridagi so'nggi qadamlar va vasvasa cho'qqisi",
+      "content": "Mordorning zaharli kuli va toshlari aro mislsiz mashaqqat chekkan Frodo Baggins va Samwise Gamgee nihoyat Orodruin (Hukm Tog'i) yonbag'riga yetib keldilar. Sauronning butun diqqati Qora Darvoza oldidagi Aragorn qo'shiniga qaratilgani sababli, ikki xobbit yashirincha Sammath Naur – Uzuk yasalgan olovli g'or darvozasidan ichkariga kirdilar. Biroq aynan Uzuk yaratilgan o'choq tepasida uning sehrli kuchi va vasvasasi eng yuqori qudratiga yetdi. Frodo endi unga qarshilik qila olmadi; u Uzukni barmog'iga taqib, uni o'ziniki deb e'lon qildi."
+    },
+    {
+      "title": "Sauronning dahshatli uyg'onishi va Gollumning kutilmagan roli",
+      "content": "Frodo Uzukni taqqan daqiqada Sauron o'zining dahshatli xatosini tushunib yetdi: dushman Uzukni o'ziga qurol qilmoqchi emas, balki uni yo'q qilmoqchi edi! Qora Lord cheksiz qo'rquvga tushib, barcha Nazgûllarni o'z qanotli maxluqlarida Hukm Tog'iga chaqirdi. Ammo shu daqiqada g'orga ularni ta'qib qilib kelgan Gollum (Sméagol) bostirib kirdi. Gollum ko'rinmas Frodoga tashlanib, uning barmog'ini tishlab uzib oldi. O'zining 'Azizim'ini qo'lga kiritgan Gollum quvonchdan aqldan ozib sakrarkan, g'or chetidan muvozanatni yo'qotib, tubsiz olovli jarga quladi."
+    },
+    {
+      "title": "Barad-dûrning qulashi va Sauronning yakuniy mag'lubiyati",
+      "content": "Yagona Uzuk olovli lavaga tushib eriy boshlagan zahoti, O'rta-yerni larzaga keltirgan ulkan zilzila boshlandi. Orodruin otilib, osmonni qora tutun qopladi. O'z kuchining eng katta qismini Uzukka joylagan Sauron o'z qudratidan bir zumda mahrum bo'ldi. Ming yillar davomida Uzuk kuchi bilan tik tutib turilgan ulkan Barad-dûr minorasi chil-parchin bo'lib quladi. Sauronning armiyasi – o'rklar va maxluqlar irodasini ushlab turgan zanjir uzilib, ular sarosimada qochib ketdilar yoki o'zlarini jarliklarga otdilar. Sauronning qora ruhi ulkan soya bo'lib ko'tarildi, biroq g'arbiy shamol uni butunlay to'zitib yubordi."
+    },
+    {
+      "title": "Uchinchi Davrning poyoni va ozodlik tongi",
+      "content": "Yagona Uzukning yo'q qilinishi bilan Elflarning Uch Uzugi (Narya, Nenya, Vilya) ham o'z kuchini yo'qotdi. Bu O'rta-yerdan sehr va elflar davrining ketishini, Insonlar Hukmronligi Davrining boshlanishini muqarrar qildi. Qora Darvoza oldidagi jangchilar mislsiz najot topdilar. Buyuk burgutlar olov qurshovida qolgan Frodo va Samwiseni qutqardilar. Bu voqea butun Arda tarixidagi zulmat ustidan qozonilgan eng buyuk g'alaba sifatida muhrlandi."
+    },
+    {
+      "title": "Eucatastrophe: Fojia ichidagi ilohiy marhamat",
+      "content": "Tolkien o'z maktublarida ta'kidlaganidek, Frodoni barmog'iga Uzukni taqqani uchun qoralab bo'lmaydi, chunki Hukm Tog'ining markazida hech bir yaratilgan vujud Uzuk vasvasasiga bardosh berolmas edi. Aynan shu nuqtada Gollumning yillar davomida saqlab qolingan hayoti o'z rolini o'ynadi. Frodo va Bilboning ilgari Gollumga ko'rsatgan rahm-shafqati O'rta-yerni qutqarib qoldi. Bu voqea Tolkien falsafasidagi eng muhim tushuncha – ezgulik va rahm-shafqat hatto eng kutilmagan vaziyatlarda ham ilohiy marhamat (Providence) orqali g'alaba qozonishini isbotlaydi."
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "westron",
+  "name": "Westron (Umumiy Nutq / Adûni)",
+  "family": "Mannish (Adûnaic va Oʻrta-yer gʻarbiy lahjalari birikmasi)",
+  "writing_systems": [
+    "tengwar",
+    "cirth"
+  ],
+  "inventor": "Dunedain",
+  "phonology_overview": "Westron (Sôval Phâre yoki Umumiy Til) fonetik jihatdan nihoyatda qulay, moslashuvchan va sodda tovushlar tizimiga ega. U murakkab unli mutatsiyalari yoki qiyin talaffuz qilinadigan tomoq tovushlaridan xoli bo'lib, turli xalqlar - insonlar, xobbitlar, mitti-odamlar va hatto o'rklar tomonidan oson o'zlashtirilishi uchun tabiiy ravishda soddalashgan. Urg'u odatda so'zning boshlang'ich bo'g'inlariga tushadi. Fonologiyasi jihozlangan, qat'iy va amaliy bo'lib, savdo, diplomatiya va kundalik hayot ehtiyojlariga to'liq javob beradi.",
+  "sample_text_original": "Kuduk (Hobbit), Kalimac Brandagamba (Meriadoc Brandybuck), Razanur Tûk (Peregrin Took), Banazir Galbasi (Samwise Gamgee)",
+  "sample_text_uz": "Xobbit, Meriadok Brendibak, Peregrin Tuk va Semvayz Gemjining asl Gʻarbiy (Westron) tilidagi haqiqiy ismlari",
+  "textual_status": "author_published",
+  "sources": [
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "Appendix F: I — Of the Common Speech / II — On Translation",
+      "page": "1127"
+    }
+  ],
+  "grammar_and_vocabulary_sections": [
+    {
+      "title": "O'rta-yerning umumiy muloqot tili (Common Speech) genezisi",
+      "content": "Westron tili Ikkinchi Davrda Númenor dengizchilari va savdogarlarining Pelargir, Lond Daer va Umbar kabi portlaridagi faoliyati natijasida vujudga keldi. Númenorliklarning Adûnaic tili Anduin vodiysi va Eriadorning tub joy insonlari tillari bilan qorishib, lingua franca maqomiga ko'tarildi. Gondor va Arnor saltanatlari gullab-yashnagan davrda ushbu til butun O'rta-yer bo'ylab rasmiy davlat, savdo va xalqaro muloqot tili sifatida qabul qilindi. Uchinchi Davr oxiriga kelib, hatto Moria va Mordor o'rklari ham turli qabilalararo aloqada Westronning buzilgan shaklidan foydalanishga majbur bo'lganlar."
+    },
+    {
+      "title": "Dialektlar: Gondor aristokratiyasi, Bree va Shire shevalari",
+      "content": "Westron tili turli hududlarda o'ziga xos lahjalarga bo'lingan. Minas Tirith va Gondor janubida bu til qadimgi adabiy qoidalar, balandparvoz iboralar va hurmat ko'rsatuvchi murakkab olmoshlar bilan to'la bo'lgan (Pippinning Denethor bilan suhbatida bu yaqqol ko'rinadi). Shimolda esa, ayniqsa Bree va Shireda, til ancha soddalashgan, erkin, o'ynoqi va qishloqona tus olgan. Xobbitlar Westronni to'liq o'z ona tillari deb bilishgan va o'zlarining qadimiy tillaridan faqat bir nechta o'lchov va oziq-ovqat so'zlarini (masalan, mathom, smial) saqlab qolganlar."
+    },
+    {
+      "title": "Tolkienning tarjima konsepsiyasi va haqiqiy Westron nomlari",
+      "content": "J.R.R. Tolkien 'Uzuklar Hukmdori' kitobini yozishda o'ziga xos adabiy usul qo'llagan: u asarni go'yo Westron tilidagi 'Qizil Kitob'dan ingliz tiliga tarjima qilgan deb taqdim etgan. Kitobdagi biz bilgan ko'plab ismlar aslida inglizlashtirilgan variantlardir. Masalan, Frodo Bagginsning haqiqiy Westroncha ismi 'Maura Labingi', Sam Gamgeeniki 'Banazîr Galbasi', Meriadoc Brandybuckniki 'Kalimac Brandagamba', Peregrin Tookniki esa 'Razanur Tûc' bo'lgan. Tilning o'z nomi esa 'Sôval Phâre' deb atalgan. Bu konsepsiya Tolkien filologiyasining eng yorqin va nozik qirralaridan biridir."
+    },
+    {
+      "title": "Sotsiolingvistik ahamiyati va madaniy integratsiya",
+      "content": "Westron turli irqlar va xalqlarni yagona axborot maydoniga birlashtiruvchi qudratli vosita bo'ldi. Elflar uni past tabaqa tili deb hisoblamasdan, boshqa xalqlar bilan muzokaralarda undan mohirlik bilan foydalanganlar. Mitti-odamlar o'zlarining sirli Khuzdul tilini yashirib, dunyoga faqat Westron orqali murojaat qilganlar. Uzuk Birodarligi a'zolari bir-biri bilan aynan Common Speech orqali muloqot qilganlar, bu esa tilning nafaqat amaliy, balki butun O'rta-yer ozod xalqlarining birlik ramziga aylanganini ko'rsatadi."
+    },
+    {
+      "title": "Qizil Kitob va matnshunoslik tarixi",
+      "content": "Westron tilidagi eng buyuk adabiy yodgorlik Bilbo, Frodo va Samwise Gamgee tomonidan yozilgan \"Gʻarbiy Chegara Qizil Kitobi\" (Red Book of Westmarch) hisoblanadi. Ushbu kitob Uchinchi Davrning barcha muhim voqealari, afsonalari va sheʼrlarini oʻzida jamlagan. Toʻrtinchi Davrda Gondor shohi Elessar (Aragorn) topshirigʻi bilan Gondor mirzosi Findegil tomonidan Qizil Kitobning toʻliq nusxasi koʻchirilib, Minas Tirith kutubxonasiga topshirilgan. Westron aynan shu nodir qoʻlyozma tufayli oʻzining barcha nozik lahjaviy va madaniy xususiyatlari bilan birga kelajak avlodlarga yetib kelgan."
+    }
+  ]
+}

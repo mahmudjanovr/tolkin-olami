@@ -1,0 +1,65 @@
+{
+  "id": "dunedain",
+  "name": "Dúnedain (Gʻarb Insonlari)",
+  "other_names": [
+    "Númenorliklar",
+    "Dengiz Qirollari",
+    "Tarkil"
+  ],
+  "race_category": "insonlar",
+  "divisions_and_clans": [
+    "Elendili (Sodiqlar / Elflar doʻstlari)",
+    "Qirol odamlari (Adûnakhôr va Ar-Pharazôn tarafdorlari)",
+    "Shimoliy Dúnedain (Arnor va Shimol Kolboshchilari)",
+    "Janubiy Dúnedain (Gondor Qirolligi xalqi)"
+  ],
+  "origin_era": "Ikkinchi davr",
+  "associated_languages": [
+    "adunaic",
+    "sindarin",
+    "westron",
+    "quenya"
+  ],
+  "primary_realms": [
+    "numenor",
+    "minas-tirith",
+    "osgiliath",
+    "pelargir"
+  ],
+  "textual_status": "author_published",
+  "summary": "Dúnedain (Sindarin: 'Gʻarb Insonlari') — Birinchi Davr Edain qabilalarining toʻgʻridan-toʻgʻri avlodlari boʻlib, Númenor orolida uch ming yil davomida gullab-yashnagan va orol halokatidan soʻng Oʻrta-yerda Arnor hamda Gondor shohliklariga asos solgan olijanob insonlar elitasidir. Ular baland boʻylari, uzoq umr koʻrishlari, dengizchilik va harbiy sanʼatdagi mahoratlari bilan boshqa odamlardan ajralib turgan.",
+  "sources": [
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Akallabêth: The Downfall of Númenor",
+      "page": "259"
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "Appendix A: I — The Númenórean Kings",
+      "page": "1033"
+    }
+  ],
+  "description_sections": [
+    {
+      "title": "Númenor orolidagi yuksalish va Elros xonadoni",
+      "content": "Birinchi Davr oxirida Morgothga qarshi fidokorona kurashgan insonlarga Valar mukofot sifatida dengiz oʻrtasidagi Elenna (Andor) orolini inʼom etdilar. Ularning birinchi shohi Yarim-elf Elros (Tar-Minyatur) boʻldi. Ushbu xalq Dúnedain («Gʻarbiy Insonlar») nomini oldi. Eru ularga oddiy odamlarnikidan uch-toʻrt barobar uzoqroq umr (200 dan 400 yilgacha), jismoniy quvvat va kasalliklarga chidamlilik ato etdi. Ular buyuk shaharlar (Armenelos, Andúnië), baland minoralar va dunyo okeanlarini zabt etgan ulkan flotlar qurdilar. Dúnedainlar Oʻrta-yer qirgʻoqlariga kelib, yovvoyi insonlarga fan, meʼmorchilik va qishloq xoʻjaligini oʻrgatdilar."
+    },
+    {
+      "title": "Sadoqatlilar (Elendili) va Qora Númenorliklar boʻlinishi",
+      "content": "Asrlar oʻtib, oʻlimdan qoʻrqish vasvasasi va Boqiy Gʻarbdan mahrum boʻlish alamiga chiday olmagan koʻpchilik númenorliklar («Shoh Odamlari») Valarga qarshi isyon koʻtardilar. Ular elflar tilini taqiqlab, Adûnaic tilini joriy qildilar. Faqat Andúnië lordlari boshchiligidagi kichik bir qism — Sadoqatlilar (Elendili) Eru va Elflar bilan qasamyodga sodiq qoldilar. Ar-Pharazôn Sauronning aldamchiligiga uchrab Boqiy Yerlarga hujum qilgach, butun Númenor oroli gʻarq boʻldi. Sadoqatlilar yetakchisi Elendil va uning oʻgʻillari Isildur hamda Anárion toʻqqizta kemada Oʻrta-yerga qochib keldilar."
+    },
+    {
+      "title": "Oʻrta-yerdagi Ikki Qirollik: Arnor va Gondor",
+      "content": "Elendil Oʻrta-yerda Dúnedainning Shimoliy Qirolligi — Arnorga asos soldi (poytaxti Annúminas), oʻgʻillari esa Janubiy Qirollik — Gondorga (poytaxti Osgiliath) asos soldilar. Soʻnggi Ittifoq Urushida Elendil va Gil-galad Sauronni yengib halok boʻldilar, Isildur esa Barad-dûr hukmdorining barmogʻidan Uzukni kesib oldi. Uchinchi Davrda Arnor uch mayda knyazlikka (Arthedain, Cardolan, Rhudaur) boʻlinib ketdi va Angmar Jodugar-qirolining tinimsiz urushlari oqibatida butunlay quladi. Omon qolgan shimoliy Dúnedainlar Darbadarlar (Rangers of the North)ga aylanib, yovvoyi dashtlarda yashirincha Shayr va Eriador xalqlarini himoya qildilar."
+    },
+    {
+      "title": "Qayta Birlashgan Qirollik va Elessar davri",
+      "content": "Gondor shohligi ming yillar davomida sharqiy va janubiy dushmanlar (haradliklar, sharqliklar) hujumiga bardosh berdi, biroq Shoh Eärnur vafotidan soʻng taxt boʻsh qolib, shahar Bosh Noiblar (Stewards) tomonidan boshqarildi. Dúnedain qoni aralashuvlar va urushlar tufayli kamayib bordi. Halqa Urushida Shimoliy Darbadarlar yoʻlboshchisi Aragorn II Isildur vorisi sifatida Andúril qilichini koʻtarib chiqdi va Minas Tirithni qutqardi. U Elessar nomi bilan taxtga oʻtirib, Arnor va Gondorni birlashtirdi. Dúnedainlar yana oʻzlarining tarixiy shon-sharafiga erishib, Oʻrta-yerning Toʻrtinchi Davrdagi asosiy yetakchi xalqiga aylandilar."
+    },
+    {
+      "title": "Nasl tozaligi, uzoq umr koʻrish va Shimoliy Qoʻriqchilar",
+      "content": "Dúnedain oddiy insonlardan farqli oʻlaroq, elflar qoni aralashgani tufayli 200 yildan ortiq, baʼzan esa 300 yildan ziyod umr koʻrganlar. Arnor saltanati parchalanib, shohlar sulolasi uzilgach, Shimoliy Dúnedain yashirin hayot tarziga oʻtdi. Ular \"Qoʻriqchilar\" (Rangers) nomi bilan Eriador boʻylab kezib, Shire xobbitlari va Bree aholisini oʻrklardan, qaroqchilardan himoya qildilar. Aragorn boshchiligidagi bu kamtarin, ammo metin irodali qahramonlar oʻzlarining shohona naslini asrab qoldilar va Oʻrta-yerning qayta tiklanishiga asos soldilar."
+    }
+  ]
+}

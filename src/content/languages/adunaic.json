@@ -1,0 +1,47 @@
+{
+  "id": "adunaic",
+  "name": "Adûnaic (Númenor Tili)",
+  "family": "Mannish (Gʻarbiy Insonlar / Taliska tarmogʻi)",
+  "writing_systems": [
+    "tengwar"
+  ],
+  "inventor": "Edain",
+  "phonology_overview": "Adûnaic tili Númenor orol-saltanatining milliy tili bo'lib, Bëor va Hador xonadonlari insonlarining qadimgi tillari asosida shakllangan. Fonetik jihatdan u kuchli undoshlar tizimi, bo'g'iz va tomoq tovushlari hamda semit tillariga o'xshash trilitera (uch undoshli) tuzilishga moyilligi bilan ajralib turadi. Unlilar a, i, u hamda cho'ziq â, î, û variantlariga ega bo'lib, diftonglar kam uchraydi. Tilning urg'usi va talaffuzi jangovar, qat'iy va mag'rur ohangga ega bo'lib, bu Númenor dengizchilari va fotihlarining xarakterini yaqqol aks ettirgan.",
+  "sample_text_original": "Kadô Zigûrun zabathân unakkha, êruhînim dubdam ugru-dalad",
+  "sample_text_uz": "Va Sauron (Afsungar) oʻzini past tutib keldi, Eru farzandlari esa dahshat soya ostiga quladilar (Adûnaic parchasi)",
+  "textual_status": "posthumous_edited",
+  "sources": [
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "Appendix F: I — The Languages and Peoples of the Third Age",
+      "page": "1128"
+    },
+    {
+      "book_slug": "history-of-middle-earth",
+      "chapter": "Vol. IX: Sauron Defeated — Lowdham's Report on the Adûnaic Language",
+      "page": "413"
+    }
+  ],
+  "grammar_and_vocabulary_sections": [
+    {
+      "title": "Númenor tili va Insonlar nutqining shakllanishi",
+      "content": "Birinchi Davrda Edain qabilalari Beleriandga kelganlarida o'zlarining qadimiy insoniy lahjalarida so'zlashishgan. Valar ularga Elenna (Númenor) orolini in'om etgach, bu qabilalar yagona xalqqa birlashdilar va ularning tillari chatishib, Adûnaic ('G'arbliklar tili') vujudga keldi. Garchi Númenor aslzodalari va olimlari dastlab elflarning Quenya va Sindarin tillarida ta'lim olib, ularni e'zozlagan bo'lsalar-da, oddiy xalq, dehqonlar va dengizchilar kundalik hayotda faqat Adûnaicda muloqot qilganlar. Bu til O'rta-yer sohillarida Númenor koloniyalari barpo etilishi bilan keng tarqala boshladi."
+    },
+    {
+      "title": "Morfologiya, grammatik jins va fe'l qurilishi",
+      "content": "Tolkienning 'The Notion Club Papers' (HoME IX jild) asarida Adûnaic grammatikasining mukammal eskizi berilgan. Unda otlar uchta grammatik jinsga bo'linadi: erkak, ayol va umumiy/jonsiz. Otlar uch xil holatda qo'llaniladi: oddiy (Normal), bosh kelishik (Subjective) va qaratqich (Objective). So'z yasalishida o'zak unlilarining o'zgarishi va suffiksatsiya hal qiluvchi rol o'ynaydi. Masalan, 'bârim' (hukmdorlar) so'zi 'bâr' o'zagidan yasalgan. Fe'l tizimida davomiy, tugallangan va subyektiv zamon shakllari mavjud bo'lib, bu inson tilining elflar tilidan tubdan farq qiluvchi o'ziga xos dunyoqarashini ko'rsatadi."
+    },
+    {
+      "title": "Siyosiy inqiroz va Elflar tillarining taqiqlanishi",
+      "content": "Ikkinchi Davrning ikkinchi yarmida Númenor podshohlari Valarga va Elflarga qarshi isyon ko'targanlarida ('Qirol Odamlari' firqasi), ular o'zlarining milliy g'ururini ko'rsatish uchun elflar tillaridan foydalanishni qonunan taqiqladilar. Podshohlar o'zlariga Quenya ismlari o'rniga faqat Adûnaic nomlarini qabul qila boshladilar: Tar-Calmacil o'rniga Ar-Belzagar, Tar-Palantirning jiyani esa Ar-Pharazôn (Oltin Pharazôn) deb ataldi. Bu davrda Adûnaic imperialistik mafkura, mustamlakachilik va qudrat timsoliga aylandi. Faqat 'Sodiqlar' (The Faithful) elflar tillarini yashirincha asrab qoldilar."
+    },
+    {
+      "title": "Akallabêth fojeasi va Westron tiliga meros",
+      "content": "Númenor dengiz tubiga g'arq bo'lgach (Akallabêth), Adûnaic tili toza holda faqat Umbarning Qora Númenorliklari orasida saqlanib qoldi. Ammo uning O'rta-yer sohillaridagi savdo shaharlarida mahalliy insonlar tillari bilan aralashuvi natijasida yangi universal til - Westron (Umumiy Til) dunyoga keldi. Shu sababli, Uchinchi Davrda butun O'rta-yer bo'ylab yangragan Common Speech aslida Adûnaicning to'g'ridan-to'g'ri grammatik va leksik merosxo'ri hisoblanadi."
+    },
+    {
+      "title": "Notion Club Papers va filologik eksperimentlar",
+      "content": "Tolkien 1945-1946 yillarda yozgan \"The Notion Club Papers\" asarida Adûnaic tilining toliq grammatik konspektini yaratgan. Ushbu asarda Oksford olimlari Alboin va Ramer oʻz tushlarida qadimgi botib ketgan Atlantis-Númenor xotiralarini qayta kashf etadilar. Tolkien ushbu asar orqali insoniy tilning oʻziga xos evolyutsiyasini koʻrsatib berdi: Adûnaic elflarning musiqiy tillaridan farqli ravishda qadimgi semit tillariga xos morfologik arxitekturaga (tovushlar almashinishi, trilitera oʻzaklar) ega boʻlib, insoniyatning cheklangan, ammo joʻshqin va ehtirosli ruhiyatini toʻliq aks ettiradi."
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+---
+import type { TextualStatus } from '@/content/schemas';
+
+interface Props {
+  status: TextualStatus;
+  showExplanation?: boolean;
+}
+
+const { status, showExplanation = false } = Astro.props;
+
+interface StatusConfig {
+  label: string;
+  shortLabel: string;
+  description: string;
+  badgeClass: string;
+}
+
+const STATUS_CONFIGS: Record<TextualStatus, StatusConfig> = {
+  author_published: {
+    label: 'Kanonik Matn (Muallif Nashri)',
+    shortLabel: 'Muallif Nashri',
+    description: "J.R.R. Tolkien hayotlik davrida nashr etilgan va muallif tomonidan qatʼiy tasdiqlangan birlamchi manba.",
+    badgeClass: 'badge-canonical',
+  },
+  posthumous_edited: {
+    label: 'Vafotidan Soʻng Tahrirlangan',
+    shortLabel: 'Vafotidan Soʻng',
+    description: "Muallif vafotidan soʻng Christopher Tolkien tomonidan qoralamalar asosida tuzilgan va nashrga tayyorlangan.",
+    badgeClass: 'badge-posthumous',
+  },
+  draft_variant: {
+    label: 'Qoralama Tarixi Varianti',
+    shortLabel: 'Qoralama Varianti',
+    description: "Tolkienning ilk qoralamalari, HoME (Oʻrta-yer tarixi) turkumidagi evolyutsion matn qatlamlari.",
+    badgeClass: 'badge-variant',
+  },
+  disputed_variant: {
+    label: 'Munozarali Filologik Variant',
+    shortLabel: 'Munozarali Variant',
+    description: "Matnlarda turli vaqtlarda turlicha ifodalangan yoki toʻliq yakuniga yetkazilmagan ziddiyatli masala.",
+    badgeClass: 'badge-disputed',
+  },
+};
+
+const config = STATUS_CONFIGS[status] || STATUS_CONFIGS.draft_variant;
+---
+
+<div class="provenance-wrapper">
+  <span
+    class:list={['badge', config.badgeClass]}
+    role="status"
+    title={config.description}
+    aria-label={`Matn maqomi: ${config.label}`}
+  >
+    <span class="status-dot" aria-hidden="true"></span>
+    <span class="status-text">{config.shortLabel}</span>
+  </span>
+
+  {showExplanation && (
+    <p class="provenance-explanation">{config.description}</p>
+  )}
+</div>
+
+<style>
+  .provenance-wrapper {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 0.375rem;
+  }
+
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375rem;
+    font-family: var(--font-sans-ui);
+    font-size: 0.75rem; /* 12px */
+    font-weight: 600;
+    line-height: 1;
+    padding: 4px 8px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    width: fit-content;
+  }
+
+  .status-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: currentColor;
+    display: inline-block;
+  }
+
+  .badge-canonical {
+    background-color: var(--color-status-canonical);
+    color: #ffffff;
+  }
+
+  .badge-posthumous {
+    background-color: var(--color-status-variant);
+    color: #ffffff;
+  }
+
+  .badge-variant {
+    background-color: var(--color-bg-subtle);
+    color: var(--color-text-secondary);
+    border: 1px solid var(--color-border-strong);
+  }
+
+  .badge-disputed {
+    background-color: var(--color-status-apocrypha);
+    color: #ffffff;
+  }
+
+  .provenance-explanation {
+    font-family: var(--font-sans-ui);
+    font-size: 0.8125rem; /* 13px */
+    line-height: 1.5;
+    color: var(--color-text-secondary);
+    margin: 0;
+  }
+</style>

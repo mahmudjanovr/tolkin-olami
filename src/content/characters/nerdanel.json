@@ -1,0 +1,103 @@
+{
+  "id": "nerdanel",
+  "name": "Nerdanel Dono",
+  "original_name": "Nerdanel",
+  "father_name": "Mahtan (Aulëning bosh Noldor shogirdi)",
+  "spouse": "Fëanor",
+  "children": [
+    "Maedhros",
+    "Maglor",
+    "Celegorm",
+    "Caranthir",
+    "Curufin",
+    "Amrod",
+    "Amras"
+  ],
+  "aliases": [
+    "Nerdanel the Wise (Dono Nerdanel)",
+    "Istarnië (Dono, bilimdon ayol)"
+  ],
+  "titles": [
+    "Fëanorning Umr Yoʻldoshi",
+    "Yetti Shahzoda Onasi",
+    "Valinorning Buyuk Haykaltaroshi"
+  ],
+  "race": "elflar",
+  "sub_race": "Noldor",
+  "culture": "Tirion / Valinor",
+  "birth_year": "Daraxtlar davri",
+  "death_year": "Boqiy (Valinorda qolgan)",
+  "house_id": "finwe-xonadoni",
+  "weapons_and_artifacts": [
+    "Valar va Eldar haykallari (Tirion koʻrkiga aylangan tirikdek tosh va metall haykallar)"
+  ],
+  "primary_locations": ["tirion"],
+  "textual_status": "posthumous_edited",
+  "uncertainty_notes": "Matnshunoslik tahlili: J.R.R. Tolkienning 'The Shibboleth of Fëanor' (HoME XII) qoʻlyozmasida Nerdanelning xarakteri va uning Fëanor bilan soʻnggi toʻqnashuvi nashr etilgan 'Silmarillion'dagidan ancha batafsil bayon etilgan. Unda Nerdanel eriga egizak oʻgʻillaridan kamida biri Oʻrta-yer tuprogʻiga qadam bosmasligini (Losgarda kemalar yoqib yuborilganda Amrodning kema ichida fojiali yonib ketishi haqida) oldindan bashorat qilgan. Christopher Tolkien 'Silmarillion'ni tuzishda Amrodning Losgardagi oʻlimi haqidagi ushbu kechki variantni kiritmay, yetti oʻgʻilning barchasi Beleriandga oʻtgan deb koʻrsatgan. Shuningdek, Nerdanelning mis-qizil sochlari (russa) va otasi Mahtanning Aulë bilan munosabatlari aynan HoME XII matnlarida ochib berilgan.",
+  "summary": "Aulëning bosh Noldor shogirdi Mahtanning qizi, Fëanorning xotini va uning yetti mashhur oʻgʻlining onasi. Valinordagi eng iqtidorli haykaltarosh boʻlib, tosh va metalldan tirikdek jonli qiyofalar yarata olgan. Yuksak aql-idroki, sabr-bardoshi va qatʼiyati bilan tanilgan. Uzoq yillar davomida Fëanorning olovli gʻazabini jilovlay olgan yagona inson boʻlgan, biroq erining takabburligi va Valarga qarshi isyoniga qoʻshilmasdan, Valinorda qolgan.",
+  "etymology": "Quenya tilida 'Nerdanel' ismi ner- ('inson, mard, baquvvat') va -ndisse / -nel ('ayol, qiz') oʻzaklaridan tashkil topgan boʻlib, 'irodali va mustahkam xarakterli ayol' maʼnosini bildiradi. Qoralamalarda uning onalik ismi sifatida 'Istarnië' (donishmand, bilimdon ayol) ham qayd etilgan. Uning mis-qizil sochlari Noldor orasida noyob boʻlib, 'russa' deb atalgan.",
+  "biography_sections": [
+    {
+      "title": "Aulë shogirdining xonadoni va yoshlik yillari",
+      "content": "Nerdanel Daraxtlar davrida Valinorda, Aulëning eng isteʼdodli Noldor shogirdi boʻlgan Mahtanning xonadonida dunyoga keldi. U qizgʻish-jigarrang (mis-qizil) sochlarga ega boʻlib, bu Noldor elflari uchun nihoyatda kamyob irsiyat edi. Nerdanel anʼanaviy elflarga xos nozik goʻzallikdan koʻra, aql-zakovat, gʻayritabiiy iroda kuchi va hunarmandchilikka boʻlgan cheksiz qiziqishi bilan ajralib turardi.\n\nYoshligida u uydan uzoqlarga, togʻlar, oʻrmonlar va dengiz qirgʻoqlari boʻylab sayohat qilishni sevar, tabiatni, togʻ jinslarini va tirik mavjudotlarning tuzilishini sinchkovlik bilan oʻrganar edi."
+    },
+    {
+      "title": "Haykaltaroshlikdagi tengsiz mahorat",
+      "content": "Otasidan tosh va metallga ishlov berish sirlarini oʻrgangan Nerdanel oʻz davrining eng buyuk haykaltaroshiga aylandi. U tosh, yogʻoch va turli qotishmalardan Valar, Mayar va elflarning shu qadar jonli va ifodali haykallarini yoʻnardiki, Tirion aholisi uzoqdan koʻrib ularni tirik elflar deb oʻylar va beixtiyor salom berishardi.\n\nNerdanel nafaqat jismoniy shakllarni, balki insonlar va elflarning qalb kechinmalarini, ularning ichki fikrlarini ham anglash qobiliyatiga ega edi. Uning yaratgan asarlari Valinor saroylarining eng qimmatbaho bezaklariga aylangan edi."
+    },
+    {
+      "title": "Fëanor bilan nikoh va uning olovli qalbini jilovlash",
+      "content": "Valinor boʻylab qilgan erkin sayohatlaridan birida Nerdanel yosh Fëanor bilan uchrashdi. Ular bir-birlarining aql-zakovati va hunariga maftun boʻlib, turmush qurdilar. Bu nikohdan yetti nafar oʻgʻil tugʻildi: Maedhros, Maglor, Celegorm, Caranthir, Curufin hamda egizaklar Amrod va Amras. Toʻngʻich oʻgʻil Maedhros va kenja egizaklar onasining noyob qizgʻish sochlarini meros qilib oldilar.\n\nFëanor oʻta gʻururli, tez jahli chiqadigan va murosasiz elf edi. Uzoq yillar davomida butun Arda boʻyicha uning qahrli olovini pasaytira oladigan, aqlga undaydigan yagona inson aynan Nerdanel boʻldi. U erining takabburligini sabr va muloyimlik bilan boshqarib turdi."
+    },
+    {
+      "title": "Melkorning fitnalari va oilaviy parchalanish",
+      "content": "Fëanor Silmarillarni yaratgach va Melkor Mandosdan ozod qilingach, zulmat Noldor qalblariga soya soldi. Melkor Fëanorning shubha-gumonlarini olovlatdi. Fëanor maxfiy temirchilik ustaxonalari ochib, qurol-aslahalar yasashga tushdi va oʻgay ukalari Fingolfin hamda Finarfinga qarshi gina saqlay boshladi.\n\nNerdanel erining bu xatti-harakatlaridan chuqur qaygʻuga tushdi va uni yovuz yoʻldan qaytarishga koʻp urindi. Ammo Silmarillarga boʻlgan xudbin muhabbat Fëanorni koʻr qilib qoʻygan edi; u xotinining dono pand-nasihatlarini tinglamay qoʻydi. Fëanor Tirionda Fingolfinga qilich oʻqtalib, Valar tomonidan Formenosga surgun qilinganida, Nerdanel erining isyonini maʼqullamay, u bilan birga Formenosga ketishdan bosh tortdi va Tirionda, Indis va oʻz ota-onasi xonadonida qoldi."
+    },
+    {
+      "title": "Soʻnggi vidolashuv, fojiali bashorat va Valinordagi ayriliq",
+      "content": "Melkor Finwëni oʻldirib, Silmarillarni oʻgʻirlab ketgach, Fëanor oʻz oʻgʻillarini qasos qasamyodiga boshladi va butun Noldorni Oʻrta-yerga chorladi. Joʻnab ketish oldidan Nerdanel Fëanorning huzuriga kelib, hech boʻlmaganda eng kenja egizak oʻgʻillari — Amrod va Amrasni oʻzi bilan qoldirishni yolvordi.\n\nNerdanel oldindan koʻrish iqtidori bilan Fëanorga: 'Oʻgʻillaringdan kamida biri Oʻrta-yer qirgʻoqlariga qadam bosmaydi, uning qismatida dahshatli olov bor', deb ogohlantirdi. Biroq gʻazabga mingan Fëanor uni oʻgay onasi Indis xonadoniga sotilganlikda aybladi va yetti oʻgʻlining barchasini oʻzi bilan olib ketdi (va Losgarda kemalar yoqilgan kecha Amrod kema ichida bexabar uxlab yotib fojiali halok boʻldi).\n\nNerdanel Valinorda qoldi. U oʻzining barcha yetti oʻgʻli va sevimli nabirasi Celebrimborning Mandos qargʻishi va Silmarillarning qonli fojiasida birin-ketin halok boʻlishini uzoqdan turib, cheksiz ona iztirobi bilan kuzatishga mahkum etildi."
+    }
+  ],
+  "image": {
+    "src": "/images/characters/nerdanel.webp",
+    "src_thumb": "/images/characters/nerdanel-thumb.webp",
+    "alt": "Nerdanel Dono — qizil-jigarrang sochli Noldor haykaltaroshi",
+    "caption": "Nerdanel Dono — Fëanorning rafiqasi, Valinorning buyuk haykaltaroshi"
+  },
+  "sources": [
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of Eldamar and the Princes of the Eldalië",
+      "page": "64"
+    },
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of Fëanor and the Unchaining of Melkor",
+      "page": "64-68"
+    },
+    {
+      "book_slug": "the-peoples-of-middle-earth",
+      "chapter": "The Shibboleth of Fëanor",
+      "page": "335-344"
+    },
+    {
+      "book_slug": "morgoths-ring",
+      "chapter": "The Later Quenta Silmarillion",
+      "page": "272-277"
+    }
+  ],
+  "related_characters": [
+    "feanor",
+    "finwe",
+    "maedhros",
+    "maglor",
+    "curufin",
+    "celebrimbor",
+    "aule",
+    "indis",
+    "fingolfin",
+    "finarfin",
+    "miriel"
+  ],
+  "adaptations": []
+}

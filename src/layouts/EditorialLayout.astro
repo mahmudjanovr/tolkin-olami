@@ -1,0 +1,108 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Breadcrumbs from '@/components/editorial/Breadcrumbs.astro';
+
+interface Props {
+  title: string;
+  description?: string;
+  category?: string;
+  breadcrumbs?: Array<{ label: string; href?: string }>;
+}
+
+const { title, description, category, breadcrumbs } = Astro.props;
+---
+
+<BaseLayout title={title} description={description} type="article">
+  <div class="editorial-wrapper container">
+    {breadcrumbs && <Breadcrumbs items={breadcrumbs} />}
+
+    <header class="editorial-header">
+      {category && <span class="editorial-category">{category}</span>}
+      <h1 class="editorial-title" data-pagefind-meta="title">{title}</h1>
+      {description && <p class="editorial-lead">{description}</p>}
+    </header>
+
+    <div class="editorial-grid">
+      <article class="editorial-content" data-pagefind-body>
+        <slot />
+      </article>
+
+      <aside class="scholarly-margin" aria-label="Ilmiy izohlar va manbalar">
+        <slot name="margin" />
+      </aside>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .editorial-wrapper {
+    padding-block: 2.5rem 4rem;
+  }
+
+  .editorial-header {
+    border-bottom: 1px solid var(--color-border-subtle);
+    padding-bottom: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .editorial-category {
+    display: inline-block;
+    font-family: var(--font-sans-ui);
+    font-size: 0.8125rem; /* 13px */
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-accent-gold-text);
+    margin-bottom: 0.5rem;
+  }
+
+  .editorial-title {
+    margin-bottom: 0.5rem;
+  }
+
+  .editorial-lead {
+    font-size: 1.25rem; /* 20px */
+    line-height: 1.6;
+    color: var(--color-text-secondary);
+    max-width: 65ch;
+    margin-bottom: 0;
+  }
+
+  .editorial-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  @media (min-width: 1024px) {
+    .editorial-grid {
+      grid-template-columns: 68% 32%;
+      align-items: start;
+    }
+  }
+
+  .editorial-content {
+    min-width: 0;
+    line-height: 1.8;
+  }
+
+  .scholarly-margin {
+    font-family: var(--font-sans-ui);
+    font-size: 0.875rem; /* 14px */
+    line-height: 1.6;
+    color: var(--color-text-secondary);
+    border-top: 1px solid var(--color-border-subtle);
+    padding-top: 1.5rem;
+  }
+
+  @media (min-width: 1024px) {
+    .scholarly-margin {
+      border-top: none;
+      border-left: 1px solid var(--color-border-subtle);
+      padding-top: 0;
+      padding-left: 1.5rem;
+      position: sticky;
+      top: 5rem;
+    }
+  }
+</style>

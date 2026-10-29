@@ -1,0 +1,63 @@
+{
+  "id": "khazad-dum",
+  "name": "Khazad-dûm (Moria / Dwarrowdelf)",
+  "elvish_name": "Hadhodrond / Moria",
+  "type": "qirollik",
+  "region": "orta-yer",
+  "coordinates": {
+    "map_id": "orta-yer",
+    "x": 965,
+    "y": 1113
+  },
+  "founded_era": "Yulduzlar davri",
+  "destroyed_era": "Uchinchi davr 1981",
+  "rulers": [
+    "Durin I",
+    "Durin VI",
+    "Náin I",
+    "Balin"
+  ],
+  "notable_events": [
+    "Durin I Oʻlmas tomonidan Kheled-zâram (Koʻzgu Koʻl) boʻyida poydevor qoʻyilishi",
+    "Eregion Noldor elflari bilan doʻstlik va Gʻarbiy Darvoza (Ithildin darvozasi)ning bunyod etilishi",
+    "Mittivoylar tomonidan chuqur qazish natijasida Qadimiy Dunyo Balrogining («Durin Balosi») uygʻonishi (Uchinchi davr 1980-yil)",
+    "Gandalf va Balrogning Durin Minorasi choʻqqisidagi afsonaviy jangi (Uchinchi davr 3019-yil)"
+  ],
+  "textual_status": "author_published",
+  "summary": "Khazad-dûm (mittivoylar tilida: «Mittivoylar Saroyi», keyinchalik Moria — «Qora Jar») — Tumanli togʻlar ostida Durin xalqi (Uzunsoqollar) tomonidan barpo etilgan Mittivoylar tarixidagi eng buyuk va eng boy yerosti qirolligi. Bu butun Arda boʻyicha yagona bebaho mithril maʼdani qazib olingan maskandir. Uchinchi davrda konda qadimiy Balrog uygʻonishi natijasida shahar qorongʻulik va maxluqlar makoniga aylangan.",
+  "sources": [
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "A Journey in the Dark",
+      "notes": "Gʻarbiy darvoza, Moria zallari va yigirma birinchi zaldagi Mazarbul xonasi."
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "The Bridge of Khazad-dûm",
+      "notes": "Durin koʻprigi, Balrogning paydo boʻlishi va Gandalfning fidoiy jangi."
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "Appendix A: Annals of the Kings and Rulers",
+      "notes": "Durin xalqi xronologiyasi, mithril qazilishi va Morianing fojiali qulashi."
+    }
+  ],
+  "description_sections": [
+    {
+      "title": "Mittilarning ulugʻvor poytaxti va Durin taxti",
+      "content": "Khazad-dûm (Mitti tilida: 'Mittilar Qasri'), keyinchalik Moria ('Qora Tubsizlik') deb atalgan ulkan yerosti saltanati Tumanli Togʻlar qaʼrida joylashgan. U Mittilarning Birinchi Otasi — Durin I (Oʻlimsiz Durin) tomonidan Daraxtlar Davrida Kheled-zâram (Koʻzgu Koʻli) boʻyida barpo etilgan.\n\nSaltanat Tumanli Togʻlarni gʻarbdan sharqqa tomon toʻliq kesib oʻtuvchi yuzlab ulkan zallar, marmar ustunlar, cheksiz konlar va koʻpriklardan iborat edi. Dunyodagi yagona qimmatbaho metall — Mithril (Haqiqiy Kumush) faqat shu yerda qazib olinar edi."
+    },
+    {
+      "title": "Durin Falakati va saltanatning qulashi",
+      "content": "Uchinchi davrning 1980-yilida mittilar mithril qidirib Barazinbar togʻi qaʼrini haddan ziyod chuqur qazdilar va u yerda Birinchi Davrdan beri uxlab yotgan dahshatli iblis — Morgothning Balrogini uygʻotdilar. Balrog Qirol Durin VI va uning oʻgʻli Náinni oʻldirdi.\n\nMittilar oʻzlarining ming yillik poytaxtini tashlab qochishga majbur boʻldilar. Khazad-dûm oʻrklar va qora maxluqlar makoniga aylanib, 'Moria' deb atala boshlandi."
+    },
+    {
+      "title": "Uzuk Birodarligi va Gandalf jangi",
+      "content": "3019-yil yanvarida Uzuk Birodarligi Moria orqali sharqqa oʻtishga majbur boʻldi. Mazarbul zalida Balin ekspeditsiyasi qabrini topganlaridan soʻng oʻrklar hujumiga uchradilar.\n\nKhazad-dûm koʻprigida Gandalf Balrog bilan toʻqnashdi: 'Bu yerdan oʻtolmaysan!' deb qadimiy tosh koʻprikni parchaladi va iblis bilan birga cheksiz tubsizlikka quladi. Zirakzigil choʻqqisidagi afsonaviy jangda Gandalf Balrogni magʻlub etdi."
+    },
+    {
+      "title": "Mazarbul xonasi, Durin Taxti va cheksiz yerosti ko'priklari",
+      "content": "Khazad-dûmning markazida yettinchi darajadagi Mazarbul Xonasi (Yozuvlar zali) joylashgan bo'lib, unda mitti xalqining barcha tarixiy qo'lyozmalari saqlangan. Sharqiy darvoza oldida esa tubsiz jar ustiga qurilgan mashhur Durin Ko'prigi (Bridge of Khazad-dûm) qad rostlagan edi. Bu tor tosh ko'prik har qanday dushmanning birma-bir o'tishiga majbur qiluvchi dahoiy mudofaa vositasi edi. Gandalf va Balrog to'qnashuvi aynan shu ko'prik ustida sodir bo'lib, ko'prik qulashi bilan Balrog tubsiz jarga qulagan."
+    }
+  ]
+}

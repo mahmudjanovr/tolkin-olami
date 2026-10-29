@@ -1,0 +1,87 @@
+{
+  "id": "melkor",
+  "name": "Melkor",
+  "original_name": "Melkor",
+  "aliases": [
+    "Morgoth Bauglir",
+    "Dunyoning Qora Dushmani",
+    "Belegurth (Buyuk Oʻlim)",
+    "Zulmat Hukmdori",
+    "Birinchi Qora Hukmdor",
+    "Angband Shohi"
+  ],
+  "titles": [
+    "Eng ulugʻ Vala (isyonidan avval)",
+    "Utumno va Angband Hukmdori",
+    "Dunyoning Qora Podshohi"
+  ],
+  "race": "ainur",
+  "sub_race": "Vala",
+  "culture": "Valar / Utumno / Angband",
+  "birth_year": "Dunyodan avval (Ainur Musiqasi)",
+  "death_year": "Birinchi davr 590 (Gʻazab Urushidan soʻng Dunyoviy Boʻshliq — Kúmaga uloqtirilgan)",
+  "weapons_and_artifacts": [
+    "Grond (Yerosti Dunyosi Bolgʻasi)",
+    "Uch Silmaril oʻrnatilgan Temir Toj",
+    "Qora Qalqon va Nayza"
+  ],
+  "primary_locations": ["formenos", "tirion"],
+  "textual_status": "posthumous_edited",
+  "uncertainty_notes": "Tolkien 'Morgoth's Ring' (HoME X) asarida chuqur teologik tahlil bergan: Sauron oʻz qudratini Yagona Uzukka joylagan boʻlsa, Melkor oʻzining ilohiy quvvatini butun Ardaning moddiy jismiga (tuproq, togʻlar, metallar va havoga) singdirib yuborgan. Shu sababli butun 'Arda — Morgothning Yagona Uzugidir' (Arda Marred). Shuningdek, Christopher Tolkien tahriridagi 'The Silmarillion' nashrida Morgoth shaxsi sof yovuzlik timsoli sifatida koʻrsatilgan boʻlsa-da, qoralamalarda uning qulashi cheksiz magʻrurlik va Ilúvatar ijodiga nisbatan hasad natijasi ekani batafsil yoritilgan.",
+  "summary": "Eru Ilúvatar yaratgan eng buyuk, qudratli va donishmand Ainur — Melkor. Ainur Musiqasida oʻz xudbin niyatlari bilan uygʻunlikni buzib, isyon koʻtargan. Arda yaratilgach, Valarga qarshi tinimsiz urush ochgan. Utumno va Angband yerosti qalʼalarini barpo etib, oʻrklar, trollar, balroglar va ajdarlarni yaratgan. Ungoliant bilan Ikki Daraxtni quritib, Silmarillarni oʻgʻirlagan va Finwëni qatl etgan. Fëanor unga 'Morgoth' deb laqab bergan. Birinchi davr oxirida Gʻazab Urushida Valar va Eldar qoʻshini tomonidan batamom tor-mor etilib, Dunyo Boʻshligʻiga uloqtirilgan.",
+  "etymology": "Quenya tilida 'Melkor' — *mbelek ('qudratli, ulugʻvor') oʻzagidan tuzilgan boʻlib, 'Qudrat bilan yuksak boʻlgan' maʼnosini anglatadi. Fëanor Formenos fojiasidan keyin unga bergan 'Morgoth' ismi esa Sindarin tilidagi mor ('qora, zulmat') va goth/koth ('dushman, qasoskor') soʻzlaridan olinib, 'Dunyoning Qora Dushmani' deganidir; unga qoʻshiladigan 'Bauglir' esa 'Zolim, Jabrkor' degan maʼnoga ega.",
+  "biography_sections": [
+    {
+      "title": "Ainur Musiqasidagi isyon va Ilk Davrlar",
+      "content": "Eru Ilúvatar barcha Ainurga Buyuk Musiqa (Ainulindalë) mavzusini berganida, barcha ilohiy inʼomlarga eng toʻliq ega boʻlgan Melkor qalbida oʻzgalarga hukmronlik qilish va oʻz shon-shuhratini koʻrsatish istagi uygʻondi. U oʻz ohangini qasddan umumiy garmoniyaga qarshi qoʻyib, quloqni teshuvchi shovqinli va tartibsiz sado hosil qildi.\n\nEä (Moddiy Olam) yaratilgach, Melkor Yer yuzidagi barcha goʻzalliklarni buzishga kirishdi: Valar yaratgan Ikki Chiroq — Illuin va Ormalni qulatib, dunyoni ilk zulmatga burkadi. U shimolda Utumno va Angband qalʼalarini qurib, orqlarni yaratdi va yovuz ruhlarni oʻz atrofida toʻpladi. Valar Quiviénenda elflar uygʻonganini bilgach, Melkorga qarshi urush ochdi, Utumnoni yakson qildi va Melkorni uch davr davomida Mandos zindoniga zanjirband etdi."
+    },
+    {
+      "title": "Valinor nurlarining soʻnishi va Fëanor laʼnati",
+      "content": "Jazo muddati oʻtgach, Melkor oʻzini tavba qilgandek koʻrsatib ozodlikka erishdi. U Valinorda Noldor orasida yashirin igʻvo tarqatdi, aka-ukalar Fëanor va Fingolfin orasiga nizo soldi. Noldor qurol yasashni va Valarga shubha bilan qarashni boshladi.\n\nDaraxtlar davrining 1495-yilida Melkor ibtidoiy zulmat mavjudoti — bahaybat oʻrgimchak Ungoliant bilan ittifoq tuzdi. Ular Valinor bayrami chogʻida Ikki Daraxt — Telperion va Laurelin sharbatini soʻrib, ularni quritdi va Valinorni zulmatga gʻarq qildi. Soʻng Formenos qalʼasiga bostirib kirib, Oliy Qirol Finwëni qatl etdi va uch muqaddas Silmarilni oʻgʻirlab Beleriandga qochdi. Finwëning oʻlimi va Silmarillar oʻgʻirlanganini eshitgan Fëanor uni 'Morgoth' deb laʼnatladi."
+    },
+    {
+      "title": "Beleriand qamali, qonli gʻalabalar va Fingolfin dueli",
+      "content": "Angbandga qaytgan Morgoth oʻzining Temir Tojiga uch Silmarilni oʻrnatdi. Noldor Beleriandga qaytgach, qariyb toʻrt yuz yil davomida Angbandni qamalda ushlab turdi. Biroq 455-yilda Morgoth 'Dagor Bragollach' (Toʻsatdan Olov Jangi) bilan qamalni yorib oʻtdi: olovli daryolar va Glaurung boshchiligidagi armiya bilan elflar mudofaasini chil-parchin qildi.\n\nUshbu kulfatdan soʻng Noldor Oliy Qiroli Fingolfin yolgʻiz oʻzi Angband darvozasiga yetib kelib, Morgothni shaxsiy duelga chorladi. Morgoth xalqining koʻz oʻngida qoʻrqoq koʻrinmaslik uchun chiqishga majbur boʻldi. U ulkan Grond bolgʻasi bilan Fingolfinni oʻldirdi, ammo Fingolfinning muzdek qilichi Ringil unga yetti oʻlimli yara yetkazdi va oyogʻini mayib qildi. Shundan soʻng Morgoth bir umr oqsoqlanib yurdi."
+    },
+    {
+      "title": "Gʻazab Urushi va Dunyo Boʻshligʻiga badargʻa",
+      "content": "Morgoth Nirnaeth Arnoediad jangida elflar va insonlar ittifoqini yoʻq qildi, Húrinni qargʻab, uning oilasiga cheksiz fojealar yogʻdirdi; Gondolin va Doriathdek afsonaviy qirolliklarni xiyonat orqali vayron qildi. Beleriand butunlay uning oyogʻi ostida qolgandek koʻrindi.\n\nBiroq Eärendil Valinorga suzib borib, Valardan marhamat soʻragach, Valinorning butun ilohiy qoʻshini Beleriandga kirdi (Gʻazab Urushi). Qirq yil davom etgan bu qiyomatli urushda Angband yer bilan yakson qilindi, Ancalagon va uning qanotli ajdarlari magʻlub etildi. Morgoth oʻz saroyi qaʼridan tortib chiqarilib, Angainor zanjirlari bilan kishanlandi, Temir Toji boʻyniga osildi va u Dunyoviy Cheksiz Boʻshliqqa (Kúma) Eä chegaralaridan tashqariga uloqtirildi. Dunyoning oxirida (Dagor Dagorath) u qaytishi bashorat qilingan boʻlsa-da, Arda tarixidagi uning jismoniy hukmronligi shu tariqa barham topdi."
+    }
+  ],
+  "sources": [
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Ainulindalë: The Music of the Ainur",
+      "page": "15"
+    },
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Valaquenta: Account of the Valar and Maiar",
+      "page": "25"
+    },
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of the Flight of the Noldor",
+      "page": "82"
+    },
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of the Ruin of Beleriand and the Fall of Fingolfin",
+      "page": "150"
+    },
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of the Voyage of Eärendil and the War of Wrath",
+      "page": "246"
+    }
+  ],
+  "related_characters": [
+    "feanor",
+    "fingolfin",
+    "finwe",
+    "sauron",
+    "turin",
+    "beren"
+  ],
+  "adaptations": []
+}

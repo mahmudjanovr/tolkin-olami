@@ -1,0 +1,95 @@
+{
+  "id": "eomer",
+  "name": "Éomer",
+  "original_name": "Éomer Éadig",
+  "father_name": "Éomund",
+  "mother_name": "Théodwyn",
+  "spouse": "Lothíriel of Dol Amroth",
+  "children": [
+    "Elfwine (valiahd oʻgʻil)"
+  ],
+  "aliases": [
+    "Éomer Éadig (Barakali)",
+    "Rohan Qiroli",
+    "Sharqiy Mark Marshali"
+  ],
+  "titles": [
+    "Rohan Qiroli (Eorl xonadonining 18-qiroli va Uchinchi Sulola asoschisi)",
+    "Mark Oliy Sarkardasi",
+    "Gondorning Qardosh Hukmdori"
+  ],
+  "race": "insonlar",
+  "sub_race": "Rohirrim",
+  "culture": "Rohan / Edoras",
+  "birth_year": "Uchinchi davr 2991",
+  "death_year": "Toʻrtinchi davr 63 (93 yoshida)",
+  "house_id": "rohan-shohlari",
+  "weapons_and_artifacts": [
+    "Gúthwinë (Urush Doʻsti — poʻlat qilichi)",
+    "Firefoot (Otashoyoq — zotdor jangovar oti)",
+    "Oltin Yashil Rohan Qalqoni va Nayzasi"
+  ],
+  "primary_locations": ["edoras", "helms-deep", "minas-tirith"],
+  "textual_status": "author_published",
+  "uncertainty_notes": "Tolkien 'The Lord of the Rings' Ilovasi A (II: 'The House of Eorl') da taʼkidlaganidek, Théoden va uning oʻgʻli Théodred halok boʻlgach, Eorl xonadonining toʻgʻridan-toʻgʻri ota-oʻgʻil sulolasi tugadi. Taxt Théodenning singlisi Théodwynning oʻgʻli Éomerga oʻtdi va u Rohan tarixidagi Uchinchi Sulolaga asos soldi. Éomer Qirol Elessar (Aragorn) bilan qadimiy Eorl va Cirion qasamyodini yangiladi va uning sharafli hukmronligi davrida xalq unga 'Éomer Éadig' (Barakali / Omadli) deb nom berdi.",
+  "summary": "Éomund va Théodwynning oʻgʻli, Qirol Théodenning jiyani va Éowynning akasi. Rohan Sharqiy Markining 3-bosh marshali. Merry va Pippinni asir olgan Saruman Uruk-hailarini tor-mor etgan va dashtda Aragorn bilan uchrashgan. Helm darasi va Pelennor janglarida mislsiz jasorat koʻrsatgan. Théoden shahid boʻlgach, jang maydonida Rohan Qiroli deb eʼlon qilingan. Qora Darvoza jangida Aragorn bilan yonma-yon turgan va Toʻrtinchi davrda Rohanni 65 yil davomida tinchlik va qudrat bilan boshqargan buyuk shoh.",
+  "etymology": "Qadimgi ingliz tilida 'Éomer' — eoh ('jangovar ot') va mære ('mashhur, dongdor') soʻzlaridan tuzilgan boʻlib, 'Ot bilan dong taratgan' maʼnosini beradi. Uning laqabi 'Éadig' esa 'Omadli, Baxtli, Barakali' deganidir.",
+  "biography_sections": [
+    {
+      "title": "Sharqiy Mark Marshali va dashtdagi uchrashuv",
+      "content": "Éomer Uchinchi davrning 2991-yilida tavallud topgan. U oʻn bir yoshidaligida otasi Éomund orqlar tomonidan oʻldirildi, onasi Théodwyn esa gʻam-alamdan vafot etdi. U singlisi Éowyn bilan birga togʻasi Qirol Théoden qaramogʻida Meduseldda oʻgʻlidek tarbiyalandi.\n\nYoshligidanoq mohir chavandoz va mard jangchi sifatida tanilib, Sharqiy Markning bosh marshali boʻldi. 3019-yil fevralida u Grímaning amriga zid ravishda oʻz otryadi bilan Sarumanning Uruk-hailarini Fangorn etagida qirib tashladi. Orqaga qaytishda u 'Uch Ovchi' — Aragorn, Legolas va Gimli bilan uchrashdi. Aragornning olijanob nasabini tan olib, ularga ikkita zotdor ot — Arod va Hasufelni inʼom etdi."
+    },
+    {
+      "title": "Gríma tuhmati va Helm darasi mudofaasi",
+      "content": "Edorasga qaytgan Éomerni Gríma xiyonatda ayblab, hibsga oldirdi. Biroq Gandalf kelib Théodenni ozod qilgach, Éomer darhol zindondan chiqarilib, shohning oʻng qoʻli etib tayinlandi.\n\nHelm darasi qamalida Éomer Aragorn bilan birga darvoza ostidagi tor koʻprikda yalangʻochlangan qilichlar bilan dushmanning asosiy zarbasini qaytardilar. Jang davomida u Gimli bilan doʻstlashdi (Gimli uning hayotini qutqardi) va qamal oxirigacha mardona turib berdi."
+    },
+    {
+      "title": "Pelennordagi gʻazab va Qirollik toji",
+      "content": "Pelennor Maydonlari Jangida Éomer Rohirrim otliqlarining asosiy qanotini boshqardi. Qirol Théoden halok boʻlganini va singlisi Éowyn jonsiz yotganini koʻrgan Éomer qalbida cheksiz gʻazab va umidsizlik olovi yondi. U dubulgʻasini uloqtirib, Gúthwinë qilichini koʻtardi va: 'Oʻlim! Oʻlim! Oʻlim!' deb hayqirib, yolgʻiz oʻzi Mordor saflariga tashlandi.\n\nHaradrim va orqlar uni oʻrab olgan ogʻir daqiqada, daryo boʻyidan Aragorn qora kemalarda Gondor bayrogʻi bilan yetib keldi. Ikki doʻst jang maydonida qilichlarini bir-biriga urib birlashdilar va dushmanni batamom tor-mor qildilar. Théodenning vasiyatiga koʻra, Éomer Rohanning 18-qiroli deb eʼlon qilindi."
+    },
+    {
+      "title": "Birlashgan Qirollik bilan abadiy ittifoq va Toʻrtinchi Davr",
+      "content": "Éomer oʻz qoʻshini bilan Mordorning Qora Darvozasiga qarab yurdi va Uzuk yoʻq qilinguncha Aragorn bilan birga jangga boshchilik qildi. Qirol Elessar toj kiyish marosimida Éomer Eorl va Cirionning ming yillik qasamyodini qayta yangiladi: Rohan va Gondor abadiy doʻst va birodar boʻlib qolishi muhrlandi.\n\nÉomer Dol Amroth knyazi Imrahilning qizi Lothírielga uylandi va ularning Elfwine ismli oʻgʻli dunyoga keldi. U 65 yil davomida tinchlik, obodonchilik va adolat bilan hukmronlik qildi va Toʻrtinchi davrning 63-yilida 93 yoshida olamdan oʻtdi; uning oʻlim toʻshagida suyukli doʻsti Merry Brandybuck ham hozir boʻldi."
+    }
+  ],
+  "sources": [
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "The Riders of Rohan",
+      "page": "423"
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "The Battle of the Pelennor Fields",
+      "page": "841"
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "The Black Gate Opens",
+      "page": "887"
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "Appendix A: Annals of the Kings and Rulers (II: The House of Eorl)",
+      "page": "1069"
+    }
+  ],
+  "related_characters": [
+    "theoden",
+    "eowyn",
+    "aragorn",
+    "gandalf",
+    "gimli",
+    "legolas",
+    "faramir"
+  ],
+  "adaptations": [
+    {
+      "medium": "film",
+      "title": "The Lord of the Rings Film Trilogy",
+      "creator": "Peter Jackson",
+      "year": 2002,
+      "divergence_notes": "Filmda Karl Urban ijrosidagi Éomer jasur, keskin va sadoqatli jangchi sifatida tasvirlangan. Asosiy syujet farqi: filmda Éomer Edorasdan Gríma tomonidan batamom haydab yuboriladi va Helm darasiga jangning eng oxirida Gandalf bilan birga yordamga keladi (Erkenbrandning roli Éomerga berilgan); kitobda esa Éomer tun bo'yi Helm darasining o'zida Aragorn bilan yonma-yon turib mudofaa qilgan."
+    }
+  ]
+}

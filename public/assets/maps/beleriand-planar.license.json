@@ -1,0 +1,14 @@
+{
+  "map_id": "beleriand",
+  "title": "Beleriand va Shimoliy Oʻlkalar Tarixiy Planar Xaritasi",
+  "projection": "Planar Coordinate System (CRS.Simple)",
+  "dimensions": {
+    "width": 2048,
+    "height": 1536
+  },
+  "cartographer": "Eric Gaba (Sting) / Tolkien Olami Ilmiy Arxiv Moslashtiruvi",
+  "license": "CC-BY-SA-4.0 / Public Domain Scholar Archive",
+  "source_url": "https://commons.wikimedia.org/wiki/File:Beleriand_general_map-fr.svg",
+  "canon_basis": "The Silmarillion (1977) va Unfinished Tales (1980) geografik maʼlumotlari",
+  "provenance_notes": "J.R.R. Tolkien va Christopher Tolkienning asl chizmalari asosida tuzilgan ochiq litsenziyali ilmiy planar vektor xarita. Sun'iy intellekt yoki bolalarcha illyustratsiyalardan xoli holda, klassik ilmiy kartografiya me'yorlariga binoan yaratilgan."
+}

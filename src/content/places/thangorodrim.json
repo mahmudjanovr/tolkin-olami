@@ -1,0 +1,42 @@
+{
+  "id": "thangorodrim",
+  "name": "Thangorodrim",
+  "elvish_name": "Thangorodrim (Zulm Togʻlari)",
+  "type": "togʻ",
+  "region": "beleriand",
+  "coordinates": {
+    "map_id": "beleriand",
+    "x": 1020,
+    "y": 1420
+  },
+  "founded_era": "Daraxtlar davri",
+  "destroyed_era": "Birinchi davr 587",
+  "rulers": [
+    "Morgoth"
+  ],
+  "notable_events": [
+    "Maedhrosning zanjirband etilishi",
+    "Fingon va Torondor jasorati",
+    "Ancalagon the Black qulashi"
+  ],
+  "textual_status": "author_published",
+  "summary": "Thangorodrim — Angband eshiklari ustida Morgoth tomonidan hosil qilingan uchta bahaybat qora vulqon choʻqqisi. Kul, tutun va zaharli gazlar burqirab turgan bu choʻqqilar Gʻazab urushida qulagan Ancalagon the Black tanasi ostida yakson boʻlgan.",
+  "sources": [
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of the Return of the Noldor",
+      "page": "110",
+      "notes": "Thangorodrim choʻqqilari va Maedhros qismati."
+    }
+  ],
+  "description_sections": [
+    {
+      "title": "Zulmatning Uch Choʻqqisi",
+      "content": "Thangorodrim (Sindarincha: 'Zulmat Togʻlari') — Angband darvozasi tepasida Morgoth tomonidan yerosti chiqindilari, qora kul va qoyalardan koʻtarilgan uchta bahaybat qora vulqon choʻqqisidir. Ularning ustidan tunu-kun zaharli qora tutun chiqib, Beleriand osmonini quyoshdan toʻsib turgan.\n\nChoʻqqilarning biriga Morgoth Fëanorning toʻngʻich oʻgʻli Maedhrosni oʻng qoʻlidan zanjirband qilib osib qoʻygan edi; Fingon burgut Thorondor yordamida Maedhrosning qoʻlini kesib uni qutqarib olgan."
+    },
+    {
+      "title": "Ancalagon the Black qulashi",
+      "content": "Gʻazab Urushining soʻnggi pallasida Morgoth oʻzining soʻnggi dahshatli quroli — qanotli ajdarlar toʻdasini jangga tashladi. Ularning eng kattasi — qora ajdar Ancalagon the Black osmonda Eärendilning uchar kemasi Vingilot bilan toʻqnashdi.\n\nEärendil Ancalagonni oʻldirdi; bahaybat ajdarning jasadi osmondan qulab tushib, Thangorodrimning uchala choʻqqisini ham parchalab kul qildi."
+    }
+  ]
+}

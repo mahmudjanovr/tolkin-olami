@@ -1,0 +1,59 @@
+{
+  "id": "the-book-of-lost-tales-1",
+  "title_uz": "Yoʻqolgan Qissalar Kitobi: 1-qism",
+  "title_original": "The Book of Lost Tales, Part One",
+  "aliases": [
+    "The Book of Lost Tales 1",
+    "BoLT 1",
+    "HoME 1",
+    "The History of Middle-earth: Volume 1"
+  ],
+  "publication_year": 1983,
+  "publisher": "George Allen & Unwin",
+  "editor": "Christopher Tolkien",
+  "category": "textual_history",
+  "isbn": "978-0-04-823238-0",
+  "synopsis": "«The History of Middle-earth» (Oʻrta-yer Tarixi) turkumining birinchi jildi boʻlib, J.R.R. Tolkien 1916–1920-yillarda Birinchi Jahon urushi frontidan qaytgach yozgan Oʻrta-yer afsonalarining eng dastlabki qoʻlyozmalarini oʻz ichiga oladi. Asarda dengizchi Eriolning Tol Eressëa (Yolgʻiz Orol)dagi «Yoʻqolgan Oʻyin Koshonasi»ga kelishi va u yerdagi elflardan olam yaratilishi haqidagi qadimiy ertaklarni tinglashi tasvirlanadi.",
+  "cover_image": {
+    "src": "/images/books/the-book-of-lost-tales-1.webp",
+    "alt": "Yoʻqolgan Qissalar Kitobi 1-qism muqovasi",
+    "edition_title": "George Allen & Unwin 1983 First Edition (Archival Design)",
+    "publisher": "George Allen & Unwin",
+    "year": 1983,
+    "isbn": "978-0-04-823238-0",
+    "artist": "Christopher Tolkien (matnshunoslik loyihasi)",
+    "source": "Bibliografik arxiv dizayni (unverified authentic cover)"
+  },
+  "key_themes": [
+    "Mifologiyaning tugʻilishi va Angliya uchun maxsus afsonalar yaratish niyati",
+    "Eriol/Ælfwine vositachi obrazi orqali oʻtmish bilan zamon rishtasi",
+    "Valar, Melko va Daraxtlarning eng dastlabki ibtidoiy obrazlari",
+    "Gondolinning qulashi va Birinchi Jahon urushi ruhiy jarohatlari"
+  ],
+  "detailed_sections": [
+    {
+      "title": "Tarixiy zamin: Somme jangi transheyalaridan chiqqan mifologiya",
+      "content": "J.R.R. Tolkien 1916-yilgi Somme jangida kasallanib (trench fever) Angliyaga qaytgach, kasalxona va harbiy lagerlarda «Yoʻqolgan Qissalar Kitobi»ni yozishga kirishgan. Tolkien oʻz vatani Angliya uchun boy qadimiy mifologiya (yunon, kelt yoki skandinav afsonalari kabi) yoʻqligidan afsuslanib, uni noldan yaratishga ahd qilgan edi. Ushbu qoʻlyozmalar Oʻrta-yer mifologiyasining barcha keyingi shakllari (Silmarillion, Uzuklar Hukmdori) uchun poydevor vazifasini oʻtadi."
+    },
+    {
+      "title": "Tuzilishi va asosiy boblari: Yoʻqolgan Oʻyin Koshonasidan Gondolingacha",
+      "content": "Kitob dengizchi Eriolning Tol Eressëaga suzib borishi va «Kortirion» shahridagi «Yoʻqolgan Oʻyin Koshonasi» (The Cottage of Lost Play) mehmoniga aylanishi bilan boshlanadi. Elflar unga olamning yaratilishi («Ainur Musiqasi»), Valarning Oʻrta-yerga tushishi («Valar Kelishi»), Valinorning zanjirband qilinishi va Ikki Daraxtning yaralishi haqidagi ilk rivoyatlarni soʻzlab beradilar. Ushbu jildning eng choʻqqi nuqtasi 1916–1917 yillarda yozilgan «Gondolinning Qulashi» (The Fall of Gondolin) boʻlib, u Tolkien yozgan eng birinchi haqiqiy Oʻrta-yer qissasi sanaladi."
+    },
+    {
+      "title": "Christopher Tolkienning matnshunoslik tadqiqoti",
+      "content": "Christopher Tolkien otasining bir necha qatlamli, qalamda oʻchirilgan va qayta yozilgan qoralamalarini oʻnlab yillar davomida sinchiklab oʻrganib, matnlar xronologiyasini tikladi. Har bir bob ortidan batafsil sharhlar, tahririy eslatmalar va qoralamalar oʻrtasidagi tafovutlar keltiriladi. Ushbu kitob orqali oʻquvchi muallif dahosining qanday shakllanganini, qahramonlar ismlari va tushunchalarining evolyutsiyasini bevosita kuzatishi mumkin."
+    },
+    {
+      "title": "Oʻzbek kitobxoni uchun ahamiyati va tarjima istiqbollari",
+      "content": "«Yoʻqolgan Qissalar Kitobi» Oʻrta-yerni chuqur oʻrganuvchi kitobxonlar uchun birlamchi manbadir. Undagi arxaik ingliz tili, qadimiy sheʼriy ohang va ramzlar oʻzbek tiliga oʻgirilganda qadimgi turkiy dostonlar (masalan, «Oʻgʻuznoma» va «Devonu lugʻotit turk») leksik boyligidan foydalanishni talab etadi. Asar hozircha oʻzbek tiliga toʻliq tarjima qilinmagan boʻlib, ilmiy nashr sifatida kelajakda tarjima qilinishi rejalashtirilmoqda."
+    }
+  ],
+  "uzbek_editions": [
+    {
+      "title": "Yoʻqolgan Qissalar Kitobi: 1-qism",
+      "status": "untranslated",
+      "notes": "Oʻzbek tilida rasmiy nashr qilinmagan. Asarning matnshunoslik tabiati akademik izohlar bilan nashr etilishini talab qiladi."
+    }
+  ],
+  "translation_status_summary": "Hozircha oʻzbek tilida nashr qilinmagan. Filologik va ilmiy tarjima loyihasi talab etiladi."
+}

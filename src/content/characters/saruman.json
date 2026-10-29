@@ -1,0 +1,109 @@
+{
+  "id": "saruman",
+  "name": "Saruman",
+  "original_name": "Curumo",
+  "children": [],
+  "aliases": [
+    "Curunír (Mohir Inson)",
+    "Oq Saruman (Saruman the White)",
+    "Koʻp Rangli Saruman (Saruman of Many Colours)",
+    "Sharkey (Qari Kishi / Boshliq)",
+    "Isengard Jodugari"
+  ],
+  "titles": [
+    "Oq Kengash Boshligʻi (sobiq)",
+    "Istari (Sehrgarlar) Oliy Yoʻlboshchisi (sobiq)",
+    "Orthanc Qora Minorasi Hukmdori"
+  ],
+  "race": "ainur",
+  "sub_race": "Maia (Istari)",
+  "culture": "Aulë Maiari / Isengard",
+  "birth_year": "Dunyodan avval (Ainur Musiqasi)",
+  "death_year": "Uchinchi davr 3019 (Shirda oʻz malaychasi Gríma Wormtongue tomonidan oʻldirilgan)",
+  "weapons_and_artifacts": [
+    "Orthanc Palantíri (Koʻrish toshi)",
+    "Sehrgar hassasi (Gandalf tomonidan parchalangan)",
+    "Isengard poroxi va mexanik qamal qurollari"
+  ],
+  "primary_locations": [
+    "isengard",
+    "hobbiton",
+    "bywater"
+  ],
+  "textual_status": "author_published",
+  "uncertainty_notes": "Tolkien 'Unfinished Tales' ('The Istari') asarida Curumoning xiyonat ildizlarini tahlil qilgan: u Aulë maktabining eng iqtidorli Maiasi boʻlib, metallar, toshlar va mexanizmlarga boʻlgan chuqur qiziqishi uni qaysidir maʼnoda Sauronga yaqinlashtirgan. Uning magʻrurligi Gandalfga nisbatan ichki hasadni uygʻotgan (chunki Galadriel dastlab Oq Kengash boshligʻi sifatida Gandalfni koʻrishni istagan edi). Saruman yovuzlikka yaxshilik qilish niyatida — qudrat orqali tartib oʻrnatish istagida yuzlangan, biroq oxir-oqibat oʻzi nafratlangan zulmat quliga aylangan.",
+  "summary": "Aulë xizmatidagi eng ulugʻ Maia — Curumo. Oʻrta-yerga joʻnatilgan besh Istari yetakchisi va Oq Kengash boshligʻi. Qadimiy Orthanc qora minorasiga joylashib, Qudrat Uzuklari tarixini oʻrgangan. Biroq Palantír orqali Sauron bilan bogʻlanib, uning irodasiga boʻysungan va xiyonat yoʻliga kirgan. Uruk-hai armiyasini tuzib, Rohanni yoʻq qilishga uringan, ammo Entlar tomonidan qamal qilinib, Gandalf tomonidan hassasi sindirilgan. Halqa Urushi soʻngida Shirni vayron qilishga urinib, Bag End ostonasida oʻldirilgan fojiali sehrgar.",
+  "etymology": "Qadimgi ingliz tilida 'Saruman' — searu ('mahorat, hunar, hiyla, mexanizm') va man ('inson') soʻzlaridan olingan boʻlib, 'Mohir / Hiylakor Inson' maʼnosini anglatadi. Sindarin tilidagi 'Curunír' esa curu ('sanʼat, mahorat') va dîr ('erkak, inson') soʻzlariga borib taqaladi. Uning asl Valinordagi Quenya ismi 'Curumo' ham aynan 'Mohir Usta' deganidir.",
+  "biography_sections": [
+    {
+      "title": "Aulë Maiari Curumo va Istari yetakchisi",
+      "content": "Saruman (sindarincha Curunír, asl ismi Curumo) Valinorda Temirchi Aulë xizmatidagi eng iqtidorli Maia edi. Uchinchi davrning 1000-yilida Oʻrta-yerga joʻnatilgan besh Istari orasida u 'Birinchi' va eng qudratlisi deb tan olindi. U oppoq libos kiygan, sochi va soqoli qora boʻlib, tengsiz aql va sehrli notiqlik qudratiga ega edi.\n\nU uzoq yillar Sharq yerlarida kezdi, soʻngra Oq Kengashga rahbar etib saylandi. 2759-yilda Gondor Bosh Noibi Berendan qadimiy Númenor qalʼasi boʻlgan Isengardning (Angrenost) kalitlarini qabul qilib, uning markazidagi pishiq qora toshdan qurilgan Orthanc minorasida oʻz qarorgohini oʻrnatdi."
+    },
+    {
+      "title": "Hokimiyat vasvasasi va Palantír tuzogʻi",
+      "content": "Saruman koʻp asrlar davomida Sauronning uzuk yasash sanʼatini chuqur oʻrgandi. Biroq u dushmanning usullarini oʻrgangani sari, oʻzi ham bilmagan holda uning ruhiyatiga yaqinlasha boshladi. U Yagona Uzukni Saurondan avval topib, Oʻrta-yerni oʻz xohishicha 'tartibga solish' vasvasasiga tushdi.\n\nOrthanc minorasida saqlangan qadimiy koʻruvchi tosh — Palantírni ishlatishga jurʼat etgan Saruman, Barad-dûrdagi Sauronning qora irodasi bilan toʻqnashdi. Oʻz aqliga haddan ziyod ishongan sehrgar sekin-asta Qora Hukmdorning taʼsiriga tushib, uning yashirin ittifoqchisiga va xiyonatkoriga aylandi."
+    },
+    {
+      "title": "Isengardning sanoatlashtirilishi va Uruk-hai",
+      "content": "Saruman bir paytlar yam-yashil boʻlgan Isengard bogʻlarini kesib, yerosti ustaxonalari, temirchilik oʻchoqlari va qurol-aslaha zavodlariga aylantirdi. Tolkien oʻz asarlarida Sarumanni 'tabiatni yoʻq qiluvchi sovuq mashinasozlik va sanoatlashuv' timsoli sifatida tasvirlagan.\n\nU orklar va insonlarni chatishtirib, quyosh nuridan qoʻrqmaydigan, ulkan va shafqatsiz jangchilar zoti — Uruk-hailarni yaratdi. Ularning qalqonlariga Oq Qoʻl (White Hand) tamgʻasini bostirib, qoʻshni Rohan qirolligini butkul yakson qilish uchun oʻn minglik qoʻshin joʻnatdi."
+    },
+    {
+      "title": "Hornburgdagi magʻlubiyat va Entlarning gʻazabi",
+      "content": "3019-yil martida Sarumanning ulkan armiyasi Hornburg (Helm's Deep) qalʼasi ostida Rohirrim va Aragorn tomonidan tor-mor qilindi. Shu bilan birga, daraxtlarning qirqilishidan gʻazablangan Treebeard boshchiligidagi Entlar Isengardga bostirib kirdi.\n\nEntlar Isengardning tosh toʻgʻonlarini buzib, daryo suvlarini yerosti pechlariga oqizdi va barcha zavodlarni suvga gʻarq qildi. Saruman oʻzining pishiq Orthanc minorasida qamalib qoldi. Gandalf uning sehrgar hassasini sindirib, uni Istari ordeni va Kengashdan quvdi."
+    },
+    {
+      "title": "Shayr fojiasi va pastkash intiqom",
+      "content": "Urush tugagach, Entlar rahm qilib qamoqdan boʻshatgan Saruman oʻz xizmatkori Gríma Wormtongue bilan birga qashshoq gadoy qiyofasida Shirga yoʻl oldi. U yerda 'Sharkey' nomi bilan xobbitlar ustidan qora zulm oʻrnatdi, Shirning goʻzal daraxtlarini kestirib, moʻrili iflos tegirmonlar qurdirdi.\n\nFrodo va doʻstlari qaytib kelib Suvboʻyi jangida uning qaroqchilarini yengdilar. Frodo Sarumanning joniga qasd qilmaslikni buyurgan boʻlsa-da, xoʻrlangan va azoblangan Gríma Wormtongue Bag End eshigi oldida Sarumanning tomogʻiga pichoq tortib oʻldirdi."
+    },
+    {
+      "title": "Ruhning intihosi va falsafiy xulosa",
+      "content": "Saruman oʻlgan zahoti uning jasadidan kulrang tuman kabi ruh koʻtarildi. Bu ruh Boqiy Gʻarbdagi Valinor tomon intilib boqdi, biroq Gʻarbdan esgan sovuq shamol uni orqaga surib, yoʻq qilib yubordi. U oʻzining xiyonati va kibri tufayli Valinordan ham, Oʻrta-yerdan ham mahrum boʻlib, abadiy sarsonlikka mahkum etildi."
+    }
+  ],
+  "sources": [
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "The Council of Elrond",
+      "page": "252"
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "The Voice of Saruman",
+      "page": "563"
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "The Scouring of the Shire",
+      "page": "985"
+    },
+    {
+      "book_slug": "unfinished-tales",
+      "chapter": "The Istari",
+      "page": "389"
+    }
+  ],
+  "related_characters": [
+    "gandalf",
+    "sauron",
+    "aragorn",
+    "theoden",
+    "frodo-baggins",
+    "elrond",
+    "galadriel"
+  ],
+  "adaptations": [
+    {
+      "medium": "film",
+      "title": "The Lord of the Rings Film Trilogy",
+      "creator": "Peter Jackson",
+      "year": 2001,
+      "divergence_notes": "Filmda afsonaviy Sir Christopher Lee gavdalantirgan Saruman kino tarixidagi eng qudratli yovuz obrazlardan biridir. Asosiy syujet tafovuti: film kengaytirilgan talqinida Saruman Isengarddagi Orthanc minorasi cho'qqisida Gríma tomonidan pichoqlanib, pastdagi g'ildirakka qulab halok bo'ladi; kitobda esa u qochib ketadi va 'Shirning xarobasi' (Scouring of the Shire) bobida aynan Bag End ostonasida halok bo'ladi (filmda bu butun bob tushirib qoldirilgan)."
+    }
+  ],
+  "image": {
+    "src": "/images/characters/saruman.webp",
+    "src_thumb": "/images/characters/saruman-thumb.webp",
+    "alt": "Saruman koʻp jiloli oppoq libosda Orthanc minorasi tepasida, qoʻlida Palantír toshi bilan",
+    "caption": "Saruman Oq — Istari ordeni sobiq boshligʻi, Orthanc minorasi sohibi va Oq Kengash raisi"
+  }
+}

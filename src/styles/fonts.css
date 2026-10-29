@@ -1,0 +1,55 @@
+/* ==========================================================================
+   TOLKIEN OLAMI — Lokal Shriftlar va Tipografiya Zanjiri
+   Litsenziya: SIL Open Font License, Version 1.1 (OFL 1.1)
+   Manbalar: EB Garamond (Sarlavhalar), Literata (Asosiy matn), Inter (Interfeys)
+   Offline ishlash: Vite orqali to'liq lokal WOFF2 sifatida paketlanadi
+   ========================================================================== */
+
+/* EB Garamond (Editorial Headings) */
+@import '@fontsource/eb-garamond/400.css';
+@import '@fontsource/eb-garamond/400-italic.css';
+@import '@fontsource/eb-garamond/600.css';
+@import '@fontsource/eb-garamond/700.css';
+
+/* Literata (Editorial Body Text) */
+@import '@fontsource/literata/400.css';
+@import '@fontsource/literata/400-italic.css';
+@import '@fontsource/literata/600.css';
+@import '@fontsource/literata/700.css';
+
+/* Inter (UI, Navigation, Badges, Tables, Forms) */
+@import '@fontsource/inter/400.css';
+@import '@fontsource/inter/500.css';
+@import '@fontsource/inter/600.css';
+
+/* ==========================================================================
+   TENGWAR ANNATAR — Canonical Calligraphy of the One Ring
+   Author: Johan Winge (2004–2005), distributed as freeware
+   Format: WOFF & TTF bundled locally in /fonts/tengwar/
+   ========================================================================== */
+@font-face {
+  font-family: 'Tengwar Annatar';
+  src: url('/fonts/tengwar/tngani-webfont.woff') format('woff'),
+       url('/fonts/tengwar/tngani.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tengwar Annatar';
+  src: url('/fonts/tengwar/tngan-webfont.woff') format('woff'),
+       url('/fonts/tengwar/tngan.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --font-serif-heading: 'EB Garamond', Garamond, 'Georgia', serif;
+  --font-serif-body: 'Literata', 'Merriweather', 'Georgia', serif;
+  --font-sans-ui: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono-scholarly: 'Fira Code', 'Courier New', monospace;
+  --font-tengwar-script: 'Tengwar Annatar', 'Tengwar Annatar Italic', serif;
+}
+

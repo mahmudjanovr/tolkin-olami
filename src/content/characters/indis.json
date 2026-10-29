@@ -1,0 +1,99 @@
+{
+  "id": "indis",
+  "name": "Indis Goʻzal",
+  "original_name": "Indis",
+  "spouse": "Finwë",
+  "children": [
+    "Findis (qizi)",
+    "Fingolfin (Nolofinwë)",
+    "Írimë (Lalwen, qizi)",
+    "Finarfin (Arafinwë)"
+  ],
+  "aliases": [
+    "Indis the Fair (Goʻzal Indis)",
+    "Noldor Oliy Malikasi",
+    "Vanyar Malikasi"
+  ],
+  "titles": [
+    "Noldor Oliy Malikasi",
+    "Tirion Qirolichasi",
+    "Vanyar Oliyxonimi"
+  ],
+  "race": "elflar",
+  "sub_race": "Vanyar",
+  "culture": "Taniquetil (Vanyar) / Tirion (Noldor)",
+  "birth_year": "Daraxtlar davri",
+  "death_year": "Boqiy (Valinordagi Vanyar xalqi orasida yashaydi)",
+  "house_id": "finwe-xonadoni",
+  "weapons_and_artifacts": [],
+  "primary_locations": ["tirion"],
+  "textual_status": "posthumous_edited",
+  "uncertainty_notes": "Matnshunoslik tahlili: Ilk yozuvlar va Christopher Tolkien tahriridagi 'The Silmarillion' nashrida Indis Vanyar Oliy Qiroli Ingwëning singlisi deb atalgan. Biroq J.R.R. Tolkienning keyingi qoʻlyozmalarida ('The Shibboleth of Fëanor', HoME XII hamda 'Morgoth's Ring', HoME X) u Ingwëning jiyani — uning singlisining qizi sifatida qayd etilgan. Shuningdek, Finwë va Indis farzandlarining soni va tugʻilish ketma-ketligi turli qoralama bosqichlarida oʻzgargan: ilk nusxalarda faqat Fingolfin va Finarfin boʻlgan boʻlsa, soʻnggi tahrirlarda ikki qiz — toʻngʻich Findis hamda Írimë (Lalwen) qoʻshilgan.",
+  "summary": "Vanyar Oliy Qiroli Ingwëning yaqin qarindoshi, oʻzining tengsiz goʻzalligi, oltin sochlari va yuksak qaddi-qomati bilan tanilgan Vanyar malikasi. Míriel Þerindë vafotidan soʻng Noldor Oliy Qiroli Finwëning ikkinchi rafiqasiga aylangan. Fingolfin, Finarfin, Findis va Írimëning onasi boʻlib, uning vujudi orqali Vanyar qoni va Ikki Daraxt nurini eslatuvchi oltin sochlar sulolaga (xususan Finarfin va Galadrielga) oʻtgan.",
+  "etymology": "Quenya tilida 'Indis' ismi qadimgi elvish *ndissa ('olijanob ayol, kelin') yoki indo ('koʻngil, ruhiy iroda, qalb') oʻzagidan kelib chiqqan boʻlib, 'mard, ochiq koʻngilli va oliyjanob ayol' degan maʼnoni anglatadi. Tolkienning 'The Shibboleth of Fëanor' asarida bu ism uning ruhiy sofligi va qatʼiyatli feʼl-atvorini ifodalashi taʼkidlangan.",
+  "biography_sections": [
+    {
+      "title": "Vanyar xalqi orasidagi yoshligi va Finwëga yashirin muhabbat",
+      "content": "Indis Daraxtlar davrida Valinorda voyaga yetgan eng ehtiromli Vanyar malikalaridan biri edi. U barcha elflarning Oliy Qiroli Ingwëning yaqin qarindoshi boʻlib, Taniquetil etaklarida, Valar musiqasi va Varda sharafiga kuylanadigan madhiyalar muhitida oʻsgan. U uzun boʻyli, harakatlari magʻrur va sochlari oltindek tovlanuvchi goʻzal boʻlgan.\n\nFinwë hali Míriel Þerindë bilan turmush qurmasidan avvalroq Indis uni koʻrgan va qalbida chuqur, ammo soʻzsiz muhabbat saqlagan edi. Finwë Mírielga uylangach, Indis hech qanday daʼvo qilmay, oʻz muhabbatini ichiga yutib, Taniquetil togʻida yolgʻiz hayot kechirishda davom etdi."
+    },
+    {
+      "title": "Finwë va Míriel qoidasi hamda ikkinchi nikoh",
+      "content": "Fëanor tugʻilgach, Mírielning ruhi tanasini tark etib, Mandos zallariga ketdi va u yerdan qaytishdan qatʼiyan bosh tortdi. Qaygʻudan ado boʻlgan Finwë uzoq vaqt motam tutdi. Elflar tabiati boʻyicha nikoh abadiy va yagona boʻlgani sababli, tirik elfning ikkinchi bor oila qurishi qatʼiyan man etilgan edi.\n\nBiroq Manwë va Mandos kengashi tomonidan chiqarilgan mashhur 'Finwë va Míriel qoidasi' (Statute of Finwë and Míriel) bu tugunni yechdi: Míriel dunyo oxirigacha Mandosda qolishga va jismoniy vujudga qaytmaslikka ahd qilgach, Finwëga ikkinchi nikohga ruxsat berildi. Shundan soʻng Finwë Indisga sovchi qoʻydi. Ularning toʻyi butun Valinorda katta bayram sifatida nishonlandi va Indis Tiriondagi shoh saroyiga koʻchib keldi."
+    },
+    {
+      "title": "Farzandlar va Vanyar irsiyatining Noldorga oʻtishi",
+      "content": "Indis Finwëning qaygʻuli saroyiga yana yorugʻlik, quvonch va kuy-qoʻshiqlar olib kirdi. Bu nikohdan toʻrt nafar farzand dunyoga keldi: Findis (toʻngʻich qiz), Nolofinwë (Fingolfin), Írimë Lalwen (ikkinchi qiz) va Arafinwë (Finarfin).\n\nIndis orqali Noldor shohona xonadoniga Vanyar qoni kirib keldi. Finarfin onasining muloyim tabiati, donoligi va mashhur oltin sochlarini toʻliq meros qilib oldi. Finarfin orqali esa bu bebaho oltin sochlar uning qizi Galadrielga oʻtdi — hatto Fëanorning oʻzi ham Silmarillarni yaratishda Galadrielning ana shu Vanyar nuri bilan porlab turgan sochlaridan ilhomlangan edi. Fingolfin esa onasidan yuksak qaddi-qomat va yengilmas jismoniy quvvatni meros qilib olgan."
+    },
+    {
+      "title": "Fëanorning nafrati va oilaviy ziddiyatlar",
+      "content": "Biroq bu oilaviy baxt toʻliq emas edi. Finwëning toʻngʻich oʻgʻli Fëanor Indisni ham, uning bolalarini ham hech qachon qabul qilmadi. U ushbu nikohni oʻz onasi Míriel xotirasiga xiyonat deb bildi va oʻgay onasi bilan bir uyda yashashdan bosh tortib, Tirionni tark etdi hamda sanʼat va hunarmandchilikka berildi.\n\nIndis oʻgay oʻgʻlining sovuqligi va nafratiga sabr-toqat va oliyjanoblik bilan javob berdi, hech qachon Finwëni unga qarshi qayramadi. Shunga qaramay, Mandos qasrlaridan ozod etilgan Melkor aynan shu oilaviy yoriqdan foydalandi. U Fëanorning qulogʻiga Indisning oʻgʻillari Noldor taxtini va Fëanorning qonuniy merosini tortib olmoqchi ekanligi haqida yolgʻon gaplarni quyib, Noldor oʻrtasida buyuk nifoq urugʻini sochdi."
+    },
+    {
+      "title": "Finwëning qatli, Noldor isyoni va Taniquetilga qaytish",
+      "content": "Daraxtlar davrining 1495-yilida Melkor va Ungoliant Ikki Daraxtni zaharlab, Valinorni qorongʻulikka burkadi. Soʻng Melkor Formenosga bostirib kirib, Finwëni shafqatsizlarcha qatl etdi va Silmarillarni oʻgʻirlab ketdi. Sevimli turmush oʻrtogʻining fojiali oʻlimi Indisning qalbini chil-parchin qildi.\n\nFëanor oʻzining mashhur dahshatli qasamyodini ichib, Noldor xalqini Oʻrta-yerga surgun va qasos sari boshlaganida, Indis bu qonli va isyonkor harakatga mutlaqo qoʻshilmadi. U hatto oʻz oʻgʻillari Fingolfin va Finarfinning Oʻrta-yerga ketishini ham qoʻllab-quvvatlamadi (Finarfin keyinchalik Valinorga qaytib keldi). Chuqur motamga botgan Indis toʻngʻich qizi Findis bilan birga Tirionni butunlay tark etdi va oʻzining tugʻishgan xalqi — Vanyar orasiga, Taniquetil togʻi etaklariga qaytdi. U umrining qolgan qismini Valar huzurida, tinchlik va ibodatda oʻtkazdi."
+    }
+  ],
+  "image": {
+    "src": "/images/characters/indis.webp",
+    "src_thumb": "/images/characters/indis-thumb.webp",
+    "alt": "Indis Goʻzal — oltin sochli Vanyar malikasi va Noldor Oliy Malikasi",
+    "caption": "Indis Goʻzal — Finwëning ikkinchi rafiqasi, Fingolfin va Finarfinning onasi"
+  },
+  "sources": [
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of Eldamar and the Princes of the Eldalië",
+      "page": "59-63"
+    },
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of Fëanor and the Unchaining of Melkor",
+      "page": "64-68"
+    },
+    {
+      "book_slug": "morgoths-ring",
+      "chapter": "Laws and Customs among the Eldar",
+      "page": "207-254"
+    },
+    {
+      "book_slug": "the-peoples-of-middle-earth",
+      "chapter": "The Shibboleth of Fëanor",
+      "page": "331-366"
+    }
+  ],
+  "related_characters": [
+    "finwe",
+    "miriel",
+    "feanor",
+    "fingolfin",
+    "finarfin",
+    "galadriel",
+    "finrod",
+    "fingon",
+    "turgon",
+    "manwe",
+    "varda",
+    "mandos"
+  ],
+  "adaptations": []
+}

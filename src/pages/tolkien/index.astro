@@ -1,0 +1,184 @@
+---
+import EditorialLayout from '@/layouts/EditorialLayout.astro';
+
+const breadcrumbs = [
+  { label: 'J.R.R. Tolkien' },
+];
+---
+
+<EditorialLayout
+  title="John Ronald Reuel Tolkien"
+  category="Muallif va Ilmiy Meros"
+  description="Oksford professori, komparativ filolog, mifologiya yaratuvchisi J.R.R. Tolkienning hayot yoʻli va ilmiy faoliyati."
+  breadcrumbs={breadcrumbs}
+>
+  <div class="author-biography-content">
+    <p class="section-lead">
+      John Ronald Reuel Tolkien (1892–1973) — ingliz filologi, Oksford universiteti professori,
+      qadimgi va oʻrta ingliz tili boʻyicha yirik mutaxassis hamda zamonaviy fentezi adabiyotining otasi.
+    </p>
+
+    <!-- Asosiy Biografik Havola Bannari -->
+    <div class="featured-bio-banner">
+      <div class="banner-content">
+        <span class="banner-label">Toʻliq Ilmiy Monografiya</span>
+        <h3>J.R.R. Tolkien: Hayot Yoʻli, Oksford va Mifologik Meros</h3>
+        <p>Bolalik yillari, Somme jangi, Inklings doirasi va Angliya uchun maxsus mifologiya yaratish missiyasining toʻliq tarjimayi holi.</p>
+        <a href="/tolkien/tarjimai-hol/" class="banner-link">
+          Kengaytirilgan biografiyani oʻqish →
+        </a>
+      </div>
+    </div>
+
+    <div class="biography-blocks">
+      <div class="bio-block">
+        <h3>Ilmiy Faoliyat va Oksford</h3>
+        <p>
+          Tolkien Leeds universitetida ingliz tili professori, keyinchalik Oksfordning Pembroke kollejida
+          anglo-sakson tili boʻyicha Rawlinson and Bosworth professori, soʻngra Merton kollejida ingliz tili
+          va adabiyoti professori boʻlib ishlagan. Uning "Beowulf: The Monsters and the Critics" maʼruzasi
+          Beowulf dostonini adabiy tahlil qilishda inqilobiy burilish yasagan.
+        </p>
+        <a href="/tolkien/filologiya-va-beowulf/" class="inline-study-link">
+          Filologik metod va «Beowulf» tadqiqotini oʻqish →
+        </a>
+      </div>
+
+      <div class="bio-block">
+        <h3>Sub-creation (Quyi-yaratilish) Nazariyasi</h3>
+        <p>
+          Tolkien oʻzining mashhur "On Fairy-Stories" (Sehrli ertaklar haqida) essesida insonning badiiy toʻqima
+          yaratish qobiliyatini ilohiy ijodning aksi — "Sub-creation" deb ataydi. Mifologiya va ertaklar haqiqatdan
+          qochish (escapism) emas, balki haqiqatni chuqurroq anglash va ruhiy tiklanish (recovery) vositasidir.
+        </p>
+        <a href="/maqolalar/sub-creation-nazariyasi/" class="inline-study-link">
+          Nazariyaning toʻliq falsafiy tahlili →
+        </a>
+      </div>
+
+      <div class="bio-block">
+        <h3>Christopher Tolkien Merosi</h3>
+        <p>
+          Professor vafotidan soʻng uning oʻgʻli Christopher Tolkien (1924–2020) otasining tartibsiz qoralamalarini
+          qirq yildan ortiq vaqt davomida tizimlashtirib, dunyo adabiyotiga "The Silmarillion" va 12 jildlik
+          "The History of Middle-earth"dek monumental durdonalarni taqdim etdi.
+        </p>
+        <a href="/maqolalar/legendarium-matn-tarixi/" class="inline-study-link">
+          Qoʻlyozmalar evolyutsiyasi va matn tarixi tahlili →
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div slot="margin">
+    <div class="margin-card">
+      <h3 class="margin-title">Asosiy Manba</h3>
+      <p>
+        Biografik tahlillarda Humphrey Carpenterning "J.R.R. Tolkien: A Biography" (1977) asari asos qilib olinadi.
+      </p>
+    </div>
+    <div class="margin-card">
+      <h3 class="margin-title">Maktublar Korpusi</h3>
+      <p>
+        Tolkienning shaxsiy dunyoqarashi va Legendarium falsafasi uning 354 ta rasmiy chop etilgan maktublarida bayon qilingan.
+      </p>
+    </div>
+  </div>
+</EditorialLayout>
+
+<style>
+  .section-lead {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+  }
+
+  .featured-bio-banner {
+    background-color: var(--color-bg-elevated);
+    border: 1px solid var(--color-border-subtle);
+    border-left: 3px solid var(--color-brass);
+    padding: 1.5rem;
+    border-radius: 3px;
+    box-shadow: var(--shadow-sm);
+    margin-bottom: 2.5rem;
+  }
+
+  .banner-label {
+    font-family: var(--font-sans-ui);
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-accent-gold-text);
+    display: block;
+    margin-bottom: 0.35rem;
+  }
+
+  .featured-bio-banner h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--color-text-primary);
+  }
+
+  .featured-bio-banner p {
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    color: var(--color-text-secondary);
+    margin-bottom: 1rem;
+  }
+
+  .banner-link {
+    font-family: var(--font-sans-ui);
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--color-link);
+    text-decoration: none;
+  }
+
+  .banner-link:hover {
+    text-decoration: underline;
+  }
+
+  .biography-blocks {
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+  }
+
+  .bio-block {
+    background-color: var(--color-bg-elevated);
+    border: 1px solid var(--color-border-subtle);
+    padding: 1.25rem 1.5rem;
+    border-radius: 3px;
+    box-shadow: var(--shadow-sm);
+  }
+
+  .bio-block h3 {
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--color-text-primary);
+  }
+
+  .bio-block p {
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    color: var(--color-text-secondary);
+    margin: 0;
+  }
+
+  .inline-study-link {
+    display: inline-block;
+    margin-top: 0.75rem;
+    font-family: var(--font-sans-ui);
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: var(--color-link);
+    text-decoration: none;
+  }
+
+  .inline-study-link:hover {
+    text-decoration: underline;
+  }
+</style>

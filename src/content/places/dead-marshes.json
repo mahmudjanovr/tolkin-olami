@@ -1,0 +1,46 @@
+{
+  "id": "dead-marshes",
+  "name": "Oʻlik Botqoqliklar (Dead Marshes)",
+  "elvish_name": "Nindalf va Dagorlad botqoqliklari",
+  "type": "oʻlka",
+  "region": "orta-yer",
+  "coordinates": {
+    "map_id": "orta-yer",
+    "x": 1245,
+    "y": 765
+  },
+  "founded_era": "Ikkinchi davr 3434 (Dagorlad jangidan soʻng)",
+  "rulers": [],
+  "notable_events": [
+    "Soʻnggi Ittifoqning Dagorlad jangida halok boʻlgan jangchilar qabristonining botqoqlik ostida qolishi",
+    "Uchinchi davr 3019-yil martida Frodo va Samning Gollum yoʻlboshchiligida botqoqlikdan yashirin oʻtishi"
+  ],
+  "textual_status": "author_published",
+  "summary": "Emyn Muil qoyaliklari sharqida va Dagorlad jang maydoni gʻarbida yastanib yotgan ulkan, zaharli va tumanli botqoqlik. Ikkinchi davr oxiridagi Dagorlad jangida halok boʻlgan elflar, insonlar va orklarning qabrlari asrlar oʻtib botqoqlik suvlariga gʻarq boʻlgan; suv tubida arvoh chiroqlari va oʻliklarning chehralari miltillab koʻrinib turadi.",
+  "sources": [
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "The Passage of the Marshes",
+      "page": "626",
+      "notes": "Frodo, Sam va Gollumning Oʻlik Botqoqliklardan oʻtishi va arvoh mashʼalalari tasviri."
+    }
+  ],
+  "description_sections": [
+    {
+      "title": "Oʻlik Botqoqliklar: Urush va botqoq siri",
+      "content": "Dead Marshes (Oʻlik Botqoqliklar) — Emyn Muil togʻlaridan sharqda, Dagorlad jang maydoni etagida joylashgan cheksiz, tumanli va zaharli botqoqlikdir. Asrlar davomida botqoqlik kengayib, Soʻnggi Ittifoq urushidagi Dagorlad jangida halok boʻlgan elflar, insonlar va oʻrklarning qabrlarini oʻz domiga tortgan.\n\nBotqoqlik suvlari ostida chirimagan jasadlar — qurollari va ochiq koʻzlari bilan manguga qotib qolgan yuzlar koʻrinib turadi. Suv yuzasida aldamchi shamchiroqlar (will-o'-the-wisp) miltillab yonadi."
+    },
+    {
+      "title": "Gollumning xobbitlarni botqoqlikdan olib oʻtishi",
+      "content": "3019-yil mart oyida Gollum Frodo va Samwiseni Nazgûllar koʻzidan yashirish uchun aynan Oʻlik Botqoqliklar orqali olib oʻtdi. Gollum ularga aldamchi chiroqlarga qaramaslikni va suvga teginmaslikni qatʼiy uqtirdi.\n\nFrodo suv tubidagi elflar va insonlarning fojiaviy yuzlariga termulib, sehrli gipnoz domiga tushib qolayozdi, ammo Samwise uni hushiga keltirdi. Ular qorongʻu tuman ostida botqoqlikni eson-omon kesib oʻtib, Mordor chegaralariga yetib bordilar."
+    },
+    {
+      "title": "Dagorlad jangi sharpalari va zaharli tumanlar",
+      "content": "O'lik Botqoqliklar (Dead Marshes) Ikkinchi Davrdagi So'nggi Ittifoq Urushining eng qonli to'qnashuvi bo'lgan Dagorlad maydoni yonida joylashgan. Asrlar davomida botqoqlik kengayib, halok bo'lgan minglab elflar, insonlar va o'rklarning qabrlarini o'z bag'riga yutib yuborgan. Botqoq suvlari ostida halok bo'lgan jangchilarning jasadlari buzilmasdan, go'yo kecha o'lgandek yotadi; ularning yuzlarida qadimiy azob va g'azab qotib qolgan. Botqoq uzra yonuvchi 'shamchiroqlar' (marhamatsiz olovlar) sayohatchilarni o'ziga rom etib, tubsiz balchiqqa tortishga urinadi."
+    },
+    {
+      "title": "Sauron ta'siri, tumanlar va botqoq ruhiyatlari",
+      "content": "O'lik Botqoqliklar ustida doimo og'ir, bo'g'uvchi tuman suzib yuradi; u yerda qushlar sayramaydi, baliqlar yashamaydi va faqat zaharli o'tlar o'sadi. Suv yuzasidagi chiroqlar – bu aldov bo'lib, ularga qarab borgan sayohatchi o'z aqlini yo'qotadi. Gollum xobbitlarni bu botqoqlikdan olib o'tayotganda, ularni 'ko'zlarga qaramaslikka' qattiq ogohlantirgan edi. Bu botqoq O'rta-yer tarixidagi eng fojiali janglarning tirik la'nati bo'lib, urushning mudhish va sovuq xotirasini asrlar davomida saqlab turdi. Bu botqoqliklar oʻzining sirli nurlari va qadimiy jasadlari bilan Uchinchi Davrda Oʻrta-yerning eng dahshatli va aylanib oʻtilishi zarur boʻlgan laʼnati hududi boʻlib qoldi. Frodo va Sam bu yerdan faqat Gollumning botqoqni besh qoʻldek bilishi tufayligina omon oʻtdilar."
+    }
+  ]
+}

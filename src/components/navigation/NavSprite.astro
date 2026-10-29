@@ -1,0 +1,83 @@
+---
+/**
+ * NavSprite.astro — Compact single definitions of all Tolkien scholarly vector icons
+ * Kept in hidden SVG sprite to minimize DOM overhead and optimize SSR HTML transfer budget.
+ */
+---
+
+<svg style="display:none" aria-hidden="true">
+  <defs>
+    <symbol id="nav-icon-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 2v20M2 12h20M5 5l14 14M5 19 19 5" opacity=".4"></path>
+      <polygon points="12,3 15,9 21,12 15,15 12,21 9,15 3,12 9,9" fill="currentColor" fill-opacity=".12"></polygon>
+      <circle cx="12" cy="12" r="1.5" fill="currentColor"></circle>
+    </symbol>
+    <symbol id="nav-icon-book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M4 19.5V4.5A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"></path>
+      <path d="M6 6h10M6 10h10M6 14h6" opacity=".6"></path>
+      <path d="M14 2v7l2.5-1.5L19 9V2" fill="currentColor" fill-opacity=".18"></path>
+    </symbol>
+    <symbol id="nav-icon-crown" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M3 18h18l-1.5-11-4.5 5-3-8-3 8-4.5-5L3 18Z"></path>
+      <circle cx="12" cy="4" r="1" fill="currentColor"></circle>
+      <circle cx="4.5" cy="7" r="1" fill="currentColor"></circle>
+      <circle cx="19.5" cy="7" r="1" fill="currentColor"></circle>
+      <path d="M3 18c4 1.5 14 1.5 18 0" opacity=".5"></path>
+      <circle cx="12" cy="14" r="1.2" fill="currentColor" opacity=".6"></circle>
+    </symbol>
+    <symbol id="nav-icon-compass" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="5" r="2.5"></circle>
+      <path d="m10.5 7.5-6.5 13.5M13.5 7.5l6.5 13.5"></path>
+      <path d="M6.5 15.5c3-1.5 8-1.5 11 0M12 12v3" opacity=".6"></path>
+    </symbol>
+    <symbol id="nav-icon-tree" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 22V11M12 11c-2-3-6-4-8-4M12 11c2-3 6-4 8-4M12 7c-1.5-2.5-4-3-6-3M12 7c1.5-2.5 4-3 6-3"></path>
+      <path d="M12 15c-3-1-6 0-7 2M12 15c3-1 6 0 7 2" opacity=".6"></path>
+      <circle cx="12" cy="3" r="1" fill="currentColor"></circle>
+    </symbol>
+    <symbol id="nav-icon-spheres" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="9" opacity=".3"></circle>
+      <ellipse cx="12" cy="12" rx="9" ry="4" stroke-dasharray="2 2"></ellipse>
+      <circle cx="12" cy="12" r="3.5" fill="currentColor" fill-opacity=".15"></circle>
+      <path d="M12 3v3M12 18v3" opacity=".5"></path>
+    </symbol>
+    <symbol id="nav-icon-feather" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M20.2 3.8a6 6 0 0 0-8.5 0L3 12.5V17h4.5l8.7-8.7a6 6 0 0 0 0-8.5Z"></path>
+      <path d="M16 8 8 16" opacity=".5"></path>
+      <path d="m3 21 3-3"></path>
+    </symbol>
+    <symbol id="nav-icon-scroll" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M8 2h10a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h2Z"></path>
+      <path d="M8 6h8M8 10h8M8 14h5" opacity=".6"></path>
+      <circle cx="15" cy="17" r="1.5" fill="currentColor" fill-opacity=".3"></circle>
+    </symbol>
+    <symbol id="nav-icon-document" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+      <polyline points="14 2 14 8 20 8"></polyline>
+      <line x1="16" y1="13" x2="8" y2="13" opacity=".6"></line>
+      <line x1="16" y1="17" x2="8" y2="17" opacity=".6"></line>
+      <line x1="10" y1="9" x2="8" y2="9" opacity=".6"></line>
+    </symbol>
+    <symbol id="nav-icon-quill" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 2a7 7 0 0 0-7 7c0 4 3 7 7 13 4-6 7-9 7-13a7 7 0 0 0-7-7Z" fill="currentColor" fill-opacity=".08"></path>
+      <path d="M12 5v11"></path>
+      <path d="M9 8c1 1 2 2 3 2s2-1 3-2M9 12c1 1 2 2 3 2s2-1 3-2" opacity=".6"></path>
+    </symbol>
+    <symbol id="nav-icon-chevron" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M4 6l4 4 4-4"></path>
+    </symbol>
+    <symbol id="nav-icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="18" y1="6" x2="6" y2="18"></line>
+      <line x1="6" y1="6" x2="18" y2="18"></line>
+    </symbol>
+    <symbol id="nav-icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </symbol>
+    <symbol id="nav-icon-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="11" cy="11" r="8"></circle>
+      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+    </symbol>
+  </defs>
+</svg>

@@ -1,0 +1,432 @@
+---
+import { getCollection, type CollectionEntry } from 'astro:content';
+import EntityLayout from '@/layouts/EntityLayout.astro';
+import CharacterPortrait from '@/components/character/CharacterPortrait.astro';
+import { resolveEntityLink, resolveEntityLinks } from '@/utils/entity-resolver';
+
+export async function getStaticPaths() {
+  const characters = await getCollection('characters');
+  return characters.map((character) => ({
+    params: { slug: character.data.id || character.id },
+    props: { character },
+  }));
+}
+
+interface Props {
+  character: CollectionEntry<'characters'>;
+}
+
+const { character } = Astro.props;
+const data = character.data;
+
+const breadcrumbs = [
+  { label: 'Qahramonlar', href: '/qahramonlar/' },
+  { label: data.name },
+];
+
+// 1. Sulola / Shajara yechish
+const resolvedHouse = data.house_id
+  ? resolveEntityLink(data.house_id, 'genealogies')
+  : null;
+
+// 2. Xalq va madaniyat yechish
+const subRaceAndCulture = `${data.sub_race || ''} ${data.culture || ''}`.toLowerCase();
+const characterPeopleIds: string[] = [];
+if (data.race === 'xobbitlar') characterPeopleIds.push('xobbitlar');
+if (data.race === 'mitti-odamlar') characterPeopleIds.push('xazad');
+if (subRaceAndCulture.includes('dúnedain') || subRaceAndCulture.includes('dunedayn')) {
+  characterPeopleIds.push('dunedain');
+}
+if (subRaceAndCulture.includes('rohirrim') || subRaceAndCulture.includes('éothéod')) {
+  characterPeopleIds.push('rohirrim');
+}
+if (subRaceAndCulture.includes('edain')) characterPeopleIds.push('edain');
+if (subRaceAndCulture.includes('noldor')) characterPeopleIds.push('noldor');
+if (subRaceAndCulture.includes('sindar')) characterPeopleIds.push('sindar');
+if (subRaceAndCulture.includes('istar')) characterPeopleIds.push('istari');
+
+const resolvedPeoples = resolveEntityLinks(characterPeopleIds, 'peoples');
+
+// 3. Makonlar, qahramonlar va tarixiy voqealar yechish
+const resolvedLocations = resolveEntityLinks(data.primary_locations, 'places');
+const resolvedCharacters = resolveEntityLinks(data.related_characters, 'characters');
+
+const allEvents = await getCollection('events');
+const currentCharId = data.id || character.id;
+const characterEvents = allEvents.filter((evt) =>
+  evt.data.characters?.includes(currentCharId)
+);
+const resolvedEvents = resolveEntityLinks(
+  characterEvents.map((e) => e.data.id || e.id),
+  'events'
+);
+
+// 4. Toifalangan munosabatlar guruhlari (bo'sh guruhlar chiqarilmaydi)
+const relatedGroups = [
+  {
+    title: 'Xalq va Madaniyat',
+    items: resolvedPeoples,
+  },
+  {
+    title: 'Sulola va Shajara',
+    items: resolvedHouse ? [resolvedHouse] : [],
+  },
+  {
+    title: 'Tarixiy Joylar',
+    items: resolvedLocations,
+  },
+  {
+    title: 'Bogʻliq Shaxslar',
+    items: resolvedCharacters,
+  },
+  {
+    title: 'Tarixiy Voqealar va Janglar',
+    items: resolvedEvents,
+  },
+].filter((group) => group.items.length > 0);
+
+const crossLinkIds = [
+  ...characterPeopleIds,
+  ...data.related_characters,
+  ...(data.house_id ? [data.house_id] : []),
+  ...data.primary_locations,
+  ...characterEvents.map((e) => e.data.id || e.id),
+];
+const relatedItems = resolveEntityLinks(crossLinkIds);
+---
+
+<EntityLayout
+  title={data.name}
+  originalName={data.original_name}
+  category="Qahramonlar va Shaxslar"
+  breadcrumbs={breadcrumbs}
+  textualStatus={data.textual_status}
+  sources={data.sources}
+  relatedItems={relatedItems}
+  relatedGroups={relatedGroups}
+  adaptations={data.adaptations}
+  leadSummary={data.summary}
+>
+  <CharacterPortrait
+    characterId={data.id || character.id}
+    name={data.name}
+    size="detail"
+    priority={true}
+    customAlt={data.image?.alt}
+    customCaption={data.image?.caption}
+    slot="sidebar-media"
+  />
+
+  <div class="character-details">
+    <section class="character-biography">
+      <h2>Tarjimayi Hol va Matn Tarixi</h2>
+
+      {data.uncertainty_notes && (
+        <div class="uncertainty-callout">
+          <strong>Matnshunoslik izohi:</strong> {data.uncertainty_notes}
+        </div>
+      )}
+
+      {data.biography_sections && data.biography_sections.length > 0 && (
+        <div class="biography-sections">
+          {data.biography_sections.map((section) => (
+            <div class="bio-section">
+              <h3>{section.title}</h3>
+              {section.content.split('\n\n').map((para) => (
+                <p>{para}</p>
+              ))}
+            </div>
+          ))}
+        </div>
+      )}
+
+      {data.etymology && (
+        <div class="etymology-section">
+          <h3>Filologik Tahlil va Ism Etimologiyasi</h3>
+          <p>{data.etymology}</p>
+        </div>
+      )}
+
+      {data.weapons_and_artifacts.length > 0 && (
+        <div class="artifacts-section">
+          <h3>Yaratgan Asarlari va Buyumlari</h3>
+          <ul>
+            {data.weapons_and_artifacts.map((item) => (
+              <li><strong>{item}</strong></li>
+            ))}
+          </ul>
+        </div>
+      )}
+
+      {resolvedLocations.length > 0 && (
+        <div class="locations-section">
+          <h3>Asosiy Makonlari</h3>
+          <div class="locations-pills">
+            {resolvedLocations.map((loc) =>
+              loc.href ? (
+                <a
+                  href={loc.href}
+                  class="location-pill location-pill-link"
+                  title={`${loc.name} — atlasda koʻrish`}
+                >
+                  <span class="location-pin" aria-hidden="true">📍</span>
+                  {loc.name}
+                </a>
+              ) : (
+                <span class="location-pill location-pill-static">
+                  {loc.name}
+                </span>
+              )
+            )}
+          </div>
+        </div>
+      )}
+
+      {characterEvents.length > 0 && (
+        <div class="events-section">
+          <h3>Ishtirok Etgan Tarixiy Voqealar</h3>
+          <div class="locations-pills">
+            {characterEvents.map((evt) => {
+              const evtSlug = evt.data.id || evt.id;
+              return (
+                <a
+                  href={`/tarix/${evtSlug}/`}
+                  class="location-pill location-pill-link"
+                  title={`${evt.data.title} (${evt.data.year_text})`}
+                >
+                  <span class="location-pin" aria-hidden="true">⚔</span>
+                  <span>{evt.data.title}</span>
+                  <span class="event-year-tag">({evt.data.year_text})</span>
+                </a>
+              );
+            })}
+          </div>
+        </div>
+      )}
+    </section>
+  </div>
+
+  <div slot="metadata" class="character-specs">
+    <dl class="specs-list">
+      {data.father_name && (
+        <div class="spec-row">
+          <dt>Ota ismi:</dt>
+          <dd>{data.father_name}</dd>
+        </div>
+      )}
+
+      {data.mother_name && (
+        <div class="spec-row">
+          <dt>Ona ismi:</dt>
+          <dd>{data.mother_name}</dd>
+        </div>
+      )}
+
+      {data.spouse && (
+        <div class="spec-row">
+          <dt>Umr yoʻldoshi:</dt>
+          <dd>{data.spouse}</dd>
+        </div>
+      )}
+
+      {data.children && data.children.length > 0 && (
+        <div class="spec-row">
+          <dt>Farzandlari:</dt>
+          <dd>{data.children.join(', ')}</dd>
+        </div>
+      )}
+
+      <div class="spec-row">
+        <dt>Irq / Xalq:</dt>
+        <dd>
+          {data.race}
+          {data.sub_race && ` (${data.sub_race})`}
+        </dd>
+      </div>
+
+      {data.culture && (
+        <div class="spec-row">
+          <dt>Madaniyat:</dt>
+          <dd>{data.culture}</dd>
+        </div>
+      )}
+
+      {resolvedHouse && (
+        <div class="spec-row">
+          <dt>Sulola / Xonadon:</dt>
+          <dd>
+            {resolvedHouse.href ? (
+              <a
+                href={resolvedHouse.href}
+                class="spec-link"
+                title={`${resolvedHouse.name} shajarasini koʻrish`}
+              >
+                {resolvedHouse.name} →
+              </a>
+            ) : (
+              <span>{resolvedHouse.name}</span>
+            )}
+          </dd>
+        </div>
+      )}
+
+      {data.birth_year && (
+        <div class="spec-row">
+          <dt>Tugʻilgan davri:</dt>
+          <dd>{data.birth_year}</dd>
+        </div>
+      )}
+
+      {data.death_year && (
+        <div class="spec-row">
+          <dt>Vafot davri:</dt>
+          <dd>{data.death_year}</dd>
+        </div>
+      )}
+
+      {data.titles.length > 0 && (
+        <div class="spec-row">
+          <dt>Unvonlari:</dt>
+          <dd>{data.titles.join(', ')}</dd>
+        </div>
+      )}
+
+      {data.aliases.length > 0 && (
+        <div class="spec-row">
+          <dt>Laqablari:</dt>
+          <dd>{data.aliases.join(', ')}</dd>
+        </div>
+      )}
+    </dl>
+  </div>
+</EntityLayout>
+
+<style>
+  .character-details section {
+    margin-bottom: 2rem;
+  }
+
+  .character-biography h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-family: var(--font-serif-heading);
+    color: var(--color-text-primary);
+  }
+
+  .character-biography h3 {
+    font-size: 1.1875rem;
+    margin-top: 1.75rem;
+    margin-bottom: 0.625rem;
+    font-family: var(--font-serif-heading);
+    color: var(--color-accent-gold-text);
+  }
+
+  .bio-section {
+    margin-bottom: 1.5rem;
+  }
+
+  .bio-section p,
+  .etymology-section p {
+    margin-bottom: 1rem;
+    line-height: 1.75;
+    color: var(--color-text-primary);
+  }
+
+  .uncertainty-callout {
+    background-color: var(--color-bg-elevated);
+    border-left: 3px solid var(--color-status-apocrypha);
+    padding: 0.75rem 1rem;
+    margin-block: 1.25rem;
+    font-size: 0.875rem;
+  }
+
+  .artifacts-section ul {
+    margin-left: 1.5rem;
+    line-height: 1.7;
+  }
+
+  .locations-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+  }
+
+  .location-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375rem;
+    font-family: var(--font-sans-ui);
+    font-size: 0.8125rem;
+    padding: 0.25rem 0.625rem;
+    border-radius: 3px;
+    line-height: 1.4;
+  }
+
+  .location-pill-link {
+    background-color: var(--color-bg-elevated);
+    border: 1px solid var(--color-border-subtle);
+    color: var(--color-link);
+    text-decoration: none;
+    transition: color 0.15s ease, border-color 0.15s ease, background-color 0.15s ease;
+  }
+
+  .location-pill-link:hover {
+    color: var(--color-link-hover);
+    border-color: var(--color-border-gold);
+    background-color: var(--color-accent-gold-subtle);
+  }
+
+  .location-pill-static {
+    background-color: var(--color-bg-subtle);
+    border: 1px solid var(--color-border-subtle);
+    color: var(--color-text-secondary);
+  }
+
+  .location-pin {
+    font-size: 0.75rem;
+    line-height: 1;
+  }
+
+  .specs-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: 0;
+    font-size: 0.8125rem; /* 13px */
+  }
+
+  .spec-row {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0.375rem;
+    border-bottom: 1px dotted var(--color-border-subtle);
+    gap: 0.5rem;
+  }
+
+  .spec-row dt {
+    color: var(--color-text-muted);
+    font-weight: 500;
+  }
+
+  .spec-row dd {
+    color: var(--color-text-primary);
+    font-weight: 600;
+    text-align: right;
+    margin: 0;
+  }
+
+  .spec-link {
+    color: var(--color-link);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+    text-decoration-color: var(--color-border-gold);
+    transition: color 0.15s ease, text-decoration-color 0.15s ease;
+  }
+
+  .spec-link:hover {
+    color: var(--color-link-hover);
+    text-decoration-color: var(--color-link-hover);
+  }
+</style>

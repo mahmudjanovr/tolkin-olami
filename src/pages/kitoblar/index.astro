@@ -1,0 +1,783 @@
+---
+import { getCollection } from 'astro:content';
+import EditorialLayout from '@/layouts/EditorialLayout.astro';
+
+const breadcrumbs = [
+  { label: 'Kitoblar va Bibliografiya' },
+];
+
+const allBooks = await getCollection('books');
+
+// Sort books chronologically by publication year
+allBooks.sort((a, b) => a.data.publication_year - b.data.publication_year);
+
+const categoryGroups = [
+  {
+    key: 'primary_lifetime',
+    title: '1. Muallif Hayotligidagi Nashrlar (Primary Lifetime)',
+    desc: 'J.R.R. Tolkienning oʻz nazorati ostida chop etilgan birlamchi kanonik asarlar.',
+  },
+  {
+    key: 'posthumous_reconstructed',
+    title: '2. Vafotidan Soʻng Tiklangan Asarlar (Posthumous Reconstructed)',
+    desc: 'Christopher Tolkien tomonidan qoʻlyozmalardan tiklangan va nashrga tayyorlangan asarlar.',
+  },
+  {
+    key: 'letters_academic',
+    title: '3. Akademik Maktublar va Izohlar (Letters & Academic)',
+    desc: 'Tolkienning afsonalar falsafasini ochib beruvchi rasmiy maktublar korpusi.',
+  },
+  {
+    key: 'textual_history',
+    title: '4. Matn Tarixi va Qoʻlyozmalar Tadqiqoti (Textual History)',
+    desc: 'Legendariumning 12 jildlik matnshunoslik evolyutsiyasi.',
+  },
+];
+
+const totalBooks = allBooks.length;
+const primaryLifetimeCount = allBooks.filter((b) => b.data.category === 'primary_lifetime').length;
+const posthumousCount = allBooks.filter((b) => b.data.category === 'posthumous_reconstructed').length;
+const scholarlyCount = allBooks.filter(
+  (b) => b.data.category === 'letters_academic' || b.data.category === 'textual_history'
+).length;
+const publishedUzbekCount = allBooks.filter((b) =>
+  b.data.uzbek_editions?.some((e) => e.status === 'published')
+).length;
+const inProgressUzbekCount = allBooks.filter((b) =>
+  b.data.uzbek_editions?.some((e) => e.status === 'in_progress')
+).length;
+---
+
+<EditorialLayout
+  title="Kitoblar va Bibliografiya"
+  category="Tolkien Korpus Bibliografiyasi"
+  description="J.R.R. Tolkienning hayotlik nashrlari, vafotidan soʻng Christopher Tolkien tahrir qilgan asarlar va ilmiy toʻplamlar."
+  breadcrumbs={breadcrumbs}
+>
+  <div class="books-content">
+    <p class="section-lead">
+      Tolkien olamining manbashunoslik poydevori yuzlab nashrlar, maktublar va qoralamalar majmuasiga borib taqaladi.
+      Ushbu bibliografiya asarlarni ilmiy toifalarga ajratgan holda tizimlashtiradi hamda oʻzbekcha tarjimalar tarixini yoritadi.
+    </p>
+
+    <!-- Interaktiv Qidiruv va Filtr Paneli -->
+    <section class="catalogue-controls" role="search" aria-label="Kitoblar katalogi boʻyicha qidiruv va filtrlash">
+      <div class="search-input-wrapper">
+        <svg class="search-icon" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input
+          type="search"
+          id="book-search-input"
+          class="search-input"
+          placeholder="Kitob nomi, asl nomi, mavzular yoki kalit soʻz..."
+          aria-label="Kitoblar katalogida qidiruv"
+          autocomplete="off"
+        />
+        <button type="button" id="clear-search-btn" class="clear-btn" aria-label="Qidiruvni tozalash" style="display: none;">✕</button>
+      </div>
+
+      <div class="filter-row">
+        <div class="category-filters" role="tablist" aria-label="Kitob toifalari">
+          <button class="filter-chip active" data-filter="all" role="tab" aria-selected="true">
+            Barchasi <span class="chip-count">({totalBooks})</span>
+          </button>
+          <button class="filter-chip" data-filter="primary_lifetime" role="tab" aria-selected="false">
+            Muallif hayotligidagi
+          </button>
+          <button class="filter-chip" data-filter="posthumous_reconstructed" role="tab" aria-selected="false">
+            Vafotidan soʻng tiklangan
+          </button>
+          <button class="filter-chip" data-filter="scholarly" role="tab" aria-selected="false">
+            Maktublar va Matn tarixi
+          </button>
+          <button class="filter-chip filter-uzbek" data-filter="uzbek_edition" role="tab" aria-selected="false">
+            🇺🇿 Oʻzbekcha nashrlar
+          </button>
+        </div>
+
+        <div class="results-bar">
+          <span id="results-count" class="results-count">Jami: <strong>{totalBooks}</strong> ta asar</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Natija topilmagan holat xabari -->
+    <div id="no-books-found" class="no-results-panel" style="display: none;">
+      <p class="no-results-title">Mos keluvchi asar topilmadi</p>
+      <p class="no-results-hint">Kiritilgan soʻrov yoki tanlangan toifa boʻyicha asar topilmadi. Qidiruv soʻzini oʻzgartiring yoki filtrlarni qayta tiklang.</p>
+      <button type="button" id="reset-filter-btn" class="reset-filter-btn">Filtrlarni tozalash</button>
+    </div>
+
+    <!-- Asosiy Kitoblar Toʻplamlari -->
+    <div class="book-categories" id="book-categories-container">
+      {
+        categoryGroups.map((group) => {
+          const groupBooks = allBooks.filter((b) => b.data.category === group.key);
+          if (groupBooks.length === 0) return null;
+
+          return (
+            <div class="category-block" data-category-group={group.key}>
+              <div class="category-header">
+                <h3>{group.title}</h3>
+                <span class="category-count-badge">{groupBooks.length} ta kitob</span>
+              </div>
+              <p class="category-desc">{group.desc}</p>
+
+              <div class="book-cards-grid">
+                {groupBooks.map((b) => {
+                  const hasPublishedUzbek = b.data.uzbek_editions?.some((e) => e.status === 'published');
+                  const hasInProgressUzbek = b.data.uzbek_editions?.some((e) => e.status === 'in_progress');
+                  const searchCorpus = [
+                    b.data.title_uz,
+                    b.data.title_original,
+                    ...(b.data.aliases || []),
+                    b.data.publisher,
+                    b.data.editor || '',
+                    b.data.synopsis,
+                    ...(b.data.key_themes || []),
+                    ...(b.data.uzbek_editions?.map((e) => `${e.title} ${e.translator || ''} ${e.publisher || ''}`) || []),
+                  ].join(' ').toLowerCase();
+
+                  return (
+                    <article
+                      class="book-summary-card"
+                      data-id={b.data.id || b.id}
+                      data-category={b.data.category}
+                      data-has-uzbek={hasPublishedUzbek || hasInProgressUzbek ? 'true' : 'false'}
+                      data-search-corpus={searchCorpus}
+                    >
+                      <div class="card-top">
+                        <span class="pub-year">{b.data.publication_year}</span>
+                        <div class="card-badges">
+                          {hasPublishedUzbek && (
+                            <span class="trans-pill trans-published" title="Oʻzbek tilida toʻliq nashr etilgan">
+                              ✓ Oʻzbekcha nashr
+                            </span>
+                          )}
+                          {hasInProgressUzbek && (
+                            <span class="trans-pill trans-progress" title="Oʻzbekcha nashr tayyorlanmoqda">
+                              ⏳ Tarjima jarayonida
+                            </span>
+                          )}
+                        </div>
+                        <span class="pub-publisher">{b.data.publisher}</span>
+                      </div>
+
+                      <div class="card-main-row">
+                        {b.data.cover_image && (
+                          <a href={`/kitoblar/${b.data.id || b.id}/`} class="card-cover-link" tabindex="-1" aria-hidden="true">
+                            <img
+                              src={b.data.cover_image.src}
+                              alt=""
+                              class="card-cover-preview-img"
+                              loading="lazy"
+                              decoding="async"
+                            />
+                          </a>
+                        )}
+                        <div class="card-body-column">
+                          <h4 class="card-title">
+                            <a href={`/kitoblar/${b.data.id || b.id}/`}>
+                              {b.data.title_uz}
+                            </a>
+                          </h4>
+
+                          <p class="card-original font-serif">
+                            <em>{b.data.title_original}</em>
+                          </p>
+
+                          {b.data.aliases && b.data.aliases.length > 0 && (
+                            <p class="card-aliases">
+                              <span class="alias-label">Muqobil:</span> {b.data.aliases.slice(0, 3).join(', ')}
+                            </p>
+                          )}
+
+                          <p class="card-synopsis">{b.data.synopsis}</p>
+
+                          {b.data.key_themes && b.data.key_themes.length > 0 && (
+                            <div class="card-themes">
+                              {b.data.key_themes.slice(0, 3).map((theme) => (
+                                <span class="mini-theme-tag">{theme}</span>
+                              ))}
+                            </div>
+                          )}
+                        </div>
+                      </div>
+
+                      <div class="card-link-wrapper">
+                        <a href={`/kitoblar/${b.data.id || b.id}/`} class="card-view-link">
+                          Bibliografik kartani ochish →
+                        </a>
+                      </div>
+                    </article>
+                  );
+                })}
+              </div>
+            </div>
+          );
+        })
+      }
+    </div>
+  </div>
+
+  <div slot="margin">
+    <div class="margin-card">
+      <h3 class="margin-title">Bibliografik Koʻrsatkich</h3>
+      <ul class="stats-list font-sans">
+        <li>Jami kanonik asarlar: <strong>{totalBooks} ta</strong></li>
+        <li>Muallif hayotligidagi: <strong>{primaryLifetimeCount} ta</strong></li>
+        <li>Tiklangan asarlar: <strong>{posthumousCount} ta</strong></li>
+        <li>Maktublar va Matn tarixi: <strong>{scholarlyCount} ta</strong></li>
+        <li>Oʻzbekcha toʻliq nashr: <strong>{publishedUzbekCount} ta</strong></li>
+        <li>Tayyorlanayotgan nashr: <strong>{inProgressUzbekCount} ta</strong></li>
+      </ul>
+    </div>
+
+    <div class="margin-card">
+      <h3 class="margin-title">Matnshunoslik Ierarxiyasi</h3>
+      <p>
+        Ensiklopediya faktlarida muallif hayotligidagi nashrlar boshqa barcha manbalardan ustun (primary canon) maqomiga ega.
+      </p>
+    </div>
+
+    <div class="margin-card">
+      <h3 class="margin-title">Oksford Standarti</h3>
+      <p>
+        Barcha iqtiboslar kitob nomi, bob nomi va nashr sahifasi koʻrsatilgan qatʼiy akademik formatda beriladi.
+      </p>
+    </div>
+  </div>
+</EditorialLayout>
+
+<script is:inline>
+  document.addEventListener('DOMContentLoaded', () => {
+    const searchInput = document.getElementById('book-search-input');
+    const clearBtn = document.getElementById('clear-search-btn');
+    const filterChips = document.querySelectorAll('.filter-chip');
+    const resultsCountEl = document.getElementById('results-count');
+    const noResultsPanel = document.getElementById('no-books-found');
+    const resetBtn = document.getElementById('reset-filter-btn');
+    const cards = Array.from(document.querySelectorAll('.book-summary-card'));
+    const categoryBlocks = Array.from(document.querySelectorAll('.category-block'));
+
+    let currentFilter = 'all';
+    let searchQuery = '';
+
+    function normalizeText(text) {
+      return (text || '')
+        .toLowerCase()
+        .replace(/ʻ|’|ʼ|'/g, '')
+        .replace(/gʻ/g, 'g')
+        .replace(/oʻ/g, 'o')
+        .trim();
+    }
+
+    function applyFilters() {
+      const normalizedQuery = normalizeText(searchQuery);
+      let visibleCount = 0;
+
+      cards.forEach((card) => {
+        const category = card.getAttribute('data-category');
+        const hasUzbek = card.getAttribute('data-has-uzbek') === 'true';
+        const searchCorpus = normalizeText(card.getAttribute('data-search-corpus') || '');
+
+        // Category filter check
+        let matchesCategory = false;
+        if (currentFilter === 'all') {
+          matchesCategory = true;
+        } else if (currentFilter === 'scholarly') {
+          matchesCategory = category === 'letters_academic' || category === 'textual_history';
+        } else if (currentFilter === 'uzbek_edition') {
+          matchesCategory = hasUzbek;
+        } else {
+          matchesCategory = category === currentFilter;
+        }
+
+        // Search text check
+        let matchesSearch = true;
+        if (normalizedQuery) {
+          const queryTokens = normalizedQuery.split(/\s+/).filter(Boolean);
+          matchesSearch = queryTokens.every((token) => searchCorpus.includes(token));
+        }
+
+        const isVisible = matchesCategory && matchesSearch;
+        card.style.display = isVisible ? 'flex' : 'none';
+        if (isVisible) visibleCount++;
+      });
+
+      // Show/hide category blocks based on visible cards
+      categoryBlocks.forEach((block) => {
+        const visibleCardsInBlock = block.querySelectorAll('.book-summary-card[style*="display: flex"]');
+        const hasVisible = visibleCardsInBlock.length > 0;
+        block.style.display = hasVisible ? 'block' : 'none';
+      });
+
+      // Update counter and empty state
+      if (resultsCountEl) {
+        resultsCountEl.innerHTML = `Koʻrsatilmoqda: <strong>${visibleCount}</strong> ta asar`;
+      }
+
+      if (noResultsPanel) {
+        noResultsPanel.style.display = visibleCount === 0 ? 'block' : 'none';
+      }
+
+      if (clearBtn) {
+        clearBtn.style.display = searchQuery ? 'inline-block' : 'none';
+      }
+    }
+
+    if (searchInput) {
+      searchInput.addEventListener('input', (e) => {
+        searchQuery = e.target.value;
+        applyFilters();
+      });
+
+      searchInput.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          searchQuery = '';
+          searchInput.value = '';
+          applyFilters();
+        }
+      });
+    }
+
+    if (clearBtn) {
+      clearBtn.addEventListener('click', () => {
+        searchQuery = '';
+        if (searchInput) searchInput.value = '';
+        applyFilters();
+        if (searchInput) searchInput.focus();
+      });
+    }
+
+    filterChips.forEach((chip) => {
+      chip.addEventListener('click', () => {
+        filterChips.forEach((c) => {
+          c.classList.remove('active');
+          c.setAttribute('aria-selected', 'false');
+        });
+        chip.classList.add('active');
+        chip.setAttribute('aria-selected', 'true');
+        currentFilter = chip.getAttribute('data-filter') || 'all';
+        applyFilters();
+      });
+    });
+
+    if (resetBtn) {
+      resetBtn.addEventListener('click', () => {
+        searchQuery = '';
+        if (searchInput) searchInput.value = '';
+        currentFilter = 'all';
+        filterChips.forEach((c) => {
+          const isAll = c.getAttribute('data-filter') === 'all';
+          c.classList.toggle('active', isAll);
+          c.setAttribute('aria-selected', isAll ? 'true' : 'false');
+        });
+        applyFilters();
+      });
+    }
+  });
+</script>
+
+<style>
+  .section-lead {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    margin-bottom: 1.75rem;
+  }
+
+  .catalogue-controls {
+    margin-bottom: 2.5rem;
+    padding: 1.25rem;
+    background-color: var(--color-bg-elevated);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .search-input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .search-icon {
+    position: absolute;
+    left: 0.875rem;
+    color: var(--color-text-muted);
+    pointer-events: none;
+  }
+
+  .search-input {
+    width: 100%;
+    padding: 0.6875rem 2.5rem 0.6875rem 2.625rem;
+    font-family: var(--font-sans-ui);
+    font-size: 0.9375rem;
+    color: var(--color-text-primary);
+    background-color: var(--color-bg-subtle);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  }
+
+  .search-input:focus {
+    border-color: var(--color-accent-gold);
+    box-shadow: 0 0 0 3px rgba(184, 134, 11, 0.15);
+  }
+
+  .clear-btn {
+    position: absolute;
+    right: 0.75rem;
+    background: none;
+    border: none;
+    color: var(--color-text-muted);
+    font-size: 0.875rem;
+    cursor: pointer;
+    padding: 0.25rem;
+  }
+
+  .clear-btn:hover {
+    color: var(--color-text-primary);
+  }
+
+  .filter-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  .category-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .filter-chip {
+    font-family: var(--font-sans-ui);
+    font-size: 0.8125rem;
+    font-weight: 500;
+    padding: 0.35rem 0.75rem;
+    background-color: var(--color-bg-subtle);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 3px;
+    color: var(--color-text-secondary);
+    cursor: pointer;
+    transition: all 0.15s ease;
+  }
+
+  .filter-chip:hover {
+    border-color: var(--color-border-gold);
+    color: var(--color-text-primary);
+  }
+
+  .filter-chip.active {
+    background-color: var(--color-forest);
+    border-color: var(--color-forest-deep);
+    color: #FAF8F2;
+    font-weight: 600;
+  }
+
+  .filter-chip.filter-uzbek.active {
+    background-color: var(--color-status-canonical);
+    border-color: var(--color-status-canonical);
+    color: #FAF8F2;
+  }
+
+  .chip-count {
+    opacity: 0.85;
+    font-size: 0.75rem;
+  }
+
+  .results-bar {
+    font-family: var(--font-sans-ui);
+    font-size: 0.8125rem;
+    color: var(--color-text-muted);
+  }
+
+  .no-results-panel {
+    padding: 2.5rem 1.5rem;
+    text-align: center;
+    background-color: var(--color-bg-elevated);
+    border: 1px dashed var(--color-border-subtle);
+    border-radius: 6px;
+    margin-bottom: 2rem;
+  }
+
+  .no-results-title {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--color-text-primary);
+    margin-bottom: 0.5rem;
+  }
+
+  .no-results-hint {
+    font-size: 0.9375rem;
+    color: var(--color-text-secondary);
+    margin-bottom: 1.25rem;
+  }
+
+  .reset-filter-btn {
+    font-family: var(--font-sans-ui);
+    font-size: 0.875rem;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    background-color: var(--color-accent-gold);
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .book-categories {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  .category-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.25rem;
+  }
+
+  .category-header h3 {
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin: 0;
+    color: var(--color-text-primary);
+  }
+
+  .category-count-badge {
+    font-family: var(--font-sans-ui);
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+  }
+
+  .category-desc {
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+    margin-bottom: 1.25rem;
+  }
+
+  .book-cards-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  @media (min-width: 640px) {
+    .book-cards-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .book-summary-card {
+    display: flex;
+    flex-direction: column;
+    padding: 1.25rem;
+    background-color: var(--color-bg-elevated);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 4px;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  }
+
+  .book-summary-card:hover {
+    border-color: var(--color-accent-gold);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .card-main-row {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    flex-grow: 1;
+  }
+
+  .card-cover-link {
+    flex-shrink: 0;
+    width: 68px;
+    aspect-ratio: 2 / 3;
+    border-radius: 3px;
+    overflow: hidden;
+    border: 1px solid var(--color-border-subtle);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    background-color: var(--color-bg-base);
+    transition: transform 0.2s ease;
+  }
+
+  .card-cover-link:hover {
+    transform: scale(1.04);
+  }
+
+  .card-cover-preview-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .card-body-column {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    min-width: 0;
+  }
+
+  .card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--font-sans-ui);
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+    margin-bottom: 0.5rem;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+  }
+
+  .pub-year {
+    font-weight: 700;
+    color: var(--color-accent-gold);
+  }
+
+  .card-badges {
+    display: flex;
+    gap: 0.35rem;
+  }
+
+  .trans-pill {
+    font-size: 0.6875rem;
+    font-weight: 600;
+    padding: 0.15rem 0.4rem;
+    border-radius: 3px;
+  }
+
+  .trans-published {
+    background-color: rgba(27, 94, 32, 0.12);
+    color: #1b5e20;
+    border: 1px solid rgba(27, 94, 32, 0.28);
+  }
+
+  .trans-progress {
+    background-color: rgba(7, 89, 133, 0.12);
+    color: #075985;
+    border: 1px solid rgba(7, 89, 133, 0.28);
+  }
+
+  :global([data-theme="night"]) .trans-published {
+    background-color: rgba(77, 122, 84, 0.25);
+    color: #a5d6a7;
+    border: 1px solid rgba(77, 122, 84, 0.5);
+  }
+
+  :global([data-theme="night"]) .trans-progress {
+    background-color: rgba(2, 136, 209, 0.2);
+    color: #81d4fa;
+    border: 1px solid rgba(2, 136, 209, 0.4);
+  }
+
+  .card-title {
+    font-size: 1.0625rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+  }
+
+  .card-title a {
+    color: var(--color-text-primary);
+    text-decoration: none;
+  }
+
+  .card-title a:hover {
+    color: var(--color-accent-gold);
+  }
+
+  .card-original {
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+    margin-bottom: 0.5rem;
+  }
+
+  .card-aliases {
+    font-family: var(--font-sans-ui);
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+    margin-bottom: 0.75rem;
+    line-height: 1.4;
+  }
+
+  .alias-label {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.6875rem;
+  }
+
+  .card-synopsis {
+    font-size: 0.875rem;
+    line-height: 1.6;
+    color: var(--color-text-secondary);
+    margin-bottom: 1rem;
+    flex-grow: 1;
+  }
+
+  .card-themes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    margin-bottom: 1rem;
+  }
+
+  .mini-theme-tag {
+    font-family: var(--font-sans-ui);
+    font-size: 0.6875rem;
+    padding: 0.15rem 0.45rem;
+    background-color: var(--color-bg-subtle);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 2px;
+    color: var(--color-text-secondary);
+  }
+
+  .card-link-wrapper {
+    margin-top: auto;
+    padding-top: 0.75rem;
+    border-top: 1px dashed var(--color-border-subtle);
+  }
+
+  .card-view-link {
+    font-family: var(--font-sans-ui);
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: var(--color-accent-gold);
+    text-decoration: none;
+  }
+
+  .card-view-link:hover {
+    text-decoration: underline;
+  }
+
+  .stats-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.8125rem;
+    line-height: 1.8;
+  }
+
+  .stats-list li {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--color-border-subtle);
+    padding: 0.25rem 0;
+  }
+
+  .stats-list li:last-child {
+    border-bottom: none;
+  }
+</style>

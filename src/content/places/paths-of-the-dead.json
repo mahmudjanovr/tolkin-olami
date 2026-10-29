@@ -1,0 +1,48 @@
+{
+  "id": "paths-of-the-dead",
+  "name": "Oʻliklar Yoʻli",
+  "elvish_name": "Taur Im-Dúath",
+  "type": "oʻlka",
+  "region": "orta-yer",
+  "coordinates": {
+    "map_id": "orta-yer",
+    "x": 990,
+    "y": 685
+  },
+  "founded_era": "Ikkinchi davr",
+  "rulers": [
+    "Togʻlarning Oʻlik Shohi"
+  ],
+  "notable_events": [
+    "Isildur laʼnati",
+    "Aragorn va Kulrang Boʻlinmaning oʻtishi",
+    "Oʻliklar Qasamyodining uygʻonishi"
+  ],
+  "textual_status": "author_published",
+  "summary": "Dwimorberg togʻi qaʼridan oʻtuvchi vahimali yerosti yoʻlagi boʻlib, Rohanni janubiy Gondor (Morthond vodiysi) bilan bogʻlaydi. Ikkinchi Davrda Isildurga bergan qasamyodini buzgan togʻliklar laʼnatlanib, bu yerda asrlar boʻyi tinchlik topmay kezgan. Aragorn Isildur vorisi sifatida ushbu dahshatli yoʻldan qoʻrquvsiz oʻtib, Soyalar Armiyasini Gondor qutqaruviga boshlagan.",
+  "sources": [
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "The Passing of the Grey Company",
+      "page": "780"
+    }
+  ],
+  "description_sections": [
+    {
+      "title": "Qora Qoyatosh ostidagi dahshat yoʻli",
+      "content": "Paths of the Dead (Oʻliklar Yoʻli) — Oq Togʻlar (Ered Nimrais) qaʼridan oʻtuvchi qadimiy yerosti yoʻli boʻlib, shimoldagi Dunharrow vodiysidagi Qora Qoyatosh (Dark Door) darvozasidan boshlanib, janubdagi Morthond vodiysiga chiqadi.\n\nBu yoʻl Ikkinchi davrda Togʻ Odamlari tomonidan qazilgan. Isildurga bergan qasamyodini buzib, Sauronga qarshi jangga chiqmaganliklari sababli Isildur ularni laʼnatlagan va qasamyod bajarilmaguncha ularning ruhlari ushbu qorongʻu gʻorlarda sarson qolgan edi."
+    },
+    {
+      "title": "Aragornning daʼvati va qasamyodning bajarilishi",
+      "content": "Asrlar davomida bu yoʻlga kirgan har qanday tirik inson qoʻrquvdan aqlini yoʻqotgan yoki halok boʻlgan (jumladan Rohan qiroli Baldor). Faqat 3019-yil martida Isildurning qonuniy vorisi boʻlgan Aragorn, Legolas, Gimli va Kulrang Otliqlar bilan birga Qora Darvozaga kirdi.\n\nErech Toshida Aragorn Oʻliklar Shohini chaqirib, unga qasamyodni bajarish imkonini berdi. Arvohlar armiyasi Aragornga ergashib Pelargirda Umbar qaroqchilarini tor-mor qildi va oʻz laʼnatidan qutulib, manguga orom topdi."
+    },
+    {
+      "title": "Qasamyod Buzuvchilar la'nati va Isildur qasosi",
+      "content": "O'liklar Yo'li (Paths of the Dead) Oq Tog'lar (Ered Nimrais) ostidan o'tuvchi qorong'i va dahshatli yerosti yo'lidir. Qadimda bu yerda yashagan Tog'liklar Isildurga Sauronga qarshi jang qilishga qasamyod qilgan, ammo urush paytida qo'rqib qasamyodlarini buzgan edilar. Isildur ularni la'natladi: to uning qonuniy vorisi ularni jangga chaqirmaguncha, ularning ruhi tinchlik topmasligi kerak edi. Ming yillar davomida bu yo'ldan o'tgan hech bir tirik inson qaytib chiqmagan; faqat Aragorn o'zining qonuniy shohlik huquqi bilan ularning qalbini zabt etdi va qasamni bajartirdi."
+    },
+    {
+      "title": "Qora Darvoza, Dwimorberg qoyasi va Arvohlar shohi",
+      "content": "O'liklar Yo'li Dwimorberg (Arvohlar Tog'i) etagidagi Qora Qoyatosh darvozasidan boshlanadi. Yo'l ichida qadimiy insonlarning suyaklari, qulagan ustunlar va qora zallar joylashgan bo'lib, havoda qattiq sovuq va qabr nafasi hukm suradi. Arvohlar Shohi va uning lashkari ming yillar davomida bu qorong'ulikda o'z qasamyodlarining og'ir kishanlari ostida yashadilar. Aragorn ularni chaqirganida, ular o'zlarining uzoq kutilgan ozodliklari uchun Aragorn ortidan ergashdilar va Pelargirda o'z qonli qarzlarini uzdilar. Ushbu qorongʻi yoʻl inson ruhiyati va qasamyod qudratining eng ogʻir sinovi edi. Aragornning ushbu yoʻldan oʻtib gʻalaba qozonishi uning Oʻrta-yerning haqiqiy qutqaruvchi shohi ekanini butun xalqlarga amalda isbotladi. Togʻlar bagʻridagi bu qadimiy yoʻlak Uchinchi Davrning eng xavfli va sirli maskanlaridan biri boʻlib, u orqali oʻtgan Aragorn oʻz xalqining qadimiy shon-sharafini qayta tikladi."
+    }
+  ]
+}

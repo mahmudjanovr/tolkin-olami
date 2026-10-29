@@ -1,0 +1,90 @@
+{
+  "id": "celebrimbor",
+  "name": "Celebrimbor",
+  "original_name": "Telperinquar",
+  "father_name": "Curufin (Fëanorning beshinchi oʻgʻli)",
+  "children": [],
+  "aliases": [
+    "Telperinquar (Quenya: Kumush Musht / Kumush Qoʻl)",
+    "Eregion Hukmdori",
+    "Gwaith-i-Mírdain Bosh Ustasi"
+  ],
+  "titles": [
+    "Eregion (Hollin) Hukmdori",
+    "Mírdain (Javohirsozlar Birodarligi) Rahbari",
+    "Fëanor Xonadonining Soʻnggi Shahzodasi"
+  ],
+  "race": "elflar",
+  "sub_race": "Noldor",
+  "culture": "Nargothrond / Eregion (Ost-in-Edhil)",
+  "birth_year": "Daraxtlar davri yoki Birinchi davr boshi",
+  "death_year": "Ikkinchi davr 1697 (Ost-in-Edhil qulaganida Sauron qiynoqlarida halok boʻlgan)",
+  "house_id": "finwe-xonadoni",
+  "weapons_and_artifacts": [
+    "Uch Elf Uzugi: Narya (Olov), Nenya (Suv) va Vilya (Havo) — Sauron qoʻli tegmasdan yolgʻiz oʻzi yaratgan",
+    "Durin Darvozasi (Moria Gʻarbiy Darvozasi — Narvi bilan birga ithildin yozuvlarini chizgan)",
+    "Elessar zumrad toshi (Ikkinchi davr varianti — Galadriel uchun)"
+  ],
+  "primary_locations": [
+    "lindon",
+    "rivendell"
+  ],
+  "textual_status": "author_published",
+  "uncertainty_notes": "'Unfinished Tales'dagi 'The History of Galadriel and Celeborn' boʻlimida Celebrimborning kelib chiqishi boʻyicha muqobil qoralamalar (Gondolinlik usta yoki Teleri shahzodasi) uchraydi. Biroq 'The Lord of the Rings' Ilovalari (Appendix B) va 'The Silmarillion'dagi kanonik versiyada u Fëanorning nabirasi va Curufinning oʻgʻlidir.",
+  "summary": "Fëanorning nabirasi va Curufinning oʻgʻli, Ikkinchi davrda Eregion qirolligi va Gwaith-i-Mírdain (Javohirsozlar) uyushmasining asoschisi. Moria mitti ustasi Narvi bilan Gʻarbiy Darvozani bezagan, Sauronning 'Annatar' qiyofasidagi hiylasini fosh etgach, Uch Muqaddas Elf Uzugini (Narya, Nenya, Vilya) Saurondan yashirgan va ularni sotmasdan qiynoq ostida jon bergan buyuk usta.",
+  "etymology": "Sindarin tilida 'Celebrimbor' — celeb ('kumush') va paur ('musht, qoʻl') soʻzlaridan tuzilib, 'Kumush Qoʻl / Kumush Musht' maʼnosini anglatadi (Quenya tilida 'Telperinquar').",
+  "biography_sections": [
+    {
+      "title": "Otasidan voz kechish, Eregion va Narvi bilan doʻstlik",
+      "content": "Celebrimbor Nargothrondda otasi Curufin va amakisi Celegormning Finrod hamda Lúthienga nisbatan qilgan xiyonatlaridan nafratlanib, ota-bobolarining qonli Qasamyodidan ochiq voz kechdi va Nargothrondda qoldi. Ammo bobosi Fëanorning tengsiz hunarmandchilik dahosi uning qoʻllarida yashar edi.\n\nIkkinchi davrning 750-yilida Celebrimbor Khazad-dûmda mithril maʼdani topilganini eshitib, Tumanli Togʻlar etagida Eregion (Hollin) oʻlkasiga va Ost-in-Edhil shahriga asos soldi. U Moria bosh ustasi Narvi bilan mustahkam doʻstlik oʻrnatdi; Narvi Gʻarbiy Darvozani toshdan yoʻngan boʻlsa, Celebrimbor uning yuzasiga ithildin bilan 'Pedo mellon a minno' ('Doʻst deb ayt va kir') yozuvini hamda Fëanor Yulduzini chizdi."
+    },
+    {
+      "title": "Annatar vasvasasi va Uch Elf Uzugining yaratilishi",
+      "content": "Taxminan Ikkinchi davrning 1200-yilida Sauron goʻzal va dono Valar elchisi 'Annatar' ('Tuhfalar Hukmdori') qiyofasida Eregionga keldi. Gil-galad va Elrond unga ishonmaslikni uqtirgan boʻlsalar-da, Oʻrta-yerni Valinor kabi soʻnmas goʻzallikka toʻldirishni orzu qilgan Celebrimbor va Mírdain ustalari uning bilimlaridan foydalanib, Qudrat Uzuklarini (Yetti va Toʻqqiz uzukni) soxtaladilar.\n\nSauron Mordorga ketgach, Celebrimbor Ikkinchi davrning 1590-yilida Sauronning ishtirokisiz va uning qoʻli mutlaqo tegmagan holda oʻz sanʼatining choʻqqisi — Uch Elf Uzugini: Narya, Nenya va Vilyani yolgʻiz oʻzi yaratdi. Bu uzuklar hokimiyat yoki urush uchun emas, balki davolash, asrash va tushunish uchun moʻljallangan edi."
+    },
+    {
+      "title": "Sauronning fosh boʻlishi va Qahramonona oʻlim",
+      "content": "Sauron Orodruin olovida Yagona Hukmron Uzukni barmogʻiga taqib, afsun oʻqigan zahoti, Celebrimbor uning yashirin niyatini sezib qoldi va elflar oʻz uzuklarini darhol yechib oldilar. Celebrimbor Galadriel maslahati bilan Uch Uzukni yashirincha Galadrielga (Nenya) hamda Gil-galad bilan Círdanga (Vilya va Narya) joʻnatdi.\n\nGʻazabga mingan Sauron Eregionga bostirib kirib, Ost-in-Edhilni vayron qildi. Mírdain saroyi zinapoyasida Sauron bilan yakkama-yakka toʻqnashgan Celebrimbor asir olindi. Qattiq qiynoqlar ostida u ahamiyatsizroq hisoblagan Yetti va Toʻqqiz uzukning joyini aytishga majbur boʻldi, biroq eng qimmatli Uch Elf Uzugi qayerdaligini oʻlimigacha sotmadi. Kamondan otilgan oʻqlar bilan oʻldirilgan Celebrimborning jasadini Sauron nayza uchiga ilib, Elrond qoʻshiniga qarshi jangda dahshatli bayroq sifatida koʻtarib yurdi."
+    },
+    {
+      "title": "Merosi, pushaymonligi va Fëanor xonadonining ma'naviy najoti",
+      "content": "Celebrimbor Fëanor xonadonining so'nggi va eng olijanob vakili bo'lib, o'z ajdodlarining qonli la'natini fidokorona o'lim bilan yuvgan yagona shaxsdir. Uning yaratgan Uch Elf Uzugi Uchinchi Davrda Rivendell va Lothlórien kabi jannatmakon maskanlarni asrab qolishda, elflar madaniyatini saqlashda va nihoyat Sauron ustidan qozonilgan g'alabada hal qiluvchi rol o'ynadi. Gandalfning Olov Uzugi Narya orqali qalblarga umid va jasorat ulashishi aynan Celebrimborning pokiza niyatining mevasidir. U xatoga yo'l qo'ygan bo'lsa-da, o'z azoblari orqali poklanib, O'rta-yer tarixida afsonaviy daho sifatida muhrlandi."
+    }
+  ],
+  "sources": [
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of the Rings of Power and the Third Age",
+      "page": "286"
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "The Council of Elrond & A Journey in the Dark",
+      "page": "242"
+    },
+    {
+      "book_slug": "unfinished-tales",
+      "chapter": "The History of Galadriel and Celeborn",
+      "page": "234"
+    }
+  ],
+  "related_characters": [
+    "curufin",
+    "feanor",
+    "galadriel",
+    "gil-galad",
+    "elrond",
+    "cirdan",
+    "sauron",
+    "gandalf"
+  ],
+  "adaptations": [
+    {
+      "medium": "series",
+      "title": "The Lord of the Rings: The Rings of Power",
+      "creator": "J.D. Payne & Patrick McKay",
+      "year": 2022,
+      "divergence_notes": "Serialda Uch Elf Uzugi Yetti va To'qqiz uzukdan avval hamda Sauronning ('Halbrand') bevosita ishtirokida quyiladi. Tolkien kanonida esa Uch Uzuk eng oxirida (Ikkinchi davr 1590-yilda) va Sauron ishtirokisiz, yolg'iz Celebrimborning o'zi tomonidan yaratilgan."
+    }
+  ]
+}

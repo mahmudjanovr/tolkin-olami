@@ -1,0 +1,54 @@
+{
+  "id": "sindar",
+  "name": "Sindar",
+  "other_names": [
+    "Kulrang Elflar",
+    "Beleriand Elflari"
+  ],
+  "race_category": "elflar",
+  "divisions_and_clans": [
+    "Iathrim (Doriath elflari)",
+    "Falathrim (Bandargoh elflari)",
+    "Mithrim (Shimol Sindari)"
+  ],
+  "origin_era": "Daraxtlar davri",
+  "associated_languages": [
+    "sindarin"
+  ],
+  "primary_realms": [
+    "Doriath",
+    "Falas",
+    "Mithrim"
+  ],
+  "textual_status": "author_published",
+  "summary": "Sindar (Kulrang Elflar) — Teleri qavmining Buyuk Sayohat chogʻida Beleriandda qolib ketgan qismi boʻlib, Elu Thingol va Ilahiya Melian boshchiligidagi Doriath saltanati hamda Círdan boshchiligidagi Falas dengiz boʻyi shohliklarida yuksak madaniyat yaratganlar. Ular Oʻrta-yer tabiatiga eng yaqin, qoʻshiq va musiqa sanʼatida tengsiz boʻlganlar.",
+  "sources": [
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of the Sindar",
+      "page": "91"
+    }
+  ],
+  "description_sections": [
+    {
+      "title": "Kelib chiqishi va Elwë Singollo siri",
+      "content": "Sindar elflari dastlab Teleri (Uchinchi Qavm)ning bir qismi boʻlib, ularning yoʻlboshchisi Elwë (Thingol) edi. Beleriand oʻrmonlarida Elwë Nan Elmoth chakalakzorida ilohiy Maia Melian bilan uchrashib, uning husniga mahliyo boʻlib qotib qoladi. Oʻz yoʻlboshchisini qidirgan koʻplab Teleri Gʻarbga ketuvchi suzuvchi Tol Eressëa oroliga chiqishdan bosh tortdilar va Beleriandda qoldilar. Yuz yildan soʻng Elwë Melian bilan birga qaytib kelganida, uning boʻyi barcha elflardan baland, sochlari kumushrang va yuzi ilohiy nur bilan porlab turar edi; u Elu Thingol (Qirol Kulrang-Chopon) nomi bilan Doriathdagi Menegroth (Ming Gʻor) saroyida barcha Sindar ustidan hukmronlik boshladi."
+    },
+    {
+      "title": "Melian Kamari va Doriathning gullab-yashnashi",
+      "content": "Melian oʻzining ilohiy kuchi bilan Doriath oʻrmonlari atrofida «Melian Kamari» (Girdle of Melian) deb atalgan koʻrinmas sehrli toʻsiq oʻrnatdi. Hech bir dushman yoki begona zot Melian va Thingolning ijozatisiz bu chegarani buzib oʻta olmas edi. Natijada Beleriandning qolgan qismida Morgoth dahshatli qonli urushlar olib borgan paytda ham, Doriath tinchlik, musaffo musiqiylik va gullab-yashnash beshigi boʻlib qoldi. Sindarlar Daeron boshchiligida Cirth (Angerthas) runik yozuvini yaratdilar va oʻzlarining mayin, ohangdor Sindarin tilini shakllantirdilar. Ushbu til keyinchalik butun Oʻrta-yerdagi barcha elflarning umumiy muomala tiliga aylandi."
+    },
+    {
+      "title": "Círdan va Falathrim dengizchilari",
+      "content": "Sindarning ikkinchi yirik boʻgʻini — Beleriandning gʻarbiy sohillaridagi Brithombar va Eglarest portlarida yashovchi Falathrim (Sohil Elflari) edi. Ularning yoʻlboshchisi donishmand Kema Ustasi Círdan boʻlib, u Oʻrta-yerdagi eng qadimgi va soqolli yagona elf sifatida eʼtirof etilgan. Falathrimlar Oʻrta-yerda birinchi boʻlib kema yasash va dengizchilik sanʼatini kashf etdilar hamda dengiz xudosi Ulmo va Ossë bilan yaqin muloqotda boʻldilar. Ular Doriath bilan ittifoqda boʻlib, Morgothning qirgʻoqqa boʻlgan hujumlarini uzoq vaqt qaytardilar."
+    },
+    {
+      "title": "Doriathning fojiasi va Uchinchi Davrdagi merosi",
+      "content": "Doriathning osoyishtaligi Beren keltirgan Silmaril tufayli buzildi. Thingol Silmarilni Nauglamír boʻyintumoriga qadash uchun Nogrod mittilarini taklif qildi; ammo ochkoʻzlikka berilgan mitti ustalar Thingolni oʻldirib, xazinani oʻgʻirladilar. Melian motam ichida Valinorga qaytgach, sehrli kamar soʻndi va Doriath Fëanor oʻgʻillarining qonli hujumi natijasida butunlay vayron boʻldi. Omon qolgan Sindarlar Sirion etaklariga qochdilar. Ikkinchi va Uchinchi Davrlarda Sindar zodagonlari (Oropher, Thranduil, Celeborn) sharqqa borib, Greenwood va Lothlóriendagi Silvan elflariga rahbarlik qildilar va elflarning madaniy merosini saqlab qoldilar."
+    },
+    {
+      "title": "Musiqa, oʻrmon sirlari va dengizga boʻlgan intilish",
+      "content": "Sindar elflari Oʻrta-yerning barcha xalqlari orasida eng goʻzal kuychilar va musiqashunoslar boʻlgan. Ularning kuylari daraxtlarning oʻsishini tezlashtirgan, daryolar oqimini osoyishta qilgan. Beleriand gʻarq boʻlgach, Sindar elflari Buyuk Dengiz (Belegaer) sohillariga kelib, Círdanning Kulrang Bandargohlarida kemasozlik bilan mashgʻul boʻldilar. Har bir Sindar qalbida Dengiz sadosi va Boqiy Gʻarbga qaytishga boʻlgan cheksiz intilish uygʻondi. Bu intilish Uchinchi Davrda ularning Oʻrta-yerni tark etib, oq kemalarda Valinorga joʻnab ketishlariga sabab boʻldi. Sindar elflarining kiyimlari oʻrmon va daryo ranglarini oʻzida aks ettirar, ularning qadam tovushlari esa hatto quruq barglar ustida ham mutlaqo eshitilmas edi. Ular tabiatning eng sirli shoirlari boʻlib qoldilar."
+    }
+  ]
+}

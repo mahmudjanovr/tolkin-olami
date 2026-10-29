@@ -1,0 +1,113 @@
+{
+  "id": "theoden",
+  "name": "Théoden",
+  "original_name": "Théoden Ednew",
+  "father_name": "Thengel",
+  "mother_name": "Morwen of Lossarnach",
+  "spouse": "Elfhild",
+  "children": [
+    "Théodred (valiahd oʻgʻil, Isen kechuvida halok boʻlgan)"
+  ],
+  "aliases": [
+    "Théoden Ednew (Yangilangan)",
+    "Mark Shohi (King of the Mark)",
+    "Rohirrim Oqsoqoli"
+  ],
+  "titles": [
+    "Rohan Qiroli (Eorl xonadonining 17-qiroli)",
+    "Mark Hukmdori",
+    "Gondorning Oliy Qasamyodli Ittifoqchisi"
+  ],
+  "race": "insonlar",
+  "sub_race": "Rohirrim",
+  "culture": "Rohan / Edoras",
+  "birth_year": "Uchinchi davr 2948",
+  "death_year": "Uchinchi davr 3019 (Pelennor Maydonlari Jangida shahid boʻlgan)",
+  "house_id": "rohan-shohlari",
+  "weapons_and_artifacts": [
+    "Herugrim (Qadimiy Eorl xonadoni qilichi)",
+    "Snowmane (Oqyel — afsonaviy oq zotdor jangovar oti)",
+    "Zarhal Rohan dubulgʻasi va oltin qalqoni"
+  ],
+  "primary_locations": [
+    "edoras",
+    "helms-deep",
+    "minas-tirith"
+  ],
+  "textual_status": "author_published",
+  "uncertainty_notes": "Tolkien 'The Lord of the Rings' Ilovasi A (II: 'The House of Eorl') asarida Théoden shaxsiyatini Shimoliy Yevropa qadimiy qahramonlik eposlari (Beowulf kabi) ruhiyatida tasvirlagan. Théoden Sarumanning soxta tinchlik va yolgʻonlariga aldangan keksaygan podshoh edi; biroq Gandalf uning aqlini ozod qilgan zahoti, u oʻzining soʻnggi kunlarini burch, jasorat va erkinlik yoʻlidagi muqaddas jangga bagʻishladi. Uning Pelennor maydonidagi otliq hujumi kitobxonlar tomonidan butun asarning eng hayajonli sahifasi deb eʼtirof etiladi.",
+  "summary": "Thengel va Morwenning yagona oʻgʻli, Rohan Qirolligining 17-hukmdori. Saruman aygʻoqchisi Gríma Wormtongue taʼsirida tushkunlikka tushgan, ammo Gandalf tomonidan uygʻotilgan. Helm darasida Isengard qoʻshinini yenggan. Qizil Oʻq chaqirigʻiga javoban 6000 otliq bilan Gondor yordamiga shoshilgan, Pelennor Maydonlari Jangida shaxsan qoʻshin boshlab, Mordor qamalini yorib oʻtgan va Jodugar-shoh bilan toʻqnashuvda shahid boʻlgan afsonaviy qirol.",
+  "etymology": "Qadimgi ingliz tilida 'Théoden' — þēoden ('xalq yoʻlboshchisi, qirol, amir') soʻzidan olingan. Uning 'Ednew' epiteti esa ed-niwe ('qayta yangilangan, yoshargan') deganidir.",
+  "biography_sections": [
+    {
+      "title": "Eorl xonadoni va Meduseld taxti",
+      "content": "Théoden Ednew Uchinchi davrning 2948-yilida Gondorda Thengel va Morwen Steelsheen oilasida tugʻilgan. U 2980-yilda otasining vafotidan soʻng Rohan Oliy Shohi (King of Rohan) taxtiga oʻtirdi. U adolatli, saxiy va jangsevar podshoh boʻlib, Meduseld Oltin Saroyida hukmronlik qildi.\n\nUning yagona oʻgʻli Théodred boʻlib, xotini Elfhild uning tugʻruq chogʻida vafot etgan edi. Singlisi Théodwyn vafot etgach, uning yetim qolgan farzandlari — Éomer va Éowynni oʻz saroyida oʻz bolalaridek mehr bilan tarbiyaladi."
+    },
+    {
+      "title": "Gríma Wormtongue zahri va Gandalf tomonidan shifolanish",
+      "content": "Théoden keksaygan sari, Sarumanning josusi boʻlgan bosh maslahatchi Gríma Wormtongue uning ongini makkor soʻzlar va zaharlar bilan tushkunlikka tushirdi. Qirol oʻzining zaif, qari va kuchsiz ekaniga ishonib, saroyda harakatsiz oʻtirib qoldi; bu orada Saruman qoʻshinlari Rohanga hujum qilib, Théodredni Isen daryosi kechuvida oʻldirdi.\n\n3019-yil 2-martida Oq Gandalf, Aragorn, Legolas va Gimli Meduseldga kirib keldilar. Gandalf oʻzining ilohiy qudrati bilan Grímaning qora sehrini parchalab, Théodenni chuqur gʻaflatdan uygʻotdi. Qirol oʻz qilichi Herugrimni qoʻliga olib, qaddini rostladi va xalqini jangga boshladi."
+    },
+    {
+      "title": "Hornburg (Helm's Deep) jangi",
+      "content": "Saruman oʻn minglik Uruk-hai armiyasini joʻnatganini bilgan Théoden, oʻz xalqini va qoʻshinini qadimiy tosh qalʼa — Helm's Deepdagi Hornburgga koʻchirdi. Qalʼa devorlari portlatilib, umidsiz qorongʻu tun choʻkkanida, Théoden taslim boʻlishdan bosh tortdi.\n\nTong otganda, shoh oʻz otiga minib, Aragorn bilan birga darvozadan dushman ustiga shiddatli hujum (sortee) qildi. Helm karnayining dahshatli sadosi ostida Gandalf va Erkenbrand qoʻshinlari yetib kelib, Saruman armiyasini butkul tor-mor qildi."
+    },
+    {
+      "title": "Dunharrow qasamyodi va Pelennorga buyuk yurish",
+      "content": "Gondorning qizil oʻq (Red Arrow) elchisi Hirgon Meduseldga yetib kelib yordam soʻraganida, Théoden ikkilanmasdan: 'Rohan yordamga boradi!' deb javob berdi. U Dunharrowda olti ming nafar sara otliqni toʻpladi.\n\nWoses (Oʻrmon yovvoyi odamlari) yetakchisi Ghân-buri-Ghân yordamida togʻ yoʻllaridan yashirincha oʻtib, 15-mart tongida Minas Tirith ostonasidagi Pelennor dalalariga yetib keldilar. Qora qorongʻulikda Rohirrim karnaylari yangrab, Théoden oʻz oq tulpari Snowmane ustida Oromë xudosidek viqor bilan dushman saflarini yorib kirdi."
+    },
+    {
+      "title": "Angmar Jodugar-shohi bilan toʻqnashuv va shonli oʻlim",
+      "content": "Pelennor jangining avj pallasida qora qanotli maxluq ustida uchib kelgan Angmar Jodugar-shohi Théodenga hujum qildi. Snowmane oʻqdan yaralanib yiqildi va shohni oʻz ostida bosib qoldi. Bu vaqtda jangchi qiyofasidagi Éowyn va xobbit Merry Jodugar-shohni yoʻq qilib, shohning qasosini oldilar.\n\nJon berayotgan Théoden Éomerni yangi Shoh deb eʼlon qildi va: 'Mening jasadim oʻz ajdodlarim oldida uyalmaydi. Men buyuklar safiga ketmoqdaman', deb qahramonlarga xos sharaf bilan vafot etdi. U Edorasdagi podshohlar qabristonida, simbelmynë gullari bilan qoplangan yettinchi tepalikka dafn etildi."
+    }
+  ],
+  "sources": [
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "The King of the Golden Hall",
+      "page": "505"
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "Helm's Deep",
+      "page": "525"
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "The Ride of the Rohirrim",
+      "page": "828"
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "The Battle of the Pelennor Fields",
+      "page": "837"
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "Appendix A: Annals of the Kings and Rulers (II: The House of Eorl)",
+      "page": "1068"
+    }
+  ],
+  "related_characters": [
+    "eomer",
+    "eowyn",
+    "aragorn",
+    "gandalf",
+    "faramir",
+    "saruman"
+  ],
+  "adaptations": [
+    {
+      "medium": "film",
+      "title": "The Lord of the Rings Film Trilogy",
+      "creator": "Peter Jackson",
+      "year": 2002,
+      "divergence_notes": "Filmda marhum Bernard Hill gavdalantirgan Théoden xarakteri kino san'atidagi eng unutilmas shoh obrazlaridan biriga aylangan. Filmda Théodenni Gríma emas, balki Sarumanning ruhi bevosita egallab olgani ko'rsatiladi va Gandalf undan jin chiqargandek Sarumanni haydaydi; kitobda esa hech qanday jismoniy jinsizlanish bo'lmagan — Théoden Grímaning psixologik bosimi va zaiflashtiruvchi dorilar ta'siridan Gandalfning donishmand so'zlari bilan uyg'ongan."
+    }
+  ],
+  "image": {
+    "src": "/images/characters/theoden.webp",
+    "src_thumb": "/images/characters/theoden-thumb.webp",
+    "alt": "Théoden ot ustida Herugrim qilichini koʻtargan holda, Meduseld va Rohirrim qoʻshini oldida",
+    "caption": "Théoden Ednew — Rohan Oliy Shohi, Eorl xonadoni 17-hukmdori, Pelennor jangi qahramoni"
+  }
+}

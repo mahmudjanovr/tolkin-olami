@@ -1,0 +1,83 @@
+{
+  "id": "celeborn",
+  "name": "Keleborn",
+  "original_name": "Celeborn",
+  "father_name": "Galadxon (Elmo avlodi, Sindar anʼanasiga koʻra)",
+  "mother_name": "Nomaʼlum",
+  "spouse": "Galadriel",
+  "children": [
+    "rian-celerian (Kelerian — Elrondning rafiqasi)"
+  ],
+  "aliases": [
+    "Donishmand Keleborn",
+    "Lotlorien hukmdori",
+    "Sharqiy Lorien qiroli",
+    "Teleporno (Telerin shakli)"
+  ],
+  "titles": [
+    "Lotlorien Xoʻjayini (Lord of Lothlórien)",
+    "Doriat shahzodasi",
+    "Sharqiy Lorien Hukmdori"
+  ],
+  "race": "elflar",
+  "sub_race": "Sindar (Teleri)",
+  "culture": "Doriat va Lotlorien elflari",
+  "birth_year": "Daraxtlar Davri (Beleriyand yoki Aman)",
+  "death_year": "Oʻlmas (T.D. boshlarida Gʻarbga suzib ketgan)",
+  "weapons_and_artifacts": [
+    "Lotlorienning oq oqqush kemalari"
+  ],
+  "primary_locations": [
+    "doriath",
+    "eregion",
+    "rivendell",
+    "lothlorien",
+    "mirkwood"
+  ],
+  "textual_status": "disputed_variant",
+  "uncertainty_notes": "Nashr etilgan «Uzuklar Hukmdori» va «Silmarillion»da Keleborn Doriat qiroli Tingolning qarindoshi (Sindar shahzodasi) sifatida tasvirlanadi. Biroq Tolkienning soʻnggi qoralama esselarida («Unfinished Tales») uning Alqualondëlik Teleri shahzodasi Teleporno boʻlgani haqidagi muqobil versiya ham uchraydi.",
+  "summary": "Oʻrta-yerning eng qadimgi va donishmand elf hukmdorlaridan biri, malika Galadrielning umr yoʻldoshi, Elrondning qaynotasi va Arvenning bobosi. Galadriel bilan birga Oltin Oʻrmon (Lotlorien)ni boshqargan va Uzuk Urushida Dol Guldur qalʼasini zabt etishga boshchilik qilgan.",
+  "biography_sections": [
+    {
+      "title": "Doriatdan Ikkinchi Davrgacha",
+      "content": "Keleborn Birinchi Davrda Doriat qiroli Tingolning saroyida yashagan Sindar shahzodasi boʻlib, u yerda Finarfinning qizi Galadriel bilan tanishgan va unga uylangan. Beleriyand halokatidan soʻng ular Gʻarbga qaytmasdan Oʻrta-yerda qolishgan, Ikkinchi Davrda Lindon, Evendim koʻli boʻylari va Eregionda yashashgan. Ularning yagona qizi Kelerian Elrondga turmushga chiqqan. Mitti-odamlar bilan qadimgi kelishmovchiliklar tufayli Keleborn Moriyadan oʻtishni xush koʻrmagan, biroq Sauron Eregionga bostirib kirganda Elrond qoʻshini bilan birga jang qilgan."
+    },
+    {
+      "title": "Lotlorien hukmdori va Uzuk Urushi",
+      "content": "Uchinchi Davrda Amrot halok boʻlgach, Keleborn va Galadriel Lotlorienning oliy himoyachilariga aylanishgan (ular qirol unvonini olmay, «Xoʻjayin va Xonim» deb atalishgan). Uzuk Birodarligi Moriya fojiasidan soʻng Lorienga kelganida, Keleborn dastlab Gimliga shubha bilan qaragan boʻlsa-da, Galadrielning soʻzlari bilan mitti-odamga mehr koʻrsatgan va Birodarlikni elf qayiqlarida Anduin daryosi boʻylab kuzatib qoʻygan. Uzuk Urushi davomida u Lorien qoʻshinini boshqarib, Dol Guldurdan chiqqan uchta hujumni qaytargan, soʻngra daryodan kechib oʻtib, qirol Tranduil bilan birlashgan va Dol Guldurni qamal qilib egallagan."
+    },
+    {
+      "title": "Sharqiy Lorien va soʻnggi kema",
+      "content": "Sauron qulagandan soʻng Keleborn va Tranduil Qorongʻu Oʻrmonni tozalab, unga Eryn Lasgalen («Yashil Barglar Oʻrmoni») deb nom berishgan; oʻrmonning janubiy qismi Keleborn boshqaruvidagi «Sharqiy Lorien» deb eʼlon qilingan. Galadriel Uchinchi Davr oxirida Gʻarbga suzib ketganidan keyin ham Keleborn bir muddat Oʻrta-yerda, soʻngra Rivendellda nevaralari Elladan va Elrohir bilan yashagan. Toʻrtinchi Davrda u Kulrang Bandargohlardan soʻnggi kema bilan Valinorga yoʻl olgan va u bilan birga Oʻrta-yerda Qadimgi Kunlar xotirasi yakun topgan."
+    }
+  ],
+  "etymology": "Sindarin tilida Celeborn «kumush daraxt» (celeb — «kumush» + orn — «daraxt») maʼnosini anglatadi.",
+  "sources": [
+    {
+      "book_slug": "the-fellowship-of-the-ring",
+      "chapter": "II kitob, 7-bob (Galadriel koʻzgusi)",
+      "page": "354"
+    },
+    {
+      "book_slug": "the-return-of-the-king",
+      "chapter": "Ilova B (Yillar solnomasi: Shimoliy urushlar)",
+      "page": "1093"
+    },
+    {
+      "book_slug": "the-silmarillion",
+      "chapter": "Quenta Silmarillion, 13-bob (Noldorning qaytishi)",
+      "page": "115"
+    }
+  ],
+  "related_characters": [
+    "galadriel",
+    "thingol",
+    "melian",
+    "elrond",
+    "arwen",
+    "thranduil",
+    "gimli",
+    "aragorn"
+  ],
+  "adaptations": []
+}

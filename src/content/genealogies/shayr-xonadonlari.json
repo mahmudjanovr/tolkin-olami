@@ -1,0 +1,144 @@
+{
+  "id": "shayr-xonadonlari",
+  "title": "Shayr Xonadonlari (Baggins, Tuk va Brendibak) Nasabnomasi",
+  "house_name": "Baggins, Tuk (Took) va Brendibak (Brandybuck) Xonadonlari",
+  "founder_id": "gerontius-took",
+  "era": "Uchinchi davr — Toʻrtinchi davr",
+  "summary": "Shayr (The Shire) oʻlkasining eng nufuzli xobbit urugʻlari — Bagginslar, Tukboro Thainlari (Tuk xonadoni), Bukland Hokimlari (Brendibaklar) hamda Gemji (Gamgee) oilasining oʻzaro qarindoshlik zanjiri. Bilbo, Frodo, Semvayz, Meriadok va Peregrin shu shajaralar vakillaridir.",
+  "members": [
+    {
+      "character_id": "gerontius-took",
+      "spouse_ids": ["adamanta-chubb"],
+      "parent_ids": [],
+      "generation": 1,
+      "order": 1,
+      "is_uncertain": false
+    },
+    {
+      "character_id": "balbo-baggins",
+      "spouse_ids": ["berylla-boffin"],
+      "parent_ids": [],
+      "generation": 1,
+      "order": 2,
+      "is_uncertain": false
+    },
+    {
+      "character_id": "bungo-baggins",
+      "spouse_ids": ["belladonna-took"],
+      "parent_ids": ["balbo-baggins"],
+      "generation": 2,
+      "order": 1,
+      "is_uncertain": false
+    },
+    {
+      "character_id": "belladonna-took",
+      "spouse_ids": ["bungo-baggins"],
+      "parent_ids": ["gerontius-took"],
+      "generation": 2,
+      "order": 2,
+      "is_uncertain": false
+    },
+    {
+      "character_id": "gorbadoc-brandybuck",
+      "spouse_ids": ["mirabella-took"],
+      "parent_ids": [],
+      "generation": 2,
+      "order": 3,
+      "is_uncertain": false
+    },
+    {
+      "character_id": "mirabella-took",
+      "spouse_ids": ["gorbadoc-brandybuck"],
+      "parent_ids": ["gerontius-took"],
+      "generation": 2,
+      "order": 4,
+      "is_uncertain": false
+    },
+    {
+      "character_id": "bilbo-baggins",
+      "spouse_ids": [],
+      "parent_ids": ["bungo-baggins", "belladonna-took"],
+      "generation": 3,
+      "order": 1,
+      "is_uncertain": false
+    },
+    {
+      "character_id": "drogo-baggins",
+      "spouse_ids": ["primula-brandybuck"],
+      "parent_ids": ["fosco-baggins"],
+      "generation": 3,
+      "order": 2,
+      "is_uncertain": false
+    },
+    {
+      "character_id": "primula-brandybuck",
+      "spouse_ids": ["drogo-baggins"],
+      "parent_ids": ["gorbadoc-brandybuck", "mirabella-took"],
+      "generation": 3,
+      "order": 3,
+      "is_uncertain": false
+    },
+    {
+      "character_id": "saradoc-brandybuck",
+      "spouse_ids": ["esmeralda-took"],
+      "parent_ids": ["rorimac-brandybuck"],
+      "generation": 3,
+      "order": 4,
+      "is_uncertain": false
+    },
+    {
+      "character_id": "paladin-took-ii",
+      "spouse_ids": ["eglantine-banks"],
+      "parent_ids": ["adgrim-took"],
+      "generation": 3,
+      "order": 5,
+      "is_uncertain": false
+    },
+    {
+      "character_id": "frodo-baggins",
+      "spouse_ids": [],
+      "parent_ids": ["drogo-baggins", "primula-brandybuck"],
+      "generation": 4,
+      "order": 1,
+      "is_uncertain": false
+    },
+    {
+      "character_id": "meriadoc-brandybuck",
+      "spouse_ids": ["estella-bolger"],
+      "parent_ids": ["saradoc-brandybuck", "esmeralda-took"],
+      "generation": 4,
+      "order": 2,
+      "is_uncertain": false
+    },
+    {
+      "character_id": "peregrin-took",
+      "spouse_ids": ["diamond-of-long-cleeve"],
+      "parent_ids": ["paladin-took-ii", "eglantine-banks"],
+      "generation": 4,
+      "order": 3,
+      "is_uncertain": false
+    },
+    {
+      "character_id": "samwise-gamgee",
+      "spouse_ids": ["rosie-cotton"],
+      "parent_ids": ["hamfast-gamgee"],
+      "generation": 4,
+      "order": 4,
+      "is_uncertain": false
+    }
+  ],
+  "branches": [
+    "Hobbiton Bagginslari (Bag End)",
+    "Buyuk Smial Tuklari (Shayr Thainlari)",
+    "Brendi Saroyi Brendibaklari (Bukland Hokimlari)",
+    "Gemjilar va Gʻarbiy Chegara Fairbairnlari"
+  ],
+  "sources": [
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "Appendix C: Family Trees (Baggins of Hobbiton, Took of Great Smials, Brandybuck of Brandy Hall, The Longfather-Tree of Master Samwise)",
+      "page": "1101",
+      "notes": "Shayr xobbit xonadonlarining Qizil Kitobdagi rasmiy shajara jadvallari."
+    }
+  ]
+}

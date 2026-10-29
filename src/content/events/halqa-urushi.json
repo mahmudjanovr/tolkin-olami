@@ -1,0 +1,58 @@
+{
+  "id": "halqa-urushi",
+  "title": "Halqa Urushi",
+  "subtitle": "Uchinchi Davrning buyuk intihosi",
+  "era": "uchinchi_davr",
+  "year_text": "Uchinchi davr 3018–3019",
+  "location_id": "minas-tirith",
+  "characters": [
+    "aragorn",
+    "gandalf",
+    "frodo-baggins",
+    "sauron",
+    "theoden",
+    "eomer",
+    "saruman"
+  ],
+  "belligerents": {
+    "side_a": [
+      "Gondor va Rohan qoʻshinlari",
+      "Uzuk Qardoshligi",
+      "Gʻarb xalqlari"
+    ],
+    "side_b": [
+      "Mordor lashkarlari (Sauron, Nazgûllar)",
+      "Isengard (Saruman)",
+      "Haradrim va Sharqliklar"
+    ]
+  },
+  "outcome": "Sauron butunlay yo'q qilindi; Yagona Uzuk eritildi; Dushman qo'shinlari parchalandi; Aragorn Elessar sifatida Gondor va Arnor taxtiga o'tirdi; To'rtinchi Davr boshlandi.",
+  "preceding_event": "elrond-kengashi",
+  "succeeding_event": "uzuk-sohiblarining-ketishi",
+  "textual_status": "author_published",
+  "sources": [
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "The Field of Cormallen",
+      "page": "928"
+    }
+  ],
+  "description_sections": [
+    {
+      "title": "Urushning zamin va tarixiy sabablari",
+      "content": "Halqa Urushi (War of the Ring) – Uchinchi Davrning 3018-3019 yillarida butun O'rta-yer bo'ylab bo'lib o'tgan eng yirik va hal qiluvchi geosiyosiy to'qnashuvdir. Sauron Dol Guldur va Barad-dûrda o'z kuchlarini to'liq tiklab, Yagona Uzukning topilganidan xabar topdi. Uning maqsadi Gondor, Rohan, Lórien, Rivendell va Ereborni bir vaqtning o'zida bir nechta frontlarda qaqshatqich zarbalar bilan yo'q qilish va butun O'rta-yer ustidan mutlaq zulm o'rnatish edi. Ozod Xalqlar esa Rivendell Kengashida Uzukni yo'q qilish va Aragorn boshchiligida shohlikni tiklash strategiyasini qabul qildilar."
+    },
+    {
+      "title": "Ko'p jabxali urush: Shimoldan Janubgacha",
+      "content": "Halqa Urushi faqat Pelennor va Hornburg bilan cheklanmadi; u butun qit'ani qamrab oldi. Shimolda Dol Guldur qo'shinlari Lothlórienni uch marta qamal qildi, biroq Galadriel va Celeborn boshchiligidagi elflar barcha hujumlarni qaytardilar. Dale va Erebor ostonasida Qirol Brand va Dáin Temiroyoq sharqliklarning ulkan armiyasiga qarshi mardonavor jang qilib, sharaf bilan halok bo'ldilar va qal'a ichida g'alabaga erishdilar. Janubda esa Sauronning asosiy zarbasi Minas Tirithga yo'naltirildi va Pelennor dalalarida O'rta-yer tarixidagi eng buyuk kavaleriya jangi sodir bo'ldi."
+    },
+    {
+      "title": "Yashirin missiya va Qora Darvozadagi xatarli aldov",
+      "content": "Urushning taqdiri ulkan armiyalar to'qnashuvida emas, balki ikki ojiz xobbit – Frodo Baggins va Samwise Gamgeening maxfiy safarida hal bo'ldi. Dushmanning son-sanoqsiz legionlarini harbiy yo'l bilan yengish mutlaqo imkonsiz ekanini anglagan Gandalf va Aragorn eng xatarli strategik aldovni amalga oshirdilar. Ular yetti ming kishilik kam sonli qo'shin bilan to'g'ridan-to'g'ri Mordorning Qora Darvozasiga (Morannon) yurish qildilar. Sauron Aragorn Uzukni qo'lga kiritgan deb o'ylab, o'zining butun kuchlarini Morannonga tashladi va o'z yurtining ichki hududlarini himoyasiz qoldirdi."
+    },
+    {
+      "title": "Sauronning qulashi va Dunyoning yangilanishi",
+      "content": "Morannon ostonasida ittifoqchilar dushmanning ulkan kuchlari qurshovida qolib, halokat yoqasida turganlarida, Hukm Tog'ida Gollum bilan kurashda Yagona Uzuk olovga quladi. Bir zumda dushman qal'alari buzildi, Sauronning sehri bilan tirik turgan kuchlar parokanda bo'ldi. Urush Ozod Xalqlarning to'liq g'alabasi bilan yakunlandi. Aragorn toj kiyib, Elessar nomi bilan Qayta Birlashgan Qirollikni barpo etdi; Shire Saruman qaroqchilaridan tozalandi; Uch Uzuk o'z sehrini yo'qotishi natijasida elflar davri tugab, Insonlar Hukmronligi Davri boshlandi. Halqa Urushi nafaqat buyuk harbiy gʻalaba, balki Oʻrta-yer maʼnaviyatining yangilanishi boʻldi. Qadimiy adovatda yashagan xalqlar – mitti va elflar, insonlar va tabiat kuchlari yagona ezgulik bayrogʻi ostida doʻstlashdilar va yangi dunyoni birgalikda qurdilar."
+    }
+  ]
+}

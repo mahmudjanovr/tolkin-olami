@@ -1,0 +1,93 @@
+{
+  "id": "meriadoc-brandybuck",
+  "name": "Meriadok Brendibak (Merri)",
+  "original_name": "Meriadoc Brandybuck (Kalimac Brandagamba)",
+  "father_name": "Saradok Brendibak (Buckland hukmdori)",
+  "mother_name": "Esmeralda Tuk (Paladin II Tukning singlisi)",
+  "spouse": "Estella Boljer",
+  "children": [],
+  "aliases": [
+    "Merri",
+    "Aqlli Meriadok",
+    "Holdvayn (Rohan markasi ritsari)",
+    "Buckland xoʻjayini"
+  ],
+  "titles": [
+    "Uzuk Birodarligi aʼzosi",
+    "Buckland hukmdori (Master of Buckland)",
+    "Riddermark (Rohan) ritsari",
+    "Shimoliy Shohlik maslahatchisi"
+  ],
+  "race": "xobbitlar",
+  "sub_race": "Fallohayd va Stoor aralash avlodi",
+  "culture": "Shayr va Buckland xobbitlari",
+  "birth_year": "U.D. 2982",
+  "death_year": "T.D. 63 dan keyin (Gondorda dafn etilgan)",
+  "house_id": "shayr-xonadonlari",
+  "weapons_and_artifacts": [
+    "Gʻarbqoʻrgʻon (Barrow-downs) xanjari (Angmar Jodugar-qirolini yaralagan qadimgi Arnor tigʻi)",
+    "Eorl xonadonining kumush burgʻusi (Eowyn tomonidan sovgʻa qilingan)"
+  ],
+  "primary_locations": [
+    "the-shire",
+    "rivendell",
+    "fangorn",
+    "edoras",
+    "minas-tirith"
+  ],
+  "textual_status": "author_published",
+  "summary": "Frodo Begginsning yaqin qarindoshi va sodiq doʻsti, Uzuk Birodarligi aʼzosi hamda Rohan qiroli Teodenning qurolbardori. Pelennor tekisliklari jangida malika Eovin bilan birga Angmar Jodugar-qirolini mahv etishda hal qiluvchi rol oʻynagan va keyinchalik Shayr tarixi boʻyicha yirik ilmiy risolalar yozgan.",
+  "biography_sections": [
+    {
+      "title": "Shayr fitnasi va Uzuk Birodarligi",
+      "content": "Meriadok Brendibak Bucklandning nufuzli Brendibak xonadonida tugʻilgan boʻlib, xobbitlar orasida aql-zakovati, xaritalarga qiziqishi va tashkilotchiligi bilan ajralib turgan. U Frodo Begginsning Yagona Uzuk haqidagi sirini oldindan payqab, Sem, Pippin va Fredegar Boljer bilan birga Frodoga yordam berish uchun maxfiy «Fitna» uyushtirgan. Qadimgi Oʻrmon va Gʻarbqoʻrgʻon tepaliklari orqali yoʻl boshlab, Tom Bombadil yordamida qadimgi Kardan (Cardolan) shahzodasining qabridan sehrli xanjar olgan. Rivendellda Elrond kengashidan soʻng Uzuk Birodarligi tarkibiga qabul qilingan."
+    },
+    {
+      "title": "Fangorn va Rohan xizmatida",
+      "content": "Amon Xenda Uruk-xaylar tomonidan Pippin bilan birga asir olingan Merri, Rohirrim hujumi paytida qochib Fangorn oʻrmoniga kirib borgan va u yerda Entlar sardori Daraxtsaqol (Fangorn) bilan uchrashgan. Ikki xobbitning kelishi Entlarning uzoq uyqudan uygʻonib, Sarumanning Izengard qalʼasini vayron qilishiga turtki boʻlgan. Keyinchalik Merri Rohan qiroli Teodenga sadoqat qasamyodini ichib, uning qurolbardoriga aylangan. Qirol unga urushga borishga ruxsat bermagan boʻlsa-da, Merri yashirincha Dernxelm (malika Eovin) otiga minib, Minas Tirit qamalini yorib oʻtish uchun janubga yoʻl olgan."
+    },
+    {
+      "title": "Pelennor jasorati va olimlik merosi",
+      "content": "Pelennor tekisliklari jangida qirol Teoden halok boʻlayotganda, Merri malika Eovin bilan birga dahshatli Angmar Jodugar-qiroliga qarshi turgan. Eovinni himoya qilib, Merri oʻzining Gʻarbqoʻrgʻon xanjari bilan Nazgul sardorining tizzasi orqasidagi payini kesib tashlagan: qadimgi Arnor afsuni bilan toblangan bu tigʻ Jodugar-qirolning koʻrinmas himoya qobigʻini parchalab, Eovinga hal qiluvchi zarbani berish imkonini yaratgan. Urushdan soʻng u Pippin bilan Shayrni ozod qilish janglariga (Bywater jangi) boshchilik qilgan, Buckland hukmdori boʻlgan va «Shayr giyohshunosligi» (Herblore of the Shire) hamda «Yil hisobi» (Reckoning of Years) kabi ilmiy asarlarni yozib qoldirgan."
+    },
+    {
+      "title": "Zamondosh xobbitlar strategiyasi, Fangorn va Hornburg jasorati",
+      "content": "Meriadoc Brandybuck (Merry) xobbitlar orasida eng ziyrak, rejalashtirishga usta va jasur qahramon edi. U Frodoni Shire safariga tayyorlashda maxfiy fitnani uyushtirgan va barcha xavflarni oldindan hisoblagan edi. Fangorn o'rmonida Entlarni uyg'otishda Pippin bilan birga muhim rol o'ynadi. So'ngra u Rohirrim safiga kirib, Podshoh Théodenning shaxsiy qurolbardori (esquire) bo'ldi. Théoden unga mehr qo'yib, o'g'lidek e'zozladi."
+    },
+    {
+      "title": "Jodugar-Qirolga zarba, Buckland Boshlig'i va Qizil Kitob merosi",
+      "content": "Pelennor dalalarida Merry Éowyn bilan birga o'lim yoqasida turgan Théodenni himoya qildi. Uning Westernesse ustalari tomonidan o'yilgan qadimiy pichog'i Angmar Jodugar-Qirolining tizzasiga sanchilib, uning sehrli immunitetini parchaladi va Éowynga dushmanga hal qiluvchi zarba berish imkonini yaratdi. Urushdan so'ng Merry Buckland Boshlig'i (Master of Buckland) bo'ldi va 'Shire o'tlari va qo'shiqlari' haqida ilmiy risolalar yozdi; uning qabri esa Gondorda Aragorn yoniga qo'yildi. Meriadoc Brandybuck nafaqat jasur jangchi, balki chuqur bilim sohibi boʻlgan olim xobbit edi. Uning yozgan solnomalari va tadqiqotlari Uchinchi Davr tarixini va madaniyatini asrab qolishda beqiyos ilmiy manba boʻlib xizmat qildi. Meriadocning jasorati tufayli Rohan va Gondor ittifoqi mustahkamlandi; uning qoldirgan adabiy va tarixiy qoʻlyozmalari xobbitlar donoligining tirik guvohi sifatida asrlar osha qadrlandi."
+    }
+  ],
+  "etymology": "Haqiqiy Vestron tilidagi ismi Kalimac Brandagamba boʻlib, qisqartmasi Kali («quvnoq, shod») maʼnosini anglatadi; Tolkien buni ingliz tiliga Meriadoc (Merry) deb tarjima qilgan. Rohanda unga berilgan Holdwine laqabi qadimgi ingliz tilida «sodiq doʻst» demakdir.",
+  "sources": [
+    {
+      "book_slug": "the-fellowship-of-the-ring",
+      "chapter": "I kitob, 5-bob (Fosh etilgan fitna)",
+      "page": "98"
+    },
+    {
+      "book_slug": "the-two-towers",
+      "chapter": "III kitob, 4-bob (Daraxtsaqol)",
+      "page": "462"
+    },
+    {
+      "book_slug": "the-return-of-the-king",
+      "chapter": "V kitob, 6-bob (Pelennor tekisliklari jangi) va Ilova F",
+      "page": "841"
+    }
+  ],
+  "related_characters": [
+    "frodo-baggins",
+    "peregrin-took",
+    "samwise-gamgee",
+    "eowyn",
+    "theoden",
+    "eomer",
+    "treebeard",
+    "tom-bombadil",
+    "witch-king",
+    "aragorn"
+  ],
+  "adaptations": []
+}

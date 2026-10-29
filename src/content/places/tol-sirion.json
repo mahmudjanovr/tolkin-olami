@@ -1,0 +1,40 @@
+{
+  "id": "tol-sirion",
+  "name": "Tol Sirion (Tol-in-Gaurhoth)",
+  "elvish_name": "Tol-in-Gaurhoth (Boʻrilar oroli)",
+  "type": "qalʼa",
+  "region": "beleriand",
+  "coordinates": {
+    "map_id": "beleriand",
+    "x": 880,
+    "y": 1080
+  },
+  "founded_era": "Birinchi davr 60",
+  "destroyed_era": "Birinchi davr 465",
+  "rulers": [
+    "Finrod Felagund",
+    "Orodreth",
+    "Sauron"
+  ],
+  "notable_events": [
+    "Minas Tirith minorasining qulashi",
+    "Finrod va Sauron qoʻshiqlar jangi",
+    "Huanning Sauron ustidan gʻalabasi"
+  ],
+  "textual_status": "author_published",
+  "summary": "Tol Sirion — Sirion daryosi oqimida, Ered Wethrin va Echoriath oraligʻidagi strategik orol-qalʼa. Dastlab Finrod tomonidan Minas Tirith minorasi qurilgan. Dagor Bragollachdan soʻng Sauron egallab, dahshatli Boʻrilar oroliga (Tol-in-Gaurhoth) aylantirgan. Lúthien va Huan tomonidan vayron etilgan.",
+  "sources": [
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of Beren and Lúthien",
+      "page": "164",
+      "notes": "Tol-in-Gaurhoth qamali va Finrodning qahramonona halokati."
+    }
+  ],
+  "description_sections": [
+    {
+      "title": "Sirion darasi va Boʻrilar Oroli",
+      "content": "Tol Sirion — Sirion daryosining Ered Wethrin va Dorthonion oʻrtasidagi tor darasida joylashgan strategik oroldir. Bu yerda Finrod Felagund qadimiy Minas Tirith ('Qoʻriqchi Minora') qalʼasini barpo etgan edi.\n\nDagor Bragollachdan soʻng Sauron qalʼaga qora tuman bilan bostirib kirib uni egalladi va orolni 'Tol-in-Gaurhoth' ('Boʻrilar Oroli')ga aylantirdi. Finrod va Beren shu zindonda asir boʻldi. Lúthien va Huan Sauronni yengib qalʼani vayron qildilar."
+    }
+  ]
+}

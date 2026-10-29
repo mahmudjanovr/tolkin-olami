@@ -1,0 +1,96 @@
+{
+  "id": "finrod",
+  "name": "Finrod Felagund",
+  "original_name": "Findaráto Ingoldo",
+  "father_name": "Finarfin",
+  "mother_name": "Eärwen",
+  "spouse": "Amarië (Valinorda qolgan Vanyar elfi)",
+  "children": [],
+  "aliases": [
+    "Felagund (Khuzdul: Gʻorlar Oʻymakori)",
+    "Nóm (Edain tilida: Donishmandlik)",
+    "Findaráto (Quenya)",
+    "Insonlar Doʻsti"
+  ],
+  "titles": [
+    "Nargothrond Qiroli va Asoschisi",
+    "Minas Tirith (Tol Sirion) Bunyodkori",
+    "Finarfin Xonadonining Toʻngʻich Shahzodasi"
+  ],
+  "race": "elflar",
+  "sub_race": "Noldor",
+  "culture": "Tirion / Nargothrond",
+  "birth_year": "Daraxtlar davri YT 1300",
+  "death_year": "Birinchi davr 465 (Tol-in-Gaurhothda qahramonlarcha halok boʻlgan, Valinorda qayta tirilgan)",
+  "house_id": "finwe-xonadoni",
+  "weapons_and_artifacts": [
+    "Barahir Uzugi (Yashil zumradli qoʻsh ilon uzugi — Beren va Aragorn merosi)",
+    "Nauglamír (Mitti ustalari Finrod uchun yasagan oltin marjon)"
+  ],
+  "primary_locations": [
+    "nargothrond",
+    "menegroth",
+    "tirion",
+    "beleriand"
+  ],
+  "textual_status": "posthumous_edited",
+  "summary": "Finarfinning toʻngʻich oʻgʻli, Galadrielning akasi, yashirin Nargothrond qirolligining asoschisi va Beleriandda Edain (Insonlar)ni ilk bor uchratib, ularga doʻstlik va maʼrifat ulashgan eng olijanob Noldor shahzodasi. Dagor Bragollachda Barahirga bergan qasamyodiga sodiq qolib, Beren Erchamionni Sauron zindonida oʻz hayoti evaziga qutqargan.",
+  "etymology": "Sindarin tilidagi 'Finrod' Quenya tilidagi 'Findaráto' ('Olijanob Oltin Sochli') ismidan olingan. Mitti-odamlar unga bergan 'Felagund' laqabi Khuzdul tilidagi 'felakgundu' soʻzidan boʻlib, 'Gʻorlar yoʻnuvchisi, Yerosti saroylari ustasi' maʼnosini anglatadi.",
+  "biography_sections": [
+    {
+      "title": "Nargothrondning barpo etilishi",
+      "content": "Finrod Oʻrta-yerga Helcaraxë muzliklari orqali oʻtib, dastlab Sirion daryosi oʻtish joyida birinchi Minas Tirith minorasini qurdi. Amakivachchasi Turgon bilan sayohat qilganida, Vala Ulmo unga tush orqali Narog daryosi darasidagi gʻorlarda yashirin qoʻrgʻon qurishni uqtirdi.\n\nTogʻlik mittilar yordamida Finrod buyuk Nargothrond yerosti saroylarini oʻydi va shu tufayli 'Felagund' nomini oldi; mittilar u uchun Valinor javohirlaridan mashhur Nauglamír marjonini yasadilar."
+    },
+    {
+      "title": "Edainning kashf etilishi va Barahir Uzugi",
+      "content": "Sharqiy Beleriandning Ossiriand oʻrmonlarida ov qilib yurgan Finrod Bëor boshchiligidagi ilk foniylar — Insonlar lageriga duch keldi. Ular uxlayotganida Finrod Bëorning arfasini olib, Valinor va Yaratilish haqida qoʻshiq kuyladi. Insonlar uygʻonib, uni 'Nóm' ('Donishmand') deb atadilar va Finrod xonadoniga sadoqat bogʻladilar.\n\nDagor Bragollach jangida Finrod Fen of Serech botqoqligida orqlar qurshovida qolganida, Bëor avlodi Barahir oʻz jangchilari bilan kelib uni qutqardi. Minnatdorchilik va abadiy yordam qasamyodi ramzi sifatida Finrod Barahirga oʻzining zumrad koʻzli uzugini (Barahir Uzugini) topshirdi."
+    },
+    {
+      "title": "Beren uchun fidoiylik va Sauron bilan qoʻshiq jangi",
+      "content": "Yillar oʻtib Barahirning oʻgʻli Beren qoʻlida oʻsha uzuk bilan Nargothrondga kelib, Silmaril safarida yordam soʻraganida, Finrod qasamyodini bajarish uchun tojini ukasi Orodrethga topshirib, oʻn nafar sodiq jangchisi bilan Berenga qoʻshildi (Curufin va Celegorm fitnasi tufayli xalqi u bilan bormadi).\n\nTol-in-Gaurhoth oldida Finrod Sauron bilan yuzma-yuz kelib, buyuk sehrli qoʻshiqlar jangiga kirishdi; ammo Alqualondë gunohi soyasi tufayli hushidan ketdi. Zindonda Sauron asirlarni birma-bir boʻrilariga yem qildi. Boʻri Berenni oʻldirish uchun tashlanganida, Finrod bor kuchi bilan temir zanjirlarini uzib, yirtqichni yalangʻoch qoʻllari bilan boʻgʻib oʻldirdi va oʻzi ham ogʻir jarohatdan жон taslim qildi. Valar uning fidoiyligi uchun uni qisqa vaqtda Valinorda qayta tiriltirdilar."
+    },
+    {
+      "title": "Insonlar Do'sti, Nargothrond asoschisi va Athrabeth donoligi",
+      "content": "Finrod Felagund (Finarfinning to'ng'ich o'g'li) Noldor shahzodalari orasida eng dono, olijanob va adolatparvar edi. U Beleriandga birinchi bo'lib qadam qo'ygan Edain insonlarini (Bëor xonadonini) uchratdi va ularning qadimiy tili hamda qalbini tushunib, ularga mehr qo'ydi. Shu sababli u 'Edennil' (Insonlar Do'sti) nomini oldi. Uning Bëor qizi Andreth bilan o'tkazgan chuqur teologik suhbati ('Athrabeth Finrod ah Andreth') o'lim, boqiylik va insoniyat qismati haqidagi Tolkien merosining eng buyuk durdonasidir."
+    },
+    {
+      "title": "Barahir qasamyodi va Tol-in-Gaurhothdagi buyuk qurbonlik",
+      "content": "Dagor Bragollach jangida Barahir Finrodni dushman qurshovidan qutqarib qolganida, Finrod unga o'zining mashhur ilonli uzugini (Barahir Uzugi) sovg'a qildi va uning nasliga abadiy yordam berishga qasamyod qildi. Beren Silmaril safari bilan Nargothrondga kelganida, Finrod o'z taxti va xalqining qarshiligiga qaramay, qasamyodiga sodiq qoldi. Sauron zindonida Berenni saqlab qolish uchun yalang qo'llari bilan bahaybat bo'rini o'ldirib, o'zi halok bo'ldi. Uning ruhi Mandos zallaridan tezda ozod qilinib, Valinorda otasi Finarfin yonida boqiy yashash saodatiga erishdi."
+    }
+  ],
+  "sources": [
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of the Return of the Noldor",
+      "page": "114"
+    },
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of the Coming of Men into the West",
+      "page": "140"
+    },
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of Beren and Lúthien",
+      "page": "168"
+    },
+    {
+      "book_slug": "beren-and-luthien",
+      "chapter": "The Lay of Leithian (Canto VII: The Contest of Finrod and Thu)",
+      "page": "124"
+    }
+  ],
+  "related_characters": [
+    "finarfin",
+    "galadriel",
+    "beren",
+    "luthien",
+    "turgon",
+    "ulmo",
+    "thingol",
+    "curufin",
+    "sauron",
+    "aragorn"
+  ],
+  "adaptations": []
+}

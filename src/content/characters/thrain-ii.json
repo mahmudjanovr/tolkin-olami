@@ -1,0 +1,80 @@
+{
+  "id": "thrain-ii",
+  "name": "Train II",
+  "original_name": "Thráin II",
+  "father_name": "Tror (Togʻ osti Qiroli)",
+  "mother_name": "Nomaʼlum",
+  "spouse": "Nomaʼlum",
+  "children": [
+    "Torin II Emanqalqon",
+    "Frerin",
+    "Dis (Fili va Kilining onasi)"
+  ],
+  "aliases": [
+    "Surgundagi Qirol",
+    "Tror oʻgʻli Train"
+  ],
+  "titles": [
+    "Durin xalqining Surgundagi Qiroli",
+    "Yetti Mitti-odamlar Uzugining soʻnggi saqlovchisi"
+  ],
+  "race": "mitti-odamlar",
+  "sub_race": "Uzunsoqollar (Longbeards)",
+  "culture": "Erebor va Moviy Togʻlar",
+  "birth_year": "U.D. 2644",
+  "death_year": "U.D. 2850 (Dol Guldur zindonlari)",
+  "house_id": "durin-avlodlari",
+  "weapons_and_artifacts": [
+    "Durin xonadonining Qudrat Uzugi (Yetti Uzukning birinchisi va soʻnggisi)",
+    "Tror xaritasi va Erebor maxfiy eshigining kumush kaliti"
+  ],
+  "primary_locations": [
+    "erebor",
+    "moria",
+    "ered-luin",
+    "mirkwood"
+  ],
+  "textual_status": "author_published",
+  "summary": "Togʻ osti Qiroli Trorning oʻgʻli va Torin Emanqalqonning otasi. Otasi Moria darvozasi oldida Azog tomonidan oʻldirilgach, Mitti-odamlar va Orklar urushiga (Azanulbizar jangiga) boshchilik qilgan; keyinchalik Dol Guldur zindonida halok boʻlishidan oldin Erebor xaritasi va kalitini Gendalfga topshirgan.",
+  "biography_sections": [
+    {
+      "title": "Erebordan surgun va Mitti-odamlar urushi",
+      "content": "U.D. 2770-yilda ajdar Smaug Ereborga hujum qilganida, Train otasi qirol Tror hamda oʻgʻli Torin bilan maxfiy eshik orqali qochib qutulgan. U.D. 2790-yilda keksa Tror Moria darvozasiga yolgʻiz borib, ork sardori Azog tomonidan shafqatsizlarcha oʻldirilgan. Bu xabarni eshitgan Train yetti kun toshdek qotib oʻtirgach, «Bunga chidab boʻlmaydi!» deb hayqirgan va barcha yetti mitti-odamlar xonadonini qasos urushiga chorlagan. Olti yillik yerosti janglari U.D. 2799-yilda Azanulbizar vodiysidagi buyuk gʻalaba bilan yakunlangan; jangda Train bir koʻzidan ayrilgan va kichik oʻgʻli Frerinni yoʻqotgan."
+    },
+    {
+      "title": "Moviy Togʻlar va Uzuk vasvasasi",
+      "content": "Azanulbizardan soʻng Train oʻz xalqining qolgan qismi bilan Eriador gʻarbidagi Moviy Togʻlar (Ered Luin)ga koʻchib oʻtgan. Ammo uning qoʻlida otasidan meros qolgan Durin xonadonining Qudrat Uzugi bor edi: vaqt oʻtishi bilan Uzukning yovuz taʼsiri Trainning qalbida oltinga boʻlgan tinimsiz vasvasani uygʻotgan. U.D. 2841-yilda u Balin, Dvalin va bir nechta hamrohlari bilan Ereborga qaytish uchun yoʻlga chiqqan, biroq Sauronning aygʻoqchilari uni taʼqib qilgan."
+    },
+    {
+      "title": "Dol Guldur tutqunligi va Gendalfga vasiyat",
+      "content": "U.D. 2845-yilda Qorongʻu Oʻrmon chekkasida tunayotgan Train qorongʻu kechada Sauron xizmatkorlari tomonidan oʻgʻirlab ketilgan va Dol Guldur zindonlariga tashlangan. U yerda qiynoqlar ostida undan Mitti-odamlarning soʻnggi Uzugi tortib olingan. U.D. 2850-yilda Dol Guldurga yashirincha kirgan Gendalf zindonda oʻz ismini ham unutgan, hushidan ayrilayotgan keksa mitti-odamni topgan; Train jon berishidan oldin Gendalfga oʻgʻli Toringa yetkazish uchun Erebor xaritasi va maxfiy eshik kalitini topshirgan."
+    }
+  ],
+  "etymology": "Thráin nomi Qadimgi Skandinav tilidagi «Völuspá» dostonidan olingan boʻlib, «oʻjar, qaysar, qatʼiyatli» maʼnosini anglatadi.",
+  "sources": [
+    {
+      "book_slug": "the-hobbit",
+      "chapter": "1-bob (Kutilmagan ziyofat)",
+      "page": "26"
+    },
+    {
+      "book_slug": "the-return-of-the-king",
+      "chapter": "Ilova A, III qism (Durin xalqi)",
+      "page": "1074"
+    },
+    {
+      "book_slug": "unfinished-tales",
+      "chapter": "III qism, 3-bob (Erebor yurishi)",
+      "page": "321"
+    }
+  ],
+  "related_characters": [
+    "thorin-oakenshield",
+    "balin",
+    "dain-ironfoot",
+    "gandalf",
+    "sauron",
+    "durin-i"
+  ],
+  "adaptations": []
+}

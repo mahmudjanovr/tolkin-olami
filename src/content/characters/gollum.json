@@ -1,0 +1,108 @@
+{
+  "id": "gollum",
+  "name": "Gollum",
+  "original_name": "Sméagol (Kuduktuk: Trahald)",
+  "children": [],
+  "aliases": [
+    "Sméagol",
+    "Trahald (In qazuvchi)",
+    "Gollum",
+    "Slinker va Stinker (Samwise qoʻygan laqab)",
+    "Qadrdonim (Precious) quli"
+  ],
+  "titles": [
+    "Gladden Daryo Xobbiti (sobiq)",
+    "Yagona Uzuk Posboni (478 yil davomida)"
+  ],
+  "race": "xobbitlar",
+  "sub_race": "Stoor (Anduin boʻyi daryo xobbiti)",
+  "culture": "Gladden Dalalari / Tumanli Togʻlar / Mordor",
+  "birth_year": "Uchinchi davr taxminan 2430",
+  "death_year": "Uchinchi davr 3019 (Hukm Togʻi olovida Uzuk bilan birga erib ketgan)",
+  "weapons_and_artifacts": [
+    "Oʻtkir tirnoqlar va tishlar",
+    "Yagona Uzuk (deyarli besh yuz yil asragan)"
+  ],
+  "primary_locations": [
+    "barad-dur",
+    "dead-marshes",
+    "cirith-ungol",
+    "orodruin"
+  ],
+  "textual_status": "author_published",
+  "uncertainty_notes": "Tolkien 'The Letters of J.R.R. Tolkien' (181 va 246-maktublar) asarida Gollum shaxsiyatidagi chuqur psixologik boʻlinishni (Sméagol va Gollum oʻrtasidagi nizo) tahlil qilgan. Frodoning unga koʻrsatgan mehr-oqibati sababli Sméagol Cirith Ungol yoʻlida deyarli tavba qilish va yaxshilikka qaytish ostonasida turgan edi; biroq Samwisening qattiq gumonsirashi va qoʻpol soʻzlari uning qalbida soʻnggi mehr uchqunini oʻchirdi. Shu tariqa u xiyonat yoʻlidan qaytmadi va oxir-oqibat oʻz qadrdon Uzugi bilan birga olovga quladi.",
+  "summary": "Anduin daryosi boʻyida yashovchi Stoor xobbitlari qabilasidan boʻlgan Sméagol. 2463-yilda qarindoshi Déagol bilan baliq tutayotib Yagona Uzukni topgan va uni egallash uchun doʻstini boʻgʻib oʻldirgan. Qabiladan quvilgach, Tumanli Togʻlar qaʼridagi zax gʻorlarda qariyb 500 yil yashagan. Uzuk uning vujudini xunuk, oʻrmalovchi maxluq — Gollumga aylantirgan. Bilbo Baggins Uzukni topib olgach, butun Oʻrta-yer boʻylab uni taʼqib qilgan. Halqa Urushida Frodo va Samga Mordor sari yoʻlboshchilik qilgan va Hukm Togʻida Uzuk bilan birga olovga qulab, Ardaning najot topishiga sabab boʻlgan fojiali qahramon.",
+  "etymology": "Uning tomogʻidan chiqadigan xirillagan, jirkanch yutqinish tovushi tufayli unga 'Gollum' deb laqab berishgan. Uning asl xobbit ismi 'Sméagol' esa qadimgi inglizcha smygel ('in, teshik, chuqur') soʻziga bogʻliq boʻlib, Westron tilidagi asl shakli 'Trahald' ('in qazuvchi, chuqurga kirib oluvchi') maʼnosini beradi.",
+  "biography_sections": [
+    {
+      "title": "Kelib chiqishi, Déagol va qotillik laʼnati",
+      "content": "Gollum aslida Uchinchi davrning 2430-yillarida Anduin daryosi boʻyida yashovchi Stoor qabilasiga mansub Sméagol ismli xobbit edi. 2463-yilda uning doʻsti va qarindoshi Déagol daryoda baliq tutayotib, suv tubidan yaraqlab turgan tilla uzukni topib oldi.\n\nUzukning yovuz qudrati bir lahzada Sméagol ongini zaharladi. U uzukni tugʻilgan kuniga 'sovgʻa' sifatida talab qildi; Déagol rad etgach, Sméagol uni boʻgʻib oʻldirdi va jasirini yashirdi. Bu qotillik uning butun hayotiga abadiy qargʻish muhrini bosdi."
+    },
+    {
+      "title": "Tumanli Togʻlar qaʼrida qorongʻu asrlar",
+      "content": "Oʻz qabilasidan quvilgan Sméagol quyosh va oydan nafratlanib, Tumanli Togʻlar tubidagi qorongʻu gʻorlarga kirib ketdi. U yerda deyarli besh yuz yil davomida yerosti koʻlida sovuq xom baliqlar va adashgan oʻrklarni ovlab kun kechirdi.\n\nUzuk uning umrini gʻayritabiiy darajada choʻzgan boʻlsa-da, tanasini qurigan skeletga, ongini esa ikkiga boʻlingan parokanda jonzotga aylantirdi: bir tomonda oʻtmishdagi xobbitlik xotirasi bilan yashovchi bechora 'Sméagol', ikkinchi tomonda esa yovuz, qotil va uzuk quliga aylangan 'Gollum'. Tomogʻidan chiqaradigan 'gollum, gollum' degan boʻgʻiq tovush unga laqab boʻlib qoldi."
+    },
+    {
+      "title": "Uzukning yoʻqolishi va Sauron changalida",
+      "content": "2941-yilda Bilbo Baggins Uzukni topib olgach, Gollum oʻz 'Precious'ini yoʻqotib aqlini yoʻqotayozdi. Koʻp yillar oʻtgach, u gʻordan chiqib oʻgʻri 'Baggins'ni va 'Shire'ni qidirib yoʻlga tushdi.\n\nU Mordor chegaralarida qoʻlga olinib, Barad-dûr zindonlarida shaxsan Sauron tomonidan qiynoqlarga solindi. U qiynoqlar ostida ikki soʻzni aytdi: 'Shire! Baggins!'. Sauron Uzukning xobbitlar qoʻlida ekanini aynan Gollumdan bilib oldi va Nazgûllarni ovga joʻnatdi."
+    },
+    {
+      "title": "Frodo bilan sayohat, ichki ziddiyat va soʻnggi xiyonat",
+      "content": "Emyn Muilda Frodo va Sam tomonidan asir olingan Gollum 'Precious' bilan qasamyod qilib, ularga Mordorga yoʻl koʻrsatishga vaʼda berdi. Frodoning olijanobligi va unga 'Sméagol' deb murojaat qilishi uning qalbida deyarli soʻnib ketgan insoniylik uchqunlarini uygʻotdi.\n\nAmmo Cirith Ungol zinasida Samning tushunmovchilik bilan aytgan qattiq soʻzi uning qalbida soʻnggi najot eshigini yopdi. U xobbitlarni Shelob oʻrgimchagi changaliga tashlab, Uzukni qaytarib olishga intildi."
+    },
+    {
+      "title": "Hukm Togʻidagi oxirgi sakrash va teologik rol",
+      "content": "Sammath Naur gʻorida Frodo Uzukni oʻziniki deb eʼlon qilganida, koʻrinmas boʻlib turgan Frodoning ustiga Gollum tashlandi. U Frodoning barmogʻini tishlab uzib olib, uzukni qaytarib oldi. Quvonchdan telba boʻlib qoya chetida raqsga tushayotganida, muvozanatini yoʻqotib olovli vulqon qaʼriga quladi.\n\nTolkien taʼkidlaganidek, yovuzlik oʻz tabiatiga koʻra oʻzini oʻzi yoʻq qiladi. Gollum oʻzining soʻnggi yovuz harakati bilan dunyoni Sauron zulmatidan qutqaruvchi ilohiy qurolga aylandi."
+    }
+  ],
+  "sources": [
+    {
+      "book_slug": "the-hobbit",
+      "chapter": "Riddles in the Dark",
+      "page": "71"
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "The Shadow of the Past",
+      "page": "51"
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "The Taming of Sméagol",
+      "page": "600"
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "Mount Doom",
+      "page": "925"
+    },
+    {
+      "book_slug": "letters-of-jrr-tolkien",
+      "chapter": "Letter 246",
+      "page": "326"
+    }
+  ],
+  "related_characters": [
+    "frodo-baggins",
+    "samwise-gamgee",
+    "bilbo-baggins",
+    "gandalf",
+    "sauron",
+    "aragorn"
+  ],
+  "adaptations": [
+    {
+      "medium": "film",
+      "title": "The Lord of the Rings & The Hobbit Film Trilogies",
+      "creator": "Peter Jackson",
+      "year": 2002,
+      "divergence_notes": "Andy Serkis tomonidan motion-capture texnologiyasi orqali gavdalantirilgan Gollum kino san'atidagi eng inqilobiy va mukammal obrazlardan biriga aylangan. Film kitobdagi Sméagol va Gollum o'rtasidagi shizoid ziddiyatni vizual jihatdan nihoyatda dahshatli va ayni paytda achinarli darajada aniq gavdalantirgan."
+    }
+  ],
+  "image": {
+    "src": "/images/characters/gollum.webp",
+    "src_thumb": "/images/characters/gollum-thumb.webp",
+    "alt": "Gollum yerosti gʻoridagi qora koʻl boʻyida, suv tubidagi tilla uzukka intilib choʻnqaygan holatda",
+    "caption": "Gollum (Sméagol) — Uzuk vasvasasiga tushgan va asrlar davomida gʻorda yashirinib yurgan bebaxt mavjudot"
+  }
+}

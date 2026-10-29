@@ -1,0 +1,97 @@
+{
+  "id": "elros-va-gondor-shohlari",
+  "title": "Elros va Gondor Shohlari Nasabnomasi",
+  "house_name": "Elros va Anárion xonadoni (Númenor va Gondor)",
+  "founder_id": "elros",
+  "era": "Ikkinchi davr — Toʻrtinchi davr",
+  "summary": "Númenor orolidagi Elros Tar-Minyaturdan boshlanib, Andúnië Knyazlari orqali Elendil, Isildur, Anárion va nihoyat Birlashgan Qirollikni qayta tiklagan Elessar (Aragorn II) gacha boʻlgan shohona insonlar nasabi.",
+  "members": [
+    {
+      "character_id": "elros",
+      "spouse_ids": [],
+      "parent_ids": ["earendil", "elwing"],
+      "generation": 1,
+      "order": 1,
+      "is_uncertain": false
+    },
+    {
+      "character_id": "silmarien",
+      "spouse_ids": ["elatan"],
+      "parent_ids": ["tar-elendil"],
+      "generation": 2,
+      "order": 1,
+      "is_uncertain": false
+    },
+    {
+      "character_id": "valandil",
+      "spouse_ids": [],
+      "parent_ids": ["silmarien", "elatan"],
+      "generation": 3,
+      "order": 1,
+      "is_uncertain": false
+    },
+    {
+      "character_id": "elendil",
+      "spouse_ids": [],
+      "parent_ids": ["amandil"],
+      "generation": 4,
+      "order": 1,
+      "is_uncertain": false
+    },
+    {
+      "character_id": "isildur",
+      "spouse_ids": [],
+      "parent_ids": ["elendil"],
+      "generation": 5,
+      "order": 1,
+      "is_uncertain": false
+    },
+    {
+      "character_id": "anarion",
+      "spouse_ids": [],
+      "parent_ids": ["elendil"],
+      "generation": 5,
+      "order": 2,
+      "is_uncertain": false
+    },
+    {
+      "character_id": "aragorn",
+      "spouse_ids": ["arwen"],
+      "parent_ids": ["arathorn-ii", "gilraen"],
+      "generation": 6,
+      "order": 1,
+      "is_uncertain": false
+    },
+    {
+      "character_id": "arwen",
+      "spouse_ids": ["aragorn"],
+      "parent_ids": ["elrond", "celebrain"],
+      "generation": 6,
+      "order": 2,
+      "is_uncertain": false
+    },
+    {
+      "character_id": "eldarion",
+      "spouse_ids": [],
+      "parent_ids": ["aragorn", "arwen"],
+      "generation": 7,
+      "order": 1,
+      "is_uncertain": false
+    }
+  ],
+  "branches": ["Andúnië Knyazlari", "Arnor Oliy Qirollari", "Gondor Shohlari", "Telcontar xonadoni"],
+  "sources": [
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Akallabêth: The Downfall of Númenor",
+      "page": "259",
+      "notes": "Elros avlodlari va Andúnië sadoqatlilari tarixi."
+    },
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of the Rings of Power and the Third Age",
+      "page": "290",
+      "notes": "Elendil va uning oʻgʻillari tomonidan Gondor va Arnorga asos solinishi."
+    }
+  ]
+}

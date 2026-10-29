@@ -1,0 +1,51 @@
+{
+  "id": "havens-of-sirion",
+  "name": "Sirion Bandargohi",
+  "elvish_name": "Havens of Sirion",
+  "type": "shahar",
+  "region": "beleriand",
+  "coordinates": {
+    "map_id": "beleriand",
+    "x": 920,
+    "y": 280
+  },
+  "founded_era": "Birinchi davr 473",
+  "destroyed_era": "Birinchi davr 538",
+  "rulers": [
+    "Eärendil",
+    "Elwing"
+  ],
+  "notable_events": [
+    "Doriath va Gondolin qochqinlarining birlashishi",
+    "Uchinchi Qarindosh Qirgʻini",
+    "Vingilótë kemasining qurilishi"
+  ],
+  "textual_status": "author_published",
+  "summary": "Sirion Bandargohi — Sirion daryosining Belegaer dengiziga quyilish joyidagi delta boʻyida barpo etilgan Beleriand elflari va insonlarining soʻnggi panohgohi. Eärendil va Elwing boshchiligida gullab-yashnagan, ammo Fëanor oʻgʻillari tomonidan Silmaril talabida hujumga uchragan.",
+  "sources": [
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of the Voyage of Eärendil and the War of Wrath",
+      "page": "246",
+      "notes": "Sirion bandargohi va Fëanor oʻgʻillarining uchinchi qirgʻini."
+    }
+  ],
+  "description_sections": [
+    {
+      "title": "Sirion Deltasi va Soʻnggi Umid Maskani",
+      "content": "Havens of Sirion — Sirion daryosining Beleriand janubidagi Katta Dengizga quyiladigan deltasida joylashgan bandargoh-panohgohdir. Doriath va Gondolin qulaganidan soʻng omon qolgan barcha elflar va insonlar shu yerga qochib kelib panoh topdilar.\n\nBu yerda Eärendil va Elwing hukmronlik qildilar. Biroq Fëanor oʻgʻillari Silmarilni talab qilib, bandargohga hujum qildilar (Uchinchi Qardoshlar Qirgʻini). Elwing Silmaril bilan birga dengizga sakradi, ammo Ulmo uni oq qushga aylantirib Eärendil kemasiga yetkazdi."
+    },
+    {
+      "title": "Sirion Deltasi qochqinlari va ikki xalqning birlashishi",
+      "content": "Doriath va Gondolin qulagach, omon qolgan elflar va insonlar Sirion daryosining Belegaer dengiziga quyiladigan deltasida joylashgan Sirion Bandargohlariga (Havens of Sirion) panoh topib keldilar. Bu maskan Círdan va Gil-galad nazorati ostidagi Balar oroli bilan yaqin aloqada bo'lib, Belerianddagi ozodlikning so'nggi tayanchi edi. Bu yerda Tuor va Idrilning o'g'li Eärendil hamda Beren va Lúthienning nabirasi Elwing voyaga yetdilar; ularning nikohi orqali insonlar va elflarning ikki buyuk sulolasi birlashdi."
+    },
+    {
+      "title": "Uchinchi Qarindosh Qirg'ini va Eärendilning najot safari",
+      "content": "Fëanorning omon qolgan o'g'illari Elwingda Doriathdan qolgan muqaddas Silmaril borligini bilib, uni qaytarishni talab qildilar. Rad javobini olgach, ular Sirion Bandargohlariga to'satdan hujum qildilar (Uchinchi Qarindosh Qirg'ini). Qochqinlar qirg'in qilindi. Elwing Silmaril bilan o'zini dengizga otdi, ammo Vala Ulmo uni oq dengiz qushiga aylantirib qutqarib qoldi. Elwing dengizda kezib yurgan Eärendil kemasi Vingilotga qo'ndi. Aynan shu Silmaril nuri ularga Boqiy G'arbgacha bo'lgan sehrli to'siqlarni yorib o'tish va Valarni yordamga chaqirish imkonini berdi."
+    },
+    {
+      "title": "Vingilot kemasining yasalishi va so'nggi najot umidi",
+      "content": "Sirion Bandargohlarida Tuor o'zining afsonaviy 'Eärrámë' (Dengiz Qanoti) kemasini qurdi va Idril bilan birga Boqiy G'arbga jo'nab ketdi. Keyinchalik ularning o'g'li Eärendil Círdan yordamida oq qayin yog'ochidan eng go'zal kema – Vingilotni (Ko'pik Guli) aynan shu yerda bunyod etdi. Sirion Havens Beleriandning butun fojialaridan so'ng qolgan so'nggi gullagan gulzori edi; u yerda to'plangan bolalar va ayollar o'zlarining so'nggi umidlarini Eärendilning yulduzli kemasiga bog'lagan edilar. Sirion Bandargohlari Beleriand elflari va insonlari oʻrtasidagi doʻstlikning soʻnggi maskani boʻlib, u yerdan koʻtarilgan oq kema dunyoning barcha azob-uqubatlariga barham beruvchi ilohiy gʻalabani boshlab berdi. Dengiz sohillaridagi bu bandargoh xalqlar qalbida boqiy ozodlik va yorqin tong ramzi sifatida muhrlanib qoldi."
+    }
+  ]
+}

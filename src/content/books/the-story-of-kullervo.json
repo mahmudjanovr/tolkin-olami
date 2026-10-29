@@ -1,0 +1,62 @@
+{
+  "id": "the-story-of-kullervo",
+  "title_uz": "Kullervo Qissasi",
+  "title_original": "The Story of Kullervo",
+  "aliases": [
+    "Kullervo Qissasi",
+    "The Story of Kullervo",
+    "Kullervo Tarixi",
+    "Tolkien Kullervosi"
+  ],
+  "publication_year": 2015,
+  "publisher": "HarperCollins",
+  "category": "posthumous_reconstructed",
+  "editor": "Verlyn Flieger",
+  "isbn": "978-0-00-813136-4",
+  "cover_image": {
+    "src": "/images/books/the-story-of-kullervo.webp",
+    "alt": "Kullervo Qissasi birinchi nashri original changqopi (HarperCollins, 2015) — J.R.R. Tolkien chizgan qora koʻl uzra porlayotgan oy va Pohja zamini",
+    "edition_title": "First Edition (HarperCollins, 2015)",
+    "publisher": "HarperCollins",
+    "year": 2015,
+    "isbn": "978-0-00-813136-4",
+    "artist": "J.R.R. Tolkien",
+    "source": "HarperCollins / British Library"
+  },
+  "synopsis": "«Kullervo Qissasi» (The Story of Kullervo) — J.R.R. Tolkienning 1914–1915-yillarda Oksford universiteti talabasi boʻlgan chogʻida yozgan, ammo yuz yil davomida eʼlon qilinmay kelgan, fin eposi «Kalevala» motivlari asosidagi ilk nasriy fojiasi. 2015-yilda mashhur Tolkienshunos olima Verlyn Flieger tomonidan ilmiy tadqiqotlar va Tolkienning «Kalevala haqida»gi insholari bilan birga chop etilgan. Asar butun Oʻrta-yer legendariumining, xususan Túrin Turambar obrazining toʻgʻridan-toʻgʻri adabiy kurtagi boʻlib, qora qismat, qasos va qahramonning oʻz qilichi ustiga yiqilib jon berishi jarayonini qalamga oladi.",
+  "detailed_sections": [
+    {
+      "title": "Fin tili kashfiyoti va «Kalevala» sehri",
+      "content": "1911-yilda yosh Tolkien Oksford kutubxonasida fin tili grammatikasini topib oldi. U bu kashfiyotdan shunchalik hayajonlangan ediki, uni «sharobga toʻla qadimiy yertoʻlaga kirib qolgan odamning sarxushligi»ga qiyoslagan. Fin tili Tolkienning elflar tili — Quenyaning asosiy fonetik va grammatik poydevoriga aylandi. Elias Lönnrot toʻplagan «Kalevala» dostonining 31–36-runalari (Kullervo fojiasi) Tolkienni chuqur larzaga soldi va u ushbu sheʼriy xalq eposini ingliz tilida oʻziga xos ritmik nasriy dostonga aylantirishga qaror qildi."
+    },
+    {
+      "title": "Kullervo — laʼnatlangan yetim va qasos yoʻli",
+      "content": "Kullervo (Kalervo oʻgʻli) yoshligida butun oilasi amakisi Untamo tomonidan qirib tashlangan fojiaviy yetimdir. U gʻayritabiiy jismoniy kuch bilan tugʻiladi, ammo har qanday ishga qoʻl urmasin, halokat keltiradi: unga beshik tebratish topshirilsa bolani nobud qiladi, oʻtin chopishga yuborilsa butun oʻrmonni yakson qiladi. Untamo uni temirchi Ilmarinenga qul qilib sotadi. Ilmarinenning yovuz xotini Kullervoga berilgan non ichiga qattiq tosh yashirib qoʻyadi; Kullervo otasidan qolgan yagona meros boʻlgan pichoq bilan nonni kesayotganda tigʻ sinadi. Qattiq gʻazablangan qahramon ayiqlar va boʻrilarni podaga chorlab, bekachani parchalab tashlaydi va qasos olish uchun oʻrmonlarga qochadi."
+    },
+    {
+      "title": "Adashgan qismat va gapiruvchi qilich",
+      "content": "Oʻrmonda u tasodifan oʻz singlisiga duch keladi, ammo ular bir-birlarini tanimay yaqinlik qiladilar. Haqiqat fosh boʻlgach, singlisi sharsharaga sakrab oʻzini oʻldiradi. Kullervo Untamo qishlogʻiga bostirib borib, butun urugʻdan qonli qasos oladi. Vataniga qaytgach, oʻz uyining ham huvillab qolganini koʻradi. Ruhiy azoblardan toʻygan Kullervo oʻz qilichiga boqadi va undan: «Ey mening tigʻim, begunoh insonning goʻshtini kesishga tayyormisan?» deb soʻraydi. Qilich unga javob beradi: «Nega yoʻq? Men begunoh qonni ham, aybdor qonni ham ichganman, seni ham jon deb qabul qilaman». Kullervo qilich dastasini yerga qadab, oʻzini tigʻ ustiga tashlaydi."
+    },
+    {
+      "title": "Tolkien ijodidagi oʻrni: Túrin Turambarning ibtidosi",
+      "content": "«Kullervo Qissasi» shunchaki tarjima yoki qayta hikoya emas; u Tolkienning mustaqil mifologiya yaratish sari qoʻygan birinchi qadami edi. Tolkien Kullervo obrazini deyarli oʻzgarishsiz Oʻrta-yerga koʻchirib oʻtkazdi: Túrin Turambar ham qora qismat qurboni boʻladi, singlisi Nienor bilan fojiaviy nikoh quradi va oxir-oqibat oʻzining gapiruvchi qora qilichi Gurthang ustiga yiqiladi. Verlyn Fliegerning ushbu nashri Tolkienning shakllanish davrini oʻrganishda tengsiz durdonadir."
+    }
+  ],
+  "key_themes": [
+    "Qasos fojiasi va taqdirning qora qargʻishi",
+    "Fin eposi va Túrin Turambar arxetipining tugʻilishi",
+    "Yosh Tolkienning ilk adabiy uslubi"
+  ],
+  "uzbek_editions": [
+    {
+      "title": "Kullervo Qissasi",
+      "translator": "Tahririyat",
+      "publisher": "Nashrga tayyorlanmoqda",
+      "year": 2026,
+      "format": "Akademik nashr",
+      "notes": "Oʻzbek tilida alohida nashr etilmagan.",
+      "status": "untranslated"
+    }
+  ],
+  "translation_status_summary": "Oʻzbek tilida toʻliq nashr etilmagan (untranslated)."
+}

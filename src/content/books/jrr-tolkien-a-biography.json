@@ -1,0 +1,58 @@
+{
+  "id": "jrr-tolkien-a-biography",
+  "title_uz": "J.R.R. Tolkien: Biografiya",
+  "title_original": "J.R.R. Tolkien: A Biography",
+  "aliases": [
+    "Carpenter Tolkien Biography",
+    "Humphrey Carpenter Biography",
+    "J.R.R. Tolkien Hayoti"
+  ],
+  "publication_year": 1977,
+  "publisher": "George Allen & Unwin",
+  "editor": "Humphrey Carpenter",
+  "category": "letters_academic",
+  "isbn": "978-0-04-928037-3",
+  "synopsis": "Britaniyalik taniqli yozuvchi va biogrif Humphrey Carpenter tomonidan yozilgan J.R.R. Tolkienning yagona rasmiy (authorized) tarjimai holi. Kitob Tolkienlar oilasining toʻliq roziligi bilan, yozuvchining shaxsiy maktublari, kundaliklari, qoralamalari hamda uning doʻstlari (xususan Inklings aʼzolari) va oila aʼzolari bilan bevosita suhbatlar asosida yaratilgan fundamental asardir.",
+  "cover_image": {
+    "src": "/images/books/jrr-tolkien-a-biography.webp",
+    "alt": "J.R.R. Tolkien Biografiyasi kitobi muqovasi",
+    "edition_title": "George Allen & Unwin 1977 First Edition (Archival Design)",
+    "publisher": "George Allen & Unwin",
+    "year": 1977,
+    "isbn": "978-0-04-928037-3",
+    "artist": "Humphrey Carpenter / George Allen & Unwin",
+    "source": "Bibliografik arxiv dizayni (unverified authentic cover)"
+  },
+  "key_themes": [
+    "Bloemfontein bolaligi, Sarehole tegirmoni va yetimlik yillari",
+    "Edith Bratt bilan buyuk sevgi: Beren va Lúthien ilhomi",
+    "Birinchi Jahon urushi va T.C.B.S. toʻgaragi doʻstlarining halokati",
+    "Oksford yillari, Inklings doʻstona davrasi va C.S. Lewis bilan birodarlik"
+  ],
+  "detailed_sections": [
+    {
+      "title": "Tarixiy zamin va rasmiy biografiya maqomi",
+      "content": "1973-yilda Tolkien vafot etgach, uning noshiri Rayner Unwin va oʻgʻli Christopher Tolkien adibning hayoti haqida xolis, aniq va ishonchli biografiya yaratish zarurligini angladilar. Ushbu vazifa yosh olim va BBC jurnalisti Humphrey Carpenterga ishonib topshirildi. Carpenterga Tolkienning barcha shaxsiy arxivi, yoshlik kundaliklari va oilaviy yozishmalari toʻliq ochib berildi. 1977-yilda chiqqan ushbu kitob to bugungi kungacha Tolkienshunoslikning (Tolkien Studies) eng nufuzli biografik manbasi boʻlib qolmoqda."
+    },
+    {
+      "title": "Bolalik, yetimlik va Edith Bratt bilan sevgi",
+      "content": "Biografiyada Tolkienning Janubiy Afrikada tugʻilishi, toʻrt yoshida otasidan, oʻn ikki yoshida onasi Mabel Tolkiendan ayrilib yetim qolishi va katolik ruhoniysi Frantsisk Morgan homiyligida tarbiyalanishi taʼsirli tasvirlanadi. Birminghamda u oʻzining boʻlgʻusi rafiqasi Edith Brattni uchratdi. Katolik eʼtiqodi sababli ruhoniy unga 21 yoshgacha Edith bilan koʻrishishni va xat yozishni qatʼiyan taqiqladi; Tolkien bu vaʼdaga soʻzsiz rioya qilib, 21 yoshga toʻlgan kuniyoq Edithga turmush qurish taklifini yubordi. Ushbu sevgi keyinchalik Beren va Lúthien afsonasiga asos boʻldi."
+    },
+    {
+      "title": "T.C.B.S., Somme fojiasi va Inklings davrasi",
+      "content": "Kitobda Tolkienning maktabdosh doʻstlari bilan tuzgan «T.C.B.S.» (Tea Club and Barrovian Society) toʻgaragi va ularning barchasini parchalab tashlagan Birinchi Jahon urushining fojiaviy zarbasi haqqoniy ochib berilgan. Somme jangida eng yaqin doʻstlari Rob Gilson va G.B. Smith halok boʻldilar. Oksfordga qaytgach, Tolkien C.S. Lewis bilan doʻstlashib, mashhur «Inklings» adabiy klubiga asos soldi; ushbu klubning «The Eagle and Child» pabidagi haftalik uchrashuvlarida «Hobbit», «Uzuklar Hukmdori» va «Narniya Saltanati»ning ilk boblari ovoz chiqarib oʻqilgan."
+    },
+    {
+      "title": "Oʻzbek adabiy muhiti uchun ahamiyati",
+      "content": "Humphrey Carpenterning ushbu biografiyasi oʻzbek adabiyot ixlosmandlari uchun J.R.R. Tolkien shaxsiyatini, uning xristian eʼtiqodini, filologik dahosini va kamtarona professorlik hayotini yaxlit tasavvur qilish uchun eng zarur kitobdir. U shunchaki fantast yozuvchi haqida emas, balki qiyinchiliklarga qaramay oʻz ijodiy orzusiga sodiq qolgan buyuk insonning hayot sabogʻidir."
+    }
+  ],
+  "uzbek_editions": [
+    {
+      "title": "J.R.R. Tolkien: Biografiya",
+      "status": "untranslated",
+      "notes": "Oʻzbek tiliga tarjima qilinmagan. Yozuvchining hayotiy va adabiy yoʻlini yorituvchi bosh manba."
+    }
+  ],
+  "translation_status_summary": "Hozircha oʻzbek tilida nashr etilmagan. Tarjimai hol asari sifatida keng kitobxonlar ommasi uchun tavsiya etiladi."
+}

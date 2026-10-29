@@ -1,0 +1,97 @@
+{
+  "id": "earendil",
+  "name": "Eärendil Dengizchi",
+  "original_name": "Eärendil Ardamírë",
+  "father_name": "Tuor",
+  "mother_name": "Idril Celebrindal",
+  "spouse": "Elwing Oq",
+  "children": [
+    "Elros Tar-Minyatur",
+    "Elrond Yarim-elf"
+  ],
+  "aliases": [
+    "Eärendil the Mariner (Dengizchi Eärendil)",
+    "Muborak Eärendil (Eärendil the Blessed)",
+    "Azrubêl (Adûnaic tilida)",
+    "Gil-Estel (Yuqori Umid Yulduzi)"
+  ],
+  "titles": [
+    "Sirion Bandargohi Hukmdori",
+    "Vingilótë Kemasi Sardori",
+    "Ikki Qavm (Elflar va Insonlar) Elchisi"
+  ],
+  "race": "elflar",
+  "sub_race": "Yarim-elf (Peredhel — Eldar taqdirini tanlagan)",
+  "culture": "Gondolin / Sirion / Valinor",
+  "birth_year": "Birinchi davr 503",
+  "death_year": "Boqiy (Osmon gumbazida Vingilótë kemasi bilan suzib yuradi)",
+  "house_id": "elros-va-gondor-shohlari",
+  "weapons_and_artifacts": [
+    "Silmaril (Peshonasiga bogʻlangan muqaddas gavhar — Eärendil Yulduzi)",
+    "Vingilótë (Koʻpik Guli — osmonda uchuvchi oq kema)",
+    "Elessar zumrad toshi"
+  ],
+  "primary_locations": [
+    "gondolin",
+    "tirion",
+    "beleriand"
+  ],
+  "textual_status": "author_published",
+  "uncertainty_notes": "Filologik tarix: Eärendil J.R.R. Tolkienning butun mifologiyasida eng birinchi yaratilgan obrazdir (1914-yilda qadimgi ingliz 'Crist' dostonidagi 'Éala Éarendel engla beorhtast' — 'Salom, Earendel, farishtalarning eng yorqini' satridan ilhomlanib yozilgan).",
+  "summary": "Tuor va Idrilning oʻgʻli, Elwingning umr yoʻldoshi hamda Elrond va Elrosning otasi. Peshonasida Beren va Lúthienning Silmarili bilan Vingilótë kemasida Sehrli Orollardan oʻtib, Valinorga qadam qoʻygan ilk tirik inson; Elflar va Insonlar nomidan Valardan shavqat soʻrab, Gʻazab Urushida ajdaho Ancalagon the Blackni oʻldirgan va осмоnda Umid Yulduziga aylangan najotkor.",
+  "etymology": "Quenya tilida 'Eärendil' — eär ('dengiz') va -(n)dil ('doʻst, oshiq') soʻzlaridan tuzilib, 'Dengiz Doʻsti / Dengizga Oshufta' maʼnosini anglatadi.",
+  "biography_sections": [
+    {
+      "title": "Gondolin bolaligi, Vingilótë va Elwing bilan nikoh",
+      "content": "Eärendil Gondolinda Tuor va Idril xonadonida tugʻilib, yetti yoshida shahar qulagan kechada Maeglin changalidan otasi tomonidan qutqarildi. Sirion daryosi quyilishida u Círdan Kemasoz bilan doʻstlashib, oq qayin yogʻochidan 'Vingilótë' ('Koʻpik Guli') nomli kemani qurdi.\n\nU yerda Eärendil Doriathdan omon chiqqan Beren va Lúthienning nabirasi — Elwing Oqqa uylandi; ulardan egizaklar Elros va Elrond tugʻildi. Eärendil otasi Tuorni qidirib va Valinorga yoʻl topish umidida dengiz safarida yurganida, Fëanor oʻgʻillari Sirionga hujum qildilar; Elwing Silmaril bilan oʻzini dengizga otdi va Ulmo uni oq qushga aylantirib, Eärendilning kemasiga yetkazdi."
+    },
+    {
+      "title": "Valinordagi iltijo, Ancalagonning oʻldirilishi va Kechki Yulduz",
+      "content": "Silmarilning muqaddas nuri yordamida Eärendil Valinorni oʻrab turgan Tumanli va Sehrli Orollardan oʻtib, Tirionning boʻm-boʻsh koʻchalariga koʻtarildi. Máhanaxar kengashida u Valar oldida tiz choʻkib, har ikki qavm — ham Elflar, ham Insonlar nomidan Morgoth zulmidan qutqarishni yolvorib soʻradi.\n\nManwë uning iltijosini qabul qildi hamda Eärendil va Elwingga hamda ularning farzandlariga oʻz qismatlarini tanlash huquqini berdi; Eärendil rafiqasi Elwing tufayli Eldar boqiyligini tanladi. Gʻazab Urushida Morgoth qanotli ajdaholar sardori — Qora Ancalagonni chiqarganida, Eärendil osmondan Vingilótë kemasida va Thorondor burgutlari bilan tushib kelib, bir kecha-kunduz jang qildi va Ancalagonni oʻldirib, Thangorodrim choʻqqilari ustiga qulatdi. Urushdan soʻng Varda uning kemasini osmon gumbaziga koʻtardi; uning peshonasidagi Silmaril nuri Galadriel shishasida saqlanib, ming yillardan soʻng Frodo va Samning yoʻlini yoritdi."
+    },
+    {
+      "title": "Dengizchi Eärendil, Vingilot kemasi va Oqqush qanotlari",
+      "content": "Eärendil (Tuor va Idrilning o'g'li) yarim-elf bo'lib, insoniyat va elflarning eng oliy fazilatlarini o'zida mujassam etgan. Sirion Havensda u Elwing bilan oila qurdi va Círdan yordamida oq kema Vingilotni yasadi. Uning maqsadi dunyodan ajratilgan Boqiy G'arbga borib, Valardan ezilgan O'rta-yer xalqlari uchun najot so'rash edi. Elwing uning kemasiga qutqarib olingan Silmaril bilan kelgach, toshning muqaddas nuri kemani sehrli to'siqlardan o'tkazib, Valinor sohillariga olib bordi."
+    },
+    {
+      "title": "Tong Yulduzi, Ancalagon ustidan g'alaba va abadiy parvoz",
+      "content": "Valar huzurida qilgan iltijosi G'azab Urushini boshlab berdi. Manwë Eärendil va uning oilasiga qaysi irq taqdirini tanlash huquqini berdi; Eärendil Elwing istagiga binoan elflar qismatini tanladi. Uning Vingilot kemasi muqaddas olov bilan qoplanib, samoga ko'tarildi. G'azab Urushida Eärendil osmondan tushib, eng dahshatli qanotli ajdaho Ancalagon Qorani mag'lub etdi. Shundan so'ng u peshonasiga Silmarilni taqqan holda samoda 'Gil-Estel' (Umid Yulduzi / Kechki va Tong Yulduzi) sifatida mangu suzib yuradi; uning nuri Uchinchi Davrda ham zulmat ichida qolgan barcha ezgu qalblarga kuch bag'ishladi."
+    }
+  ],
+  "sources": [
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of the Voyage of Eärendil and the War of Wrath",
+      "page": "246"
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "Many Meetings (Bilbo's Song of Eärendil)",
+      "page": "246"
+    },
+    {
+      "book_slug": "the-fall-of-gondolin",
+      "chapter": "The Fall of Gondolin",
+      "page": "165"
+    },
+    {
+      "book_slug": "letters-of-jrr-tolkien",
+      "chapter": "Letter 297 (Draft to Mr Rang, August 1967)",
+      "page": "385"
+    }
+  ],
+  "related_characters": [
+    "tuor",
+    "idril",
+    "elwing",
+    "elrond",
+    "elros",
+    "cirdan",
+    "manwe",
+    "varda",
+    "ulmo",
+    "galadriel",
+    "frodo-baggins"
+  ],
+  "adaptations": []
+}

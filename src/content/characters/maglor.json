@@ -1,0 +1,71 @@
+{
+  "id": "maglor",
+  "name": "Maglor",
+  "original_name": "Kanafinwë Macalaurë",
+  "father_name": "Fëanor",
+  "mother_name": "Nerdanel Dono",
+  "children": [
+    "Elrond va Elros (tutungan farzandlari)"
+  ],
+  "aliases": [
+    "Macalaurë (Quenya: Oltin Zarb Qiluvchi)",
+    "Kanafinwë (Baland Ovozli Finwë)",
+    "Noldorning Eng Buyuk Baxshisi"
+  ],
+  "titles": [
+    "Maglor Darasi (Maglor's Gap) Hukmdori",
+    "Fëanorning Ikkinchi Oʻgʻli",
+    "Noldollantë Muallifi"
+  ],
+  "race": "elflar",
+  "sub_race": "Noldor",
+  "culture": "Tirion / Sharqiy Beleriand",
+  "birth_year": "Daraxtlar davri",
+  "death_year": "Nomaʼlum (Dengiz qirgʻoqlari boʻylab mangu sarson kuylab yuradi)",
+  "house_id": "finwe-xonadoni",
+  "weapons_and_artifacts": [
+    "Oltin arfa",
+    "Silmaril (Dengizga uloqtirilgan)"
+  ],
+  "primary_locations": ["tirion", "formenos", "beleriand"],
+  "textual_status": "posthumous_edited",
+  "summary": "Fëanor va Nerdanelning ikkinchi oʻgʻli, onasining yumshoq koʻnglini meros qilib olgan va butun Oʻrta-yerda Dairondan keyin ikkinchi oʻrinda turuvchi buyuk qoʻshiqchi va shoir. Sirion qirgʻinidan soʻng Elrond va Elrosni asrab olib tarbiyalagan hamda oxirida Silmarilni dengizga uloqtirib, qirgʻoqlar boʻylab abadiy tavba qoʻshigʻini kuylab ketgan yagona tirik qolgan Fëanor oʻgʻli.",
+  "etymology": "Sindarin tilidagi 'Maglor' ismi Quenya tilidagi 'Macalaurë' ('Oltin zarb qiluvchi / Oltin arfa chaluvchi') va 'Kanafinwë' ('Kuchli ovozli Finwë') nomlaridan kelib chiqqan.",
+  "biography_sections": [
+    {
+      "title": "Noldollantë marsiyasi va Maglor Darasi",
+      "content": "Maglor yetti aka-uka ichida onasi Nerdanelga tabiatan eng oʻxshashi boʻlib, musiqada tengsiz isteʼdodga ega edi. Alqualondëdagi Birinchi Qarindosh Qirgʻinidan chuqur pushaymon boʻlgan Maglor Noldorning qulashi haqidagi mashhur 'Noldollantë' marsiyasini bastaladi.\n\nBeleriandda u Himring va Moviy Togʻlar oʻrtasidagi keng tekislikni — 'Maglor Darasi'ni (Maglor's Gap) qoʻriqladi. Dagor Bragollachda ajdaho Glaurung uning chizigʻini yorib oʻtgach, Maglor akasi Maedhrosning Himring qalʼasiga chekinib, mudofaani davom ettirdi."
+    },
+    {
+      "title": "Elrond va Elrosga otalik mehri",
+      "content": "Nirnaeth Arnoediad jangida Maglor xiyonatkor Uldor the Accursedni oʻz qoʻli bilan oʻldirdi. Keyinchalik besh ukasi halok boʻlib, faqat Maedhros va Maglor qolganida, ular Sirion bandargohiga hujum qildilar.\n\nElwing Silmaril bilan dengizga sakragach, Maglor uning olti yoshli egizak oʻgʻillari — Elrond va Elrosga rahm qilib, ularni oʻz himoyasiga oldi. U va bolalar oʻrtasida kutilmaganda samimiy ota-bola muhabbati uygʻondi."
+    },
+    {
+      "title": "Silmarilning dengizga otilishi va Mangu sarsonlik",
+      "content": "Gʻazab Urushi yakunida Maglor akasi Maedhrosni Qasamyoddan voz kechishga va Eönwë hukmiga boʻysunishga koʻndirishga urindi, biroq akasini yolgʻiz tashlab qoʻymadi. Ular qolgan ikki Silmarilni qoʻlga kiritganlarida, muqaddas tosh Maglorning ham qoʻlini qattiq kuydirdi.\n\nOgʻriqqa chiday olmagan Maglor oʻz Silmarilini Buyuk Dengiz toʻlqinlariga uloqtirdi. Shundan soʻng u oʻz xalqiga ham, Valinorga ham qayta olmay, dengiz sohillari boʻylab yolgʻiz kezib, pushaymonlik va qaygʻu qoʻshiqlarini mangu kuylab qoldi."
+    }
+  ],
+  "sources": [
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of the Flight of the Noldor",
+      "page": "87"
+    },
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of the Voyage of Eärendil and the War of Wrath",
+      "page": "247"
+    }
+  ],
+  "related_characters": [
+    "feanor",
+    "nerdanel",
+    "maedhros",
+    "curufin",
+    "elrond",
+    "elros",
+    "elwing",
+    "glaurung"
+  ],
+  "adaptations": []
+}

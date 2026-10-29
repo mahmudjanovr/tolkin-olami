@@ -1,0 +1,42 @@
+{
+  "id": "cirth",
+  "name": "Cirth (Angerthas Runalari)",
+  "family": "Runik Yozuv Tizimi (Alphabetic Runic Script)",
+  "writing_systems": [
+    "cirth"
+  ],
+  "inventor": "Daeron",
+  "phonology_overview": "Cirth (Angerthas) tizimi tosh, metall va yog'och yuzalarga o'yib yozish uchun maxsus moslashtirilgan burchakli runik yozuvdir. Uning fonetik tuzilishi to'g'ri vertikal o'zak (stem) va unga birikuvchi burchakli shoxlardan (branch/twig) iborat. Fëanor Tengwariga o'xshash ravishda, Cirth tizimida ham simmetriya mavjud: shoxning bir tomonda yoki ikki tomonda bo'lishi, uning chiziqcha bilan kesilishi jaranglilik, sirg'aluvchilik yoki burunlanish fonetik xususiyatlarini ifodalaydi. Yozuvning keskin chiziqlari mitti-odamlarning toshyo'nar ustalari va qurolsozlari uchun ideal vositaga aylangan.",
+  "sample_text_original": "Balin Fundinul Uzbad Khazaddûmu",
+  "sample_text_uz": "Balin, Fundin oʻgʻli, Moria (Khazad-dûm) Hukmdori — Mazarbul xonasidagi qabrtoshga Cirth runalarida oʻyilgan bitik",
+  "textual_status": "author_published",
+  "sources": [
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "Appendix E: Writing and Spelling (II: The Angerthas)",
+      "page": "1122"
+    }
+  ],
+  "grammar_and_vocabulary_sections": [
+    {
+      "title": "Daeron ixtirosi: Doriath o'rmonlaridan boshlangan runalar",
+      "content": "Cirth yozuvi Birinchi Davrda Doriath qirolligining bosh kuychisi va olimi Daeron tomonidan yaratilgan bo'lib, dastlab 'Certhas Daeron' deb atalgan. Sindar elflari ushbu yozuvdan daraxt po'stloqlari, toshlar va yog'ochlarga qisqa yozuvlar, ismlar va she'rlar o'yishda foydalanganlar. Biroq elflar keyinchalik ko'proq kitobiy Tengwardan foydalanishga o'tgach, Cirthdan deyarli voz kechdilar. Ammo Ered Luin (Moviy Tog'lar) va Khazad-dûm mitti-odamlari ushbu yozuvni ko'rib, uning tosh va metallga o'yish uchun nihoyatda qulayligini darhol angladilar va uni o'zlarining milliy yozuv tizimiga aylantirdilar. Daeron oʻz ixtirosi bilan Beleriandning qorongʻi oʻrmonlarida yashirinib yurgan elflarga oʻz tarixlarini toshlarga muhrlash imkonini berdi. Keyinchalik Menegroth qulaganidan soʻng, bu runalar Ered Luin togʻlari orqali gnomlar poytaxtiga yetib bordi va yangi davrga qadam qoʻydi."
+    },
+    {
+      "title": "Angerthas Moria va Angerthas Erebor: Mittilar takomillashtiruvi",
+      "content": "Mitti-odamlar Daeron tizimini o'zlarining Khuzdul tili fonetikasiga moslashtirib, 'Angerthas Moria' (Moria Uzun Runalari) tizimini ishlab chiqdilar. Ular yozuvga o'z tilidagi qattiq tomoq tovushlari, jarangli sirg'aluvchilar va cho'ziq unlilar uchun o'nlab yangi belgilarni kiritdilar. Ikkinchi va Uchinchi Davrlarda bu yozuv Yolg'iz Tog' (Erebor) va Temir Tepaliklarga ham tarqaldi va 'Angerthas Erebor' varianti vujudga keldi. Mittilar o'zlarining barcha solnomalarini, xazina eshiklari afsunlarini va qurol-yarog' tamg'alarini aynan ushbu runalar bilan muhrlaganlar."
+    },
+    {
+      "title": "Tarixiy artefaktlar: Mazarbul Kitobi va Balin qabri",
+      "content": "Cirth yozuvining eng yorqin tarixiy yodgorligi bu Moria ekspeditsiyasi davrida Ori tomonidan yozilgan Mazarbul Kitobidir (The Book of Mazarbul). Unda gnomlar o'rklarning qamalida qolib, halokatga yuz tutayotgan so'nggi daqiqalarni shoshilinch runik yozuv bilan qayd etganlar ('Biz chiqa olmaymiz... Ular kelyapti'). Shuningdek, 'Uzuklar Hukmdori' kitobining sarlavha sahifasidagi yuqori va pastki runik hoshiya yozuvlari ham Cirth va Tengwarda bitilgan bo'lib, Tolkien ushbu yozuv orqali qadimgi anglo-sakson va skandinav runalarining sehrli jozibasini tiriltirgan."
+    },
+    {
+      "title": "Boshqa xalqlar tomonidan o'zlashtirilishi",
+      "content": "Cirth yozuvi faqat elflar va mittilar bilan cheklanib qolmagan. Anduin vodiysidagi insonlar, Dale aholisi va Rohirrim ajdodlari ham ushbu runalardan oddiy bitiklar, chegaratoshlari va dafn yozuvlari uchun foydalanishgan. Hatto ba'zi yovuz maxluqlar va o'rklarning boshliqlari ham buyruqlar va xazina belgilarini Cirthning buzilgan, qo'pol shakllarida toshlarga o'yib qoldirganlar."
+    },
+    {
+      "title": "Angerthas Daeron jadvali va fonetik tasnif tizimi",
+      "content": "Cirth tizimida jami 60 ta alohida runik belgi mavjud boʻlib, ularning har biri qatʼiy tartiblangan. 1 dan 6 gacha boʻlgan runalar lab tovushlarini (p, b, f, v), 8 dan 17 gacha tish va tanglay tovushlarini (t, d, th, dh, n, r, ch, j, sh) ifodalaydi. Mitti ustalari Khazad-dûmda ushbu tizimga oʻzlarining maxsus boʻgʻiz tovushlari (kh, gh) hamda uzun unlilari uchun qoʻshimcha runalarni (39-60) qoʻshganlar. Ushbu runalar tosh devorlarga bolgʻa va iskana bilan oʻyilganda burchaklari yorilib ketmasligi uchun vertikal va qiya chiziqlardan tashkil topgan boʻlib, gorizontal parallel chiziqlardan deyarli butunlay voz kechilgan."
+    }
+  ]
+}

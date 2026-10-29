@@ -1,0 +1,56 @@
+{
+  "id": "bree",
+  "name": "Bri (Bree)",
+  "elvish_name": "Bree",
+  "type": "shahar",
+  "region": "orta-yer",
+  "coordinates": {
+    "map_id": "orta-yer",
+    "x": 650,
+    "y": 1413
+  },
+  "founded_era": "Ikkinchi Davr (qadimiy Eriador manzilgohi)",
+  "rulers": [],
+  "notable_events": [
+    "Gandalf va Torin Emanqalqonning Bri chorrahasidagi uchrashuvi hamda Erebor safarining rejalashtirilishi (Uchinchi Davr 2941-yil)",
+    "Frodo Baggins va hamrohlarining Sakrovchi Poni (The Prancing Pony) mehmonxonasida Aragorn (Daydi) bilan uchrashuvi (3018-yil)",
+    "Qora Suvoriylarning tungi hujumi va Barliman Butterburning Frodo uchun Gandalf maktubini topshirishi"
+  ],
+  "textual_status": "author_published",
+  "summary": "Bri (Bree) — Eriador markazida, Katta Sharqiy Yoʻl (Great East Road) va qadimiy Yashil Yoʻl (Greenway) chorrahasida, Bri tepaligi etagida joylashgan qadimiy manzilgoh. Staddle, Combe va Archet qishloqlari bilan birga Bri oʻlkasini tashkil etuvchi ushbu maskan Oʻrta-yerda Katta Xalq (insonlar) va Kichik Xalq (xobbitlar) yonma-yon tinch va totuv yashaydigan yagona joy sifatida mashhur. Shaharchaning yuragi — Barliman Butterburn boshqaruvidagi qadimiy Sakrovchi Poni (The Prancing Pony) karvonsaroyidir.",
+  "sources": [
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "At the Sign of the Prancing Pony",
+      "notes": "Bri qasabasi geografiyasi, insonlar va xobbitlar hamjamiyati hamda Sakrovchi Poni mehmonxonasi tasviri."
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "Strider",
+      "notes": "Aragornning Frodo guruhiga yoʻlboshchi sifatida qoʻshilishi va Bri orqali sharqqa yoʻl olish."
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "Appendix A: Annals of the Kings and Rulers",
+      "notes": "Gandalf va Torinning Bri yaqinidagi uchrashuvi hamda Erebor safarining boshlanish tarixi."
+    }
+  ],
+  "description_sections": [
+    {
+      "title": "Ikki xalqning qadimiy chorrahasi",
+      "content": "Bree — Sharqiy Yoʻl va Yashil Yoʻl (Greenway) kesishmasidagi Bree Tepaligi etagida joylashgan eng qadimiy insonlar posyolkasidir. U Oʻrta-yerdagi insonlar va xobbitlar yonma-yon, ahil va doʻstona yashaydigan yagona noyob maskan hisoblanadi.\n\nPosyolka qalin tikanli toʻsiq va chuqur xandaq bilan oʻralgan boʻlib, uning darvozalari kechalari qulflab qoʻyiladi."
+    },
+    {
+      "title": "Sakrovchi Poni (The Prancing Pony) tavernasining oʻrni",
+      "content": "Bree markazida Barliman Butterbur egalik qiluvchi mashhur 'Sakrovchi Poni' mehmonxonasi joylashgan. Bu joy yoʻlovchilar, savdogarlar va darbadarlar uchun bosh axborot almashish markazi boʻlgan.\n\n3018-yil sentyabrida Frodo aynan shu mehmonxonada beixtiyor Uzukni taqib koʻzdan gʻoyib boʻldi va 'Strider' (Aragorn) bilan ilk bor uchrashdi. Bu uchrashuv butun Halqa Urushining taqdirini hal qildi."
+    },
+    {
+      "title": "Sharq va G'arb yo'llari chorrahasi, Butterbur va qadimiy hamdo'stlik",
+      "content": "Bree qadimiy Buyuk Sharqiy Yo'l (Great East Road) va Shimoliy Yashil Yo'l (Greenway) kesishmasidagi Bree Tepaligi yonbag'rida joylashgan eng qadimgi aholi punktidir. Uning eng mashhur maskani Barliman Butterbur egalik qiladigan 'Sakrovchi Poni' (The Prancing Pony) musofirxonasi bo'lib, bu yerda xobbitlar, sayohatchilar, mitti savdogarlar va Shimoliy Qo'riqchilar uchrashar edilar. Shaharning xandaq va qalin to'siq devori uni tunda o'rmon bo'rilari va qaroqchilardan asragan; u O'rta-yerning notinch davrlarida ham o'zining mehmondo'st va erkin tabiatini saqlab qoldi."
+    },
+    {
+      "title": "Insonlar va xobbitlarning tinch-totuv yashash namunasi",
+      "content": "Bree butun O'rta-yerda insonlar va xobbitlar birgalikda, yonma-yon qo'shni bo'lib, to'la do'stlikda yashagan yagona maskandir. Bu yerdagi xobbitlar o'zlarini Shireliklardan ko'ra qadimiyroq deb bilishgan, ammo ularning o'zaro mehmondo'stligi tengsiz edi. To'rtinchi Davrda shoh Elessar shimolga kelganida, Bree shaharchasi shohona himoya ostiga olindi va uning erkin fuqarolari o'zlarining qadimiy huquqlarini to'liq saqlab qoldilar. Bu shahar O'rta-yerning oddiy xalqlari qanday qilib totuv yashashi mumkinligining yorqin timsolidir."
+    }
+  ]
+}

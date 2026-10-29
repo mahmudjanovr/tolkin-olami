@@ -1,0 +1,58 @@
+{
+  "id": "isengardning-vayron-qilinishi",
+  "title": "Isengardning Vayron Qilinishi",
+  "subtitle": "Entlarning soʻnggi yurishi va Fangorn qasosi",
+  "era": "uchinchi_davr",
+  "year_text": "Uchinchi davr 3019 (2–3-mart)",
+  "location_id": "isengard",
+  "characters": [
+    "treebeard",
+    "meriadoc-brandybuck",
+    "peregrin-took",
+    "saruman"
+  ],
+  "belligerents": {
+    "side_a": [
+      "Fangorn Entlari (Daraxtsoqol boshchiligida)",
+      "Huornlar oʻrmoni",
+      "Xobbitlar (Meriadoc Brandybuck va Peregrin Took)"
+    ],
+    "side_b": [
+      "Isengard garnizoni (Oʻrklar va Dúnland odamlari)",
+      "Saruman"
+    ]
+  },
+  "outcome": "Isengard sanoat mashinasi butunlay vayron qilindi; Saruman Orthanc minorasida qamalda qoldi; Rohanning shimoliy qanoti dushman tahdididan xalos bo'ldi.",
+  "preceding_event": "besh-armiya-jangi",
+  "succeeding_event": "hornburg-jangi",
+  "textual_status": "author_published",
+  "sources": [
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "Flotsam and Jetsam",
+      "page": "560"
+    }
+  ],
+  "description_sections": [
+    {
+      "title": "Daraxtlarning uyg'onishi va Entmoot qarori",
+      "content": "Saruman o'zining Isengarddagi qurolsozlik o'choqlari va temirchilik ustaxonalarini oziqlantirish uchun ko'p yillar davomida Fangorn o'rmonining chekkalarini shafqatsizlarcha kesib, asr ko'rgan daraxtlarni yondirgan edi. Meriadoc Brandybuck va Peregrin Took Fangornga kelib, Treebeard (Daraxtsoqol) bilan uchrashgach, Entlar Kengashi (Entmoot) chaqirildi. Uch kunlik muhokamadan so'ng, odatda tinch va sekin harakatlanuvchi Entlar o'zlarining uzoq vaqt davomida to'plangan g'azablarini jilovlay olmadilar va Isengardga yurish qilishga qat'iy qaror qildilar."
+    },
+    {
+      "title": "Entlarning so'nggi yurishi va Isengard devorlarining parchalanishi",
+      "content": "Entlar va minglab g'azablangan Huornlar (harakatlanuvchi qora daraxtlar) Fangorndan chiqib, tun qorong'isida Isengardga qarab yurish qildilar. Sarumanning asosiy o'rk armiyasi Hornburg qamaliga jo'nab ketgan bo'lib, qal'ada faqat garnizon va qurolsozlar qolgan edi. Entlar yetib kelgach, Isengardning bahaybat tosh devorlarini xuddi non uvog'idek parchalab tashladilar. Entlarning barmoqlari tosh yoriqlariga kirib, metin poydevorlarni ag'dardi. Saruman vahima ichida qadimgi Númenor ustalari tomonidan sinmas qora toshdan qurilgan markaziy minora – Orthancga yashirindi."
+    },
+    {
+      "title": "Isen daryosining burilishi va sanoatning cho'kishi",
+      "content": "Saruman Orthanc tuynuklaridan olov va yonuvchi suyuqliklar purkab, bir nechta Entlarni kuydirganida, Entlarning g'azabi yanada avjiga chiqdi. Ular Isen daryosining to'g'onlarini buzib, daryoning barcha suvini Isengard vodiysiga burib yubordilar. Shiddatli suv toshqini barcha yerosti shaxtalarini, pechlar, qurol-yarog' omborlari va o'rk uyalarini bir necha soat ichida suv ostida qoldirdi. Sanoat iflosligi tozalab yuvildi; Isengard bug' ko'tarilib turgan ulkan yashil ko'lga aylandi."
+    },
+    {
+      "title": "Tarixiy va ekologik ahamiyati",
+      "content": "Isengardning qulashi Tolkien ijodidagi eng muhim mavzulardan biri – tabiatning tajovuzkor sanoatlashuv va mexanizatsiyaga qarshi g'alabasining yorqin ramzidir. Ushbu g'alaba Sarumanning Rohanni orqadan zabt etish rejasini butunlay yo'qqa chiqardi. Shu bilan birga, Entlar Hornburg jangiga Huornlar qo'shinini yuborib, Sarumanning o'rk armiyasini butunlay qirib tashlashda hal qiluvchi rol o'ynadilar. Qudratli Istari Saruman esa o'z minorasida nochor mahbusga aylandi."
+    },
+    {
+      "title": "Shayr xavfining oldini olinishi va Fangorn xotirasi",
+      "content": "Agar Isengard Entlar tomonidan yo'q qilinmaganida, Saruman bir vaqtning o'zida Rohanni orqadan tor-mor qilib, so'ngra himoyasiz qolgan shimoliy o'lkalarni, xususan Shireni butunlay qul qilib olar edi. Entlarning jasorati bu tahdidni bartaraf etdi. Jangdan so'ng Entlar Isengard xarobalarida 'Daraxtlar Bo'stoni' (Treegarth of Orthanc) barpo etdilar. To'rtinchi Davrda shoh Elessar bu hududni abadiy Entlarga in'om etdi va insonlarning bu yerga ularning ruxsatisiz kirishini qat'iyan taqiqladi."
+    }
+  ]
+}

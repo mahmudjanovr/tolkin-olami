@@ -1,0 +1,112 @@
+{
+  "id": "bilbo-baggins",
+  "name": "Bilbo Baggins",
+  "original_name": "Bilbo Baggins (Kuduktuk: Bilba Labingi)",
+  "father_name": "Bungo Baggins",
+  "mother_name": "Belladonna Took",
+  "aliases": [
+    "Elf-doʻsti (Elf-friend)",
+    "U yerga va qaytishga muallifi",
+    "Togʻosti Qulfbozi (Burglar)",
+    "Uzukni topgan xobbit"
+  ],
+  "titles": [
+    "Bag End Xoʻjayini",
+    "Erebor Ekspeditsiyasi Qidiruvchisi",
+    "Qizil Kitob Asoschisi"
+  ],
+  "race": "xobbitlar",
+  "sub_race": "Harfoot va Fallohide nasli",
+  "culture": "Shire (Shir) / Bag End / Rivendell",
+  "birth_year": "Uchinchi davr 2890 (Shir hisobi 1290)",
+  "death_year": "Boqiy Gʻarbga oʻtgan (Uchinchi davr 3021 / Shir hisobi 1421, 131 yoshida)",
+  "house_id": "shayr-xonadonlari",
+  "weapons_and_artifacts": [
+    "Sting (Gondolin pichogʻi / xanjari)",
+    "Mithril zanjir sovut (Thorin Oakenshield sovgʻasi)",
+    "Yagona Uzuk (60 yil davomida saqlagan)",
+    "Gʻarbiy Chegara Qizil Kitobi ('U yerga va qaytishga' asari)"
+  ],
+  "primary_locations": [
+    "hobbiton",
+    "rivendell",
+    "ered-luin"
+  ],
+  "textual_status": "author_published",
+  "uncertainty_notes": "'The Hobbit' asarining 1937-yilgi birinchi nashrida Bilbo Gollum bilan qorongʻulikda topishmoq aytishuvida gʻalaba qozongach, Gollum unga uzukni oʻz ixtiyori bilan 'sovgʻa' sifatida bermoqchi boʻlgani yozilgan edi. Keyinchalik Tolkien 'The Lord of the Rings'ni yaratish jarayonida Yagona Uzukning tabiati hech qachon bunday xushmuomala sovgʻa boʻlolmasligini anglab, 1951-yilda 'The Hobbit'ning 5-bobini tubdan qayta tahrirladi. Dastlabki nashrdagi voqeani esa Bilboning Uzukka qonuniy ega ekanini boshqalarga isbotlash uchun oʻylab topgan 'yolgʻoni' sifatida tushuntirdi.",
+  "summary": "Bungo Baggins va Belladonna Tookning oʻgʻli, Bag End egasi. Gandalf va Thorin Oakenshield boshchiligidagi oʻn uch mitti hamrohligida Erebor sayohatiga chiqib, Smaug ajdarini magʻlub etishda qatnashgan va Tumanli Togʻlar qaʼrida Gollumdan Yagona Uzukni topib olgan buyuk xobbit. Uzukni 60 yil saqlab, uni oʻz ixtiyori bilan Frodoga topshirgan birinchi Uzuk sohibi; Rivendellda 'U yerga va qaytishga' asari hamda elflar dostonlarini yozib, 131 yoshida Boqiy Gʻarbga suzib ketgan.",
+  "etymology": "Inglizcha 'Bilbo' ismi xobbitlarning asl umumiy tilidagi (Westron) 'Bilba' ismining shaklidir. Ushbu nom qadimiy ispan poʻlat pichogʻi yoki qilich turiga (bilbo) ohangdosh boʻlib, uning sarguzashtsevar Took nasliga ishora qiladi. 'Baggins' esa xobbit tilidagi 'Labingi' (labin — 'xalta, sumka') soʻzidan olingan.",
+  "biography_sections": [
+    {
+      "title": "Tinch hayot va Gandalfning kutilmagan tashrifi",
+      "content": "Bungo Baggins va Belladonna Tookning oʻgʻli Bilbo Uchinchi davrning 2890-yilida tugʻilgan. Uning otasi tomondan ehtiyotkor, xotirjam Baggins xarakteri, onasi tomondan esa sarguzashtlarga moyil Took qoni birlashgan edi.\n\n2941-yilning bir bahor kuni Gandalf uning eshigi oldiga kelib eshigiga sirli belgi chizdi. Oʻsha oqshom Bag Endga Thorin Oakenshield boshchiligidagi oʻn uch nafar mitti mehmonga kelib, Bilboni Erebor xazinasini qaytarib olish uchun 'oʻgʻri' (burglar) sifatida safarga chaqirdilar."
+    },
+    {
+      "title": "Gollum bilan topishmoqlar jangi va Yagona Uzuk",
+      "content": "Tumanli Togʻlar qaʼrida gnomlar bilan ajralib adashib qolgan Bilbo qorongʻu gʻor zaminidan sovuq metall uzukni topib oldi. U yerosti koʻlida dahshatli maxluq Gollum bilan toʻqnashdi. Ular oʻrtasida hayot-mamot topishmoqlari aytishuvi boʻlib oʻtdi.\n\nBilbo choʻntagidagi sirli narsa haqida 'Choʻntagimda nima bor?' deb soʻraganida Gollum topa olmadi. Bilbo uzukni taqib koʻrinmas boʻlish xususiyatini kashf etdi. U Gollumni oʻldirish imkoniga ega boʻlsa-da, unga rahmi kelib qochib ketdi — Tolkien taʼkidlaganidek, Bilboning aynan shu rahm-shafqati uning qalbini Uzukning qora laʼnatidan uzoq yillar asrab qoldi."
+    },
+    {
+      "title": "Erebor zafari va Arkenstone fojiasi",
+      "content": "Mirkwood oʻrmonida bahaybat oʻrgimchaklardan gnomlarni qutqargan va Sting xanjariga nom bergan Bilbo, Ereborda ulkan ajdar Smaugning uyasiga yashirincha kirib bordi. U Smaugning koʻkrak zirhidagi zaif nuqtani payqadi va bu xabar Bard the Bowmanga yetib ajdarning halokatiga sabab boʻldi.\n\nThorin oltin vasvasasiga uchrab doʻstlari bilan urush boshlash xavfi tugʻilganda, Bilbo sulh oʻrnatish ilinjida Mittilarning muqaddas gavhari — Arkenstoneni Elflar qiroli va Bardga topshirdi. Besh Armiya Jangidan soʻng Shirga oʻzining kichik xazinasi, mithril sovuti va sehrli uzugi bilan qaytib keldi."
+    },
+    {
+      "title": "111 yillik bayram va Uzukdan ixtiyoriy voz kechish",
+      "content": "3001-yilda Bilbo oʻzining 111 yoshini va Frodoning 33 yoshini nishonlash uchun ulkan bayram uyushtirdi. Bayram nutqi soʻngida u Uzukni taqib koʻzdan gʻoyib boʻldi.\n\nGandalfning qatʼiy va mehrli koʻmagi bilan Bilbo Yagona Uzukni oʻz xohishi bilan Frodoga qoldirdi. Oʻrta-yer tarixida hech bir shaxs (hatto Sauronning oʻzi ham) Uzukdan ixtiyoriy ravishda voz kecholmagan edi; Bilbo bu buyuk axloqiy gʻalabani qoʻlga kiritgan birinchi va yagona Uzuk sohibi boʻldi."
+    },
+    {
+      "title": "Rivendelldagi olimlik va Boqiy Gʻarb",
+      "content": "Rivendellga koʻchib oʻtgan Bilbo Elrond kutubxonasida yillar davomida tadqiqot olib bordi. U 'Translations from the Elvish' (Elflar tilidan tarjimalar — kelajakdagi Silmarillion asosi) nomli uch jildlik nodir kitobni yozdi.\n\nHalqa Urushidan soʻng 3021-yilda u 131 yoshida — Oʻrta-yer tarixidagi eng uzoq umr koʻrgan xobbit sifatida Frodo va Gandalf bilan birga Boqiy Gʻarbga yoʻl oldi."
+    }
+  ],
+  "sources": [
+    {
+      "book_slug": "the-hobbit",
+      "chapter": "Riddles in the Dark",
+      "page": "68"
+    },
+    {
+      "book_slug": "the-hobbit",
+      "chapter": "Inside Information",
+      "page": "208"
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "A Long-expected Party",
+      "page": "21"
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "Many Meetings",
+      "page": "224"
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "The Grey Havens",
+      "page": "1002"
+    }
+  ],
+  "related_characters": [
+    "frodo-baggins",
+    "samwise-gamgee",
+    "gandalf",
+    "thorin-oakenshield",
+    "gollum",
+    "elrond",
+    "aragorn"
+  ],
+  "adaptations": [
+    {
+      "medium": "film",
+      "title": "The Hobbit & The Lord of the Rings Film Trilogies",
+      "creator": "Peter Jackson",
+      "year": 2012,
+      "divergence_notes": "Film trilogiyasida yosh Bilbo rolini Martin Freeman, keksaygan Bilboni esa Sir Ian Holm gavdalantirgan. Martin Freeman ijrosi kitobdagi istehzo, noqulaylik va ichki olijanob jasoratni nihoyatda yorqin ochib bergan. Filmda Bilboning Azog bilan jangdagi ishtiroki kitobga nisbatan jangovar harakatlar bilan boyitilgan."
+    }
+  ],
+  "image": {
+    "src": "/images/characters/bilbo-baggins.webp",
+    "src_thumb": "/images/characters/bilbo-baggins-thumb.webp",
+    "alt": "Bilbo Baggins Bag Enddagi ish stolida, Qizil Kitobga oʻz sayohati xotiralarini yozayotgan holatda",
+    "caption": "Bilbo Baggins — Erebor safari qahramoni, Gʻarbiy Chegara Qizil Kitobi muallifi"
+  }
+}

@@ -1,0 +1,886 @@
+---
+import { getCollection } from 'astro:content';
+import EditorialLayout from '@/layouts/EditorialLayout.astro';
+import ProvenanceBadge from '@/components/editorial/ProvenanceBadge.astro';
+
+const breadcrumbs = [
+  { label: 'Xalqlar va Tillar' },
+];
+
+const allPeoples = await getCollection('peoples');
+const allLanguages = await getCollection('languages');
+
+interface ProtoRoot {
+  id: string;
+  root: string;
+  meaningUz: string;
+  quenyaForms: Array<{ word: string; gloss: string }>;
+  sindarinForms: Array<{ word: string; gloss: string }>;
+  phoneticShiftUz: string;
+  canonicalExamples: Array<{ name: string; meaning: string; href?: string }>;
+  historicalNoteUz: string;
+}
+
+const PROTO_ROOTS: ProtoRoot[] = [
+  {
+    id: 'kal',
+    root: '*KAL-',
+    meaningUz: 'Nur, porlash, yorugʻlik taratish',
+    quenyaForms: [
+      { word: 'cala', gloss: 'nur, yorugʻlik' },
+      { word: 'calima', gloss: 'yorqin, nuroniy' },
+      { word: 'alcar / alkar', gloss: 'ulugʻvorlik, shon-shuhrat' },
+      { word: 'calacirya', gloss: 'nur darasi' },
+    ],
+    sindarinForms: [
+      { word: 'calad', gloss: 'nur, ziyo' },
+      { word: 'celair', gloss: 'yorqin, shaffof' },
+      { word: 'galvorn', gloss: 'yaltiroq qora metall (Eöl ixtirosi)' },
+      { word: 'galadh', gloss: 'daraxt (yorqin tojli)' },
+    ],
+    phoneticShiftUz: 'Ibtidoiy [k-] Quenyada oʻzgarmasdan saqlangan. Sindarinda esa murakkab soʻzlar va oraliq oʻrinlarda yumshoq lenitsiyaga uchrab [g-] tovushiga aylanadi (*kal- -> -gal).',
+    canonicalExamples: [
+      { name: 'Calaquendi', meaning: 'Nur Elflari (Valinor nurlarini koʻrganlar)', href: '/xalqlar-va-tillar/noldor/' },
+      { name: 'Calacirya', meaning: 'Nur Qalbi / Pelóri togʻlaridagi dara', href: '/olam/ikki-daraxt/' },
+      { name: 'Galadriel', meaning: 'Nur Gulchambari bilan bezangan Xonim', href: '/qahramonlar/galadriel/' },
+    ],
+    historicalNoteUz: 'Tolkienning "The Etymologies" (HoME V) asarida qayd etilgan eng qadimgi ildizlardan biri. Valinorning Ikki Daraxti va Silmarillar lisoniy konseptsiyasining tayanchi hisoblanadi.',
+  },
+  {
+    id: 'tin',
+    root: '*TIN-',
+    meaningUz: 'Yaltiroq uchqun, yulduzcha miltillashi',
+    quenyaForms: [
+      { word: 'tinta-', gloss: 'uchqun sochmoq, yondirmoq' },
+      { word: 'tinwë', gloss: 'mitti yulduz, zarracha uchqun' },
+      { word: 'Tintallë', gloss: 'Yulduzlar Yoquvchisi (Varda)' },
+    ],
+    sindarinForms: [
+      { word: 'tinnu', gloss: 'oqshom gʻira-shirasi, yulduzli tun' },
+      { word: 'tinúviel', gloss: 'bulbul (yulduzli oqshom qizi)' },
+      { word: 'ithildin', gloss: 'oy yulduzi (aks etuvchi nurli metall)' },
+    ],
+    phoneticShiftUz: 'Quenyada nasal affikslar (-nt-, -nw-) orqali feʼl va otlar yasaladi. Sindarinda vokal mutatsiyasi (i-affection) va soʻz oxiridagi reduktsiya natijasida ohangdor vokal oʻzgarishlari roʻy beradi.',
+    canonicalExamples: [
+      { name: 'Tinúviel', meaning: 'Beren tomonidan Lúthienga berilgan unvon', href: '/qahramonlar/luthien/' },
+      { name: 'Tintallë', meaning: 'Varda — Yulduzlar Malikasining epik nomi', href: '/olam/muqaddas-nur/' },
+      { name: 'Ithildin', meaning: 'Moria gʻarbiy darvozasidagi maxfiy yozuv moddasi', href: '/xaritalar/?joy=khazad-dum' },
+    ],
+    historicalNoteUz: 'Elflarning Cuiviénenda uygʻonishi chogʻida koʻrgan ilk narsalari yulduzlar boʻlgani sababli, *TIN- ildizi ularning qalbida muqaddas his-tuygʻularni ifodalovchi eng dastlabki fonetik birliklardan biridir.',
+  },
+  {
+    id: 'mor',
+    root: '*MOR-',
+    meaningUz: 'Zulmat, qorongʻulik, qora rang',
+    quenyaForms: [
+      { word: 'mórë', gloss: 'qorongʻulik, tun, qora' },
+      { word: 'morna', gloss: 'zim-ziyo, qorongʻu' },
+      { word: 'Moringotto', gloss: 'Dunyoning Qora Dushmani (Morgoth)' },
+    ],
+    sindarinForms: [
+      { word: 'môr', gloss: 'zulmat, qorongʻulik' },
+      { word: 'morgul', gloss: 'qora sehr, yovuz jodugarlik' },
+      { word: 'morn', gloss: 'qora, qorongʻi' },
+    ],
+    phoneticShiftUz: '[m] va [r] konsonantlari ikkala tilda nihoyatda barqaror. Sindarinda ikkinchi ildizlar bilan qoʻshilganda prefiks sifatida qoʻllanadi (Mor-goth, Mor-dor, Mor-ia) va boʻgʻin urgʻusi oldingi qismga koʻchadi.',
+    canonicalExamples: [
+      { name: 'Mordor', meaning: 'Qora Zamin / Sauron Saltanati', href: '/xaritalar/?joy=barad-dur' },
+      { name: 'Moria', meaning: 'Qora Choh (Khazad-dûmning keyingi nomi)', href: '/xaritalar/?joy=khazad-dum' },
+      { name: 'Morgoth', meaning: 'Dunyoning Qora Dushmani (Melkor)', href: '/qahramonlar/melkor/' },
+      { name: 'Minas Morgul', meaning: 'Qora Jodugarlik Minorasi', href: '/xaritalar/?joy=cirith-ungol' },
+    ],
+    historicalNoteUz: 'Morgoth, Mordor va Moria nomlarining asosi boʻlgan ushbu ildiz butun Legendarium boʻylab yovuzlik va qorongʻulik qudratini ifodalovchi universal lingvistik belgi sanaladi.',
+  },
+  {
+    id: 'sil',
+    root: '*SIL-',
+    meaningUz: 'Kumushdek oq porlash, sof shaffof ziyo',
+    quenyaForms: [
+      { word: 'sil-', gloss: 'kumushrang nur sochmoq' },
+      { word: 'silma', gloss: 'kumushdek yorqin' },
+      { word: 'Silmaril', gloss: 'Sof Ziyoli Muqaddas Gavhar' },
+      { word: 'Isil', gloss: 'Oy (Yaltiroq Kumush Jism)' },
+    ],
+    sindarinForms: [
+      { word: 'silivren', gloss: 'kumushdek yaltiragan, shaffof' },
+      { word: 'Ithil', gloss: 'Oy' },
+      { word: 'celeb', gloss: 'kumush (*KYELEP- ildizi bilan singib ketgan)' },
+    ],
+    phoneticShiftUz: 'Quenyada boshlangʻich [s-] toʻliq saqlanadi (*sil- -> silma, Isil). Sindarinda esa intervokal [s] tishlararo [th] tovushiga almashadi: *Isil -> Ithil (Minas Ithil, Ithilien).',
+    canonicalExamples: [
+      { name: 'Silmarillar', meaning: 'Fëanor yaratgan uch muqaddas gavhar', href: '/tarix/silmaril-safari/' },
+      { name: 'Isildur', meaning: 'Oyga Sadoqatli / Elendil oʻgʻli', href: '/qahramonlar/isildur/' },
+      { name: 'Minas Ithil', meaning: 'Chiqayotgan Oy Minorasi', href: '/xaritalar/?joy=cirith-ungol' },
+    ],
+    historicalNoteUz: 'Kumush nur — Telperion daraxtining nuri ramzidir. *SIL- ildizi Fëanorning shoh asari boʻlmish Silmarillar orqali butun Birinchi davr mifologiyasining markaziy semantik oʻzagiga aylangan.',
+  },
+  {
+    id: 'ndor',
+    root: '*NDOR-',
+    meaningUz: 'Quruqlik, keng oʻlka, zamin, xalq makoni',
+    quenyaForms: [
+      { word: 'nórë', gloss: 'oʻlka, yer, mamlakat, xalq' },
+      { word: 'Endor', gloss: 'Oʻrta-yer (Ened-nórë qisqartmasi)' },
+      { word: 'Valinórë / Valinor', gloss: 'Valar Mamlakati' },
+    ],
+    sindarinForms: [
+      { word: 'dôr', gloss: 'oʻlka, zamin, mamlakat' },
+      { word: 'Doriath', gloss: 'Devor bilan oʻralgan oʻlka' },
+      { word: 'Eriador', gloss: 'Yolgʻiz / Kimsasiz oʻlka' },
+      { word: 'Gondor', gloss: 'Toshli Oʻlka' },
+    ],
+    phoneticShiftUz: 'Ibtidoiy Elf tilidagi boshlangʻich prenasallashgan [nd-] Quenyada nasalga aylanib [n-] boʻlib qolgan (*ndor- -> nórë). Sindarinda esa aksincha, portlovchi qism kuchayib [d-] ga aylangan (*ndor- -> dôr). Murakkab soʻzlar ichida esa toʻliq [nd] shakli saqlangan (Gondor = gond + dor).',
+    canonicalExamples: [
+      { name: 'Gondor', meaning: 'Toshlar Oʻlkasi (Janubiy Dúnedain saltanati)', href: '/xaritalar/?joy=minas-tirith' },
+      { name: 'Doriath', meaning: 'Devor bilan ihotalangan Sindar qirolligi', href: '/xaritalar/?joy=menegroth' },
+      { name: 'Eriador', meaning: 'Moviy togʻlar va Tumanli togʻlar oraligʻi', href: '/xaritalar/?joy=rivendell' },
+      { name: 'Valinor', meaning: 'Valar va Mayar maskani', href: '/olam/ikki-daraxt/' },
+    ],
+    historicalNoteUz: 'Tolkien geografiyasidagi deyarli barcha yirik toponimlar (*NDOR-) ildizi orqali yasalgan. Bu morfologik qonuniyat Quenya va Sindarin grammatikasi ajralishining eng yorqin misolidir.',
+  },
+  {
+    id: 'khil',
+    root: '*KHIL-',
+    meaningUz: 'Ergashmoq, ortidan bormoq, keyin kelmoq',
+    quenyaForms: [
+      { word: 'Hildor', gloss: 'Ergashuvchilar (Elflardan keyin kelgan Insonlar)' },
+      { word: 'hildë', gloss: 'voris, merosxoʻr' },
+      { word: 'Hildórien', gloss: 'Insonlar uygʻongan ilk zamin' },
+    ],
+    sindarinForms: [
+      { word: 'Aphadrim', gloss: 'Ergashuvchilar (Insonlar kalkasi)' },
+      { word: 'chîl', gloss: 'voris, oʻrinbosar' },
+      { word: 'Eluchíl', gloss: 'Elu vorisi (Dior — Beren va Lúthien oʻgʻli)' },
+    ],
+    phoneticShiftUz: 'Ibtidoiy portlovchi-boʻgʻiz [kh-] Quenyada kuchsizlanib oddiy nafas tovushi [h-] ga oʻtgan (*khil- -> Hildor). Sindarinda esa aspiratsiya spiralga aylanib [ch-] hosil qilgan (*khil- -> chîl).',
+    canonicalExamples: [
+      { name: 'Hildórien', meaning: 'Quyosh chiqishi bilan Insonlar uygʻongan Sharqiy makon', href: '/tarix/birinchi-qarindosh-qirgini/' },
+      { name: 'Eluchíl (Dior)', meaning: 'Thingolning vorisi / Birinchi Yarim-elf hukmdor', href: '/nasabnomalar/edain-va-yarim-elflar/' },
+      { name: 'Hildor', meaning: 'Insonlarning elflar tilidagi eng arxaik falsafiy nomi', href: '/xalqlar-va-tillar/edain/' },
+    ],
+    historicalNoteUz: 'Elflar oʻzlarini «Kwenlar» (Gapiruvchilar), insonlarni esa «Hildor» (Ergashuvchilar) deb atashgan. Ushbu ildiz Tolkienning teologik dunyoqarashida Elflar va Insonlar oʻrtasidagi ontologik tartibni ifodalaydi.',
+  },
+];
+---
+
+<EditorialLayout
+  title="Xalqlar, Tillar va Yozuv Tizimlari"
+  category="Filologiya va Etnografiya"
+  description="Elflar, Insonlar, Mittilar va ularning tillari (Quenya, Sindarin, Khuzdul, Adûnaic) hamda Tengwar va Cirth yozuvlari."
+  breadcrumbs={breadcrumbs}
+>
+  <div class="languages-content">
+    <p class="section-lead">
+      J.R.R. Tolkien taʼkidlaganidek: <em>«Mening ertaklarim tillarga asoslangan; ular tillar uchun fon vazifasini oʻtaydi, aksincha emas»</em>.
+      Ushbu boʻlim Oʻrta-yerning barcha xalqlari va ularning boy lingvistik merosini filologik jihatdan tahlil qiladi.
+    </p>
+
+    <!-- Qiyosiy Filologiya: Ibtidoiy Elf Ildizlari Matritsasi (Primitive Quendian Root Explorer) -->
+    <section class="section-group root-explorer-section" id="root-explorer">
+      <div class="root-explorer-header">
+        <span class="explorer-kicker">Qiyosiy Fonologiya va Etimologiya</span>
+        <h2 class="sub-heading">Ibtidoiy Elf Ildizlari va Qiyosiy Fonologiya (Root Explorer)</h2>
+        <p class="explorer-intro">
+          Tolkien qiyosiy tilshunoslik metodiga binoan, Quenya va Sindarin tillari yagona <strong>Ibtidoiy Kvendian (Primitive Quendian)</strong>
+          ildizlaridan ajralib chiqqan. Quyidagi interaktiv matritsada asosiy proto-ildizlarning ikki mustaqil elvish tilidagi
+          tovush mutatsiyalari (fonetik qonuniyatlar) va kanonik joy/shaxs nomlaridagi aksini oʻrganishingiz mumkin:
+        </p>
+      </div>
+
+      <!-- Ildizlarni tanlash tablari -->
+      <div class="root-tabs" role="tablist" aria-label="Ibtidoiy Elf ildizlari tanlovi">
+        {PROTO_ROOTS.map((r, idx) => (
+          <button
+            type="button"
+            class:list={['root-tab-btn', { 'is-active': idx === 0 }]}
+            data-root-id={r.id}
+            role="tab"
+            aria-selected={idx === 0 ? 'true' : 'false'}
+            aria-controls={`root-panel-${r.id}`}
+            id={`root-tab-${r.id}`}
+          >
+            <span class="tab-root-name">{r.root}</span>
+            <span class="tab-root-gloss">{r.meaningUz.split(',')[0]}</span>
+          </button>
+        ))}
+      </div>
+
+      <!-- Tanlangan Ildizning Tafsilotlar Paneli -->
+      <div class="root-panels-container">
+        {PROTO_ROOTS.map((r, idx) => (
+          <article
+            class:list={['root-detail-card', { 'is-visible': idx === 0 }]}
+            id={`root-panel-${r.id}`}
+            role="tabpanel"
+            aria-labelledby={`root-tab-${r.id}`}
+            data-root-card={r.id}
+          >
+            <div class="card-root-top">
+              <div class="root-badge-group">
+                <span class="root-code-pill">{r.root}</span>
+                <span class="root-semantic-title">{r.meaningUz}</span>
+              </div>
+              <span class="root-family-badge">Primitive Quendian</span>
+            </div>
+
+            <!-- Qiyosiy Quenya vs Sindarin Matritsasi -->
+            <div class="root-comparison-matrix">
+              <!-- Quenya ustuni -->
+              <div class="lang-matrix-col quenya-col">
+                <div class="matrix-col-header">
+                  <span class="matrix-lang-tag quenya-tag">Quenya (Amanya)</span>
+                  <span class="matrix-phonology-label">Vokalik & Ochiq boʻgʻin</span>
+                </div>
+                <ul class="matrix-word-list">
+                  {r.quenyaForms.map((q) => (
+                    <li class="matrix-word-item">
+                      <strong class="matrix-word">{q.word}</strong>
+                      <span class="matrix-word-sep">—</span>
+                      <span class="matrix-gloss">{q.gloss}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <!-- Sindarin ustuni -->
+              <div class="lang-matrix-col sindarin-col">
+                <div class="matrix-col-header">
+                  <span class="matrix-lang-tag sindarin-tag">Sindarin (Beleriand)</span>
+                  <span class="matrix-phonology-label">Konsonantik & Lenitsiyalangan</span>
+                </div>
+                <ul class="matrix-word-list">
+                  {r.sindarinForms.map((s) => (
+                    <li class="matrix-word-item">
+                      <strong class="matrix-word">{s.word}</strong>
+                      <span class="matrix-word-sep">—</span>
+                      <span class="matrix-gloss">{s.gloss}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+
+            <!-- Fonetik Mutatsiya Qoidasi -->
+            <div class="phonetic-mutation-box">
+              <div class="mutation-box-header">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
+                </svg>
+                <span class="mutation-heading">Qiyosiy Fonologik Qonuniyat:</span>
+              </div>
+              <p class="mutation-text">{r.phoneticShiftUz}</p>
+            </div>
+
+            <!-- Kanonik Toponimlar va Shaxs Nomlari -->
+            <div class="canonical-names-box">
+              <span class="names-heading">Kanonik Toponim va Nomlardagi Aksi:</span>
+              <div class="names-pills-flow">
+                {r.canonicalExamples.map((ex) => (
+                  <div class="example-pill-item">
+                    {ex.href ? (
+                      <a href={ex.href} class="example-name-link">
+                        <span class="example-symbol">✦</span>
+                        <span class="example-name">{ex.name}</span>
+                      </a>
+                    ) : (
+                      <span class="example-name-link is-plain">
+                        <span class="example-symbol">✦</span>
+                        <span class="example-name">{ex.name}</span>
+                      </span>
+                    )}
+                    <span class="example-meaning">({ex.meaning})</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <!-- Tarixiy-Filologik Sharh -->
+            <div class="scholarly-note-box">
+              <span class="note-label">Filologik manbashunoslik:</span>
+              <p class="note-content">{r.historicalNoteUz}</p>
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <!-- Xalqlar va Madaniyatlar Katalogi -->
+    <section class="section-group">
+      <h2 class="sub-heading">Kanonik Xalqlar va Madaniyatlar</h2>
+      <div class="cards-grid">
+        {allPeoples.map((people) => (
+          <article class="info-card">
+            <div class="card-top">
+              <span class="card-pill">{people.data.race_category}</span>
+              <ProvenanceBadge status={people.data.textual_status} />
+            </div>
+            <h3 class="card-title">
+              <a href={`/xalqlar-va-tillar/${people.data.id || people.id}/`}>
+                {people.data.name}
+              </a>
+            </h3>
+            {people.data.other_names.length > 0 && (
+              <p class="card-alt-names"><em>{people.data.other_names.join(', ')}</em></p>
+            )}
+            <p class="card-desc">{people.data.summary}</p>
+            <div class="card-footer">
+              <a href={`/xalqlar-va-tillar/${people.data.id || people.id}/`} class="card-link">
+                Etnografik maʼlumotni oʻqish →
+              </a>
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <!-- Tillar va Yozuvlar Katalogi -->
+    <section class="section-group">
+      <h2 class="sub-heading">Tillar va Fonologiya</h2>
+      <div class="cards-grid">
+        {allLanguages.map((lang) => (
+          <article class="info-card">
+            <div class="card-top">
+              <span class="card-pill">{lang.data.family}</span>
+              <ProvenanceBadge status={lang.data.textual_status} />
+            </div>
+            <h3 class="card-title">
+              <a href={`/xalqlar-va-tillar/${lang.data.id || lang.id}/`}>
+                {lang.data.name}
+              </a>
+            </h3>
+            <p class="card-alt-names">
+              Yozuv tizimlari: {lang.data.writing_systems.join(', ')}
+            </p>
+            <p class="card-desc">{lang.data.phonology_overview}</p>
+            <div class="card-footer">
+              <a href={`/xalqlar-va-tillar/${lang.data.id || lang.id}/`} class="card-link">
+                Lingvistik tahlilni oʻqish →
+              </a>
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+  </div>
+
+  <div slot="margin">
+    <div class="margin-card">
+      <h3 class="margin-title">Filologiya Standarti</h3>
+      <p>
+        Barcha grammatik va fonetik qoidalar Tolkienning "The Lord of the Rings" E ilovasiga va "Parma Eldalamberon" nashrlariga tayanadi.
+      </p>
+    </div>
+    <div class="margin-card">
+      <h3 class="margin-title">Yozuv Tizimlari</h3>
+      <p>
+        Tengwar (Fëanor alifbosi) va Cirth (Daeron runalari) barcha tillarda tovushlarni ifodalashning oʻziga xos qoidalariga ega.
+      </p>
+    </div>
+  </div>
+</EditorialLayout>
+
+<style>
+  .section-lead {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    margin-bottom: 2.25rem;
+  }
+
+  .section-group {
+    margin-bottom: 3rem;
+  }
+
+  .sub-heading {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 1.25rem;
+    color: var(--color-text-primary);
+  }
+
+  .cards-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  @media (min-width: 640px) {
+    .cards-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .info-card {
+    display: flex;
+    flex-direction: column;
+    padding: 1.25rem;
+    background-color: var(--color-bg-elevated);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 4px;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  }
+
+  .info-card:hover {
+    border-color: var(--color-accent-gold);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.625rem;
+  }
+
+  .card-pill {
+    font-family: var(--font-sans-ui);
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--color-accent-gold);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  .card-title {
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+  }
+
+  .card-title a {
+    color: var(--color-text-primary);
+    text-decoration: none;
+  }
+
+  .card-title a:hover {
+    color: var(--color-accent-gold);
+  }
+
+  .card-alt-names {
+    font-size: 0.8125rem;
+    color: var(--color-text-muted);
+    margin-bottom: 0.625rem;
+  }
+
+  .card-desc {
+    font-size: 0.875rem;
+    line-height: 1.6;
+    color: var(--color-text-secondary);
+    margin-bottom: 1rem;
+    flex-grow: 1;
+  }
+
+  .card-footer {
+    margin-top: auto;
+  }
+
+  .card-link {
+    font-family: var(--font-sans-ui);
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: var(--color-accent-gold);
+    text-decoration: none;
+  }
+
+  .card-link:hover {
+    text-decoration: underline;
+  }
+
+  /* ==========================================================================
+     Primitive Quendian Root Explorer Styles
+     ========================================================================== */
+  .root-explorer-section {
+    background-color: var(--color-bg-surface);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 8px;
+    padding: 1.75rem;
+    margin-bottom: 3.5rem;
+    box-shadow: var(--shadow-sm);
+  }
+
+  .root-explorer-header {
+    margin-bottom: 1.5rem;
+  }
+
+  .explorer-kicker {
+    display: inline-block;
+    font-family: var(--font-sans-ui);
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-accent-gold);
+    margin-bottom: 0.35rem;
+  }
+
+  .explorer-intro {
+    font-size: 0.9375rem;
+    line-height: 1.65;
+    color: var(--color-text-secondary);
+    margin: 0;
+  }
+
+  .root-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.625rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--color-border-subtle);
+    padding-bottom: 1rem;
+  }
+
+  .root-tab-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.5rem 0.875rem;
+    background-color: var(--color-bg-elevated);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 3px;
+    cursor: pointer;
+    font-family: var(--font-sans-ui);
+    transition: border-color 0.15s ease, background-color 0.15s ease;
+    text-align: left;
+  }
+
+  .root-tab-btn:hover {
+    border-color: var(--color-border-gold);
+  }
+
+  .root-tab-btn.is-active {
+    background-color: var(--color-forest);
+    border-color: var(--color-forest-deep);
+    color: #FAF8F2;
+    box-shadow: var(--shadow-sm);
+  }
+
+  .tab-root-name {
+    font-size: 0.9375rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+  }
+
+  .tab-root-gloss {
+    font-size: 0.6875rem;
+    opacity: 0.95;
+    white-space: nowrap;
+  }
+
+  .root-panels-container {
+    position: relative;
+  }
+
+  .root-detail-card {
+    display: none;
+    animation: fadeIn 0.25s ease-in-out;
+  }
+
+  .root-detail-card.is-visible {
+    display: block;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(4px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .card-root-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--color-border-subtle);
+    margin-bottom: 1.25rem;
+  }
+
+  .root-badge-group {
+    display: flex;
+    align-items: center;
+    gap: 0.875rem;
+  }
+
+  .root-code-pill {
+    display: inline-block;
+    padding: 0.25rem 0.625rem;
+    background-color: rgba(197, 155, 39, 0.15);
+    color: var(--color-accent-gold);
+    font-family: var(--font-mono, monospace);
+    font-size: 1.0625rem;
+    font-weight: 700;
+    border-radius: 4px;
+    border: 1px solid rgba(197, 155, 39, 0.3);
+  }
+
+  .root-semantic-title {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--color-text-primary);
+  }
+
+  .root-family-badge {
+    font-family: var(--font-sans-ui);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-muted);
+    padding: 0.2rem 0.5rem;
+    background-color: var(--color-bg-elevated);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 4px;
+  }
+
+  .root-comparison-matrix {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+
+  @media (min-width: 640px) {
+    .root-comparison-matrix {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .lang-matrix-col {
+    background-color: var(--color-bg-elevated);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 3px;
+    padding: 1.125rem;
+    box-shadow: var(--shadow-sm);
+  }
+
+  .matrix-col-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.875rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--color-border-subtle);
+  }
+
+  .matrix-lang-tag {
+    font-family: var(--font-sans-ui);
+    font-size: 0.8125rem;
+    font-weight: 700;
+  }
+
+  .quenya-tag {
+    color: var(--color-link);
+  }
+
+  .sindarin-tag {
+    color: var(--color-forest);
+  }
+
+  .matrix-phonology-label {
+    font-family: var(--font-sans-ui);
+    font-size: 0.6875rem;
+    color: var(--color-text-muted);
+  }
+
+  .matrix-word-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .matrix-word-item {
+    font-size: 0.875rem;
+    line-height: 1.5;
+    display: flex;
+    align-items: baseline;
+    gap: 0.4rem;
+  }
+
+  .matrix-word {
+    font-family: var(--font-serif-body, serif);
+    font-style: italic;
+    color: var(--color-text-primary);
+  }
+
+  .matrix-word-sep {
+    color: var(--color-text-muted);
+    font-size: 0.75rem;
+  }
+
+  .matrix-gloss {
+    color: var(--color-text-secondary);
+  }
+
+  .phonetic-mutation-box {
+    background-color: var(--color-bg-elevated);
+    border-left: 3px solid var(--color-accent-gold);
+    padding: 0.875rem 1rem;
+    border-radius: 0 4px 4px 0;
+    margin-bottom: 1.25rem;
+  }
+
+  .mutation-box-header {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: var(--color-accent-gold);
+    font-family: var(--font-sans-ui);
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.35rem;
+  }
+
+  .mutation-text {
+    font-size: 0.875rem;
+    line-height: 1.6;
+    color: var(--color-text-secondary);
+    margin: 0;
+  }
+
+  .canonical-names-box {
+    margin-bottom: 1.25rem;
+  }
+
+  .names-heading {
+    display: block;
+    font-family: var(--font-sans-ui);
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-muted);
+    margin-bottom: 0.625rem;
+  }
+
+  .names-pills-flow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.625rem;
+  }
+
+  .example-pill-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background-color: var(--color-bg-elevated);
+    border: 1px solid var(--color-border-subtle);
+    padding: 0.35rem 0.625rem;
+    border-radius: 4px;
+    font-size: 0.8125rem;
+  }
+
+  .example-name-link {
+    color: var(--color-accent-gold);
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+
+  .example-name-link:hover {
+    text-decoration: underline;
+  }
+
+  .example-name-link.is-plain {
+    color: var(--color-text-primary);
+  }
+
+  .example-symbol {
+    font-size: 0.625rem;
+    color: var(--color-accent-gold);
+  }
+
+  .example-meaning {
+    color: var(--color-text-muted);
+    font-size: 0.75rem;
+  }
+
+  .scholarly-note-box {
+    background-color: rgba(0, 0, 0, 0.03);
+    border-radius: 4px;
+    padding: 0.75rem 0.875rem;
+    font-size: 0.8125rem;
+    line-height: 1.55;
+    color: var(--color-text-secondary);
+  }
+
+  :global(.theme-dark) .scholarly-note-box {
+    background-color: rgba(255, 255, 255, 0.03);
+  }
+
+  .note-label {
+    font-weight: 700;
+    font-family: var(--font-sans-ui);
+    color: var(--color-text-primary);
+    margin-right: 0.35rem;
+  }
+
+  .note-content {
+    display: inline;
+    margin: 0;
+  }
+</style>
+
+<script>
+  function initRootExplorer() {
+    const tabs = document.querySelectorAll<HTMLButtonElement>('.root-tab-btn');
+    const panels = document.querySelectorAll<HTMLElement>('.root-detail-card');
+
+    if (!tabs.length || !panels.length) return;
+
+    tabs.forEach((tab) => {
+      tab.addEventListener('click', () => {
+        const rootId = tab.getAttribute('data-root-id');
+        if (!rootId) return;
+
+        // Tab tugmalarini yangilash
+        tabs.forEach((t) => {
+          const isActive = t === tab;
+          t.classList.toggle('is-active', isActive);
+          t.setAttribute('aria-selected', isActive ? 'true' : 'false');
+        });
+
+        // Panellarni yangilash
+        panels.forEach((p) => {
+          const isTarget = p.getAttribute('data-root-card') === rootId;
+          p.classList.toggle('is-visible', isTarget);
+        });
+      });
+
+      // Klaviatura bilan boshqarish (Chap/O'ng strelkalar)
+      tab.addEventListener('keydown', (e) => {
+        const tabsArray = Array.from(tabs);
+        const index = tabsArray.indexOf(tab);
+
+        if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
+          e.preventDefault();
+          const nextTab = tabsArray[(index + 1) % tabsArray.length];
+          nextTab?.focus();
+          nextTab?.click();
+        } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+          e.preventDefault();
+          const prevTab = tabsArray[(index - 1 + tabsArray.length) % tabsArray.length];
+          prevTab?.focus();
+          prevTab?.click();
+        }
+      });
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initRootExplorer);
+  } else {
+    initRootExplorer();
+  }
+</script>

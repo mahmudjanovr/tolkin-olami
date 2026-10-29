@@ -1,0 +1,68 @@
+{
+  "id": "xobbitlar",
+  "name": "Xobbitlar (Shayr Xalqi)",
+  "other_names": [
+    "Periannath (Sindarin)",
+    "Halflings (Yarim boʻylilar)",
+    "Kuduk (Gʻarbiy tilda)"
+  ],
+  "race_category": "boshqa",
+  "divisions_and_clans": [
+    "Harfootlar (Tukli oyoqlilar — eng koʻp sonli va yerosti inlarida yashovchi tarmoq)",
+    "Stoorlar (Keng gavdali, daryo boʻylari va qayiqchilikka moyil tarmoq)",
+    "Fallohidelar (Shimoliy tarmoq — Elflar bilan doʻstlashgan, Tuk va Brendibak urugʻlari ajdodlari)"
+  ],
+  "origin_era": "Uchinchi davr",
+  "associated_languages": [
+    "westron"
+  ],
+  "primary_realms": [
+    "hobbiton",
+    "bywater",
+    "tuckborough",
+    "michel-delving",
+    "buckland",
+    "bree"
+  ],
+  "textual_status": "author_published",
+  "summary": "Xobbitlar (Halflings / Kuduk) — Oʻrta-yerning shimoli-gʻarbidagi Shayr va Bree hududlarida yashovchi, boʻylari past (inson boʻyining yarmidek), oyoqlari qalin jundan qoplangan, tinchliksevar, mehmondoʻst va tuproqqa mehr qoʻygan xalqdir. Ular tarixiy sahnalarga kech chiqqan boʻlsalar-da, Yagona Uzukni yoʻq qilishda va Oʻrta-yerni Sauron zulmatidan qutqarishda hal qiluvchi rol oʻynaganlar.",
+  "sources": [
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "Prologue: 1. Concerning Hobbits",
+      "page": "1"
+    },
+    {
+      "book_slug": "the-hobbit",
+      "chapter": "Chapter I: An Unexpected Party",
+      "page": "11"
+    },
+    {
+      "book_slug": "the-adventures-of-tom-bombadil",
+      "chapter": "Preface: Hobbit Folklore and the Red Book of Westmarch",
+      "page": "7"
+    }
+  ],
+  "description_sections": [
+    {
+      "title": "Uchta qadimgi urugʻ: Tuklar, Badbasharalar va Qorachalar",
+      "content": "Xobbitlar qadimgi davrlarda Anduin daryosining yuqori havzalarida, Tumanli Togʻlar etaklarida yashaganlar. Ular uchta mustaqil urugʻdan iborat boʻlgan: 1. Harfoots (Qorachalar) — eng koʻp sonli, terisi qorachadan kelgan, boʻylari eng past, qoʻl mehnatiga usta, yer qazib qulay xobbit inlarida yashashni sevuvchi xalq; 2. Fallohides (Oqbilaklar / Tuklar) — boʻylari balandroq, terisi oq va sochi malla, elflar bilan doʻstona aloqada boʻlgan, daraxtzorlar va sarguzashtlarga moyil urugʻ (Baggins va Took xonadonlari shu qondan); 3. Stoors (Badbasharalar) — qoʻllari va oyoqlari keng, suv va qayiqlarni yaxshi koʻradigan, daryo boʻylarida yashovchi urugʻ (Sméagol / Gollum aynan Stoor urugʻidan chiqqan)."
+    },
+    {
+      "title": "Gʻarb sari koʻchish va Shayrning tashkil topishi",
+      "content": "Uchinchi Davrning birinchi ming yilligi oxirida Greenwood oʻrmonida Qora Qalʼa (Dol Guldur) zulmati paydo boʻlgach, xobbitlar Tumanli Togʻlardan oshib Eriador sari koʻchdilar. 1601-yilda aka-uka Fallohide xobbitlari Marcho va Blanco Arthedain shohi Argeleb II dan ruxsat olib, Brandywine daryosidan oʻtdilar va Shayr (The Shire) oʻlkasiga asos soldilar. Ushbu sana Shayr Taqvimi (Shire Reckoning — S.R. 1)ning boshlanishi boʻldi. Xobbitlar shohga faqat yoʻllarni ochiq tutish va pochta xizmatini yuritish sharti bilan oʻzlarining toʻliq ichki erkinligiga ega boʻldilar."
+    },
+    {
+      "title": "Hayot tarzi, trubka chekish va qahvaxonalar madaniyati",
+      "content": "Xobbitlar qishloq xoʻjaligi, polizchilik, pivo tayyorlash va kulinariya bilan shugʻullanadigan begʻam xalqdir. Ular kuniga olti mahal yaxshi ovqatlanishni, bayramlar oʻtkazishni va sovgʻa ulashishni (Mathom) sevadilar. Oʻrta-yerda eng mashhur madaniy ixtirolardan biri — trubka oʻtini (pipe-weed / Nicotiana) kashf etish va chekish sanʼati aynan Longbottomlik Tobold Hornblower tomonidan yoʻlga qoʻyilgan. Xobbitlar urush va siyosatdan uzoq yuradilar; ularning birdan-bir rasmiy mansabi Michel Delving Meri va Thain (harbiy boshliq) boʻlib, ular faqat marosimlarni boshqaradi."
+    },
+    {
+      "title": "Yashirin jasorat va Uzuk Urushidagi buyuk gʻalaba",
+      "content": "Tolkien taʼkidlaganidek, xobbitlarning eng ajoyib fazilati — ularning oddiy koʻrinishi ortida yashiringan buyuk ruhiy va jismoniy chidamlilikdir. Ular ochlik, sovuq va qiyinchiliklarga boshqa har qanday irqdan koʻra yaxshiroq dosh beradilar. Bilbo Bagginsning Erebor safaridagi aqli va Yagona Uzukni topishi, Frodo Bagginsning Mordor oloviga Uzukni eltishi, Samwise Gamgeening cheksiz sadoqati hamda Merry va Pippinning Entlar bilan Isengardni olishi va Jodugar-qirolni magʻlub etishi Oʻrta-yer taqdirini butunlay oʻzgartirdi. Shayr jangi (Bywater) bilan xobbitlar oʻz yurtlarini ham ozod qilib, buyuk dostonlarning markaziga aylandilar."
+    },
+    {
+      "title": "Mathomlar, bayramlar va qarindoshlik rishtalari",
+      "content": "Xobbitlar jamiyatining oʻziga xos jihatlaridan biri ularning \"mathom\" deb ataluvchi buyumlarga boʻlgan munosabatidir. Mathom – foydalanilmaydigan, lekin tashlab yuborishga koʻz qiymaydigan qadrli buyum boʻlib, xobbitlar uni bir-birlariga tugʻilgan kunlarida sovgʻa qilishni yaxshi koʻrganlar. Tugʻilgan kun sohibi boshqalardan sovgʻa olish emas, balki barcha mehmonlarga sovgʻa ulashish odatiga ega boʻlgan. Qarindosh-urugʻchilik rishtalari nihoyatda kuchli boʻlib, katta oilaviy yigʻinlar, toʻylar va ovqatlanish marosimlari Shire hayotining mazmunini tashkil etgan."
+    }
+  ]
+}

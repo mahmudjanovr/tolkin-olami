@@ -1,0 +1,129 @@
+---
+import type { SourceRef } from '@/content/schemas';
+import { resolveBookCitation } from '@/utils/entity-resolver';
+
+interface Props {
+  sources: SourceRef[];
+  title?: string;
+}
+
+const { sources = [], title = 'Birlamchi Manbalar (Oksford Iqtibosi)' } = Astro.props;
+
+function formatCitation(source: SourceRef): {
+  authorYear: string;
+  bookTitle: string;
+  chapter: string;
+  page?: string;
+  notes?: string;
+  href?: string;
+} {
+  const meta = resolveBookCitation(source.book_slug);
+
+  const authorYear = meta.year
+    ? `${meta.author} (${meta.year})`
+    : `${meta.author}`;
+
+  return {
+    authorYear,
+    bookTitle: meta.title,
+    chapter: source.chapter,
+    page: source.page ? `${source.page}-bet` : undefined,
+    notes: source.notes ? source.notes : undefined,
+    href: meta.href,
+  };
+}
+---
+
+{
+  sources.length > 0 && (
+    <div class="citations-container">
+      {title && <h3 class="citations-heading">{title}</h3>}
+      <ul class="citations-list">
+        {sources.map((source) => {
+          const c = formatCitation(source);
+          return (
+            <li class="citation-entry">
+              <cite class="citation-cite">
+                <span class="citation-author">{c.authorYear}.</span>{' '}
+                {c.href ? (
+                  <a href={c.href} class="citation-book-link">
+                    <em class="citation-title">{c.bookTitle}</em>
+                  </a>
+                ) : (
+                  <em class="citation-title">{c.bookTitle}</em>
+                )}
+                ,{' '}
+                <span class="citation-chapter">"{c.chapter}"</span>
+                {c.page && <span class="citation-page">, {c.page}</span>}
+                {c.notes && <span class="citation-notes"> ({c.notes})</span>}.
+              </cite>
+            </li>
+          );
+        })}
+      </ul>
+    </div>
+  )
+}
+
+<style>
+  .citations-container {
+    font-family: var(--font-sans-ui);
+    font-size: 0.8125rem; /* 13px */
+  }
+
+  .citations-heading {
+    font-size: 0.75rem; /* 12px */
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-muted);
+    margin-bottom: 0.5rem;
+  }
+
+  .citations-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+  }
+
+  .citation-entry {
+    padding-left: 0.75rem;
+    border-left: 2px solid var(--color-border-subtle);
+  }
+
+  .citation-cite {
+    font-style: normal;
+    line-height: 1.5;
+    color: var(--color-text-secondary);
+    display: block;
+  }
+
+  .citation-author {
+    color: var(--color-text-primary);
+  }
+
+  .citation-title {
+    font-family: var(--font-serif-body);
+    font-style: italic;
+  }
+
+  .citation-book-link {
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-color: var(--color-border-subtle);
+    text-underline-offset: 2px;
+    transition: color 0.15s ease, text-decoration-color 0.15s ease;
+  }
+
+  .citation-book-link:hover {
+    color: var(--color-accent-gold);
+    text-decoration-color: var(--color-accent-gold);
+  }
+
+  .citation-notes {
+    color: var(--color-text-muted);
+  }
+</style>

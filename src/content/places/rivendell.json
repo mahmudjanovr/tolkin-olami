@@ -1,0 +1,67 @@
+{
+  "id": "rivendell",
+  "name": "Rivendell (Yoriqvodiy)",
+  "elvish_name": "Imladris",
+  "type": "qalʼa",
+  "region": "orta-yer",
+  "coordinates": {
+    "map_id": "orta-yer",
+    "x": 920,
+    "y": 1420
+  },
+  "founded_era": "Ikkinchi davr 1697",
+  "rulers": [
+    "Elrond"
+  ],
+  "notable_events": [
+    "Elrond Kengashi",
+    "Oq Kengash"
+  ],
+  "textual_status": "author_published",
+  "summary": "Rivendell — Tumanli togʻlar etagidagi Bruinen daryosi vodiysida Elrond Yarimelf tomonidan barpo etilgan Soʻnggi Boshpanagoh. Qadimiy bilimlar, sheʼriyat va donishmandlik maskani.",
+  "sources": [
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of the Rings of Power and the Third Age",
+      "page": "298",
+      "notes": "Eregion qulaganidan soʻng Imladris boshpanasining tashkil etilishi."
+    },
+    {
+      "book_slug": "the-hobbit",
+      "chapter": "A Short Rest",
+      "notes": "Bilbo Baggins va Torin guruhining Elrond huzuridagi Soʻnggi Boshpanagohga tashrifi hamda oy harflarining oʻqilishi."
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "Many Meetings",
+      "notes": "Frodo Bagginsning Bruinen kechuvidan soʻng Rivendellda shifo topishi va Elrond xonadoni tavsifi."
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "The Council of Elrond",
+      "notes": "Yagona Uzuk taqdirini hal etish uchun Elrond Kengashining chaqirilishi va Uzuk Qardoshligining tuzilishi."
+    }
+  ],
+  "description_sections": [
+    {
+      "title": "Tumanli Togʻlar etagidagi yashirin vodiy",
+      "content": "Rivendell (Sindarincha: Imladris — 'Yoriqdagi Chuqur Vodiy') — Tumanli Togʻlarning gʻarbiy etagida, Bruinen (Shovqinli) daryosining chuqur va daraxtzor kanyonida joylashgan afsonaviy elf maskanidir. Vodiy shunchalik ustalik bilan yashirilganki, yoʻlovchi uning chekkasiga yetib kelmaguncha pastdagi goʻzallikni payqay olmaydi.\n\nVodiyga kirish faqat Bruinen kechuvi orqali mumkin boʻlib, xavf tugʻilganda Elrond Vilya uzugi yordamida daryo suvlarini otliqlar kabi shiddatli toshqinga aylantirib dushmanni yuvib ketishi mumkin edi."
+    },
+    {
+      "title": "Soʻnggi Qulay Boshpana (The Last Homely House)",
+      "content": "Vodiy markazida Elrondning saroyi — Soʻnggi Qulay Boshpana (The Last Homely House East of the Sea) joylashgan. Bu yerda elflar, insonlar, mittilar va xobbitlar birdek iliq kutib olinadi. Saroyda qoʻshiqlar, sheʼriyat, tarixiy solnomalar va boqiy sukunat hukm suradi; bu yerda vaqt tashqi dunyodagidek shoshilmaydi."
+    },
+    {
+      "title": "Elrond Kengashi va Uzuk Birodarligi",
+      "content": "Rivendell Oʻrta-yer tarixidagi eng muhim qarorlar qabul qilingan markazdir. 2941-yilda Thorin va Bilbo bu yerda oy harflarini oʻqiganlar; 3018-yil 25-oktyabrida esa mashhur Elrond Kengashi chaqirilib, Yagona Uzukni yoʻq qilish uchun toʻqqiz aʼzodan iborat Uzuk Birodarligi tuzildi."
+    },
+    {
+      "title": "Yarim-elflar boshpanasi, Uch Uzuk sehri va Vilya qudrati",
+      "content": "Rivendell (Imladris) Bruinen daryosi vodiysida Elrond tomonidan asos solingan bo'lib, uning xavfsizligi Elflarning Uch Uzugidan biri bo'lgan Vilya (Havo Uzugi) siri bilan qo'riqlanardi. Bu maskanda vaqt boshqacha oqardi: so'lish va qariylik to'xtab, Birinchi Davr xotirasi, qadimgi kitoblar va qo'shiqlar jonli saqlanardi. Aragorn bolaligida aynan shu yerda 'Estel' (Umid) nomi bilan tarbiyalangan. Rivendell Kengashi (Council of Elrond) o'tkazilgan O'ymakor Zal (Hall of Fire) butun O'rta-yer taqdiri hal qilingan eng muqaddas maskanlardan biri bo'lib qoldi."
+    },
+    {
+      "title": "Bilbo kitobxonasi, Narsil bo'laklari va O'rta-yer ilmi markazi",
+      "content": "Rivendell shunchaki tinch boshpana emas, balki butun O'rta-yer tarixining eng buyuk bilim markazi edi. Qadimiy Noldor va Númenor qo'lyozmalari, shajaralar va xaritalar aynan shu yerda saqlangan. Elendilning singan Narsil qilichi bo'laklari ming yil davomida Elrond xonadonida asrab kelingan va nihoyat Aragorn uchun 'Andúril' nomi bilan qayta quyilgan. Bilbo Baggins Shireni tark etgach, umrining so'nggi yillarini shu yerda o'tkazib, elflar qo'shiqlarini ingliz tiliga tarjima qilgan va 'Qizil Kitob'ning eng muhim qismlarini yozib tugatgan."
+    }
+  ]
+}

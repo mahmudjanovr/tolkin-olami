@@ -1,0 +1,80 @@
+{
+  "id": "aule",
+  "name": "Aulë",
+  "original_name": "Aulë",
+  "spouse": "Yavanna Kementári",
+  "children": [],
+  "aliases": [
+    "Mahal (Khuzdul tilida: Yaratuvchi)",
+    "Noldor Doʻsti",
+    "Aulë Temirchi (The Smith)",
+    "Aghaûl"
+  ],
+  "titles": [
+    "Arda Moddalari va Hunarmandchiligi Hukmdori",
+    "Aratar Aʼzosi",
+    "Togʻlar va Maʼdanlar Sohibi"
+  ],
+  "race": "ainur",
+  "sub_race": "Vala (Aratar)",
+  "culture": "Valinor / Ainur",
+  "birth_year": "Zamon yaralishidan avval",
+  "death_year": "Boqiy (Arda yakunigacha)",
+  "weapons_and_artifacts": [
+    "Angainor (Melkorni bogʻlagan zanjir)",
+    "Illuin va Ormal (Ikki ulkan chiroq)",
+    "Quyosh va Oy kemalari",
+    "Buyuk bolgʻa"
+  ],
+  "primary_locations": [
+    "tirion"
+  ],
+  "textual_status": "posthumous_edited",
+  "summary": "Yer qobigʻi, togʻlar, maʼdanlar, olmoslar va barcha hunarmandchilik sanʼati hukmdori boʻlgan buyuk Vala, Yavannaning umr yoʻldoshi. Mitti-odamlarning (Khazâd) yaratuvchisi, Khuzdul tilining asoschisi hamda Noldor elflarining (xususan Mahtan va Fëanorning) bosh ustozi.",
+  "etymology": "Quenya tilida 'Aulë' — 'Ixtiro, kashfiyot, sanʼat bilan yaratish' maʼnosini anglatadi. Mitti-odamlar uni oʻzlarining sirli Khuzdul tillarida 'Mahal' ('Yaratuvchi, Usta') deb ataydilar.",
+  "biography_sections": [
+    {
+      "title": "Dunyoning bunyodkori va Melkor bilan oʻxshashlik",
+      "content": "Aulë qobiliyat va yangi narsalar yaratish ishtiyoqida Melkorga eng yaqin Vala edi. Biroq Melkor hasad va hukmronlik istagi bilan boshqalar ishini buzsa, Aulë yaratish jarayonining oʻzidan quvonar, hech bir narsaga egalik daʼvo qilmas va har bir ijodini Eru Ilúvatarga taqdim etar edi.\n\nOlamning ilk davrlarida Aulë qitʼalarni shakllantirdi, togʻ tizmalarini koʻtardi va dengiz havzalarini oʻydi. U Valar uchun Illuin va Ormal chiroqlarini hamda Melkorni uch asr tutib turgan buzilmas Angainor zanjirini soxtaladi."
+    },
+    {
+      "title": "Mitti-odamlarning yaratilishi va Khuzdul tili",
+      "content": "Oʻrta-yer zulmatda qolgan davrda Aulë oʻz hunarini oʻrgatish uchun shogirdlarga mushtoq boʻlib, Ilúvatar Farzandlari kelishini kuta olmadi. U togʻ ostidagi gʻorda tuproq va toshdan Mitti-odamlarning Yetti Ota-bobosini (ulardan birinchisi Durin I edi) yashirincha yasadi va ularga Khuzdul tilini oʻrgatdi.\n\nEru Ilúvatar uning ishini soʻroqqa tutganida, Aulë tavba va kamtarlik bilan bolgʻasini koʻtarib, oʻz ijodini yoʻq qilishga shaylandi. Ammo Ilúvatar uning koʻz yoshlariga rahm qilib, Mittilarga mustaqil ruh (fëa) ato etdi; faqat ular Toʻngʻich Farzandlar (Elflar) uygʻonmaguncha tosh ostida uxlashlari belgilandi."
+    },
+    {
+      "title": "Shogirdlari: Noldor va xiyonatkor Maiar",
+      "content": "Elflar Valinorga kelganida, Noldor qabilasi Aulëdan maʼdanshunoslik, tosh yoʻnish va javohirlar silliqlash sirlarini oʻrgandilar. Fëanorning qaynotasi Mahtan uning eng suyukli shogirdi boʻldi. Noldor surgunidan keyin Valinorda qolgan elflar oʻzlarini 'Aulendur' ('Aulë xizmatkorlari') deb atadilar.\n\nBaxtsizlikka koʻra, Aulëning eng mahoratli Maiar shogirdlaridan ikkitasi — Mairon (Sauron) va Curumo (Saruman) — tartib va texnik mukammallikka boʻlgan haddan ortiq intilishlari oqibatida takabburlikka berilib, zulmat tomoniga oʻtib ketdilar."
+    },
+    {
+      "title": "Temirchi Vala, Yer qa'ri va Mittilarning yaratilishi",
+      "content": "Aulë moddiy dunyo, toshlar, ma'danlar va metallar ustasi bo'lib, uning bilimi Noldor elflariga zargarlik, tosh yo'nish va yozuv yaratish sirlarini ochib bergan. Fëanor aynan Aulë maktabida o'zining tengsiz hunarmandchilik mahoratini egallagan. Elflarning uyg'onishini kutishga sabri chidamagan Aulë yer qa'rida yashirincha o'z ijodi – Yetti Mitti Ota-bobolarini (Fathers of the Dwarves) yaratdi. Eru Ilúvatar uning bu harakatini fosh etganida, Aulë pushaymon bo'lib o'z bolg'asi bilan ularni yo'q qilmoqchi bo'ldi, biroq Ilúvatar uning kamtarligi va beg'ubor niyatini ko'rib, mittilarga haqiqiy jon bag'ishladi va ularni Ardaning asrandi farzandlari sifatida qabul qildi."
+    },
+    {
+      "title": "Sauron va Sarumanning xiyonati hamda Aulë sabog'i",
+      "content": "Fojiali jihati shundaki, O'rta-yer tarixidagi eng buyuk ikki dushman – Sauron (Mairon) va Saruman (Curumo) ikkalasi ham dastlab Aulë xizmatidagi Mayar bo'lgan edilar. Ularning buyumlarni o'zgartirish, boshqarish va tartibga solishga bo'lgan haddan tashqari qiziqishi oxir-oqibat kibrga va tushkunlikka aylandi. Biroq Aulë hech qachon o'z ijodiga egalik qilishga intilmadi; u narsalarni faqat yaratish go'zalligi uchun yaratdi va ularni boshqalarga hadya qildi. Bu sifat uni Melkor va Sauron kabi zolimlardan tubdan ajratib turuvchi eng buyuk ilohiy fazilat edi. Aulëning kamtarligi va yaratuvchanlikka boʻlgan cheksiz muhabbati barcha ijodkorlar uchun ibrat maktabidir. U mittilarga jon bagʻishlash orqali Oʻrta-yerga yangi mustahkam xalqni taqdim etdi; uning metallurgiya va tosh yoʻnish saboqlari esa dunyoni minglab yillar davomida goʻzallik bilan boyitdi. Aulëning tosh va metallga bergan sayqali butun Ardaning moddiy goʻzalligini tashkil etdi. U yaratgan yetti mitti ajdodi esa togʻlar qaʼrini tirik quvonch va mehnat bilan toʻldirdi. Aulëning mehribonligi va mehnati butun Arda zaminini qutlugʻ qildi."
+    }
+  ],
+  "sources": [
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Valaquenta",
+      "page": "27"
+    },
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of Aulë and Yavanna",
+      "page": "43"
+    }
+  ],
+  "related_characters": [
+    "yavanna",
+    "manwe",
+    "melkor",
+    "durin-i",
+    "feanor",
+    "nerdanel",
+    "sauron",
+    "saruman"
+  ],
+  "adaptations": []
+}

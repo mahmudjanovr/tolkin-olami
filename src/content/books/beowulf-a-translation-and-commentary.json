@@ -1,0 +1,58 @@
+{
+  "id": "beowulf-a-translation-and-commentary",
+  "title_uz": "Beowulf: Tarjima va Izohlar",
+  "title_original": "Beowulf: A Translation and Commentary",
+  "aliases": [
+    "Beowulf Translation",
+    "Tolkien Beowulf",
+    "Beowulf: Tarjima va Sharhlar"
+  ],
+  "publication_year": 2014,
+  "publisher": "HarperCollins",
+  "editor": "Christopher Tolkien",
+  "category": "letters_academic",
+  "isbn": "978-0-00-759006-3",
+  "synopsis": "J.R.R. Tolkien 1926-yilda yozib tugatgan, ammo hayotligida nashr etishga jurʼat etmagan qadimgi ingliz (anglo-sakson) epik dostoni «Beowulf»ning nasriy tarjimasi va Oksforddagi keng qamrovli akademik maʼruzalari toʻplami. Kitobga shuningdek Tolkienning doston syujetidan ilhomlanib yozgan «Sellic Spell» ertagi hamda «The Lay of Beowulf» sheʼrlari ilova qilingan.",
+  "cover_image": {
+    "src": "/images/books/beowulf-a-translation-and-commentary.webp",
+    "alt": "Beowulf: Tarjima va Izohlar kitobi muqovasi",
+    "edition_title": "HarperCollins 2014 First Edition (Archival Design)",
+    "publisher": "HarperCollins",
+    "year": 2014,
+    "isbn": "978-0-00-759006-3",
+    "artist": "Christopher Tolkien tahriri / HarperCollins",
+    "source": "Bibliografik arxiv dizayni (unverified authentic cover)"
+  },
+  "key_themes": [
+    "Qadimgi ingliz alliteratsion eposini nasriy ingliz tiliga aniq tarjima qilish sanʼati",
+    "Grendel, uning onasi va olovli ajdaho obrazlarining filologik tahlili",
+    "Shimoliy jasorat (Northern courage) va nasroniylik bilan butparastlik sintezi",
+    "«Sellic Spell»: Xalq ertaklari arxetiplarining rekonstruksiyasi"
+  ],
+  "detailed_sections": [
+    {
+      "title": "Tarixiy zamin: 1926-yilgi qoʻlyozmaning kashf etilishi",
+      "content": "Tolkien Oksfordda anglo-sakson tili Rawlinson and Bosworth professori etib tayinlanganidan soʻng, 1926-yilda «Beowulf»ni qadimgi ingliz tilidan zamonaviy nasriy ingliz tiliga toʻliq tarjima qilgan edi. U ushbu tarjimani talabalarga dars berishda maʼruzalar asosi sifatida qoʻllagan, ammo oʻzining haddan tashqari talabchanligi sababli uni hayotligida chop ettirmagan. Faqat 2014-yilda, Christopher Tolkien otasining qoʻlyozmalarini toʻplab, batafsil izohlar bilan nashrga tayyorladi."
+    },
+    {
+      "title": "Filologik metod va tarjima xususiyatlari",
+      "content": "Tolkien dostonni soxta arxaizmlar bilan toʻldirmasdan, qadimgi german alliteratsion ritmini, metrikasini va har bir soʻzning chuqur semantikasini saqlab qolishga uringan. Uning doston boʻyicha yozgan izohlari shunchaki tilshunoslik emas, balki qadimgi Skandinaviya va Angliya xalqlarining urf-odatlari, qurol-yarogʻlari, shohlik qasamlari va eʼtiqodlari haqidagi qomusiy tadqiqotdir."
+    },
+    {
+      "title": "«Sellic Spell» va «The Lay of Beowulf»",
+      "content": "Kitobning ikkinchi qismida Tolkienning oʻziga xos ijodiy tajribasi – «Sellic Spell» (Gʻaroyib Ertak) oʻrin olgan. Unda Tolkien «Beowulf» dostonining ortida turgan qadimgi xalqona ertak shaklini (Ayiq oʻgʻli haqidagi ertak arxetipini) tiklashga uringan. Bu ertak Tolkienning filologiya va badiiy ijodni qanday qilib yagona moʻjizaga birlashtira olganini koʻrsatuvchi ajoyib durdonadir."
+    },
+    {
+      "title": "Oʻzbek filologiyasi uchun ahamiyati",
+      "content": "«Beowulf» dostoni jahon adabiyotining eng ulugʻ poydevorlaridan biri sanaladi. Tolkien tarjimasi va sharhlari oʻzbek olimlari va tarjimonlariga qadimgi turkiy eposlarni (masalan, «Alpomish», «Goʻroʻgʻli») zamonaviy tillarga tarjima qilishda va ilmiy sharhlashda yuksak metodologik andoza boʻlib xizmat qiladi."
+    }
+  ],
+  "uzbek_editions": [
+    {
+      "title": "Beowulf: Tarjima va Izohlar",
+      "status": "untranslated",
+      "notes": "Oʻzbek tiliga tarjima qilinmagan. Filologik va qadimgi eposlar boʻyicha mutaxassislar tarjimasi talab etiladi."
+    }
+  ],
+  "translation_status_summary": "Oʻzbek tilida nashr qilinmagan. Ilmiy va universitet darajasidagi akademik tarjima talab etiladi."
+}

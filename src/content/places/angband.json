@@ -1,0 +1,52 @@
+{
+  "id": "angband",
+  "name": "Angband",
+  "elvish_name": "Angamando (Temir Zindon)",
+  "type": "qalʼa",
+  "region": "beleriand",
+  "coordinates": {
+    "map_id": "beleriand",
+    "x": 1020,
+    "y": 1420
+  },
+  "founded_era": "Daraxtlar davri",
+  "destroyed_era": "Birinchi davr 587",
+  "rulers": [
+    "Morgoth",
+    "Sauron (noib)"
+  ],
+  "notable_events": [
+    "Angband Qamali",
+    "Dagor Bragollach",
+    "Silmarilning oʻgʻirlanishi",
+    "Gʻazab Urushi"
+  ],
+  "textual_status": "author_published",
+  "summary": "Angband — Thangorodrimning uch choʻqqili vulqon togʻlari ostida joylashgan Morgothning yovuzlik va temir qurollar saltanati. Chuqur yerosti zindonlari, temirchilik korxonalari va Balroglar makoni boʻlib, Birinchi davr oxiridagi Gʻazab urushida butunlay vayron etilgan.",
+  "sources": [
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of the Return of the Noldor",
+      "page": "108",
+      "notes": "Angband qudrati va Thangorodrim qalʼasi tavsifi."
+    }
+  ],
+  "description_sections": [
+    {
+      "title": "Temir Zindon: Morgothning qora saltanati",
+      "content": "Angband (Sindarincha: 'Temir Qamoqxona') — Shimoliy Beleriandda, Temir Togʻlari (Ered Engrin) qaʼrida Morgoth tomonidan barpo etilgan bahaybat yerosti qalʼa-zindoni. U Utumno qulaganidan soʻng Yovuzlikning bosh qarorgohiga aylandi.\n\nQalʼa yuzlab yerosti qavatlari, zaharli gazlar bilan toʻlgan konlar, qurolsozlik oʻchoqlari va mahbuslar zindonlaridan iborat boʻlgan. Unda millionlab oʻrklar, troller, boʻrilar va Balroglar armiyasi saqlangan."
+    },
+    {
+      "title": "Gʻazab Urushi va mutlaq yoʻq boʻlish",
+      "content": "Birinchi Davr davomida Noldor elflari Angbandni deyarli toʻrt yuz yil qamal qildilar (Siege of Angband), ammo uni zabt eta olmadilar. Faqat Gʻazab Urushida Valar va Vanyar armiyasi Angbandga bostirib kirib, uning yerosti zindonlarini yondirib, Morgothni zanjirband qildi va butun qalʼani okean qaʼriga gʻarq qildi."
+    },
+    {
+      "title": "Thangorodrim cho'qqilari va yerosti do'zaxi labirintlari",
+      "content": "Angband ('Temir Qamoqxona') Morgothning Beleriand shimolidagi eng dahshatli yerosti qal'asi bo'lib, uning ustida ulkan kul va toshlardan hosil bo'lgan uch cho'qqili Thangorodrim tog'i qad rostlagan. Angband qa'rida minglab temirchilik o'choqlari, zaharli laboratoriyalar va asirlar zindoni joylashgan edi. Bu yerda Glaurung va Ancalagon kabi ajdaholar zoti yaratilgan, o'rklar va Balroglar to'dalari saqlangan. Qal'a G'azab Urushida Valar qo'shini tomonidan yer bilan yakson qilinib, dengiz tubiga cho'ktirilgan."
+    },
+    {
+      "title": "Birinchi Davr urushlarining bosh o'chog'i va qora saltanat",
+      "content": "Angband poydevori hatto Utumno vayron bo'lishidan oldinroq qo'yilgan bo'lib, Morgoth Valinordan qochib kelgach, bu yerni o'zining markaziy qarorgohiga aylantirdi. Qal'a zindonlarida Húrin yigirma sakkiz yil azob chekdi; Maedhros esa Thangorodrim qoyasiga o'ng qo'lidan zanjirband qilindi. Angband nafaqat harbiy istehkom, balki butun Beleriandni qamrab olgan barcha qonli janglar – Dagor-nuin-Giliath, Dagor Aglareb, Dagor Bragollach va Nirnaeth Arnoediadning bosh rejasi tuzilgan qora markaz edi. Angband zindonlarining dahshati shundaki, u yerga tushgan har bir asir ruhiy va jismoniy qiynoqlar orqali oʻzgartirilgan. Morgothning bu qora makoni minglab yillar davomida butun Oʻrta-yerga dahshat va zulm tarqatgan eng yovuz oʻchoq boʻlib, uning yoʻq qilinishi dunyoni yangi erkinlik davriga olib chiqdi. Ushbu qora qalʼa tuprogʻi ostida yotgan millionlab qurol-yarogʻlar va asirlar qoldiqlari urushning cheksiz fojiasini namoyon qiladi. Morgothning bu yerdagi mutlaq hukmronligi faqatgina butun Beleriandning dengiz tubiga gʻarq boʻlishi evazigagina toʻxtatildi. Thangorodrim choʻqqilari ostidagi bu dahshatli xarobalar Oʻrta-yer erkin xalqlarining koʻp asrlik fidoyiligi va matonati evaziga butunlay yoʻq qilindi."
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "id": "eowyn",
+  "name": "Éowyn",
+  "original_name": "Éowyn",
+  "father_name": "Éomund",
+  "mother_name": "Théodwyn",
+  "spouse": "Faramir",
+  "children": [
+    "Elboron (oʻgʻil)"
+  ],
+  "aliases": [
+    "Rohan Qalqon-qizi (Shieldmaiden of Rohan)",
+    "Dernhelm (Yashirin dubulgʻa)",
+    "Ithilien Oq Xonimi",
+    "Nazgûl Qotili"
+  ],
+  "titles": [
+    "Rohan Malika-qizi",
+    "Ithilien Xonimi (Lady of Ithilien)",
+    "Emyn Arnen Malika-rafiqasi"
+  ],
+  "race": "insonlar",
+  "sub_race": "Rohirrim",
+  "culture": "Rohan / Ithilien",
+  "birth_year": "Uchinchi davr 2995",
+  "death_year": "Toʻrtinchi davr (Faramir bilan birga uzoq va tinch umr kechirgan)",
+  "house_id": "rohan-shohlari",
+  "weapons_and_artifacts": [
+    "Oʻtkir poʻlat Rohan qilichi",
+    "Dernhelm temir dubulgʻasi va sovuti",
+    "Rohan shohona otliq qalqoni"
+  ],
+  "primary_locations": ["edoras", "helms-deep", "minas-tirith"],
+  "textual_status": "author_published",
+  "uncertainty_notes": "Tolkien 'The Lord of the Rings' dostonida Glorfindel tomonidan ming yil muqaddam aytilgan mashhur bashoratni ('Angmar Jodugar-shohini hech bir tirik er kishi qulitolmas') nozik filologik mahorat bilan ochib bergan. Jodugar-shoh oʻzini har qanday oʻlimdan holi deb hisoblab: 'Hech bir tirik erkak menga zarar yetkazolmas!' deb kekkayganida, Éowyn dubulgʻasini boshidan yechib tashlab, uzun oltin sochlarini yoyadi va: 'Men er kishi emasman! Sen ayol kishiga boqib turibsan!' deb xitob qiladi. Merry Brandybuckning gʻayritabiiy Dúnedain xanjari zarbasi bilan birlashgan holda, Éowyn yovuz qora hukmdorni yer tishlatadi.",
+  "summary": "Éomund va Théodwynning qizi, Qirol Théodenning jiyani va Éomerning singlisi. Rohan malikasi va dovyurak qalqon-qizi. Saroydagi maʼyuslik va ojizlikdan qutulish, janggohlarda sharafli nom qoldirish istagida yashirincha 'Dernhelm' niqobi ostida Pelennor maydoniga otlangan. Afsonaviy bashoratni amalga oshirib, Nazgûllar Oliy Yoʻlboshchisi — Angmar Jodugar-shohini yakkama-yakka jangda oʻldirgan buyuk qahramon ayol. Shifo Uylarida Faramir bilan uchrashib muhabbat topgan va Ithilien Xonimiga aylangan.",
+  "etymology": "Qadimgi ingliz tilida 'Éowyn' — eoh ('jangovar ot') va wynn ('quvonch, shodlik, lazzat') soʻzlaridan olingan boʻlib, 'Otlar quvonchi' yoki 'Otlardan zavqlanuvchi' maʼnosini anglatadi.",
+  "biography_sections": [
+    {
+      "title": "Edorasdagi 'oltin qafas' va Aragorn bilan uchrashuv",
+      "content": "Éowyn Uchinchi davrning 2995-yilida tavallud topgan. Ota-onasi erta vafot etgach, u akasi Éomer bilan togʻasi Qirol Théoden saroyida voyaga yetdi. U nihoyatda goʻzal, magʻrur, sovuqqon va ayni paytda qilichbozlikda mohir ayol edi.\n\nGríma Wormtongue uni oʻziga xotin qilish ilinjida shoh huzurida kamsitib kelayotganida, Éowyn saroydagi ojizlikni 'oltin qafas' deb atagan va oʻz xalqini himoya qilish uchun jangda sharafli oʻlim topishni orzu qilgan. Gandalf va Aragorn kelganida, u Aragornning shohona buyukligi va ritsarligiga bir koʻrishdayoq oshiq boʻldi. Biroq Aragorn uning qalbida faqat doʻstlik va shafqat koʻrib, oʻzining Arwenga bergan vaʼdasiga sodiq qoldi."
+    },
+    {
+      "title": "Dernhelm niqobi va Pelennor sari yashirin safar",
+      "content": "Théoden va Rohirrim qoʻshini Gondor yordamiga otlanganida, ayol boʻlgani sababli Éowynni Edorasda xalqqa bosh boʻlib qolishga buyurdilar. Ammo qalbida oʻlim va sharaf izlagan malika yashirincha sovut kiyib, 'Dernhelm' nomi ostida yosh askar qiyofasiga kirdi.\n\nU jangga borishdan mahrum qilingan kichik xobbit Merry Brandybuckni oʻz egarining oldiga oldi va Rohirrim saflarida hech kimga bildirmasdan Minas Tirith tomon yugurib ketdi."
+    },
+    {
+      "title": "Jodugar-shoh halokati: 'Men er kishi emasman!'",
+      "content": "Pelennor Maydonlari Jangida Qirol Théoden qanotli maxluq ustidagi Angmar Jodugar-shohi zarbasidan yerga qulab, jonsiz yotganida, barcha otliqlar dahshat ichida qochib ketdilar. Faqat bitta yosh jangchi — Dernhelm shoh tanasi ustida qilich yalangʻochlab qalqon tutib turdi.\n\nJodugar-shoh unga qora tahdid solib: 'Menga hech bir tirik erkak qarshilik qilolmaydi!' deganida, Éowyn dubulgʻasini yechib tashladi: uning uzun tilla sochlari shamolda yoyildi. 'Ammo men erkak emasman!' deb hayqirib, maxluqning boʻynini bitta zarba bilan uzib tashladi. Qora ritsarning ulkan gurzisi uning qalqonini parchalab, qoʻlini sindirganida, orqadan sudralib kelgan Merry maxfiy xanjari bilan Jodugar-shohning tizzasiga zarba berdi. Jon-jahdi bilan oʻrnidan turgan Éowyn qilichini toj va plash oraligʻidagi koʻrinmas yuzga sanchdi. Jodugar-shoh faryod solib havoda erib ketdi; biroq Qora Nafasning halokatli zahri tufayli Éowyn ham hushsiz yerga quladi."
+    },
+    {
+      "title": "Shifo Uylari va yangi hayot boshlanishi",
+      "content": "Minas Tirith Shifo Uylarida oʻlim yoqasida yotgan Éowynni Aragorn Athelas giyohi bilan davoladi. Tanasi tuzalgan boʻlsa-da, qalbida yashashga boʻlgan ishtiyoq yoʻq edi. U Shifo bogʻlarida Gondor Noibi Faramir bilan uchrashdi.\n\nFaramir uning qalb jarohatlarini teran anglab, unga samimiy mehr koʻrsatdi: 'Éowyn, siz janggohda shon-shuhrat izladingiz, chunki sizni hech kim sevmagan deb oʻyladingiz. Ammo men sizni sevaman'. Bu soʻzlar Éowynning qalbida muzlagan qishni eritib, bahorni uygʻotdi. U qilichni tashlab, tabib va hayot bunyodkori boʻlishga ahd qildi. Halqa Urushidan soʻng ular turmush qurdilar va goʻzal Ithilien oʻlkasida Toʻrtinchi davrning eng baxtli oilalaridan biri sifatida umr kechirdilar."
+    }
+  ],
+  "sources": [
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "The King of the Golden Hall",
+      "page": "512"
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "The Battle of the Pelennor Fields",
+      "page": "841"
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "The Houses of Healing",
+      "page": "868"
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "The Steward and the King",
+      "page": "962"
+    }
+  ],
+  "related_characters": [
+    "faramir",
+    "theoden",
+    "eomer",
+    "meriadoc-brandybuck",
+    "witch-king",
+    "aragorn",
+    "gandalf"
+  ],
+  "adaptations": [
+    {
+      "medium": "film",
+      "title": "The Lord of the Rings Film Trilogy",
+      "creator": "Peter Jackson",
+      "year": 2002,
+      "divergence_notes": "Miranda Otto tomonidan ijro etilgan Éowyn obrazi fantastik kino tarixidagi eng buyuk ayol qahramonlardan biri sifatida e'tirof etiladi. Uning 'I am no man!' deb Jodugar-shohni qulatish sahnasi kitobdagi epik qudratni to'liq aks ettirgan. Kichik tafovut: film kengaytirilgan talqinida uning Faramir bilan Shifo Uylaridagi sevgi qissasi qisqartirib ko'rsatilgan."
+    }
+  ]
+}

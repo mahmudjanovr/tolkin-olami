@@ -1,0 +1,118 @@
+---
+import { getCollection, type CollectionEntry } from 'astro:content';
+import EditorialLayout from '@/layouts/EditorialLayout.astro';
+import GenealogyAtlas from '@/components/genealogy/GenealogyAtlas.astro';
+import CitationBlock from '@/components/editorial/CitationBlock.astro';
+import { resolveEntityLinks } from '@/utils/entity-resolver';
+
+export async function getStaticPaths() {
+  const genealogies = await getCollection('genealogies');
+  return genealogies.map((genealogy) => ({
+    params: { slug: genealogy.data.id || genealogy.id },
+    props: { genealogy },
+  }));
+}
+
+interface Props {
+  genealogy: CollectionEntry<'genealogies'>;
+}
+
+const { genealogy } = Astro.props;
+const data = genealogy.data;
+
+const breadcrumbs = [
+  { label: 'Nasabnomalar', href: '/nasabnomalar/' },
+  { label: data.title },
+];
+
+const founderLink = resolveEntityLinks([data.founder_id]);
+---
+
+<EditorialLayout
+  title={data.title}
+  category="Kanonik Sulola va Nasabnoma"
+  description={data.summary}
+  breadcrumbs={breadcrumbs}
+>
+  <div class="dynasty-page-content">
+    <p class="section-lead">
+      {data.summary}
+    </p>
+
+    <!-- Tanlangan sulola uchun faollashtirilgan interaktiv shajara -->
+    <GenealogyAtlas initialDynastyId={data.id} />
+  </div>
+
+  <div slot="margin" class="dynasty-margin">
+    <div class="margin-card metadata-card">
+      <h3 class="margin-title">Sulola Maʼlumotlari</h3>
+      <div class="meta-row">
+        <span class="meta-label">Xonadon:</span>
+        <span class="meta-val">{data.house_name}</span>
+      </div>
+      <div class="meta-row">
+        <span class="meta-label">Asoschi:</span>
+        <span class="meta-val">
+          {founderLink[0]?.href ? (
+            <a href={founderLink[0].href}>{founderLink[0].name}</a>
+          ) : (
+            founderLink[0]?.name || data.founder_id
+          )}
+        </span>
+      </div>
+      <div class="meta-row">
+        <span class="meta-label">Davr:</span>
+        <span class="meta-val">{data.era}</span>
+      </div>
+      <div class="meta-row">
+        <span class="meta-label">Aʼzolar soni:</span>
+        <span class="meta-val">{data.members.length} ta qayd etilgan shaxs</span>
+      </div>
+      {data.branches.length > 0 && (
+        <div class="meta-row">
+          <span class="meta-label">Tarmoqlar:</span>
+          <span class="meta-val">{data.branches.join(', ')}</span>
+        </div>
+      )}
+    </div>
+
+    {data.sources.length > 0 && (
+      <div class="margin-card citations-card">
+        <CitationBlock sources={data.sources} />
+      </div>
+    )}
+  </div>
+</EditorialLayout>
+
+<style>
+  .dynasty-page-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .section-lead {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+  }
+
+  .meta-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-family: var(--font-sans-ui);
+    font-size: 0.8125rem;
+    padding-block: 0.35rem;
+    border-bottom: 1px solid var(--color-border-subtle);
+  }
+
+  .meta-label {
+    color: var(--color-text-muted);
+  }
+
+  .meta-val {
+    color: var(--color-text-primary);
+    font-weight: 500;
+  }
+</style>

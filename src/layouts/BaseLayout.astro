@@ -1,0 +1,316 @@
+---
+import NavigationFoundation from '@/components/NavigationFoundation.astro';
+import SearchModal from '@/components/search/SearchModal.astro';
+import '@/styles/fonts.css';
+import '@/styles/reset.css';
+import '@/styles/tokens.css';
+import '@/styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+  lang?: string;
+  image?: string;
+  type?: 'website' | 'article';
+  canonical?: string;
+}
+
+const {
+  title,
+  description = "J.R.R. Tolkien asarlari bo'yicha ilmiy, matnshunoslikka asoslangan o'zbek tilidagi ensiklopediya",
+  lang = 'uz',
+  image,
+  type = 'website',
+  canonical,
+} = Astro.props;
+
+const siteOrigin = 'https://tolkienolami.uz';
+const pathname = Astro.url.pathname.endsWith('/') ? Astro.url.pathname : `${Astro.url.pathname}/`;
+const canonicalURL = canonical || `${siteOrigin}${pathname}`;
+
+const fullTitle =
+  title === 'Tolkien Olami' || title.endsWith('— Tolkien Olami') || title.includes('Tolkien Olami —')
+    ? title
+    : `${title} — Tolkien Olami`;
+
+const ogImage = image
+  ? (image.startsWith('http') ? image : `${siteOrigin}${image.startsWith('/') ? '' : '/'}${image}`)
+  : `${siteOrigin}/images/og-default.png`;
+---
+
+<!doctype html>
+<html lang={lang} data-theme="system">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <title>{fullTitle}</title>
+
+    <!-- Kanonik URL -->
+    <link rel="canonical" href={canonicalURL} />
+
+    <!-- Favicon Assets -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+
+    <!-- Tengwar Annatar Calligraphy Font Preload -->
+    <link
+      rel="preload"
+      href="/fonts/tengwar/tngani-webfont.woff"
+      as="font"
+      type="font/woff"
+      crossorigin
+    />
+
+    <!-- Open Graph (Facebook / Telegram / Discord) -->
+    <meta property="og:site_name" content="Tolkien Olami" />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:type" content={type} />
+    <meta property="og:locale" content="uz_UZ" />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Tolkien Olami — Oʻzbek tilidagi ilmiy Tolkien ensiklopediyasi" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={fullTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+
+    <!-- FOUC ni minimallashtiruvchi sinxron Head inline skripti -->
+    <script is:inline>
+      (function () {
+        try {
+          const stored = localStorage.getItem('tolkien-theme') || 'system';
+          const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          document.documentElement.setAttribute('data-theme', stored);
+          document.documentElement.setAttribute(
+            'data-applied-mode',
+            stored === 'night' || (stored === 'system' && systemDark) ? 'night' : 'light'
+          );
+        } catch (e) {
+          document.documentElement.setAttribute('data-theme', 'system');
+          document.documentElement.setAttribute('data-applied-mode', 'light');
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Asosiy kontentga oʻtish</a>
+
+    <NavigationFoundation currentPath={Astro.url.pathname} />
+
+    <main id="main-content">
+      <slot />
+    </main>
+
+    <SearchModal />
+
+    <footer class="site-footer">
+      <div class="footer-inner container">
+        <div class="footer-top">
+          <div class="footer-brand-col">
+            <span class="footer-brand-title">Tolkien Olami</span>
+            <p class="footer-brand-subtitle">O'rta yer raqamli ensiklopediyasi</p>
+          </div>
+
+          <div class="footer-nav-grid">
+            <div class="footer-nav-col">
+              <span class="footer-nav-heading">The Legendarium</span>
+              <ul class="footer-nav-list">
+                <li><a href="/kitoblar/">Kitoblar</a></li>
+                <li><a href="/qahramonlar/">Qahramonlar</a></li>
+                <li><a href="/">Bosh sahifa</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-nav-col">
+              <span class="footer-nav-heading">The World</span>
+              <ul class="footer-nav-list">
+                <li><a href="/xaritalar/">Xaritalar</a></li>
+                <li><a href="/nasabnomalar/">Nasabnomalar</a></li>
+                <li><a href="/olam/">Olam</a></li>
+                <li><a href="/xalqlar-va-tillar/">Xalqlar va tillar</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-nav-col">
+              <span class="footer-nav-heading">Tarix va Ilm</span>
+              <ul class="footer-nav-list">
+                <li><a href="/tarix/">Tarix</a></li>
+                <li><a href="/maqolalar/">Maqolalar</a></li>
+                <li><a href="/tolkien/">Tolkien</a></li>
+                <li><a href="/qidiruv/">Qidiruv</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="footer-copy">
+            © {new Date().getFullYear()} Tolkien Olami. Matnlar CC BY-NC-SA 4.0 litsenziyasi ostida.
+          </p>
+          <p class="footer-note">
+            Mualliflik huquqlari Tolkien Estate va HarperCollins nashriyotiga tegishli.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <style>
+      .skip-link {
+        position: absolute;
+        top: -100px;
+        left: 1rem;
+        background: var(--color-bg-base);
+        color: var(--color-text-primary);
+        padding: 0.5rem 1rem;
+        border: 2px solid var(--color-focus-ring);
+        z-index: 1000;
+        text-decoration: none;
+        font-family: var(--font-sans-ui);
+        font-size: 0.875rem;
+        transition: top 0.15s ease;
+      }
+
+      .skip-link:focus {
+        top: 1rem;
+      }
+
+      .site-footer {
+        border-top: 1px solid var(--color-border-subtle);
+        background-color: var(--color-bg-elevated);
+        padding-block: 3.5rem 2.5rem;
+        margin-block-start: 5rem;
+        font-family: var(--font-sans-ui);
+        color: var(--color-text-secondary);
+      }
+
+      .footer-inner {
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+      }
+
+      .footer-top {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+
+      @media (min-width: 900px) {
+        .footer-top {
+          grid-template-columns: 35% 65%;
+          align-items: start;
+        }
+      }
+
+      .footer-brand-col {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      .footer-brand-title {
+        font-family: var(--font-serif-heading);
+        font-size: 1.5rem;
+        font-weight: 700;
+        letter-spacing: -0.01em;
+        color: var(--color-text-primary);
+      }
+
+      .footer-brand-subtitle {
+        font-family: var(--font-serif-body);
+        font-size: 0.875rem;
+        font-style: italic;
+        color: var(--color-accent-gold-text);
+        margin: 0;
+      }
+
+      .footer-brand-desc {
+        font-size: 0.8125rem;
+        line-height: 1.6;
+        color: var(--color-text-muted);
+        margin-top: 0.25rem;
+        margin-bottom: 0;
+        max-width: 38ch;
+      }
+
+      .footer-nav-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 1.75rem;
+      }
+
+      .footer-nav-col {
+        display: flex;
+        flex-direction: column;
+        gap: 0.625rem;
+      }
+
+      .footer-nav-heading {
+        font-family: var(--font-serif-heading);
+        font-size: 0.9375rem;
+        font-weight: 600;
+        letter-spacing: 0.02em;
+        color: var(--color-text-primary);
+        padding-bottom: 0.375rem;
+        border-bottom: 1px solid var(--color-border-subtle);
+      }
+
+      .footer-nav-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 0.4rem;
+      }
+
+      .footer-nav-list a {
+        font-size: 0.8125rem;
+        color: var(--color-text-secondary);
+        text-decoration: none;
+        transition: color 0.15s ease;
+      }
+
+      .footer-nav-list a:hover {
+        color: var(--color-link-hover);
+        text-decoration: underline;
+      }
+
+      .footer-bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        padding-top: 1.75rem;
+        border-top: 1px solid var(--color-border-subtle);
+        font-size: 0.8125rem;
+        color: var(--color-text-muted);
+      }
+
+      @media (min-width: 768px) {
+        .footer-bottom {
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: baseline;
+        }
+      }
+
+      .footer-copy,
+      .footer-note {
+        margin: 0;
+      }
+
+      .footer-note {
+        font-size: 0.75rem;
+        color: var(--color-text-faint);
+      }
+    </style>
+  </body>
+</html>

@@ -1,0 +1,129 @@
+{
+  "id": "frodo-baggins",
+  "name": "Frodo Baggins",
+  "original_name": "Frodo Baggins (Kuduktuk: Maura Labingi)",
+  "father_name": "Drogo Baggins",
+  "mother_name": "Primula Brandybuck",
+  "aliases": [
+    "Toʻqqiz Barmoqli Frodo (Frodo of the Nine Fingers)",
+    "Uzuk Elchisi (The Ring-bearer)",
+    "Janob Underhill (Mr. Underhill)",
+    "Elf-doʻsti (Elf-friend)"
+  ],
+  "titles": [
+    "Yagona Uzuk Elchisi",
+    "Bag End Egasi",
+    "Shir Muvaqqat Meri (Mayor of Michel Delving)",
+    "Qizil Kitob Muallifi"
+  ],
+  "race": "xobbitlar",
+  "sub_race": "Fallohide va Harfoot nasli",
+  "culture": "Shire (Shir) / Bag End",
+  "birth_year": "Uchinchi davr 2968 (Shir hisobi 1368)",
+  "death_year": "Boqiy Gʻarbga oʻtgan (Uchinchi davr 3021 / Shir hisobi 1421)",
+  "house_id": "shayr-xonadonlari",
+  "weapons_and_artifacts": [
+    "Sting (Gondolin qadimiy pichogʻi / xanjari)",
+    "Mithril zanjir sovut (Bilbo sovgʻasi)",
+    "Galadriel billur shishasi (Eärendil nuri joylangan shisha)",
+    "Yagona Uzuk (Mordorga eltgan)"
+  ],
+  "primary_locations": [
+    "hobbiton",
+    "rivendell",
+    "buckland",
+    "bree",
+    "cirith-ungol",
+    "orodruin"
+  ],
+  "textual_status": "author_published",
+  "uncertainty_notes": "Tolkien 'The Letters of J.R.R. Tolkien' (246-maktub) asarida Frodoning Hukm Togʻi qaʼridagi harakatini chuqur maʼnaviy-falsafiy tahlil qilgan: Frodo Yagona Uzukning mutlaq qudratiga qarshi turishda barcha jismoniy va ruhiy imkoniyatlarining eng soʻnggi chegarasiga yetgan edi. Uning Uzukni oʻziniki deb eʼlon qilishi axloqiy xiyonat emas, balki har qanday foniy jonzotning mutlaq ilohiy qurol qarshisidagi muqarrar charchogʻi edi. Aynan Frodoning avvalroq Gollumga koʻrsatgan kechirimliligi va rahm-shafqati tufayli Eru Ilúvatar inoyati bilan Uzuk yoʻq qilindi.",
+  "summary": "Drogo Baggins va Primula Brandybuckning yagona oʻgʻli, Bilbo Bagginsning asrandi jiyani va Bag End vorisi. Gandalf maslahati bilan Yagona Uzukni Oʻrta-yer boʻylab xavfsiz olib oʻtgan va Elrond Kengashida uni Hukm Togʻida yoʻq qilish vazifasini oʻz boʻyniga olgan buyuk Uzuk Elchisi. Weathertop, Moria, Cirith Ungol va Mordor azoblarini yengib oʻtgan, Oʻrta-yerni Sauron zulmatidan qutqargan va oʻz jarohatlariga shifo topish uchun Boqiy Gʻarbga — Valinorga yoʻl olgan xobbit qahramoni.",
+  "etymology": "Inglizcha 'Frodo' ismi qadimiy germancha *frōd ('donishmand, tajribali') soʻzidan olingan. Xobbitlarning asl umumiy tili (Westron) boʻyicha uning haqiqiy ismi 'Maura Labingi' boʻlib, maura — 'donishmand, teran mulohazali' maʼnosini bildiradi. 'Baggins' familiyasi esa xobbit tilidagi 'Labingi' soʻzining tarjimasi boʻlib, labin ('xalta, sumka, xaltacha') oʻzagiga borib taqaladi.",
+  "biography_sections": [
+    {
+      "title": "Bag Enddagi yoshlik va sirli meros",
+      "content": "Frodo Uchinchi davrning 2968-yilida tavallud topdi. U oʻn ikki yoshidaligida ota-onasi Brendivin daryosida qayiq agʻdarilishi oqibatida choʻkib halok boʻldi. 2989-yilda boy amakisi Bilbo Baggins uni oʻz qaramogʻiga oldi va Bag Endga koʻchirib kelib, yagona merosxoʻri deb eʼlon qildi.\n\n3001-yilda Bilboning mashhur 111 yillik bayramida Bilbo gʻoyib boʻlib Rivendellga ketgach, Bag End va sirli tilla Uzuk Frodoga qoldi. 3018-yil bahorida Gandalf qaytib kelib, olovda Uzukdagi sehrli yozuvni koʻrsatdi va bu Sauronning Yagona Uzugi ekanini maʼlum qildi. Frodo oʻz vatani Shirni qutqarish uchun tinch hayotini tashlab, xavfli safarga otlanishga qaror qildi."
+    },
+    {
+      "title": "Nazgûllar taʼqibi va Elrond Kengashidagi qasamyod",
+      "content": "Frodo sodiq doʻsti Samwise Gamgee hamda qarindoshlari Merry va Pippin bilan Shirni yashirincha tark etdi. Qora Chavandozlar (Nazgûllar) ularni toʻxtovsiz taʼqib qildi. Weathertop (Amon Sûl) choʻqqisida Angmar Jodugar-shohi Frodoning yelkasiga zaharli Morgul pichogʻi bilan jarohat yetkazdi.\n\nAragorn yordamida Rivendellga yetib kelgan Frodoni Elrond oʻlim changalidan qutqarib qoldi. Mashhur Elrond Kengashida Uzukni hech bir kuch eritolmasligi, faqat Mordordagi Hukm Togʻiga tashlab yoʻq qilish mumkinligi aytilgach, zaldagi barcha bahslarni toʻxtatib, yosh xobbit baland ovozda: 'Men Uzukni olib boraman, garchi yoʻlni bilmasam-da', deb burchini eʼlon qildi. Shu tariqa toʻqqiz aʼzodan iborat Uzuk Birodarligi tuzildi."
+    },
+    {
+      "title": "Birodarlikning parchalanishi va Mordor qaʼriga yoʻl",
+      "content": "Moria konlarida Gandalf tubsizlikka qulagach, Birodarlik Lothlórienga yetib bordi. U yerda Galadriel Frodoga oʻz Koʻzgusini koʻrsatdi va unga Eärendil nuri solingan billur shishani sovgʻa qildi. Amon Henda Boromir Uzuk vasvasasiga uchrab unga qoʻl choʻzganidan soʻng, Frodo Birodarlik aʼzolari halok boʻlmasligi uchun safarni yolgʻiz davom ettirishga qaror qildi; biroq Sam unga yetib olib, unga hamroh boʻldi.\n\nEmyn Muilda ular oʻzlarini taʼqib qilib kelgan Gollumni asir oldilar. Frodo unga rahm-shafqat koʻrsatib, oʻziga yoʻlboshchi qildi. Oʻlik Botqoqliklar va Qora Darvoza orqali oʻtib, Cirith Ungol dovoniga keldilar. U yerda Gollumning xiyonati tufayli Frodo bahaybat oʻrgimchak Shelobning zaharli nishiga uchradi, ammo Samwise Shelobni yaralab, oʻrklardan xoʻjayinini qutqardi."
+    },
+    {
+      "title": "Hukm Togʻidagi sinov va fojiaviy ozodlik",
+      "content": "Mordorning qaqroq choʻllari boʻylab sudralib borgan Frodo va Sam nihoyat Orodruin qaʼridagi Sammath Naur darvozasiga yetib keldilar. Hukm olovi ustida turganida, Uzukning cheksiz vasvasasi Frodoning butun jismoniy va ruhiy irodasini sindirdi: u 'Men Uzukni yoʻq qilmayman, u meniki!' deb uni barmogʻiga taqdi. Shu zahoti unga tashlangan Gollum Frodoning barmogʻini tishlab uzib oldi, quvonchdan mast boʻlib muvozanatni yoʻqotdi va Uzuk bilan birga olovli tubsizlikka quladi.\n\nSauron yoʻq qilinib, Oʻrta-yer xalos boʻldi. Buyuk Burgutlar xobbitlarni olovli toshqin orasidan olib chiqdi. Ammo Frodo oʻz gʻalabasini toʻla quvonch bilan kutib ololmadi: uning tanasida va qalbida chekilgan azoblar oʻchmas dogʻ qoldirgan edi."
+    },
+    {
+      "title": "Shayrga qaytish, jarohatlar va Boqiy Gʻarbga ketish",
+      "content": "Shirga qaytgan Frodo 'Suvboʻyi jangi'da zoʻravonlikni kamaytirishga, qon toʻkilishining oldini olishga intildi. U muvaqqat Mer boʻlib xizmat qildi va Bilboning Qizil Kitobiga oʻzining 'Uzuklar Hukmdorining Qulashi va Qirolning Qaytishi' boblarini yozib qoʻshdi.\n\nBiroq Weathertopdagi Morgul pichogʻi jarohati har yili oktyabr oyida qayta simillab ogʻrirdi; Shelob zahri va Uzuk yukining ruhiy izi unga Oʻrta-yerda tinchlik bermadi. Frodo Samga qarab: 'Men Shirni qutqarmoqchi boʻldim, va u qutqarildi, ammo men uchun emas', deb taʼsirli haqiqatni aytdi. 3021-yilda u Uzuk Elchisi sifatida Boqiy Gʻarbga — Aman oʻlkasiga suzib ketdi va u yerda oʻz qalbiga abadiy taskin va shifo topdi."
+    },
+    {
+      "title": "Falsafiy ahamiyat: Jasorat, kamsuqumlik va kechirimlilik",
+      "content": "Tolkien oʻz maktublarida taʼkidlaganidek, Frodo klassik qadimgi qudratli jangchi qahramon emas, balki oddiy insonning yuksak axloqiy timsolidir. Uning buyuk jasorati qurol ishlatishida emas, balki oʻzidan ustun kelgan yovuzlik qarshisida oxirgi damgacha chidashida va eng asosiysi — dushmani Gollumga koʻrsatgan rahm-shafqatida edi. Aynan shu kechirimlilik tufayli butun Oʻrta-yer najot topdi."
+    }
+  ],
+  "sources": [
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "The Shadow of the Past",
+      "page": "42"
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "The Council of Elrond",
+      "page": "264"
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "Mount Doom",
+      "page": "923"
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "The Grey Havens",
+      "page": "1003"
+    },
+    {
+      "book_slug": "letters-of-jrr-tolkien",
+      "chapter": "Letter 246",
+      "page": "325"
+    }
+  ],
+  "related_characters": [
+    "samwise-gamgee",
+    "meriadoc-brandybuck",
+    "peregrin-took",
+    "bilbo-baggins",
+    "gandalf",
+    "aragorn",
+    "gollum",
+    "tom-bombadil",
+    "witch-king",
+    "shelob",
+    "faramir",
+    "elrond",
+    "galadriel",
+    "boromir",
+    "saruman",
+    "sauron"
+  ],
+  "adaptations": [
+    {
+      "medium": "film",
+      "title": "The Lord of the Rings Film Trilogy",
+      "creator": "Peter Jackson",
+      "year": 2001,
+      "divergence_notes": "Filmda Elijah Wood gavdalantirgan Frodo kitobdagiga nisbatan ancha yosh, nochorroq va omonatroq ko'rsatilgan. Kitobda Frodo 50 yoshli yetuk, qat'iyatli va chuqur donishmandlikka ega xobbit bo'lib, xiyonatkor Gollumni Samdan hech qachon ustun qo'ymaydi (filmda esa Frodo Samni haydab yuborish sahnasi qo'shilgan, bu kitob kanoniga to'g'ri kelmaydi)."
+    }
+  ],
+  "image": {
+    "src": "/images/characters/frodo-baggins.webp",
+    "src_thumb": "/images/characters/frodo-baggins-thumb.webp",
+    "alt": "Frodo Baggins Lórien bargi nishoni bilan, boʻynida zanjirdagi Yagona Uzuk va qoʻlida Sting xanjari",
+    "caption": "Frodo Baggins — Shayrlik xobbit, Yagona Qudrat Uzugi eltuvchisi (Ring-bearer)"
+  }
+}

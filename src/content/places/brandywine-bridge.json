@@ -1,0 +1,40 @@
+{
+  "id": "brandywine-bridge",
+  "name": "Brandywine Bridge (Toshkoʻprik / Bridge of Stonebows)",
+  "elvish_name": "Baranduin Bridge",
+  "type": "qalʼa",
+  "region": "orta-yer",
+  "coordinates": {
+    "map_id": "orta-yer",
+    "x": 592,
+    "y": 1412
+  },
+  "founded_era": "Uchinchi Davr (Arnor qirolligi davri)",
+  "rulers": [],
+  "notable_events": [
+    "Marcho va Blanco boshchiligidagi xobbitlarning koʻprikdan oʻtib Shirga asos solishi (1601-yil)",
+    "Arnor qiroli Argeleb II tomonidan xobbitlarga Toshkoʻprikni taʼmirlab saqlash sharti bilan yer inʼom etilishi",
+    "Uzuk izlovchi Nazgûllarning Toshkoʻprik orqali Shirga kirib kelishi (3018-yil)",
+    "Saruman qaroqchilari tomonidan koʻprikka temir darvozalar va darvozabon minorasi oʻrnatilishi (3019-yil)"
+  ],
+  "textual_status": "author_published",
+  "summary": "Brendivin Toshkoʻprigi (Bridge of Stonebows) — Baranduin daryosi ustiga Arnorning qadimiy Dúnedain muhandislari tomonidan qad koʻtargan uch ravokli ulkan tosh koʻprik. U Katta Sharqiy Yoʻlning Shirga kirishdagi bosh strategik oʻtish joyidir. 1601-yilda Marcho va Blanco ushbu koʻprikdan oʻtib Shirga asos solganlar, shuningdek qirol shartiga koʻra xobbitlar uni doimo soz holatda saqlashga masʼul boʻlganlar.",
+  "sources": [
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "Prologue: Concerning Hobbits",
+      "notes": "Marcho va Blanconing Toshkoʻprikdan oʻtishi va Arnor qiroli bilan bitim."
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "The Scouring of the Shire",
+      "notes": "Toshkoʻprikdagi temir panjarali darvoza va soqchilar posti tasviri."
+    }
+  ],
+  "description_sections": [
+    {
+      "title": "Buyuk Sharqiy Yoʻlning tosh koʻprigi",
+      "content": "Brandywine Bridge (Sindarincha: Cirith Baranduin) — buyuk Baranduin (Brendivin) daryosi ustiga Arnor qirolligi davrida qurilgan ulkan uch arkali tosh koʻprikdir. U Buyuk Sharqiy Yoʻlning (Great East Road) muhim strategik qismi boʻlib, Shayrni Bree va sharqiy yerlar bilan bogʻlagan.\n\nUchinchi davrning 1601-yilida Arnor Qiroli Argeleb II ikki xobbit aka-uka — Marcho va Blancoga Brendivin koʻprigini saqlash va qirol elchilarini erkin oʻtkazish sharti bilan daryoning narigi tomonidagi yerlarni (Shayrni) bergan."
+    }
+  ]
+}

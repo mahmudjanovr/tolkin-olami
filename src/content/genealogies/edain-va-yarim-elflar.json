@@ -1,0 +1,150 @@
+{
+  "id": "edain-va-yarim-elflar",
+  "title": "Edain va Yarim-Elflar (Peredhil) Nasabnomasi",
+  "house_name": "Bëor, Hador va Thingol-Melian Xonadonlari (Yarim-elflar Ildizi)",
+  "founder_id": "thingol",
+  "era": "Daraxtlar davri va Birinchi davr",
+  "summary": "Doriath Qiroli Elu Thingol va Maia Melian xonadoni bilan Edainning Bëor hamda Hador qahramonlik sulolalarining birlashuvi. Beren va Lúthien hamda Tuor va Idril nikohlari orqali Eärendil, Elwing, Elrond va Elros — Yarim-elflar (Peredhil) shajarasi vujudga kelgan.",
+  "members": [
+    {
+      "character_id": "thingol",
+      "spouse_ids": ["melian"],
+      "parent_ids": [],
+      "generation": 1,
+      "order": 1,
+      "is_uncertain": false
+    },
+    {
+      "character_id": "melian",
+      "spouse_ids": ["thingol"],
+      "parent_ids": [],
+      "generation": 1,
+      "order": 2,
+      "is_uncertain": false
+    },
+    {
+      "character_id": "luthien",
+      "spouse_ids": ["beren"],
+      "parent_ids": ["thingol", "melian"],
+      "generation": 2,
+      "order": 1,
+      "is_uncertain": false
+    },
+    {
+      "character_id": "beren",
+      "spouse_ids": ["luthien"],
+      "parent_ids": ["barahir"],
+      "generation": 2,
+      "order": 2,
+      "is_uncertain": false
+    },
+    {
+      "character_id": "hurin",
+      "spouse_ids": ["morwen"],
+      "parent_ids": ["galdor"],
+      "generation": 2,
+      "order": 3,
+      "is_uncertain": false
+    },
+    {
+      "character_id": "morwen",
+      "spouse_ids": ["hurin"],
+      "parent_ids": [],
+      "generation": 2,
+      "order": 4,
+      "is_uncertain": false
+    },
+    {
+      "character_id": "dior",
+      "spouse_ids": ["nimloth"],
+      "parent_ids": ["beren", "luthien"],
+      "generation": 3,
+      "order": 1,
+      "is_uncertain": false
+    },
+    {
+      "character_id": "turin",
+      "spouse_ids": ["nienor"],
+      "parent_ids": ["hurin", "morwen"],
+      "generation": 3,
+      "order": 2,
+      "is_uncertain": false
+    },
+    {
+      "character_id": "nienor",
+      "spouse_ids": ["turin"],
+      "parent_ids": ["hurin", "morwen"],
+      "generation": 3,
+      "order": 3,
+      "is_uncertain": false
+    },
+    {
+      "character_id": "tuor",
+      "spouse_ids": ["idril"],
+      "parent_ids": ["huor"],
+      "generation": 3,
+      "order": 4,
+      "is_uncertain": false
+    },
+    {
+      "character_id": "idril",
+      "spouse_ids": ["tuor"],
+      "parent_ids": ["turgon", "elenwe"],
+      "generation": 3,
+      "order": 5,
+      "is_uncertain": false
+    },
+    {
+      "character_id": "elwing",
+      "spouse_ids": ["earendil"],
+      "parent_ids": ["dior", "nimloth"],
+      "generation": 4,
+      "order": 1,
+      "is_uncertain": false
+    },
+    {
+      "character_id": "earendil",
+      "spouse_ids": ["elwing"],
+      "parent_ids": ["tuor", "idril"],
+      "generation": 4,
+      "order": 2,
+      "is_uncertain": false
+    },
+    {
+      "character_id": "elrond",
+      "spouse_ids": ["celebrain"],
+      "parent_ids": ["earendil", "elwing"],
+      "generation": 5,
+      "order": 1,
+      "is_uncertain": false
+    },
+    {
+      "character_id": "elros",
+      "spouse_ids": [],
+      "parent_ids": ["earendil", "elwing"],
+      "generation": 5,
+      "order": 2,
+      "is_uncertain": false
+    }
+  ],
+  "branches": [
+    "Thingol va Melian Xonadoni (Doriath)",
+    "Bëor Xonadoni (Barahir va Beren)",
+    "Hador Xonadoni (Húrin, Túrin va Tuor)",
+    "Yarim-elflar (Dior, Eärendil, Elwing, Elrond va Elros)"
+  ],
+  "sources": [
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of the Coming of Men into the West / Of Beren and Lúthien / Of Tuor and the Fall of Gondolin",
+      "page": "140",
+      "notes": "Edainning uch xonadoni hamda Eldar va Edain oʻrtasidagi uchta taqdiriy nikoh tarixi."
+    },
+    {
+      "book_slug": "the-children-of-hurin",
+      "chapter": "Genealogies: The House of Hador and the House of Bëor",
+      "page": "288",
+      "notes": "Húrin, Morwen, Túrin Turambar, Nienor va Tuor shajaraviy jadvali."
+    }
+  ]
+}

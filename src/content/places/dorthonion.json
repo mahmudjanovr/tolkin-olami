@@ -1,0 +1,40 @@
+{
+  "id": "dorthonion",
+  "name": "Dorthonion",
+  "elvish_name": "Taur-nu-Fuin (Zulmat ostidagi oʻrmon)",
+  "type": "oʻlka",
+  "region": "beleriand",
+  "coordinates": {
+    "map_id": "beleriand",
+    "x": 1160,
+    "y": 1080
+  },
+  "founded_era": "Daraxtlar davri",
+  "destroyed_era": "Birinchi davr 587",
+  "rulers": [
+    "Barahir",
+    "Angrod",
+    "Aegnor"
+  ],
+  "notable_events": [
+    "Dagor Bragollach",
+    "Barahir partizanlari qarshiligi",
+    "Berenning quvgʻini"
+  ],
+  "textual_status": "author_published",
+  "summary": "Dorthonion — Beleriand shimolidagi baland qaragʻayzor togʻli oʻlka. Dastlab Finarfin oʻgʻillari Angrod va Aegnor hamda Bëor xonadoni (Barahir va Beren) makoni boʻlgan. Dagor Bragollachdan soʻng Morgoth zulmati qoplab, Taur-nu-Fuin nomini olgan.",
+  "sources": [
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of the Ruin of Beleriand and the Fall of Fingolfin",
+      "page": "150",
+      "notes": "Dorthonion qulashi va Barahir qahramonligi."
+    }
+  ],
+  "description_sections": [
+    {
+      "title": "Qaragʻaylar Oʻlkasidan Dahshat Oʻrmonigacha",
+      "content": "Dorthonion (Sindarincha: 'Qaragʻaylar Makoni') — Beleriandning shimoliy chegarasida joylashgan baland, qoyali va qalin qaragʻayzorlar bilan qoplangan togʻli oʻlka edi. Birinchi Davrda bu yerda Finarfin oʻgʻillari Angrod va Aegnor hukmronlik qilgan, shuningdek Bëor xonadoni insonlari (Beren ajdodlari) yashagan.\n\nDagor Bragollach (Toʻsatdan Olov Jangi)da Morgoth oʻlkani olov bilan qopladi. Angrod va Aegnor halok boʻldi, oʻlka Sauron sehriga asir boʻlib 'Taur-nu-Fuin' ('Tungi Soya Oʻrmoni') deb nomlandi."
+    }
+  ]
+}

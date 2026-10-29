@@ -1,0 +1,47 @@
+{
+  "id": "anfauglith",
+  "name": "Anfauglith",
+  "elvish_name": "Dor-nu-Fauglith / Ard-galen (Boʻgʻuvchi chang zamini)",
+  "type": "oʻlka",
+  "region": "beleriand",
+  "coordinates": {
+    "map_id": "beleriand",
+    "x": 1080,
+    "y": 1280
+  },
+  "founded_era": "Daraxtlar davri",
+  "destroyed_era": "Birinchi davr 587",
+  "rulers": [
+    "Fingolfin (oldingi)",
+    "Morgoth (bosqindan soʻng)"
+  ],
+  "notable_events": [
+    "Dagor-nuin-Giliath",
+    "Dagor Aglareb",
+    "Dagor Bragollach",
+    "Nirnaeth Arnoediad",
+    "Gʻazab Urushi"
+  ],
+  "textual_status": "author_published",
+  "summary": "Anfauglith — Beleriand shimolida, Dorthonion va Thangorodrim togʻlari oraligʻida yastanib yotgan ulkan tekislik. Dastlab 'Ard-galen' (Yashil mintaqa) deb atalgan seroʻt dasht Dagor Bragollachda Morgothning olovli daryolari tufayli yonib, jonsiz va boʻgʻuvchi chang-toʻzonli sahroga aylangan. Mashhur Nirnaeth Arnoediad (Behisob Koʻz Yoshlar Jangi) aynan shu kulsahroda kechgan.",
+  "sources": [
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of the Ruin of Beleriand and the Fall of Fingolfin",
+      "page": "151",
+      "notes": "Ard-galenning yonib kul boʻlishi va Anfauglith nomini olishi."
+    },
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of the Fifth Battle: Nirnaeth Arnoediad",
+      "page": "188",
+      "notes": "Anfauglith sahrosidagi Behisob Koʻz Yoshlar Jangi."
+    }
+  ],
+  "description_sections": [
+    {
+      "title": "Yashil Tekislikdan Boʻgʻuvchi Changsahrogacha",
+      "content": "Dastlab Ard-galen ('Yashil Maskan') deb atalgan bu hudud Dorthonion va Angband oʻrtasida yastanib yotgan yam-yashil bepoyon tekislik edi. Noldor chavandozlari bu yerda oʻz tulporlarini boqib, Angbandni qamal qilib turar edilar.\n\nBirinchi Davrning 455-yilida Morgoth Angbanddan olovli daryolar va zaharli gazlarni otib chiqardi. Butun tekislik yonib kulga aylandi va 'Anfauglith' ('Boʻgʻuvchi Chang') nomini oldi. 472-yildagi mashhur Nirnaeth Arnoediad (Sanab Boʻlmas Koʻzyoshlar Jangi) aynan shu qaqroq sahroda boʻlib oʻtdi."
+    }
+  ]
+}

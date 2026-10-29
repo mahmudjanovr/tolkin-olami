@@ -1,0 +1,53 @@
+{
+  "id": "minas-tirith",
+  "name": "Minas Tirith",
+  "elvish_name": "Minas Anor / Minas Tirith",
+  "type": "shahar",
+  "region": "orta-yer",
+  "coordinates": {
+    "map_id": "orta-yer",
+    "x": 1220,
+    "y": 580
+  },
+  "founded_era": "Ikkinchi davr 3320",
+  "rulers": [
+    "Anárion",
+    "Elessar"
+  ],
+  "notable_events": [
+    "Pelennor dalalari jangi",
+    "Minas Tirith qamali"
+  ],
+  "textual_status": "author_published",
+  "summary": "Minas Tirith — Mindolluin togʻi bagʻrida barpo etilgan yetti qavatli oq tosh shahar, Gondor qirolligining poytaxti, Ecthelion Oq Minorasi va Oq Daraxt maskani.",
+  "sources": [
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of the Rings of Power and the Third Age",
+      "page": "291",
+      "notes": "Anárion tomonidan Quyosh minorasi (Minas Anor) sifatida barpo etilishi."
+    }
+  ],
+  "description_sections": [
+    {
+      "title": "Geografik joylashuv va yetti qavatli meʼmoriy moʻjiza",
+      "content": "Minas Tirith (Sindarincha: 'Qoʻriqchi minorasi'), dastlab Minas Anor ('Quyosh minorasi') deb atalgan, Oq Togʻlarning (Ered Nimrais) sharqiy chekkasidagi Mindolluin choʻqqisi etagida qad rostlagan qadimiy tosh shahar. Shahar qoyatosh bagʻrida yarim doira shaklida qad rostlagan boʻlib, yetti konsentrik terassa (qavat)dan iborat.\n\nHar bir qavat mustahkam oq tosh devorlar bilan oʻralgan va har bir darvoza oʻzaro qarama-qarshi tomonlarga ochilib, shaharni zabt etishni deyarli imkonsiz qilgan. Shaharning oʻrtasidan bahaybat qoya kema tumshugʻi kabi yettinchi qavatgacha choʻzilgan. Yettinchi qavatda Oliy Saroy, Ecthelion Oq Minorasi va Gondorning muqaddas ramzi — Oq Daraxt joylashgan."
+    },
+    {
+      "title": "Tarixiy asos solinishi va poytaxtga aylanishi",
+      "content": "Shahar Ikkinchi davrning 3320-yilida Númenor halokatidan omon chiqqan Anárion tomonidan Osgiliathni gʻarbdan himoya qiluvchi qalʼa sifatida barpo etilgan. Uchinchi davrning 1640-yilida Oʻrta-yerni qamrab olgan Buyuk Vabo epidemiyasi Osgiliathni xarobaga aylantirgach, Qirol Tarondor qirollik qarorgohini Minas Anorga koʻchirdi.\n\n2002-yilda Minas Ithil (Oy minorasi) Nazgûllar tomonidan egallanib 'Minas Morgul'ga aylangach, Minas Anor oʻz nomini 'Minas Tirith'ga oʻzgartirdi — bu shahar endi yovuzlikka qarshi Oʻrta-yerning soʻnggi qoʻrgʻoni ekanini anglatar edi."
+    },
+    {
+      "title": "Pelennor jangi va Minas Tirith qamali",
+      "content": "3019-yil mart oyida Sauronning yuz minglik dahshatli qoʻshini Minas Tirithni qamal qildi. Angmar Jodugar-shohi boshchiligidagi qora kuchlar Pelennor devorlarini (Rammas Echor) buzib, shaharning birinchi darvozasiga yetib keldi. Buyuk manjaniqlar va 'Grond' laqabli bahaybat devorurar mashina yordamida birinchi darvoza sindirildi.\n\nBiroq Rohirrim otliqlarining kutilmagan yetib kelishi va Aragorn boshchiligidagi Gondor janubiy lashkarlarining qora kemalarda paydo boʻlishi Pelennor dalalarida dushmanning butkul tor-mor qilinishiga olib keldi."
+    },
+    {
+      "title": "Qayta tiklanish va Elessar davri",
+      "content": "Qirol Elessar (Aragorn II) taxtga oʻtirgach, Minas Tirith qayta gullab-yashnadi. Gimli boshchiligidagi Erebor mittilari shaharning buzilgan darvozalari oʻrniga mithril va sof poʻlatdan yangi darvoza yasadilar. Mindolluin qoyalaridan topilgan yangi Oq Daraxt koʻchati saroy hovlisiga qadaldi va shahar Qayta Birlashgan Qirollikning markaziga aylandi."
+    },
+    {
+      "title": "Rath Dínen sukunati, Palantír va me'moriy ramzlar",
+      "content": "Mindolluin qoyasi va oltinchi qavat o'rtasidagi yopiq yo'lak orqali Rath Dínen (Sukunat Ko'chasi) deb ataluvchi muqaddas maqbaralar maydoniga o'tilgan. U yerda Gondor shohlari va noiblari qadimiy tosh tobutlarda mangu uyquda yotadilar. Ecthelion Minorasining cho'qqisidagi xonada esa Anárion palantíri saqlangan bo'lib, Denethor II undan foydalanish orqali Sauronning kuchi qarshisida aqlan zaiflashgan edi. Shaharning oq tosh devorlari va Oq Daraxt nuri Númenorning yo'qolgan ulug'vorligini O'rta-yerda saqlab qolgan eng oliy yodgorlik hisoblangan."
+    }
+  ]
+}

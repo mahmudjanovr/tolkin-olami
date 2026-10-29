@@ -1,0 +1,41 @@
+{
+  "id": "khuzdul",
+  "name": "Khuzdul",
+  "family": "Aulë tili (Mittilarning maxfiy tili)",
+  "writing_systems": [
+    "cirth"
+  ],
+  "phonology_overview": "Khuzdul tili o'zining mustahkam, jarangdor va og'ir fonetikasi bilan ajralib turadi. Uning fonologik asosi qadimgi semit tillari (ivrit va oromiy) kabi uch undoshli konsonant o'zaklar (triconsonantal roots) tizimiga qurilgan. Tilning akustik qiyofasida tomoq va bo'g'iz tovushlari, bo'g'iq portlovchi va jarangli sirg'aluvchilar (kh, z, d, g, r, b, k) yetakchilik qiladi. Tovushlar mitti-odamlarning tosh va temir bilan ishlash tabiatiga, qattiq tog' jinslariga mos ravishda keskin va qat'iy talaffuz qilinadi. Mitti-odamlar o'z tilini begona quloqlardan nihoyatda qattiq sir saqlaganlar, shu sababli uning to'liq fonetik tizimi O'rta-yer xalqlari uchun jumboqligicha qolgan.",
+  "sample_text_original": "Baruk Khazâd! Khazâd ai-mênu!",
+  "sample_text_uz": "Mittilar boltasi! Mittilar sizning ustingizga kelmoqda!",
+  "textual_status": "author_published",
+  "sources": [
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "Appendix F (Of the Dwarves)",
+      "page": "1128"
+    }
+  ],
+  "grammar_and_vocabulary_sections": [
+    {
+      "title": "Aulëning ilohiy tuhfasi va semitcha uch undoshli o'zaklar",
+      "content": "Mitti-odamlar rivoyatlariga ko'ra, Khuzdul tili ularni yaratgan Vala Aulë (Mahal) tomonidan maxsus ixtiro qilingan va yetti Mitti ota-bobolariga o'rgatilgan. Tolkien bu tilni loyihalashda ivrit va boshqa semit tillarining ichki fleksiya tizimidan andoza olgan. So'zlarning asosiy lug'aviy ma'nosi uchta undoshdan iborat o'zakda (masalan, K-H-Z-D 'mitti-odam', B-R-Z 'qizil', Z-G-L 'uch, cho'qqi', G-B-L 'shox') yashiringan bo'lib, unlilar va affikslarning o'zgarishi grammatik shakllarni (ko'plik, sifat, fe'l) hosil qiladi: 'Khazâd' (Mitti-odamlar ko'pligi), 'Khuzd' (birlik). Bu arxitektura tilga nihoyatda ixcham va mustahkam ichki mantiq bag'ishlaydi."
+    },
+    {
+      "title": "Sir saqlash an'anasi va Iglishmêk imo-ishoralar tili",
+      "content": "Mitti-odamlar o'z ona tilini boshqa irqlarga o'rgatishni mutlaqo taqiqlaganlar va hatto o'zlarining haqiqiy Khuzdul ismlarini hech qachon qabrtoshlariga ham yozmaganlar, begonalarga oshkor etmaganlar (Gimli, Balin, Thorin kabi ismlar shimoliy insonlar tilidan olingan laqablardir). Mittilar boshqa xalqlar bilan faqat Westron yoki elflar tillarida gaplashganlar. O'zaro muloqotda esa Khuzduldan tashqari 'Iglishmêk' deb ataluvchi nihoyatda murakkab imo-ishoralar tilidan foydalanganlar. Iglishmêk orqali mitti-odam bir vaqtning o'zida baland ovozda oddiy tilda gapirib, barmoqlari va ko'zlari harakati bilan yonidagi sherigiga butunlay boshqa maxfiy xabarni yetkaza olgan."
+    },
+    {
+      "title": "Toponimika va geografik nomlar tizimi",
+      "content": "Khuzdul tilining O'rta-yer xaritasida saqlanib qolgan eng barqaror qismi tog'lar, qal'alar va daryolar nomlaridir. Khazad-dûm (Mittilar saroyi/saroyi), Zirakzigil (Kumush cho'qqi), Bundushathûr (Bulutli bosh), Barazinbar (Qizil shox), Kheled-zâram (Ko'zgu ko'li), Kibil-nâla (Kumush jilg'a) kabi toponimlar ming yillar davomida o'zgarmasdan saqlanib qolgan. Mitti-odamlar bu nomlarni o'zlarining eng buyuk yodgorliklari deb bilganlar va elflar qo'ygan yangi nomlarni tan olmaganlar."
+    },
+    {
+      "title": "Jangovar shiorlar va Balin qabri bitigi",
+      "content": "Tolkien asarlarida Khuzdul tilida berilgan eng mashhur jumlalar bu mitti jangchilarining qadimiy qichqirig'idir: 'Baruk Khazâd! Khazâd ai-mênu!' (Mitti boltalar! Mittilar ustingizga kelmoqda!). Bu na'ra barcha dushmanlar, ayniqsa Moria va Temir Tepaliklar janglarida o'rklarning yuragiga dahshat solgan. Shuningdek, Moria ichidagi Mazarbul xonasida topilgan Balin qabrtoshida Cirth runalarida shunday yozilgan: 'BALIN FUNDINUL UZRABAD KHAZADDÛMU' (Fundin o'g'li Balin, Khazad-dûm Hukmdori). Bu yozuv Khuzdul tilining rasmiy epitafiyaviy grammatikasini namoyish etuvchi nodir manbadir."
+    },
+    {
+      "title": "Mitti ayollari, oilaviy nomlar va sirli leksik fond",
+      "content": "Khuzdul tilining leksik fondi mitti-odamlarning ijtimoiy tuzilishi bilan chambarchas bogʻliq. Mittilar orasida ayollar umumiy aholining uchdan bir qismidangina iborat boʻlgani va ular begona koʻzlardan qattiq asralgani kabi, ularning tili ham muqaddas sirlardan biri sanalgan. Mitti chaqaloq tugʻilganda unga haqiqiy Khuzdulcha maxfiy ism berilgan, biroq bu ism hatto uning qabrtoshiga ham yozilmagan. Mittilarning begonalarga maʼlum boʻlgan kam sonli soʻzlari faqat qurol-aslahalar va toponimlar bilan cheklangan: masalan, \"kibil\" (kumush), \"zâram\" (koʻl), \"felak\" (tosh yoʻnish quroli), \"gundu\" (yerosti gʻori). Bu til ming yillar davomida deyarli oʻzgarishsiz qolgan noyob konservativ tildir."
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "id": "fingolfin",
+  "name": "Fingolfin",
+  "original_name": "Nolofinwë",
+  "father_name": "Finwë",
+  "mother_name": "Indis",
+  "spouse": "Anairë",
+  "children": [
+    "Fingon",
+    "Turgon",
+    "Aredhel",
+    "Argon"
+  ],
+  "aliases": [
+    "Noldor Bahodiri",
+    "Nolofinwë (Dono Finwë)",
+    "Oliy Qirol"
+  ],
+  "titles": [
+    "Beleriand Noldorining Oliy Qiroli",
+    "Hithlum Hukmdori"
+  ],
+  "race": "elflar",
+  "sub_race": "Noldor",
+  "culture": "Noldor",
+  "birth_year": "Daraxtlar davri 1190",
+  "death_year": "Birinchi davr 456",
+  "house_id": "finwe-xonadoni",
+  "weapons_and_artifacts": [
+    "Ringil qilichi",
+    "Kumush yulduzli zangori qalqon"
+  ],
+  "primary_locations": ["tirion", "mithrim"],
+  "textual_status": "author_published",
+  "uncertainty_notes": "Matn tarixi va nasabshunoslik: 'The Peoples of Middle-earth' (HoME XII) asarida Christopher Tolkien otasining soʻnggi qoʻlyozmalarida Fingolfinning toʻrtinchi farzandi — Argon (Arakáno) kiritilganini qayd etadi. Argon Losgardagi kemalar yoqilishidan soʻng Helcaraxëdan oʻtib, Dagor-nuin-Giliathning yakuniy toʻqnashuvida orqlarga qarshi qahramonlarcha jang qilib halok boʻlgan. 1977-yilgi The Silmarillion nashrida esa bu tafsilot tahririy qisqartirish sababli aks etmagan.",
+  "summary": "Finwë va Vanyar malikasi Indisning toʻngʻich oʻgʻli, Belerianddagi Noldorning eng mard, sabr-toqatli va qudratli Oliy Qiroli. Helcaraxë qahraton muzliklaridan oʻz xalqini talafotsiz olib oʻtgan hamda Dagor Bragollach halokatidan soʻng Angband darvozasida Morgoth bilan yakkama-yakka buyuk duelda mardlarcha halok boʻlgan afsonaviy bahodir.",
+  "etymology": "Quenya tilida 'Nolofinwë' — ngoldo/nólo ('donishmand, dono') va Finwë ('yetakchi') soʻzlaridan olingan boʻlib, 'Dono Finwë' maʼnosini bildiradi. Sindarin tilidagi 'Fingolfin' shakli esa Finwë Nolofinwë birikmasining Beleriand elflari talaffuziga moslashuvidan hosil boʻlgan.",
+  "biography_sections": [
+    {
+      "title": "Valinordagi oqillik va Fëanor bilan ziddiyat",
+      "content": "Fingolfin Daraxtlar davrining 1190-yilida Valinorda Finwë va uning ikkinchi rafiqasi — Vanyar elflariga mansub Indis xonadonida dunyoga keldi. U jismoniy baquvvatligi, harbiy mahorati va adolatpesha tabiati bilan Noldor orasida katta obroʻ qozondi.\n\nMelkor ozod etilgach, Noldor orasida nifoq qoʻzgʻash maqsadida Fingolfin oʻz oʻgay akasi Fëanordan taxtni tortib olmoqchi degan yolgʻonni tarqatdi. Fëanor maydonda unga qilich oʻqtalganida ham Fingolfin sovuqqonlik va viqor bilan javob qaytarmadi. Keyinchalik Manwë saroyidagi yarashuv marosimida Fingolfin Fëanorga: 'Qon boʻyicha oʻgay boʻlsak-da, yurakda chin ogʻang boʻlaman. Sen yoʻl boshlaysan, men esa ortingdan ergashaman', deb vaʼda berdi."
+    },
+    {
+      "title": "Katta Zulmat va Helcaraxë muzliklaridan qahramonona oʻtish",
+      "content": "Ikki Daraxt zaharlanib, Finwë qatl etilgach, Fingolfin Fëanorning shafqatsiz Qasamyodiga qoʻshilmadi, ammo oʻziga ishongan xalqini yolgʻiz tashlab ketishni or bildi. U Noldorning eng katta qismini oʻz ortidan Beleriand tomon ergashtirdi.\n\nFëanor Losgarda kemalarni yoqib, oʻz qarindoshlariga xiyonat qilganida, Fingolfin orqaga qaytmadi. U oʻz xalqini Ardaning eng dahshatli va sovuq hududi — Helcaraxë (Gʻijirlagan Muzliklar) orqali piyoda olib oʻtdi. Bu mashaqqatli safarda koʻplab elflar, jumladan Turgonning rafiqasi Elenwë halok boʻldi. Biroq Fingolfinning mardligi va irodasi tufayli Noldor qoʻshini Oydan tushgan ilk nurlar ostida Beleriand shimoliga qadam qoʻydi."
+    },
+    {
+      "title": "Belerianddagi Oliy Qirollik va Angband qamali",
+      "content": "Mithrimga yetib kelgach, uning toʻngʻich oʻgʻli Fingon Thangorodrim qoyalariga zanjirlangan Maedhrosni qutqarib keldi. Bu jasorat uchun Maedhros Fëanor xonadoni nomidan Noldor Oliy Qirolligi toji va huquqini Fingolfinga topshirdi. Shu tariqa Fingolfin barcha Noldorning rasmiy Oliy Qiroliga aylandi va Hithlum oʻlkasida hukmronlik oʻrnatdi.\n\nFingolfin qariyb toʻrt asr davomida donolik bilan hukmronlik qildi. U Mereth Aderthad ('Qayta birlashuv bayrami')ni tashkil etib, Noldor va Sindar elflarini yarashtirdi. Dagor Aglareb ('Shonli Jang')da Morgoth qoʻshinini tor-mor keltirib, Angband atrofida qariyb 400 yil davom etgan mustahkam qamalni boshqardi."
+    },
+    {
+      "title": "Dagor Bragollach va Morgoth bilan afsonaviy duel",
+      "content": "Birinchi davrning 455-yilida Morgoth qamalni kutilmagan olovli daryolar va Glaurung ajdari vositasida yorib oʻtdi (Dagor Bragollach). Ard-galen tekisligi kulga aylandi, Noldor va ularning insoniy ittifoqchilari qaqshatqich zarbaga uchradi.\n\nOʻz xalqi va ittifoqchilarining halokatini koʻrgan Fingolfin chuqur qaygʻu va qahr ichida qoldi. U oʻzining sadoqatli oti Rochallorga minib, chang-toʻzon ichra yolgʻiz oʻzi Angband darvozasiga yetib bordi. Uning nigohidagi olov va shiddat shunchalik dahshatli ediki, orqlar uni Vala Oromë deb oʻylab, qoʻrquvdan qochib ketishdi. Fingolfin kumush burgʻusini chalib, Angband darvozasini qoqdi va Morgothni yakkama-yakka jangga chorladi."
+    },
+    {
+      "title": "Buyuk sarkardaning intihosi va xotirasi",
+      "content": "Morgoth oʻz saroyidan chiqishga majbur boʻldi — qoʻlida 'Yerosti Dunyosi Bolgʻasi' sanalgan ulkan Grond toʻqmogʻi bilan jangga kirdi. Fingolfin oʻzining chaqqonligi va Ringil qilichining muzdek nuri bilan Morgothning zarbalaridan qochib, unga yetti marta ogʻir yaralar yetkazdi. Morgoth har gal ogʻriqdan naʼra tortganida, Angband qoʻshini vahimaga tushardi.\n\nBiroq jang choʻzilib, Fingolfin Grond zarbalaridan ochilgan chuqurlarga qoqilib, yiqildi. Morgoth uning boʻyniga chap oyogʻi bilan bosdi. Soʻnggi nafasida Fingolfin Ringil tigʻini Morgothning tovoniga sanchdi va uni butun umrga oqsoq qilib qoʻydi. Morgoth uning jasadini boʻlaklamoqchi boʻlganida, Qushlar Shohi Thorondor osmondan shoʻngʻib, Morgothning yuzini tirnadi va Fingolfinning jasadini olib qochdi. Turgon otasining jasadini Gondolin shimolidagi choʻqqiga dafn etdi va uning qabri ustiga kumush kairn qurdirdi."
+    }
+  ],
+  "image": {
+    "src": "/images/characters/fingolfin.webp",
+    "src_thumb": "/images/characters/fingolfin-thumb.webp",
+    "alt": "Fingolfin zangori plash va kumush sovutda, qoʻlida Ringil qilichi bilan",
+    "caption": "Fingolfin — Belerianddagi Noldor Oliy Qiroli, Ringil qilichi va kumush yulduz nishoni bilan"
+  },
+  "sources": [
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of the Flight of the Noldor",
+      "page": "82"
+    },
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of the Return of the Noldor",
+      "page": "106"
+    },
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of the Ruin of Beleriand and the Fall of Fingolfin",
+      "page": "150"
+    },
+    {
+      "book_slug": "history-of-middle-earth",
+      "chapter": "The Shibboleth of Fëanor (HoME XII)",
+      "page": "344"
+    }
+  ],
+  "related_characters": [
+    "finwe",
+    "indis",
+    "feanor",
+    "finarfin",
+    "fingon",
+    "turgon",
+    "maedhros",
+    "galadriel",
+    "gil-galad",
+    "melkor"
+  ],
+  "adaptations": []
+}

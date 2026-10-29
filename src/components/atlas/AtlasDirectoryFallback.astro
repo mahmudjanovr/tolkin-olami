@@ -1,0 +1,442 @@
+---
+import CitationBlock from '@/components/editorial/CitationBlock.astro';
+import ProvenanceBadge from '@/components/editorial/ProvenanceBadge.astro';
+import type { PlaceData } from '@/content/schemas';
+
+export interface AssociatedCharacter {
+  id: string;
+  name: string;
+  href: string;
+}
+
+export type FallbackPlaceData = PlaceData & {
+  associated_characters?: AssociatedCharacter[];
+};
+
+interface Props {
+  places: FallbackPlaceData[];
+}
+
+const { places } = Astro.props;
+
+// Hududlar bo'yicha guruhlash
+const beleriandPlaces = places.filter((p) => p.region === 'beleriand');
+const ortaYerPlaces = places.filter((p) => p.region === 'orta-yer');
+const valinorPlaces = places.filter((p) => p.region === 'valinor');
+
+const regionGroups = [
+  {
+    id: 'beleriand',
+    titleUz: 'Beleriand va Shimoliy Oʻlkalar',
+    eraUz: 'Birinchi davr',
+    places: beleriandPlaces,
+  },
+  {
+    id: 'orta-yer',
+    titleUz: 'Gʻarbiy Oʻrta-yer (Endor)',
+    eraUz: 'Ikkinchi va Uchinchi davrlar',
+    places: ortaYerPlaces,
+  },
+  ...(valinorPlaces.length > 0
+    ? [
+        {
+          id: 'valinor',
+          titleUz: 'Aman va Boqiy Diyoring Toponimlari',
+          eraUz: 'Daraxtlar davri va Birinchi davr',
+          places: valinorPlaces,
+        },
+      ]
+    : []),
+];
+---
+
+<section
+  id="atlas-katalog"
+  class="atlas-directory-fallback"
+  aria-label="Tolkien joy nomlari va toponimlar katalogi"
+  data-pagefind-body
+>
+  <div class="directory-header">
+    <div class="header-badge">Matnshunoslik Geografiyasi</div>
+    <h2 class="directory-title">Toponimlar va Tarixiy Geografiya Katalogi</h2>
+    <p class="directory-lead">
+      Ushbu katalog JavaScript oʻchirilgan yoki ekran oʻquvchi dasturlardan (screen readers) foydalanuvchilar
+      uchun Beleriand va Oʻrta-yerning barcha rasmiy toponimlarini toʻliq ilmiy manbalar, Oksford iqtiboslari
+      va planar koordinatalar bilan taqdim etadi.
+    </p>
+  </div>
+
+  <div class="regions-container">
+    {regionGroups.map((group) => (
+      <div class="region-section" id={`hudud-${group.id}`}>
+        <header class="region-header">
+          <div class="region-meta">
+            <span class="region-tag">{group.eraUz}</span>
+            <span class="region-count">{group.places.length} ta maskan</span>
+          </div>
+          <h3 class="region-name">{group.titleUz}</h3>
+        </header>
+
+        <ul class="places-grid" role="list">
+          {group.places.map((place) => (
+            <li class="place-card-item">
+              <article class="place-card" id={`toponim-${place.id}`}>
+                <div class="card-top">
+                  <span class="place-type">{place.type}</span>
+                  <ProvenanceBadge status={place.textual_status} />
+                </div>
+
+                <h4 class="place-name">
+                  <a href={`/xaritalar/?hudud=${place.region}&joy=${place.id}`} class="place-link">
+                    {place.name}
+                  </a>
+                  {place.elvish_name && (
+                    <span class="place-elvish">({place.elvish_name})</span>
+                  )}
+                </h4>
+
+                {place.coordinates && (
+                  <div class="place-coords">
+                    <span class="coords-label">Planar Koordinatalar:</span>
+                    <code>X: {place.coordinates.x}, Y: {place.coordinates.y}</code>
+                  </div>
+                )}
+
+                <p class="place-summary">{place.summary}</p>
+
+                {(place.rulers.length > 0 || place.founded_era || (place.associated_characters && place.associated_characters.length > 0)) && (
+                  <dl class="place-details">
+                    {place.founded_era && (
+                      <div class="detail-row">
+                        <dt>Asos solingan:</dt>
+                        <dd>{place.founded_era}</dd>
+                      </div>
+                    )}
+                    {place.rulers.length > 0 && (
+                      <div class="detail-row">
+                        <dt>Hukmdorlar:</dt>
+                        <dd>{place.rulers.join(', ')}</dd>
+                      </div>
+                    )}
+                    {place.associated_characters && place.associated_characters.length > 0 && (
+                      <div class="detail-row">
+                        <dt>Bogʻliq shaxslar:</dt>
+                        <dd class="fallback-characters-pills">
+                          {place.associated_characters.map((char) => (
+                            <a href={char.href} class="fallback-char-pill">
+                              {char.name}
+                            </a>
+                          ))}
+                        </dd>
+                      </div>
+                    )}
+                  </dl>
+                )}
+
+                <div class="place-sources">
+                  <span class="sources-heading">Kanonik Manbalar:</span>
+                  <CitationBlock sources={place.sources} title="" />
+                </div>
+
+                <div class="place-card-footer">
+                  <a href={`/xaritalar/?hudud=${place.region}&joy=${place.id}`} class="place-footer-link">
+                    🗺️ Xaritada
+                  </a>
+                  <a href={`/xaritalar/${place.id}/`} class="place-footer-link primary">
+                    📖 Toponim maqolasi →
+                  </a>
+                </div>
+              </article>
+            </li>
+          ))}
+        </ul>
+      </div>
+    ))}
+  </div>
+</section>
+
+<style>
+  .atlas-directory-fallback {
+    margin-top: 3rem;
+    padding-top: 2.5rem;
+    border-top: 2px solid var(--color-border-subtle);
+  }
+
+  .directory-header {
+    max-width: 760px;
+    margin-bottom: 2.5rem;
+  }
+
+  .header-badge {
+    font-family: var(--font-sans-ui);
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-accent-gold);
+    margin-bottom: 0.5rem;
+  }
+
+  .directory-title {
+    font-family: var(--font-serif-heading);
+    font-size: 1.75rem;
+    color: var(--color-text-primary);
+    margin-bottom: 0.75rem;
+  }
+
+  .directory-lead {
+    font-family: var(--font-serif-body);
+    font-size: 1.0625rem;
+    line-height: 1.7;
+    color: var(--color-text-secondary);
+    margin: 0;
+  }
+
+  .regions-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .region-section {
+    background-color: var(--color-bg-elevated);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 6px;
+    padding: 1.75rem;
+  }
+
+  .region-header {
+    border-bottom: 1px solid var(--color-border-subtle);
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .region-meta {
+    display: flex;
+    gap: 1rem;
+    font-family: var(--font-sans-ui);
+    font-size: 0.75rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .region-tag {
+    color: var(--color-accent-gold);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .region-count {
+    color: var(--color-text-muted);
+  }
+
+  .region-name {
+    font-family: var(--font-serif-heading);
+    font-size: 1.375rem;
+    margin: 0;
+    color: var(--color-text-primary);
+  }
+
+  .places-grid {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .place-card-item {
+    display: flex;
+  }
+
+  .place-card {
+    background-color: var(--color-bg-base);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 4px;
+    padding: 1.25rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .place-type {
+    font-family: var(--font-sans-ui);
+    font-size: 0.6875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-muted);
+    background-color: var(--color-bg-elevated);
+    padding: 0.2rem 0.5rem;
+    border-radius: 3px;
+    border: 1px solid var(--color-border-subtle);
+  }
+
+  .place-name {
+    font-family: var(--font-serif-heading);
+    font-size: 1.1875rem;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.35rem;
+  }
+
+  .place-link {
+    color: var(--color-text-primary);
+    text-decoration: none;
+    transition: color 0.15s ease;
+  }
+
+  .place-link:hover,
+  .place-link:focus-visible {
+    color: var(--color-accent-gold);
+    text-decoration: underline;
+  }
+
+  .place-elvish {
+    font-family: var(--font-serif-body);
+    font-size: 0.9375rem;
+    font-style: italic;
+    color: var(--color-text-secondary);
+    font-weight: 400;
+  }
+
+  .place-coords {
+    font-family: var(--font-sans-ui);
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .place-coords code {
+    background-color: var(--color-bg-elevated);
+    padding: 0.15rem 0.35rem;
+    border-radius: 3px;
+    border: 1px solid var(--color-border-subtle);
+    color: var(--color-text-secondary);
+  }
+
+  .place-summary {
+    font-family: var(--font-serif-body);
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    color: var(--color-text-secondary);
+    margin: 0;
+    flex-grow: 1;
+  }
+
+  .place-details {
+    margin: 0;
+    padding-top: 0.5rem;
+    border-top: 1px dashed var(--color-border-subtle);
+    font-family: var(--font-sans-ui);
+    font-size: 0.8125rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .detail-row {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .detail-row dt {
+    color: var(--color-text-muted);
+    font-weight: 600;
+  }
+
+  .detail-row dd {
+    margin: 0;
+    color: var(--color-text-secondary);
+  }
+
+  .fallback-characters-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.375rem;
+    margin: 0;
+    align-items: center;
+  }
+
+  .fallback-char-pill {
+    font-size: 0.8125rem;
+    padding: 1px 6px;
+    border-radius: 3px;
+    background-color: var(--color-bg-base);
+    border: 1px solid var(--color-border-subtle);
+    color: var(--color-accent-gold);
+    text-decoration: none;
+    transition: border-color 0.15s ease, background-color 0.15s ease;
+  }
+
+  .fallback-char-pill:hover,
+  .fallback-char-pill:focus-visible {
+    border-color: var(--color-accent-gold);
+    background-color: var(--color-bg-subtle);
+  }
+
+  .place-sources {
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--color-border-subtle);
+  }
+
+  .sources-heading {
+    display: block;
+    font-family: var(--font-sans-ui);
+    font-size: 0.6875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-muted);
+    margin-bottom: 0.25rem;
+  }
+
+  .place-card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0.65rem;
+    margin-top: 0.25rem;
+    border-top: 1px dashed var(--color-border-subtle);
+    font-family: var(--font-sans-ui);
+    font-size: 0.75rem;
+  }
+
+  .place-footer-link {
+    color: var(--color-text-secondary);
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .place-footer-link.primary {
+    color: var(--color-accent-gold);
+  }
+
+  .place-footer-link:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 640px) {
+    .places-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .region-section {
+      padding: 1.25rem;
+    }
+  }
+</style>

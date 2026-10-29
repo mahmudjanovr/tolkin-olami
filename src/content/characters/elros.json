@@ -1,0 +1,91 @@
+{
+  "id": "elros",
+  "name": "Elros Tar-Minyatur",
+  "original_name": "Elros Tar-Minyatur",
+  "father_name": "Eärendil Dengizchi",
+  "mother_name": "Elwing Oq",
+  "children": [
+    "Vardamir Nólimon",
+    "Tindómiel",
+    "Manwendil",
+    "Atanalcar"
+  ],
+  "aliases": [
+    "Tar-Minyatur (Quenya: Birinchi Oliy Hukmdor)",
+    "Gimilzôr"
+  ],
+  "titles": [
+    "Númenorning Birinchi Qiroli",
+    "Elros Xonadoni (Númenor, Arnor va Gondor Qirollari) Asoschisi"
+  ],
+  "race": "insonlar",
+  "sub_race": "Yarim-elf / Dúnedain (Insonlar taqdirini tanlagan)",
+  "culture": "Sirion / Númenor (Armenelos)",
+  "birth_year": "Birinchi davr 532",
+  "death_year": "Ikkinchi davr 442 (500 yoshida oʻz ixtiyori bilan vafot etgan)",
+  "house_id": "elros-va-gondor-shohlari",
+  "weapons_and_artifacts": [
+    "Aranrúth (Thingolning qilichi — Círdan orqali Elrosga topshirilgan)",
+    "Barahir Uzugi",
+    "Bregor Yoyi va Tuorning Dramborleg boltasi"
+  ],
+  "primary_locations": [
+    "numenor",
+    "lindon",
+    "beleriand"
+  ],
+  "textual_status": "posthumous_edited",
+  "summary": "Eärendil va Elwingning oʻgʻli, Elrond Yarim-elfning egizak akasi. Yarim-elflar tanlovida insonlar qismatini va foniylik inʼomini tanlab, yulduz shaklidagi Elenna (Númenor) oroliga Edain xalqini boshlab borgan va 410 yil davomida 'Tar-Minyatur' nomi bilan hukmronlik qilgan Númenorning birinchi qiroli, Aragornning bobokaloni.",
+  "etymology": "Sindarin tilida 'Elros' — êl ('yulduz') va ross ('koʻpik, yomgʻir sachratmasi') soʻzlaridan tuzilib, 'Yulduzli Koʻpik' maʼnosini anglatadi. Quenya tilidagi shohona unvoni 'Tar-Minyatur' esa 'Birinchi Oliy Hukmdor' deganidir.",
+  "biography_sections": [
+    {
+      "title": "Sirion fojiasi, Maglor tarbiyasi va Foniylik tanlovi",
+      "content": "Elros va uning egizak ukasi Elrond Sirion quyilishida Eärendil va Elwing oilasida tugʻildilar. Olti yoshlarida Fëanor oʻgʻillari Sirionga hujum qilib, onasi Elwing dengizga sakraganida, Maglor va Maedhros bolalarni oʻldirmasdan, oʻz tarbiyalariga oldilar.\n\nGʻazab Urushi yakunlangach, Manwë Yarim-elf egizaklarga oʻz taqdirlarini tanlash huquqini berdi. Elrond Eldar boqiyligini tanlagan boʻlsa, Elros ota-bobolari Beren va Tuor kabi Insonlar safiga qoʻshilishni hamda Ilúvatarning foniylik inʼomini tanladi; biroq unga oddiy insonlardan bir necha barobar uzoq umr ato etildi."
+    },
+    {
+      "title": "Númenor Qirolligining barpo etilishi va 500 yillik umr",
+      "content": "Valar Morgothga qarshi jang qilgan sodiq Edain uch xonadoni uchun dengiz oʻrtasida Elenna orolini koʻtardilar. Ikkinchi davrning 32-yilida Elros Eärendil yulduzi nuri ostida Edain flotini orolga boshlab keldi va Meneltarma togʻi etagida Armenelos shahrini hamda Qirol Minorasini barpo etdi.\n\n'Tar-Minyatur' taxt nomi bilan Elros 410 yil davomida Númenorni adolat va donishmandlik bilan boshqardi. Toʻliq 500 yoshga toʻlganida (Ikkinchi davr 442-yili) u qarilik zaifligiga tushmasdan, insonlarning qadimgi odatiga koʻra oʻz ixtiyori bilan ruhini topshirdi. Uning insonlarga xos ulugʻvor vafoti va Elrond bilan ayriligʻi keyinchalik avlodlari Aragorn va Arwen taqdirida aks-sado berdi."
+    },
+    {
+      "title": "Númenorning Birinchi Podshohi Tar-Minyatur va tanlov",
+      "content": "Elros (Eärendil va Elwingning o'g'li, Elrondning egizak ukasi) G'azab Urushidan so'ng Valar bergan taqdir tanlovida insonlar (Edain) qismatini tanladi. Unga insonlarning foniyligi berilgan bo'lsa-da, elflar qoni tufayli mislsiz uzoq umr (besh yuz yil) va qudrat in'om etildi. Valar Edain xalqiga mukofot tariqasida bergan Elenna (Númenor) orolida u birinchi podshoh sifatida taxtga o'tirdi va 'Tar-Minyatur' nomini oldi. U Númenor sivilizatsiyasining poydevorini qo'ygan buyuk qonunshunos va me'mor bo'ldi."
+    },
+    {
+      "title": "Beshyuz yillik shon-sharaf va O'rta-yer taqdiriga ta'siri",
+      "content": "Tar-Minyatur Armenelos shahrida to'rt yuz o'n yil hukmronlik qildi va Ikkinchi Davrning 442-yilida tinch holda o'z jonini Eruga topshirdi. Uning naslidan bo'lgan podshohlar ming yillar davomida buyuk flotlar qurdilar va O'rta-yerni Sauron zulmidan himoya qildilar. Elrosning qonidan chiqqan sulola keyinchalik Arnor va Gondor shohliklarini, xususan Aragorn Elessarni dunyoga keltirdi. Elros o'zining donoligi bilan inson zotining eng yuksak fazilatlarini tarixdagi eng qudratli qirollikka poydevor qilib qo'ydi. Elros Tar-Minyatur insoniyat tarixida yangi oltin davrni boshlab bergan buyuk asoschi boʻldi. Uning donoligi va adolati tufayli Númenor saltanati minglab yillar davomida dunyodagi eng qudratli, maʼrifatli va tinchliksevar sivilizatsiya sifatida gullab-yashnadi. Tar-Minyaturning adolatli qonunlari Númenor saltanatini insoniyat tarixidagi eng yuksak choʻqqiga olib chiqdi. Uning naslidan boʻlgan shohlar esa Oʻrta-yerda ezgulik va madaniyatning eng mustahkam posbonlari boʻlib xizmat qildilar. Tar-Minyaturning oʻrnatgan adolatli boshqaruvi va olijanob meʼmorchiligi Númenorning oltin davrini barpo etdi; uning nomi barcha Sadoqatlilar tomonidan muqaddas saqlandi. Uning adolatli qonunlari va meʼmoriy merosi Númenorning koʻp asrlik gullab-yashnashiga mustahkam poydevor qoʻydi va insoniyat tarixidagi eng yorqin davrni boshlab berdi. Bu shonli meros insoniyatning eng buyuk fazilatlarini oʻzida mujassam etdi."
+    }
+  ],
+  "sources": [
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Akallabêth: The Downfall of Númenor",
+      "page": "261"
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "Appendix A (I: The Numenorean Kings)",
+      "page": "1033"
+    },
+    {
+      "book_slug": "unfinished-tales",
+      "chapter": "A Description of the Island of Númenor",
+      "page": "165"
+    }
+  ],
+  "related_characters": [
+    "elrond",
+    "earendil",
+    "elwing",
+    "tuor",
+    "idril",
+    "beren",
+    "luthien",
+    "maedhros",
+    "maglor",
+    "elendil",
+    "isildur",
+    "aragorn",
+    "arwen"
+  ],
+  "adaptations": []
+}

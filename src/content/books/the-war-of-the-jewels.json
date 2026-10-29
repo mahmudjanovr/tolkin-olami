@@ -1,0 +1,58 @@
+{
+  "id": "the-war-of-the-jewels",
+  "title_uz": "Javohirlar Urushi",
+  "title_original": "The War of the Jewels: The Later Silmarillion, Part Two",
+  "aliases": [
+    "The War of the Jewels",
+    "HoME 11",
+    "The History of Middle-earth: Volume 11"
+  ],
+  "publication_year": 1994,
+  "publisher": "HarperCollins",
+  "editor": "Christopher Tolkien",
+  "category": "textual_history",
+  "isbn": "978-0-261-10324-5",
+  "synopsis": "«The History of Middle-earth» turkumining oʻn birinchi jildi boʻlib, «Morgoth Halqasi»ning bevosita davomidir. Unda Belerianddagi voqealar yilnomasi boʻlgan «Kulrang Solnomalar» (The Grey Annals), Húrinning asirlikdan keyingi sarson-sargardonligi («The Wanderings of Húrin») hamda elflar tillari va qabilalari tasnifi («Quendi and Eldar») oʻrin olgan.",
+  "cover_image": {
+    "src": "/images/books/the-war-of-the-jewels.webp",
+    "alt": "Javohirlar Urushi kitobi muqovasi",
+    "edition_title": "HarperCollins 1994 First Edition (Archival Design)",
+    "publisher": "HarperCollins",
+    "year": 1994,
+    "isbn": "978-0-261-10324-5",
+    "artist": "Christopher Tolkien (matnshunoslik loyihasi)",
+    "source": "Bibliografik arxiv dizayni (unverified authentic cover)"
+  },
+  "key_themes": [
+    "Beleriandning qonli yilnomasi: Kulrang Solnomalar (The Grey Annals)",
+    "Húrinning sarsonligi va Brethil insonlari fojiasi",
+    "Quendi and Eldar: Elflar etimologiyasi va lingvistik tasnifi",
+    "Noldorning Oʻrta-yerdagi soʻnggi qarshilik harakatlari"
+  ],
+  "detailed_sections": [
+    {
+      "title": "Tarixiy va nashr konteksti",
+      "content": "1994-yilda chop etilgan ushbu jild 1950-yillardan keyingi «Quenta Silmarillion»ning ikkinchi qismini toʻliq qamrab oladi. Christopher Tolkien otasining nashr etilgan «Silmarillion» kitobiga kirmay qolgan yoki qisqartirilgan eng muhim tarixiy tafsilotlarini ommaga taqdim etgan. Ayniqsa Beleriand urushlarining xronologiyasi bu jildda nihoyatda aniq va batafsil berilgan."
+    },
+    {
+      "title": "Húrinning sarsonligi: Silmarillionning yetishmayotgan sahifalari",
+      "content": "Ushbu jilddagi eng hayratlanarli adabiy matn «The Wanderings of Húrin» (Húrinning Sargardonligi) hisoblanadi. Unda Morgoth tomonidan ozod qilingan qari Húrinning Brethil oʻrmoniga kelishi, Haleth xalqi oʻrtasidagi fuqarolar urushi va sud majlisi tasvirlangan. Bu matn Tolkien yozgan eng realistik, shafqatsiz va fojiaviy dramalardan biri boʻlib, inson psixologiyasini nihoyatda nozik ochib beradi."
+    },
+    {
+      "title": "Quendi and Eldar: Filologik xazina",
+      "content": "Kitobning ikkinchi yarmida joylashgan «Quendi and Eldar» inshosi Tolkienning eng buyuk lingvistik merosidir. Unda elflarning barcha tarmoqlari – Vanyar, Noldor, Teleri, Sindar, Nandor, Avari qabilalarining nomlari va ularning tillaridagi fonetik farqlar qatʼiy filologik dalillar bilan tushuntiriladi. Bu matn Oʻrta-yer tillarini oʻrganuvchi barcha tadqiqotchilar uchun bosh qoʻllanmadir."
+    },
+    {
+      "title": "Oʻzbek tilidagi ahamiyati",
+      "content": "«Javohirlar Urushi» asari Oʻrta-yer tarixi bilan jiddiy shugʻullanuvchi kitobxonlarga Beleriand xaritasidagi har bir vodiy va qalʼaning tirik qonli tarixini koʻrsatadi. Ushbu asar oʻzbek adabiy muhitida epik janrni boyitishda muhim tajriba maktabi boʻla oladi."
+    }
+  ],
+  "uzbek_editions": [
+    {
+      "title": "Javohirlar Urushi",
+      "status": "untranslated",
+      "notes": "Oʻzbek tiliga tarjima qilinmagan. Matnshunoslik va filologik izohlarni talab qiladi."
+    }
+  ],
+  "translation_status_summary": "Oʻzbek tilida nashr qilinmagan. Kelgusida akademik tarjima loyihasi doirasida amalga oshirilishi kutilmoqda."
+}

@@ -1,0 +1,30 @@
+{
+  "id": "ikki-daraxt",
+  "name": "Valinorning Ikki Daraxti",
+  "concept_type": "primeval_light",
+  "associated_ainur": [
+    "yavanna",
+    "nienna",
+    "varda"
+  ],
+  "ontological_evolution": "Illuin va Ormal chiroqlari qulaganidan soʻng Yavanna qoʻshigʻi va Nienna koʻz yoshlari bilan Ezellohar tepaligida unib chiqqan. Telperion va Laurelin nurlari keyinchalik Fëanor tomonidan Silmarillarga jamlangan.",
+  "textual_status": "author_published",
+  "summary": "Telperion (Kumush daraxt) va Laurelin (Oltin daraxt) — Valinorning muqaddas nur manbalari. Ularning yettita soatlik navbatma-navbat porlashi Aman yillari hisobini belgilagan.",
+  "sources": [
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of the Beginning of Days",
+      "page": "38"
+    }
+  ],
+  "cosmology_sections": [
+    {
+      "title": "Valinor Nurlarining Manbai",
+      "content": "Valinorning Ikki Daraxti — kumush bargli Telperion va tillarang gulli Laurelin — Vala Yavannaning Ezellohar tepaligida kuylagan qoʻshigʻi va Niennaning koʻzyoshlari bilan unib chiqqan buyuk ilohiy moʻjizadir.\n\nDaraxtlar navbatma-navbat yetti soatdan nur sochar, ularning nurlari qoʻshilgan paytda Valinorda tong va shomning sehrli jilosi hukm surar edi. Bu nurlar Ardaning eng sof, birlamchi va muqaddas nuri hisoblangan."
+    },
+    {
+      "title": "Melkor va Ungoliant tomonidan soʻndirilishi",
+      "content": "Melkor va bahaybat qora oʻrgimchak Ungoliant Ikki Daraxtni zaharlab, ularning hayot sharbatini soʻrib oldilar. Daraxtlar nobud boʻldi, ammo ularning soʻnggi kumush guli Oyni (Isil), soʻnggi tillarang mevasi esa Quyoshni (Anar) yaratish uchun osmonga koʻtarildi. Fëanor esa bu nurlarni oʻz vaqtida Silmarillarga muhrlagan edi."
+    }
+  ]
+}

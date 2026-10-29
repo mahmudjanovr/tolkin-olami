@@ -1,0 +1,32 @@
+{
+  "id": "togri-yol-va-aklallabeth",
+  "name": "Yassi Arda, Dunyoning Dumaloqlashuvi va Toʻgʻri Yoʻl",
+  "concept_type": "cosmic_realm",
+  "associated_ainur": [
+    "manwe",
+    "ulmo"
+  ],
+  "ontological_evolution": "Dastlab Arda Yassi Yer (Flat Earth) sifatida barpo etilgan boʻlib, uning gʻarbiy chekkasida Valinor (Aman) joylashgan edi. Ikkinchi davr oxirida Ar-Pharazon boshchiligidagi Númenor qoʻshini Valinorga bostirib kirgach, Valar dunyo hukmini Eru Ilúvatarga topshirdi. Ilúvatar Akallabêth chogʻida Númenorni dengiz qaʼriga choʻktirdi, Amanni moddiy koinot kavislaridan chiqarib oldi va dunyoni shar shakliga (dumaloq Yerga) aylantirdi. Shundan soʻng Aman zaminiga faqatgina elflarning maxsus oq kemalari egri koinot chizigʻidan chiqib, toʻgʻri traektoriya boʻylab olib boruvchi «Toʻgʻri Yoʻl» (The Straight Road) orqali yetib borishi mumkin boʻldi.",
+  "textual_status": "author_published",
+  "summary": "Yassi Arda, Dunyoning Dumaloqlashuvi va Toʻgʻri Yoʻl (The Straight Road) — Tolkien kosmologiyasidagi eng ulkan fazoviy-metafizik burilish. Akallabêth hodisasi tufayli moddiy olam sferik shaklga keltirilib, Qadimgi Gʻarb (Aman) odamlar intiluvidan ajratilgan.",
+  "sources": [
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Akallabêth: The Downfall of Númenor",
+      "page": "278",
+      "notes": "Dunyoning oʻzgarishi, Amanning moddiy doiradan chiqarilishi va Toʻgʻri Yoʻl."
+    },
+    {
+      "book_slug": "lotr-return",
+      "chapter": "Appendix A: The Númenórean Kings",
+      "page": "1035",
+      "notes": "Akallabêth va Straight Road metafizikasi."
+    }
+  ],
+  "cosmology_sections": [
+    {
+      "title": "Dunyoning dumaloqlashuvi va Toʻgʻri Yoʻl",
+      "content": "Númenor halokatigacha (Akallabêth) Arda yassi tekislik boʻlib, Oʻrta-yerdan kema bilan gʻarbga suzib toʻgʻridan-toʻgʻri Valinorga borish mumkin edi. Biroq insonlar xiyonatidan soʻng Eru dunyoni sharsimon qilib oʻzgartirdi.\n\nValinor zamin doirasidan tashqariga olindi. Endilikda dunyo boʻylab suzgan har qanday kema aylana boʻylab qaytib keladi. Faqat elflarning Oq Kemalari ilohiy ruxsat bilan 'Toʻgʻri Yoʻl' (Straight Road) orqali kavisli egri fazoni yorib oʻtib, Boqiy Gʻarbdagi Amanga yetib borishi mumkin."
+    }
+  ]
+}

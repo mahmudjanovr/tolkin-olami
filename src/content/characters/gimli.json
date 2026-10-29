@@ -1,0 +1,113 @@
+{
+  "id": "gimli",
+  "name": "Gimli",
+  "original_name": "Gimli",
+  "father_name": "Glóin",
+  "children": [],
+  "aliases": [
+    "Elf-doʻsti (Elf-friend)",
+    "Yaltiroq Gʻorlar Hukmdori (Lord of the Glittering Caves)",
+    "Qulfposbon (Lockbearer)"
+  ],
+  "titles": [
+    "Uzuk Birodarligi aʼzosi",
+    "Aglarond (Yaltiroq Gʻorlar) Hukmdori"
+  ],
+  "race": "mitti-odamlar",
+  "sub_race": "Durin xalqi (Uzunsoqollar)",
+  "culture": "Erebor / Aglarond",
+  "birth_year": "Uchinchi davr 2879",
+  "death_year": "Boqiy Gʻarbga oʻtgan (Toʻrtinchi davr 120)",
+  "house_id": "durin-avlodlari",
+  "weapons_and_artifacts": [
+    "Ikki tigʻli ogʻir poʻlat bolgʻa va jangovar boltalar",
+    "Galadriel inʼom etgan uch oltin soch tolasi",
+    "Mithril va poʻlat halqali sovut"
+  ],
+  "primary_locations": [
+    "erebor",
+    "helms-deep",
+    "khazad-dum",
+    "lothlorien",
+    "rivendell",
+    "minas-tirith"
+  ],
+  "textual_status": "author_published",
+  "uncertainty_notes": "Tolkien 'The Lord of the Rings' Ilovasi A (III: 'Durin's Folk') da Arda tarixidagi eng hayratlanarli voqeani qayd etgan: Gimli Boqiy Gʻarbga (Aman) qabul qilingan tarixdagi yagona Mittidir. Uning Sindar elfi Legolas bilan boʻlgan chuqur va samimiy birodarligi, shuningdek Galadrielga boʻlgan yuksak ehtiromi sababli, Galadrielning shaxsiy iltimosiga binoan Valar istisno tariqasida unga Legolas bilan kemada Valinorga suzib borishga ruxsat bergan.",
+  "summary": "Glóinning oʻgʻli, Erebor mittisi va Uzuk Birodarligidagi mittilarning yagona munosib vakili. Moria, Helm darasi va Pelennor janglarida tengsiz dovyuraklik koʻrsatgan bahodir. Elflar va Mittilar oʻrtasidagi koʻp asrlik adovatni yoʻqqa chiqarib, Legolas bilan abadiy doʻstlik rishtalarini bogʻlagan va Galadrielning uch oltin soch tolasiga sazovor boʻlgan yagona mitti. Halqa Urushidan soʻng Yaltiroq Gʻorlar (Aglarond) qirolligini barpo etgan va Toʻrtinchi davrda Boqiy Gʻarbga suzib ketgan afsonaviy shaxs.",
+  "etymology": "Qadimgi skandinavcha 'Dvergatal' roʻyxatida 'Gimli' — gim ('olov, qimmatbaho javohir') oʻzagiga bogʻliq. Mittilarning sirli tili Khuzdulda uning maxfiy ajdodiy ismi boʻlgan, biroq Xazad qonunlariga koʻra u bu ismini hech bir begona jonzotga maʼlum qilmagan.",
+  "biography_sections": [
+    {
+      "title": "Erebor shahzodasi va Rivendell elchisi",
+      "content": "Gimli Uchinchi davrning 2879-yilida Moviy Togʻlarda (Ered Luin) Glóin oilasida dunyoga kelgan. U Qadimgi Durin xonadonining toʻgʻridan-toʻgʻri vakili edi. 2941-yilda uning otasi Thorin bilan birga Erebor safari ishtirokchisi boʻlganida, Gimli juda yosh deb hisoblanib safarga olinmagan edi.\n\n3018-yilda Mordor elchisi Erebordagi Qirol Dáin II Ironfoot huzuriga kelib, Bilbo va uning uzugi haqida maʼlumot evaziga qadimiy mitti uzuklarini taklif qilganida, Dáin Sauron taklifini rad etdi va bu xavfdan ogohlantirish uchun Glóin va Gimli Rivendellga joʻnatildi."
+    },
+    {
+      "title": "Uzuk Birodarligi va Moria fojiasi",
+      "content": "Elrond Kengashida Mittilar xalqi nomidan vakil boʻlib soʻzlagan Gimli, Uzuk Birodarligining yagona mitti aʼzosi boʻldi. U oʻz ajdodlarining qadimiy poytaxti — Khazad-dûmni (Moria) qayta koʻrish va u yerga borgan Balin ekspeditsiyasi taqdirini bilish orzusida edi.\n\nBiroq Mazarbul zalida Balinning qabrini va mittilarning qonli solnomasini topganida, Gimlining qalbi cheksiz qaygʻuga botdi. Oʻrklarning toʻsatdan qilgan hujumida u ajdodlari qabri ustida sherdek jang qilib, doʻstlarini himoya qildi."
+    },
+    {
+      "title": "Lothlórien va Galadrielning uch tasi",
+      "content": "Lothlórienga kirishda elflar Gimlining koʻzini bogʻlashni talab qilganida janjal kelib chiqdi, biroq Aragorn barcha aʼzolarning koʻzini bogʻlash bilan sulh oʻrnatdi. Xonim Galadriel huzuriga kelganlarida, xonim Gimliga mehr va hurmat bilan murojaat qildi.\n\nGaladriel xayrlashuv chogʻida Gimliga nima sovgʻa istashini soʻraganida, Gimli hech qanday oltin yoki qimmatbaho tosh emas, balki xonimning 'oltin va kumush sochlaridan bittagina tola' berishini oʻtinib soʻradi — uni qabriga qadar billur qutida asrashini aytdi. Galadriel uning pok va yuksak qalbini koʻrib, unga bir emas, uchta soch tolasini tuhfa qildi (qadimda Fëanor uch marta soʻrab ololmagan inʼom!). Bu voqea Gimliga 'Elf-doʻsti' (Elf-friend) faxriy nomini berdi."
+    },
+    {
+      "title": "Aglarond kashfiyoti va Pelennor jangi",
+      "content": "Hornburg qamalida Gimli Helm's Deep orqasidagi Aglarond (Yarqiroq Gʻorlar)ga chekindi. U gʻorlarning billur ustunlari, rang-barang marmar toshlari va tovlanuvchi suv havzalarini koʻrib hayratdan lol qoldi. U Legolasga gʻorlarni soʻzlab berib, 'urush tugagach sen menga Fangornni koʻrsatasan, men esa senga Aglarondni koʻrsataman' deb ahdlashdi.\n\nPelennor dalalarida va Qora Darvoza jangida Gimlining ogʻir boltasi Sauron qoʻshinlariga qaqshatqich zarbalar berdi. U Pelennor jangi soʻngida oʻliklar orasidan ogʻir yaralangan Pippinni topib, uning hayotini saqlab qoldi."
+    },
+    {
+      "title": "Yarqiroq Gʻorlar Hukmdori va Boqiy Gʻarb moʻjizasi",
+      "content": "Halqa Urushidan soʻng Gimli Erebordan koʻplab mittilarni boshlab kelib, Aglarondda yangi mustaqil mitti qirolligiga asos soldi va uning Birinchi Hukmdori boʻldi. Uning ustalari Minas Tirithning yangi poʻlat va mithril darvozalarini yasadilar.\n\nToʻrtinchi davrning 120-yilida, qadrdon doʻsti Legolas Boqiy Gʻarbga suzib ketishga qaror qilganida, Gimli unga hamroh boʻldi. Oʻrta-yer tarixida hech bir mitti Boqiy Gʻarbga (Valinor) oyoq bosmagan edi; Gimli xonim Galadrielning cheksiz mehr-shafqati va shaxsiy taklifi tufayli Aman zaminiga qabul qilingan yagona mitti boʻlib tarixda qoldi."
+    }
+  ],
+  "sources": [
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "The Council of Elrond",
+      "page": "240"
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "Farewell to Lórien",
+      "page": "366"
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "The Road to Isengard",
+      "page": "534"
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "The Battle of the Pelennor Fields",
+      "page": "840"
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "Appendix A: Annals of the Kings and Rulers (III: Durin's Folk)",
+      "page": "1074"
+    }
+  ],
+  "related_characters": [
+    "legolas",
+    "aragorn",
+    "galadriel",
+    "gandalf",
+    "frodo-baggins",
+    "samwise-gamgee",
+    "thorin-oakenshield",
+    "eomer"
+  ],
+  "adaptations": [
+    {
+      "medium": "film",
+      "title": "The Lord of the Rings Film Trilogy",
+      "creator": "Peter Jackson",
+      "year": 2001,
+      "divergence_notes": "Filmda John Rhys-Davies ijro etgan Gimli obrazi kitobdagiga nisbatan ko'proq komik va hazilkash xarakterga burilgan. Kitobda esa Gimli shoirona hissiyotga ega, tosh va me'morchilik san'atini teran tushunuvchi, o'ta jiddiy va o'tkir so'zli shaxs bo'lib, uning Galadriel bilan muloqoti ingliz adabiyotining eng yuksak ritsarlik ehtiromi namunasi hisoblanadi."
+    }
+  ],
+  "image": {
+    "src": "/images/characters/gimli.webp",
+    "src_thumb": "/images/characters/gimli-thumb.webp",
+    "alt": "Gimli Glóin oʻgʻli metall dubulgʻada va zanjirli sovutda, qoʻlida jangovar bolta bilan Aglarond gʻorida",
+    "caption": "Gimli — Glóin oʻgʻli, Durin xonadoni jangchisi, Aglarondning Yarqiroq Gʻorlari Hukmdori"
+  }
+}

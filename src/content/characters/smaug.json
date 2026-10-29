@@ -1,0 +1,65 @@
+{
+  "id": "smaug",
+  "name": "Smaug",
+  "original_name": "Smaug the Golden",
+  "father_name": "Shimoliy Kulrang Togʻlar ajdarlari avlodi",
+  "mother_name": "Nomaʼlum",
+  "spouse": "Yoʻq",
+  "children": [],
+  "aliases": [
+    "Oltin Smaug (Smaug the Golden)",
+    "Dahshatli Smaug",
+    "Bosh va Eng Buyuk Ofat (Chiefest and Greatest of Calamities)"
+  ],
+  "titles": [
+    "Togʻ osti Ajdar-Hukmdori"
+  ],
+  "race": "boshqa",
+  "sub_race": "Qanotli olov-ajdar (Urulóki)",
+  "culture": "Shimoliy ajdarlar",
+  "birth_year": "Uchinchi Davr",
+  "death_year": "U.D. 2941 (1-noyabr)",
+  "weapons_and_artifacts": [
+    "Koʻkragiga yopishib ketgan olmos va javohirlardan iborat zirh qobigʻi"
+  ],
+  "primary_locations": [
+    "erebor"
+  ],
+  "textual_status": "author_published",
+  "summary": "Uchinchi Davrning eng soʻnggi buyuk olovli ajdari. U.D. 2770-yilda Deyl shahrini vayron qilib, Yolgʻiz Togʻ (Erebor) qirolligini va Durin xalqining behisob xazinasini egallab olgan; U.D. 2941-yilda Bilbo Beggins tomonidan zaif joyi aniqlangach, Kamonchi Bardning Qora oʻqi bilan oʻldirilgan.",
+  "biography_sections": [
+    {
+      "title": "Erebor va Deylning yakson qilinishi",
+      "content": "Uchinchi Davrning 2770-yillarida Togʻ osti Qiroli Tror hukmronligi davrida Ereborning mislsiz boyligi haqidagi ovozalar shimoldagi Kulrang Togʻlar ortiga qadar yetib borgan. Shu boylikka ochkoʻzlik bilan intilgan ulkan qizil-oltin ajdar Smaug kutilmaganda boʻron kabi Ereborga tushib, Deyl shahrini yondirib yuborgan va Togʻning Buyuk Darvozasidan ichkariga bostirib kirgan. Mitti-odamlarning asosiy qismi qirilib, qolganlari (jumladan Tror, Train va yosh Torin) surgunga qochishga majbur boʻlgan. Smaug barcha oltin va javohirlarni Buyuk Zal oʻrtasiga uyum qilib toʻplab, bir asrdan ortiq vaqt davomida shu xazina ustida uxlagan."
+    },
+    {
+      "title": "Bilbo Beggins bilan topishmoqli suhbat",
+      "content": "U.D. 2941-yilda Gendalfning rejasi bilan Torin Emanqalqon guruhiga yollangan Bilbo Beggins maxfiy yoʻlak orqali Smaug uyasiga kirib, oltin qadahni oʻgʻirlab chiqqan. Xazinasining har bir tangasini yoddan bilgan ajdar uygʻonib, Togʻ yonbagʻrilarini yondirgan. Bilbo Yagona Uzuk yordamida koʻrinmas boʻlib ikkinchi marta tushganida, Smaug uning hidini sezib, xobbit bilan ayyorona topishmoqli suhbat qurgan. Suhbat davomida Bilbo ajdarni maqtab qornini koʻrsatishga undagan va Smaugning olmos qoplangan chap koʻkragida bitta kichik tangadek ochiq joy borligini koʻrib qolgan."
+    },
+    {
+      "title": "Esgarot ustidagi olov va halokat",
+      "content": "Bilboning «Barrel-rider» (Bochka-chavandozi) degan soʻzlaridan mitti-odamlarga Koʻl-shahar (Esgaroth) aholisi yordam berganini anglagan Smaug gʻazab bilan Uzun Koʻlga uchib borgan. U tunda shaharni olovga burkab vayron qila boshlaganida, Bilbodan ajdarning siri haqida eshitgan qorayaloq qushi bu xabarni Kamonchi Bardga yetkazgan. Smaug shahar ustidan soʻnggi bor shoʻngʻiganida, Bardning Qora oʻqi uning chap koʻkragidagi ochiq joyga qadalgan; ajdar dahshatli chinqiriq bilan koʻl suvlariga qulab tushib halok boʻlgan va uning oʻlimi Shimolni Sauron bilan ehtimoliy ittifoqdan qutqarib qolgan."
+    }
+  ],
+  "etymology": "Tolkienning izohiga koʻra, Smaug nomi qadimgi german feʼli smugan — «teshikdan siqilib oʻtmoq, sudralib kirmoq» soʻzining oʻtgan zamon shaklidan yasalgan filologik hazil edi.",
+  "sources": [
+    {
+      "book_slug": "the-hobbit",
+      "chapter": "1-bob (Kutilmagan ziyofat), 12-bob (Ichkaridagi maʼlumotlar) va 14-bob (Olov va suv)",
+      "page": "205"
+    },
+    {
+      "book_slug": "the-return-of-the-king",
+      "chapter": "Ilova A, III qism (Durin xalqi — Erebor yurishi)",
+      "page": "1079"
+    }
+  ],
+  "related_characters": [
+    "bilbo-baggins",
+    "thorin-oakenshield",
+    "bard-the-bowman",
+    "gandalf",
+    "glaurung"
+  ],
+  "adaptations": []
+}

@@ -1,0 +1,125 @@
+---
+import { getCollection, render, type CollectionEntry } from 'astro:content';
+import EditorialLayout from '@/layouts/EditorialLayout.astro';
+import CitationBlock from '@/components/editorial/CitationBlock.astro';
+import RelatedEntities from '@/components/editorial/RelatedEntities.astro';
+import { resolveEntityLinks } from '@/utils/entity-resolver';
+
+export async function getStaticPaths() {
+  const articles = await getCollection('articles');
+  const generalArticles = articles.filter((a) => a.data.category !== 'tolkienshunoslik');
+  return generalArticles.map((article) => ({
+    params: { slug: article.data.slug || article.id },
+    props: { article },
+  }));
+}
+
+interface Props {
+  article: CollectionEntry<'articles'>;
+}
+
+const { article } = Astro.props;
+const { Content } = await render(article);
+const data = article.data;
+
+const breadcrumbs = [
+  { label: 'Ilmiy Maqolalar', href: '/maqolalar/' },
+  { label: data.title },
+];
+
+const categoryLabels: Record<string, string> = {
+  falsafa_va_teologiya: 'Falsafa va Teologiya',
+  adabiy_tahlil: 'Adabiy Tahlil',
+  matnshunoslik: 'Matnshunoslik',
+  tolkienshunoslik: 'Tolkienshunoslik',
+  zamonaviy_adaptatsiyalar: 'Zamonaviy Adaptatsiyalar',
+};
+
+const relatedItems = resolveEntityLinks(data.related_entities);
+---
+
+<EditorialLayout
+  title={data.title}
+  category={categoryLabels[data.category] || data.category}
+  description={data.abstract}
+  breadcrumbs={breadcrumbs}
+>
+  <div class="article-markdown-body">
+    <Content />
+  </div>
+
+  <div slot="margin" class="article-margin">
+    <div class="margin-card metadata-card">
+      <h3 class="margin-title">Maqola Maʼlumotlari</h3>
+      <div class="meta-row">
+        <span class="meta-label">Muallif:</span>
+        <span class="meta-val">{data.author}</span>
+      </div>
+      <div class="meta-row">
+        <span class="meta-label">Sana:</span>
+        <span class="meta-val">{data.published_date}</span>
+      </div>
+      <div class="meta-row">
+        <span class="meta-label">Yoʻnalish:</span>
+        <span class="meta-val">{categoryLabels[data.category] || data.category}</span>
+      </div>
+    </div>
+
+    <div class="margin-card citations-card">
+      <CitationBlock sources={data.sources} />
+    </div>
+
+    {relatedItems.length > 0 && (
+      <div class="margin-card related-card">
+        <RelatedEntities title="Bogʻliq Entitilar" items={relatedItems} />
+      </div>
+    )}
+  </div>
+</EditorialLayout>
+
+<style>
+  .article-markdown-body {
+    font-size: 1.125rem;
+    line-height: 1.8;
+  }
+
+  .article-margin {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .margin-card {
+    background-color: var(--color-bg-elevated);
+    border: 1px solid var(--color-border-subtle);
+    padding: 1.125rem;
+    border-radius: 4px;
+    font-size: 0.8125rem; /* 13px */
+  }
+
+  .margin-title {
+    font-size: 0.75rem; /* 12px */
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-muted);
+    margin-bottom: 0.75rem;
+  }
+
+  .meta-row {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0.375rem;
+    margin-bottom: 0.375rem;
+    border-bottom: 1px dotted var(--color-border-subtle);
+  }
+
+  .meta-label {
+    color: var(--color-text-muted);
+  }
+
+  .meta-val {
+    color: var(--color-text-primary);
+    font-weight: 500;
+  }
+</style>

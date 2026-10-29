@@ -1,0 +1,40 @@
+{
+  "id": "amon-hen",
+  "name": "Amon Hen",
+  "elvish_name": "Amon Hen",
+  "type": "togʻ",
+  "region": "orta-yer",
+  "coordinates": {
+    "map_id": "orta-yer",
+    "x": 1140,
+    "y": 810
+  },
+  "founded_era": "Ikkinchi davr",
+  "rulers": [
+    "Gondor shohlari"
+  ],
+  "notable_events": [
+    "Qardoshlikning boʻlinishi",
+    "Boromirning qahramonona halokati",
+    "Uruk-hailar xuruji"
+  ],
+  "textual_status": "author_published",
+  "summary": "Nen Hithoel koʻlining gʻarbiy qirgʻogʻida, Rauros sharsharasi ustida qad koʻtargan qadimiy tepalik («Koʻz Tepaligi»). Choʻqqisida Númenor meʼmorchiligi mahsuli boʻlgan Koʻruvchi Taxt (Seat of Seeing) joylashgan boʻlib, u yerdan yuzlab chaqirim masofadagi oʻlkalar kaftdek koʻringan. Bu yerda Uzuk Qardoshligi boʻlinib, Boromir mardlarcha halok boʻlgan.",
+  "sources": [
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "The Breaking of the Fellowship",
+      "page": "410"
+    }
+  ],
+  "description_sections": [
+    {
+      "title": "Nazar Tepaligi va Koʻruvchi Taxt",
+      "content": "Amon Hen (Sindarincha: 'Koʻz Tepaligi' yoki 'Nazar Tepaligi') — Anduin daryosining oʻng qirgʻogʻida, Nen Hithoel koʻlining janubiy chekkasida joylashgan qadimiy tepalikdir. Qarama-qarshi qirgʻoqda Amon Lhaw ('Quloq Tepaligi') joylashgan.\n\nTepalik choʻqqisida Ikkinchi davrda Gondorliklar tomonidan toshdan yasalgan Koʻruvchi Taxt (Seat of Seeing) oʻrnatilgan boʻlib, unda oʻtirgan odam yuzlab chaqirim naridagi olislarni ravshan koʻra olar edi."
+    },
+    {
+      "title": "Uzuk Birodarligining parchalanishi",
+      "content": "3019-yil 26-fevralida Uzuk Birodarligi Amon Henda toʻxtadi. Shu yerda Boromir Frodoning uzugini tortib olmoqchi boʻldi. Frodo qochib chiqib, Koʻruvchi Taxtga oʻtirdi va Yagona Uzuk orqali Oʻrta-yerdagi barcha urushlar, Minas Tirith qamali va Barad-dûrdagi Qora Koʻzning oʻziga tikilib turganini koʻrdi.\n\nTepalik etagidagi oʻrmonda Boromir Merry va Pippinni himoya qilib qahramonlarcha halok boʻldi. Bu voqea bilan Uzuk Birodarligi parokanda boʻlib, qahramonlar oʻzlarining alohida taqdirlari tomon yoʻl oldilar."
+    }
+  ]
+}

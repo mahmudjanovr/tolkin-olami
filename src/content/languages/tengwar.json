@@ -1,0 +1,42 @@
+{
+  "id": "tengwar",
+  "name": "Tengwar",
+  "family": "Fonetik Yozuv Tizimi (Featural Script)",
+  "writing_systems": [
+    "tengwar"
+  ],
+  "inventor": "Fëanor",
+  "phonology_overview": "Tengwar alifbosi an'anaviy alifbolardan farqli o'laroq, ogʻzaki til emas, balki sof fonetik-xususiyatli (featural alphabet) yozuv tizimidir. Unda har bir belgining geometrik shakli tasodifiy emas, balki tovushning artikulyatsiya o'rni va usulini aniq aks ettiradi. Asosiy belgi (tengwa) vertikal ustun (telco) va unga birikkan yoy yoki ilgakdan (lúva) iborat. Ustunning pastga yoki yuqoriga yo'nalganligi hamda yoyning bittaligi yoki ikkitaligi, ochiq yoki yopiqligi tovushning portlovchi, sirg'aluvchi, jarangli yoki burun tovushi ekanligini bildiradi. Bu tizim fonetika fani tarixidagi eng yuksak mantiqiy yozuv yodgorliklaridan biri hisoblanadi.",
+  "sample_text_original": "Elen síla lúmenn' omentielvo",
+  "sample_text_uz": "Uchrashuvimiz soatida yulduz porlasin (Fëanor Tengwar yozuvi namunasi)",
+  "textual_status": "author_published",
+  "sources": [
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "Appendix E: Writing and Spelling (II: The Fëanorian Letters)",
+      "page": "1118"
+    }
+  ],
+  "grammar_and_vocabulary_sections": [
+    {
+      "title": "Fëanor dahoasi: Rumpil Saratisidan mukammal fonetik tizimgacha",
+      "content": "Tengwar yozuvi Birinchi Davrda Valinorda Noldor knyazi Fëanor tomonidan ixtiro qilingan. Fëanorgacha elflar Rumil tomonidan yaratilgan Sarati yozuvidan foydalanishgan, ammo Fëanor insoniyat tarixida tengi yo'q fonetik tizimni yaratdi. Tengwar 24 ta asosiy harfdan iborat to'rtburchak jadvalga (témar va tyeller) ajratilgan. Jadvalning to'rtta ustuni (témar) artikulyatsiya o'rnini belgilaydi: 1-ustun (Tincotéma) tish tovushlari (t, d, th, n), 2-ustun (Parmatéma) lab tovushlari (p, b, f, m), 3-ustun (Calmatéma) tanglay tovushlari (k, g, sh), 4-ustun (Quessetéma) orqa tanglay va lablashgan tovushlar (kw, gw, chw). Oltita qator (tyeller) esa hosil bo'lish usulini (jarangsiz, jarangli, sirg'aluvchi, burun va yarim unlilar) bildiradi."
+    },
+    {
+      "title": "Tehtar (Ómatehtar): Unlilar tizimi va yozuv uslublari (Modes)",
+      "content": "Tengwarda unli tovushlar harflar ustiga yoki ostiga qo'yiladigan maxsus belgilar - tehtar orqali belgilanadi. Uchta nuqta odatda 'a', qiya chiziq 'e', bitta nuqta 'i', burama ilgak 'o', qarama-qarshi ilgak 'u' unlisini ifodalaydi. Unlilarning harf ustiga qo'yilishi tilning tabiatiga bog'liq: Quenya rejimida (Classical Mode) so'zlar unli bilan tugaganligi sababli tehta o'zidan keyingi undosh harf ustiga qo'yiladi. Sindarin rejimida esa so'zlar ko'pincha undosh bilan yakunlangani sababli unli belgisi o'zidan oldingi undosh ustiga yoziladi. Agar unli yakka kelsa, u maxsus kalta yoki uzun unli tayanchi (carrier) ustiga joylashtiriladi."
+    },
+    {
+      "title": "To'liq yozuv rejimlari: Beleriand uslubi va Qora Nutq",
+      "content": "Tehtar tizimidan tashqari, unlilar alohida to'liq harflar sifatida yoziladigan 'To'liq rejimlar' (Full Modes) ham mavjud bo'lgan. Bunga eng yorqin misol Beleriand Sindarin rejimidir; Moria darvozasidagi mashhur yozuv aynan shu to'liq rejimda o'yilgan bo'lib, unda har bir unli alohida tengwa belgisi bilan ifodalangan. Shuningdek, Sauron Yagona Uzukka afsun bitishda Tengwar harflarining nafis kursiv shaklidan foydalangan, biroq uning zamiridagi til qabih Qora Nutq bo'lgan. Bu Tengwanning har qanday fonetik tizimni ifodalashga qodir universal lingvistik moslashuvchanligini isbotlaydi."
+    },
+    {
+      "title": "O'rta-yerdagi madaniy va amaliy tarqalishi",
+      "content": "Tengwar O'rta-yerda barcha elflar, Dúnedain olimlari, Gondor mirzalari va hattoki savodli xobbitlar (masalan, Bilbo va Frodo Baggins) tomonidan keng qo'llanilgan. U qog'ozga qamish qalam yoki pat bilan yozish uchun maxsus moslashtirilgan bo'lib, oqma va xattotlik go'zalligiga ega edi. Qizil Kitobning (Red Book of Westmarch) ko'plab sahifalari va shohona maktublar Tengwar imlosida bitilgan. Ushbu yozuv Tolkien dunyosining estetik va intellektual cho'qqisini ifodalovchi timsoldir."
+    },
+    {
+      "title": "Sonlar tizimi, tinish belgilari va xattotlik anʼanalari",
+      "content": "Tengwar nafaqat tovushlarni, balki sonlar va mantiqiy tinish belgilarini ham qamrab olgan mukammal tizimdir. Elflar asosan oʻn ikkitalik (duodecimal) sanoq tizimidan foydalanganlar, shu sababli Tengwarda 0 dan 11 gacha boʻlgan maxsus raqam belgilari mavjud boʻlib, ularning ustiga maxsus nuqta qoʻyilgan. Tinish belgilari tizimida bitta nuqta (pusta) vergul vazifasini, ikkita vertikal nuqta gap oxiridagi nuqtani, toʻrtta nuqta esa xatboshi yoki bob tugashini bildirgan. Saroy mirzalari va qoʻshiqchilar Tengwardan foydalanganda harflarning choʻziq dumlari (telco) va halqalarini (lúva) oʻsimlik naqshlari bilan bezab, uni tengsiz vizual sanʼat asariga aylantirganlar."
+    }
+  ]
+}

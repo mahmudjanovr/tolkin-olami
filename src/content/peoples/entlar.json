@@ -1,0 +1,60 @@
+{
+  "id": "entlar",
+  "name": "Entlar (Onodrim)",
+  "other_names": [
+    "Onodrim",
+    "Enyd",
+    "Daraxt Choʻponlari"
+  ],
+  "race_category": "boshqa",
+  "divisions_and_clans": [
+    "Fangorn Entlari",
+    "Ent-xotinlar (Entwives)",
+    "Xuornlar (Daraxtlashgan Entlar)"
+  ],
+  "origin_era": "Daraxtlar davri",
+  "associated_languages": [
+    "westron"
+  ],
+  "primary_realms": [
+    "isengard"
+  ],
+  "textual_status": "author_published",
+  "summary": "Entlar (Onodrim / Daraxt-posbonlar) — Vala Yavannaning iltijosi bilan Eru Ilúvatar tomonidan Daraxtlar uygʻonishidan oldin yaratilgan, bahaybat daraxtsimon gavdaga ega, oʻrmonlar va oʻsimliklarni boltalar hamda olovdan asrovchi eng qadimiy tirik jonzotlardir. Ular Fangorn oʻrmonida yashab, Uzuk Urushida Isengardni yakson qilish orqali tarixiy burilish yasaganlar.",
+  "sources": [
+    {
+      "book_slug": "lotr-towers",
+      "chapter": "Treebeard",
+      "page": "452",
+      "notes": "Fangorn oʻrmoni va Entlar kengashi (Entmoot) tavsifi."
+    },
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of Aulë and Yavanna",
+      "page": "45",
+      "notes": "Yavannaning Ilúvatar huzuridagi oʻtinchisi va Daraxt Choʻponlarining yaratilishi."
+    }
+  ],
+  "description_sections": [
+    {
+      "title": "Yavannaning xavotiri va Entlarning yaratilishi",
+      "content": "Vala Aulë mittilarni yashirincha yaratganini bilganida, uning rafiqasi — barcha oʻsimliklar va tirik tabiat onasi boʻlgan Yavanna qattiq tashvishga tushdi. U Aulëga: «Sening yaratganlaring yer bagʻrini kavlaydilar, mening daraxtlarimni esa ayovsiz chopib tashlaydilar», dedi. Yavanna Manwë huzuriga borib, oʻrmonlarni himoya qiladigan tirik vujudlar soʻradi. Eru Ilúvatar Yavannaning iltijosini qabul qilib, oʻrmonlar posboni boʻlgan Entlarni (Onodrim) barpo etdi. Elflar Oʻrta-yerda uygʻonganlarida, Entlarga gapirishni oʻrgatdilar; Entlar esa soʻzlarni va tillarni sevib qoldilar."
+    },
+    {
+      "title": "Fangorn oʻrmoni va Treebeard (Daraxtsoqol)",
+      "content": "Birinchi Davrda Entlar butun Oʻrta-yerni qoplagan cheksiz oʻrmonlar boʻylab erkin kezib yurganlar. Uchinchi Davrga kelib ularning yashash hududi faqat Tumanli Togʻlar etagidagi qadimiy Fangorn oʻrmonigacha qisqarib qoldi. Ularning eng keksa oqsoqoli Fangorn (Treebeard / Daraxtsoqol) boʻlib, u Oʻrta-yerdagi eng qadimgi tirik jonzot hisoblanadi. Entlar tashqi koʻrinishidan eman, zarang yoki togʻterakka oʻxshaydilar; ularning tanasi qattiq qobiq bilan qoplangan, koʻzlari chuqur donishmandlik va oʻtmish xotirasi bilan porlab turadi. Ular har bir masalani juda sekin, soatlab va kunlab muhokama qilishni afzal koʻradilar."
+    },
+    {
+      "title": "Yoʻqolgan Ent-xotinlar (Entwives) dardi",
+      "content": "Entlar tarixidagi eng katta fojia — ularning ayollari (Entwives)ning yoʻqolib qolishidir. Erkak Entlar yovvoyi, baland oʻrmonlarni, sharsharalarni va togʻlarni sevsalar, ularning xotinlari bogʻdorchilik, gullar, mevalar va dehqonchilikni sevar edilar. Ent-xotinlar Anduin daryosidan oʻtib, Qoʻngʻir Zaminlar (Brown Lands)da goʻzal bogʻlar barpo etdilar va insonlarga ekin ekishni oʻrgatdilar. Biroq Ikkinchi Davr oxirida Soʻnggi Ittifoq Urushi paytida Sauron bu hududni olov bilan kuydirib, butunlay choʻlga aylantirdi. Oʻshandan beri Ent-xotinlar izsiz yoʻqoldi; Entlar butun Oʻrta-yerni kezib ularni qidirdilar, ammo topa olmadilar, natijada yangi kichik Entlar (Entings) tugʻilmay qoldi."
+    },
+    {
+      "title": "Isengardga yurish va mashinaning qulashi",
+      "content": "Halqa Urushida Merry va Pippin Fangorn oʻrmoniga qochib kelib, Treebeard bilan uchrashdilar. Ular Sarumanning oʻz pechlarini yoqish uchun tirik daraxtlarni ommaviy ravishda chopib tashlayotganini koʻrsatdilar. Uch kunlik Entmoot (Kengash)dan soʻng, Entlarning sekin uygʻonuvchi dahshatli gʻazabi portladi. Ular Isengard qalʼasiga bostirib keldilar. Entlar oʻzlarining yalangʻoch qudratli qoʻllari bilan Sarumanning qalin tosh devorlarini xuddi non kabi parchalab tashladilar va Isen daryosi toʻgʻonini buzib, butun yerosti sanoat fabrikalarini suv ostida qoldirdilar. Bu gʻalaba Sauron va Sarumanning shimoliy qanotini butunlay tor-mor etdi."
+    },
+    {
+      "title": "Ent tili (Entish), xotira va Vaqt tushunchasi",
+      "content": "Entlar oʻzlarining sekin va chuqur dunyoqarashlariga mos boʻlgan \"Entish\" tilini yaratganlar. Bu tilda har bir soʻz nihoyatda uzun va ohangdor boʻlib, buyum yoki hodisaning butun tarixini oʻzida jamlaydi. Entlar hech qachon shoshilmaganlar; ularning kengashi (Entmoot) kunlab davom etgan, chunki muhim masalalarni tezda hal qilishni bemaʼnilik deb bilganlar. Ular daraxtlarning har bir bargini, butalar va toshlarni yaxshi taniganlar hamda asrlar davomida Fangorn oʻrmonining tirik xotirasi va soqchisi boʻlib xizmat qilganlar. Entlar hatto Moria tubidan chiqqan qadimgi maxluqlarga qarshi tura oladigan yagona tirik kuch edi. Ularning ildizlari qoyalarni talqon qilar, zarbalari esa temir qalqonlarni yirtib tashlardi."
+    }
+  ]
+}

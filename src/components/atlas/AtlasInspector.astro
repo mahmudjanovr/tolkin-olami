@@ -1,0 +1,464 @@
+---
+import CitationBlock from '@/components/editorial/CitationBlock.astro';
+import ProvenanceBadge from '@/components/editorial/ProvenanceBadge.astro';
+import type { PlaceData } from '@/content/schemas';
+
+export interface AssociatedCharacter {
+  id: string;
+  name: string;
+  href: string;
+}
+
+export type EnrichedPlaceData = PlaceData & {
+  associated_characters?: AssociatedCharacter[];
+};
+
+interface Props {
+  initialPlace?: EnrichedPlaceData;
+}
+
+const { initialPlace } = Astro.props;
+---
+
+<aside
+  id="atlas-inspector"
+  class:list={['atlas-inspector', { 'is-active': !!initialPlace }]}
+  aria-label="Tanlangan joy maʼlumotlari"
+  data-selected-id={initialPlace?.id || ''}
+>
+  <!-- Mobil surish (drag) dastagi -->
+  <div class="mobile-drag-handle" aria-hidden="true">
+    <span class="handle-bar"></span>
+  </div>
+
+  <div class="inspector-header">
+    <div class="inspector-meta">
+      <span class="inspector-tag" id="inspector-region">
+        {initialPlace ? (initialPlace.region === 'beleriand' ? 'Beleriand' : 'Oʻrta-yer') : 'Atlas Koʻrsatkichi'}
+      </span>
+      <span class="inspector-type" id="inspector-type">
+        {initialPlace?.type || ''}
+      </span>
+    </div>
+
+    <button
+      type="button"
+      id="inspector-close-btn"
+      class="inspector-close-btn"
+      aria-label="Maʼlumot panelini yopish"
+    >
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="6"></line>
+      </svg>
+    </button>
+  </div>
+
+  <div class="inspector-body">
+    <!-- Joy tanlanmagan holatdagi bo'sh xabar -->
+    <div id="inspector-empty-state" class:list={['empty-state', { hidden: !!initialPlace }]}>
+      <div class="empty-icon" aria-hidden="true">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"></circle>
+          <line x1="12" y1="8" x2="12" y2="12"></line>
+          <line x1="12" y1="16" x2="12.01" y2="16"></line>
+        </svg>
+      </div>
+      <h3 class="empty-title">Maskan Tanlanmagan</h3>
+      <p class="empty-desc">
+        Xaritadagi markerlardan birini bosing yoki toponimlar katalogidan qidiring.
+      </p>
+    </div>
+
+    <!-- Joy ma'lumotlari konteyneri -->
+    <div id="inspector-content" class:list={['inspector-content', { hidden: !initialPlace }]}>
+      <header class="place-header">
+        <h2 id="inspector-name" class="place-title">
+          {initialPlace?.name || ''}
+        </h2>
+        <div id="inspector-elvish" class="place-elvish-name">
+          {initialPlace?.elvish_name ? `(${initialPlace.elvish_name})` : ''}
+        </div>
+      </header>
+
+      <div class="status-row" id="inspector-status-container">
+        {initialPlace && <ProvenanceBadge status={initialPlace.textual_status} />}
+      </div>
+
+      <div class="coords-box">
+        <span class="coords-label">Xarita koordinatalari:</span>
+        <code id="inspector-coords">
+          {initialPlace?.coordinates ? `X: ${initialPlace.coordinates.x}, Y: ${initialPlace.coordinates.y}` : ''}
+        </code>
+      </div>
+
+      <p id="inspector-summary" class="place-summary">
+        {initialPlace?.summary || ''}
+      </p>
+
+      <dl class="meta-list" id="inspector-meta-list">
+        <div class="meta-row" id="meta-founded-row" style={initialPlace?.founded_era ? '' : 'display: none;'}>
+          <dt>Asos solingan:</dt>
+          <dd id="inspector-founded">{initialPlace?.founded_era || ''}</dd>
+        </div>
+
+        <div class="meta-row" id="meta-destroyed-row" style={initialPlace?.destroyed_era ? '' : 'display: none;'}>
+          <dt>Qulagan davri:</dt>
+          <dd id="inspector-destroyed">{initialPlace?.destroyed_era || ''}</dd>
+        </div>
+
+        <div class="meta-row" id="meta-rulers-row" style={initialPlace?.rulers?.length ? '' : 'display: none;'}>
+          <dt>Hukmdorlar:</dt>
+          <dd id="inspector-rulers">{initialPlace?.rulers?.join(', ') || ''}</dd>
+        </div>
+
+        <div class="meta-row" id="meta-characters-row" style={initialPlace?.associated_characters?.length ? '' : 'display: none;'}>
+          <dt>Bogʻliq shaxslar:</dt>
+          <dd id="inspector-characters" class="inspector-characters-pills">
+            {initialPlace?.associated_characters?.map((char) => (
+              <a href={char.href} class="inspector-char-pill">
+                {char.name}
+              </a>
+            ))}
+          </dd>
+        </div>
+      </dl>
+
+      <div class="citations-section">
+        <h4 class="citations-title">Matn Manbalari va Iqtiboslar</h4>
+        <div id="inspector-citations">
+          {initialPlace?.sources && <CitationBlock sources={initialPlace.sources} />}
+        </div>
+      </div>
+
+      <div class="inspector-article-action">
+        <a
+          id="inspector-article-link"
+          href={initialPlace ? `/xaritalar/${initialPlace.id}/` : '/xaritalar/'}
+          class="inspector-article-btn"
+        >
+          📖 Toponim maqolasini oʻqish →
+        </a>
+      </div>
+    </div>
+  </div>
+</aside>
+
+<style>
+  .atlas-inspector {
+    position: absolute;
+    top: 1.25rem;
+    right: 1.25rem;
+    width: 380px;
+    max-width: calc(100% - 2.5rem);
+    max-height: calc(100% - 2.5rem);
+    background-color: var(--color-bg-elevated);
+    border: 1px solid var(--color-border-strong);
+    border-radius: 8px;
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.45);
+    display: none;
+    flex-direction: column;
+    overflow-y: auto;
+    font-family: var(--font-sans-ui);
+    box-sizing: border-box;
+    z-index: 1000;
+  }
+
+  .atlas-inspector.is-active {
+    display: flex;
+  }
+
+  .mobile-drag-handle {
+    display: none;
+    justify-content: center;
+    padding: 0.75rem 0 0.25rem;
+  }
+
+  .handle-bar {
+    width: 40px;
+    height: 4px;
+    background-color: var(--color-border-strong);
+    border-radius: 2px;
+  }
+
+  .inspector-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.25rem 1.5rem;
+    border-bottom: 1px solid var(--color-border-subtle);
+    background-color: var(--color-bg-base);
+  }
+
+  .inspector-meta {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .inspector-tag {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-accent-gold);
+  }
+
+  .inspector-type {
+    font-size: 0.6875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-muted);
+    background-color: var(--color-bg-elevated);
+    padding: 0.15rem 0.4rem;
+    border-radius: 3px;
+    border: 1px solid var(--color-border-subtle);
+  }
+
+  .inspector-close-btn {
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: var(--color-text-muted);
+    cursor: pointer;
+    padding: 0.35rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.15s ease;
+  }
+
+  .inspector-close-btn:hover {
+    color: var(--color-text-primary);
+    background-color: var(--color-bg-elevated);
+    border-color: var(--color-border-subtle);
+  }
+
+  .inspector-close-btn:focus-visible {
+    outline: 2px solid var(--color-accent-gold);
+  }
+
+  .inspector-body {
+    padding: 1.5rem;
+    flex-grow: 1;
+  }
+
+  .empty-state {
+    text-align: center;
+    padding: 3rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .empty-state.hidden,
+  .inspector-content.hidden {
+    display: none !important;
+  }
+
+  .empty-icon {
+    color: var(--color-accent-gold);
+    margin-bottom: 1rem;
+  }
+
+  .empty-title {
+    font-family: var(--font-serif-heading);
+    font-size: 1.25rem;
+    color: var(--color-text-primary);
+    margin: 0 0 0.5rem;
+  }
+
+  .empty-desc {
+    font-family: var(--font-serif-body);
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    color: var(--color-text-muted);
+    margin: 0;
+    max-width: 280px;
+  }
+
+  .place-header {
+    margin-bottom: 1rem;
+  }
+
+  .place-title {
+    font-family: var(--font-serif-heading);
+    font-size: 1.625rem;
+    color: var(--color-text-primary);
+    margin: 0 0 0.25rem;
+    line-height: 1.25;
+  }
+
+  .place-elvish-name {
+    font-family: var(--font-serif-body);
+    font-style: italic;
+    font-size: 1.0625rem;
+    color: var(--color-text-secondary);
+  }
+
+  .status-row {
+    margin-bottom: 1rem;
+  }
+
+  .coords-box {
+    background-color: var(--color-bg-base);
+    border: 1px solid var(--color-border-subtle);
+    padding: 0.5rem 0.75rem;
+    border-radius: 4px;
+    font-size: 0.8125rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.25rem;
+  }
+
+  .coords-label {
+    color: var(--color-text-muted);
+  }
+
+  .coords-box code {
+    font-weight: 600;
+    color: var(--color-text-primary);
+  }
+
+  .place-summary {
+    font-family: var(--font-serif-body);
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--color-text-primary);
+    margin: 0 0 1.5rem;
+  }
+
+  .meta-list {
+    margin: 0 0 1.5rem;
+    border-top: 1px solid var(--color-border-subtle);
+    border-bottom: 1px solid var(--color-border-subtle);
+    padding: 0.75rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+  }
+
+  .meta-row {
+    display: flex;
+    gap: 0.75rem;
+  }
+
+  .meta-row dt {
+    color: var(--color-text-muted);
+    font-weight: 600;
+    min-width: 110px;
+  }
+
+  .meta-row dd {
+    margin: 0;
+    color: var(--color-text-secondary);
+  }
+
+  .inspector-characters-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.375rem;
+    align-items: center;
+  }
+
+  .inspector-char-pill {
+    font-size: 0.8125rem;
+    padding: 2px 7px;
+    border-radius: 3px;
+    background-color: var(--color-bg-base);
+    border: 1px solid var(--color-border-subtle);
+    color: var(--color-accent-gold);
+    text-decoration: none;
+    transition: border-color 0.15s ease, background-color 0.15s ease;
+  }
+
+  .inspector-char-pill:hover,
+  .inspector-char-pill:focus-visible {
+    border-color: var(--color-accent-gold);
+    background-color: var(--color-bg-subtle);
+  }
+
+  .citations-section {
+    padding-top: 0.5rem;
+  }
+
+  .citations-title {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-text-muted);
+    margin: 0 0 0.75rem;
+  }
+
+  .inspector-article-action {
+    margin-top: 1.25rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--color-border-subtle);
+  }
+
+  .inspector-article-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0.55rem 0.85rem;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: var(--color-accent-gold);
+    background-color: var(--color-bg-base);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 4px;
+    text-decoration: none;
+    transition: border-color 0.15s ease, background-color 0.15s ease;
+    box-sizing: border-box;
+  }
+
+  .inspector-article-btn:hover,
+  .inspector-article-btn:focus-visible {
+    border-color: var(--color-accent-gold);
+    background-color: var(--color-bg-subtle);
+  }
+
+  /* Mobil Moslashuv (Bottom Sheet) */
+  @media (max-width: 768px) {
+    .atlas-inspector {
+      position: fixed;
+      display: flex;
+      pointer-events: none;
+      top: auto;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      max-width: 100%;
+      height: 65vh;
+      max-height: 80vh;
+      border-left: none;
+      border-top: 2px solid var(--color-border-strong);
+      z-index: 1000;
+      box-shadow: 0 -8px 28px rgba(0, 0, 0, 0.35);
+      border-radius: 16px 16px 0 0;
+      transform: translateY(105%);
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .atlas-inspector.is-active {
+      transform: translateY(0);
+      pointer-events: auto;
+    }
+
+    .mobile-drag-handle {
+      display: flex;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .atlas-inspector {
+        transition: none !important;
+      }
+    }
+  }
+</style>

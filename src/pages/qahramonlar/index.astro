@@ -1,0 +1,672 @@
+---
+import { getCollection } from 'astro:content';
+import EditorialLayout from '@/layouts/EditorialLayout.astro';
+import ProvenanceBadge from '@/components/editorial/ProvenanceBadge.astro';
+import CharacterPortrait from '@/components/character/CharacterPortrait.astro';
+
+import { CHARACTER_PORTRAITS } from '@/data/character-portraits';
+
+const canonicalPortraitIds = Object.keys(CHARACTER_PORTRAITS);
+const allCharacters = await getCollection('characters');
+const characters = allCharacters.sort((a, b) => {
+  const aId = a.data.id || a.id;
+  const bId = b.data.id || b.id;
+  const aIdx = canonicalPortraitIds.indexOf(aId);
+  const bIdx = canonicalPortraitIds.indexOf(bId);
+  if (aIdx !== -1 && bIdx !== -1) {
+    return aIdx - bIdx;
+  }
+  if (aIdx !== -1) return -1;
+  if (bIdx !== -1) return 1;
+  return a.data.name.localeCompare(b.data.name, 'uz');
+});
+
+const breadcrumbs = [
+  { label: 'Qahramonlar' },
+];
+
+const totalCount = characters.length;
+const elvesCount = characters.filter((c) => c.data.race === 'elflar').length;
+const menCount = characters.filter((c) => c.data.race === 'insonlar').length;
+const ainurCount = characters.filter((c) => c.data.race === 'ainur').length;
+const dwarvesCount = characters.filter((c) => c.data.race === 'mitti-odamlar').length;
+const hobbitsCount = characters.filter((c) => c.data.race === 'xobbitlar').length;
+const othersCount = characters.filter(
+  (c) => c.data.race === 'boshqa'
+).length;
+
+const raceFilters = [
+  { id: 'all', label: 'Barchasi', count: totalCount },
+  { id: 'elflar', label: 'Elflar', count: elvesCount },
+  { id: 'insonlar', label: 'Insonlar', count: menCount },
+  { id: 'ainur', label: 'Ainur (Valar va Maiar)', count: ainurCount },
+  { id: 'mitti-odamlar', label: 'Mittilar', count: dwarvesCount },
+  { id: 'xobbitlar', label: 'Xobbitlar', count: hobbitsCount },
+  { id: 'other', label: 'Ajdarlar va Boshqa', count: othersCount },
+];
+
+const houseOptions = [
+  { id: 'all', label: 'Barcha sulolalar' },
+  { id: 'finwe-xonadoni', label: 'Finwë Xonadoni (Noldor)' },
+  { id: 'edain-va-yarim-elflar', label: 'Edain va Yarim-Elflar (Peredhil)' },
+  { id: 'elros-va-gondor-shohlari', label: 'Elros va Gondor Shohlari' },
+  { id: 'rohan-shohlari', label: 'Rohan Shohlari (Eorl Xonadoni)' },
+  { id: 'durin-avlodlari', label: 'Durin Avlodlari (Khazad-dûm)' },
+  { id: 'shayr-xonadonlari', label: 'Shayr Xonadonlari (Xobbitlar)' },
+];
+
+const statusOptions = [
+  { id: 'all', label: 'Barcha matn maqomlari' },
+  { id: 'author_published', label: 'Muallif nashri (Primary Canon)' },
+  { id: 'posthumous_edited', label: 'Vafotidan keyingi tahrir' },
+  { id: 'disputed_variant', label: 'Munozarali / Qoralama variant' },
+];
+---
+
+<EditorialLayout
+  title="Qahramonlar va Tarixiy Shaxslar"
+  category="Ensiklopediya Katalogi"
+  description="Arda olamidagi Ainur, Elflar, Insonlar, Mitti-odamlar, Xobbitlar va boshqa xalqlar namoyandalari tahliliy biografiyalari."
+  breadcrumbs={breadcrumbs}
+>
+  <div class="catalog-overview">
+    <p class="catalog-intro">
+      Ushbu boʻlimda J.R.R. Tolkien asarlaridagi har bir qahramonning kelib chiqishi, filologik nomlanishi,
+      sulolaviy shajarasi, matn tarixi hamda birlamchi manbalarga asoslangan tarjimayi holi jamlangan.
+    </p>
+
+    <!-- Interaktiv Prosopografik Filtrlar Paneli -->
+    <section class="prosopography-controls" role="search" aria-label="Qahramonlarni qidirish va saralash">
+      <div class="controls-top-row">
+        <div class="char-search-wrap">
+          <input
+            type="search"
+            id="char-search-input"
+            class="char-search-input"
+            placeholder="Qahramon ismi, asl nomi, unvoni yoki madaniyati..."
+            aria-label="Qahramonlar boʻyicha qidirish"
+            autocomplete="off"
+          />
+        </div>
+        <div class="select-filters-row">
+          <label class="visually-hidden" for="char-house-select">Sulola boʻyicha saralash</label>
+          <select id="char-house-select" class="char-filter-select">
+            {houseOptions.map((h) => (
+              <option value={h.id}>{h.label}</option>
+            ))}
+          </select>
+
+          <label class="visually-hidden" for="char-status-select">Matn maqomi boʻyicha saralash</label>
+          <select id="char-status-select" class="char-filter-select">
+            {statusOptions.map((s) => (
+              <option value={s.id}>{s.label}</option>
+            ))}
+          </select>
+        </div>
+      </div>
+
+      <div class="race-chips-row" role="toolbar" aria-label="Irq va toifa boʻyicha saralash">
+        {raceFilters.map((r, idx) => (
+          <button
+            type="button"
+            class={`race-chip ${idx === 0 ? 'is-active' : ''}`}
+            data-race-filter={r.id}
+            aria-pressed={idx === 0 ? 'true' : 'false'}
+          >
+            <span>{r.label}</span>
+            <span class="chip-num">{r.count}</span>
+          </button>
+        ))}
+      </div>
+
+      <div class="filter-status-bar">
+        <span id="char-results-count" class="char-results-count" role="status" aria-live="polite">
+          Jami: <strong>{totalCount}</strong> ta shaxs
+        </span>
+        <button type="button" id="char-reset-btn" class="char-reset-btn" style="display: none;">
+          Filtrlarni tozalash ✕
+        </button>
+      </div>
+    </section>
+
+    <div id="char-empty-state" class="char-empty-state" style="display: none;">
+      <p class="empty-title">Tanlangan mezonlarga mos qahramon topilmadi</p>
+      <p class="empty-desc">Qidiruv soʻzini oʻzgartiring yoki barcha filtrlarni qayta tiklang.</p>
+      <button type="button" id="char-empty-reset-btn" class="empty-reset-btn">Barcha qahramonlarni koʻrsatish</button>
+    </div>
+
+    <div class="characters-grid" id="characters-grid">
+      {
+        characters.map((char, index) => {
+          const charId = char.data.id || char.id;
+          const searchStr = [
+            char.data.name,
+            char.data.original_name,
+            char.data.culture || '',
+            char.data.sub_race || '',
+            ...(char.data.titles || []).slice(0, 2),
+          ]
+            .join(' ')
+            .toLowerCase();
+
+          return (
+            <article
+              class="character-card"
+              data-character-id={charId}
+              data-race={char.data.race}
+              data-house={char.data.house_id || ''}
+              data-status={char.data.textual_status}
+              data-search={searchStr}
+            >
+              <div class="card-portrait-col">
+                <a
+                  href={`/qahramonlar/${charId}/`}
+                  class="card-portrait-link"
+                  tabindex="-1"
+                  aria-hidden="true"
+                >
+                  <CharacterPortrait
+                    characterId={charId}
+                    name={char.data.name}
+                    size="directory"
+                    priority={index < 4}
+                  />
+                </a>
+              </div>
+              <div class="card-body-col">
+                <div class="card-header">
+                  <span class="card-race">{char.data.race}</span>
+                  <ProvenanceBadge status={char.data.textual_status} />
+                </div>
+                <h2 class="card-title">
+                  <a href={`/qahramonlar/${charId}/`}>
+                    {char.data.name}
+                  </a>
+                </h2>
+                <p class="card-alias">Asl ismi: <em>{char.data.original_name}</em></p>
+                <p class="card-summary">{char.data.summary}</p>
+                <div class="card-footer">
+                  <a href={`/qahramonlar/${charId}/`} class="card-link">
+                    Toʻliq maqolani oʻqish →
+                  </a>
+                </div>
+              </div>
+            </article>
+          );
+        })
+      }
+    </div>
+  </div>
+
+  <div slot="margin" class="catalog-sidebar">
+    <div class="margin-card">
+      <h3 class="margin-title">Prosopografik Koʻrsatkich</h3>
+      <ul class="stats-list">
+        <li>Jami biografiyalar: <strong>{totalCount} ta</strong></li>
+        <li>Elflar (Eldar): <strong>{elvesCount} ta</strong></li>
+        <li>Insonlar (Atani): <strong>{menCount} ta</strong></li>
+        <li>Ainur (Valar va Maiar): <strong>{ainurCount} ta</strong></li>
+        <li>Mittilar (Khazâd): <strong>{dwarvesCount} ta</strong></li>
+        <li>Xobbitlar (Periannath): <strong>{hobbitsCount} ta</strong></li>
+        <li>Ajdarlar va boshqa: <strong>{othersCount} ta</strong></li>
+      </ul>
+    </div>
+
+    <div class="margin-card">
+      <h3 class="margin-title">Boʻlim Standarti</h3>
+      <p>
+        Har bir qahramon kartasi kamida bitta Oksford iqtibosiga ega boʻlishi va matn maqomi (author_published, posthumous_edited yoki disputed_variant) bilan belgilanishi shart.
+      </p>
+    </div>
+  </div>
+</EditorialLayout>
+
+<script>
+  function normalizeFold(str: string): string {
+    return (str || '')
+      .toLowerCase()
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '')
+      .replace(/[ʻʼ'’`]/g, '');
+  }
+
+  function initCharacterDirectory() {
+    const searchInput = document.getElementById('char-search-input') as HTMLInputElement | null;
+    const houseSelect = document.getElementById('char-house-select') as HTMLSelectElement | null;
+    const statusSelect = document.getElementById('char-status-select') as HTMLSelectElement | null;
+    const raceButtons = document.querySelectorAll<HTMLButtonElement>('[data-race-filter]');
+    const cards = document.querySelectorAll<HTMLElement>('.character-card');
+    const countEl = document.getElementById('char-results-count');
+    const resetBtn = document.getElementById('char-reset-btn');
+    const emptyState = document.getElementById('char-empty-state');
+    const emptyResetBtn = document.getElementById('char-empty-reset-btn');
+
+    if (!searchInput || !houseSelect || !statusSelect || !cards.length) return;
+
+    let activeRace = 'all';
+
+    // Read initial URL state if present
+    const params = new URLSearchParams(window.location.search);
+    const urlRace = params.get('irq');
+    const urlHouse = params.get('xonadon');
+    const urlStatus = params.get('maqom');
+    const urlQuery = params.get('q');
+
+    if (urlRace) activeRace = urlRace;
+    if (urlHouse) houseSelect.value = urlHouse;
+    if (urlStatus) statusSelect.value = urlStatus;
+    if (urlQuery) searchInput.value = urlQuery;
+
+    function syncRaceButtons() {
+      raceButtons.forEach((btn) => {
+        const isMatch = btn.getAttribute('data-race-filter') === activeRace;
+        btn.classList.toggle('is-active', isMatch);
+        btn.setAttribute('aria-pressed', isMatch ? 'true' : 'false');
+      });
+    }
+
+    function applyFilters() {
+      const q = normalizeFold(searchInput!.value.trim());
+      const house = houseSelect!.value;
+      const status = statusSelect!.value;
+
+      let visibleCount = 0;
+
+      cards.forEach((card) => {
+        const cardRace = card.getAttribute('data-race') || '';
+        const cardHouse = card.getAttribute('data-house') || '';
+        const cardStatus = card.getAttribute('data-status') || '';
+        const cardSearch = normalizeFold(card.getAttribute('data-search') || '');
+
+        const matchesRace =
+          activeRace === 'all' ||
+          (activeRace === 'other'
+            ? cardRace === 'ajdarlar' || cardRace === 'boshqa'
+            : cardRace === activeRace);
+
+        const matchesHouse = house === 'all' || cardHouse === house;
+        const matchesStatus =
+          status === 'all' ||
+          (status === 'disputed_variant'
+            ? cardStatus === 'disputed_variant' || cardStatus === 'draft_variant'
+            : cardStatus === status);
+
+        const matchesQuery = !q || cardSearch.includes(q);
+
+        const isVisible = matchesRace && matchesHouse && matchesStatus && matchesQuery;
+        card.style.display = isVisible ? '' : 'none';
+        if (isVisible) visibleCount++;
+      });
+
+      const isFiltered =
+        activeRace !== 'all' || house !== 'all' || status !== 'all' || q.length > 0;
+
+      if (countEl) {
+        countEl.innerHTML = isFiltered
+          ? `Topildi: <strong>${visibleCount}</strong> / ${cards.length} ta shaxs`
+          : `Jami: <strong>${cards.length}</strong> ta shaxs`;
+      }
+
+      if (resetBtn) {
+        resetBtn.style.display = isFiltered ? '' : 'none';
+      }
+
+      if (emptyState) {
+        emptyState.style.display = visibleCount === 0 ? '' : 'none';
+      }
+    }
+
+    function resetAll() {
+      activeRace = 'all';
+      searchInput!.value = '';
+      houseSelect!.value = 'all';
+      statusSelect!.value = 'all';
+      syncRaceButtons();
+      applyFilters();
+      if (window.location.search) {
+        window.history.replaceState({}, '', window.location.pathname);
+      }
+    }
+
+    raceButtons.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        activeRace = btn.getAttribute('data-race-filter') || 'all';
+        syncRaceButtons();
+        applyFilters();
+      });
+    });
+
+    searchInput.addEventListener('input', applyFilters);
+    houseSelect.addEventListener('change', applyFilters);
+    statusSelect.addEventListener('change', applyFilters);
+    resetBtn?.addEventListener('click', resetAll);
+    emptyResetBtn?.addEventListener('click', resetAll);
+
+    syncRaceButtons();
+    applyFilters();
+  }
+
+  initCharacterDirectory();
+  document.addEventListener('astro:after-swap', initCharacterDirectory);
+</script>
+
+<style>
+  .catalog-intro {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+  }
+
+  .prosopography-controls {
+    background-color: var(--color-bg-elevated);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 6px;
+    padding: 1.25rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .controls-top-row {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  @media (min-width: 768px) {
+    .controls-top-row {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+
+  .char-search-wrap {
+    flex: 1;
+  }
+
+  .char-search-input {
+    width: 100%;
+    padding: 0.6rem 0.875rem;
+    font-family: var(--font-sans-ui);
+    font-size: 0.9375rem;
+    color: var(--color-text-primary);
+    background-color: var(--color-bg-base);
+    border: 1px solid var(--color-border-strong);
+    border-radius: 4px;
+  }
+
+  .char-search-input:focus {
+    border-color: var(--color-accent-gold);
+    outline: none;
+  }
+
+  .select-filters-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .char-filter-select {
+    padding: 0.55rem 0.75rem;
+    font-family: var(--font-sans-ui);
+    font-size: 0.8125rem;
+    color: var(--color-text-primary);
+    background-color: var(--color-bg-base);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .race-chips-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+
+  .race-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.35rem 0.7rem;
+    font-family: var(--font-sans-ui);
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--color-text-secondary);
+    background-color: var(--color-bg-base);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+  }
+
+  .race-chip:hover {
+    border-color: var(--color-border-gold);
+    color: var(--color-text-primary);
+  }
+
+  .race-chip.is-active {
+    background-color: var(--color-forest);
+    border-color: var(--color-forest-deep);
+    color: #FAF8F2;
+  }
+
+  .chip-num {
+    font-size: 0.6875rem;
+    color: var(--color-text-muted);
+    opacity: 1;
+  }
+
+  .race-chip.is-active .chip-num {
+    color: inherit;
+    opacity: 1;
+  }
+
+  .filter-status-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--color-border-subtle);
+    font-family: var(--font-sans-ui);
+    font-size: 0.8125rem;
+    color: var(--color-text-muted);
+  }
+
+  .char-reset-btn,
+  .empty-reset-btn {
+    font-family: var(--font-sans-ui);
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--color-accent-gold);
+    background: none;
+    border: 1px solid var(--color-accent-gold);
+    padding: 0.25rem 0.65rem;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+  .char-empty-state {
+    background-color: var(--color-bg-elevated);
+    border: 1px dashed var(--color-border-strong);
+    border-radius: 6px;
+    padding: 2.5rem 1.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .empty-title {
+    font-family: var(--font-serif-heading);
+    font-size: 1.25rem;
+    margin-bottom: 0.35rem;
+  }
+
+  .empty-desc {
+    font-family: var(--font-sans-ui);
+    font-size: 0.875rem;
+    color: var(--color-text-secondary);
+    margin-bottom: 1rem;
+  }
+
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  .characters-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .character-card {
+    background-color: var(--color-bg-elevated);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 4px;
+    padding: 1.25rem;
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    gap: 1.25rem;
+    align-items: start;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  @media (min-width: 640px) {
+    .character-card {
+      grid-template-columns: 140px 1fr;
+      gap: 1.5rem;
+      padding: 1.5rem;
+    }
+  }
+
+  .character-card:hover {
+    border-color: var(--color-border-strong);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  }
+
+  .card-portrait-col {
+    position: relative;
+    width: 100%;
+  }
+
+  .card-portrait-link {
+    display: block;
+    text-decoration: none;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  .card-body-col {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-width: 0;
+  }
+
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .card-race {
+    font-family: var(--font-sans-ui);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-accent-gold);
+  }
+
+  .card-title {
+    font-family: var(--font-serif-heading);
+    font-size: 1.5rem;
+    margin: 0;
+  }
+
+  .card-title a {
+    color: var(--color-text-primary);
+    text-decoration: none;
+  }
+
+  .card-title a:hover {
+    color: var(--color-accent-gold);
+  }
+
+  .card-alias {
+    font-family: var(--font-sans-ui);
+    font-size: 0.8125rem;
+    color: var(--color-text-muted);
+    margin: 0;
+  }
+
+  .card-summary {
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    color: var(--color-text-secondary);
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .card-footer {
+    margin-top: auto;
+  }
+
+  .card-link {
+    font-family: var(--font-sans-ui);
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--color-text-primary);
+    text-decoration: none;
+  }
+
+  .card-link:hover {
+    color: var(--color-accent-gold);
+    text-decoration: underline;
+  }
+
+  .catalog-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .catalog-sidebar .margin-card {
+    background-color: var(--color-bg-elevated);
+    border: 1px solid var(--color-border-subtle);
+    padding: 1rem;
+    border-radius: 4px;
+    font-family: var(--font-sans-ui);
+    font-size: 0.8125rem;
+  }
+
+  .margin-title {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-muted);
+    margin-bottom: 0.5rem;
+  }
+
+  .stats-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    color: var(--color-text-secondary);
+  }
+
+  .stats-list strong {
+    color: var(--color-text-primary);
+  }
+</style>

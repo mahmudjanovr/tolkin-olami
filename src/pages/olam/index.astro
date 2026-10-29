@@ -1,0 +1,765 @@
+---
+import { getCollection } from 'astro:content';
+import EditorialLayout from '@/layouts/EditorialLayout.astro';
+import ProvenanceBadge from '@/components/editorial/ProvenanceBadge.astro';
+
+const breadcrumbs = [
+  { label: 'Arda va Kosmologiya' },
+];
+
+const allCosmology = await getCollection('cosmology');
+
+interface LightStage {
+  id: string;
+  step: number;
+  name: string;
+  subtitle: string;
+  color: string;
+  glow: string;
+  era: string;
+  nature: string;
+  description: string;
+  transmission: string;
+  actors: string[];
+  link: { text: string; href: string };
+}
+
+const LIGHT_LINEAGE: LightStage[] = [
+  {
+    id: 'secret-fire',
+    step: 1,
+    name: 'Oʻchmas Olov',
+    subtitle: 'The Secret Fire / Anar Nára',
+    color: '#f97316',
+    glow: 'rgba(249, 115, 22, 0.45)',
+    era: 'Vaqtsizlik Makonlari (Yaratilishdan avval)',
+    nature: 'Birlamchi Ilohiy Ijodkorlik Quvvati',
+    description: 'Eru Ilúvatar qalbida mavjud boʻlgan va har qanday ongli mavjudotga mustaqil hayot baxsh etuvchi ilohiy ijodkorlik alangasi. Melkor uni Boʻshliqdan (Kúma) behuda qidirgan, biroq Olov faqat Yaratuvchi ixtiyoridadir.',
+    transmission: 'Ilúvatar «Eä!» amrini aytganda Olovni yaratilishning markaziga joylashtirdi va butun moddiy olamga hayotiy ziyo baxsh etdi.',
+    actors: ['Eru Ilúvatar'],
+    link: { text: 'Ainulindalë ontologiyasi', href: '/olam/ainulindale/' },
+  },
+  {
+    id: 'lamps',
+    step: 2,
+    name: 'Illuin va Ormal',
+    subtitle: 'Buyuk Chiroqlar / The Two Lamps',
+    color: '#eab308',
+    glow: 'rgba(234, 179, 8, 0.45)',
+    era: 'Chiroqlar Davri (Valian Years)',
+    nature: 'Dastlabki Moddiy Nur Manbalari',
+    description: 'Valar Ardaning shakllanishi chogʻida Shimol (Illuin) va Janub (Ormal) qutblarida Aulë yasagan ulugʻvor ustunlar ustiga quygan oltin va kumush yogʻdular. Varda ularni nurlantirgan va Manwë muqaddaslashtirgan.',
+    transmission: 'Melkor ustunlarni agʻdarib chiroqlarni sindirgach, nurlar Oʻrta-yer tuprogʻi va suvlariga singib ketdi; Valar esa gʻarbga — Amanga koʻchib oʻtdi.',
+    actors: ['Aulë', 'Varda', 'Manwë'],
+    link: { text: 'Muqaddas Nur manbalari', href: '/olam/muqaddas-nur/' },
+  },
+  {
+    id: 'trees',
+    step: 3,
+    name: 'Telperion va Laurelin',
+    subtitle: 'Valinorning Ikki Daraxti / The Two Trees',
+    color: '#38bdf8',
+    glow: 'rgba(56, 189, 248, 0.45)',
+    era: 'Daraxtlar Davri (Y.T. 1–1495)',
+    nature: 'Aman Zaminining Tirik Ziyosi',
+    description: 'Ezellohar tepaligida Yavanna qoʻshigʻi va Nienna koʻz yoshlari bilan unib chiqqan Kumush daraxt (Telperion) va Oltin daraxt (Laurelin). Ularning nuri 7 soatlik davriy almashinuvda butun Valinorni muqaddas ziyo bilan toʻldirgan.',
+    transmission: 'Melkor va Ungoliant daraxtlar shirasini quritgach, ularning soʻnggi guli va mevasi Varda tomonidan osmonga koʻtarilib Quyosh (Anar) va Oy (Isil)ga aylantirildi.',
+    actors: ['Yavanna', 'Nienna', 'Varda'],
+    link: { text: 'Ikki Daraxt tahlili', href: '/olam/ikki-daraxt/' },
+  },
+  {
+    id: 'silmarils',
+    step: 4,
+    name: 'Silmarillar',
+    subtitle: 'Fëanorning Uch Gavhari / The Three Silmarils',
+    color: '#a855f7',
+    glow: 'rgba(168, 85, 247, 0.45)',
+    era: 'Daraxtlar Davri 1450 — Birinchi Davr',
+    nature: 'Muqaddas Gavharlarga Muhrlangan Nur',
+    description: 'Fëanor tomonidan sinmas silima kristallidan yasalgan va Ikki Daraxtning tirik nurlari mujassamlangan tengsiz uch javohir. Varda ularni qutlagan boʻlib, har qanday yovuz va nopok qoʻlni oʻtkir olovdek kuydirgan.',
+    transmission: 'Morgoth oʻgʻirlab toji ustiga qadagan. Birinchisini Beren va Lúthien tortib olgan; Birinchi davr oxirida uch gavhar osmon, yer qaʼri va dengiz tubiga — butun Eä elementlariga singib ketgan.',
+    actors: ['Fëanor', 'Varda', 'Beren', 'Lúthien'],
+    link: { text: 'Silmaril Safari tarixi', href: '/tarix/silmaril-safari/' },
+  },
+  {
+    id: 'earendil',
+    step: 5,
+    name: 'Eärendil Yulduzi',
+    subtitle: 'Gil-Estel / The Star of High Hope',
+    color: '#06b6d4',
+    glow: 'rgba(6, 182, 212, 0.45)',
+    era: 'Birinchi Davr 542 — Hozirgacha',
+    nature: 'Samoviy Qutlugʻ Sayyora',
+    description: 'Beren va Lúthien qoʻlga kiritgan Silmarilni peshonasiga taqib, oq kema Vingilótëda koinot gumbaziga koʻtarilgan Eärendil. U Oʻrta-yer osmonida eng yorqin tong yulduzi (Gil-Estel) sifatida zulmatda umid timsoli boʻlib porlaydi.',
+    transmission: 'Uning samoviy nuri Valinor suvlari orqali Galadrielning koʻzgusi va shishasiga (Phial) aks ettirildi.',
+    actors: ['Eärendil', 'Elwing', 'Varda'],
+    link: { text: 'Anar, Isil va Eärendil Yulduzi', href: '/olam/anar-va-isil/' },
+  },
+  {
+    id: 'phial',
+    step: 6,
+    name: 'Galadriel Shishasi',
+    subtitle: 'Phial of Galadriel / Eärendil Nuri',
+    color: '#22c55e',
+    glow: 'rgba(34, 197, 94, 0.45)',
+    era: 'Uchinchi Davr 3019',
+    nature: 'Zulmatni Yorituvchi Oʻrta-yer Merosi',
+    description: 'Galadriel tomonidan Frodo Bagginsga inʼom etilgan kristall shisha. Unda Galadriel favvorasi suvlari va Eärendil yulduzi nuri (yaʼni Telperion va Oʻchmas Olovning davomi) jamlangan boʻlib, Shelob gʻorida va Mordor qorongʻiligida najot berdi.',
+    transmission: 'Oʻchmas Olovning qadimiy ilohiy silsilasi Uchinchi davrda foniy qahramonlarga yovuzlikka qarshi maʼnaviy najot qalqoni boʻlib xizmat qildi.',
+    actors: ['Galadriel', 'Frodo Baggins', 'Samwise Gamgee'],
+    link: { text: 'Galadriel shaxsi va merosi', href: '/qahramonlar/galadriel/' },
+  },
+];
+
+const conceptTypeLabels: Record<string, string> = {
+  cosmic_realm: 'Kosmik Makon',
+  primeval_light: 'Ibtidoiy Nur',
+  celestial_body: 'Samoviy Jism',
+  metaphysical_force: 'Metafizik Kuch',
+};
+---
+
+<EditorialLayout
+  title="Arda Olamlari va Kosmologiya"
+  category="Kosmologiya va Metafizika"
+  description="Eä olamining yaratilishi, Valinor, Oʻrta-yer, Nur manbalari va Ilúvatar metafizik tuzilishi tahlili."
+  breadcrumbs={breadcrumbs}
+>
+  <div class="cosmology-content">
+    <p class="section-lead">
+      Tolkien olamining ontologik asosi yuksak teologik va metafizik tushunchalarga qurilgan.
+      Eru Ilúvatar, Boʻshliq (The Void), Oʻchmas Olov (The Secret Fire) va moddiy koinot (Eä) oʻrtasidagi mutanosiblik
+      ushbu boʻlimning tadqiqot mavzusidir.
+    </p>
+
+    <!-- Asosiy Kosmologik Mavzular -->
+    <div class="concepts-grid">
+      <div class="concept-card">
+        <h3>Eru Ilúvatar va Ainur</h3>
+        <p>Yagona Yaratuvchi va uning fikridan yaralgan ruhiy mohiyatlar — Valar va Maiar.</p>
+      </div>
+
+      <div class="concept-card">
+        <h3>Eä va Boʻshliq</h3>
+        <p>Yaratilish amri bilan mavjudlikka keltirilgan butun moddiy olam va uning tashqarisidagi zulmat.</p>
+      </div>
+
+      <div class="concept-card">
+        <h3>Dastlabki Nur Manbalari</h3>
+        <p>Illuin va Ormal chiroqlari, Valinorning Ikki Daraxti (Telperion va Laurelin), Quyosh va Oy.</p>
+      </div>
+
+      <div class="concept-card">
+        <h3>Dumaloq Dunyo va Yassi Arda</h3>
+        <p>Akallabêthdan avvalgi yassi dunyo hamda Numenor choʻkishidan soʻng olamning oʻzgarishi (Straight Road).</p>
+      </div>
+    </div>
+
+    <!-- Interaktiv Ibtidoiy Nur Silsilasi Diagrammasi (Lineage of Primeval Light) -->
+    <section class="light-lineage-section" id="light-lineage">
+      <div class="lineage-header">
+        <span class="lineage-kicker">Koinot Ontologiyasi</span>
+        <h2 class="sub-heading">Ibtidoiy Nur Silsilasi (Lineage of Primeval Light)</h2>
+        <p class="lineage-lead">
+          Ilúvatar qalbida yashirin Oʻchmas Olovdan to Frodoning qoʻlidagi Galadriel Shishasigacha boʻlgan
+          ilohiy ziyo silsilasi. Quyidagi bosqichlarni bosib, nur qanday qilib oʻzgarib, saqlanib va avlodlarga oʻtganini kuzatishingiz mumkin:
+        </p>
+      </div>
+
+      <!-- Silsila Tugunlari (Pipeline Stepper) -->
+      <nav class="lineage-stepper-bar" aria-label="Ibtidoiy Nur Silsilasi bosqichlari" role="tablist">
+        {LIGHT_LINEAGE.map((st, idx) => (
+          <button
+            type="button"
+            class:list={['lineage-step-btn', { 'is-active': idx === 0 }]}
+            data-stage-id={st.id}
+            role="tab"
+            aria-selected={idx === 0 ? 'true' : 'false'}
+            aria-controls={`light-stage-panel-${st.id}`}
+            id={`light-stage-tab-${st.id}`}
+            title={`${st.step}. ${st.name}`}
+          >
+            <span class="step-num-badge" style={`--stage-color: ${st.color}; --stage-glow: ${st.glow}`}>
+              {st.step}
+            </span>
+            <span class="step-btn-info">
+              <strong class="step-name">{st.name}</strong>
+              <small class="step-subtitle">{st.subtitle.split('/')[0]}</small>
+            </span>
+          </button>
+        ))}
+      </nav>
+
+      <!-- Bosqich Tafsilotlari Kartalari -->
+      <div class="lineage-panels-deck">
+        {LIGHT_LINEAGE.map((st, idx) => (
+          <article
+            class:list={['lineage-detail-card', { 'is-active': idx === 0 }]}
+            id={`light-stage-panel-${st.id}`}
+            role="tabpanel"
+            aria-labelledby={`light-stage-tab-${st.id}`}
+            data-stage-card={st.id}
+          >
+            <div class="stage-top-meta">
+              <div class="stage-order-badge" style={`background-color: ${st.color}18; border-color: ${st.color}70`}>
+                Silsila {st.step}-bosqichi / 6
+              </div>
+              <span class="stage-era-pill">{st.era}</span>
+            </div>
+
+            <div class="stage-title-row">
+              <div>
+                <h3 class="stage-heading">{st.name}</h3>
+                <span class="stage-nature-sub">{st.nature}</span>
+              </div>
+              <span class="stage-original-name">({st.subtitle})</span>
+            </div>
+
+            <p class="stage-description">{st.description}</p>
+
+            <div class="stage-meta-grid">
+              <div class="meta-cell">
+                <span class="meta-label">Nur transmissiyasi (Oʻtish qonuni):</span>
+                <p class="meta-val">{st.transmission}</p>
+              </div>
+
+              <div class="meta-cell">
+                <span class="meta-label">Bogʻliq Ainur va Qahramonlar:</span>
+                <div class="actors-tags">
+                  {st.actors.map((actor) => (
+                    <span class="actor-tag">✦ {actor}</span>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            <div class="stage-card-footer">
+              <a href={st.link.href} class="stage-read-link">
+                <span>{st.link.text}</span>
+                <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <!-- Kanonik Kosmologiya Entitilari Katalogi -->
+    {allCosmology.length > 0 && (
+      <section class="cosmology-catalog-section">
+        <h2 class="section-heading">Kanonik Ontologik Tushunchalar</h2>
+        <div class="cosmo-cards-grid">
+          {allCosmology.map((c) => (
+            <article class="cosmo-entity-card">
+              <div class="card-top">
+                <span class="type-pill">{conceptTypeLabels[c.data.concept_type] || c.data.concept_type}</span>
+                <ProvenanceBadge status={c.data.textual_status} />
+              </div>
+              <h3 class="card-title">
+                <a href={`/olam/${c.data.id || c.id}/`}>
+                  {c.data.name}
+                </a>
+              </h3>
+              <p class="card-summary">{c.data.summary}</p>
+              <div class="card-footer">
+                <a href={`/olam/${c.data.id || c.id}/`} class="card-link">
+                  Ontologik tahlilni oʻqish →
+                </a>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+    )}
+  </div>
+
+  <div slot="margin">
+    <div class="margin-card">
+      <h3 class="margin-title">Metafizika Meʼyori</h3>
+      <p>
+        Kosmologik tadqiqotlarda "Ainulindalë" va HoME 10-jildidagi "Morgoth's Ring" manbalari asos qilib olinadi.
+      </p>
+    </div>
+    <div class="margin-card">
+      <h3 class="margin-title">Boʻshliq va Ziyo</h3>
+      <p>
+        Kúma (Boʻshliq) moddiy emas, balki Eä dan tashqaridagi makondir. Yashirin Olov (The Secret Fire) esa hayot bagʻishlovchi quvvatdir.
+      </p>
+    </div>
+  </div>
+</EditorialLayout>
+
+<style>
+  .section-lead {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+  }
+
+  .concepts-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    margin-bottom: 3rem;
+  }
+
+  @media (min-width: 640px) {
+    .concepts-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .concept-card {
+    background-color: var(--color-bg-elevated);
+    border: 1px solid var(--color-border-subtle);
+    padding: 1.25rem;
+    border-radius: 4px;
+  }
+
+  .concept-card h3 {
+    font-size: 1.0625rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+
+  .concept-card p {
+    font-size: 0.875rem;
+    line-height: 1.6;
+    color: var(--color-text-secondary);
+    margin: 0;
+  }
+
+  .cosmology-catalog-section {
+    padding-top: 2rem;
+    border-top: 1px solid var(--color-border-subtle);
+  }
+
+  .section-heading {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 1.25rem;
+    color: var(--color-text-primary);
+  }
+
+  .cosmo-cards-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  @media (min-width: 640px) {
+    .cosmo-cards-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .cosmo-entity-card {
+    display: flex;
+    flex-direction: column;
+    padding: 1.25rem;
+    background-color: var(--color-bg-elevated);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 3px;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  }
+
+  .cosmo-entity-card:hover {
+    border-color: var(--color-border-gold);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.625rem;
+  }
+
+  .type-pill {
+    font-family: var(--font-sans-ui);
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--color-accent-gold-text);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  .card-title {
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+
+  .card-title a {
+    color: var(--color-text-primary);
+    text-decoration: none;
+  }
+
+  .card-title a:hover {
+    color: var(--color-accent-gold-text);
+  }
+
+  .card-summary {
+    font-size: 0.875rem;
+    line-height: 1.6;
+    color: var(--color-text-secondary);
+    margin-bottom: 1rem;
+    flex-grow: 1;
+  }
+
+  .card-footer {
+    margin-top: auto;
+  }
+
+  .card-link {
+    font-family: var(--font-sans-ui);
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: var(--color-link);
+    text-decoration: none;
+  }
+
+  .card-link:hover {
+    text-decoration: underline;
+  }
+
+  /* ==========================================================================
+     Lineage of Primeval Light (Ibtidoiy Nur Silsilasi) Styles
+     ========================================================================== */
+  .light-lineage-section {
+    background-color: var(--color-bg-elevated);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 3px;
+    padding: 1.75rem;
+    margin-bottom: 3.5rem;
+    box-shadow: var(--shadow-sm);
+  }
+
+  .lineage-header {
+    margin-bottom: 1.5rem;
+  }
+
+  .lineage-kicker {
+    display: inline-block;
+    font-family: var(--font-sans-ui);
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-accent-gold-text);
+    margin-bottom: 0.35rem;
+  }
+
+  .lineage-lead {
+    font-size: 0.9375rem;
+    line-height: 1.65;
+    color: var(--color-text-secondary);
+    margin: 0;
+  }
+
+  .lineage-stepper-bar {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.625rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.25rem;
+    border-bottom: 1px solid var(--color-border-subtle);
+  }
+
+  @media (min-width: 640px) {
+    .lineage-stepper-bar {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media (min-width: 900px) {
+    .lineage-stepper-bar {
+      grid-template-columns: repeat(6, 1fr);
+    }
+  }
+
+  .lineage-step-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    padding: 0.5rem 0.625rem;
+    background-color: var(--color-bg-base);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: left;
+    transition: all 0.2s ease;
+  }
+
+  .lineage-step-btn:hover {
+    border-color: var(--color-border-gold);
+    transform: translateY(-1px);
+  }
+
+  .lineage-step-btn.is-active {
+    background-color: var(--color-accent-gold-subtle);
+    border-color: var(--color-border-gold);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .step-num-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: var(--stage-color);
+    color: #ffffff;
+    font-size: 0.8125rem;
+    font-weight: 700;
+    font-family: var(--font-sans-ui);
+    box-shadow: 0 0 8px var(--stage-glow);
+    flex-shrink: 0;
+  }
+
+  .step-btn-info {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+  }
+
+  .step-name {
+    font-size: 0.8125rem;
+    color: var(--color-text-primary);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .step-subtitle {
+    font-size: 0.6875rem;
+    color: var(--color-text-muted);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .lineage-panels-deck {
+    position: relative;
+  }
+
+  .lineage-detail-card {
+    display: none;
+    background-color: var(--color-bg-elevated);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 3px;
+    padding: 1.5rem;
+    animation: fadeInStage 0.25s ease-in-out;
+  }
+
+  .lineage-detail-card.is-active {
+    display: block;
+  }
+
+  @keyframes fadeInStage {
+    from {
+      opacity: 0;
+      transform: translateY(4px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .stage-top-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.875rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .stage-order-badge {
+    font-family: var(--font-sans-ui);
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 0.25rem 0.625rem;
+    border-radius: 4px;
+    border: 1px solid;
+    color: var(--color-text-primary);
+  }
+
+  .stage-era-pill {
+    font-family: var(--font-sans-ui);
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+    background-color: var(--color-bg-surface);
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    border: 1px solid var(--color-border-subtle);
+  }
+
+  .stage-title-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--color-border-subtle);
+  }
+
+  .stage-heading {
+    font-size: 1.375rem;
+    font-weight: 700;
+    color: var(--color-text-primary);
+    margin: 0 0 0.25rem 0;
+  }
+
+  .stage-nature-sub {
+    font-family: var(--font-sans-ui);
+    font-size: 0.8125rem;
+    color: var(--color-accent-gold);
+    font-weight: 600;
+  }
+
+  .stage-original-name {
+    font-size: 0.8125rem;
+    color: var(--color-text-muted);
+    font-style: italic;
+  }
+
+  .stage-description {
+    font-size: 0.9375rem;
+    line-height: 1.65;
+    color: var(--color-text-secondary);
+    margin-bottom: 1.25rem;
+  }
+
+  .stage-meta-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-bottom: 1.25rem;
+    background-color: var(--color-bg-surface);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 6px;
+    padding: 1rem;
+  }
+
+  @media (min-width: 640px) {
+    .stage-meta-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .meta-cell {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+
+  .meta-label {
+    font-family: var(--font-sans-ui);
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--color-text-muted);
+  }
+
+  .meta-val {
+    font-size: 0.875rem;
+    line-height: 1.55;
+    color: var(--color-text-primary);
+    margin: 0;
+  }
+
+  .actors-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+  }
+
+  .actor-tag {
+    font-family: var(--font-sans-ui);
+    font-size: 0.75rem;
+    padding: 0.2rem 0.5rem;
+    background-color: var(--color-bg-elevated);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 4px;
+    color: var(--color-text-secondary);
+  }
+
+  .stage-card-footer {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .stage-read-link {
+    font-family: var(--font-sans-ui);
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--color-accent-gold);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+  }
+
+  .stage-read-link:hover {
+    text-decoration: underline;
+  }
+</style>
+
+<script>
+  function initLightLineage() {
+    const stepButtons = document.querySelectorAll<HTMLButtonElement>('.lineage-step-btn');
+    const stageCards = document.querySelectorAll<HTMLElement>('.lineage-detail-card');
+
+    if (!stepButtons.length || !stageCards.length) return;
+
+    stepButtons.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const stageId = btn.getAttribute('data-stage-id');
+        if (!stageId) return;
+
+        stepButtons.forEach((b) => {
+          const isActive = b === btn;
+          b.classList.toggle('is-active', isActive);
+          b.setAttribute('aria-selected', isActive ? 'true' : 'false');
+        });
+
+        stageCards.forEach((c) => {
+          const isTarget = c.getAttribute('data-stage-card') === stageId;
+          c.classList.toggle('is-active', isTarget);
+        });
+      });
+
+      // Klaviatura boshqaruvi
+      btn.addEventListener('keydown', (e) => {
+        const btnsArray = Array.from(stepButtons);
+        const index = btnsArray.indexOf(btn);
+
+        if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
+          e.preventDefault();
+          const next = btnsArray[(index + 1) % btnsArray.length];
+          next?.focus();
+          next?.click();
+        } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+          e.preventDefault();
+          const prev = btnsArray[(index - 1 + btnsArray.length) % btnsArray.length];
+          prev?.focus();
+          prev?.click();
+        }
+      });
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initLightLineage);
+  } else {
+    initLightLineage();
+  }
+</script>

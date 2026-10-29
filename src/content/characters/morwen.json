@@ -1,0 +1,71 @@
+{
+  "id": "morwen",
+  "name": "Morwen Eledhwen",
+  "original_name": "Morwen Eledhwen",
+  "father_name": "Baragund (Bëor Xonadonidan)",
+  "spouse": "Húrin Thalion",
+  "children": [
+    "Túrin Turambar",
+    "Urwen Lalaith",
+    "Niënor Níniel"
+  ],
+  "aliases": [
+    "Eledhwen (Sindarin: Elf Nuri / Elfdek Goʻzal)",
+    "Dor-lómin Xonimasi"
+  ],
+  "titles": [
+    "Dor-lómin Malikasi",
+    "Bëor Xonadoni Aslzodasi"
+  ],
+  "race": "insonlar",
+  "sub_race": "Edain (Bëor Xonadoni)",
+  "culture": "Dor-lómin / Doriath",
+  "birth_year": "Birinchi davr 443",
+  "death_year": "Birinchi davr 500 (Cabed-en-Arasda Húrin qoʻlida vafot etgan; Tol Morwen toshi ostida qolgan)",
+  "house_id": "edain-va-yarim-elflar",
+  "weapons_and_artifacts": [
+    "Dor-lómin Ajdar-dubulgʻasi (oʻgʻli Túringa Doriathga yuborgan)",
+    "Tol Morwen yodgorlik toshi"
+  ],
+  "primary_locations": ["mithrim", "menegroth", "doriath", "beleriand"],
+  "textual_status": "posthumous_edited",
+  "summary": "Bëor Xonadonining Baragund naslidan boʻlgan magʻrur va sohibjamol ayol, Berenning amakivachchasi, Húrinning sodiq umr yoʻldoshi hamda Túrin va Niënorning onasi. Nirnaeth Arnoediaddan keyin bosib olingan Dor-lóminda Sharqlik bosqinchilarga bosh egmay, oʻgʻli Túrinni Doriathga joʻnatgan va umrining oxirida farzandlari qabri ustida eri Húrin bilan uchrashib jon bergan.",
+  "etymology": "Sindarin tilida 'Morwen' — môr ('qorongʻu, qora sochli') va gwend ('qiz, xonim') soʻzlaridan tuzilgan. Uning ulugʻvorligi va goʻzalligi uchun berilgan 'Eledhwen' unvoni esa 'Elfdek Yorqin / Elf Nuri' maʼnosini anglatadi.",
+  "biography_sections": [
+    {
+      "title": "Dor-lómin Xonimasi va Túrin bilan ayriliq",
+      "content": "Morwen Dagor Bragollach jangidan soʻng Dorthoniondan qochib chiqqan Bëor xonadoni ayollaridan boʻlib, qora sochlari, baland boʻyi va magʻrur nigohi tufayli uni hatto elf malikalariga qiyoslashar edi. Húrin Thalion unga uylandi va ulardan Túrin hamda qizaloq Lalaith tugʻildi (Lalaith bolaligida Angbanddan esgan 'Yovuz Nafas' vabosidan vafot etdi).\n\nNirnaeth Arnoediadda Húrin asir tushib, Dor-lómin xiyonatkor Sharqliklar (Easterlings) qoʻliga oʻtgach, homilador Morwen qullikka tushmasligi uchun sakkiz yoshli Túrinni yashirincha Doriath qiroli Thingol huzuriga joʻnatdi. Koʻp oʻtmay u qizi Niënorni dunyoga keltirdi; Sharqliklar Morwenni 'elf jodugari' deb bilib, unga tegishga jurʼat eta olmadilar."
+    },
+    {
+      "title": "Doriathga yoʻl, Nargothrond qidiruvi va Tol Morwen",
+      "content": "Túrin Doriathda ulgʻayganidan soʻng yoʻllar ochilgach, Morwen qizi Niënor bilan Menegrothga koʻchib oʻtdi, ammo Túrin allaqachon ketib qolgan edi. Túrin Nargothrondda ekanini eshitgan Morwen Melian va Thingolning ogohlantirishlariga quloq solmay, oʻgʻlini izlab yoʻlga chiqdi.\n\nGlaurung koʻtargan sehrli tuman ichida Morwen otidan ayrilib, oʻrmonlarda yoʻqolib qoldi. Yillar oʻtib, keksaygan va qaygʻudan ezilgan Morwen Cabed-en-Aras darasidagi qabrtosh — Túrin va Niënor dafn etilgan joyni topib keldi. Aynan oʻsha oqshom ozodlikka chiqqan Húrin ham u yerga yetib keldi; Morwen eriga faqat: 'Sen juda kech kelding, ular yoʻqolib ketishdi', deya oldi va quyosh chiqishi bilan Húrinning ogʻushida jon berdi. Beleriand dengiz ostiga choʻkkanida ham Morwen va Túrin qabrtoshi — 'Tol Morwen' oroli suv ustida mangu saqlanib qoldi."
+    }
+  ],
+  "sources": [
+    {
+      "book_slug": "the-children-of-hurin",
+      "chapter": "The Departure of Túrin",
+      "page": "66"
+    },
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of Túrin Turambar",
+      "page": "198"
+    },
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of the Ruin of Doriath",
+      "page": "228"
+    }
+  ],
+  "related_characters": [
+    "hurin",
+    "turin",
+    "nienor",
+    "beren",
+    "thingol",
+    "melian",
+    "glaurung"
+  ],
+  "adaptations": []
+}

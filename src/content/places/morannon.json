@@ -1,0 +1,57 @@
+{
+  "id": "morannon",
+  "name": "Morannon (Qora Darvoza)",
+  "elvish_name": "Morannon (Cirith Gorgor)",
+  "type": "qalʼa",
+  "region": "orta-yer",
+  "coordinates": {
+    "map_id": "orta-yer",
+    "x": 1295,
+    "y": 720
+  },
+  "founded_era": "Ikkinchi davr (qayta mustahkamlangan: Uchinchi davr)",
+  "destroyed_era": "Uchinchi davr 3019 (25-mart)",
+  "rulers": [
+    "Sauron",
+    "Sauron Ogʻzi (Qora Darvoza noibi)"
+  ],
+  "notable_events": [
+    "Frodo, Sam va Gollumning Qora Darvoza oldiga yetib kelishi va Ithilien yoʻlini tanlashi",
+    "Morannon jangi — Aragorn va Gʻarb sarkardalarining Sauron nigohini chalgʻitish uchun soʻnggi yurishi",
+    "Yagona Uzuk yoʻq qilinganida Tishlar Minoralari (Carchost va Narchost) hamda Qora Darvozaning qulashi"
+  ],
+  "textual_status": "author_published",
+  "summary": "Mordorning shimoli-gʻarbiy burchagida, Ered Lithui (Kulrang Togʻlar) va Ephel Dúath (Soya Togʻlari) tutashgan Cirith Gorgor darasini toʻsib turuvchi ulkan temir qalʼa-darvoza. Uning ikki qanotidagi qoyalar ustida Gondorliklar tomonidan qurilgan, keyinchalik Sauron egallagan Tishlar Minoralari (Towers of the Teeth — Carchost va Narchost) qad rostlagan.",
+  "sources": [
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "The Black Gate is Closed",
+      "page": "636",
+      "notes": "Cirith Gorgor darasi, Tishlar Minoralari va Morannon mudofaa tizimi tasviri."
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "The Black Gate Opens",
+      "page": "887",
+      "notes": "Aragorn boshchiligidagi Gʻarb qoʻshinining Morannon oldidagi soʻnggi jangi."
+    }
+  ],
+  "description_sections": [
+    {
+      "title": "Qora Darvoza: Mordorning temir darvozasi",
+      "content": "Morannon (Sindarincha: 'Qora Darvoza') — Kul Togʻlari (Ered Lithui) va Soya Togʻlari (Ephel Dúath) tutashgan Cirith Gorgor ('Dahshatli Boʻgʻoz') darasida qurilgan ulkan temir mudofaa inshootidir. Darvoza ulkan tosh devor va ikki qanotli temir qopqalardan iborat boʻlgan.\n\nDarvozaning ikki tomonida baland qoyalarda Tish Minoralari (Towers of the Teeth) — Carchost va Narchost qad rostlagan edi. Ushbu minoralar dastlab Soʻnggi Ittifoq urushidan soʻng Gondor tomonidan Mordorni nazorat qilish uchun qurilgan, ammo keyinchalik Sauron kuchlari tomonidan egallangan."
+    },
+    {
+      "title": "Qora Darvoza jangi (Battle of the Morannon)",
+      "content": "3019-yil 25-martida Aragorn va Gandalf boshchiligidagi yetti minglik Gʻarb Lashkari (Host of the West) Morannon ostonasiga yetib keldi. Bu umidsizdek koʻringan yurishning yagona maqsadi Sauronning barcha eʼtiborini Qora Darvozaga qaratish va Frodoga Hukm Togʻiga yetib borish imkonini yaratish edi.\n\nDarvoza ochilib, Sauronning oltmish mingdan ortiq qoʻshini Gʻarb lashkarini qurshovga oldi. Sauronning Elchisi (Mouth of Sauron) muzokaraga chiqdi, ammo Aragorn taslim boʻlishdan bosh tortdi. Uzuk yoʻq qilingan zahoti, Morannon devorlari va Tish Minoralari yer bilan yakson boʻldi."
+    },
+    {
+      "title": "Cirith Gorgor jarligi, Tish Minoralar va So'nggi Qamal",
+      "content": "Morannon (Qora Darvoza) Ash Tog'lari (Ered Lithui) va Soya Tog'lari (Ephel Dúath) tutashgan tor Cirith Gorgor (Dahshat Bo'g'ozi) jarligini to'sib turgan. Darvozaning ikki tomonida Gondor shohlari tomonidan Sauronni kuzatish uchun qurilgan, keyinchalik esa dushman tomonidan egallangan 'Tish Minoralar' (Carchost va Narchost) qad rostlagan. Halqa Urushining so'nggi kuni Aragorn boshchiligidagi yetti ming kishilik ittifoqchi qo'shin aynan shu darvoza ostonasidagi tepaliklarda o'n barobar ustun bo'lgan Mordor lashkariga qarshi so'nggi jangni olib bordi va Uzuk yo'q qilingach, darvoza tuproqqa qorishdi."
+    },
+    {
+      "title": "Gorgoroth tekisligining mudofaasi va strategik to'siq",
+      "content": "Qora Darvoza faqat bitta temir darvozadan iborat bo'lmay, chuqur xandaqlar, o'tkir qoziqlar va tosh devorlar bilan mustahkamlangan ulkan mudofaa majmuasi edi. Undan o'tmasdan turib Mordorga shimol tomondan hech bir armiya kira olmasdi. Darvoza ortida son-sanoqsiz o'rk kazarmalari, zaharli suv quduqlari va qamal qurollari omborlari joylashgan edi. Halqa Urushida Sauron o'zining asosiy armiyasini aynan shu darvoza ortiga yashirib, Aragorn qo'shinini qurshovga olish uchun ulkan pistirma tayyorlagan edi."
+    }
+  ]
+}

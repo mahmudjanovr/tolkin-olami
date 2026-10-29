@@ -1,0 +1,388 @@
+---
+import { getCollection, type CollectionEntry } from 'astro:content';
+import EntityLayout from '@/layouts/EntityLayout.astro';
+import { checkSlugCollisions, resolveEntityLinks } from '@/utils/entity-resolver';
+
+type PeoplesOrLanguagesProps =
+  | { kind: 'people'; item: CollectionEntry<'peoples'> }
+  | { kind: 'language'; item: CollectionEntry<'languages'> };
+
+export async function getStaticPaths() {
+  const peoples = await getCollection('peoples');
+  const languages = await getCollection('languages');
+
+  // Slug to'qnashuvini qat'iy tekshirish
+  const combinedEntries = [
+    ...peoples.map((p) => ({ id: p.data.id || p.id, collection: 'peoples' })),
+    ...languages.map((l) => ({ id: l.data.id || l.id, collection: 'languages' })),
+  ];
+
+  const collisionCheck = checkSlugCollisions(combinedEntries);
+  if (!collisionCheck.isValid) {
+    throw new Error(
+      `[xalqlar-va-tillar] Marshrutlar toʻqnashuvi aniqlandi: ${collisionCheck.collisions.join('; ')}`
+    );
+  }
+
+  const peoplePaths = peoples.map((p) => ({
+    params: { slug: p.data.id || p.id },
+    props: { kind: 'people' as const, item: p },
+  }));
+
+  const languagePaths = languages.map((l) => ({
+    params: { slug: l.data.id || l.id },
+    props: { kind: 'language' as const, item: l },
+  }));
+
+  return [...peoplePaths, ...languagePaths];
+}
+
+interface Props {
+  kind: 'people' | 'language';
+  item: CollectionEntry<'peoples'> | CollectionEntry<'languages'>;
+}
+
+const props = Astro.props as PeoplesOrLanguagesProps;
+
+const isPeople = props.kind === 'people';
+const peopleData = isPeople ? (props.item as CollectionEntry<'peoples'>).data : undefined;
+const languageData = !isPeople ? (props.item as CollectionEntry<'languages'>).data : undefined;
+
+const title = isPeople ? peopleData!.name : languageData!.name;
+const category = isPeople ? 'Xalqlar va Etnografiya' : 'Tillar va Yozuv Tizimlari';
+
+const breadcrumbs = [
+  { label: 'Xalqlar va Tillar', href: '/xalqlar-va-tillar/' },
+  { label: title },
+];
+
+const allPeoples = await getCollection('peoples');
+const allLanguages = await getCollection('languages');
+
+const speakingPeoplesForLang = !isPeople && languageData
+  ? allPeoples
+      .filter((p) => p.data.associated_languages.includes(languageData.id))
+      .map((p) => p.data.id || p.id)
+  : [];
+
+const relatedLanguagesForScript = !isPeople && languageData && (languageData.id === 'tengwar' || languageData.id === 'cirth')
+  ? allLanguages
+      .filter((l) => l.data.id !== languageData.id && l.data.writing_systems.includes(languageData.id as 'tengwar' | 'cirth'))
+      .map((l) => l.data.id || l.id)
+  : [];
+
+const PEOPLE_REPRESENTATIVE_CHARACTERS: Record<string, string[]> = {
+  noldor: ['feanor', 'fingolfin', 'galadriel', 'gil-galad', 'celebrimbor', 'glorfindel'],
+  sindar: ['thingol', 'luthien', 'cirdan', 'legolas'],
+  edain: ['beren', 'turin', 'tuor', 'hurin'],
+  dunedain: ['elendil', 'isildur', 'aragorn', 'faramir', 'boromir', 'ar-pharazon'],
+  rohirrim: ['theoden', 'eomer', 'eowyn'],
+  xobbitlar: ['frodo-baggins', 'samwise-gamgee', 'bilbo-baggins', 'gollum'],
+  xazad: ['durin-i', 'thorin-oakenshield', 'gimli'],
+  istari: ['gandalf', 'saruman', 'radagast'],
+  'nandor-va-silvan': ['legolas', 'thranduil', 'celeborn'],
+  entlar: ['treebeard'],
+  numenorliklar: ['elros', 'elendil', 'isildur', 'ar-pharazon'],
+};
+
+const peopleRepCharacterIds = isPeople && peopleData
+  ? PEOPLE_REPRESENTATIVE_CHARACTERS[peopleData.id] || []
+  : [];
+
+const relatedGroups = isPeople && peopleData
+  ? [
+      {
+        title: 'Tillar va Yozuvlar',
+        items: resolveEntityLinks(peopleData.associated_languages, 'languages'),
+      },
+      {
+        title: 'Asosiy Manzilgohlar',
+        items: resolveEntityLinks(peopleData.primary_realms, 'places'),
+      },
+      {
+        title: 'Taniqli Vakillar',
+        items: resolveEntityLinks(peopleRepCharacterIds, 'characters'),
+      },
+    ].filter((g) => g.items.length > 0)
+  : languageData
+    ? [
+        {
+          title: 'Soʻzlashuvchi Xalqlar',
+          items: resolveEntityLinks(speakingPeoplesForLang, 'peoples'),
+        },
+        {
+          title: 'Bogʻliq Tillar va Yozuvlar',
+          items: resolveEntityLinks(
+            [
+              ...languageData.writing_systems.filter((ws) => ws !== languageData.id),
+              ...relatedLanguagesForScript,
+            ],
+            'languages'
+          ),
+        },
+        {
+          title: 'Ixtirochi / Manba',
+          items: languageData.inventor ? resolveEntityLinks([languageData.inventor]) : [],
+        },
+      ].filter((g) => g.items.length > 0)
+    : [];
+
+const crossLinkIds = isPeople
+  ? [...peopleData!.associated_languages, ...peopleData!.primary_realms, ...peopleRepCharacterIds]
+  : [
+      ...speakingPeoplesForLang,
+      ...languageData!.writing_systems.filter((ws) => ws !== languageData!.id),
+      ...relatedLanguagesForScript,
+      ...(languageData!.inventor ? [languageData!.inventor] : []),
+    ];
+
+const relatedItems = resolveEntityLinks(crossLinkIds);
+---
+
+{
+  isPeople && peopleData && (
+    <EntityLayout
+      title={peopleData.name}
+      originalName={peopleData.other_names[0]}
+      category={category}
+      breadcrumbs={breadcrumbs}
+      textualStatus={peopleData.textual_status}
+      sources={peopleData.sources}
+      relatedItems={relatedItems}
+      relatedGroups={relatedGroups}
+      leadSummary={peopleData.summary}
+    >
+      <div class="people-details">
+        <section class="people-summary-section">
+          <h2>Xalq va Madaniyat Tavsifi</h2>
+          <p class="summary-lead">{peopleData.summary}</p>
+
+          {peopleData.divisions_and_clans.length > 0 && (
+            <div class="clans-block">
+              <h3>Tarkibiy Tarmoqlar va Urugʻlar</h3>
+              <ul>
+                {peopleData.divisions_and_clans.map((clan) => (
+                  <li>{clan}</li>
+                ))}
+              </ul>
+            </div>
+          )}
+
+          {peopleData.description_sections && peopleData.description_sections.length > 0 && (
+            <div class="people-sections">
+              {peopleData.description_sections.map((section) => (
+                <div class="people-section-block">
+                  <h3>{section.title}</h3>
+                  {section.content.split('\n\n').map((para) => (
+                    <p>{para}</p>
+                  ))}
+                </div>
+              ))}
+            </div>
+          )}
+        </section>
+      </div>
+
+      <div slot="metadata" class="people-metadata">
+        <div class="meta-row">
+          <span class="meta-label">Irq toifasi:</span>
+          <span class="meta-val">{peopleData.race_category}</span>
+        </div>
+        {peopleData.origin_era && (
+          <div class="meta-row">
+            <span class="meta-label">Paydo boʻlish davri:</span>
+            <span class="meta-val">{peopleData.origin_era}</span>
+          </div>
+        )}
+        {peopleData.primary_realms.length > 0 && (
+          <div class="meta-row">
+            <span class="meta-label">Asosiy manzilgohlar:</span>
+            <span class="meta-val">{peopleData.primary_realms.join(', ')}</span>
+          </div>
+        )}
+      </div>
+    </EntityLayout>
+  )
+}
+
+{
+  !isPeople && languageData && (
+    <EntityLayout
+      title={languageData.name}
+      category={category}
+      breadcrumbs={breadcrumbs}
+      textualStatus={languageData.textual_status}
+      sources={languageData.sources}
+      relatedItems={relatedItems}
+      relatedGroups={relatedGroups}
+      leadSummary={languageData.phonology_overview}
+    >
+      <div class="language-details">
+        <section class="language-phonology-section">
+          <h2>Fonologik va Grammatik Tuzilishi</h2>
+          <p class="summary-lead">{languageData.phonology_overview}</p>
+
+          {languageData.grammar_and_vocabulary_sections && languageData.grammar_and_vocabulary_sections.length > 0 && (
+            <div class="language-sections">
+              {languageData.grammar_and_vocabulary_sections.map((section) => (
+                <div class="language-section-block">
+                  <h3>{section.title}</h3>
+                  {section.content.split('\n\n').map((para) => (
+                    <p>{para}</p>
+                  ))}
+                </div>
+              ))}
+            </div>
+          )}
+
+          {languageData.sample_text_original && (
+            <div class="sample-text-block">
+              <h3>Namunaviy Matn (Asl Nutq)</h3>
+              <blockquote class="sample-quote font-serif">
+                "{languageData.sample_text_original}"
+              </blockquote>
+              {languageData.sample_text_uz && (
+                <p class="sample-translation">
+                  <strong>Oʻzbekcha tarjimasi:</strong> <em>"{languageData.sample_text_uz}"</em>
+                </p>
+              )}
+            </div>
+          )}
+        </section>
+      </div>
+
+      <div slot="metadata" class="language-metadata">
+        <div class="meta-row">
+          <span class="meta-label">Tillar oilasi:</span>
+          <span class="meta-val">{languageData.family}</span>
+        </div>
+        <div class="meta-row">
+          <span class="meta-label">Yozuv tizimlari:</span>
+          <span class="meta-val">
+            {languageData.writing_systems
+              .map((ws) => ws.charAt(0).toUpperCase() + ws.slice(1))
+              .join(', ')}
+          </span>
+        </div>
+        {languageData.inventor && (
+          <div class="meta-row">
+            <span class="meta-label">Ixtirochi:</span>
+            <span class="meta-val">{languageData.inventor}</span>
+          </div>
+        )}
+      </div>
+    </EntityLayout>
+  )
+}
+
+<style>
+  .summary-lead {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    margin-bottom: 1.75rem;
+  }
+
+  .clans-block {
+    margin-top: 1.5rem;
+    padding: 1.25rem;
+    background-color: var(--color-bg-subtle);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 4px;
+  }
+
+  .clans-block h3 {
+    font-size: 0.9375rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--color-text-secondary);
+    margin-bottom: 0.75rem;
+  }
+
+  .clans-block ul {
+    list-style: square;
+    padding-left: 1.25rem;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+
+  .sample-text-block {
+    margin-top: 1.75rem;
+    padding: 1.5rem;
+    background-color: var(--color-bg-subtle);
+    border-left: 3px solid var(--color-accent-gold);
+    border-radius: 0 4px 4px 0;
+  }
+
+  .sample-text-block h3 {
+    font-size: 0.9375rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--color-text-secondary);
+    margin-bottom: 0.75rem;
+  }
+
+  .sample-quote {
+    font-size: 1.125rem;
+    font-style: italic;
+    color: var(--color-text-primary);
+    line-height: 1.6;
+    margin: 0 0 1rem 0;
+  }
+
+  .sample-translation {
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    color: var(--color-text-secondary);
+    margin: 0;
+  }
+
+  .meta-row {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    margin-bottom: 0.75rem;
+    font-family: var(--font-sans-ui);
+    font-size: 0.875rem;
+  }
+
+  .meta-label {
+    color: var(--color-text-muted);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+  }
+
+  .meta-val {
+    color: var(--color-text-primary);
+    font-weight: 500;
+  }
+
+  .people-sections,
+  .language-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+    margin-top: 1.75rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--color-border-subtle);
+  }
+
+  .people-section-block h3,
+  .language-section-block h3 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--color-accent-gold-text);
+    margin: 0 0 0.5rem 0;
+  }
+
+  .people-section-block p,
+  .language-section-block p {
+    font-size: 1rem;
+    line-height: 1.75;
+    color: var(--color-text-primary);
+    margin-bottom: 0.85rem;
+  }
+</style>

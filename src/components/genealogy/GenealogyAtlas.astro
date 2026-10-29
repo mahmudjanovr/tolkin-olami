@@ -1,0 +1,952 @@
+---
+/**
+ * TOLKIEN OLAMI — Nasabnoma Atlasi Asosiy Oroli (Genealogy Atlas Island)
+ *
+ * To'rtta shohona sulolani (Finwë, Elros/Gondor, Rohan, Durin)
+ * interaktiv White Tree SVG kanvasi, o'rnatilgan shaxs inspektori,
+ * qarindoshlik navigatsiyasi va No-JS semantik zaxirasi bilan ta'minlaydi.
+ */
+
+import { getCollection } from 'astro:content';
+import { calculateTreeLayout, type TreeLayout } from '@/utils/genealogy/layout';
+import { CHARACTER_REGISTRY } from '@/utils/genealogy/character-registry';
+import GenealogyControls from './GenealogyControls.astro';
+import GenealogyCanvas from './GenealogyCanvas.astro';
+import GenealogyInspector from './GenealogyInspector.astro';
+import GenealogyAccessibleTree from './GenealogyAccessibleTree.astro';
+
+// Barcha 4 ta sulolani yuklash
+const allGenealogies = await getCollection('genealogies');
+
+// Standart sulolalar tartibi
+const preferredOrder = [
+  'finwe-xonadoni',
+  'edain-va-yarim-elflar',
+  'elros-va-gondor-shohlari',
+  'rohan-shohlari',
+  'durin-avlodlari',
+  'shayr-xonadonlari',
+];
+
+const sortedGenealogies = [...allGenealogies].sort((a, b) => {
+  const indexA = preferredOrder.indexOf(a.data.id);
+  const indexB = preferredOrder.indexOf(b.data.id);
+  return (indexA >= 0 ? indexA : 99) - (indexB >= 0 ? indexB : 99);
+});
+
+// Har bir sulola uchun layout hisoblash
+const dynastyLayouts: Record<string, {
+  data: (typeof sortedGenealogies)[0]['data'];
+  layout: TreeLayout;
+}> = {};
+
+for (const g of sortedGenealogies) {
+  dynastyLayouts[g.data.id] = {
+    data: g.data,
+    layout: calculateTreeLayout(g.data.members, { pathStyle: 'botanical' }),
+  };
+}
+
+interface Props {
+  initialDynastyId?: string;
+}
+
+const { initialDynastyId } = Astro.props;
+
+const dynastyTabs = sortedGenealogies.map((g) => ({
+  id: g.data.id,
+  title: g.data.title
+    .replace(' Nasabnomasi', '')
+    .replace(' (Uzunsoqollar)', '')
+    .replace(' (Peredhil)', '')
+    .replace(' (Baggins, Tuk va Brendibak)', ''),
+  houseName: g.data.house_name,
+}));
+
+const defaultDynastyId = initialDynastyId && dynastyLayouts[initialDynastyId]
+  ? initialDynastyId
+  : (preferredOrder[0] || 'finwe-xonadoni');
+---
+
+<div id="genealogy-atlas-root" class="genealogy-atlas-root">
+  <!-- Boshqaruv Asboblari (Toolbar) -->
+  <GenealogyControls
+    dynasties={dynastyTabs}
+    activeDynastyId={defaultDynastyId}
+  />
+
+  <!-- Asosiy Ish Maydoni (Canvas + Inspector) -->
+  <div class="genealogy-workspace">
+    <!-- 1. SVG Kanvaslar (Har bir sulola uchun alohida, bittasi faol) -->
+    <div id="genealogy-views-container" class="genealogy-views-container">
+      {sortedGenealogies.map((g) => {
+        const dLayout = dynastyLayouts[g.data.id];
+        if (!dLayout) return null;
+        return (
+          <div
+            id={`dynasty-panel-${g.data.id}`}
+            class={`dynasty-view-panel ${g.data.id === defaultDynastyId ? 'active' : ''}`}
+            data-dynasty-id={g.data.id}
+            role="tabpanel"
+            aria-labelledby={`tab-${g.data.id}`}
+            hidden={g.data.id !== defaultDynastyId}
+          >
+            <GenealogyCanvas
+              dynastyId={g.data.id}
+              dynastyTitle={g.data.title}
+              layout={dLayout.layout}
+            />
+          </div>
+        );
+      })}
+    </div>
+
+    <!-- 2. Shaxs Inspektori (Standart holatda yopiq) -->
+    <GenealogyInspector />
+
+    <!-- 3. No-JS va Skrinriderlar uchun Matnli Ierarxik Ro'yxat -->
+    <div id="genealogy-accessible-views" class="genealogy-accessible-views" hidden>
+      {sortedGenealogies.map((g) => {
+        const dLayout = dynastyLayouts[g.data.id];
+        if (!dLayout) return null;
+        return (
+          <div
+            id={`accessible-panel-${g.data.id}`}
+            class={`accessible-panel ${g.data.id === defaultDynastyId ? 'active' : ''}`}
+            data-dynasty-id={g.data.id}
+            hidden={g.data.id !== defaultDynastyId}
+          >
+            <GenealogyAccessibleTree
+              dynastyId={g.data.id}
+              dynastyTitle={g.data.title}
+              houseName={g.data.house_name}
+              layout={dLayout.layout}
+            />
+          </div>
+        );
+      })}
+    </div>
+  </div>
+
+  <!-- Klient Uchun Ma'lumotlar Kesh Scripti -->
+  <script
+    type="application/json"
+    id="genealogy-client-registry"
+    set:html={JSON.stringify(
+      Object.fromEntries(
+        Object.entries(CHARACTER_REGISTRY).map(([k, v]) => [
+          k,
+          {
+            name: v.name,
+            originalName: v.originalName,
+            titles: v.titles,
+            dates: v.dates,
+            culture: v.culture,
+            race: v.race,
+            summary: v.summary,
+            citation: v.citation,
+            ...(v.hasArticle ? { hasArticle: true } : {}),
+          },
+        ])
+      )
+    )}
+  />
+
+  <script
+    type="application/json"
+    id="genealogy-client-layouts"
+    set:html={JSON.stringify(
+      Object.fromEntries(
+        Object.entries(dynastyLayouts).map(([k, v]) => [
+          k,
+          {
+            dimensions: v.layout.dimensions,
+            nodes: v.layout.nodes.map((n) => ({
+              id: n.id,
+              x: n.x,
+              y: n.y,
+              width: n.width,
+              height: n.height,
+              name: n.name,
+              parentIds: n.parentIds,
+              spouseIds: n.spouseIds,
+              isUncertain: n.isUncertain,
+              uncertaintyNotes: n.uncertaintyNotes,
+            })),
+          },
+        ])
+      )
+    )}
+  />
+</div>
+
+<style>
+  .genealogy-atlas-root {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 1.5rem 0 2.5rem 0;
+  }
+
+  .genealogy-workspace {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 0 0 8px 8px;
+  }
+
+  .genealogy-views-container {
+    position: relative;
+    width: 100%;
+    height: 600px;
+  }
+
+  .dynasty-view-panel {
+    width: 100%;
+    height: 100%;
+  }
+
+  .dynasty-view-panel[hidden] {
+    display: none;
+  }
+
+  .genealogy-accessible-views[hidden] {
+    display: none;
+  }
+
+  .accessible-panel[hidden] {
+    display: none;
+  }
+</style>
+
+<script>
+  /**
+   * TOLKIEN OLAMI — Nasabnoma Atlasi Klient Boshqaruv Dvigateli
+   */
+
+  interface ClientTransform {
+    x: number;
+    y: number;
+    scale: number;
+  }
+
+  interface ClientNode {
+    id: string;
+    x: number;
+    y: number;
+    width: number;
+    height: number;
+    name: string;
+    spouseIds: string[];
+    parentIds: string[];
+    isUncertain: boolean;
+    uncertaintyNotes?: string;
+  }
+
+  interface ClientLayout {
+    dimensions: { width: number; height: number };
+    nodes: ClientNode[];
+  }
+
+  function getRootEl(): HTMLElement {
+    const el = document.getElementById('genealogy-atlas-root');
+    if (!el) throw new Error('Atlas root not found');
+    return el;
+  }
+
+  function initGenealogyAtlas() {
+    if (!document.getElementById('genealogy-atlas-root')) return;
+
+    // Registry va Layout ma'lumotlarini yuklash
+    const registryScript = document.getElementById('genealogy-client-registry');
+    const layoutsScript = document.getElementById('genealogy-client-layouts');
+    if (!registryScript || !layoutsScript) return;
+
+    const characterRegistry = JSON.parse(registryScript.textContent || '{}');
+    const layouts: Record<string, ClientLayout> = JSON.parse(layoutsScript.textContent || '{}');
+
+    // Elementlar
+    const inspector = document.getElementById('genealogy-inspector');
+    const inspectorCloseBtn = document.getElementById('inspector-close-btn');
+    const viewsContainer = document.getElementById('genealogy-views-container');
+    const accessibleViews = document.getElementById('genealogy-accessible-views');
+
+    const tabButtons = getRootEl().querySelectorAll<HTMLButtonElement>('.dynasty-tab-btn');
+    const searchInput = document.getElementById('genealogy-search-input') as HTMLInputElement | null;
+    const searchCount = document.getElementById('search-results-count');
+
+    const btnModeTree = document.getElementById('btn-mode-tree');
+    const btnModeList = document.getElementById('btn-mode-list');
+
+    const btnZoomIn = document.getElementById('btn-zoom-in');
+    const btnZoomOut = document.getElementById('btn-zoom-out');
+    const btnZoomReset = document.getElementById('btn-zoom-reset');
+
+    // Joriy holat (Current State)
+    let activeDynastyId = 'finwe-xonadoni';
+    let activePersonId: string | null = null;
+    let currentMode: 'daraxt' | 'royxat' = 'daraxt';
+
+    // Har bir sulola uchun pan/zoom transformatsiyalari
+    const transforms: Record<string, ClientTransform> = {};
+    for (const dynId of Object.keys(layouts)) {
+      transforms[dynId] = { x: 0, y: 0, scale: 1 };
+    }
+
+    function getTransform(dynId: string): ClientTransform {
+      let t = transforms[dynId];
+      if (!t) {
+        t = { x: 0, y: 0, scale: 1 };
+        transforms[dynId] = t;
+      }
+      return t;
+    }
+
+    // URL dan holatni o'qish
+    const urlParams = new URLSearchParams(window.location.search);
+    const initialSulola = urlParams.get('sulola');
+    const initialShaxs = urlParams.get('shaxs');
+    if (initialShaxs) {
+      activePersonId = initialShaxs;
+    }
+    const initialMode = urlParams.get('uslub');
+    if (initialMode === 'royxat') {
+      currentMode = 'royxat';
+    }
+
+    // ========================================================================
+    // 1. TRANSFORM VA SVG KO'RINISHINI YANGILASH
+    // ========================================================================
+    function applyTransform(dynId: string) {
+      const viewport = document.getElementById(`viewport-content-${dynId}`);
+      if (!viewport) return;
+      const t = getTransform(dynId);
+      viewport.setAttribute(
+        'transform',
+        `translate(${Math.round(t.x)}, ${Math.round(t.y)}) scale(${t.scale})`
+      );
+    }
+
+    function resetTransform(dynId: string) {
+      const container = document.getElementById(`genealogy-canvas-container-${dynId}`);
+      const layout = layouts[dynId];
+      if (!container || !layout) return;
+
+      const containerWidth = container.clientWidth || 900;
+      const containerHeight = container.clientHeight || 600;
+
+      // Fit to screen scale
+      const scaleX = (containerWidth - 60) / layout.dimensions.width;
+      const scaleY = (containerHeight - 60) / layout.dimensions.height;
+      const fitScale = Math.min(Math.max(Math.min(scaleX, scaleY), 0.5), 1.05);
+
+      const offsetX = Math.max(0, (containerWidth - layout.dimensions.width * fitScale) / 2);
+      const offsetY = 20;
+
+      const t = getTransform(dynId);
+      t.x = offsetX;
+      t.y = offsetY;
+      t.scale = Number(fitScale.toFixed(3));
+      applyTransform(dynId);
+    }
+
+    // ========================================================================
+    // 2. URL PARAMETRLARINI YANGILASH
+    // ========================================================================
+    function updateUrlState() {
+      const url = new URL(window.location.href);
+
+      if (activeDynastyId && activeDynastyId !== 'finwe-xonadoni') {
+        url.searchParams.set('sulola', activeDynastyId);
+      } else {
+        url.searchParams.delete('sulola');
+      }
+
+      if (activePersonId) {
+        url.searchParams.set('shaxs', activePersonId);
+      } else {
+        url.searchParams.delete('shaxs');
+      }
+
+      if (currentMode === 'royxat') {
+        url.searchParams.set('uslub', 'royxat');
+      } else {
+        url.searchParams.delete('uslub');
+      }
+
+      window.history.replaceState(
+        {
+          ...window.history.state,
+          genealogyDynasty: activeDynastyId,
+          genealogyPerson: activePersonId,
+          genealogyMode: currentMode,
+        },
+        '',
+        url.toString()
+      );
+    }
+
+    // ========================================================================
+    // 3. SHAXS INSPEKTORINI BOSHQARISH
+    // ========================================================================
+    function openInspector(personId: string) {
+      if (!inspector) return;
+      activePersonId = personId;
+
+      const meta = characterRegistry[personId] || {
+        name: personId,
+        titles: [],
+        dates: 'Nomaʼlum',
+        culture: 'Oʻrta-yer',
+        race: 'insonlar',
+        summary: 'Tolkien asarlaridagi kanonik sulolaviy shaxs.',
+        citation: { work: 'The Lord of the Rings', section: 'Appendices' },
+      };
+
+      // Matnlarni to'ldirish
+      const nameEl = document.getElementById('inspector-name');
+      const origNameEl = document.getElementById('inspector-original-name');
+      const badgeEl = document.getElementById('inspector-race-badge');
+      const titlesEl = document.getElementById('inspector-titles');
+      const datesEl = document.getElementById('inspector-dates');
+      const cultureEl = document.getElementById('inspector-culture');
+      const summaryEl = document.getElementById('inspector-summary');
+
+      if (nameEl) nameEl.textContent = meta.name;
+      if (origNameEl) origNameEl.textContent = meta.originalName || '';
+      if (badgeEl) {
+        badgeEl.textContent =
+          meta.race === 'elflar'
+            ? 'Elflar'
+            : meta.race === 'mitti-odamlar'
+              ? 'Mittilar'
+              : meta.race === 'yarim-elflar'
+                ? 'Yarim-elflar'
+                : meta.race === 'xobbitlar'
+                  ? 'Xobbitlar'
+                  : meta.race === 'ainur'
+                    ? 'Ainur (Maia)'
+                    : 'Insonlar';
+      }
+      if (titlesEl) titlesEl.textContent = meta.titles.length > 0 ? meta.titles.join(', ') : 'Qayd etilmagan';
+      if (datesEl) datesEl.textContent = meta.dates;
+      if (cultureEl) cultureEl.textContent = meta.culture || 'Oʻrta-yer';
+      if (summaryEl) summaryEl.textContent = meta.summary;
+
+      // Ziddiyatli nasab izohi
+      const uncBox = document.getElementById('inspector-uncertainty-box');
+      const uncText = document.getElementById('inspector-uncertainty-text');
+      const currentLayout = layouts[activeDynastyId];
+      const currentNode = currentLayout?.nodes.find((n) => n.id === personId);
+
+      const uncertaintyNote = currentNode?.uncertaintyNotes || meta.uncertaintyNotes;
+      if (uncBox && uncText) {
+        if (currentNode?.isUncertain && uncertaintyNote) {
+          uncBox.hidden = false;
+          uncText.textContent = uncertaintyNote;
+        } else {
+          uncBox.hidden = true;
+        }
+      }
+
+      // Qarindoshlik pilyulkalari
+      const parentPills = document.getElementById('inspector-parents-pills');
+      const spousePills = document.getElementById('inspector-spouses-pills');
+      const childPills = document.getElementById('inspector-children-pills');
+
+      if (currentNode && currentLayout && parentPills && spousePills && childPills) {
+        // Ota-ona
+        if (currentNode.parentIds.length > 0) {
+          parentPills.innerHTML = currentNode.parentIds
+            .map((pid) => {
+              const pMeta = characterRegistry[pid] || { name: pid };
+              return `<button type="button" class="kinship-pill" data-person-id="${pid}">${pMeta.name}</button>`;
+            })
+            .join('');
+        } else {
+          parentPills.innerHTML = '<span class="kinship-empty">Qayd etilmagan</span>';
+        }
+
+        // Turmush o'rtoq
+        if (currentNode.spouseIds.length > 0) {
+          spousePills.innerHTML = currentNode.spouseIds
+            .map((sid) => {
+              const sMeta = characterRegistry[sid] || { name: sid };
+              return `<button type="button" class="kinship-pill" data-person-id="${sid}">${sMeta.name}</button>`;
+            })
+            .join('');
+        } else {
+          spousePills.innerHTML = '<span class="kinship-empty">Qayd etilmagan</span>';
+        }
+
+        // Farzandlar
+        const children = currentLayout.nodes.filter((n) => n.parentIds.includes(personId));
+        if (children.length > 0) {
+          childPills.innerHTML = children
+            .map((c) => `<button type="button" class="kinship-pill" data-person-id="${c.id}">${c.name}</button>`)
+            .join('');
+        } else {
+          childPills.innerHTML = '<span class="kinship-empty">Qayd etilmagan</span>';
+        }
+      }
+
+      // Oksford iqtibosi
+      const citWork = document.getElementById('inspector-citation-work');
+      const citSection = document.getElementById('inspector-citation-section');
+      if (citWork && citSection && meta.citation) {
+        citWork.textContent = meta.citation.work;
+        citSection.textContent = meta.citation.section;
+      }
+
+      // Ensiklopedik maqola havolasi
+      const artSection = document.getElementById('inspector-article-section');
+      const artLink = document.getElementById('inspector-article-link') as HTMLAnchorElement | null;
+      if (artSection && artLink) {
+        if (meta.hasArticle) {
+          artSection.hidden = false;
+          artLink.href = `/qahramonlar/${personId}/`;
+        } else {
+          artSection.hidden = true;
+        }
+      }
+
+      // Node va shoxlarni yoritish
+      highlightLineage(personId);
+
+      // Inspektorni ko'rsatish
+      inspector.hidden = false;
+      updateUrlState();
+    }
+
+    function closeInspector() {
+      if (!inspector) return;
+      inspector.hidden = true;
+      activePersonId = null;
+
+      // Belgilarni tozalash
+      getRootEl().querySelectorAll('.person-node.selected').forEach((el) => el.classList.remove('selected'));
+      getRootEl().querySelectorAll('.branch-path.highlight-stem').forEach((el) => el.classList.remove('highlight-stem'));
+
+      updateUrlState();
+    }
+
+    function highlightLineage(personId: string) {
+      // Avvalgi yoritishlarni tozalash
+      getRootEl().querySelectorAll('.person-node.selected').forEach((el) => el.classList.remove('selected'));
+      getRootEl().querySelectorAll('.branch-path.highlight-stem').forEach((el) => el.classList.remove('highlight-stem'));
+
+      const activeNodeEl = document.getElementById(`node-${personId}`);
+      if (activeNodeEl) {
+        activeNodeEl.classList.add('selected');
+      }
+
+      // Bog'lovchi shoxlarni yoritish (ancestors and descendants)
+      const currentLayout = layouts[activeDynastyId];
+      if (!currentLayout) return;
+
+      const currentNode = currentLayout.nodes.find((n) => n.id === personId);
+      if (!currentNode) return;
+
+      // Ota-onadan kelgan shoxlar
+      for (const parentId of currentNode.parentIds) {
+        const linkEl = getRootEl().querySelector(`.branch-path[data-from="${parentId}"][data-to="${personId}"]`);
+        if (linkEl) linkEl.classList.add('highlight-stem');
+      }
+
+      // Farzandlarga ketgan shoxlar
+      const children = currentLayout.nodes.filter((n) => n.parentIds.includes(personId));
+      for (const child of children) {
+        const linkEl = getRootEl().querySelector(`.branch-path[data-from="${personId}"][data-to="${child.id}"]`);
+        if (linkEl) linkEl.classList.add('highlight-stem');
+      }
+    }
+
+    function centerOnNode(personId: string) {
+      const currentLayout = layouts[activeDynastyId];
+      if (!currentLayout) return;
+      const node = currentLayout.nodes.find((n) => n.id === personId);
+      const container = document.getElementById(`genealogy-canvas-container-${activeDynastyId}`);
+      if (!node || !container) return;
+
+      const containerWidth = container.clientWidth || 900;
+      const containerHeight = container.clientHeight || 600;
+      const t = getTransform(activeDynastyId);
+
+      const nodeCenterX = node.x + node.width / 2;
+      const nodeCenterY = node.y + node.height / 2;
+
+      t.x = Math.round(containerWidth / 2 - nodeCenterX * t.scale);
+      t.y = Math.round(containerHeight / 2 - nodeCenterY * t.scale);
+
+      applyTransform(activeDynastyId);
+    }
+
+    // ========================================================================
+    // 4. SULOLANI O'ZGARTIRISH (DYNASTY SWITCHING)
+    // ========================================================================
+    function applyDynastyView(newDynastyId: string) {
+      activeDynastyId = newDynastyId;
+
+      // Tablarni yangilash
+      getRootEl().querySelectorAll<HTMLButtonElement>('.dynasty-tab-btn').forEach((btn) => {
+        const isMatch = btn.getAttribute('data-dynasty-id') === newDynastyId;
+        if (isMatch) {
+          btn.classList.add('active');
+          btn.setAttribute('aria-selected', 'true');
+        } else {
+          btn.classList.remove('active');
+          btn.setAttribute('aria-selected', 'false');
+        }
+      });
+
+      // SVG panellarni ko'rsatish/yashirish
+      getRootEl().querySelectorAll('.dynasty-view-panel').forEach((panel) => {
+        const match = panel.getAttribute('data-dynasty-id') === newDynastyId;
+        panel.classList.toggle('active', match);
+        (panel as HTMLElement).hidden = !match;
+      });
+
+      // Accessible panellarni ko'rsatish/yashirish
+      getRootEl().querySelectorAll('.accessible-panel').forEach((panel) => {
+        const match = panel.getAttribute('data-dynasty-id') === newDynastyId;
+        panel.classList.toggle('active', match);
+        (panel as HTMLElement).hidden = !match;
+      });
+
+      // Transformni qayta moslash
+      resetTransform(activeDynastyId);
+    }
+
+    function switchDynasty(newDynastyId: string) {
+      if (newDynastyId === activeDynastyId) return;
+      applyDynastyView(newDynastyId);
+
+      // Inspektorni yopish
+      closeInspector();
+
+      // Qidiruvni tozalash
+      if (searchInput) {
+        searchInput.value = '';
+        clearSearch();
+      }
+
+      updateUrlState();
+    }
+
+    // ========================================================================
+    // 5. TEZKOR QIDIRUV (SEARCH ENGINE)
+    // ========================================================================
+    function handleSearch(query: string) {
+      const q = query.trim().toLowerCase();
+      if (!q) {
+        clearSearch();
+        return;
+      }
+
+      const currentLayout = layouts[activeDynastyId];
+      if (!currentLayout) return;
+
+      let matchCount = 0;
+      let firstMatchId: string | null = null;
+
+      currentLayout.nodes.forEach((node) => {
+        const nodeEl = document.getElementById(`node-${node.id}`);
+        const regMeta = characterRegistry[node.id];
+        const titles: string[] = regMeta?.titles || [];
+        const dates: string = regMeta?.dates || '';
+        const nameMatch = node.name.toLowerCase().includes(q);
+        const titlesMatch = titles.some((t: string) => t.toLowerCase().includes(q));
+        const datesMatch = dates.toLowerCase().includes(q);
+
+        if (nameMatch || titlesMatch || datesMatch) {
+          matchCount++;
+          if (!firstMatchId) firstMatchId = node.id;
+          if (nodeEl) nodeEl.classList.add('search-match');
+        } else {
+          if (nodeEl) nodeEl.classList.remove('search-match');
+        }
+      });
+
+      if (searchCount) {
+        searchCount.hidden = false;
+        searchCount.textContent = `${matchCount}`;
+      }
+
+      // Agar bitta natija bo'lsa, avtomatik markazlashtirish
+      if (matchCount === 1 && firstMatchId) {
+        centerOnNode(firstMatchId);
+      }
+    }
+
+    function clearSearch() {
+      getRootEl().querySelectorAll('.person-node.search-match').forEach((el) => el.classList.remove('search-match'));
+      if (searchCount) {
+        searchCount.hidden = true;
+      }
+    }
+
+    // ========================================================================
+    // 6. PAN VA ZOOM HODISALARI (MOUSE, WHEEL, TOUCH)
+    // ========================================================================
+    function bindCanvasEvents(dynId: string) {
+      const container = document.getElementById(`genealogy-canvas-container-${dynId}`);
+      if (!container) return;
+
+      let isDragging = false;
+      let startX = 0;
+      let startY = 0;
+      let lastTouchDist = 0;
+
+      // Mouse drag
+      container.addEventListener('mousedown', (e) => {
+        // Tugun bosilganda emas, bo'sh joy bosilganda
+        if ((e.target as HTMLElement).closest('.person-node')) return;
+        isDragging = true;
+        const t = getTransform(dynId);
+        startX = e.clientX - t.x;
+        startY = e.clientY - t.y;
+      });
+
+      window.addEventListener('mousemove', (e) => {
+        if (!isDragging) return;
+        const t = getTransform(dynId);
+        t.x = Math.round(e.clientX - startX);
+        t.y = Math.round(e.clientY - startY);
+        applyTransform(dynId);
+      });
+
+      window.addEventListener('mouseup', () => {
+        isDragging = false;
+      });
+
+      // Wheel Zoom
+      container.addEventListener('wheel', (e) => {
+        e.preventDefault();
+        const zoomDelta = e.deltaY < 0 ? 0.08 : -0.08;
+        const t = getTransform(dynId);
+        const oldScale = t.scale;
+        const newScale = Math.min(Math.max(oldScale + zoomDelta, 0.35), 2.5);
+
+        // Zoom centered at cursor
+        const rect = container.getBoundingClientRect();
+        const mouseX = e.clientX - rect.left;
+        const mouseY = e.clientY - rect.top;
+
+        t.x = Math.round(mouseX - (mouseX - t.x) * (newScale / oldScale));
+        t.y = Math.round(mouseY - (mouseY - t.y) * (newScale / oldScale));
+        t.scale = Number(newScale.toFixed(3));
+
+        applyTransform(dynId);
+      }, { passive: false });
+
+      // Touch Pan and Pinch-Zoom
+      container.addEventListener('touchstart', (e) => {
+        if (e.touches.length === 1 && e.touches[0]) {
+          isDragging = true;
+          const t = getTransform(dynId);
+          startX = e.touches[0].clientX - t.x;
+          startY = e.touches[0].clientY - t.y;
+        } else if (e.touches.length === 2 && e.touches[0] && e.touches[1]) {
+          isDragging = false;
+          lastTouchDist = Math.hypot(
+            e.touches[0].clientX - e.touches[1].clientX,
+            e.touches[0].clientY - e.touches[1].clientY
+          );
+        }
+      }, { passive: true });
+
+      container.addEventListener('touchmove', (e) => {
+        if (e.touches.length === 1 && isDragging && e.touches[0]) {
+          const t = getTransform(dynId);
+          t.x = Math.round(e.touches[0].clientX - startX);
+          t.y = Math.round(e.touches[0].clientY - startY);
+          applyTransform(dynId);
+        } else if (e.touches.length === 2 && e.touches[0] && e.touches[1]) {
+          const dist = Math.hypot(
+            e.touches[0].clientX - e.touches[1].clientX,
+            e.touches[0].clientY - e.touches[1].clientY
+          );
+          if (lastTouchDist > 0) {
+            const factor = dist / lastTouchDist;
+            const t = getTransform(dynId);
+            const newScale = Math.min(Math.max(t.scale * factor, 0.35), 2.5);
+            t.scale = Number(newScale.toFixed(3));
+            applyTransform(dynId);
+          }
+          lastTouchDist = dist;
+        }
+      }, { passive: true });
+
+      container.addEventListener('touchend', () => {
+        isDragging = false;
+        lastTouchDist = 0;
+      });
+    }
+
+    // ========================================================================
+    // 7. HODISALARNI BIRIKTIRISH (EVENT LISTENERS)
+    // ========================================================================
+    // Barcha sulolalar uchun pan/zoom ulaymiz
+    for (const dynId of Object.keys(layouts)) {
+      bindCanvasEvents(dynId);
+      resetTransform(dynId);
+    }
+
+    // Sulola tablari tugmalari
+    tabButtons.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const dynId = btn.getAttribute('data-dynasty-id');
+        if (dynId) switchDynasty(dynId);
+      });
+    });
+
+    // Tugunni tanlash (Node Click & Keyboard Enter)
+    getRootEl().addEventListener('click', (e) => {
+      const target = e.target as HTMLElement;
+
+      // 1. Person Node bosilganda
+      const nodeEl = target.closest('.person-node') as HTMLElement | null;
+      if (nodeEl) {
+        const personId = nodeEl.getAttribute('data-person-id');
+        if (personId) {
+          openInspector(personId);
+          centerOnNode(personId);
+        }
+        return;
+      }
+
+      // 2. Kinship Pill bosilganda
+      const kinshipPill = target.closest('.kinship-pill') as HTMLElement | null;
+      if (kinshipPill) {
+        const personId = kinshipPill.getAttribute('data-person-id');
+        if (personId) {
+          openInspector(personId);
+          centerOnNode(personId);
+        }
+        return;
+      }
+
+      // 3. Kanvas bo'sh joyi bosilganda (Inspektorni yopish)
+      if (target.closest('.genealogy-svg') && !target.closest('.person-node')) {
+        closeInspector();
+      }
+    });
+
+    // Klaviaturada Enter va Escape
+    getRootEl().addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeInspector();
+      } else if (e.key === 'Enter') {
+        const activeNode = document.activeElement?.closest('.person-node') as HTMLElement | null;
+        if (activeNode) {
+          const personId = activeNode.getAttribute('data-person-id');
+          if (personId) {
+            openInspector(personId);
+            centerOnNode(personId);
+          }
+        }
+      }
+    });
+
+    // Inspektorni yopish tugmasi
+    if (inspectorCloseBtn) {
+      inspectorCloseBtn.addEventListener('click', closeInspector);
+    }
+
+    // Qidiruv
+    if (searchInput) {
+      searchInput.addEventListener('input', () => {
+        handleSearch(searchInput.value);
+      });
+      searchInput.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          searchInput.value = '';
+          clearSearch();
+          searchInput.blur();
+        }
+      });
+    }
+
+    // Rejim Almashtirgich (Daraxt vs Ro'yxat)
+    if (btnModeTree && btnModeList && viewsContainer && accessibleViews) {
+      btnModeTree.addEventListener('click', () => {
+        currentMode = 'daraxt';
+        btnModeTree.classList.add('active');
+        btnModeTree.setAttribute('aria-checked', 'true');
+        btnModeList.classList.remove('active');
+        btnModeList.setAttribute('aria-checked', 'false');
+
+        viewsContainer.hidden = false;
+        accessibleViews.hidden = true;
+        resetTransform(activeDynastyId);
+        updateUrlState();
+      });
+
+      btnModeList.addEventListener('click', () => {
+        currentMode = 'royxat';
+        btnModeList.classList.add('active');
+        btnModeList.setAttribute('aria-checked', 'true');
+        btnModeTree.classList.remove('active');
+        btnModeTree.setAttribute('aria-checked', 'false');
+
+        viewsContainer.hidden = true;
+        accessibleViews.hidden = false;
+        closeInspector();
+        updateUrlState();
+      });
+    }
+
+    // Zoom Boshqaruv Tugmalari
+    if (btnZoomIn) {
+      btnZoomIn.addEventListener('click', () => {
+        const t = getTransform(activeDynastyId);
+        t.scale = Number(Math.min(t.scale + 0.15, 2.5).toFixed(3));
+        applyTransform(activeDynastyId);
+      });
+    }
+
+    if (btnZoomOut) {
+      btnZoomOut.addEventListener('click', () => {
+        const t = getTransform(activeDynastyId);
+        t.scale = Number(Math.max(t.scale - 0.15, 0.35).toFixed(3));
+        applyTransform(activeDynastyId);
+      });
+    }
+
+    if (btnZoomReset) {
+      btnZoomReset.addEventListener('click', () => {
+        resetTransform(activeDynastyId);
+      });
+    }
+
+    // Dastlabki holatni yuklash
+    if (initialSulola && layouts[initialSulola] && initialSulola !== activeDynastyId) {
+      applyDynastyView(initialSulola);
+    }
+
+    if (currentMode === 'royxat' && btnModeList) {
+      btnModeList.click();
+    } else {
+      resetTransform(activeDynastyId);
+      if (activePersonId) {
+        openInspector(activePersonId);
+        centerOnNode(activePersonId);
+      }
+    }
+
+    // ResizeObserver orqali o'lcham o'zgarganda transformni moslash
+    const resizeObserver = new ResizeObserver(() => {
+      resetTransform(activeDynastyId);
+    });
+    const activeContainer = document.getElementById(`genealogy-canvas-container-${activeDynastyId}`);
+    if (activeContainer) resizeObserver.observe(activeContainer);
+  }
+
+  // Sahifa yuklanganda ishga tushirish
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initGenealogyAtlas);
+  } else {
+    initGenealogyAtlas();
+  }
+</script>

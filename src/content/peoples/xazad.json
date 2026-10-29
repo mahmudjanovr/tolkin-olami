@@ -1,0 +1,55 @@
+{
+  "id": "xazad",
+  "name": "Xazad (Mittilar)",
+  "other_names": [
+    "Naugrim",
+    "Togʻ farzandlari"
+  ],
+  "race_category": "mitti-odamlar",
+  "divisions_and_clans": [
+    "Uzunsoqollar (Durin xalqi)",
+    "Olovsoqollar",
+    "Kengyelkalar"
+  ],
+  "origin_era": "Daraxtlar davri",
+  "associated_languages": [
+    "khuzdul"
+  ],
+  "primary_realms": [
+    "Khazad-dum",
+    "Nogrod",
+    "Belegost",
+    "Erebor"
+  ],
+  "textual_status": "author_published",
+  "summary": "Xazad (Mittilar / Naugrim / Qadimgi Durin Xalqi) — Vala Aulë tomonidan Ilúvatar farzandlari uygʻonishidan oldin yashirincha toshdan yaratilgan, pishiq-puxta, magʻrur, metallsozlik va togʻ-kon sanʼatida tengsiz yerosti xalqidir. Ular Moria (Khazad-dûm), Erebor va Moviy Togʻlarda buyuk yerosti saltanatlarini qurganlar.",
+  "sources": [
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of Aulë and Yavanna",
+      "page": "43"
+    }
+  ],
+  "description_sections": [
+    {
+      "title": "Aulëning yaratishi va Yetti Ota uygʻonishi",
+      "content": "Temirchi Vala Aulë Ilúvatar farzandlarining kelishini sabrsizlik bilan kutib, Oʻrta-yer zulmatiga dosh bera oladigan baquvvat, qatʼiyatli mavjudotlarni yaratishga qaror qildi va yer tubidagi toshlardan Yetti Mitti Otani shakllantirdi. Biroq Eru Ilúvatar buni fosh qilgach, Aulë oʻz xatosini tan olib, ularni bolgʻa bilan urib yoʻq qilmoqchi boʻldi. Shunda tosh maxluqlar qoʻrquvdan titrab, shafqat soʻradilar; Eru Aulëning kamtarligi va tavbasini qabul qilib, ularga mustaqil erkin jon (Fëa) ato etdi. Biroq Eruning irodasiga binoan, mittilar elflar uygʻonmaguncha uzoq gʻorlarda uyquda qoldirildi. Birinchi boʻlib uygʻongan Durin Boqiy Gundabad togʻidan chiqib, Tumanli Togʻlar qaʼrida buyuk Khazad-dûm saltanatiga asos soldi."
+    },
+    {
+      "title": "Yetti Qabila va Moviy Togʻlar shaharlari",
+      "content": "Mittilar yetti mustaqil urugʻga boʻlingan: Longbeards (Uzunsoqollar / Durin xalqi), Broadbeams va Firebeards (Ered Luindagi Nogrod va Belegost shaharlariga asos solganlar), Ironfists, Stiffbeards, Blacklocks va Stonefeet (Uzoq Sharqiy togʻlarda yashovchilar). Birinchi Davrda Nogrod va Belegost mittilari Beleriand elflari bilan savdo-sotiq qildilar va Thingol uchun Menegrothning Ming Gʻorini qurdilar. Telchar nomli norgodlik buyuk temirchi Narsil qilichi va Angrist pichogʻini, shuningdek Dor-lómin Ajdar dubulgʻasini yaratgan. Biroq Silmaril sababli yuzaga kelgan nizo va Thingolning oʻldirilishi Elflar va Mittilar oʻrtasida asrlar davom etgan sovuqlikka asos soldi."
+    },
+    {
+      "title": "Moria (Khazad-dûm) va afsonaviy Mithril",
+      "content": "Durin xalqi yashagan Khazad-dûm mittilarning eng buyuk, eng boy va eng daxlsiz saltanati edi. Bu yerda Oʻrta-yerdagi eng qimmatbaho metall — poʻlatdan oʻn barobar mustahkam, ammo ipakdek yengil boʻlgan kumushrang Mithril (Haqiqiy Kumush) qazib olinar edi. Ikkinchi Davrda Moria mittilari Eregion Noldor elflari bilan chuqur birodarlik oʻrnatdilar; Morianing Gʻarbiy Darvozasini elf Celebrimbor va mitti Narvi birgalikda yasadilar. Biroq Uchinchi Davrda mittilar mithril ilinjida togʻ tubini juda chuqur qazib yubordilar va Birinchi Davrdan beri yer ostida uxlab yotgan qadimgi iblis — Durin Balrogini uygʻotib yubordilar. Oltinchi Durin va uning oʻgʻli Nain halok boʻlgach, mittilar Moriani tashlab qochishga majbur boʻldilar."
+    },
+    {
+      "title": "Erebor, Smaug kulfati va Besh Armiya Jangi",
+      "content": "Qochqin mittilar Shimolda Yolgʻiz Togʻ (Erebor) va Temir Tepaliklar (Iron Hills)da yangi shohliklar barpo etdilar. Thrór shohligi davrida Erebor ulkan boylik toʻpladi va togʻ yuragi boʻlgan afsonaviy Arkenstone (Togʻ Gavhari) topildi. Biroq boylik hidini olgan qanotli oltin ajdar Smaug bostirib kelib, shaharni vayron qildi va xazinani egalladi. Oradan ikki yuz yil oʻtgach, Thorin Oakenshield Gandalf va Bilbo Baggins yordamida oʻz vatanini qaytarib olish uchun xatarli safarga chiqdi. Smaug oʻldirilgach, Besh Armiya Jangida orklar tor-mor etildi va Dáin II Ironfoot boshchiligida Togʻ Ostidagi Qirollik qayta tiklandi. Halqa Urushida mittilar Sauronning shimoliy qoʻshinlariga qahramonlarcha qarshilik koʻrsatib, gʻalabaga ulkan hissa qoʻshdilar."
+    },
+    {
+      "title": "Yashirincha koʻmilgan boyliklar va Olovli yurak",
+      "content": "Mitti-odamlar togʻ qaʼridagi maʼdanlarni qazib olish va ulardan mislsiz qurollar, zargarlik buyumlari yaratishda barcha xalqlardan ustun turganlar. Ular faqat oltin va kumush bilan cheklanmasdan, afsonaviy mithril (haqiqiy kumush) maʼdanini faqat oʻzlari kashf etdilar va ishlov berdilar. Mittilarning qalbida yashirinib yotgan olov va cheksiz gʻayrat ularga har qanday azob-uqubatlarga, hatto ajdaho oloviga va Sauronning fitnalariga bardosh berishga imkon bergan. Ular oʻz zaminini va qadriyatlarini soʻnggi tomchi qonlarigacha himoya qilishdan hech qachon toʻxtamaganlar."
+    }
+  ]
+}

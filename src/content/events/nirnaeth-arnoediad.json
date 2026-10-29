@@ -1,0 +1,88 @@
+{
+  "id": "nirnaeth-arnoediad",
+  "title": "Nirnaeth Arnoediad",
+  "subtitle": "Sanogʻsiz Koʻz Yoshlar Jangi (Beshinchi Buyuk Jang)",
+  "era": "birinchi_davr",
+  "year_text": "Birinchi davr 472",
+  "location_id": "anfauglith",
+  "characters": [
+    "fingon",
+    "hurin",
+    "melkor",
+    "maedhros",
+    "turgon",
+    "glaurung",
+    "beleg"
+  ],
+  "belligerents": {
+    "side_a": [
+      "Maedhros Ittifoqi (Noldor elflari, Hador va Haleth xonadoni Edainlari)",
+      "Gondolinning o'n ming kishilik qo'shini (Turgon)",
+      "Belegost va Nogrod mittilari (Azaghâl)",
+      "Bór xonadoni sharqliklari",
+      "Doriathdan Beleg Cúthalion va Mablung, Nargothronddan Gwindor bo'linmasi"
+    ],
+    "side_b": [
+      "Morgoth lashkarlari (Thangorodrim legionlari, behisob o'rklar)",
+      "Balroglar to'dasi va ularning sardori Gothmog",
+      "O't-olov purkovchi Urulóki ajdarlari (Ajdaholar Otasi Glaurung)",
+      "Uldor Sotqin va uning xiyonatkor sharqlik to'dalari"
+    ]
+  },
+  "outcome": "Morgoth to'liq va hal qiluvchi strategik g'alabaga erishdi; Maedhros Ittifoqi sharqliklar xiyonati oqibatida butunlay parokanda bo'ldi; Noldor Oliy Qiroli Fingon va Huor halok bo'ldi; Húrin asir olindi; Shimoliy Beleriand va Hithlum to'liq dushman tasarrufiga o'tdi; Noldorning ochiq harbiy qarshilik ko'rsatish qudrati abadiy sindirildi.",
+  "preceding_event": "dagor-bragollach",
+  "succeeding_event": "gondolinning-qulashi",
+  "textual_status": "posthumous_edited",
+  "sources": [
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of the Fifth Battle: Nirnaeth Arnoediad",
+      "page": "188",
+      "notes": "Beshinchi buyuk jangning to'liq solnomasi, Fingonning halokati va Húrinning asirligi."
+    },
+    {
+      "book_slug": "the-children-of-hurin",
+      "chapter": "The Words of Húrin and Morgoth",
+      "page": "45",
+      "notes": "Nirnaeth oqibatlari, Thangorodrim qoyasidagi la'nat va Húrin xonadoni fojiasi."
+    },
+    {
+      "book_slug": "the-fall-of-gondolin",
+      "chapter": "The Last Tale of the First Age",
+      "page": "38",
+      "notes": "Turgon va Gondolin lashkarining jangga kirishi hamda Serech botqog'idagi qahramonlik."
+    },
+    {
+      "book_slug": "the-war-of-the-jewels",
+      "chapter": "The Tale of Years",
+      "page": "112",
+      "notes": "Birinchi Davr 472-yil voqealari xronologiyasi va qoralamalar tahlili."
+    }
+  ],
+  "description_sections": [
+    {
+      "title": "Tarixiy zamin va Maedhros Ittifoqining tuzilishi",
+      "content": "Dagor Bragollach kulfatlaridan va Noldor mudofaa chiziqlarining yorib o'tilishidan so'ng, Beleriand xalqlari uzoq muddat sarosimada qoldilar. Biroq Beren va Lúthienning mislsiz jasorati — Morgothning qora tojidan Silmarilni tortib olib chiqishlari — butun O'rta-yerga Qora Lord yengilmas emasligini isbotladi. Ushbu xushxabar Fëanorning to'ng'ich o'g'li Maedhrosni yangidan harakatga keltirdi. U Belerianddagi barcha ozod xalqlarni bir mushtga jamlash maqsadida 'Maedhros Ittifoqi'ni (Union of Maedhros) tuzishga kirishdi. Koalitsiyaga Noldor xonadonlari, Hithlum va Dorthonionning omon qolgan Edainlari, Haleth xalqi hamda Belegost va Nogrod mitti-odamlari jalb qilindi. Sharqdan yangi kelgan insonlar — Bór va Ulfang qabilalari ham qasamyod qildilar. Biroq o'tmishdagi adovatlar ittifoqning to'liq kuchayishiga to'sqinlik qildi: Doriath shohi Thingol Celegorm va Curufinning tajovuzkor xatti-harakatlari tufayli bosh qo'shinini yubormadi (faqat Beleg Cúthalion va Mablung shaxsiy izni bilan qo'shildi); Nargothrond esa xuddi shu sabab bilan faqat Gwindor boshchiligidagi kichik bo'linmani jo'natdi."
+    },
+    {
+      "title": "Harbiy reja va qo'shinlarning joylashuvi",
+      "content": "Maedhrosning harbiy rejasi ulkan 'ikki tomonlama qisqich' strategiyasiga tayanar edi. Sharqiy qo'shin Fëanor o'g'illari, mitti-odamlar va sharqliklar bilan Anfauglith tekisligi bo'ylab ochiqdan-ochiq yurish boshlashi, shu orqali Morgothning bosh kuchlarini o'ziga jalb qilishi kerak edi. G'arbdan esa Noldor Oliy Qiroli Fingon Hithlum tog'laridan tushib, Hador xonadoni insonlari (Húrin va Huor boshchiligida) hamda Falas elflari bilan kutib turishi lozim edi. Sharqda Maedhros jangga kirishi bilan Hithlum cho'qqilarida ulkan mayoq olovi yoqilishi, shunda Fingon dushmanning ortidan zarba berib, Angband qo'shinini ikki o't orasida qoldirib qirishi ko'zlangan edi. Jang arafasida hech kim kutmagan buyuk mo''jiza yuz berdi: Yashirin Shohlik hukmdori Turgon o'zining o'n ming kishilik saralangan, oppoq sovutli va uzun nayzali Gondolin lashkari bilan tog'lar orasidan chiqib, Fingon qanotiga qo'shildi. Bu ezgulik kuchlari qalbida to'liq g'alabaga bo'lgan yuksak ishonchni uyg'otdi."
+    },
+    {
+      "title": "Anfauglithdagi provokatsiya va Gwindorning qasosi",
+      "content": "Birinchi Davrning 472-yili yozning o'rtalarida, quyosh nurlari ostida jang boshlandi. Ammo Maedhrosning sharqiy qo'shini kelishuv bo'yicha belgilangan vaqtda yetib kelmadi — bunga sharqlik Uldorning ataylab noto'g'ri xabarlar tarqatishi va yo'lni kechiktirishi sabab bo'lgan edi. Shu paytda Morgoth Fingonni tepaliklardagi mustahkam marralardan tekislikka aldab tushirish maqsadida ayyorona provokatsiyani ishga soldi. Angbanddan ilg'or bo'linma chiqib, Bragollach jangida asir olingan Nargothrond shahzodasi Gelmirni (Gwindorning ukasi) elflar ko'z o'ngida shafqatsizlarcha qiynadi va qo'l-oyoqlarini chopib, boshini tanasidan judo qildi. Ukasining azobli o'limini ko'rgan Gwindor o'z g'azabini jilovlay olmadi va otliq safdoshlari bilan dushmanga tashlandi. Fingon butun lashkariga 'Hujum!' buyrug'ini berishga majbur bo'ldi. Elflar va insonlarning qahrli hamlasidan dushmanning ilg'or saflari chil-parchin bo'ldi; g'arbiy qo'shin qora legionlarni qirib, to'g'ridan-to'g'ri Angband darvozalari tagigacha yorib bordi va Thangorodrim devorlariga urildi. Gwindor va uning saralangan otliqlari hatto qal'a ichkarisiga kirib ketdilar, ammo u yerda qurshovga olinib halok bo'ldilar."
+    },
+    {
+      "title": "Ajdaholar olovi, Balroglar va Uldorning qora xiyonati",
+      "content": "Fingon qo'shini Angband ostonasida qamalib qolganida, Morgoth o'zining so'nggi va eng mudhish zaxiralarini jangga tashladi. Thangorodrimning yashirin darvozalaridan o't-olov purkovchi Urulóki ajdarlari, ularning boshida to'liq ulg'aygan Glaurung hamda Balroglar galdasi chiqib keldi. Ayni shu daqiqada Maedhrosning sharqiy armiyasi jang maydoniga yetib keldi va umid yana yiltilladi. Biroq eng fojiali va halokatli zarba ichkaridan berildi: Fëanor o'g'illariga qasamyod qilgan Ulfang o'g'li Uldor Sotqin o'z odamlari bilan kutilmaganda Noldorning orqa tomoniga qilich soldi, tog'lardan esa Morgothga xizmat qiluvchi yangi sharqliklar to'dasi bostirib tushdi. Sharqiy front parokanda bo'ldi; Fëanorning yetti o'g'li qonli jarohatlar bilan o'z jangchilarining qoldiqlari aro janubga qochishga majbur bo'ldilar. Mittilar esa maydonda qahramonona mudofaada turdilar: Belegost hukmdori Azaghâl Glaurung qorniga pichoq urib, bahaybat maxluqni yarador qildi va uni Angbandga qochishga majbur etdi, ammo o'zi ajdaho og'irligi ostida ezilib shahid bo'ldi. Mittilar o'z shohlarining jasadini dafn qo'shig'ini kuylab maydondan olib chiqib ketdilar va dushman ularning g'amgin saflariga teginishga jur'at etolmadi."
+    },
+    {
+      "title": "Fingonning halokati va Serech botqog'idagi so'nggi qasam",
+      "content": "G'arbiy qanotda Fingon armiyasi butunlay qutg'usiz qurshovda qoldi. Balroglar sardori Gothmog o'zining qora to'qmog'i va olovli qamchisi bilan Noldor saflarini yorib o'tib, Oliy Qirol Fingon bilan yakkama-yakka olishdi. Boshqa bir Balrog Fingonning ortidan kelib, uni olovli tasmasi bilan bog'lab oldi; shunda Gothmog Fingonning oq patli dubulg'asini boltasi bilan chopib tashladi va Noldor Oliy Qiroli yerga quladi. Gothmog va uning maxluqlari shoh jasadini qora loyga qorishtirib, uning kumush va moviy bayrog'ini qonga beladilar. Qo'shinning batamom qirilish xavfi ostida Turgon va uning Gondolin lashkarini qutqarish uchun Hador xonadoni insonlari mislsiz fidoyilik ko'rsatdilar. Húrin va Huor Turgonga: 'Gondolin omon qolsa, elflar va insonlar uchun najot umidi o'lmaydi!' deya, chekinishni so'radilar. Hador jangchilari Serech botqog'i va Rivil daryosi bo'yida so'nggi mudofaa chizig'ini qurdilar. Huor ko'ziga tekkan zaharli o'qdan jon berdi. Húrin esa dushman qarshisida yolg'iz qolib, o'zining ikki tig'li og'ir boltasini har siltaganida 'Aurë entuluva! Day shall come again!' ('Tong yana otadi!') deb hayqirdi. U yetmishdan ziyod troll va o'rk sardorlarini yer tishlatdi. Oxir-oqibat boltasi erib, o'rklarning murdalari ostida qolib ketgach, Morgothning qat'iy amri bilan tiriklayin zanjirband qilindi."
+    },
+    {
+      "title": "Tarixiy fojia, Haudh-en-Ndengin va Beleriandning qismati",
+      "content": "Ushbu falokatli to'qnashuv 'Nirnaeth Arnoediad' — Sanog'siz Ko'z Yoshlar Jangi deb nomlandi, zero unda Beleriand xalqlarining eng jasur avlodi qurbon bo'ldi. Jang maydonida qolgan barcha halok bo'lgan elflar, insonlar, ularning qurol-aslahalari va otlarining jasadlarini Morgothning o'rklari Anfauglith markaziga to'plab, ulkan tepalik barpo etdilar; bu qabrtosh 'Haudh-en-Ndengin' (Qatl Etilganlar Tepaligi) deb ataldi. G'alati bir mo''jiza tufayli, qurigan va zaharli sahro o'rtasidagi aynan shu tepalikda yashil maysalar unib chiqdi va o'rklar unga qadam bosishdan qo'rqadigan bo'ldilar. Nirnaethdan so'ng Noldorning ochiq erlardagi barcha hukmronligi barham topdi; Hithlum sharqlik bosqinchilar changaliga tashlandi, insonlarning ayollari va bolalari qul qilindi. Beleriandda faqat Doriathning Melian Kamari bilan himoyalangan o'rmonlari, Nargothrond g'orlari va tog'lar qa'riga bekingan Gondolingina omon qoldi. Húrin esa Thangorodrim cho'qqisidagi tosh taxtga zanjirband etilib, uning farzandlari ustiga Morgothning dahshatli la'nati yog'ildi."
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "id": "gondolin",
+  "name": "Gondolin",
+  "elvish_name": "Ondolindë",
+  "type": "shahar",
+  "region": "beleriand",
+  "coordinates": {
+    "map_id": "beleriand",
+    "x": 1040,
+    "y": 1050
+  },
+  "founded_era": "Birinchi davr 116",
+  "destroyed_era": "Birinchi davr 510",
+  "rulers": [
+    "Turgon"
+  ],
+  "notable_events": [
+    "Gondolinning qulashi",
+    "Nirnaeth Arnoediad"
+  ],
+  "textual_status": "author_published",
+  "summary": "Gondolin — Echoriath (Aylana togʻlar) bagʻridagi Tumladen vodiysida Turgon tomonidan barpo etilgan yashirin Noldor qirolligi. Oq marmar minoralari va Yetti darvozasi bilan mashhur boʻlgan.",
+  "sources": [
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of Tuor and the Fall of Gondolin",
+      "page": "237",
+      "notes": "Turgonning yashirin shahrining barpo etilishi va fojiali qulashi tafsilotlari."
+    }
+  ],
+  "description_sections": [
+    {
+      "title": "Yashirin Shohlik va Oq Tosh Shahar",
+      "content": "Gondolin (Sindarincha: Ondolindë — 'Musiqiy Tosh') — Birinchi Davrda Noldor Oliy Qiroli Turgon tomonidan Qurshovchi Togʻlar (Echoriath) qaʼridagi yashirin Tumladen vodiysida barpo etilgan afsonaviy shahar. Shahar dizayni Valinordagi Tirion shahrining nusxasi sifatida barpo etilgan.\n\nShaharga faqat qoyatoshga oʻyilgan maxfiy gʻor yoʻli va Yetti Darvoza (Yogʻoch, Tosh, Bronza, Temir, Kumush, Oltin va Poʻlat darvozalar) orqali kirish mumkin edi. Markazida Turgon saroyi va Fëanor yasagan daraxtlarning kumush va oltin nusxalari — Belthil va Glingal qad rostlagan."
+    },
+    {
+      "title": "Tuorning kelishi va Maeglin xiyonati",
+      "content": "Ulmo inoyati bilan inson Tuor Gondolinga yetib kelib, shahar halokati haqidagi ilohiy ogohlantirishni yetkazdi. Turgon qochishdan bosh tortdi, ammo Tuorga oʻz qizi Idril Celebrindalni xotinlikka berdi.\n\nTurgonning jiyani Maeglin qorongʻu hasad tufayli Morgothga asir tushib, Gondolinning maxfiy joylashuvini sotdi."
+    },
+    {
+      "title": "Gondolinning qulashi (Fall of Gondolin)",
+      "content": "Birinchi Davrning 510-yilida Morgoth Balroglar, ajdarlar va temir mashinalar bilan Gondolinga bostirib kirdi. Turgon oʻz minorasi qulashi ostida halok boʻldi. Ecthelion Balroglar yetakchisi Gothmogni favvora hovuzida oʻldirdi, Glorfindel esa togʻ dovonida Balrog bilan birga qoyadan qulab jon berdi.\n\nIdril va Tuor maxfiy yerosti yoʻli orqali omon qolgan xalqni (jumladan yosh Eärendilni) olib chiqib, Sirion bandargohiga xalos qildilar."
+    },
+    {
+      "title": "Yetti Darvoza mudofaasi va Amon Gwareth me'morchiligi",
+      "content": "Gondolin Amon Gwareth tepaligida oq marmardan bunyod etilgan bo'lib, Tirion shahri nusxasida barpo qilingan edi. Unga olib boruvchi yagona yashirin yo'l Yetti Darvoza bilan himoyalangan: Yog'och, Tosh, Bronza, Temir, Kumush, Oltin va nihoyat Po'lat Darvoza. Har bir darvoza o'ziga xos soqchilar va minoralar tizimiga ega edi. Qirol Turgon saroyi oldida kumush va oltindan yasalgan Ikki Daraxt (Belthil va Glingal) qad rostlab turgan. Shahar nafaqat qal'a, balki qurolsozlik, zargarlik va she'riyatning eng buyuk akademiyasi bo'lgan."
+    },
+    {
+      "title": "Ulmoning ogohlantirishi, Tuorning kelishi va qurolsozlik sirlari",
+      "content": "Gondolin poydevori Vala Ulmo ilhomi bilan qo'yilgan bo'lib, Ulmo shahar qulashi muqarrar bo'lganida Turgonga Vinyamarda qoldirilgan qurol-yarog'larni kiyib kelgan inson – Tuor orqali ogohlantirish yubordi. Turgon kibr sababli shaharni tark etishdan bosh tortdi. Gondolin ustalari O'rta-yer tarixidagi eng mashhur sehrli qilichlar – Glamdring (Turgon qilichi, keyinchalik Gandalf quroli), Orcrist va Sting (Frodo xanjari)ni yaratdilar. Bu qurollar yaqin atrofda o'rklar paydo bo'lganda ko'k olovdek porlash xususiyatiga ega edi. Shahar Beleriandning eng soʻnggi va eng goʻzal qalʼasi sifatida afsonalarda mangu qoldi."
+    }
+  ]
+}

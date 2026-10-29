@@ -1,0 +1,37 @@
+{
+  "id": "ainulindale",
+  "name": "Ainulindalë va Oʻchmas Olov",
+  "concept_type": "metaphysical_force",
+  "associated_ainur": [
+    "melkor",
+    "manwe",
+    "ulmo",
+    "aule",
+    "varda"
+  ],
+  "ontological_evolution": "Mifologik afsona bo'yicha olam ilohiy simfoniya orqali vujudga kelgan, keyingi qo'lyozmalarda esa bu metafizik ramziy tushuncha sifatida talqin qilingan.",
+  "textual_status": "posthumous_edited",
+  "summary": "Ainulindalë (Ainur Musiqasi) va Oʻchmas Olov (Yashirin Olov / The Secret Fire) — Arda va butun moddiy koinotning yaralishiga asos boʻlgan ilohiy simfoniya hamda faqat Eru Ilúvatarga mansub boʻlgan, borliqqa haqiqiy hayot, erkin iroda va ong baxsh etuvchi oliy metafizik qudrat.",
+  "sources": [
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Ainulindalë: The Music of the Ainur",
+      "page": "15"
+    },
+    {
+      "book_slug": "history-of-middle-earth",
+      "chapter": "Vol. X: Morgoth's Ring — Ainulindalë",
+      "page": "3"
+    }
+  ],
+  "cosmology_sections": [
+    {
+      "title": "Ainur Musiqasi: Borliqning ilohiy simfoniyasi",
+      "content": "Ainulindalë (Quenya tilida: 'Ainur Musiqasi') — Arda va butun Eä borligʻining yaratilishiga asos boʻlgan ulugʻvor ilohiy kosmologik voqeadir. Yagona Xudo — Eru Ilúvatar oʻz fikridan Ainurni yaratdi va ularga Buyuk Mavzuni (The Great Theme) taqdim etib, musiqiy garmoniya yaratishni buyurdi.\n\nAinur sadosi butun Boʻshliqni toʻldirdi. Har bir Ainu oʻzining ilohiy tushunchasiga koʻra simfoniyaga hissa qoʻshdi va bu musiqada kelajakdagi butun koinot tarixi shakllandi."
+    },
+    {
+      "title": "Melkor dissonansi va Uchinchi Mavzu",
+      "content": "Ainur orasida eng qudratlisi boʻlgan Melkor oʻzining manmanligi va boshqarish hirsi tufayli musiqaga oʻzining baland, qoʻpol va shovqinli ohanglarini kiritdi. Bu koinotda birinchi nizo va nomutanosiblikni vujudga keltirdi.\n\nIlúvatar Melkorning dissonansiga qarshi yangi mavzularni, xususan Oʻz Farzandlari — Elflar va Insonlar yaratilishini ifodalovchi Uchinchi Mavzuni kiritdi. Eru Melkorga: 'Hech bir ohang Mening izmimdan tashqari boʻlolmaydi, sen qanchalik buzishga urinma, bu oxir-oqibat Mening ulugʻvorligimga xizmat qiladi' deb uqtirdi."
+    }
+  ]
+}

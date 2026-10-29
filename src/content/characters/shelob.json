@@ -1,0 +1,70 @@
+{
+  "id": "shelob",
+  "name": "Shelob",
+  "original_name": "Shelob",
+  "father_name": "Nomaʼlum",
+  "mother_name": "Ungoliant (Qorongʻulik iblisi)",
+  "spouse": "Yoʻq",
+  "children": [
+    "Qorongʻu Oʻrmon va Ephel Dúathning ulkan oʻrgimchaklari"
+  ],
+  "aliases": [
+    "Buyuk Shelob (Shelob the Great)",
+    "U (Her Ladyship — orklar tilida)",
+    "Ungoliantning soʻnggi farzandi"
+  ],
+  "titles": [
+    "Kirix Ungol dovoni qoʻriqchisi"
+  ],
+  "race": "boshqa",
+  "sub_race": "Ulkan Oʻrgimchak (Ungoliant avlodi)",
+  "culture": "Ephel Dúath (Torech Ungol)",
+  "birth_year": "Birinchi Davr (Nan Dungortheb)",
+  "death_year": "Nomaʼlum (U.D. 3019-yilda ogʻir yaralangan)",
+  "weapons_and_artifacts": [
+    "Falajlovchi zaharli nish",
+    "Mustahkam qora toʻrlar (oddiy qilich kesa olmaydigan iplar)"
+  ],
+  "primary_locations": [
+    "cirith-ungol",
+    "barad-dur"
+  ],
+  "textual_status": "author_published",
+  "summary": "Birinchi Davrdagi Valinor Daraxtlarini quritgan qorongʻulik maxluqi Ungoliantning eng soʻnggi va eng dahshatli farzandi. Sauronning oʻzidan oldin Mordor togʻlaridagi Kirix Ungol gʻorlariga joylashgan; Frodo Begginsni chaqib falaj qilganida Semvayz Gemji tomonidan Sting qilichi va Galadriel shishachasi bilan ogʻir yaralangan.",
+  "biography_sections": [
+    {
+      "title": "Ungoliant merosi va Torech Ungol",
+      "content": "Shelob Birinchi Davrda Beleriyandning shimolidagi Ered Gorgoroth (Dahshat Togʻlari) etagida Ungoliantdan tarqalgan yovuz oʻrgimchaklar zotining eng yirigi edi. Beleriyand dengiz ostiga choʻkishidan oldin u sharqqa qochib, Ikkinchi Davrda Sauron hali Barad-dûrni qurmasidan burun Soyali Togʻlar (Ephel Dúath) dovonidagi Torech Ungol («Oʻrgimchak uyasi») labirintlariga oʻrnashib olgan. U na Sauronga, na boshqa kuchga xizmat qilgan, faqat tirik mavjudotlarning qonini soʻrish va oʻz tanasini shishirishni istagan; Sauron esa dovonni ishonchli qoʻriqlagani uchun uni «oʻz mushugi» deb bilib, vaqti-vaqti bilan unga tutqun orklarni tashlab turgan."
+    },
+    {
+      "title": "Gollum bilan bitim va Frodoning chaqilishi",
+      "content": "Uchinchi Davr oxirlarida Mordordan qochib chiqayotgan Gollum Torech Ungol zulmatida adashib qolib, Shelobga duch kelgan va unga oʻzidan koʻra mazaliroq oʻljalar topib kelishga vaʼda berib jonini saqlab qolgan. U.D. 3019-yil mart oyida Gollum Frodo Beggins va Semvayz Gemjini aynan Shelob uyasiga boshlab kirgan: Gollumning maqsadi oʻrgimchak xobbitlarni yeb boʻlgach, tashlab yuborilgan kiyimlar orasidan Yagona Uzukni olish edi. Labirintdan chiqaverishda Shelob Frodoni quvib yetib, boʻyniga zaharli nishini sanchgan va uni toʻrga oʻrab qoʻygan."
+    },
+    {
+      "title": "Semvayz Gemji bilan jang",
+      "content": "Xoʻjayini oʻldi deb oʻylagan Semvayz Gemji gʻazab va umidsizlik bilan qilichlar — Elendil qilichi parchasi hamda Gondolin elf-tigʻi Stingni yalangʻochlab Shelobga tashlangan. Asrlar davomida toshdek qattiqlashgan oʻrgimchak terisini hech bir inson kuchi teshishi mumkin emas edi, biroq Sem Galadriel shishachasidagi Earendil yulduzi nurini baland koʻtarib Shelobning koʻzlarini qamashtirgan. Soʻngra Shelob oʻzining ulkan ogʻirligi bilan Semni bosib tushmoqchi boʻlganida, Sem Sting qilichini tik tutib, oʻrgimchakning yumshoq qornini oʻz vazni bilan yorib yuborgan. Koʻzi va qornidan ogʻir yaralangan Shelob qorongʻu iniga sudralib kirib ketgan va uning keyingi taqdiri dostonlarda nomaʼlum qolgan."
+    }
+  ],
+  "etymology": "Tolkienning izohiga koʻra, Shelob umumiy til (Vestron) tarjimasi boʻlib, she («urgʻochi») va qadimgi inglizcha lob («oʻrgimchak») soʻzlaridan yasalgan. Sindarin tilida uning uyasi Torech Ungol deb ataladi.",
+  "sources": [
+    {
+      "book_slug": "the-two-towers",
+      "chapter": "IV kitob, 9-bob (Shelobning uyasi) va 10-bob (Master Semvayzning tanlovi)",
+      "page": "718"
+    },
+    {
+      "book_slug": "the-silmarillion",
+      "chapter": "Quenta Silmarillion, 8-bob (Valinorning qorongʻulashishi) va 19-bob",
+      "page": "81"
+    }
+  ],
+  "related_characters": [
+    "frodo-baggins",
+    "samwise-gamgee",
+    "gollum",
+    "sauron",
+    "melkor",
+    "galadriel"
+  ],
+  "adaptations": []
+}

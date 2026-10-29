@@ -1,0 +1,108 @@
+{
+  "id": "legolas",
+  "name": "Legolas Greenleaf",
+  "original_name": "Legolas (Sindarin)",
+  "father_name": "Thranduil",
+  "children": [],
+  "aliases": [
+    "Legolas Yashilyaproq (Greenleaf)",
+    "Oʻrmon Kamonchisi",
+    "Ithilien Elflari Sardori"
+  ],
+  "titles": [
+    "Katta Yashil Oʻrmon (Mirkwood) Shahzodasi",
+    "Uzuk Birodarligi aʼzosi",
+    "Ithilien Elflari Yoʻlboshchisi"
+  ],
+  "race": "elflar",
+  "sub_race": "Sindar",
+  "culture": "Mirkwood (Buyuk Yashil Oʻrmon) / Ithilien",
+  "birth_year": "Uchinchi davr (aniq yili manbalarda koʻrsatilmagan)",
+  "death_year": "Boqiy Gʻarbga oʻtgan (Toʻrtinchi davr 120)",
+  "weapons_and_artifacts": [
+    "Galadhrim uzun kamoni va kumush oʻqlar",
+    "Mirkwood kalta oʻrmon kamoni",
+    "Oq poʻlat elflar pichogʻi"
+  ],
+  "primary_locations": [
+    "rivendell",
+    "minas-tirith"
+  ],
+  "textual_status": "author_published",
+  "uncertainty_notes": "Tolkien asarlarida Legolasning aniq tugʻilgan yili yoki onasi haqida maʼlumot keltirilmagan. Uning otasi Thranduil Birinchi davr oxirida Beleriand qulagach, sharqqa koʻchib kelgan Sindar amirzodasi boʻlib, Mirkwooddagi Silvan (Oʻrmon) elflari ustidan hukmronlik oʻrnatgan. Shu bois Legolas kelib chiqishiga koʻra olijanob Sindar naslidan boʻlsa-da, madaniyat va turmush tarzida yovvoyi oʻrmon elflarining barcha xususiyatlarini namoyon etgan.",
+  "summary": "Mirkwood qiroli Thranduilning oʻgʻli, Sindar shahzodasi va Uzuk Birodarligidagi elflarning yagona elchisi. Oʻzining beqiyos uzoqni koʻrish qobiliyati, tovushsiz yengil qadamlari va mislsiz kamonbozligi bilan mashhur. Moria, Helm darasi va Pelennor janglarida mardona jang qilgan. Mitti Gimli bilan oʻrtasidagi tarixiy adovatni sindirib, abadiy birodarlik oʻrnatgan. Halqa Urushidan soʻng Ithilienda goʻzal elflar oʻlkasiga asos solgan va Toʻrtinchi davrda Gimli bilan birga Boqiy Gʻarbga suzib ketgan.",
+  "etymology": "Sindarin tilining Silvan dialektida 'Legolas' — laeg ('yashil, yosh') va golas / lass ('barglar, yaproqlar yigʻindisi') soʻzlaridan olingan boʻlib, 'Yashilyaproq' (Greenleaf) maʼnosini anglatadi.",
+  "biography_sections": [
+    {
+      "title": "Mirkwood shahzodasi va elflar merosi",
+      "content": "Legolas Yashilbarg (Greenleaf) Buyuk Yashil Oʻrmon (keyinchalik Mirkwood) Qiroli Thranduilning oʻgʻli va Oropherning nevarasidir. U oʻrmon elflari (Silvan) ustidan hukmronlik qiluvchi olijanob Sindar sulolasiga mansub. Uning yoshi Tolkien asarlarida aniq koʻrsatilmagan boʻlsa-da, u koʻp asrlar davomida oʻrmon sirlari, kamondan otish va yengil qadamlar bilan yugurish mahoratini mukammal egallagan.\n\n3018-yil yozida Mirkwood zindonida saqlanayotgan Gollum oʻrklar hujumi natijasida qochib ketgach, Qirol Thranduil Legolasni bu noxush xabarni Elrondga yetkazish uchun elchi sifatida Rivendellga joʻnatdi."
+    },
+    {
+      "title": "Uzuk Birodarligi va Qorli Qoradras dovoni",
+      "content": "Elrond Kengashida ishtirok etgan Legolas Elflar xalqi vakili sifatida toʻqqiz aʼzodan iborat Uzuk Birodarligi safiga kiritildi. U gnom Gimli bilan dastlab sovuq va adovatli munosabatda edi, chunki oʻtmishda Thranduil Gimlining otasi Glóinni asir qilgan edi.\n\nCaradhras qor boʻronida boshqa barcha birodarlar chuqur qorga botib harakatlanolmay qolganda, Legolas oʻzining yengil elflar qadami bilan qor ustida iz qoldirmasdan yurib, dovon holatini razvedka qilib qaytdi. Moria konlarida qorongʻulikda harakatlanish va oʻrklarga qarshi kechgan shiddatli janglarda uning oʻtkir nigohi va tezkor oʻqlari Birodarlikni koʻp bor halokatdan asrab qoldi."
+    },
+    {
+      "title": "Gimli bilan tarixiy doʻstlik va Lothlórien",
+      "content": "Lothlórienga yetib kelganlarida, Gimli xonim Galadrielning tengsiz husni va olijanobligiga oshiq boʻldi. Xonimning marhamati va shirin soʻzlari Gimli bilan Legolas oʻrtasidagi koʻp asrlik adovat devorini parchalab tashladi.\n\nUlar Lóriendan chiqishlarida ajralmas doʻstlarga aylandilar. Elflar va Mittilar tarixida hech qachon bunday samimiy, mehrli va fidoiy doʻstlik kuzatilmagan edi. Galadriel Legolasga Galadhrim elflari ustozi tomonidan yasalgan ajoyib uzun kamon va sadoq tuhfa qildi."
+    },
+    {
+      "title": "Uch Ovchilar, Hornburg va Pelennor janglari",
+      "content": "Amon Henda Boromir halok boʻlib, Merry va Pippin oʻgʻirlab ketilgach, Legolas Aragorn va Gimli bilan birga 'Uch Ovchilar' (The Three Hunters) ittifoqini tuzdi. Ular toʻrt kecha-kunduz tinimsiz Rohan tekisliklari boʻylab Uruk-hailarni taʼqib qildilar.\n\nHornburg (Helm's Deep) qamalida Legolas va Gimli oʻrtasida kim koʻp dushmanni yer tishlatishi boʻyicha mashhur doʻstona musobaqa boʻlib oʻtdi (Legolas 41, Gimli 42 ta oʻrkni magʻlub etdi). Oʻliklar Yoʻli (Paths of the Dead) orqali oʻtib, Pelargirda qaroqchilar flotini egallashda va Pelennor dalalarida erkin xalqlarning gʻalaba qozonishida Legolas misli koʻrilmagan jasorat koʻrsatdi."
+    },
+    {
+      "title": "Dengiz sogʻinchi, Ithilien va Boqiy Gʻarb",
+      "content": "Pelargir bandargohida oq baliqchilarning (chayka) faryodini eshitgan Legolasning qalbida Galadriel bashorat qilgan 'Dengiz sogʻinchi' (Sea-longing) uygʻondi — bu Sindar elflarining Oʻrta-yerni tark etib Aman dengiziga talpinuvchi boqiy chaqirigʻi edi.\n\nUrushdan soʻng u Mirkwooddan elflarni ergashtirib kelib, goʻzal Ithilien oʻlkasida gullab-yashnagan elf posyolkasiga asos soldi. Toʻrtinchi davrning 120-yilida Qirol Elessar (Aragorn) vafot etgach, Legolas Anduin boʻyida kulrang kema yasadi va oʻzining qadrdon doʻsti Gimli bilan birga Boqiy Gʻarbga — Valinorga suzib ketdi. Gimlining Valinorga kirishiga Valar tomonidan ruxsat berilishi Legolasning shaxsiy iltimosi va Galadriel shafoati bilan amalga oshdi."
+    }
+  ],
+  "sources": [
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "The Council of Elrond",
+      "page": "241"
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "The Great River",
+      "page": "379"
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "The Passing of the Grey Company",
+      "page": "766"
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "The Field of Cormallen",
+      "page": "934"
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "Appendix A: Annals of the Kings and Rulers (III: Durin's Folk)",
+      "page": "1074"
+    }
+  ],
+  "related_characters": [
+    "gimli",
+    "aragorn",
+    "gandalf",
+    "frodo-baggins",
+    "galadriel",
+    "boromir",
+    "eomer"
+  ],
+  "adaptations": [
+    {
+      "medium": "film",
+      "title": "The Lord of the Rings & The Hobbit Film Trilogies",
+      "creator": "Peter Jackson",
+      "year": 2001,
+      "divergence_notes": "Filmda Orlando Bloom ijro etgan Legolas mislsiz akrobatik harakatlari (qalqonda sirpanish, ulkan mumakil ustidan sakrash) bilan tomoshabinlar olqishiga sazovor bo'lgan. Kitobda Legolas jismoniy tryuklardan ko'ra ko'proq ruhiy xotirjamlik, poetik qo'shiqlar va tabiat hissi bilan ajralib turuvchi chuqur obrazdir."
+    }
+  ],
+  "image": {
+    "src": "/images/characters/legolas.webp",
+    "src_thumb": "/images/characters/legolas-thumb.webp",
+    "alt": "Legolas Yashilbarg oʻrmon kiyimida, yelkasida Galadhrim kamoni va qoʻlida oq pichoqlari bilan",
+    "caption": "Legolas — Mirkwood qiroli Thranduilning oʻgʻli, Sindar elf shahzodasi va Uzuk Birodarligi aʼzosi"
+  }
+}

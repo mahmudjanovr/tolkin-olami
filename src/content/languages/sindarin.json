@@ -1,0 +1,43 @@
+{
+  "id": "sindarin",
+  "name": "Sindarin",
+  "family": "Eldarin (Beleriand Sindar tili)",
+  "writing_systems": [
+    "cirth",
+    "tengwar"
+  ],
+  "inventor": "Daeron (Cirth runalari)",
+  "phonology_overview": "Sindarin tili fonetik va morfologik jihatdan qadimgi velliy (kelt) tiliga asoslangan bo'lib, unga murakkab va o'ta nafis tovush o'zgarishlari xosdir. Sindarinda eng muhim fonetik hodisa bu mutatsiya (lenitsiya) hisoblanadi: so'zlar birikmasida oldingi so'zning fonetik ta'siri ostida keyingi so'zning boshlang'ich undoshi yumshaydi, jarangli yoki sirg'aluvchiga aylanadi (masalan, p -> b, t -> d, c -> g; b -> v, d -> dh, g yo'qoladi). Unlilar tizimida esa velliycha i-mutatsiyasi (umlaut) yetakchi rol o'ynaydi: orqa qator unlilari old qatorga ko'chadi (a -> e, o -> e, u -> y), bu ayniqsa otlarning ko'plik shaklini yasashda asosiy grammatik vosita sanaladi.",
+  "sample_text_original": "A Elbereth Gilthoniel, silivren penna míriel o menel aglar elenath!",
+  "sample_text_uz": "Ey Elbereth, Yulduzlar Sohibasi! Osmon gumbazidan yulduzlar shuʼlasi olmosdek jilvalanib oqmoqda!",
+  "textual_status": "author_published",
+  "sources": [
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "A Knife in the Dark / Appendix E",
+      "page": "205"
+    }
+  ],
+  "grammar_and_vocabulary_sections": [
+    {
+      "title": "Beleriand Kulrang Elflari tili va velliycha ildizlar",
+      "content": "Sindarin O'rta-yerdagi Beleriand o'lkasida qolgan va Valinorga o'tmagan Teleri elflari (Sindar) tomonidan rivojlantirilgan tildir. Tolkien o'z maktublarida Sindarin fonologiyasini velliy (Kelt) tilining lingvistik jozibasi asosida yaratganini ta'kidlaydi. Tilning quloqqa yoqimli, sirli va silliq sadolanishi aynan uning murakkab fonotaktikasi, diftonglarining nafisligi (ae, ai, ei, oe, au) va sirg'aluvchi undoshlarining (dh, th, ch, lh, rh) boyligi bilan belgilanadi. Noldor elflari O'rta-yerga qaytgach, Thingolning buyrug'i sababli Sindarinni o'zlashtirdilar va bu til butun O'rta-yer bo'ylab elflar hamda oliy insonlar (Dúnedain) o'rtasidagi asosiy jonli muloqot vositasiga aylandi."
+    },
+    {
+      "title": "Lenitsiya (undosh mutatsiyasi) va fonologik qonuniyatlar",
+      "content": "Sindarin grammatikasining markaziy ustuni undoshlar mutatsiyasidir. Otlar va sifatlar oldidan aniqlik artikli (i - birlik, in - ko'plik), predloglar yoki ergashgan gap bog'lovchilari kelganda bosh undosh o'zgaradi. Masalan, yumshoq mutatsiyada (soft mutation/lenition): 'certh' (runa) so'zi 'i gerth' (o'sha runa), 'peredhel' (yarim-elf) so'zi 'i beredhel' shaklini oladi. Burun mutatsiyasida (nasal mutation) esa undoshlar burun tovushlariga aylanadi (b -> mb, d -> nd). Bundan tashqari, qattiq mutatsiya (stop mutation) va suyuq mutatsiya (liquid mutation) kabi murakkab fonetik o'tishlar mavjud. Bu qoidalar Sindarin nutqining to'xtovsiz, suvdek ravon oqishini ta'minlaydi."
+    },
+    {
+      "title": "Morfologiya, ko'plik yasalishi va fe'l tizimi",
+      "content": "Sindarin agglyutinativ tillardan ko'ra ko'proq flektiv xususiyatga ega. Otlarda kelishik qo'shimchalari Quenyadagi kabi ko'p emas; munosabatlar asosan predloglar va so'z tartibi orqali ifodalanadi. Ko'plik shakli asosan ichki unli o'zgarishi (i-umlaut) orqali yasaladi: 'adan' (inson) -> 'edain' (insonlar), 'amon' (tepalik) -> 'emyn' (tepaliklar), 'orch' (o'rk) -> 'yrch' (o'rklar), 'taur' (o'rmon) -> 'toer' (o'rmonlar). Fe'llar esa asosiy (I-fe'llar) va hosila (A-fe'llar) turlariga bo'linib, o'tgan zamonda suffikslar yoki unli uzayishi orqali o'zgaradi. Kishilik olmoshlari fe'l oxiriga enklitika sifatida birikishi mumkin."
+    },
+    {
+      "title": "Adabiy meros: A Elbereth Gilthoniel va Moria darvozasi",
+      "content": "Sindarin tilidagi eng mashhur epik matn Rivendellda va Shire chekkasida jaranglagan 'A Elbereth Gilthoniel' madhiyasidir: 'A Elbereth Gilthoniel, silivren penna míriel o menel aglar elenath!' (Ey Yulduzlar Sochuvchi Elbereth, osmondan yulduzlar shon-shavkati gavhardek yog'ilmoqda!). Shuningdek, Moria g'arbiy darvozasidagi mashhur Tengwar bitigi aynan Sindarinda bitilgan: 'Ennyn Durin Aran Moria. Pedo mellon a minno' (Moria Hukmdori Durin Darvozalari. Do'st deb ayt va kir). Sindarin tili Uchinchi Davrda nafaqat Lórien va Rivendell elflari, balki Gondor aslzodalari va Shimoliy Qo'riqchilarning (Rangers) oilaviy va maxfiy tili bo'lib xizmat qilgan."
+    },
+    {
+      "title": "Beleriand dialektlari: Doriath, Falas va Mithrim shevalari",
+      "content": "Sindarin tili Beleriandning turli viloyatlarida bir necha asosiy mintaqaviy dialektlarga boʻlingan. Thingol poytaxti boʻlgan Menegrothda \"Doriathrin\" (Doriath lahjasi) eng sof, arxaik va olijanob shakl sifatida rivojlangan. Dengiz sohilidagi Círdan bandargohlarida \"Falathrin\" shevasi keng tarqalgan boʻlib, aynan shu dialekt keyinchalik Noldor tomonidan oʻzlashtirilgan asosiy umumiy Sindarin asosiga aylandi. Shimoliy Belerianddagi Hithlum va Mithrim oʻlkalarida esa \"Shimoliy Sindarin\" mavjud boʻlib, uning fonetikasida koʻplab qadimgi qattiq undoshlar saqlanib qolgan edi. Bu lahjaviy rang-baranglik tilning tirik tarixiy evolyutsiyasini namoyon etadi."
+    }
+  ]
+}

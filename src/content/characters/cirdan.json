@@ -1,0 +1,86 @@
+{
+  "id": "cirdan",
+  "name": "Círdan Kemasoz",
+  "original_name": "Nowë (Círdan)",
+  "children": [],
+  "aliases": [
+    "Nowë (Asl ismi: Uzoqni Koʻruvchi / Fikr Sohibi)",
+    "Círdan the Shipwright (Kemasoz Círdan)"
+  ],
+  "titles": [
+    "Kulrang Bandargohlar (Mithlond) Hukmdori",
+    "Falas va Balar Oroli Sohibi",
+    "Narya (Olov Uzugi) Dastlabki Saqlovchisi"
+  ],
+  "race": "elflar",
+  "sub_race": "Teleri / Sindar (Falathrim)",
+  "culture": "Falas / Mithlond (Lindon)",
+  "birth_year": "Daraxtlar davri (Cuiviénenda uygʻongan)",
+  "death_year": "Boqiy (Toʻrtinchi davrda Soʻnggi Kemada Gʻarbga suzib ketgan)",
+  "weapons_and_artifacts": [
+    "Narya (Qizil Olov Uzugi — Celebrimbordan olib, Gandalfga topshirgan)",
+    "Vingilótë (Eärendil bilan birga qurgan muqaddas kema)",
+    "Oq kemalar floti"
+  ],
+  "primary_locations": [
+    "lindon",
+    "ered-luin",
+    "beleriand"
+  ],
+  "textual_status": "author_published",
+  "summary": "Cuiviénendan Buyuk Yurishga chiqqan birinchi avlod Teleri elflaridan boʻlib, Uchinchi davr yakunigacha Oʻrta-yerda yashagan eng keksa va eng uzoqni koʻra biluvchi Elf (uzun kumush soqolli yagona Elda). Falas va Kulrang Bandargohlar hukmdori, Eärendilning ustozi hamda Gandalfning ilohiy tabiatini birinchi boʻlib tanib, unga Olov Uzugi — Naryani topshirgan donishmand.",
+  "etymology": "Sindarin tilida 'Círdan' — cîr ('kema') va tâm/dan ('usta, yasovchi') soʻzlaridan tuzilib, 'Kemasoz, Kemalar Ustasi' maʼnosini anglatadi. Uning qadimgi ismi 'Nowë' — 'Chuqur fikr, oldindan bilish' deganidir.",
+  "biography_sections": [
+    {
+      "title": "Falas bandargohlari va Ulmoning sodiq xizmatkori",
+      "content": "Nowë Buyuk Yurish paytida yoʻqolib qolgan qarindoshi Elwë (Thingol)ni qidirib kechikkani sababli Teleri xalqi bilan Valinorga oʻta olmadi. Dengiz sohilida Vala Ulmo unga koʻrinib, Oʻrta-yerda qolishni va kelajak avlodlar uchun oq kemalar qurishni buyurdi hamda uning qalbiga bashorat nurini joyladi.\n\nBirinchi davr davomida Círdan Brithombar va Eglarest bandargohlarini boshqarib, Noldor qirollari Fingolfin, Finrod va Gil-galad bilan yaqin ittifoqda boʻldi. Nirnaeth Arnoediaddan keyin bandargohlari qulagach, u Balar orolida Gondolin va Doriath qochqinlariga panoh berdi, yosh Gil-galadni tarbiyaladi hamda Eärendil uchun Vingilótë kemasini qurib berdi."
+    },
+    {
+      "title": "Mithlond, Soʻnggi Ittifoq va Naryaning Gandalfga berilishi",
+      "content": "Ikkinchi davrda Círdan Lindon koʻrfazida Kulrang Bandargohlarga (Mithlond) asos soldi. Celebrimbor Uch Elf Uzugini yashirganida, Qizil Uzuk — Narya Gil-galad va Círdan ixtiyoriga topshirildi. Soʻnggi Ittifoq urushida Círdan Gil-galad va Elrond bilan Barad-dûr qamalida yetti yil jang qildi va Orodruin qiyaliklarida Isildurga Yagona Uzukni olovga tashlashni maslahat bergan ikki guvohdan biri boʻldi.\n\nUchinchi davrning taxminan 1000-yilida Gʻarbdan Istari (Sehrgarlar) kemalarda kelganida, faqat Círdan kulrang ridodagi kamtar chol — Mithrandir (Gandalf) aslida eng buyuk va eng olijanob ruh ekanini darhol angladi. Círdan barmoqlari orasidan Olov Uzugi — Naryani yechib, Gandalfga topshirar ekan: 'Ushbu uzukni ol, zero sening mehnating va tashvishlaring ogʻir boʻladi; u sovub borayotgan dunyoda yuraklarga jasorat olovini yoqishda senga madad beradi', dedi. Toʻrtinchi davr boshida Frodo, Bilbo, Gandalf, Elrond va Galadrielni Gʻarbga kuzatgan Círdan Oʻrta-yerda eng soʻnggi Oq Kema joʻnagunga qadar oʻz postida qoldi."
+    },
+    {
+      "title": "Kemasoz Círdan, Soqolli Elf va Kulrang Bandargohlar",
+      "content": "Círdan (Nowë) O'rta-yerda yashagan barcha elflar orasida eng qadimiylaridan biri bo'lib, Cuiviénen ko'li bo'yida uyg'ongan ilk avlodga mansub edi. U O'rta-yerdagi soqoli bo'lgan yagona elf sifatida tasvirlanadi (bu elflarning juda keksa yoshiga xos kamyob xususiyat edi). Birinchi Davrda Falas portlarini boshqargan bo'lsa, Ikkinchi va Uchinchi Davrlarda Mithlond (Kulrang Bandargohlar) hukmdori bo'ldi. U elflarning Boqiy G'arbgacha suzib borishiga qodir oq kemalarini yasagan yagona usta edi."
+    },
+    {
+      "title": "Olov Uzugi Naryaning topshirilishi va Boqiy G'arbga so'nggi kema",
+      "content": "Celebrimbor O'rta-yerdan ketayotganida Uch Uzugining eng qudratlilaridan biri bo'lgan Naryani (Olov Uzugi) Círdanga ishonib topshirgan edi. Biroq Ikkinchi Davrning 1000-yillari atrofida Boqiy G'arbdan Istari (Sehrgarlar) yetib kelganida, Círdan Gandalfning buyuk qalbini va kelajakdagi vazifasini his qilib, o'z uzugini unga in'om etdi. Círdan O'rta-yerdagi barcha elflar ketmaguncha sohillarda qolishga qasamyod qilgan edi; u Uchinchi Davr oxirida so'nggi kema bilan Valinorga yo'l oldi. Círdanning koʻp ming yillik sadoqati va donoligi Oʻrta-yer elflarining soʻnggi umid langari boʻldi. U har bir qalbning dardini tushunar, dengiz orqali Valinorga ketayotgan har bir kemaga oʻzining samimiy duosini va mehrini qoʻshib joʻnatar edi. Círdanning ruhiy kuchi va xokisorligi Noldor va Sindar elflari oʻrtasidagi eng buyuk tinchlik koʻprigi boʻlib qoldi. Uning uzoq umri Oʻrta-yerning barcha uch davridagi eng yuksak sadoqat namunasi edi."
+    }
+  ],
+  "sources": [
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of the Sindar",
+      "page": "92"
+    },
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of the Rings of Power and the Third Age",
+      "page": "304"
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "The Grey Havens",
+      "page": "1028"
+    },
+    {
+      "book_slug": "history-of-middle-earth",
+      "chapter": "The Peoples of Middle-earth (Last Writings: Círdan)",
+      "page": "384"
+    }
+  ],
+  "related_characters": [
+    "ulmo",
+    "thingol",
+    "gil-galad",
+    "elrond",
+    "earendil",
+    "gandalf",
+    "galadriel",
+    "celebrimbor",
+    "isildur",
+    "frodo-baggins"
+  ],
+  "adaptations": []
+}

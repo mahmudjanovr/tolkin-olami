@@ -1,0 +1,91 @@
+{
+  "id": "ar-pharazon",
+  "name": "Ar-Pharazôn Oltin",
+  "original_name": "Ar-Pharazôn (Tar-Calion)",
+  "father_name": "Gimilkhad (Tar-Palantírning ukasi)",
+  "spouse": "Tar-Míriel (Ar-Zimraphel — amakivachchasi)",
+  "children": [],
+  "aliases": [
+    "Tar-Calion (Quenya tilidagi majburiy qayd nomi)",
+    "Ar-Pharazôn the Golden (Oltin Pharazôn)"
+  ],
+  "titles": [
+    "Númenorning 25- va Soʻnggi Qiroli",
+    "Buyuk Armiya va Armada Sohibi"
+  ],
+  "race": "insonlar",
+  "sub_race": "Dúnedain (Qirol Odamlar / King's Men)",
+  "culture": "Númenor (Armenelos)",
+  "birth_year": "Ikkinchi davr 3118",
+  "death_year": "Ikkinchi davr 3319 (Aman qirgʻoqlarida Unutilgan Gʻorlar ostida tiriklayin koʻmilgan)",
+  "house_id": "elros-va-gondor-shohlari",
+  "weapons_and_artifacts": [
+    "Númenor Qirollik Hassasi (Sceptre of Númenor — halokatda yoʻqolgan)",
+    "Alcarondas (Dengiz Qalʼasi — Ar-Pharazônning ulkan bayroqdor kemasi)"
+  ],
+  "primary_locations": [
+    "numenor",
+    "barad-dur",
+    "tirion"
+  ],
+  "textual_status": "posthumous_edited",
+  "summary": "Númenorning yigirma beshinchi va eng soʻnggi, eng qudratli va eng takabbur hukmdori. Amakivachchasi Mírielga majburan uylanib taxtni tortib olgan, Umbar yurishida Sauronni tiz choʻktirib asir sifatida Númenorga olib kelgan, biroq Sauronning makri bilan boqiylik izlab Valinorga qurolli hujum qilgan va Akallabêth (Númenorning choʻkishi) halokatiga sababchi boʻlgan qirol.",
+  "etymology": "Adûnaic (Númenor) tilida 'Ar-Pharazôn' — 'Oltin Qirol' maʼnosini anglatadi. Quenya tilidagi rasmiy solnoma nomi 'Tar-Calion' ham 'Oltin / Nurli Hukmdor' deganidir.",
+  "biography_sections": [
+    {
+      "title": "Taxтни egallash va Sauronning Umbar taslimiyati",
+      "content": "Pharazôn sodiq qirol Tar-Palantírning ukasi Gimilkhadning oʻgʻli boʻlib, Oʻrta-yerdagi urushlarda oʻlja va boylik toʻplab katta shuhrat qozondi. Tar-Palantír vafot etgach, Pharazôn Númenor qonunlarini buzib, qonuniy merosxoʻr — amakivachchasi Mírielga uning roziligisiz uylandi va 'Ar-Pharazôn' nomi bilan taxtni egalladi.\n\nSauron oʻzini 'Insonlar Qiroli va Yer Xoʻjayini' deb eʼlon qilganini eshitgan Ar-Pharazôn Ikkinchi davrning 3261-yilida mislsiz flot bilan Umbar bandargohiga tushdi. Númenor qudrati oldida Sauronning qoʻshinlari jangsiz qochib ketdi; Sauron ayyorlik bilan tiz choʻkib taslim boʻldi va Ar-Pharazôn uni zanjirband asir sifatida Númenorga olib ketdi."
+    },
+    {
+      "title": "Melkor ibodatxonasi va Nimlothning yoqilishi",
+      "content": "Oradan uch yil oʻtmay, Sauron oʻzining gʻayriinsoniy bilimi va tilyogʻlamaligi bilan asirlikdan qirolning bosh maslahatchisiga aylandi. Oʻlim qoʻrquvi (Atanamir soyasi) Ar-Pharazônni qariy boshlagan sari qiynar edi. Sauron unga Valar boqiylikni yashirayotganini, haqiqiy qudrat egasi esa Melkor ekanini uqtirdi.\n\nSauron qutqusi bilan Ar-Pharazôn oq daraxt Nimlothni kesib tashlashga ruxsat berdi (Isildur uning bitta mevasini yashirincha qutqarib qoldi). Armenelos markazida ulkan gumbazli ibodatxona qurilib, unda Sodiqlar (Elendil tarafdorlari) Melkorga insoniy qurbonlik sifatida yoqila boshlandi."
+    },
+    {
+      "title": "Buyuk Armada va Unutilgan Gʻorlar qamogʻi",
+      "content": "Hayoti soʻnib borayotganini his qilgan Ar-Pharazôn Ikkinchi davrning 3319-yilida boqiylikni kuch bilan tortib olish uchun Valinorga qarshi 'Buyuk Armada'ni joʻnatdi. Manwëning ogohlantiruvchi burgut chaqmoqlariga ham quloq solmay, u Alcarondas kemasida Aman qirgʻogʻiga tushdi va Tirion oldida lager qurdi.\n\nManwë Eru Ilúvatarga iltijo qilgan lahzada dunyo qiyofasi oʻzgardi: dengiz oʻpirilib, Númenor oroli suv tubiga choʻkdi, Ar-Pharazônning floti tubsizlikka tortildi, Aman qirgʻogʻida turgan Ar-Pharazôn va uning jangchilari esa qulagan Pelóri togʻlari ostida tiriklayin koʻmilib, Oxirgi Jang (Dagor Dagorath) kunigacha 'Unutilganlar Gʻorlari'da qamab qoʻyildi."
+    },
+    {
+      "title": "Buyuk Qurol, Oltin Pharazôn va Boqiy G'arbga tajovuz",
+      "content": "Ar-Pharazôn (Quenyacha: Tar-Calion) Númenorning yigirma to'rtinchi va so'nggi podshohi bo'lib, tarixdagi eng qudratli va shu bilan birga eng fojiali inson hukmdori edi. U amakivachchasi Mírielga zo'rlik bilan uylanib taxtni egalladi. Sauronni asir olganidan so'ng, uning hiylalariga aldanib Melkor ibodatxonasini qurdirdi. O'lim qo'rquvi uning aqlini xiralashtirgach, u 'Buyuk Qurol' deb ataluvchi mislsiz dengiz armadasini qurib, Valinor sohillariga bostirib bordi va Boqiy Zaminga qurol bilan qadam qo'ydi."
+    },
+    {
+      "title": "Akallabêth qismati va Unutilganlar G'orlari afsonasi",
+      "content": "Ar-Pharazôn Valinorga qadam qo'ygan zahoti Eru Ilúvatar Ardaning shaklini o'zgartirdi. Qulagan qoyalar ostida podshoh va uning butun qo'shini 'Unutilganlar G'orlari'da (Caves of the Forgotten) qamalib qoldi; afsonaga ko'ra, ular Dunyoning So'nggi Jangi (Dagor Dagorath)gacha o'sha yerda uyquda yotadilar. Uning vatani Númenor oroli esa to'lqinlar ostida qolib butunlay g'arq bo'ldi. Ar-Pharazôn kibri va o'limdan qochish vasvasasi butun bir buyuk sivilizatsiyani yer yuzidan supurib tashladi."
+    }
+  ],
+  "sources": [
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Akallabêth: The Downfall of Númenor",
+      "page": "268"
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "Appendix A (I: The Numenorean Kings)",
+      "page": "1036"
+    },
+    {
+      "book_slug": "letters-of-jrr-tolkien",
+      "chapter": "Letter 131 (To Milton Waldman, 1951)",
+      "page": "156"
+    }
+  ],
+  "related_characters": [
+    "elros",
+    "sauron",
+    "elendil",
+    "isildur",
+    "anarion",
+    "melkor",
+    "manwe"
+  ],
+  "adaptations": [
+    {
+      "medium": "series",
+      "title": "The Lord of the Rings: The Rings of Power",
+      "creator": "J.D. Payne & Patrick McKay",
+      "year": 2022,
+      "divergence_notes": "Serialda Pharazôn vaqt chizig'i siqilgan holda Ikkinchi davr o'rtasidagi Eregion voqealari bilan bir paytda kansler sifatida ko'rsatiladi. Tolkien xronologiyasida esa Ar-Pharazôn Celebrimbor o'limidan 1400 yil keyin tug'ilgan."
+    }
+  ]
+}

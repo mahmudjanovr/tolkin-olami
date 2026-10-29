@@ -1,0 +1,58 @@
+{
+  "id": "letters-from-father-christmas",
+  "title_uz": "Qorbobodan Xatlar",
+  "title_original": "The Father Christmas Letters",
+  "aliases": [
+    "Letters from Father Christmas",
+    "Father Christmas Letters",
+    "Qorbobo Maktublari"
+  ],
+  "publication_year": 1976,
+  "publisher": "George Allen & Unwin",
+  "editor": "Baillie Tolkien",
+  "category": "primary_lifetime",
+  "isbn": "978-0-04-823130-7",
+  "synopsis": "J.R.R. Tolkien tomonidan 1920-yildan 1943-yilgacha har yili Rojdestvo bayramida oʻz farzandlari (John, Michael, Christopher va Priscilla) uchun yozilgan va shaxsan oʻzi rangli rasmlar bilan bezagan moʻjizaviy xatlar toʻplami. Xatlar Shimoliy Qutbdan, Qorbobo va uning beparvo, ammo sadoqatli yordamchisi Shimoliy Qutb Ayigʻi (North Polar Bear) nomidan yozilgan.",
+  "cover_image": {
+    "src": "/images/books/letters-from-father-christmas.webp",
+    "alt": "Qorbobodan Xatlar kitobi muqovasi",
+    "edition_title": "George Allen & Unwin 1976 First Edition (Archival Design)",
+    "publisher": "George Allen & Unwin",
+    "year": 1976,
+    "isbn": "978-0-04-823130-7",
+    "artist": "J.R.R. Tolkien (original illyustratsiyalar) / Baillie Tolkien tahriri",
+    "source": "Bibliografik arxiv dizayni (unverified authentic cover)"
+  },
+  "key_themes": [
+    "Oila mehri va bolalik moʻjizalarini asrash sanʼati",
+    "Shimoliy Qutb Ayigʻining kulgili sarguzashtlari va Qutb goblinlari bilan urush",
+    "Tolkienning rassomlik va kalligrafiya mahorati",
+    "Ikkinchi Jahon urushi yillaridagi bolalarga taskin va umid"
+  ],
+  "detailed_sections": [
+    {
+      "title": "Yaratilish tarixi: Yigirma uch yillik ota mehri",
+      "content": "1920-yilda Tolkienning toʻngʻich oʻgʻli John uch yoshga toʻlganida, ularning Oksforddagi uyiga qor bosgan va Shimoliy Qutb pochtasi tamgʻasi qoʻyilgan birinchi maktub kelib tushdi. Keyingi yigirma uch yil davomida, to kenja qizi Priscilla ulgʻayguncha, Tolkien har dekabr oyida qaltiroq qoʻl yozuvi bilan (Qorboboning qari ekanini koʻrsatish uchun) xatlar yozdi, maxsus qutb markalari chizdi va xatlarni deraza tokchasiga yoki kamin yoniga yashirib qoʻydi. Bu xatlar Tolkien shaxsiyatining eng samimiy va mehribon ota sifatidagi qirrasini namoyon etadi."
+    },
+    {
+      "title": "Qahramonlar va syujet chiziqlari: Karpathu va Qutb Ayigʻi",
+      "content": "Maktublarning bosh qahramonlari – donishmand va charchagan Qorbobo, uning doimiy koʻngilsizliklarga uchrab turuvchi yordamchisi Karhu (Shimoliy Qutb Ayigʻi), uning jiyanlari Paksu va Valkotukka hamda Qorboboning elfi Ilberethdir. Xatlarda Qutb Ayigʻining Shimoliy qutb oʻqini sindirib qoʻyishi, Oydan tushgan odam bilan uchrashuvlar va qor ostidagi yerosti gʻorlarida yashovchi yovuz goblinlar (Goblins) bilan boʻlgan janglar hayajonli va oʻynoqi hazil bilan tasvirlanadi."
+    },
+    {
+      "title": "Rassomlik va kalligrafiya sanʼati",
+      "content": "Tolkien ushbu xatlarni oʻzining rang-barang akvarel rasmlari bilan boyitgan. Qorboboning saroyi, Shimol Yogʻdusi, muz qasrlari va gʻor rasmlari shunchalik mukammal chizilganki, ular Tolkienning nafaqat buyuk yozuvchi, balki iqtidorli illyustrator boʻlganini ham isbotlaydi. Shuningdek, maktublarda qutb ayigʻi tili va uning maxsus runik alifbosi ham uchraydi, bu esa filolog Tolkienning oʻz farzandlari bilan oʻynagan sevimli til oʻyinlari edi."
+    },
+    {
+      "title": "Oʻzbek oilaviy kitobxonligi uchun ahamiyati",
+      "content": "«Qorbobodan Xatlar» kitobi oʻzbek bolalari va ota-onalari uchun mehr-oqibat, oilaviy bayramlar va tasavvur olamini rivojlantirishda tengsiz namunadir. Ushbu asarni oʻzbek tiliga tarjima qilish va asl rasmlari bilan nashr etish oʻzbek bolalar adabiyotini jahon durdonasi bilan boyitgan boʻlardi."
+    }
+  ],
+  "uzbek_editions": [
+    {
+      "title": "Qorbobodan Xatlar",
+      "status": "untranslated",
+      "notes": "Oʻzbek tiliga tarjima qilinmagan. Bolalar va oilaviy oʻqish uchun ajoyib nomzod."
+    }
+  ],
+  "translation_status_summary": "Oʻzbek tilida nashr etilmagan. Rangli illyustratsiyali bolalar nashri sifatida tavsiya etiladi."
+}

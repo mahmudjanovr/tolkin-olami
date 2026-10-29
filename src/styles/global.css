@@ -1,0 +1,229 @@
+/* ==========================================================================
+   TOLKIEN OLAMI — Global Editorial Tipografiya va Asosiy Uslublar
+   Koncepsiya: Oxford Akademik Kutubxonasi × Adabiy Monografiya × Oʻrta-yer Kartografiyasi
+   ========================================================================== */
+
+body {
+  font-family: var(--font-serif-body);
+  font-size: 1.125rem; /* 18px */
+  line-height: 1.8;
+  color: var(--color-text-primary);
+  background-color: var(--color-bg-base);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Sarlavhalar Iyerarxiyasi (Editorial Headings in EB Garamond) */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif-heading);
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--color-text-primary);
+  letter-spacing: -0.015em;
+  text-wrap: balance;
+}
+
+.display-title {
+  font-family: var(--font-serif-heading);
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+h1, .page-title {
+  font-size: clamp(2rem, 3.5vw, 2.875rem);
+  margin-block-end: 1rem;
+}
+
+h2, .section-heading {
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  margin-block-start: 2.5rem;
+  margin-block-end: 0.875rem;
+}
+
+h3, .subsection-heading {
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
+  margin-block-start: 1.75rem;
+  margin-block-end: 0.625rem;
+}
+
+h4 {
+  font-size: 1.1875rem;
+  margin-block-start: 1.25rem;
+  margin-block-end: 0.5rem;
+}
+
+p {
+  margin-block-end: 1.35rem;
+}
+
+/* Standfirst / Lead Paragraph */
+.editorial-lead,
+.standfirst {
+  font-family: var(--font-serif-body);
+  font-size: clamp(1.1875rem, 2vw, 1.35rem);
+  line-height: 1.65;
+  color: var(--color-text-secondary);
+  font-style: italic;
+  margin-block-end: 1.75rem;
+}
+
+/* Drop-cap for Opening Paragraphs */
+.drop-cap::first-letter {
+  font-family: var(--font-serif-heading);
+  float: left;
+  font-size: 3.75em;
+  line-height: 0.75;
+  padding-top: 0.1em;
+  padding-right: 0.12em;
+  padding-bottom: 0.05em;
+  color: var(--color-forest);
+  font-weight: 700;
+}
+
+[data-theme="night"] .drop-cap::first-letter,
+html[data-applied-mode="night"] .drop-cap::first-letter {
+  color: var(--color-accent-gold-text);
+}
+
+/* Kicker / Eyebrow (Archival Category Label) */
+.editorial-kicker {
+  display: inline-block;
+  font-family: var(--font-sans-ui);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--color-accent-gold-text);
+  margin-bottom: 0.5rem;
+}
+
+/* Havolalar (Links) */
+a {
+  color: var(--color-link);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  text-decoration-color: var(--color-border-gold);
+  transition: color 0.15s ease, text-decoration-color 0.15s ease;
+}
+
+a:hover, a:focus-visible {
+  color: var(--color-link-hover);
+  text-decoration-color: var(--color-link-hover);
+}
+
+/* Havolasiz kartochka va tugmalar uchun reset */
+.unstyled-link {
+  color: inherit;
+  text-decoration: none;
+}
+.unstyled-link:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Accessible focus styles */
+:focus-visible {
+  outline: 2px solid var(--color-focus-ring);
+  outline-offset: 2px;
+}
+
+/* Matn ajratish (Selection) */
+::selection {
+  background-color: var(--color-accent-gold-subtle);
+  color: var(--color-text-primary);
+}
+
+/* Editorial Reading Measure & Layout Containers */
+.reading-measure {
+  max-width: 68ch;
+}
+
+.reading-measure-wide {
+  max-width: 80ch;
+}
+
+.container {
+  width: 100%;
+  max-width: 1240px;
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-inline: 2rem;
+  }
+}
+
+/* Nozik boʻlim chiziqlari (Editorial Rules) */
+.editorial-rule {
+  border: none;
+  border-top: 1px solid var(--color-border-subtle);
+  margin-block: 2.5rem;
+  width: 100%;
+}
+
+.editorial-rule-ornate {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 1.25rem;
+  color: var(--color-border-gold);
+  font-size: 0.875rem;
+  margin-block: 3rem;
+  user-select: none;
+}
+
+.editorial-rule-ornate::before,
+.editorial-rule-ornate::after {
+  content: '';
+  flex: 1;
+  border-top: 1px solid var(--color-border-subtle);
+}
+
+/* Code, dates, archival metadata */
+code, pre {
+  font-family: var(--font-mono-scholarly);
+  font-size: 0.875em;
+}
+
+/* Manuscript Blockquote */
+blockquote {
+  border-inline-start: 3px solid var(--color-accent-gold);
+  padding-inline-start: 1.5rem;
+  margin-block: 2rem;
+  font-style: italic;
+  color: var(--color-text-secondary);
+  background-color: var(--color-bg-subtle);
+  padding-block: 0.875rem;
+  border-radius: 0 4px 4px 0;
+}
+
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+/* Caption and Archival Credits */
+figcaption {
+  font-family: var(--font-sans-ui);
+  font-size: 0.8125rem;
+  line-height: 1.5;
+  color: var(--color-text-secondary);
+}
+
+/* Reduced Motion Compliance */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

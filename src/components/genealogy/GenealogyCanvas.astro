@@ -1,0 +1,397 @@
+---
+/**
+ * TOLKIEN OLAMI — Nasabnoma SVG Kanvasi (Genealogy Canvas)
+ *
+ * White Tree botanik arxitekturasi asosida:
+ * - Nafis Bezye egri shoxlari
+ * - Avlodlar pogʻonalari (I, II, III...)
+ * - Ziddiyatli nasablar uchun uzuq-uzuq chiziqlar
+ * - GPU-tezlashtirilgan pan va zoom
+ */
+
+import type { TreeLayout } from '@/utils/genealogy/layout';
+
+interface Props {
+  dynastyId: string;
+  dynastyTitle: string;
+  layout: TreeLayout;
+}
+
+const { dynastyId, dynastyTitle, layout } = Astro.props;
+const { nodes, links, dimensions } = layout;
+
+// Avlodlar ro'yxati
+const generations = Array.from(new Set(nodes.map((n) => n.generation))).sort((a, b) => a - b);
+const genRoman = (n: number) => {
+  const romans = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X'];
+  return romans[n - 1] || `${n}`;
+};
+---
+
+<div
+  id={`genealogy-canvas-container-${dynastyId}`}
+  class="genealogy-canvas-container"
+  data-dynasty-id={dynastyId}
+  data-width={dimensions.width}
+  data-height={dimensions.height}
+  tabindex="0"
+  role="region"
+  aria-label={`${dynastyTitle} interaktiv shajarasi`}
+>
+  <svg
+    id={`svg-canvas-${dynastyId}`}
+    class="genealogy-svg"
+    viewBox={`0 0 ${dimensions.width} ${dimensions.height}`}
+    width={dimensions.width}
+    height={dimensions.height}
+  >
+    <defs>
+      <!-- Nikoh Tuguni Simvoli (Botanical Marriage Ring) -->
+      <g id="marriage-ring">
+        <circle cx="0" cy="0" r="4.5" fill="var(--color-bg-base)" stroke="var(--color-accent-gold)" stroke-width="1.5" />
+        <circle cx="0" cy="0" r="1.5" fill="var(--color-accent-gold)" />
+      </g>
+    </defs>
+
+    <!-- Dinamik Pan/Zoom Konteyneri -->
+    <g id={`viewport-content-${dynastyId}`} class="viewport-content">
+      <!-- 1. Avlodlar Qatlamlari va Yoʻnaltiruvchi Chiziqlar -->
+      <g class="generation-strata" aria-hidden="true">
+        {generations.map((genNum) => {
+          const genNodes = nodes.filter((n) => n.generation === genNum);
+          const firstNode = genNodes[0];
+          if (!firstNode) return null;
+          const y = firstNode.y;
+          return (
+            <g class="stratum-group">
+              <!-- Nozik gorizontal ajratuvchi chiziq -->
+              <line
+                x1={20}
+                y1={y - 25}
+                x2={dimensions.width - 20}
+                y2={y - 25}
+                class="stratum-line"
+              />
+              <!-- Rim raqami belgisi -->
+              <rect
+                x={20}
+                y={y - 37}
+                width={36}
+                height={22}
+                rx={4}
+                class="stratum-badge-bg"
+              />
+              <text
+                x={38}
+                y={y - 22}
+                text-anchor="middle"
+                class="stratum-label"
+              >
+                {genRoman(genNum)}
+              </text>
+            </g>
+          );
+        })}
+      </g>
+
+      <!-- 2. Bogʻlovchi Shoxlar Qatlami (Botanical Branch Links) -->
+      <g class="branches-layer" aria-hidden="true">
+        <!-- Nikoh Bog'lanishlari -->
+        {links.filter((l) => l.type === 'marriage').map((link) => (
+          <g class="marriage-link-group">
+            <path
+              d={link.pathD}
+              class="marriage-path"
+            />
+          </g>
+        ))}
+
+        <!-- Ota-ona va Farzand Shoxlari -->
+        {links.filter((l) => l.type !== 'marriage').map((link) => (
+          <path
+            d={link.pathD}
+            class={`branch-path ${link.isUncertain ? 'branch-uncertain' : ''} ${link.type === 'bridge' ? 'branch-bridge' : ''}`}
+            data-from={link.fromId}
+            data-to={link.toId}
+          />
+        ))}
+      </g>
+
+      <!-- 3. Shaxs Tugunlari Qatlami (Botanical Person Nodes) -->
+      <g class="nodes-layer">
+        {nodes.map((node) => {
+          const firstTitle = node.titles && node.titles.length > 0 && node.titles[0] ? node.titles[0] : '';
+          const mainTitle = firstTitle || node.culture || '';
+          return (
+            <g
+              class={`person-node ${node.isUncertain ? 'node-uncertain' : ''}`}
+              id={`node-${node.id}`}
+              data-person-id={node.id}
+              transform={`translate(${node.x}, ${node.y})`}
+              tabindex="0"
+              role="button"
+              aria-label={`${node.name}, ${mainTitle}, ${node.dates}`}
+            >
+              <!-- Kartochka Foni -->
+              <rect
+                width={node.width}
+                height={node.height}
+                rx={8}
+                class="node-bg"
+              />
+
+              <!-- Botanik kurtak/tugun nuqtalari -->
+              <circle cx={node.width / 2} cy={0} r={3} class="node-bud top-bud" />
+              <circle cx={node.width / 2} cy={node.height} r={3} class="node-bud bottom-bud" />
+
+              <!-- Ism (EB Garamond) -->
+              <text
+                x={node.width / 2}
+                y={24}
+                text-anchor="middle"
+                class="node-name-text"
+              >
+                {node.name}
+              </text>
+
+              <!-- Asosiy Unvon yoki Madaniyat (Inter) -->
+              <text
+                x={node.width / 2}
+                y={40}
+                text-anchor="middle"
+                class="node-title-text"
+              >
+                {mainTitle.length > 24 ? mainTitle.slice(0, 22) + '…' : mainTitle}
+              </text>
+
+              <!-- Xronologik Sanalar (Inter, Muted) -->
+              <text
+                x={node.width / 2}
+                y={55}
+                text-anchor="middle"
+                class="node-date-text"
+              >
+                {node.dates.length > 24 ? node.dates.slice(0, 22) + '…' : node.dates}
+              </text>
+
+              <!-- Ziddiyatli nasab belgisi [?] -->
+              {node.isUncertain && (
+                <g class="uncertainty-indicator" transform={`translate(${node.width - 20}, 8)`}>
+                  <circle cx="6" cy="6" r="6" class="uncertainty-circle" />
+                  <text x="6" y="9.5" text-anchor="middle" class="uncertainty-icon-text">?</text>
+                </g>
+              )}
+
+              <!-- Ko'prik ajdod belgisi -->
+              {node.bridgeNote && (
+                <text
+                  x={node.width / 2}
+                  y={-6}
+                  text-anchor="middle"
+                  class="node-bridge-tag"
+                >
+                  {node.bridgeNote}
+                </text>
+              )}
+            </g>
+          );
+        })}
+      </g>
+    </g>
+  </svg>
+</div>
+
+<style>
+  .genealogy-canvas-container {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-color: var(--color-bg-base);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 0 0 8px 8px;
+    overflow: hidden;
+    cursor: grab;
+    user-select: none;
+    touch-action: none;
+  }
+
+  .genealogy-canvas-container:active {
+    cursor: grabbing;
+  }
+
+  .genealogy-canvas-container:focus-visible {
+    outline: 2px solid var(--color-accent-gold);
+    outline-offset: -2px;
+  }
+
+  .genealogy-svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+    transform-origin: 0 0;
+  }
+
+  /* 1. Avlod Qatlamlari Chiziqlari */
+  .stratum-line {
+    stroke: var(--color-border-subtle);
+    stroke-width: 1px;
+    stroke-dasharray: 4 6;
+  }
+
+  .stratum-badge-bg {
+    fill: var(--color-bg-elevated);
+    stroke: var(--color-border-subtle);
+    stroke-width: 1px;
+  }
+
+  .stratum-label {
+    font-family: var(--font-serif-heading);
+    font-size: 0.8125rem;
+    font-style: italic;
+    font-weight: 600;
+    fill: var(--color-text-muted);
+    dominant-baseline: middle;
+  }
+
+  /* 2. Bog'lovchi Shoxlar */
+  .marriage-path {
+    stroke: var(--color-border-strong);
+    stroke-width: 1.5px;
+    stroke-dasharray: 3 3;
+    fill: none;
+  }
+
+  .branch-path {
+    stroke: var(--color-border-strong);
+    stroke-width: 1.6px;
+    fill: none;
+    transition: stroke 200ms ease, stroke-width 200ms ease;
+  }
+
+  .branch-path.branch-uncertain {
+    stroke: var(--color-status-variant);
+    stroke-dasharray: 5 4;
+    stroke-width: 1.8px;
+  }
+
+  .branch-path.branch-bridge {
+    stroke: var(--color-accent-gold);
+    stroke-dasharray: 4 4;
+    stroke-width: 1.4px;
+    opacity: 0.8;
+  }
+
+  /* Chiziq Yoritilishi (Lineage Highlighting) */
+  .branch-path.highlight-stem {
+    stroke: var(--color-accent-gold);
+    stroke-width: 2.8px;
+  }
+
+  /* 3. Shaxs Tugunlari */
+  .person-node {
+    cursor: pointer;
+    transition: transform 150ms ease;
+  }
+
+  .person-node:focus {
+    outline: none;
+  }
+
+  .node-bg {
+    fill: var(--color-bg-base);
+    stroke: var(--color-border-strong);
+    stroke-width: 1.2px;
+    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.05));
+    transition: all 180ms ease;
+  }
+
+  [data-theme="night"] .node-bg {
+    fill: var(--color-bg-elevated);
+    stroke: var(--color-border-subtle);
+    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.25));
+  }
+
+  .person-node:hover .node-bg {
+    stroke: var(--color-accent-gold);
+    stroke-width: 1.8px;
+  }
+
+  .person-node.selected .node-bg {
+    fill: var(--color-accent-gold-subtle);
+    stroke: var(--color-accent-gold);
+    stroke-width: 2.2px;
+  }
+
+  .person-node:focus-visible .node-bg {
+    stroke: var(--color-accent-gold);
+    stroke-width: 2.5px;
+  }
+
+  .node-bud {
+    fill: var(--color-bg-base);
+    stroke: var(--color-border-strong);
+    stroke-width: 1.2px;
+    transition: stroke 150ms ease, fill 150ms ease;
+  }
+
+  .person-node:hover .node-bud,
+  .person-node.selected .node-bud {
+    stroke: var(--color-accent-gold);
+    fill: var(--color-accent-gold);
+  }
+
+  .node-name-text {
+    font-family: var(--font-serif-heading);
+    font-size: 0.9375rem;
+    font-weight: 700;
+    fill: var(--color-text-primary);
+  }
+
+  .node-title-text {
+    font-family: var(--font-sans-ui);
+    font-size: 0.625rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    fill: var(--color-text-secondary);
+  }
+
+  .node-date-text {
+    font-family: var(--font-sans-ui);
+    font-size: 0.5625rem;
+    fill: var(--color-text-muted);
+  }
+
+  .node-bridge-tag {
+    font-family: var(--font-sans-ui);
+    font-size: 0.5625rem;
+    font-style: italic;
+    fill: var(--color-accent-gold);
+  }
+
+  /* Noaniqlik Belgisi */
+  .uncertainty-circle {
+    fill: var(--color-status-variant);
+  }
+
+  .uncertainty-icon-text {
+    font-family: var(--font-sans-ui);
+    font-size: 0.5625rem;
+    font-weight: 700;
+    fill: #ffffff;
+    dominant-baseline: middle;
+  }
+
+  /* Qidiruv natijasi sifatida tanlangan */
+  .person-node.search-match .node-bg {
+    stroke: var(--color-accent-gold);
+    stroke-width: 2.5px;
+    stroke-dasharray: 6 3;
+    animation: searchPulse 1.8s infinite;
+  }
+
+  @keyframes searchPulse {
+    0%, 100% { stroke-width: 2.5px; }
+    50% { stroke-width: 3.8px; }
+  }
+</style>

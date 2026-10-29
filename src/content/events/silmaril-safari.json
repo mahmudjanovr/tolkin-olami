@@ -1,0 +1,65 @@
+{
+  "id": "silmaril-safari",
+  "title": "Silmaril Safari (Beren va Lúthien)",
+  "subtitle": "Morgothning temir tojidan muqaddas gavharning olib chiqilishi",
+  "era": "birinchi_davr",
+  "year_text": "Birinchi davr 465–466",
+  "location_id": "menegroth",
+  "characters": [
+    "beren",
+    "luthien",
+    "thingol",
+    "finrod",
+    "melkor",
+    "sauron"
+  ],
+  "belligerents": {
+    "side_a": [
+      "Beren Erchamion (Barahir oʻgʻli)",
+      "Lúthien Tinúviel",
+      "Finrod Felagund (Tol-in-Gaurhothda)",
+      "Valinor tozi Huan"
+    ],
+    "side_b": [
+      "Morgoth (Angband taxtida)",
+      "Sauron (Tol-in-Gaurhoth hukmdori)",
+      "Qonxoʻr boʻri Carcharoth"
+    ]
+  },
+  "outcome": "Beren va Lúthien Morgoth tojidan bir dona Silmarilni muvaffaqiyatli tortib oldilar; elflar va insonlar o'rtasidagi birinchi muqaddas nikohga yo'l ochildi; ammo Beren Carcharoth changalida qo'lidan ayrildi.",
+  "preceding_event": "dagor-bragollach",
+  "succeeding_event": "nirnaeth-arnoediad",
+  "textual_status": "posthumous_edited",
+  "sources": [
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of Beren and Lúthien",
+      "page": "162",
+      "notes": "Silmaril safari, Tol-in-Gaurhoth va Angbanddagi jasorat bayoni."
+    },
+    {
+      "book_slug": "beren-and-luthien",
+      "chapter": "The Tale of Tinúviel",
+      "page": "45",
+      "notes": "Dostonning tarixiy qatlamlari va Christopher Tolkien tahriri."
+    }
+  ],
+  "description_sections": [
+    {
+      "title": "Thingolning amri va mumkin bo'lmagan shart",
+      "content": "Dorthonion insonlaridan bo'lgan jasur jangchi Beren Neldoeth o'rmonida Sindar malikasi, Vala Melianning qizi Lúthien Tinúvielni uchratib, unga oshiq bo'ldi. Lúthien ham unga ko'ngil qo'ydi. Biroq Lúthienning otasi, Doriath Oliy Hukmdori Thingol inson zotini past deb hisoblab, bu ittifoqqa keskin qarshi chiqdi. Berenni yo'q qilish maqsadida Thingol unga imkonsiz tuyulgan talab qo'ydi: agar u qizining qo'lini so'ramoqchi bo'lsa, Morgothning Temir Tojiga qadalgan uchta muqaddas Silmarildan birini olib kelishi shart edi."
+    },
+    {
+      "title": "Finrod Felagundning fidoyiligi va Tol-in-Gaurhoth",
+      "content": "Beren o'z va'dasini bajarish uchun Nargothrond shohi Finrod Felagund huzuriga bordi. Finrod Barahir qasamyodiga sodiq qolib, o'n nafar sodiq do'sti bilan Berenga hamroh bo'ldi. Biroq Sauron ularni qo'lga olib, Tol-in-Gaurhoth (Bo'rilar Oroli) zindoniga tashladi. Sauron ularning kimligini bilish uchun har kecha bir jangchini bo'riga yem qildi. So'nggi daqiqada Finrod o'zining yalang qo'llari bilan bahaybat bo'rini o'ldirib, Berenni saqlab qoldi, biroq o'zi og'ir jarohatdan halok bo'ldi. Lúthien esa Valinor iti Huan yordamida yetib kelib, Sauronni mag'lub etdi va zindonlarni vayron qildi."
+    },
+    {
+      "title": "Angband qa'riga kirish va Lúthienning ilohiy qo'shig'i",
+      "content": "Beren va Lúthien bo'ri Draugluin va ko'rshapalak Thuringwethil terilariga o'ranib, Morgothning poytaxti Angband qal'asiga yashirincha kirdilar. Lúthien Morgoth taxti oldida o'zining sehrli, ilohiy qo'shig'ini kuylay boshladi. Uning ovozi barcha Balroglar va o'rklarni, hattoki Qora Lord Morgothning o'zini ham chuqur uyquga cho'mdirdi. Morgoth boshidagi Temir Toj yerga sirg'alib tushdi. Beren o'zining Angrist xanjari bilan tojdan bir dona Silmarilni kesib oldi. Ammo ikkinchi toshni kesmoqchi bo'lganida xanjar sinib, parchasi Morgothning yuziga tegdi va qorong'ulik uyg'ona boshladi."
+    },
+    {
+      "title": "Carcharoth fojiasi va Berenning qaytishi",
+      "content": "Angband darvozasida ularni ulkan iblis bo'ri Carcharoth kutib oldi. Beren qo'lidagi muqaddas Silmarilni ko'rsatib, maxluqni to'xtatmoqchi bo'ldi, biroq Carcharoth Berenning qo'lini tosh bilan birga tishlab uzib yutib yubordi. Muqaddas tosh bo'rining ichini olovdek yondira boshladi va Carcharoth telbalarcha Beleriand bo'ylab qochdi. Beren va Lúthien Doriathga qaytib, Thingol oldida qo'lsiz turganlarida, Beren o'z so'zida turganini – Silmaril uning qo'lida ekanini aytdi. Bu afsona Arda tarixidagi eng buyuk sevgi va matonat dostoniga aylandi."
+    }
+  ]
+}

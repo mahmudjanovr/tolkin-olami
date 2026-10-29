@@ -1,0 +1,551 @@
+---
+import { getCollection, type CollectionEntry } from 'astro:content';
+import EntityLayout from '@/layouts/EntityLayout.astro';
+import ReverseCitationsBlock from '@/components/editorial/ReverseCitationsBlock.astro';
+import {
+  findReverseReferences,
+  normalizeAstroCollectionEntry,
+  type ReverseReferenceItem,
+  type GenericContentEntry,
+} from '@/utils/reverse-citations';
+import type { TextualStatus } from '@/content/schemas';
+
+export async function getStaticPaths() {
+  const books = await getCollection('books');
+
+  const [
+    characters,
+    events,
+    peoples,
+    languages,
+    places,
+    articles,
+    genealogies,
+    cosmology,
+  ] = await Promise.all([
+    getCollection('characters'),
+    getCollection('events'),
+    getCollection('peoples'),
+    getCollection('languages'),
+    getCollection('places'),
+    getCollection('articles'),
+    getCollection('genealogies'),
+    getCollection('cosmology'),
+  ]);
+
+  const allEntries: GenericContentEntry[] = [
+    ...characters.map((e) => normalizeAstroCollectionEntry('characters', e)),
+    ...events.map((e) => normalizeAstroCollectionEntry('events', e)),
+    ...peoples.map((e) => normalizeAstroCollectionEntry('peoples', e)),
+    ...languages.map((e) => normalizeAstroCollectionEntry('languages', e)),
+    ...places.map((e) => normalizeAstroCollectionEntry('places', e)),
+    ...articles.map((e) => normalizeAstroCollectionEntry('articles', e)),
+    ...genealogies.map((e) => normalizeAstroCollectionEntry('genealogies', e)),
+    ...cosmology.map((e) => normalizeAstroCollectionEntry('cosmology', e)),
+  ];
+
+  return books.map((book) => {
+    const bookId = book.data.id || book.id;
+    const reverseRefs = findReverseReferences(bookId, allEntries);
+    return {
+      params: { slug: bookId },
+      props: { book, reverseRefs },
+    };
+  });
+}
+
+interface Props {
+  book: CollectionEntry<'books'>;
+  reverseRefs?: ReverseReferenceItem[];
+}
+
+const { book, reverseRefs = [] } = Astro.props;
+const data = book.data;
+
+const breadcrumbs = [
+  { label: 'Kitoblar va Bibliografiya', href: '/kitoblar/' },
+  { label: data.title_uz },
+];
+
+const categoryLabels: Record<string, string> = {
+  primary_lifetime: 'Muallif Hayotligidagi Birlamchi Nashr',
+  posthumous_reconstructed: 'Christopher Tolkien Tahriridagi Tiklangan Asar',
+  textual_history: 'Matn Tarixi va Qoʻlyozmalar Tadqiqoti',
+  letters_academic: 'Akademik Maktublar va Izohlar Toʻplami',
+};
+
+const categoryStatusMap: Record<string, TextualStatus> = {
+  primary_lifetime: 'author_published',
+  posthumous_reconstructed: 'posthumous_edited',
+  textual_history: 'draft_variant',
+  letters_academic: 'draft_variant',
+};
+
+const textualStatus: TextualStatus = categoryStatusMap[data.category] || 'author_published';
+---
+
+<EntityLayout
+  title={data.title_uz}
+  originalName={data.title_original}
+  category={categoryLabels[data.category] || data.category}
+  breadcrumbs={breadcrumbs}
+  textualStatus={textualStatus}
+  sources={[]}
+  leadSummary={data.synopsis}
+>
+  {data.cover_image && (
+    <figure class="book-cover-figure" slot="sidebar-media">
+      <div class="book-cover-wrapper">
+        <img
+          src={data.cover_image.src}
+          alt={data.cover_image.alt}
+          class="book-cover-img"
+          loading="eager"
+          decoding="async"
+        />
+      </div>
+      <figcaption class="book-cover-caption">
+        <p class="edition-name"><strong>{data.cover_image.edition_title}</strong></p>
+        <p class="edition-details">
+          <span>{data.cover_image.publisher} ({data.cover_image.year})</span>
+          {data.cover_image.artist && <span> • Muqova rassomi: {data.cover_image.artist}</span>}
+        </p>
+        {data.cover_image.isbn && (
+          <p class="edition-isbn">ISBN: <code>{data.cover_image.isbn}</code></p>
+        )}
+      </figcaption>
+    </figure>
+  )}
+
+  <div class="book-details">
+    <section class="book-synopsis-section">
+      <h2>Asar Haqida Ilmiy Konspekt</h2>
+      <p class="synopsis-text">{data.synopsis}</p>
+
+      {data.key_themes.length > 0 && (
+        <div class="themes-section">
+          <h3>Asosiy Falsafiy va Adabiy Mavzular</h3>
+          <div class="theme-tags">
+            {data.key_themes.map((theme) => (
+              <span class="theme-tag">{theme}</span>
+            ))}
+          </div>
+        </div>
+      )}
+    </section>
+
+    {data.detailed_sections && data.detailed_sections.length > 0 && (
+      <div class="book-detailed-sections">
+        {data.detailed_sections.map((section) => (
+          <section class="book-section">
+            <h2>{section.title}</h2>
+            {section.content.split('\n\n').map((para) => (
+              <p>{para}</p>
+            ))}
+          </section>
+        ))}
+      </div>
+    )}
+
+    <section class="book-translations-section">
+      <h2>Oʻzbekcha Nashrlar va Tarjima Tarixi</h2>
+      {data.translation_status_summary && (
+        <p class="translation-summary-lead">{data.translation_status_summary}</p>
+      )}
+
+      {data.uzbek_editions && data.uzbek_editions.length > 0 ? (
+        <div class="editions-list">
+          {data.uzbek_editions.map((edition) => (
+            <div class={`edition-card status-${edition.status}`}>
+              <div class="edition-header">
+                <h3 class="edition-title">{edition.title}</h3>
+                <span class={`status-badge status-${edition.status}`}>
+                  {edition.status === 'published' && '✓ Rasmiy Nashr'}
+                  {edition.status === 'in_progress' && '⏳ Tarjima Jarayonida'}
+                  {edition.status === 'planned' && 'Rejalashtirilgan'}
+                  {edition.status === 'untranslated' && 'Asl Nashr'}
+                </span>
+              </div>
+
+              <div class="edition-meta-grid">
+                {edition.translator && (
+                  <div class="meta-item">
+                    <span class="meta-item-label">Tarjimon:</span>
+                    <span class="meta-item-val font-serif font-bold">{edition.translator}</span>
+                  </div>
+                )}
+                {edition.publisher && (
+                  <div class="meta-item">
+                    <span class="meta-item-label">Nashriyot:</span>
+                    <span class="meta-item-val">{edition.publisher}</span>
+                  </div>
+                )}
+                {edition.year && (
+                  <div class="meta-item">
+                    <span class="meta-item-label">Nashr yili:</span>
+                    <span class="meta-item-val">{edition.year}</span>
+                  </div>
+                )}
+                {edition.format && (
+                  <div class="meta-item">
+                    <span class="meta-item-label">Format:</span>
+                    <span class="meta-item-val">{edition.format}</span>
+                  </div>
+                )}
+                {edition.isbn && (
+                  <div class="meta-item">
+                    <span class="meta-item-label">ISBN:</span>
+                    <span class="meta-item-val font-mono">{edition.isbn}</span>
+                  </div>
+                )}
+              </div>
+
+              {edition.notes && (
+                <p class="edition-notes font-serif">{edition.notes}</p>
+              )}
+            </div>
+          ))}
+        </div>
+      ) : (
+        <div class="untranslated-notice">
+          <p class="notice-text">
+            Ushbu asar hozircha oʻzbek tilida toʻliq rasmiy kitob shaklida chop etilmagan.
+            Tolkien Olami ensiklopediyasidagi barcha ilmiy iqtibos va tushunchalar J.R.R. Tolkienning asl inglizcha kanonik nashrlaridan toʻgʻridan-toʻgʻri ilmiy asosda tarjima qilingan.
+          </p>
+        </div>
+      )}
+    </section>
+
+    <ReverseCitationsBlock items={reverseRefs} />
+  </div>
+
+  <div slot="metadata" class="book-metadata">
+    <div class="meta-row">
+      <span class="meta-label">Asl nomi:</span>
+      <span class="meta-val"><em>{data.title_original}</em></span>
+    </div>
+    <div class="meta-row">
+      <span class="meta-label">Birinchi nashr yili:</span>
+      <span class="meta-val">{data.publication_year}</span>
+    </div>
+    <div class="meta-row">
+      <span class="meta-label">Noshir:</span>
+      <span class="meta-val">{data.publisher}</span>
+    </div>
+    {data.editor && (
+      <div class="meta-row">
+        <span class="meta-label">Tahririyat / Muharrir:</span>
+        <span class="meta-val">{data.editor}</span>
+      </div>
+    )}
+    {data.isbn && (
+      <div class="meta-row">
+        <span class="meta-label">ISBN:</span>
+        <span class="meta-val font-mono">{data.isbn}</span>
+      </div>
+    )}
+    <div class="meta-row">
+      <span class="meta-label">Bibliografik toifa:</span>
+      <span class="meta-val">{categoryLabels[data.category] || data.category}</span>
+    </div>
+    {data.translation_status_summary && (
+      <div class="meta-row">
+        <span class="meta-label">Oʻzbekcha nashr holati:</span>
+        <span class="meta-val text-gold">{data.translation_status_summary}</span>
+      </div>
+    )}
+    {data.aliases && data.aliases.length > 0 && (
+      <div class="meta-row">
+        <span class="meta-label">Muqobil nomlar:</span>
+        <span class="meta-val text-sm font-serif">{data.aliases.join(', ')}</span>
+      </div>
+    )}
+  </div>
+</EntityLayout>
+
+<style>
+  .book-details {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .synopsis-text {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+  }
+
+  .themes-section h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--color-text-secondary);
+  }
+
+  .theme-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .theme-tag {
+    font-family: var(--font-sans-ui);
+    font-size: 0.8125rem;
+    padding: 0.25rem 0.625rem;
+    background-color: var(--color-bg-subtle);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 3px;
+    color: var(--color-text-secondary);
+  }
+
+  .meta-row {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    margin-bottom: 0.75rem;
+    font-family: var(--font-sans-ui);
+    font-size: 0.875rem;
+  }
+
+  .meta-label {
+    color: var(--color-text-muted);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+  }
+
+  .meta-val {
+    color: var(--color-text-primary);
+    font-weight: 500;
+  }
+
+  .font-mono {
+    font-family: monospace;
+  }
+
+  .text-gold {
+    color: var(--color-accent-gold);
+    font-weight: 600;
+  }
+
+  .text-sm {
+    font-size: 0.8125rem;
+    line-height: 1.4;
+    color: var(--color-text-secondary);
+  }
+
+  .book-translations-section {
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--color-border-subtle);
+  }
+
+  .book-translations-section h2 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--color-text-primary);
+  }
+
+  .translation-summary-lead {
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    color: var(--color-text-secondary);
+    margin-bottom: 1.25rem;
+  }
+
+  .editions-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .edition-card {
+    padding: 1.25rem;
+    background-color: var(--color-bg-elevated);
+    border: 1px solid var(--color-border-subtle);
+    border-left: 3px solid var(--color-accent-gold);
+    border-radius: 4px;
+  }
+
+  .edition-card.status-published {
+    border-left-color: var(--color-status-canonical);
+  }
+
+  .edition-card.status-in_progress {
+    border-left-color: var(--color-status-variant);
+  }
+
+  .edition-card.status-untranslated {
+    border-left-color: var(--color-border-subtle);
+  }
+
+  .edition-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .edition-title {
+    font-size: 1.0625rem;
+    font-weight: 700;
+    margin: 0;
+    color: var(--color-text-primary);
+  }
+
+  .status-badge {
+    font-family: var(--font-sans-ui);
+    font-size: 0.6875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 0.2rem 0.5rem;
+    border-radius: 3px;
+    white-space: nowrap;
+  }
+
+  .status-badge.status-published {
+    background-color: var(--color-forest-subtle);
+    color: var(--color-status-canonical);
+    border: 1px solid var(--color-status-canonical);
+  }
+
+  .status-badge.status-in_progress {
+    background-color: var(--color-accent-gold-subtle);
+    color: var(--color-status-variant);
+    border: 1px solid var(--color-status-variant);
+  }
+
+  .status-badge.status-untranslated {
+    background-color: var(--color-bg-subtle);
+    color: var(--color-text-muted);
+    border: 1px solid var(--color-border-subtle);
+  }
+
+  .edition-meta-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 0.5rem 1rem;
+    margin-bottom: 0.75rem;
+    font-family: var(--font-sans-ui);
+    font-size: 0.8125rem;
+  }
+
+  .meta-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+  }
+
+  .meta-item-label {
+    font-size: 0.6875rem;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+  }
+
+  .meta-item-val {
+    color: var(--color-text-primary);
+  }
+
+  .edition-notes {
+    font-size: 0.875rem;
+    line-height: 1.6;
+    color: var(--color-text-secondary);
+    margin: 0;
+    padding-top: 0.5rem;
+    border-top: 1px dashed var(--color-border-subtle);
+  }
+
+  .untranslated-notice {
+    padding: 1rem 1.25rem;
+    background-color: var(--color-bg-subtle);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 4px;
+  }
+
+  .notice-text {
+    font-size: 0.875rem;
+    line-height: 1.6;
+    color: var(--color-text-secondary);
+    margin: 0;
+    font-style: italic;
+  }
+
+  .book-cover-figure {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-bg-subtle);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  }
+
+  .book-cover-wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    overflow: hidden;
+    background-color: var(--color-bg-base);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .book-cover-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .book-cover-caption {
+    padding: 0.875rem 1rem;
+    background-color: var(--color-bg-elevated);
+    border-top: 1px solid var(--color-border-subtle);
+    font-family: var(--font-sans-ui);
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .edition-name {
+    font-size: 0.875rem;
+    color: var(--color-text-primary);
+    margin: 0;
+  }
+
+  .edition-details,
+  .edition-isbn {
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+    margin: 0;
+  }
+
+  .book-detailed-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--color-border-subtle);
+  }
+
+  .book-section h2 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    color: var(--color-text-primary);
+  }
+
+  .book-section p {
+    font-size: 1.0625rem;
+    line-height: 1.75;
+    margin-bottom: 1rem;
+    color: var(--color-text-primary);
+  }
+</style>

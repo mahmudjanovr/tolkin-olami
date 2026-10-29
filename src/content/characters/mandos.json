@@ -1,0 +1,88 @@
+{
+  "id": "mandos",
+  "name": "Mandos (Námo)",
+  "original_name": "Námo",
+  "spouse": "Vairë Toʻquvchi",
+  "children": [],
+  "aliases": [
+    "Námo (Asl ismi: Hukm Qiluvchi)",
+    "Mandos (Istiqomatgohi nomi bilan)",
+    "Bannoth"
+  ],
+  "titles": [
+    "Taqdirlar Hukmdori",
+    "Oʻliklar Uyi Qoʻriqchisi",
+    "Valar Bosh Maslahatchisi va Hakami",
+    "Aratar Aʼzosi"
+  ],
+  "race": "ainur",
+  "sub_race": "Vala (Aratar / Fëanturi)",
+  "culture": "Valinor (Mandos Zallari)",
+  "birth_year": "Zamon yaralishidan avval",
+  "death_year": "Boqiy (Arda yakunigacha)",
+  "weapons_and_artifacts": [
+    "Mandos Zallari (Vairë gobelenlari bilan qoplangan kutish maskani)"
+  ],
+  "primary_locations": [
+    "tirion",
+    "alqualonde"
+  ],
+  "textual_status": "posthumous_edited",
+  "summary": "Fëanturi (Ruhlar Xoʻjayinlari) birodarlarining kattasi, Valinorning gʻarbiy qirgʻogʻidagi Kutish Zallari sohibi va Arda taqdirlarining qatʼiy jarchisi. Hech narsani unutmaydigan, Eru Ilúvatarning irodasidan tashqari kelajakning barcha hukmlarini biladigan va Fëanor xonadoniga 'Shimol Bashorati'ni oʻqigan Vala.",
+  "etymology": "Asl Quenya ismi 'Námo' — 'Hukm chiqaruvchi, Belgilovchi' maʼnosini anglatadi. 'Mandos' esa aslida uning gʻarbiy qirgʻoqdagi qoʻrgʻoni nomi boʻlib, 'Qamoq qalʼasi, Bandilik maskani' deganidir.",
+  "biography_sections": [
+    {
+      "title": "Mandos Zallari va Ruhlar Qoʻriqchisi",
+      "content": "Námo Irmo (Lórien) va Niennaning akasi boʻlib, umr yoʻldoshi Vairë Toʻquvchi bilan birga Amanning gʻarbiy sohilidagi Mandos Zallarida yashaydi. Vairë zamonlar tarixini gobelenlarga toʻqiydi, Mandos esa halok boʻlgan Elflar va Insonlarning ruhlarini (fëar) qabul qiladi.\n\nElflarning ruhlari bu yerda poklanib, qayta tirilguncha kutsa, Insonlarning ruhlari Arda chegaralaridan tashqariga — Eru Ilúvatar huzuriga ketishdan avval qisqa muddat toʻxtaydi. Mandos hech qachon shaxsiy hissiyot bilan hukm chiqarmaydi, faqat Manwëning amri bilan soʻzlaydi."
+    },
+    {
+      "title": "Noldor Qargʻishi (Shimol Bashorati)",
+      "content": "Finwë Formenosda oʻldirilganida va Fëanor qasamyod ichib, Alqualondëda Birinchi Qarindosh Qirgʻinini sodir etganida, Mandos Araman qoyalarida Noldor qoʻshini oldida qora siymoda paydo boʻldi.\n\nU mashhur 'Mandos Hukmi'ni (Shimol Bashoratini) eʼlon qildi: Noldor toʻkkan begunoh qonlari uchun koʻz yoshlari toʻkishini, ularning qalʼalari xiyonat tufayli qulashini va Fëanor Qasamyodi ularni oxirigacha taʼqib etishini bashorat qildi. Shundan soʻng Finarfin ortga qaytdi, Fëanor va Fingolfin esa yoʻlda davom etdilar."
+    },
+    {
+      "title": "Lúthienning Qoʻshigʻi va Yagona Shavqat",
+      "content": "Arda tarixida qattiqqoʻl va oʻzgarmas Mandos faqat bir marta — Lúthien Tinúviel oʻz sevgilisi Beren ortidan Mandos Zallariga tushib, tiz choʻkib gʻamgin qoʻshiq kuylaganida shavqat va qaygʻuga berildi.\n\nMandos Lúthienga oʻz hukmini oʻzgartira olmasligini aytib, Manwë bilan maslahatlashdi. Natijada Lúthienga oʻz boqiyligidan voz kechib, Beren bilan birga Oʻrta-yerda foniy inson sifatida ikkinchi bor yashash va oʻlimdan soʻng olam tashqarisida birlashish inʼom etildi."
+    },
+    {
+      "title": "Taqdir Hukmdori, Mandos Zallari va fojiali bashoratlar",
+      "content": "Mandos (asl ismi Námo) Valar orasida Taqdir va Hukm sohibi bo'lib, Nienna va Irmoning akasidir. U Boqiy G'arbning g'arbiy chekkasida joylashgan bahaybat Mandos Zallarida (Halls of Mandos) yashaydi. Bu yerga barcha halok bo'lgan elflarning ruhlari (fëar) to'planadi va qayta gavdalanish vaqtini kutadi; insonlarning ruhlari esa bu yerda qisqa muddat to'xtab, dunyo chegaralaridan tashqariga ketadilar. Mandos hech narsani unutmaydi va kelajakdagi barcha hodisalarni biladi, biroq u faqat Manwë amri bilangina gapiradi. Uning hukmlari qat'iy, sovuq, ammo mutlaqo adolatli bo'lgan."
+    },
+    {
+      "title": "Noldor La'nati va Lúthien ko'zyoshlari oldidagi yumshash",
+      "content": "Alqualondë qirg'inidan so'ng Mandos qoya ustida paydo bo'lib, mashhur 'Shimol Bashorati'ni (The Doom of Mandos) e'lon qildi va Fëanor sulolasini qora qismat bilan muhrladi. Biroq Mandosning toshdek qattiq qalbini ham eritgan yagona voqea yuz berdi: Beren halok bo'lgach, Lúthien o'z ruhi bilan Mandos Zallariga kelib, o'zining cheksiz sevgisi va fojiasi haqida qo'shiq kuyladi. Mandos tarixda birinchi va so'nggi marta rahmdillik ko'rsatdi; u Manwë va Ilúvatar marhamati bilan Beren va Lúthienga O'rta-yerda foniylar sifatida ikkinchi hayot baxsh etdi. Mandosning qatʼiy sukunati ortida koinot qonuniyatlarining buzilmas muvozanati yotar edi. Uning hukmlari qanchalik qattiq boʻlmasin, ular Ardaning kelajakdagi yangilanishi va Eru Ilúvatarning Buyuk Musiqasining mukammal yakuniga xizmat qilar edi. Mandosning qatʼiy nigohi ostida har bir ruh oʻzining munosib adolatiga erishdi. Uning bashoratlari qanchalik ogʻir boʻlmasin, ular dunyoning yakuniy poklanishiga xizmat qildi. Mandosning qatʼiy adolati Ardadagi barcha mavjudotlarga oʻz qilmishlarining oqibatini tushunishga va yangi ruhiy poklanish sari intilishga yoʻl ochib berdi. Mandos Zallari Oʻrta-yerning barcha fojialari ustidan sukut saqlagan holda koinotning oliy adolat mezonini ifodalovchi muqaddas maskan boʻlib qoldi."
+    }
+  ],
+  "sources": [
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Valaquenta",
+      "page": "28"
+    },
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of the Flight of the Noldor",
+      "page": "88"
+    },
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of Beren and Lúthien",
+      "page": "186"
+    },
+    {
+      "book_slug": "beren-and-luthien",
+      "chapter": "The Lay of Leithian",
+      "page": "210"
+    }
+  ],
+  "related_characters": [
+    "manwe",
+    "feanor",
+    "fingolfin",
+    "finarfin",
+    "luthien",
+    "beren",
+    "miriel",
+    "finwe"
+  ],
+  "adaptations": []
+}

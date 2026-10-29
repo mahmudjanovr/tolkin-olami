@@ -1,0 +1,53 @@
+{
+  "id": "khazad-dumning-qulashi",
+  "title": "Khazad-dûmning Qulashi",
+  "subtitle": "Durin balosining uygʻonishi va Mittilarning quvilishi",
+  "era": "uchinchi_davr",
+  "year_text": "Uchinchi davr 1980–1981",
+  "location_id": "khazad-dum",
+  "characters": [
+    "durin-i",
+    "balin"
+  ],
+  "belligerents": {
+    "side_a": [
+      "Khazad-dûm mittilari (Durin sulolasi, Qirol Durin VI va Náin I)"
+    ],
+    "side_b": [
+      "Morgoth Balrogi (Durin balosi)",
+      "Tumanli togʻlar oʻrklari"
+    ]
+  },
+  "outcome": "Durin VI va Náin I halok bo'ldi; mitti-odamlar o'zlarining ming yillik poytaxtini tashlab qochishga majbur bo'ldilar; Khazad-dûm Balrog va o'rklar makoniga aylanib, Moria ('Qora Jar') nomini oldi.",
+  "succeeding_event": "besh-armiya-jangi",
+  "textual_status": "author_published",
+  "sources": [
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "Appendix A: Annals of the Kings and Rulers - Durin's Folk",
+      "page": "1071"
+    }
+  ],
+  "description_sections": [
+    {
+      "title": "Mithril ketidan quvish va tubsiz zulmatning uyg'onishi",
+      "content": "Uchinchi Davrning ikkinchi ming yilligida Khazad-dûm mitti-odamlari O'rta-yerning eng boy va xavfsiz saltanati sanalardi. Ularning boyligi asosi faqatgina Moria qa'ridagina uchraydigan afsonaviy ma'dan - Mithril (haqiqiy kumush) edi. Yillar o'tishi bilan oson qazib olinadigan konlar tugab, mittilar Barazinbar tog'ining tagiga borgan sari chuqurroq kira boshladilar. Uchinchi Davrning 1980-yilida, Durin VI hukmronligi davrida, konchilar haddan ziyod chuqur qazish natijasida Birinchi Davrdagi G'azab Urushidan beri er qa'rida uxlab yotgan qadimgi dahshat – Morgoth Balrogini uyg'otib yubordilar."
+    },
+    {
+      "title": "Durin Falakati va shohlar sulolasining halokati",
+      "content": "Olov va zulmat maxluqi bo'lgan Balrog yerosti labirintlaridan bostirib chiqdi. Mittilarning boltalari va jasorati bu iblisona olov oldida ojiz qoldi. Shoh Durin VI Balrog tomonidan o'ldirildi va bu maxluqqa 'Durin Falakati' (Durin's Bane) nomi berildi. Bir yil o'tib, uning o'g'li shoh Náin I ham Balrog bilan jangda halok bo'ldi. Mittilar o'zlarining eng jasur jangchilarini yo'qotdilar; saroylar va ko'chalar olov hamda qora tutun bilan qoplandi."
+    },
+    {
+      "title": "Mitti xalqining qochishi va Moria zulmati",
+      "content": "Shoh Náin halok bo'lgach, uning o'g'li Thráin I boshchiligida omon qolgan mittilar o'zlarining ota-bobolari ming yillar davomida qurgan ulug'vor zallari, xazinalari va ajdodlar qabrlarini tashlab qochishga majbur bo'ldilar. Mittilar shimolga, Yolg'iz Tog' (Erebor) va Ered Mithringa yo'l oldilar. Bo'shab qolgan Khazad-dûmga Sauron yuborgan o'rklar va tog' trollari bostirib kirdi. Elflar va insonlar bu qadimiy shonli maskanni endilikda 'Moria' – ya'ni 'Qora Jar' deb atay boshladilar."
+    },
+    {
+      "title": "Tarixiy va strategik ahamiyati",
+      "content": "Khazad-dûmning qulashi O'rta-yerning shimoli-g'arbidagi geosiyosiy muvozanatni butunlay buzdi. Tumanli Tog'lar orqali o'tadigan eng xavfsiz savdo yo'li yopildi; Lothlórien elflari o'zlarining yaqin do'stlari va qo'shnilaridan ayrilib, doimiy xavf ostida qoldilar. Ming yil o'tib Balin boshchiligidagi jasur mitti ekspeditsiyasi Moriani qayta tiklashga uringan bo'lsa-da, barchasi qonli halokat bilan yakunlandi. Faqatgina Gandalf Uzuk Birodarligi safarida Balrog bilan Zirakzigil cho'qqisida olishib, uni mag'lub etganidan so'nggina Moria zulmati nihoyat parchalandi."
+    },
+    {
+      "title": "Durin xalqining ko'chishi va O'rta-yer madaniyatidagi yo'qotish",
+      "content": "Khazad-dûmning qulashi bilan O'rta-yer eng yuksak me'morchilik va muhandislik mo''jizasidan ayrildi. Moria zallari shunchaki kon emas, balki toshdan yasalgan ulkan yerosti saroylari, sharsharalar va billur fonarlar bilan bezatilgan shahar edi. Mittilar o'z uylarini yo'qotgach, butun O'rta-yer bo'ylab tarqoq holda yashashga majbur bo'ldilar va bu ularning madaniyatini ancha qashshoqlashtirdi. Ammo ular o'z poytaxtlarini hech qachon unutmadilar va 'Durin Qaytishi' haqidagi qadimiy bashoratga umid bilan yashadilar."
+    }
+  ]
+}

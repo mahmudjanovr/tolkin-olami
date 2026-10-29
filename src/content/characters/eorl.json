@@ -1,0 +1,73 @@
+{
+  "id": "eorl",
+  "name": "Yosh Eorl",
+  "original_name": "Eorl the Young",
+  "father_name": "Leod",
+  "mother_name": "Nomaʼlum",
+  "spouse": "Nomaʼlum",
+  "children": [
+    "Brego (Rohanning ikkinchi qiroli)"
+  ],
+  "aliases": [
+    "Yosh Eorl",
+    "Eoteod xoʻjayini",
+    "Rohan asoschisi"
+  ],
+  "titles": [
+    "Rohanning (Riddermark) Birinchi Qiroli",
+    "Eoteod Hukmdori",
+    "Eorl xonadoni asoschisi"
+  ],
+  "race": "insonlar",
+  "sub_race": "Shimol insonlari (Éothéod)",
+  "culture": "Rohirrim (Rohan)",
+  "birth_year": "U.D. 2485",
+  "death_year": "U.D. 2545",
+  "house_id": "rohan-shohlari",
+  "weapons_and_artifacts": [
+    "Felarof (Mearas otlarining otasi)",
+    "Guthwine urush bayrogʻi (yashil maydondagi oq ot)"
+  ],
+  "primary_locations": [
+    "edoras",
+    "minas-tirith"
+  ],
+  "textual_status": "author_published",
+  "summary": "Eoteod xalqining jasur yosh hukmdori va Rohan qirolligining asoschisi. U.D. 2510-yilda Celebrant dalasi jangida Gondorni halokatdan qutqarib, Noib Kirion bilan abadiiy ittifoq qasamyodini (Eorl Qasamyodi) ichgan va Kalenardxon oʻlkasini meros qilib olgan.",
+  "biography_sections": [
+    {
+      "title": "Yosh hukmdor va Felarofning boʻysundirilishi",
+      "content": "Eorl Anduin daryosining yuqori oqimidagi Eoteod otliq xalqining hukmdori Leodning oʻgʻli edi. U.D. 2501-yilda Leod yovvoyi oq aygʻirni jilovlamoqchi boʻlganida ot uni yiqitib oʻldirgan; oʻn olti yoshli Eorl otasining oʻrniga hukmdor boʻlgani va umrining oxirigacha sargʻish sochlari oqarmagani uchun «Yosh Eorl» laqabini olgan. Eorl otasini oʻldirgan otni topib, undan qasos olish oʻrniga otga «Xun-toʻlovi» sifatida oʻz erkinligini topshirishni buyurgan; inson tilini tushunuvchi bu ulugʻvor tulporga Eorl «Felarof» deb ism qoʻygan va uni yugan hamda uzangisiz mingan (shundan Mearas — shohona otlar zoti tarqalgan)."
+    },
+    {
+      "title": "Celebrant dalasi jangi va Eorl Qasamyodi",
+      "content": "U.D. 2510-yilda Gondor Noibi Kirion Balchoth qabilalari va orklarning dahshatli bosqiniga uchrab, shimolga umidsiz yordam xabarini joʻnatgan. Xabarchi Borondir Eorl huzuriga zoʻrgʻa yetib borganida, Eorl hech ikkilanmay yetti ming otliq qoʻshin bilan janubga otlangan. Dol Guldur soyasi tufayli daryo boʻylab tuman tushganida, Lothlórien malikasi Galadriel yuborgan oq tuman Eorl otliqlarini dushman koʻzidan yashirib tezlashtirgan. Celebrant dalasida Gondor qoʻshini qurshovda qolib halok boʻlayotgan daqiqada Eorl burgʻulari yangrab, shimollik suvoriylar dushmanni tor-mor etgan."
+    },
+    {
+      "title": "Rohanning tashkil topishi",
+      "content": "Minnatdorlik ramzi sifatida Gondor Noibi Kirion kimsasiz qolgan keng Kalenardxon viloyatini Eorl va uning xalqiga abadiy mulk qilib bergan. Halifirien tepaligida Elendil qabri ustida Kirion va Eorl ikki davlat oʻrtasida mangu harbiy ittifoq haqida tantanali qasamyod (Oath of Eorl) ichishgan. Eorl U.D. 2545-yilda Vold tepaliklarida Sharqliklarga qarshi jangda halok boʻlgan va Edoras qoʻrgʻonlarining birinchisiga (Felarof bilan birga) dafn etilgan."
+    }
+  ],
+  "etymology": "Eorl nomi Qadimgi ingliz (anglo-sakson) tilidagi eorl — «olijanob jangchi, zodagon, graf» soʻzidan olingan.",
+  "sources": [
+    {
+      "book_slug": "the-return-of-the-king",
+      "chapter": "Ilova A, II qism (Eorl xonadoni)",
+      "page": "1063"
+    },
+    {
+      "book_slug": "the-two-towers",
+      "chapter": "III kitob, 6-bob (Oltin Saroy qiroli)",
+      "page": "508"
+    }
+  ],
+  "related_characters": [
+    "helm-hammerhand",
+    "theoden",
+    "eomer",
+    "eowyn",
+    "galadriel",
+    "aragorn"
+  ],
+  "adaptations": []
+}

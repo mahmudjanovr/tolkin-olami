@@ -1,0 +1,129 @@
+{
+  "id": "aragorn",
+  "name": "Aragorn II",
+  "original_name": "Elessar Telcontar",
+  "father_name": "Arathorn II",
+  "mother_name": "Gilraen Goʻzal",
+  "spouse": "Arwen Undómiel",
+  "children": [
+    "Eldarion (valiahd oʻgʻil)",
+    "Bir necha qizlari"
+  ],
+  "aliases": [
+    "Strider (Daydi)",
+    "Estel (Umid)",
+    "Dúnadan (Gʻarbiy Inson)",
+    "Thorongil (Yulduz Burguti)",
+    "Envinyatar (Yangilovchi)",
+    "Elessar Telcontar"
+  ],
+  "titles": [
+    "Gondor va Arnor Birlashgan Qirolligi Oliy Shohi",
+    "Isildur Vorisi",
+    "Shimol Dúnedainining 16-Yoʻlboshchisi"
+  ],
+  "race": "insonlar",
+  "sub_race": "Dúnedain",
+  "culture": "Gondor / Dúnedain",
+  "birth_year": "Uchinchi davr 2931",
+  "death_year": "Toʻrtinchi davr 120",
+  "house_id": "elros-va-gondor-shohlari",
+  "weapons_and_artifacts": [
+    "Andúril (Qayta soxtalangan Narsil qilichi)",
+    "Elessar zumrad toshi",
+    "Barahir uzugi",
+    "Elendil Yulduzi"
+  ],
+  "primary_locations": [
+    "rivendell",
+    "minas-tirith",
+    "pelargir",
+    "helms-deep"
+  ],
+  "textual_status": "author_published",
+  "uncertainty_notes": "Matnshunoslik va adabiy evolyutsiya: 'The History of The Lord of the Rings' (HoME VI–VIII) qoralamalarida Aragorn dastlab yogʻoch kovush kiyib yuruvchi 'Trotter' laqabli mitti-odam (Hobbit) sifatida tasvirlangan. Keyinchalik Tolkien uni Dúnedain shohi va Isildur avlodiga aylantirgan. Film adaptatsiyasida (Peter Jackson) Aragorn taxtdan qochuvchi va ikkilanuvchi obraz sifatida koʻrsatilgan boʻlsa, Tolkienning kanonik romanida u yoshligidanoq oʻz shohona vazifasi va Elendil merosini chuqur anglagan qatʼiyatli yoʻlboshchidir.",
+  "summary": "Arathorn II va Gilraenning oʻgʻli, Isildurning 39-toʻgʻridan-toʻgʻri avlodi va Shimol Dúnedainining 16-yoʻlboshchisi. Oʻrta-yer boʻylab yashirin xizmat qilib, Uzuk Birodarligiga rahbarlik qilgan, Pelennor va Qora Darvoza janglarida gʻalabaga erishib, Gondor va Arnor Birlashgan Qirolligi taxtini tiklagan va Toʻrtinchi davr tinchligini barpo etgan buyuk shoh.",
+  "etymology": "Sindarin tilida 'Aragorn' — aran ('shoh, qirol') va ngorn ('jasur, olijanob') soʻzlaridan olinib, 'Shohona jasorat' maʼnosini anglatadi. Bolalikdagi yashirin ismi 'Estel' — 'Umid' deganidir. Qirollik taxtiga oʻtirgach qabul qilgan 'Elessar' esa elen ('yulduz') va seler/sar ('tosh') soʻzlaridan boʻlib, 'Elflar toshi' deganidir; oʻz sulolasini esa 'Telcontar' (Daydi / Strider soʻzining Quenya shakli) deb atagan.",
+  "biography_sections": [
+    {
+      "title": "Yoshlik yillari va Estel ismi siri",
+      "content": "Aragorn II Elessar Uchinchi davrning 2931-yilida Dúnedainning 15-sardori Arathorn II va Gilraen oilasida tugʻildi. U ikki yoshdaligida otasi oʻrklar bilan jangda halok boʻldi. Onasi Gilraen uni Imladrisga (Rivendell) olib bordi, u yerda Elrond bolani oʻz oʻgʻlidek qabul qilib tarbiyaladi.\n\nSauron josuslaridan himoya qilish maqsadida bolaning asl kelib chiqishi sir saqlandi va unga 'Estel' ('Umid') ismi berildi. Faqat yigirma yoshga toʻlganida Elrond unga haqiqiy shaxsiyatini — Isildurning bevosita vorisi ekanini ochdi va unga Barahir uzugi hamda Narsil qilichi siniqlarini topshirdi. Oʻsha davrda u Rivendell oʻrmonida Arwen Undómiel bilan ilk bor uchrashdi."
+    },
+    {
+      "title": "Darbadarlik yillari: Thorongil va buyuk safarlar",
+      "content": "Haqiqiy kimligini anglagan Aragorn Oʻrta-yer boʻylab yashirincha kezib, harbiy va siyosiy tajriba toʻpladi. 2957–2980 yillarda u 'Thorongil' ('Burgut Yulduzi') taxallusi bilan Rohan qiroli Thengel va Gondor Bosh Noibi Ecthelion II xizmatida boʻldi.\n\nU Gondor floti bilan Umbar qaroqchilari bandargohiga tungi toʻsatdan zarba berib, qaroqchilar boshligʻini oʻldirdi va flotlarini yoqib yubordi. Biroq Ecthelionning oʻgʻli Denethor II bilan raqobatga kirishmaslik uchun kutilmaganda Gondorni tark etib, Sharq va Janubning sirli oʻlkalariga yoʻl oldi."
+    },
+    {
+      "title": "Uzuk Birodarligi va Yoʻlboshchilik burchi",
+      "content": "3018-yilda Gandalfning iltimosiga koʻra Aragorn Bree (Serob) shaharchasida Frodoni kutib oldi va 'Strider' ('Qadamchi') nomi bilan xobbitlarni Weathertop orqali Rivendellga yetkazdi. Narsil qilichi qayta zarb qilinib, 'Andúril' ('Gʻarb Olovi') nomini oldi.\n\nElrond Kengashida Uzuk Birodarligi aʼzosi boʻldi. Moria tubsizligida Gandalf qulaganidan soʻng, Aragorn butun Birodarlikning yoʻlboshchilik masʼuliyatini oʻz zimmasiga oldi va ularni Lothlórien orqali Amon Henga olib keldi."
+    },
+    {
+      "title": "Oʻliklar Yoʻli va Pelennor jangi zafari",
+      "content": "Amon Henda Birodarlik boʻlingach, Aragorn, Legolas va Gimli Merry va Pippinni qutqarish uchun Rohanga yugurdilar. Hornburg jangida Théoden bilan yelkama-yelka turib Isengard Uruk-hailarini yengdilar.\n\nSoʻngra Aragorn qadimiy bashoratga binoan 'Oʻliklar Yoʻli'ga (Paths of the Dead) kirdi. U yerda Isildurga bergan qasamyodini buzgan xiyonatkor arvohlar qoʻshinini oʻziga boʻysundirdi. Pelargirda Umbar qaroqchilari flotini egallab, qora kemalarda Pelennor dalalariga yetib keldi va Gondorning buyuk gʻalabasini taʼminladi."
+    },
+    {
+      "title": "Toj kiyish, Arwen bilan nikoh va Birlashgan Qirollik",
+      "content": "Qora Darvoza jangida Sauron diqqatini oʻziga qaratib Frodoga imkoniyat yaratgan Aragorn, Yagona Uzuk yoʻq qilingach, Minas Tirithda 'Qirol Elessar' nomi bilan taxtga oʻtirdi. Gandalf uning boshiga Oliy Shoh tojini kiydirdi.\n\nArwen Undómiel bilan turmush qurdi va Arnor hamda Gondorni yagona saltanatga birlashtirdi. Toʻrtinchi davrning 120-yilida u 210 yoshida oʻz xohishi bilan hayotdan koʻz yumdi va xalqiga adolat, tinchlik va farovonlik meros qoldirdi."
+    }
+  ],
+  "image": {
+    "src": "/images/characters/aragorn.webp",
+    "src_thumb": "/images/characters/aragorn-thumb.webp",
+    "alt": "Aragorn II Elessar Andúril qilichi va Elessar zumrad toshli burgut nishoni bilan",
+    "caption": "Aragorn II Elessar — Dúnedain yetakchisi, Andúril qilichi va Qayta Birlashgan Qirollik Oliy Qiroli"
+  },
+  "sources": [
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "The Council of Elrond",
+      "page": "245"
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "The Passing of the Grey Company",
+      "page": "771"
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "The Battle of the Pelennor Fields",
+      "page": "838"
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "The Steward and the King",
+      "page": "959"
+    },
+    {
+      "book_slug": "unfinished-tales",
+      "chapter": "The Hunt for the Ring",
+      "page": "337"
+    }
+  ],
+  "related_characters": [
+    "arwen",
+    "elrond",
+    "gandalf",
+    "isildur",
+    "elendil",
+    "boromir",
+    "faramir",
+    "theoden",
+    "eomer",
+    "eowyn",
+    "frodo-baggins",
+    "samwise-gamgee",
+    "legolas",
+    "gimli",
+    "galadriel",
+    "sauron"
+  ],
+  "adaptations": [
+    {
+      "medium": "film",
+      "title": "The Lord of the Rings Film Trilogy",
+      "creator": "Peter Jackson",
+      "year": 2001,
+      "divergence_notes": "Filmda Aragorn taxtni qabul qilishdan bosh tortuvchi va Isildurning zaifligidan qo'rquvchi ikkilanuvchan qahramon sifatida tasvirlangan. Kitobda esa u o'z taqdiri va shohona burchini yoshligidanoq qat'iyat bilan bilgan va Andúril qilichini Rivendelldan chiqqan zahotiyoq olib yurgan."
+    }
+  ]
+}

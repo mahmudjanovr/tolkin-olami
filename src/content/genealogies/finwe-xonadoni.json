@@ -1,0 +1,114 @@
+{
+  "id": "finwe-xonadoni",
+  "title": "Finwë Xonadoni Nasabnomasi",
+  "house_name": "Finwë xonadoni (Noldor Oliy Qirollari)",
+  "founder_id": "finwe",
+  "era": "Daraxtlar davri va Birinchi davr",
+  "summary": "Valinordagi Noldor Oliy qirollari sulolasi va ularning Belerianddagi shajaraviy tarmoqlari. Finwëning ikki nikohi (Míriel va Indis) orqali Noldorning uch buyuk xonadoni — Fëanor, Fingolfin va Finarfin tarmoqlariga asos solingan.",
+  "members": [
+    {
+      "character_id": "finwe",
+      "spouse_ids": ["miriel", "indis"],
+      "parent_ids": [],
+      "generation": 1,
+      "order": 1,
+      "is_uncertain": false
+    },
+    {
+      "character_id": "miriel",
+      "spouse_ids": ["finwe"],
+      "parent_ids": [],
+      "generation": 1,
+      "order": 2,
+      "is_uncertain": false
+    },
+    {
+      "character_id": "indis",
+      "spouse_ids": ["finwe"],
+      "parent_ids": [],
+      "generation": 1,
+      "order": 3,
+      "is_uncertain": false
+    },
+    {
+      "character_id": "feanor",
+      "spouse_ids": ["nerdanel"],
+      "parent_ids": ["finwe", "miriel"],
+      "generation": 2,
+      "order": 1,
+      "is_uncertain": false
+    },
+    {
+      "character_id": "fingolfin",
+      "spouse_ids": ["anairë"],
+      "parent_ids": ["finwe", "indis"],
+      "generation": 2,
+      "order": 2,
+      "is_uncertain": false
+    },
+    {
+      "character_id": "finarfin",
+      "spouse_ids": ["earwen"],
+      "parent_ids": ["finwe", "indis"],
+      "generation": 2,
+      "order": 3,
+      "is_uncertain": false
+    },
+    {
+      "character_id": "fingon",
+      "spouse_ids": [],
+      "parent_ids": ["fingolfin"],
+      "generation": 3,
+      "order": 1,
+      "is_uncertain": false
+    },
+    {
+      "character_id": "turgon",
+      "spouse_ids": ["elenwe"],
+      "parent_ids": ["fingolfin"],
+      "generation": 3,
+      "order": 2,
+      "is_uncertain": false
+    },
+    {
+      "character_id": "galadriel",
+      "spouse_ids": ["celeborn"],
+      "parent_ids": ["finarfin"],
+      "generation": 3,
+      "order": 3,
+      "is_uncertain": false
+    },
+    {
+      "character_id": "celebrimbor",
+      "spouse_ids": [],
+      "parent_ids": ["curufin"],
+      "generation": 4,
+      "order": 1,
+      "is_uncertain": false
+    },
+    {
+      "character_id": "gil-galad",
+      "spouse_ids": [],
+      "parent_ids": ["fingon"],
+      "generation": 4,
+      "order": 2,
+      "is_uncertain": true,
+      "uncertainty_notes": "The Silmarillion (1977) nashrida Gil-galad Fingon oʻgʻli deb koʻrsatilgan. Biroq Christopher Tolkien keyinchalik (The Peoples of Middle-earth, 'The Shibboleth of Fëanor') otasining yakuniy qoralamalarida Gil-galad Orodrethning oʻgʻli boʻlganini va 1977-yilgi kitobga oʻtgan shajara tahririy yanglishuv ekanini qayd etgan."
+    }
+  ],
+  "branches": ["Fëanor xonadoni", "Fingolfin xonadoni", "Finarfin xonadoni"],
+  "sources": [
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of Eldamar and the Princes of the Eldalië",
+      "page": "60",
+      "notes": "Noldor knyazlarining Valinordagi nasabnomasi va Finwëning ikki nikohi."
+    },
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of the Rings of Power and the Third Age",
+      "page": "298",
+      "notes": "Soʻnggi Oliy Qirol Gil-galad va Eregion ustalari nasabi."
+    }
+  ]
+}

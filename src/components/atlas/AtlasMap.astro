@@ -1,0 +1,2108 @@
+---
+import type { PlaceData } from '@/content/schemas';
+import type { JourneyDefinition } from '@/utils/atlas/journey-types';
+import { getMapDefinition, REGISTERED_MAPS } from '@/utils/atlas/map-registry';
+
+export interface AtlasPlaceData extends PlaceData {
+  associated_characters?: Array<{ id: string; name: string; href: string }>;
+}
+
+interface Props {
+  activeRegion: string;
+  places: AtlasPlaceData[];
+  initialPlaceId?: string;
+  initialCoords?: { x: number; y: number; z: number };
+  journey?: JourneyDefinition;
+  journeys?: Record<string, JourneyDefinition>;
+  activeJourneyId?: string;
+  activeStageNumber?: number;
+}
+
+const {
+  activeRegion,
+  places,
+  initialPlaceId,
+  initialCoords,
+  journeys,
+  activeJourneyId,
+  activeStageNumber,
+} = Astro.props;
+const currentMap = getMapDefinition(activeRegion) || REGISTERED_MAPS['orta-yer'];
+
+// Xarita mijoz skripti uchun faqat kerakli maydonlarni qoldiramiz (HTML byudjeti himoyasi)
+const mapPlaces = places.map((p) => ({
+  id: p.id,
+  name: p.name,
+  elvish_name: p.elvish_name,
+  type: p.type,
+  region: p.region,
+  coordinates: p.coordinates,
+  summary: p.summary,
+  founded_era: p.founded_era,
+  destroyed_era: p.destroyed_era,
+  rulers: p.rulers,
+  associated_characters: p.associated_characters,
+}));
+---
+
+<div class="atlas-map-wrapper">
+  <!-- Ekran o'quvchilar uchun jonli xabarlar maydoni -->
+  <div id="atlas-live-announcer" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- Xarita konteyneri -->
+  <div
+    id="atlas-map-container"
+    class="atlas-map-container"
+    role="region"
+    aria-label={`${currentMap.titleUz} interaktiv xaritasi`}
+    tabindex="0"
+  >
+    <!-- Zaxira (No-JS / Yuklanish xatosi) ko'rinishi -->
+    <noscript>
+      <div class="atlas-noscript-warning">
+        <p>
+          Interaktiv xaritadan foydalanish uchun JavaScript yoqilgan boʻlishi kerak.
+          Siz toʻgʻridan-toʻgʻri <a href="#atlas-katalog">Toponimlar Katalogidan</a> toʻliq foydalanishingiz mumkin.
+        </p>
+      </div>
+    </noscript>
+  </div>
+
+  <!-- Yuklanish xatosi xabarnomasi (JS orqali yashirin/ko'rinuvchi) -->
+  <div id="atlas-error-fallback" class="atlas-error-fallback hidden" role="alert">
+    <div class="error-card">
+      <h3 class="error-title">Xarita yuklanmadi</h3>
+      <p class="error-message">
+        Xarita dvigatelini initsializatsiya qilishda xatolik yuz berdi. Quyidagi toʻliq matnli toponimlar katalogidan foydalanishingiz mumkin.
+      </p>
+      <a href="#atlas-katalog" class="error-link">Katalogga oʻtish</a>
+    </div>
+  </div>
+
+  <!-- Ma'lumotlarni mijoz skriptiga xavfsiz uzatish (JSON orqali) -->
+  <script
+    type="application/json"
+    id="atlas-data-script"
+    set:html={JSON.stringify({
+      activeRegion,
+      mapDefinition: currentMap,
+      allPlaces: mapPlaces,
+      initialPlaceId,
+      initialCoords,
+      journeys,
+      activeJourneyId,
+      activeStageNumber,
+    })}
+  />
+</div>
+
+<style>
+  .atlas-map-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 520px;
+    background-color: var(--color-bg-base);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 6px;
+    overflow: hidden;
+  }
+
+  .atlas-map-container {
+    width: 100%;
+    height: 100%;
+    min-height: 520px;
+    background-color: #f2ece0;
+    outline: none;
+  }
+
+  .atlas-map-container:focus-visible {
+    outline: 2px solid var(--color-accent-gold);
+    outline-offset: -2px;
+  }
+
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  .atlas-noscript-warning {
+    padding: 2.5rem;
+    text-align: center;
+    font-family: var(--font-serif-body);
+    color: var(--color-text-secondary);
+  }
+
+  .atlas-error-fallback {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(242, 236, 224, 0.95);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    z-index: 100;
+  }
+
+  .atlas-error-fallback.hidden {
+    display: none !important;
+  }
+
+  .error-card {
+    background-color: var(--color-bg-elevated);
+    border: 1px solid var(--color-border-subtle);
+    padding: 2rem;
+    border-radius: 6px;
+    max-width: 440px;
+    text-align: center;
+  }
+
+  .error-title {
+    font-family: var(--font-serif-heading);
+    color: var(--color-accent-amber);
+    margin: 0 0 0.5rem;
+  }
+
+  .error-message {
+    font-family: var(--font-serif-body);
+    font-size: 0.9375rem;
+    color: var(--color-text-secondary);
+    margin: 0 0 1.25rem;
+    line-height: 1.6;
+  }
+
+  .error-link {
+    display: inline-block;
+    padding: 0.5rem 1.25rem;
+    background-color: var(--color-forest);
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 4px;
+    font-family: var(--font-sans-ui);
+    transition: background-color var(--transition-fast);
+  }
+
+  .error-link:hover {
+    background-color: var(--color-forest-deep);
+  }
+</style>
+
+<!-- Leaflet markerlari va belgilari uchun global uslublar -->
+<style is:global>
+  @import 'leaflet/dist/leaflet.css';
+
+  /* Leaflet max-width reset for custom panes:
+   * Tailwind CSS preflight sets `max-width: 100%` on all `svg` tags.
+   * Leaflet panes are zero-sized absolute containers (`width: 0px`), which collapses
+   * `<svg>` elements inside custom panes (`.leaflet-journey-pane`) to `0px` computed width,
+   * breaking polyline coordinate projection and rendering. Leaflet's built-in reset only
+   * applies to `.leaflet-overlay-pane svg`. We extend it to all `.leaflet-pane svg`. */
+  .leaflet-container .leaflet-pane svg {
+    max-width: none !important;
+    max-height: none !important;
+  }
+
+  .scholarly-marker-container {
+    background: transparent;
+    border: none;
+    contain: layout style;
+    pointer-events: auto;
+  }
+
+  /* Zoom animatsiyasi vaqtida ortiqcha soya va o'tishlarni yengillashtirish */
+  .atlas-map-container.is-zooming .marker-icon-wrapper,
+  .atlas-map-container.is-zooming .marker-title-badge,
+  .atlas-map-container.is-zooming .journey-stage-marker,
+  .atlas-map-container.is-zooming .atlas-geo-label {
+    box-shadow: none !important;
+    transition: none !important;
+  }
+
+  .scholarly-marker {
+    position: relative;
+    width: 26px;
+    height: 26px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+  }
+
+  .marker-icon-wrapper {
+    width: 26px;
+    height: 26px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 0 1px 3px rgba(28, 26, 22, 0.35);
+  }
+
+  .marker-icon-wrapper svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .scholarly-marker:hover .marker-icon-wrapper,
+  .scholarly-marker:focus-visible .marker-icon-wrapper,
+  .scholarly-marker-container:focus-visible .marker-icon-wrapper {
+    transform: scale(1.2);
+    box-shadow: 0 0 8px rgba(197, 155, 39, 0.7);
+    transition: transform 0.12s ease, box-shadow 0.12s ease;
+  }
+
+  .scholarly-marker.is-active .marker-icon-wrapper,
+  .scholarly-marker-container.is-active .marker-icon-wrapper {
+    transform: scale(1.25);
+    box-shadow: 0 0 10px rgba(197, 155, 39, 0.9);
+  }
+
+  .marker-title-badge {
+    position: absolute;
+    background-color: rgba(33, 28, 24, 0.92);
+    color: #f7f2e7;
+    font-family: var(--font-sans-ui, sans-serif);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    padding: 2px 7px;
+    border-radius: 3px;
+    white-space: nowrap;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
+    pointer-events: none;
+    z-index: 10;
+  }
+
+  /* 4-Way Automatic Collision Orientation */
+  .scholarly-marker.pos-right .marker-title-badge,
+  .scholarly-marker-container.pos-right .marker-title-badge {
+    left: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 5px;
+  }
+
+  .scholarly-marker.pos-left .marker-title-badge,
+  .scholarly-marker-container.pos-left .marker-title-badge {
+    right: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-right: 5px;
+  }
+
+  .scholarly-marker.pos-bottom .marker-title-badge,
+  .scholarly-marker-container.pos-bottom .marker-title-badge {
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 4px;
+  }
+
+  .scholarly-marker.pos-top .marker-title-badge,
+  .scholarly-marker-container.pos-top .marker-title-badge {
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 4px;
+  }
+
+  /* Uncluttered View: Colliding minor labels are hidden until hovered or focused */
+  .scholarly-marker.label-hover-only .marker-title-badge,
+  .scholarly-marker-container.label-hover-only .marker-title-badge {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .scholarly-marker.label-hover-only:hover .marker-title-badge,
+  .scholarly-marker-container.label-hover-only:hover .marker-title-badge,
+  .scholarly-marker:focus-visible .marker-title-badge,
+  .scholarly-marker-container:focus-visible .marker-title-badge,
+  .scholarly-marker.is-active .marker-title-badge,
+  .scholarly-marker-container.is-active .marker-title-badge {
+    opacity: 1;
+    z-index: 50;
+  }
+
+  .scholarly-marker.is-active .marker-title-badge,
+  .scholarly-marker-container.is-active .marker-title-badge {
+    background-color: var(--color-accent-gold, #c59b27);
+    color: #12100e;
+    font-weight: 700;
+  }
+
+  /* Zoom-darajasiga mos kartografik hududiy yorliqlar (Geographic LoD Labels) */
+  .atlas-geo-label-container {
+    background: transparent;
+    border: none;
+    contain: layout style;
+    pointer-events: none;
+  }
+
+  .atlas-geo-label {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    pointer-events: none;
+    user-select: none;
+    text-shadow:
+      0 0 4px rgba(246, 240, 228, 0.96),
+      0 0 7px rgba(246, 240, 228, 0.9);
+    line-height: 1.15;
+  }
+
+  .atlas-geo-label-container.pos-center .atlas-geo-label {
+    transform: translate(-50%, -50%);
+  }
+
+  .atlas-geo-label-container.pos-top .atlas-geo-label {
+    transform: translate(-50%, calc(-100% - 4px));
+  }
+
+  .atlas-geo-label-container.pos-bottom .atlas-geo-label {
+    transform: translate(-50%, 4px);
+  }
+
+  .atlas-geo-label-container.pos-right .atlas-geo-label {
+    transform: translate(6px, -50%);
+  }
+
+  .atlas-geo-label-container.pos-left .atlas-geo-label {
+    transform: translate(calc(-100% - 6px), -50%);
+  }
+
+  .atlas-geo-label.geo-cat-region {
+    font-family: 'Cinzel', 'IM Fell English', Georgia, serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    color: #3a2d20;
+  }
+
+  .atlas-geo-label.geo-cat-subregion {
+    font-family: 'IM Fell English', Georgia, serif;
+    font-size: 11.5px;
+    font-style: italic;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    color: #4a3a28;
+  }
+
+  .atlas-geo-label.geo-cat-water,
+  .atlas-geo-label.geo-cat-river {
+    font-family: Georgia, serif;
+    font-size: 11px;
+    font-style: italic;
+    letter-spacing: 0.06em;
+    color: #2b4554;
+  }
+
+  .atlas-geo-label.geo-cat-road {
+    font-family: Georgia, serif;
+    font-size: 10.5px;
+    font-style: italic;
+    letter-spacing: 0.06em;
+    color: #5c442c;
+  }
+
+  .atlas-geo-label.geo-cat-forest,
+  .atlas-geo-label.geo-cat-landmark,
+  .atlas-geo-label.geo-cat-settlement {
+    font-family: 'IM Fell English', Georgia, serif;
+    font-size: 11px;
+    font-style: italic;
+    letter-spacing: 0.05em;
+    color: #3d3122;
+  }
+
+  /* Tarixiy Sayohat (Journey Atlas) Markerlari va Yoʻl Segmentlari */
+  .journey-stage-marker-container {
+    background: transparent;
+    border: none;
+  }
+
+  .journey-stage-marker {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #1f1b16;
+    border: 2px solid #c59b27;
+    color: #f4eedf;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-sans-ui, sans-serif);
+    font-weight: 700;
+    font-size: 13px;
+    cursor: pointer;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.45);
+    transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s, background-color 0.2s;
+    outline: none;
+  }
+
+  .journey-stage-marker:hover,
+  .journey-stage-marker:focus-visible {
+    transform: scale(1.22);
+    box-shadow: 0 0 12px rgba(197, 155, 39, 0.85);
+    border-color: #ffd875;
+  }
+
+  .journey-stage-marker.is-active {
+    background-color: #c59b27;
+    color: #12100e;
+    border-color: #ffffff;
+    transform: scale(1.3);
+    box-shadow: 0 0 16px rgba(197, 155, 39, 0.95);
+    z-index: 1000 !important;
+  }
+
+  .journey-stage-marker.is-return {
+    background-color: #1a271c;
+    border-color: #5c8a4d;
+    color: #e2f0d9;
+  }
+
+  .journey-stage-marker.is-return:hover,
+  .journey-stage-marker.is-return:focus-visible {
+    box-shadow: 0 0 12px rgba(92, 138, 77, 0.85);
+    border-color: #8ce66b;
+  }
+
+  .journey-stage-marker.is-return.is-active {
+    background-color: #4a7c59;
+    color: #ffffff;
+    border-color: #ffffff;
+    box-shadow: 0 0 16px rgba(100, 180, 80, 0.95);
+  }
+
+  /* Qardoshlik Safari (Fellowship) Markerlari */
+  .journey-stage-marker[data-journey="fellowship"] {
+    border-color: #4a8bad;
+  }
+
+  .journey-stage-marker[data-journey="fellowship"]:hover,
+  .journey-stage-marker[data-journey="fellowship"]:focus-visible {
+    box-shadow: 0 0 12px rgba(74, 139, 173, 0.85);
+    border-color: #7abfe3;
+  }
+
+  .journey-stage-marker[data-journey="fellowship"].is-active {
+    background-color: #4a8bad;
+    color: #ffffff;
+    border-color: #ffffff;
+    box-shadow: 0 0 16px rgba(74, 139, 173, 0.95);
+  }
+
+  /* Aragorn va Kulrang Boʻlinma (Grey Company) Markerlari */
+  .journey-stage-marker[data-journey="grey-company"] {
+    border-color: #8b2500;
+  }
+
+  .journey-stage-marker[data-journey="grey-company"]:hover,
+  .journey-stage-marker[data-journey="grey-company"]:focus-visible {
+    box-shadow: 0 0 12px rgba(139, 37, 0, 0.85);
+    border-color: #bf4515;
+  }
+
+  .journey-stage-marker[data-journey="grey-company"].is-active {
+    background-color: #8b2500;
+    color: #ffffff;
+    border-color: #ffffff;
+    box-shadow: 0 0 16px rgba(139, 37, 0, 0.95);
+  }
+
+  /* Uzuk Egasining Safari (Ring-bearer / Frodo & Sam) Markerlari */
+  .journey-stage-marker[data-journey="ring-bearer"] {
+    border-color: #c0392b;
+  }
+
+  .journey-stage-marker[data-journey="ring-bearer"]:hover,
+  .journey-stage-marker[data-journey="ring-bearer"]:focus-visible {
+    box-shadow: 0 0 12px rgba(192, 57, 43, 0.85);
+    border-color: #e74c3c;
+  }
+
+  .journey-stage-marker[data-journey="ring-bearer"].is-active {
+    background-color: #c0392b;
+    color: #ffffff;
+    border-color: #ffffff;
+    box-shadow: 0 0 16px rgba(192, 57, 43, 0.95);
+  }
+
+  .journey-stage-marker .stage-marker-number {
+    line-height: 1;
+    pointer-events: none;
+  }
+
+  .journey-segment-confirmed,
+  .leaflet-interactive.journey-segment-confirmed {
+    stroke-dasharray: none;
+  }
+
+  .journey-segment-approximate,
+  .leaflet-interactive.journey-segment-approximate {
+    stroke-dasharray: 6, 8;
+  }
+
+  .journey-segment-return,
+  .leaflet-interactive.journey-segment-return {
+    stroke-dasharray: 8, 6;
+  }
+
+  .journey-segment-return.journey-segment-approximate,
+  .leaflet-interactive.journey-segment-return.journey-segment-approximate {
+    stroke-dasharray: 4, 8;
+  }
+</style>
+
+<!-- Faqat mijoz brauzerida ishlaydigan xavfsiz skript (SSR Guard) -->
+<script>
+  import type { PlaceData } from '@/content/schemas';
+  import { calculateMapBounds, toLeafletLatLng } from '@/utils/atlas/coordinates';
+  import type { JourneyDefinition, JourneyStage } from '@/utils/atlas/journey-types';
+  import { getMapDefinition, isValidMapId, type MapDefinition } from '@/utils/atlas/map-registry';
+  import {
+    CollisionPlacementCache,
+    computeLabelPlacements,
+    type BoundingBox,
+    type CollisionCandidate,
+    type ViewportBounds,
+  } from '@/utils/atlas/marker-collision';
+  import {
+    getGeographicLabelsForRegion,
+    getPlaceIconSvg,
+    getPlaceMinZoom,
+    getPlacePreferredDirection,
+    getPlacePriority,
+    getPlaceShortLabel,
+    mapPlaceToIconType,
+    type GeographicLabelDefinition,
+  } from '@/utils/atlas/marker-icons';
+  import { parseAtlasParams, serializeAtlasParams } from '@/utils/atlas/url-state';
+
+  interface AtlasPlaceData extends PlaceData {
+    associated_characters?: Array<{ id: string; name: string; href: string }>;
+  }
+
+  interface AtlasDataPayload {
+    activeRegion: string;
+    mapDefinition: MapDefinition;
+    places?: AtlasPlaceData[];
+    allPlaces: AtlasPlaceData[];
+    initialPlaceId?: string;
+    initialCoords?: { x: number; y: number; z: number };
+    journey?: JourneyDefinition;
+    journeys?: Record<string, JourneyDefinition>;
+    activeJourneyId?: string;
+    activeStageNumber?: number;
+  }
+
+  interface CachedPlaceEntry {
+    place: AtlasPlaceData;
+    marker: import('leaflet').Marker;
+    latLng: import('leaflet').LatLng;
+    shortName: string;
+    priority: number;
+    baseMinZoom: number;
+    preferredPos: 'right' | 'left' | 'top' | 'bottom';
+    el: HTMLElement | null;
+    innerEl: HTMLElement | null;
+  }
+
+  interface CachedGeoLabelEntry {
+    def: GeographicLabelDefinition;
+    latLng: import('leaflet').LatLng;
+    marker: import('leaflet').Marker | null;
+    el: HTMLElement | null;
+  }
+
+  interface AtlasPerfDiagnostics {
+    placementRunCount: number;
+    cacheHits: number;
+    cacheMisses: number;
+    lastPlacementDurationMs: number;
+    visiblePlaceMarkers: number;
+    visiblePlaceLabels: number;
+    visibleGeoLabels: number;
+    activeListenersCleanedUp: boolean;
+  }
+
+  async function initAtlasIsland() {
+    if (typeof window === 'undefined') return;
+
+    const dataScript = document.getElementById('atlas-data-script');
+    if (!dataScript) return;
+
+    let payload: AtlasDataPayload;
+    try {
+      payload = JSON.parse(dataScript.textContent || '{}');
+    } catch {
+      return;
+    }
+
+    const container = document.getElementById('atlas-map-container');
+    if (!container) return;
+
+    // Takroriy initsializatsiyadan himoya (Duplicate Init Guard)
+    if ((container as unknown as { _leaflet_id?: number })._leaflet_id) {
+      return;
+    }
+
+    const listenerController = new AbortController();
+    const { signal } = listenerController;
+
+    // URL parametrlarini tahlil qilish va tugmalar holatini darhol sinxronlash
+    const urlState = parseAtlasParams(window.location.search);
+    const initialMapId = urlState.hudud && isValidMapId(urlState.hudud) ? urlState.hudud : payload.activeRegion;
+    let currentMapDef: MapDefinition = getMapDefinition(initialMapId) || payload.mapDefinition;
+    const { allPlaces } = payload;
+
+    function syncRegionButtons(regionId: string) {
+      document.querySelectorAll('.region-btn').forEach((btn) => {
+        const regId = btn.getAttribute('data-region-id');
+        if (regId === regionId) {
+          btn.classList.add('is-active');
+          btn.setAttribute('aria-checked', 'true');
+        } else {
+          btn.classList.remove('is-active');
+          btn.setAttribute('aria-checked', 'false');
+        }
+      });
+    }
+
+    syncRegionButtons(currentMapDef.id);
+
+    // Leaflet ni dinamik yuklash
+    let L: typeof import('leaflet');
+    try {
+      L = (await import('leaflet')).default || (await import('leaflet'));
+    } catch (err) {
+      console.error('Leaflet kutubxonasini yuklashda xatolik:', err);
+      const fallback = document.getElementById('atlas-error-fallback');
+      if (fallback) fallback.classList.remove('hidden');
+      return;
+    }
+
+    const isReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    // Xarita chegaralarini hisoblash
+    const initialBounds = calculateMapBounds(currentMapDef.dimensions);
+    const sw = L.latLng(initialBounds[0][0], initialBounds[0][1]);
+    const ne = L.latLng(initialBounds[1][0], initialBounds[1][1]);
+    let currentLeafletBounds = L.latLngBounds(sw, ne);
+
+    // Xaritaning boshlang'ich markazi va zoom
+    let startCenter = L.latLng(currentMapDef.defaultCenter.y, currentMapDef.defaultCenter.x);
+    let startZoom = currentMapDef.defaultCenter.zoom;
+
+    const registeredJourneys: Record<string, JourneyDefinition> = payload.journeys || (payload.journey ? { [payload.journey.id]: payload.journey } : {});
+
+    let activeJourneyId = urlState.sayr || payload.activeJourneyId;
+    let isJourneyActive = !!activeJourneyId && !!registeredJourneys[activeJourneyId];
+    let journeyDef: JourneyDefinition = (activeJourneyId && registeredJourneys[activeJourneyId]) || payload.journey || registeredJourneys['bilbo']!;
+    let currentStageNum = urlState.bosqich || payload.activeStageNumber || 1;
+    if (journeyDef && currentStageNum > journeyDef.totalStages) {
+      currentStageNum = 1;
+    }
+
+    if (isJourneyActive && journeyDef) {
+      const activeStage = journeyDef.stages.find((s) => s.sequence === currentStageNum) || journeyDef.stages[0];
+      if (activeStage?.coordinates) {
+        startCenter = L.latLng(activeStage.coordinates.y, activeStage.coordinates.x);
+        startZoom = 0;
+      }
+    } else if (urlState.joy) {
+      const targetPlace = allPlaces.find((p) => p.id === urlState.joy && p.region === currentMapDef.id);
+      if (targetPlace?.coordinates) {
+        startCenter = L.latLng(targetPlace.coordinates.y, targetPlace.coordinates.x);
+        startZoom = 1;
+      }
+    } else if (urlState.x !== undefined && urlState.y !== undefined) {
+      startCenter = L.latLng(urlState.y, urlState.x);
+      startZoom = urlState.z ?? currentMapDef.defaultCenter.zoom;
+    }
+
+    // Leaflet Map obyekti yaratish
+    const map = L.map(container, {
+      crs: L.CRS.Simple,
+      minZoom: currentMapDef.minZoom,
+      maxZoom: currentMapDef.maxZoom,
+      zoomControl: false,
+      attributionControl: false,
+      maxBounds: currentLeafletBounds,
+      maxBoundsViscosity: 1.0,
+      wheelDebounceTime: 80,
+      zoomSnap: 1,
+      zoomDelta: 1,
+    });
+
+    map.setView(startCenter, startZoom, { animate: false });
+
+    // Planar SVG xarita qatlami (ImageOverlay)
+    let currentOverlay = L.imageOverlay(currentMapDef.assetUrl, currentLeafletBounds).addTo(map);
+
+    // Kartografik hududiy yorliqlar qatlami (imageOverlay 400 ustida, journeyPane 550 va markerPane 600 ostida)
+    map.createPane('geoLabelPane');
+    const geoPane = map.getPane('geoLabelPane');
+    if (geoPane) {
+      geoPane.style.zIndex = '480';
+      geoPane.style.pointerEvents = 'none';
+    }
+
+    // Markerlar va hududiy yorliqlar xaritasi
+    const markerInstances = new Map<string, import('leaflet').Marker>();
+    const placeEntries = new Map<string, CachedPlaceEntry>();
+    const geoLabelEntries = new Map<string, CachedGeoLabelEntry>();
+    let loadedMarkerRegionId: string | null = null;
+
+    // Tanlangan toponim identifikatori
+    let selectedPlaceId: string | null = urlState.joy || payload.initialPlaceId || null;
+
+    // Marker holatlari va joylashuv kesh Map'i (DOM titrashini va reflow'larni oldini oladi)
+    const markerStateCache = new Map<string, { placement: string | null; visible: boolean }>();
+    const geoLabelStateCache = new Map<string, { placement: string | null; visible: boolean }>();
+    const placementCache = new CollisionPlacementCache();
+
+    const perfDiagnostics: AtlasPerfDiagnostics = {
+      placementRunCount: 0,
+      cacheHits: 0,
+      cacheMisses: 0,
+      lastPlacementDurationMs: 0,
+      visiblePlaceMarkers: 0,
+      visiblePlaceLabels: 0,
+      visibleGeoLabels: 0,
+      activeListenersCleanedUp: false,
+    };
+    (window as unknown as { __atlasPerfStats?: AtlasPerfDiagnostics }).__atlasPerfStats = perfDiagnostics;
+
+    // Kolliziyani qayta hisoblashni kechiktirib (debounced RAF) bajarish
+    let collisionRafId: number | null = null;
+    function scheduleMarkerCollisionUpdate() {
+      if (collisionRafId !== null) {
+        cancelAnimationFrame(collisionRafId);
+      }
+      collisionRafId = requestAnimationFrame(() => {
+        collisionRafId = null;
+        updateMarkerCollisions();
+      });
+    }
+
+    // Maxsus sayohat qatlami paneli (imageOverlay 400 ustida, markerlar 600 ostida)
+    map.createPane('journeyPane');
+    const jPane = map.getPane('journeyPane');
+    if (jPane) {
+      jPane.style.zIndex = '550';
+    }
+    const journeyRenderer = L.svg({ pane: 'journeyPane', padding: 1.0 });
+
+    // Tarixiy sayohat qatlami va bosqich markerlari
+    const journeyLayerGroup = L.layerGroup().addTo(map);
+    const stageMarkersMap = new Map<number, import('leaflet').Marker>();
+    const stageLatLngsMap = new Map<number, import('leaflet').LatLng>();
+
+    // Jonli e'lon qiluvchi va DOM element havolalari
+    const announcer = document.getElementById('atlas-live-announcer');
+    const inspectorElRef = document.getElementById('atlas-inspector');
+    const journeyPanelElRef = document.getElementById('atlas-journey-panel');
+
+    function announce(text: string) {
+      if (announcer) announcer.textContent = text;
+    }
+
+    // Dinamik kolliziya hisoblash, Level of Detail (LoD) va etiketkalar yo'nalishini moslashtirish
+    function updateMarkerCollisions() {
+      const t0 = performance.now();
+
+      // 1-BOSQICH: Faqat o'qish (DOM reads) — layout thrashing oldini olish uchun barcha o'lchamlar oldindan olinadi
+      const size = map.getSize();
+      const currentZoom = Math.round(map.getZoom());
+      const viewportW = size.x || (container ? container.clientWidth : 1200);
+      const viewportH = size.y || (container ? container.clientHeight : 800);
+      const centerPt = map.latLngToContainerPoint(map.getCenter());
+
+      const obstacles: BoundingBox[] = [];
+      let obstacleHash = '';
+
+      if (window.innerWidth > 768 && container) {
+        const inspectorActive = inspectorElRef?.classList.contains('is-active') ?? false;
+        const journeyPanelActive = journeyPanelElRef?.classList.contains('is-active') ?? false;
+        if (inspectorActive || journeyPanelActive) {
+          const mapRect = container.getBoundingClientRect();
+          if (inspectorActive && inspectorElRef) {
+            const rect = inspectorElRef.getBoundingClientRect();
+            const box: BoundingBox = {
+              x1: Math.max(0, Math.round(rect.left - mapRect.left - 5)),
+              y1: Math.max(0, Math.round(rect.top - mapRect.top - 5)),
+              x2: Math.min(viewportW, Math.round(rect.right - mapRect.left + 5)),
+              y2: Math.min(viewportH, Math.round(rect.bottom - mapRect.top + 5)),
+            };
+            obstacles.push(box);
+            obstacleHash += `I:${box.x1},${box.y1},${box.x2},${box.y2};`;
+          }
+          if (journeyPanelActive && journeyPanelElRef) {
+            const rect = journeyPanelElRef.getBoundingClientRect();
+            const box: BoundingBox = {
+              x1: Math.max(0, Math.round(rect.left - mapRect.left - 5)),
+              y1: Math.max(0, Math.round(rect.top - mapRect.top - 5)),
+              x2: Math.min(viewportW, Math.round(rect.right - mapRect.left + 5)),
+              y2: Math.min(viewportH, Math.round(rect.bottom - mapRect.top + 5)),
+            };
+            obstacles.push(box);
+            obstacleHash += `J:${box.x1},${box.y1},${box.x2},${box.y2};`;
+          }
+        }
+      }
+
+      // Faol sayohat bosqich markerlarini to'siq sifatida ro'yxatga olish
+      if (isJourneyActive && stageLatLngsMap.size > 0) {
+        stageLatLngsMap.forEach((latLng) => {
+          const pt = map.latLngToContainerPoint(latLng);
+          if (pt.x >= -24 && pt.x <= viewportW + 24 && pt.y >= -24 && pt.y <= viewportH + 24) {
+            obstacles.push({
+              x1: pt.x - 18,
+              y1: pt.y - 18,
+              x2: pt.x + 18,
+              y2: pt.y + 18,
+            });
+          }
+        });
+      }
+
+      const viewport: ViewportBounds = {
+        width: viewportW,
+        height: viewportH,
+        margin: 60,
+        zoom: currentZoom,
+        obstacles,
+      };
+
+      const candidates: CollisionCandidate[] = [];
+      const placeVisibilityTarget = new Map<string, boolean>();
+
+      placeEntries.forEach((entry, placeId) => {
+        const isSelected = placeId === selectedPlaceId;
+        const minZoom = isSelected ? -2 : entry.baseMinZoom;
+        const shouldShowMarker = isSelected || currentZoom >= minZoom;
+        placeVisibilityTarget.set(placeId, shouldShowMarker);
+
+        if (!shouldShowMarker) {
+          return;
+        }
+
+        const pt = map.latLngToContainerPoint(entry.latLng);
+        candidates.push({
+          id: placeId,
+          name: entry.shortName,
+          x: pt.x,
+          y: pt.y,
+          priority: entry.priority,
+          minZoom,
+          iconWidth: 26,
+          iconHeight: 26,
+          preferredPos: entry.preferredPos,
+          isSelected,
+          locationKey: placeId,
+        });
+      });
+
+      geoLabelEntries.forEach((geoEntry, geoId) => {
+        const { def } = geoEntry;
+        if (currentZoom < def.minZoom) {
+          return;
+        }
+        const pt = map.latLngToContainerPoint(geoEntry.latLng);
+        candidates.push({
+          id: geoId,
+          name: def.name,
+          x: pt.x,
+          y: pt.y,
+          priority: def.priority,
+          minZoom: def.minZoom,
+          iconWidth: def.renderedInSvg ? 4 : 0,
+          iconHeight: def.renderedInSvg ? 4 : 0,
+          preferredPos: def.preferredPos,
+          locationKey: geoId,
+        });
+      });
+
+      const { results: collisionResults } = placementCache.getOrCompute(
+        {
+          regionId: currentMapDef.id,
+          zoom: currentZoom,
+          panX: centerPt.x,
+          panY: centerPt.y,
+          viewportWidth: viewportW,
+          viewportHeight: viewportH,
+          selectedPlaceId,
+          isJourneyActive,
+          activeStageNum: isJourneyActive ? currentStageNum : 0,
+          obstacleSignature: obstacleHash,
+        },
+        () => computeLabelPlacements(candidates, viewport)
+      );
+
+      // 2-BOSQICH: Paketlangan DOM yozish (Batched DOM writes) — hech qanday layout o'qishsiz!
+      let visiblePlaceMarkers = 0;
+      let visiblePlaceLabels = 0;
+      let visibleGeoLabels = 0;
+
+      placeEntries.forEach((entry, placeId) => {
+        const el = entry.el || (entry.el = entry.marker.getElement() ?? null);
+        if (!el) return;
+        const innerMarker =
+          entry.innerEl || (entry.innerEl = (el.querySelector('.scholarly-marker') as HTMLElement | null) || el);
+
+        const shouldShowMarker = placeVisibilityTarget.get(placeId) ?? false;
+        const cached = markerStateCache.get(placeId);
+
+        if (!shouldShowMarker) {
+          if (!cached || cached.visible !== false) {
+            el.style.display = 'none';
+            markerStateCache.set(placeId, {
+              placement: cached?.placement ?? null,
+              visible: false,
+            });
+          }
+          return;
+        }
+
+        visiblePlaceMarkers++;
+        if (!cached || cached.visible !== true) {
+          el.style.display = '';
+        }
+
+        const result = collisionResults.get(placeId);
+        const showLabel = result?.showLabel ?? false;
+        if (showLabel) {
+          visiblePlaceLabels++;
+        }
+        const targetPlacement =
+          showLabel && result?.labelPlacement ? result.labelPlacement : 'label-hover-only';
+
+        if (cached && cached.visible === true && cached.placement === targetPlacement) {
+          return;
+        }
+
+        innerMarker.classList.remove('pos-right', 'pos-left', 'pos-top', 'pos-bottom', 'label-hover-only');
+        el.classList.remove('pos-right', 'pos-left', 'pos-top', 'pos-bottom', 'label-hover-only');
+
+        if (showLabel && result?.labelPlacement) {
+          const posClass = `pos-${result.labelPlacement}`;
+          innerMarker.classList.add(posClass);
+          el.classList.add(posClass);
+        } else {
+          innerMarker.classList.add('label-hover-only');
+          el.classList.add('label-hover-only');
+        }
+
+        markerStateCache.set(placeId, {
+          placement: targetPlacement,
+          visible: true,
+        });
+      });
+
+      geoLabelEntries.forEach((geoEntry, geoId) => {
+        if (geoEntry.def.renderedInSvg) {
+          if (currentZoom >= geoEntry.def.minZoom) {
+            visibleGeoLabels++;
+          }
+          return;
+        }
+        if (!geoEntry.marker) return;
+        const el = geoEntry.el || (geoEntry.el = geoEntry.marker.getElement() ?? null);
+        if (!el) return;
+
+        const result = collisionResults.get(geoId);
+        const shouldShow = currentZoom >= geoEntry.def.minZoom && (result?.showLabel ?? false);
+        const targetPlacement = shouldShow ? (result?.labelPlacement ?? 'center') : null;
+        const cached = geoLabelStateCache.get(geoId);
+
+        if (shouldShow) {
+          visibleGeoLabels++;
+        }
+
+        if (cached && cached.visible === shouldShow && cached.placement === targetPlacement) {
+          return;
+        }
+
+        if (!shouldShow) {
+          el.style.display = 'none';
+          geoLabelStateCache.set(geoId, { placement: null, visible: false });
+          return;
+        }
+
+        el.style.display = '';
+        el.classList.remove('pos-center', 'pos-right', 'pos-left', 'pos-top', 'pos-bottom');
+        el.classList.add(`pos-${targetPlacement}`);
+        geoLabelStateCache.set(geoId, { placement: targetPlacement, visible: true });
+      });
+
+      const cacheStats = placementCache.getStats();
+      perfDiagnostics.placementRunCount++;
+      perfDiagnostics.cacheHits = cacheStats.hits;
+      perfDiagnostics.cacheMisses = cacheStats.misses;
+      perfDiagnostics.lastPlacementDurationMs = Number((performance.now() - t0).toFixed(3));
+      perfDiagnostics.visiblePlaceMarkers = visiblePlaceMarkers;
+      perfDiagnostics.visiblePlaceLabels = visiblePlaceLabels;
+      perfDiagnostics.visibleGeoLabels = visibleGeoLabels;
+    }
+
+    // Markerlarni va hududiy yorliqlarni ma'lum bir hudud uchun chizish (yoki mavjudlarini qayta ishlatish)
+    function renderMarkersForRegion(regionId: string) {
+      if (loadedMarkerRegionId === regionId && placeEntries.size > 0) {
+        scheduleMarkerCollisionUpdate();
+        return;
+      }
+
+      loadedMarkerRegionId = regionId;
+      placementCache.invalidate();
+      markerStateCache.clear();
+      geoLabelStateCache.clear();
+
+      markerInstances.forEach((marker) => {
+        marker.remove();
+      });
+      markerInstances.clear();
+      placeEntries.clear();
+
+      geoLabelEntries.forEach((entry) => {
+        entry.marker?.remove();
+      });
+      geoLabelEntries.clear();
+
+      const regionPlaces = allPlaces.filter((p) => p.region === regionId && !!p.coordinates);
+      for (const place of regionPlaces) {
+        if (!place.coordinates) continue;
+
+        const [lat, lng] = toLeafletLatLng(place.coordinates.x, place.coordinates.y);
+        const latLng = L.latLng(lat, lng);
+        const iconSvg = getPlaceIconSvg(place);
+        const iconType = mapPlaceToIconType(place);
+        const shortName = getPlaceShortLabel(place);
+        const preferredPos = getPlacePreferredDirection(place);
+
+        const customIcon = L.divIcon({
+          className: `scholarly-marker-container pos-${preferredPos}`,
+          html: `
+            <div class="scholarly-marker pos-${preferredPos} category-${iconType}" data-place-id="${place.id}">
+              <div class="marker-icon-wrapper" aria-hidden="true">
+                ${iconSvg}
+              </div>
+              <span class="marker-title-badge">${shortName}</span>
+            </div>
+          `,
+          iconSize: [26, 26],
+          iconAnchor: [13, 13],
+        });
+
+        const marker = L.marker(latLng, {
+          icon: customIcon,
+          title: place.name,
+          alt: place.name,
+        }).addTo(map);
+
+        marker.on('click', () => {
+          selectPlace(place.id, false, true);
+        });
+
+        const el = marker.getElement() ?? null;
+        const innerEl = el ? ((el.querySelector('.scholarly-marker') as HTMLElement | null) || el) : null;
+
+        markerInstances.set(place.id, marker);
+        placeEntries.set(place.id, {
+          place,
+          marker,
+          latLng,
+          shortName,
+          priority: getPlacePriority(place),
+          baseMinZoom: getPlaceMinZoom(place),
+          preferredPos,
+          el,
+          innerEl,
+        });
+      }
+
+      // Hududiy yorliqlarni (Geographic LoD Labels) ro'yxatga olish
+      const regionGeoDefs = getGeographicLabelsForRegion(regionId);
+      for (const def of regionGeoDefs) {
+        const [lat, lng] = toLeafletLatLng(def.x, def.y);
+        const latLng = L.latLng(lat, lng);
+
+        if (def.renderedInSvg) {
+          geoLabelEntries.set(def.id, {
+            def,
+            latLng,
+            marker: null,
+            el: null,
+          });
+          continue;
+        }
+
+        const geoIcon = L.divIcon({
+          className: `atlas-geo-label-container pos-${def.preferredPos}`,
+          html: `<span class="atlas-geo-label geo-cat-${def.category}" data-geo-id="${def.id}">${def.name}</span>`,
+          iconSize: [0, 0],
+          iconAnchor: [0, 0],
+        });
+
+        const geoMarker = L.marker(latLng, {
+          icon: geoIcon,
+          pane: 'geoLabelPane',
+          interactive: false,
+          keyboard: false,
+        }).addTo(map);
+
+        geoLabelEntries.set(def.id, {
+          def,
+          latLng,
+          marker: geoMarker,
+          el: geoMarker.getElement() ?? null,
+        });
+      }
+
+      // Markerlar DOMga qo'shilgach, kolliziyani darhol hisoblash
+      updateMarkerCollisions();
+    }
+
+    // Dastlabki markerlarni chizish
+    renderMarkersForRegion(currentMapDef.id);
+
+    // Inspektor kontentini yangilash
+    function updateInspectorContent(place: PlaceData) {
+      const inspector = document.getElementById('atlas-inspector');
+      const emptyState = document.getElementById('inspector-empty-state');
+      const content = document.getElementById('inspector-content');
+
+      if (!inspector || !content) return;
+
+      inspector.classList.add('is-active');
+      if (emptyState) emptyState.classList.add('hidden');
+      content.classList.remove('hidden');
+      inspector.setAttribute('data-selected-id', place.id);
+
+      const nameEl = document.getElementById('inspector-name');
+      const elvishEl = document.getElementById('inspector-elvish');
+      const typeEl = document.getElementById('inspector-type');
+      const regionEl = document.getElementById('inspector-region');
+      const coordsEl = document.getElementById('inspector-coords');
+      const summaryEl = document.getElementById('inspector-summary');
+      const foundedEl = document.getElementById('inspector-founded');
+      const foundedRow = document.getElementById('meta-founded-row');
+      const destroyedEl = document.getElementById('inspector-destroyed');
+      const destroyedRow = document.getElementById('meta-destroyed-row');
+      const rulersEl = document.getElementById('inspector-rulers');
+      const rulersRow = document.getElementById('meta-rulers-row');
+
+      if (nameEl) nameEl.textContent = place.name;
+      if (elvishEl) elvishEl.textContent = place.elvish_name ? `(${place.elvish_name})` : '';
+      if (typeEl) typeEl.textContent = place.type;
+      if (regionEl) regionEl.textContent = place.region === 'beleriand' ? 'Beleriand' : 'Oʻrta-yer';
+      if (coordsEl && place.coordinates) {
+        coordsEl.textContent = `X: ${place.coordinates.x}, Y: ${place.coordinates.y}`;
+      }
+      if (summaryEl) summaryEl.textContent = place.summary;
+
+      if (foundedRow && foundedEl) {
+        if (place.founded_era) {
+          foundedRow.style.display = 'flex';
+          foundedEl.textContent = place.founded_era;
+        } else {
+          foundedRow.style.display = 'none';
+        }
+      }
+
+      if (destroyedRow && destroyedEl) {
+        if (place.destroyed_era) {
+          destroyedRow.style.display = 'flex';
+          destroyedEl.textContent = place.destroyed_era;
+        } else {
+          destroyedRow.style.display = 'none';
+        }
+      }
+
+      if (rulersRow && rulersEl) {
+        if (place.rulers.length > 0) {
+          rulersRow.style.display = 'flex';
+          rulersEl.textContent = place.rulers.join(', ');
+        } else {
+          rulersRow.style.display = 'none';
+        }
+      }
+
+      const charactersEl = document.getElementById('inspector-characters');
+      const charactersRow = document.getElementById('meta-characters-row');
+      if (charactersRow && charactersEl) {
+        const associatedChars = (place as any).associated_characters;
+        if (Array.isArray(associatedChars) && associatedChars.length > 0) {
+          charactersRow.style.display = 'flex';
+          charactersEl.innerHTML = associatedChars
+            .map((c: any) => `<a href="${c.href}" class="inspector-char-pill">${c.name}</a>`)
+            .join(' ');
+        } else {
+          charactersRow.style.display = 'none';
+          charactersEl.innerHTML = '';
+        }
+      }
+
+      const articleLinkEl = document.getElementById('inspector-article-link') as HTMLAnchorElement | null;
+      if (articleLinkEl) {
+        articleLinkEl.href = `/xaritalar/${place.id}/`;
+      }
+
+      // Marker holatini yangilash (keshlangan DOM havolalari orqali)
+      placeEntries.forEach((entry, id) => {
+        const el = entry.el || (entry.el = entry.marker.getElement() ?? null);
+        if (!el) return;
+        const inner =
+          entry.innerEl || (entry.innerEl = (el.querySelector('.scholarly-marker') as HTMLElement | null) || el);
+        if (id === place.id) {
+          el.classList.add('is-active');
+          inner.classList.add('is-active');
+        } else {
+          el.classList.remove('is-active');
+          inner.classList.remove('is-active');
+        }
+      });
+    }
+
+    // Inspektorni yopish
+    function closeInspector(isUserCloseAction = true) {
+      const inspector = document.getElementById('atlas-inspector');
+      const emptyState = document.getElementById('inspector-empty-state');
+      const content = document.getElementById('inspector-content');
+
+      if (!inspector) return;
+
+      inspector.classList.remove('is-active');
+      if (emptyState) emptyState.classList.remove('hidden');
+      if (content) content.classList.add('hidden');
+      inspector.setAttribute('data-selected-id', '');
+
+      placeEntries.forEach((entry) => {
+        const el = entry.el || (entry.el = entry.marker.getElement() ?? null);
+        if (!el) return;
+        el.classList.remove('is-active');
+        const inner =
+          entry.innerEl || (entry.innerEl = (el.querySelector('.scholarly-marker') as HTMLElement | null) || el);
+        inner.classList.remove('is-active');
+      });
+
+      if (isUserCloseAction) {
+        const urlParams = new URLSearchParams(window.location.search);
+        urlParams.delete('joy');
+        const newSearch = urlParams.toString();
+        const newUrl = newSearch ? `?${newSearch}` : window.location.pathname;
+        const currentState = window.history.state || {};
+        window.history.replaceState(
+          { ...currentState, atlasSelection: false, placeId: null },
+          '',
+          newUrl
+        );
+      }
+
+      selectedPlaceId = null;
+      scheduleMarkerCollisionUpdate();
+      announce("Joy tanlanishi bekor qilindi.");
+    }
+
+    const PLACE_EVENT_MAP: Record<string, { text: string; href: string }> = {
+      pelargir: { text: 'Pelargir Jangi', href: '/tarix/pelargir-jangi/' },
+      'minas-tirith': { text: 'Pelennor Dalalari Jangi', href: '/tarix/pelennor-dalalari-jangi/' },
+      erebor: { text: 'Besh Armiya Jangi', href: '/tarix/besh-armiya-jangi/' },
+      'khazad-dum': { text: 'Khazad-dûm Qulashi', href: '/tarix/khazad-dumning-qulashi/' },
+      'amon-hen': { text: 'Halqa Urushi', href: '/tarix/halqa-urushi/' },
+      'dead-marshes': { text: 'Halqa Urushi', href: '/tarix/halqa-urushi/' },
+      morannon: { text: 'Uzukning Yoʻq Qilinishi', href: '/tarix/yagona-uzukning-yoq-qilinishi/' },
+      'henneth-annun': { text: 'Halqa Urushi', href: '/tarix/halqa-urushi/' },
+      'cirith-ungol': { text: 'Halqa Urushi', href: '/tarix/halqa-urushi/' },
+      orodruin: { text: 'Uzukning Yoʻq Qilinishi', href: '/tarix/yagona-uzukning-yoq-qilinishi/' },
+      dorthonion: { text: 'Dagor Bragollach', href: '/tarix/dagor-bragollach/' },
+      menegroth: { text: 'Silmaril Safari', href: '/tarix/silmaril-safari/' },
+      nargothrond: { text: 'Finrod Qasamyodi', href: '/qahramonlar/finrod/' },
+      'tol-sirion': { text: 'Tol-in-Gaurhoth Qamali', href: '/tarix/silmaril-safari/' },
+      angband: { text: 'Silmaril Safari (Angband Qasri)', href: '/tarix/silmaril-safari/' },
+      brethil: { text: 'Carcharoth Ovi', href: '/tarix/silmaril-safari/' },
+      'tol-galen': { text: 'Beren va Lúthien Tirilishi', href: '/tarix/silmaril-safari/' },
+      gondolin: { text: 'Gondolinning Qulashi', href: '/tarix/gondolinning-qulashi/' },
+    };
+
+    function updateJourneyContextPills(stage: JourneyStage) {
+      const container = document.getElementById('journey-context-pills');
+      if (!container) return;
+
+      const pills: Array<{ text: string; href: string; icon: string }> = [];
+      if (stage.placeId) {
+        pills.push({ text: stage.locationNameUz, href: `/xaritalar/?joy=${stage.placeId}`, icon: '📍' });
+
+        const evt = PLACE_EVENT_MAP[stage.placeId];
+        if (evt) {
+          pills.push({ text: evt.text, href: evt.href, icon: '📜' });
+        }
+
+        const place = allPlaces.find((p) => p.id === stage.placeId);
+        if (place?.associated_characters) {
+          for (const c of place.associated_characters.slice(0, 2)) {
+            pills.push({ text: c.name, href: c.href, icon: '👤' });
+          }
+        }
+      }
+
+      container.innerHTML = pills.map((p) => `
+        <a href="${p.href}" class="context-pill">
+          <span>${p.icon}</span>
+          <span>${p.text}</span>
+        </a>
+      `).join('');
+    }
+
+    function renderJourneyStepper() {
+      const stepperList = document.getElementById('journey-stepper-list');
+      if (!stepperList || !journeyDef) return;
+
+      stepperList.innerHTML = journeyDef.stages.map((stage) => `
+        <li class="stepper-item">
+          <button
+            type="button"
+            class="step-btn ${stage.sequence === currentStageNum ? 'is-current' : ''}"
+            data-stage-num="${stage.sequence}"
+            aria-current="${stage.sequence === currentStageNum ? 'step' : 'false'}"
+            aria-label="${stage.sequence}-bosqich: ${stage.locationNameUz}"
+            title="${stage.sequence}. ${stage.locationNameUz}"
+          >
+            <span class="step-num">${stage.sequence}</span>
+          </button>
+        </li>
+      `).join('');
+
+      stepperList.querySelectorAll('.step-btn').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const seq = Number(btn.getAttribute('data-stage-num'));
+          if (seq && !isNaN(seq)) {
+            selectJourneyStage(seq, true, true);
+          }
+        }, { signal });
+      });
+    }
+
+    // Sayohat panelidagi ma'lumotlarni yangilash
+    function updateJourneyPanel(stage: JourneyStage) {
+      const panel = document.getElementById('atlas-journey-panel');
+      if (!panel || !journeyDef) return;
+
+      panel.setAttribute('data-active-journey', journeyDef.id);
+      panel.setAttribute('data-active-stage', String(stage.sequence));
+      panel.setAttribute('data-total-stages', String(journeyDef.totalStages));
+
+      // Header meta & title
+      const eraEl = document.getElementById('journey-header-era');
+      const tagEl = document.getElementById('journey-header-tag');
+      const titleMainEl = document.getElementById('journey-main-title');
+      const travelersEl = document.getElementById('journey-travelers');
+
+      if (eraEl) eraEl.textContent = `${journeyDef.eraUz}, ${journeyDef.yearUz}`;
+      if (tagEl) {
+        tagEl.textContent =
+          journeyDef.id === 'bilbo'
+            ? 'Hobbit Safari'
+            : journeyDef.id === 'fellowship'
+              ? 'Qardoshlik Safari'
+              : journeyDef.id === 'ring-bearer'
+                ? 'Uzuk Egasi Safari'
+                : journeyDef.id === 'silmaril-quest'
+                  ? 'Silmaril Safari'
+                  : 'Kulrang Boʻlinma';
+      }
+      if (titleMainEl) titleMainEl.textContent = journeyDef.titleUz;
+      if (travelersEl) travelersEl.textContent = journeyDef.travelerUz;
+
+      const counterEl = document.getElementById('journey-stage-counter');
+      const dateEl = document.getElementById('journey-stage-date');
+      const titleEl = document.getElementById('journey-stage-title');
+      const locationEl = document.getElementById('journey-stage-location');
+      const locationOrigEl = document.getElementById('journey-stage-location-orig');
+      const coordsEl = document.getElementById('journey-stage-coords');
+      const resBadgeEl = document.getElementById('journey-stage-res-badge');
+      const eventTitleEl = document.getElementById('journey-stage-event-title');
+      const eventDescEl = document.getElementById('journey-stage-event-desc');
+      const significanceEl = document.getElementById('journey-stage-significance');
+      const sourceRefEl = document.getElementById('journey-stage-source-ref');
+      const footerIndicatorEl = document.getElementById('journey-footer-indicator');
+      const prevBtn = document.getElementById('journey-prev-btn') as HTMLButtonElement | null;
+      const nextBtn = document.getElementById('journey-next-btn') as HTMLButtonElement | null;
+
+      if (counterEl) counterEl.textContent = `${stage.sequence} / ${journeyDef.totalStages}-bosqich`;
+      const dirEl = document.getElementById('journey-stage-direction');
+      if (dirEl) {
+        dirEl.textContent = stage.direction === 'return' ? 'Qaytish yoʻli' : 'Borish safari';
+        dirEl.className = `stage-direction-badge ${stage.direction === 'return' ? 'is-return' : 'is-outbound'}`;
+      }
+      if (dateEl) dateEl.textContent = stage.dateUz;
+      if (titleEl) titleEl.textContent = stage.titleUz;
+      if (locationEl) locationEl.textContent = stage.locationNameUz;
+      if (locationOrigEl) locationOrigEl.textContent = `(${stage.locationNameOriginal})`;
+      if (coordsEl && stage.coordinates) {
+        coordsEl.textContent = `X: ${stage.coordinates.x}, Y: ${stage.coordinates.y}`;
+      }
+      if (resBadgeEl) {
+        resBadgeEl.textContent =
+          stage.coordinateResolution.status === 'confirmed'
+            ? 'Kanonik Tasdiqlangan'
+            : 'Taxminiy Nuqta';
+      }
+      if (eventTitleEl) eventTitleEl.textContent = stage.storyEvent.titleUz;
+      if (eventDescEl) eventDescEl.textContent = stage.storyEvent.descriptionUz;
+      if (significanceEl) significanceEl.textContent = stage.storyEvent.significanceUz;
+      if (sourceRefEl) {
+        sourceRefEl.innerHTML = `<cite>${journeyDef.source.titleUz}</cite>, ${stage.source.chapterTitleUz}`;
+      }
+      if (footerIndicatorEl) {
+        footerIndicatorEl.textContent = `${stage.sequence} / ${journeyDef.totalStages}`;
+      }
+
+      if (prevBtn) prevBtn.disabled = stage.sequence <= 1;
+      if (nextBtn) nextBtn.disabled = stage.sequence >= journeyDef.totalStages;
+
+      // Stepper tugmalarini sinxronlash
+      document.querySelectorAll('#journey-stepper-list .step-btn').forEach((btn) => {
+        const seq = Number(btn.getAttribute('data-stage-num'));
+        if (seq === stage.sequence) {
+          btn.classList.add('is-current');
+          btn.setAttribute('aria-current', 'step');
+        } else {
+          btn.classList.remove('is-current');
+          btn.setAttribute('aria-current', 'false');
+        }
+      });
+
+      // Kontekstual havolalar (pills) yangilash
+      updateJourneyContextPills(stage);
+    }
+
+    // Marshrut chiziqlari va bosqich markerlarini chizish
+    function renderJourneyRouteAndMarkers() {
+      journeyLayerGroup.clearLayers();
+      stageMarkersMap.clear();
+      stageLatLngsMap.clear();
+
+      if (!journeyDef || !journeyDef.stages) return;
+
+      const journeyColor = journeyDef.color || '#c59b27';
+
+      // 1. Marshrut segmentlarini chizish
+      for (let i = 0; i < journeyDef.stages.length - 1; i++) {
+        const fromStage = journeyDef.stages[i];
+        const toStage = journeyDef.stages[i + 1];
+
+        if (!fromStage || !toStage || !fromStage.coordinates || !toStage.coordinates) continue;
+
+        const fromLatLng = toLeafletLatLng(fromStage.coordinates.x, fromStage.coordinates.y);
+        const toLatLng = toLeafletLatLng(toStage.coordinates.x, toStage.coordinates.y);
+
+        const waypointsLatLngs = (fromStage.segmentToNext?.waypoints || []).map((w) =>
+          toLeafletLatLng(w.x, w.y)
+        );
+
+        const rawLatLngs: [number, number][] = [fromLatLng, ...waypointsLatLngs, toLatLng];
+        const cleanLatLngs = rawLatLngs.filter((pt, idx, arr) => {
+          if (idx === 0) return true;
+          const prev = arr[idx - 1];
+          return !prev || pt[0] !== prev[0] || pt[1] !== prev[1];
+        });
+        const isApproximate = fromStage.segmentToNext?.type === 'approximate';
+        const isReturn = fromStage.segmentToNext?.direction === 'return' || fromStage.direction === 'return';
+
+        L.polyline(cleanLatLngs, {
+          pane: 'journeyPane',
+          renderer: journeyRenderer,
+          noClip: true,
+          color: isReturn ? '#4a7c59' : journeyColor,
+          weight: isReturn ? 3.2 : 3.5,
+          opacity: isApproximate ? 0.8 : 0.9,
+          dashArray: isReturn ? (isApproximate ? '4, 8' : '8, 6') : (isApproximate ? '6, 8' : undefined),
+          className: `journey-segment ${isReturn ? 'journey-segment-return' : 'journey-segment-outbound'} ${isApproximate ? 'journey-segment-approximate' : 'journey-segment-confirmed'}`,
+        }).addTo(journeyLayerGroup);
+      }
+
+      // 2. Bosqich markerlarini chizish (1 dan N gacha)
+      for (const stage of journeyDef.stages) {
+        if (!stage.coordinates) continue;
+
+        const [lat, lng] = toLeafletLatLng(stage.coordinates.x, stage.coordinates.y);
+        const latLng = L.latLng(lat, lng);
+        const isActive = stage.sequence === currentStageNum;
+        const isReturn = stage.direction === 'return';
+
+        const stageIcon = L.divIcon({
+          className: 'journey-stage-marker-container',
+          html: `
+            <div class="journey-stage-marker ${isActive ? 'is-active' : ''} ${isReturn ? 'is-return' : ''}" data-journey="${journeyDef.id}" data-stage-seq="${stage.sequence}" tabindex="0" role="button" aria-label="${stage.sequence}-bosqich: ${stage.locationNameUz}">
+              <span class="stage-marker-number">${stage.sequence}</span>
+            </div>
+          `,
+          iconSize: [32, 32],
+          iconAnchor: [16, 16],
+        });
+
+        const marker = L.marker(latLng, {
+          icon: stageIcon,
+          title: `${stage.sequence}. ${stage.locationNameUz}`,
+          alt: `${stage.sequence}. ${stage.locationNameUz}`,
+          zIndexOffset: isActive ? 1000 : 500,
+        }).addTo(journeyLayerGroup);
+
+        marker.on('click', () => {
+          selectJourneyStage(stage.sequence, true, true);
+        });
+
+        stageMarkersMap.set(stage.sequence, marker);
+        stageLatLngsMap.set(stage.sequence, latLng);
+      }
+    }
+
+    // Sayohat bosqichini tanlash
+    function selectJourneyStage(stageNum: number, panTo = true, pushHistory = true) {
+      if (!journeyDef) return;
+      const safeNum = Math.max(1, Math.min(stageNum, journeyDef.totalStages));
+      currentStageNum = safeNum;
+      const stage = journeyDef.stages.find((s) => s.sequence === safeNum) || journeyDef.stages[0];
+      if (!stage) return;
+
+      updateJourneyPanel(stage);
+
+      // Markerlar vizual holatini yangilash
+      stageMarkersMap.forEach((marker, seq) => {
+        const el = marker.getElement();
+        const inner = el?.querySelector('.journey-stage-marker');
+        if (seq === safeNum) {
+          inner?.classList.add('is-active');
+          marker.setZIndexOffset(1000);
+        } else {
+          inner?.classList.remove('is-active');
+          marker.setZIndexOffset(500);
+        }
+      });
+
+      if (panTo && stage.coordinates) {
+        const coords = toLeafletLatLng(stage.coordinates.x, stage.coordinates.y);
+        const targetZoom = Math.max(map.getZoom(), 0);
+        map.setView(L.latLng(coords[0], coords[1]), targetZoom, {
+          animate: !isReducedMotion,
+        });
+      } else {
+        scheduleMarkerCollisionUpdate();
+      }
+
+      // URL parametrlarini sinxronlash
+      const urlParams = new URLSearchParams(window.location.search);
+      urlParams.set('sayr', journeyDef.id);
+      urlParams.delete('safar');
+      urlParams.set('bosqich', String(safeNum));
+      if (stage.coordinates) {
+        urlParams.set('x', String(Math.round(stage.coordinates.x)));
+        urlParams.set('y', String(Math.round(stage.coordinates.y)));
+      }
+      urlParams.set('z', String(Math.round(map.getZoom())));
+
+      const newUrl = `?${urlParams.toString()}`;
+      if (pushHistory) {
+        window.history.pushState(
+          { journey: journeyDef.id, stage: safeNum },
+          '',
+          newUrl
+        );
+      } else {
+        window.history.replaceState(
+          window.history.state,
+          '',
+          newUrl
+        );
+      }
+
+      announce(`${stage.sequence}-bosqich tanlandi: ${stage.locationNameUz}. ${stage.titleUz}`);
+    }
+
+    // Boshqa sayohatga almashtirish
+    function switchJourney(newJourneyId: string, targetStage = 1, pushHistory = true) {
+      const resolved = registeredJourneys[newJourneyId] || registeredJourneys['bilbo'];
+      if (!resolved) return;
+
+      journeyDef = resolved;
+      const safeStage = Math.max(1, Math.min(targetStage, journeyDef.totalStages));
+      currentStageNum = safeStage;
+
+      // Agar hudud sayohat hududiga mos bo'lmasa, uni almashtiramiz
+      const targetRegion = journeyDef.region || 'orta-yer';
+      if (currentMapDef.id !== targetRegion) {
+        switchMap(targetRegion, false);
+      }
+
+      closeInspector(false);
+
+      const journeyPanel = document.getElementById('atlas-journey-panel');
+      const toggleBtn = document.getElementById('btn-journey-toggle');
+      const toggleLabel = document.getElementById('journey-toggle-btn-label');
+
+      if (journeyPanel) journeyPanel.classList.add('is-active');
+      if (toggleBtn) {
+        toggleBtn.classList.add('is-active');
+        toggleBtn.setAttribute('aria-pressed', 'true');
+      }
+      if (toggleLabel) {
+        toggleLabel.textContent =
+          journeyDef.id === 'fellowship'
+            ? 'Qardoshlik Sayri'
+            : journeyDef.id === 'ring-bearer'
+              ? 'Frodo va Sam Sayri'
+              : journeyDef.id === 'grey-company'
+                ? 'Aragorn Sayri'
+                : journeyDef.id === 'silmaril-quest'
+                  ? 'Beren va Lúthien Sayri'
+                  : 'Bilbo Sayri';
+      }
+
+      // Sayohat tablarini yangilash
+      document.querySelectorAll('.journey-tab-btn').forEach((tabBtn) => {
+        const jId = tabBtn.getAttribute('data-journey-id');
+        if (jId === journeyDef.id) {
+          tabBtn.classList.add('is-active');
+          tabBtn.setAttribute('aria-selected', 'true');
+        } else {
+          tabBtn.classList.remove('is-active');
+          tabBtn.setAttribute('aria-selected', 'false');
+        }
+      });
+
+      renderJourneyStepper();
+      renderJourneyRouteAndMarkers();
+      selectJourneyStage(safeStage, true, pushHistory);
+
+      announce(`${journeyDef.titleUz} yuklandi.`);
+    }
+
+    // Sayohat rejimini yoqish yoki oʻchirish
+    function toggleJourneyMode(enable?: boolean, pushHistory = true) {
+      const willEnable = enable !== undefined ? enable : !isJourneyActive;
+      isJourneyActive = willEnable;
+
+      const journeyPanel = document.getElementById('atlas-journey-panel');
+      const toggleBtn = document.getElementById('btn-journey-toggle');
+
+      if (willEnable) {
+        switchJourney(journeyDef.id || 'bilbo', currentStageNum, pushHistory);
+      } else {
+        journeyLayerGroup.clearLayers();
+        stageMarkersMap.clear();
+        stageLatLngsMap.clear();
+
+        if (journeyPanel) journeyPanel.classList.remove('is-active');
+        if (toggleBtn) {
+          toggleBtn.classList.remove('is-active');
+          toggleBtn.setAttribute('aria-pressed', 'false');
+        }
+
+        const urlParams = new URLSearchParams(window.location.search);
+        urlParams.delete('sayr');
+        urlParams.delete('safar');
+        urlParams.delete('bosqich');
+        const newSearch = urlParams.toString();
+        const newUrl = newSearch ? `?${newSearch}` : window.location.pathname;
+        window.history.replaceState(window.history.state, '', newUrl);
+
+        scheduleMarkerCollisionUpdate();
+        announce("Tarixiy sayr rejimi yopildi.");
+      }
+    }
+
+    // Joyni tanlash
+    function selectPlace(placeId: string, panToTarget = true, isUserClick = false) {
+      if (isJourneyActive) {
+        toggleJourneyMode(false, false);
+      }
+
+      const place = allPlaces.find((p) => p.id === placeId);
+      if (!place) return;
+
+      if (place.region !== currentMapDef.id) {
+        switchMap(place.region, false);
+      }
+
+      selectedPlaceId = place.id;
+      updateInspectorContent(place);
+
+      if (panToTarget && place.coordinates) {
+        const coords = toLeafletLatLng(place.coordinates.x, place.coordinates.y);
+        const targetZoom = Math.max(map.getZoom(), 0);
+        map.setView(L.latLng(coords[0], coords[1]), targetZoom, {
+          animate: !isReducedMotion,
+        });
+      }
+      scheduleMarkerCollisionUpdate();
+
+      // URL va Tarix
+      const urlParams = new URLSearchParams(window.location.search);
+      urlParams.set('hudud', currentMapDef.id);
+      urlParams.set('joy', place.id);
+      if (place.coordinates) {
+        urlParams.set('x', String(Math.round(place.coordinates.x)));
+        urlParams.set('y', String(Math.round(place.coordinates.y)));
+      }
+      urlParams.set('z', String(Math.round(map.getZoom())));
+
+      const newUrl = `?${urlParams.toString()}`;
+
+      if (isUserClick) {
+        window.history.pushState(
+          { atlasSelection: true, placeId: place.id, region: currentMapDef.id },
+          '',
+          newUrl
+        );
+      } else {
+        window.history.replaceState(
+          window.history.state,
+          '',
+          newUrl
+        );
+      }
+
+      announce(`${place.name} maskani tanlandi.`);
+    }
+
+    // Bitta kanvas ichida xarita almashtirish (Seamless in-canvas map switching)
+    function switchMap(targetRegionId: string, pushHistory = true) {
+      if (!isValidMapId(targetRegionId)) return;
+      if (targetRegionId === currentMapDef.id && currentOverlay) return;
+
+      // Agar sayohat boshqa hududga tegishli bo'lsa, sayrni yopish
+      if (isJourneyActive && journeyDef && journeyDef.region !== targetRegionId) {
+        toggleJourneyMode(false, false);
+      }
+
+      const newMapDef = getMapDefinition(targetRegionId);
+      if (!newMapDef) return;
+      currentMapDef = newMapDef;
+
+      syncRegionButtons(targetRegionId);
+
+      const newBounds = calculateMapBounds(newMapDef.dimensions);
+      const newSw = L.latLng(newBounds[0][0], newBounds[0][1]);
+      const newNe = L.latLng(newBounds[1][0], newBounds[1][1]);
+      currentLeafletBounds = L.latLngBounds(newSw, newNe);
+
+      if (currentOverlay) {
+        currentOverlay.setUrl(newMapDef.assetUrl);
+        currentOverlay.setBounds(currentLeafletBounds);
+      } else {
+        currentOverlay = L.imageOverlay(newMapDef.assetUrl, currentLeafletBounds).addTo(map);
+      }
+
+      map.setMaxBounds(currentLeafletBounds);
+      map.setMinZoom(newMapDef.minZoom);
+      map.setMaxZoom(newMapDef.maxZoom);
+
+      closeInspector(false);
+      renderMarkersForRegion(targetRegionId);
+
+      const targetCenter = L.latLng(newMapDef.defaultCenter.y, newMapDef.defaultCenter.x);
+      map.setView(targetCenter, newMapDef.defaultCenter.zoom, { animate: !isReducedMotion });
+
+      if (pushHistory) {
+        const query = serializeAtlasParams({
+          hudud: targetRegionId,
+          x: newMapDef.defaultCenter.x,
+          y: newMapDef.defaultCenter.y,
+          z: newMapDef.defaultCenter.zoom,
+        });
+        window.history.pushState({ atlasRegion: targetRegionId }, '', `?${query}`);
+      }
+
+      announce(`${newMapDef.titleUz} xaritasi yuklandi.`);
+    }
+
+    // Dastlabki holatni ishga tushirish (Sayohat yoki Joy tanlovi)
+    if (isJourneyActive && journeyDef) {
+      renderJourneyRouteAndMarkers();
+      selectJourneyStage(currentStageNum, false, false);
+      const journeyPanel = document.getElementById('atlas-journey-panel');
+      if (journeyPanel) journeyPanel.classList.add('is-active');
+      const toggleBtn = document.getElementById('btn-journey-toggle');
+      if (toggleBtn) {
+        toggleBtn.classList.add('is-active');
+        toggleBtn.setAttribute('aria-pressed', 'true');
+      }
+      scheduleMarkerCollisionUpdate();
+    } else if (urlState.joy) {
+      selectPlace(urlState.joy, false, false);
+    }
+
+    // Boshqaruv tugmalari (AtlasControls)
+    document.getElementById('btn-zoom-in')?.addEventListener('click', () => {
+      map.zoomIn();
+    }, { signal });
+
+    document.getElementById('btn-zoom-out')?.addEventListener('click', () => {
+      map.zoomOut();
+    }, { signal });
+
+    document.getElementById('btn-reset-view')?.addEventListener('click', () => {
+      map.setView(
+        L.latLng(currentMapDef.defaultCenter.y, currentMapDef.defaultCenter.x),
+        currentMapDef.defaultCenter.zoom,
+        { animate: !isReducedMotion }
+      );
+      closeInspector(true);
+    }, { signal });
+
+    document.getElementById('btn-focus-shire')?.addEventListener('click', () => {
+      if (currentMapDef.id !== 'orta-yer') {
+        switchMap('orta-yer', false);
+      }
+      if (isJourneyActive) {
+        toggleJourneyMode(false, false);
+      }
+      map.setView(L.latLng(1400, 495), 1, { animate: !isReducedMotion });
+      closeInspector(false);
+      const urlParams = new URLSearchParams(window.location.search);
+      urlParams.set('hudud', 'orta-yer');
+      urlParams.set('x', '495');
+      urlParams.set('y', '1400');
+      urlParams.set('z', '1');
+      urlParams.delete('joy');
+      urlParams.delete('sayr');
+      urlParams.delete('bosqich');
+      window.history.pushState(
+        { atlasRegion: 'orta-yer', x: 495, y: 1400, z: 1 },
+        '',
+        `?${urlParams.toString()}`
+      );
+      announce("Xarita Shir hududiga qaratildi.");
+    }, { signal });
+
+    // Journey boshqaruv hodisalari
+    document.getElementById('btn-journey-toggle')?.addEventListener('click', () => {
+      toggleJourneyMode();
+    }, { signal });
+
+    document.getElementById('journey-close-btn')?.addEventListener('click', () => {
+      toggleJourneyMode(false, true);
+    }, { signal });
+
+    document.getElementById('journey-prev-btn')?.addEventListener('click', () => {
+      if (currentStageNum > 1) {
+        selectJourneyStage(currentStageNum - 1, true, true);
+      }
+    }, { signal });
+
+    document.getElementById('journey-next-btn')?.addEventListener('click', () => {
+      if (journeyDef && currentStageNum < journeyDef.totalStages) {
+        selectJourneyStage(currentStageNum + 1, true, true);
+      }
+    }, { signal });
+
+    document.querySelectorAll('#journey-stepper-list .step-btn').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const seq = Number(btn.getAttribute('data-stage-num'));
+        if (seq && !isNaN(seq)) {
+          selectJourneyStage(seq, true, true);
+        }
+      }, { signal });
+    });
+
+    // Hudud almashtirish tugmalari (Sahifani reload qilmaydi!)
+    document.querySelectorAll('.region-btn').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const regionId = btn.getAttribute('data-region-id');
+        if (regionId) {
+          switchMap(regionId, true);
+        }
+      }, { signal });
+    });
+
+    // Inspektor yopish tugmasi
+    document.getElementById('inspector-close-btn')?.addEventListener('click', () => {
+      closeInspector(true);
+    }, { signal });
+
+    // Journey tablari (Bilbo, Qardoshlik, Aragorn) almashtirilganda
+    document.querySelectorAll('.journey-tab-btn').forEach((tabBtn) => {
+      tabBtn.addEventListener('click', () => {
+        const jId = tabBtn.getAttribute('data-journey-id');
+        if (jId && registeredJourneys[jId]) {
+          switchJourney(jId, 1, true);
+        }
+      }, { signal });
+    });
+
+    // Brauzer tarixi o'zgarganda (Back/Forward popstate)
+    window.addEventListener('popstate', () => {
+      const state = parseAtlasParams(window.location.search);
+      if (state.hudud !== currentMapDef.id) {
+        switchMap(state.hudud, false);
+      }
+      if (state.sayr && registeredJourneys[state.sayr]) {
+        if (!isJourneyActive || journeyDef.id !== state.sayr) {
+          isJourneyActive = true;
+          switchJourney(state.sayr, state.bosqich ?? 1, false);
+        } else {
+          selectJourneyStage(state.bosqich ?? 1, true, false);
+        }
+      } else {
+        if (isJourneyActive) {
+          toggleJourneyMode(false, false);
+        }
+        if (state.joy) {
+          selectPlace(state.joy, false, false);
+        } else {
+          closeInspector(false);
+        }
+      }
+    }, { signal });
+
+    // Jonli zoom va pan vaqtida og'ir qayta hisoblashni to'xtatib, faqat zoomend/moveend da bajarish
+    map.on('zoomstart', () => {
+      container.classList.add('is-zooming');
+      if (collisionRafId !== null) {
+        cancelAnimationFrame(collisionRafId);
+        collisionRafId = null;
+      }
+    });
+
+    map.on('movestart', () => {
+      if (collisionRafId !== null) {
+        cancelAnimationFrame(collisionRafId);
+        collisionRafId = null;
+      }
+    });
+
+    map.on('zoomend', () => {
+      container.classList.remove('is-zooming');
+      scheduleMarkerCollisionUpdate();
+    });
+
+    // Xarita siljiganda yoki masshtablanganda URL ni yangilash (replaceState) va kolliziyani qayta hisoblash
+    let moveEndTimeout: ReturnType<typeof setTimeout> | null = null;
+    map.on('moveend', () => {
+      scheduleMarkerCollisionUpdate();
+      if (moveEndTimeout) clearTimeout(moveEndTimeout);
+      moveEndTimeout = setTimeout(() => {
+        const center = map.getCenter();
+        const currentZoom = map.getZoom();
+        const urlParams = new URLSearchParams(window.location.search);
+        urlParams.set('hudud', currentMapDef.id);
+        urlParams.set('x', String(Math.round(center.lng)));
+        urlParams.set('y', String(Math.round(center.lat)));
+        urlParams.set('z', String(Math.round(currentZoom)));
+        window.history.replaceState(window.history.state, '', `?${urlParams.toString()}`);
+      }, 300);
+    });
+
+    // ResizeObserver: Oyna o'lchami o'zgarganda oq xarita bo'lib qolishini oldini olish
+    let resizeTimer: ReturnType<typeof setTimeout> | null = null;
+    const resizeObserver = new ResizeObserver(() => {
+      if (resizeTimer) clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(() => {
+        if (container.clientWidth > 0 && container.clientHeight > 0) {
+          placementCache.invalidate();
+          map.invalidateSize({ animate: false });
+          scheduleMarkerCollisionUpdate();
+        }
+      }, 100);
+    });
+    resizeObserver.observe(container);
+
+    // Klaviatura navigatsiyasi
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        const journeyPanel = document.getElementById('atlas-journey-panel');
+        if (journeyPanel?.classList.contains('is-active')) {
+          toggleJourneyMode(false, true);
+          return;
+        }
+        const inspector = document.getElementById('atlas-inspector');
+        if (inspector?.classList.contains('is-active')) {
+          closeInspector(true);
+        }
+      }
+    }, { signal });
+
+    container.addEventListener('keydown', (e) => {
+      const step = 40;
+      if (e.key === 'ArrowUp') {
+        map.panBy([0, -step], { animate: !isReducedMotion });
+        e.preventDefault();
+      } else if (e.key === 'ArrowDown') {
+        map.panBy([0, step], { animate: !isReducedMotion });
+        e.preventDefault();
+      } else if (e.key === 'ArrowLeft') {
+        map.panBy([-step, 0], { animate: !isReducedMotion });
+        e.preventDefault();
+      } else if (e.key === 'ArrowRight') {
+        map.panBy([step, 0], { animate: !isReducedMotion });
+        e.preventDefault();
+      } else if (e.key === '+' || e.key === '=') {
+        map.zoomIn();
+        e.preventDefault();
+      } else if (e.key === '-') {
+        map.zoomOut();
+        e.preventDefault();
+      } else if (e.key === 'Home') {
+        map.fitBounds(currentLeafletBounds, { animate: !isReducedMotion });
+        e.preventDefault();
+      }
+    }, { signal });
+
+    // Resurslar va hodisa tinglovchilarini to'liq tozalash funksiyasi
+    function cleanupAtlasIsland() {
+      if (perfDiagnostics.activeListenersCleanedUp) return;
+      perfDiagnostics.activeListenersCleanedUp = true;
+      listenerController.abort();
+      resizeObserver.disconnect();
+      if (collisionRafId !== null) {
+        cancelAnimationFrame(collisionRafId);
+        collisionRafId = null;
+      }
+      if (moveEndTimeout !== null) {
+        clearTimeout(moveEndTimeout);
+        moveEndTimeout = null;
+      }
+      if (resizeTimer !== null) {
+        clearTimeout(resizeTimer);
+        resizeTimer = null;
+      }
+      placementCache.invalidate();
+      markerStateCache.clear();
+      geoLabelStateCache.clear();
+      placeEntries.clear();
+      geoLabelEntries.clear();
+      markerInstances.clear();
+      stageMarkersMap.clear();
+      stageLatLngsMap.clear();
+      map.off();
+      map.remove();
+    }
+
+    (container as unknown as { _atlasCleanup?: () => void })._atlasCleanup = cleanupAtlasIsland;
+    window.addEventListener('pagehide', cleanupAtlasIsland, { signal });
+    document.addEventListener('astro:before-swap', cleanupAtlasIsland, { signal });
+  }
+
+  // Sahifa yuklanganda ishga tushirish
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initAtlasIsland, { once: true });
+  } else {
+    initAtlasIsland();
+  }
+</script>

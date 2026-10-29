@@ -1,0 +1,37 @@
+{
+  "id": "belegost",
+  "name": "Belegost",
+  "elvish_name": "Gabilgathol (Ulugʻ Qalʼa)",
+  "type": "shahar",
+  "region": "beleriand",
+  "coordinates": {
+    "map_id": "beleriand",
+    "x": 1820,
+    "y": 840
+  },
+  "founded_era": "Daraxtlar davri",
+  "destroyed_era": "Birinchi davr 587",
+  "rulers": [
+    "Azaghâl"
+  ],
+  "notable_events": [
+    "Menegrothni oʻyib qurish",
+    "Nirnaeth Arnoediadda Glaurungni yarador qilish"
+  ],
+  "textual_status": "author_published",
+  "summary": "Belegost — Moviy togʻlar (Ered Luin)ning Dolmed choʻqqisi shimolida joylashgan yirik mitti shahri. Temirchilik, zanjir sovut toʻqish va qattiq tosh oʻymakorligi bilan dong taratgan. Qirol Azaghâl Nirnaeth Arnoediadda Glaurungni yarador qilib, qahramonlik koʻrsatgan.",
+  "sources": [
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of the Sindar",
+      "page": "92",
+      "notes": "Belegost mittilari va Thingol bilan ittifoq."
+    }
+  ],
+  "description_sections": [
+    {
+      "title": "Gabilgathol: Moviy Togʻlarning ulugʻvor mitti shahri",
+      "content": "Belegost (Mitti tilida: Gabilgathol — 'Buyuk Qalʼa') — Moviy Togʻlarning (Ered Luin) sharqiy yonbagʻrida joylashgan qadimiy mitti shohligidir. U Mittilarning Kengyelkalilar (Broadbeams) va Olovsoqollar (Firebeards) qabilasi tomonidan Daraxtlar Davrida barpo etilgan.\n\nBelegost ustalari zanjirli sovut toʻqish boʻyicha dunyoda tengsiz boʻlganlar. Ularning Qiroli Azaghâl Nirnaeth Arnoediad jangida bahaybat ajdar Glaurungni yaralab qochirgan, ammo oʻzi ajdar ostida qolib qahramonlarcha halok boʻlgan."
+    }
+  ]
+}

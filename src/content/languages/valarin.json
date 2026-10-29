@@ -1,0 +1,44 @@
+{
+  "id": "valarin",
+  "name": "Valarin (Ainur Tili)",
+  "family": "Ainur Tili (Valanya)",
+  "writing_systems": [
+    "sarati",
+    "tengwar"
+  ],
+  "inventor": "Ainur (Valar va Maiar)",
+  "phonology_overview": "Valarin tili Ardaning eng oliy mavjudotlari - Ainur (Valar va Maiar) tomonidan so'zlashiladigan tildir. Aslida jismoniy vujudga ega bo'lmagan ilohiy mavjudotlar fikr almashish uchun (ósanwë) moddiy tilga muhtoj emas edilar, ammo ular Arda moddiy olamida gavdalanganlarida eshitiladigan nutq yaratdilar. Valarin fonetikasi elflar uchun nihoyatda begona, g'alati va qiyin bo'lgan. Unda juda uzun so'zlar, murakkab undosh klasterlari, bo'g'iz shovqinlari va noodatiy jarangli tovushlar (delba, palan, shaghan, mahan) ko'p uchraydi. Elflar bu tovushlarni o'zlarining nozik quloqlari uchun yoqimsiz deb topganlar.",
+  "sample_text_original": "Mā-khalūz, Ezellohar, Aþāraphelūn, Tulukastāz",
+  "sample_text_uz": "Ainur tili — Arda yaralishidan avvalgi sado boʻlib, uning ayrim toponimik va teonimik soʻzlari Quenyaga oʻzlashgan (Ezellohar, Máhanaxar).",
+  "textual_status": "draft_variant",
+  "sources": [
+    {
+      "book_slug": "history-of-middle-earth",
+      "chapter": "The War of the Jewels: Quendi and Eldar",
+      "page": "397",
+      "notes": "Valarin fonologiyasi, Ainur soʻzlashuvining elflar tomonidan yozib olinishi."
+    }
+  ],
+  "grammar_and_vocabulary_sections": [
+    {
+      "title": "Ainur tili: Olamning birlamchi ilohiy nutqi va Ósanwë",
+      "content": "Ainulindalë afsonasiga ko'ra, Ainur koinot yaratilishidan avval Eru Ilúvatar huzurida buyuk Musiqa ijro etganlar. Valinorga kelib o'rnashganlarida esa, ular o'zaro moddiy muloqot qilish uchun Valarin tilini yaratdilar. Biroq Valar uchun nutq shunchaki ixtiyoriy vosita edi; ularning asosiy aloqa usuli 'Ósanwë-kenta' (fikr uzatish) sanalardi. Ular o'zaro fikr, tuyg'u va tasavvurlarni bir lahzada, hech qanday so'zsiz to'g'ridan-to'g'ri bir-birlarining ongiga etkaza olganlar. Valarin tili aynan ana shu bepoyon ilohiy tushunchalarning fonetik moddiylashuvi edi. Valar tillari hatto zamon va makon tushunchalaridan tashqarida boʻlgan Buyuk Boʻshliq (The Void) sirlarini ham oʻzida aks ettira olardi. Ularning har bir soʻzi jismoniy dunyodagi stixiyalar – shamol, suv, yer va olov harakatiga bevosita taʼsir koʻrsatish qudratiga ega boʻlgan."
+    },
+    {
+      "title": "Fonetik strukturasi va so'z uzunligi",
+      "content": "Tolkienning 'Quendi and Eldar' asarida (HoME XI jild) Valarin tilining noyob namunalari keltirilgan. Tilning xarakterli xususiyati uning nihoyatda uzun, ko'p bo'g'inli so'zlardan iboratligidir. Masalan, Vala Manwëning Valarincha asl ismi 'Mānawenūz', Ulmoniki 'Ullubōz', Tulkasniki esa 'Tulukastāz' bo'lgan. Telperion daraxtining Valarincha nomi 'Ibrīniðilpathānezel', Laurelinniki esa 'Tulukhedelgorūz' deb atalgan. Bu murakkablik sababli elflar Valarinni to'liq o'rganishga qiziqmaganlar, aksincha, Valar elflarning go'zal tili Quenyani o'rganib, ular bilan faqat Quenyada muloqot qilganlar."
+    },
+    {
+      "title": "Quenya tiliga o'tgan ilohiy o'zlashmalar",
+      "content": "Garchi Noldor va Vanyar elflari Valarin tilida gaplashmagan bo'lsalar-da, ushbu ilohiy tildan bir nechta muhim kalit so'zlar Quenya lug'atiga kirib kelgan va fonetik jihatdan yumshatilgan. Masalan, Valinor oqsoqollarining oliy majlisi o'tadigan joy 'Máhanaxar' (Valarincha 'Māchananaškad' so'zidan), ilohiy balzam 'Miruvórë' (Valarincha 'Mirub-'), Ezellohar tepaligi ('Ezellôchâr'dan) shular jumlasidandir. Bu so'zlar elflar orasida eng muqaddas atamalar sifatida saqlanib qolgan."
+    },
+    {
+      "title": "Melkor, Sauron va Valarinning zulmatga ta'siri",
+      "content": "Yovuz Vala Melkor (Morgoth) va uning eng sodiq xizmatkori Sauron (Mayar irqiga mansub) Valarin tilini mukammal bilganlar. Ba'zi filologik tahlillarga ko'ra, Sauron Ikkinchi Davrda Qora Nutqni loyihalashtirar ekan, uning ba'zi qat'iy agglyutinativ konstruksiyalari va bo'g'iz tovushlarini aynan o'zi eslab qolgan qadimgi Valarin unsurlaridan olgan bo'lishi mumkin. Bu ilohiy til unsurlarining qanday qilib buzilib, qorong'ulik vositasiga aylantirilganini ko'rsatuvchi fojiaviy jihatdir."
+    },
+    {
+      "title": "Ainur ontologiyasi va tovush tebranishlari falsafasi",
+      "content": "Valarin tili Tolkien teologiyasining eng muhim tushunchalaridan birini ochib beradi: ilohiy mohiyat va moddiy shakl oʻrtasidagi tafovut. Ainur jismoniy vujudga kirmasdan oldin oʻzaro muloqotda vaqt va makon chegaralarini bilmagan. Ammo Arda (Moddiy Olam) ichida ular cheklangan materiya qonuniyatlariga buysunishga majbur boʻldilar va oʻzlarining qudratli niyatlarini havo toʻlqinlari tebranishiga aylantirdilar. Aynan shu sababli Valarin soʻzlari elflar va insonlar uchun haddan tashqari ogʻir, momaqaldiroqdek gumburlagan va hatto qoʻrqinchli tuyulgan. Bu til cheksiz koinot qudratining tor fonetik chegaralarga sigʻdirilishi edi."
+    }
+  ]
+}

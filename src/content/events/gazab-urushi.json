@@ -1,0 +1,60 @@
+{
+  "id": "gazab-urushi",
+  "title": "Gʻazab Urushi (Buyuk Jang)",
+  "subtitle": "Valar qoʻshinining yurishi, Morgothning agʻdarilishi va Beleriandning choʻkishi",
+  "era": "birinchi_davr",
+  "year_text": "Birinchi davr 545–587",
+  "location_id": "beleriand",
+  "characters": [
+    "earendil",
+    "elwing",
+    "melkor",
+    "sauron",
+    "gil-galad",
+    "elrond",
+    "elros"
+  ],
+  "belligerents": {
+    "side_a": [
+      "Valar Qoʻshini (Eönwë boshchiligida)",
+      "Vanyar va Aman Noldori (Ingwion va Finarfin)",
+      "Eärendil (Vingilot kemasida) va Thorondor burgutlari",
+      "Edainning Uch Xonadoni"
+    ],
+    "side_b": [
+      "Morgoth (Melkor)",
+      "Ancalagon Qora va qanotli ajdarlar",
+      "Balroglar va Angbandning son-sanoqsiz ork lashkarlari"
+    ]
+  },
+  "outcome": "Morgoth butunlay yengildi va Bo'shliqqa (The Void) uloqtirildi; Angband vayron bo'ldi; Beleriand yerlari Buyuk To'fon ostida qolib g'arq bo'ldi; Birinchi Davr yakunlandi.",
+  "preceding_event": "gondolinning-qulashi",
+  "succeeding_event": "qudrat-uzuklarining-yasalishi",
+  "textual_status": "posthumous_edited",
+  "sources": [
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of the Voyage of Eärendil and the War of Wrath",
+      "page": "251",
+      "notes": "Gʻazab Urushi, Ancalagonning halokati va Morgothning agʻdarilishi."
+    }
+  ],
+  "description_sections": [
+    {
+      "title": "Eärendilning Boqiy G'arbdagi iltijosi",
+      "content": "Belerianddagi barcha elflar va insonlar shohliklari Morgoth tomonidan birin-ketin tor-mor qilingach, yagona najot faqat Valarning ilohiy aralashuvida qolgan edi. Yarim-elf Eärendil o'zining Vingilot kemasida rafiqasi Elwing bilan birga muqaddas Silmaril nuri yordamida Boqiy G'arb – Valinor sohillariga yetib bordi. U Valar huzurida tiz cho'kib, O'rta-yerda azob chekayotgan ikki xalq (elflar va insonlar) nomidan kechirim va yordam so'rab iltijo qildi. Manwë uning nolalarini eshitib, Valinor qo'shinini O'rta-yerni ozod qilish uchun safarbar etdi."
+    },
+    {
+      "title": "Valar qo'shinining O'rta-yerga qadami va Angband jangi",
+      "content": "Valar qo'shini – Vanyar elflari, Valinorda qolgan Noldorlar va Vala Eönwë boshchiligidagi bahaybat Mayar lashkari minglab oq kemalarda Beleriand sohillariga tushdi. Bu qo'shinning ulug'vorligi va qurol-yarog'larining yorqinligi butun shimol osmonini yoritib yubordi. Morgoth o'zining barcha kuchlarini – millionlab o'rklarni, qolgan barcha Balroglarni va erosti maxluqlarini maydonga tashladi. Jang shunchalik dahshatli va shiddatli bo'ldiki, ellik yil davom etgan to'qnashuvlarda butun shimoliy qit'a larzaga keldi, er qatlamlari yorilib ketdi."
+    },
+    {
+      "title": "Qanotli ajdaholar va Ancalagon Qoraning halokati",
+      "content": "Morgoth o'zining mag'lubiyatini sezgach, Thangorodrim g'orlaridan o'zining so'nggi va eng xavfli maxfiy quroli – olov purkovchi bahaybat Qanotli Ajdaho to'dasini jangga soldi. Ularning yetakchisi ulkan Ancalagon Qora (Ancalagon the Black) edi. Ajdaho qanotlarining qora soyasi osmonni qoplab, Valar qo'shinini orqaga chekinishga majbur qildi. Ammo shu daqiqada osmondan Vingilot kemasida Eärendil va Buyuk Burgutlar podshohi Thorondor boshchiligidagi qanotli qushlar armiyasi yetib keldi. Butun kun va tun davom etgan havo jangida Eärendil Ancalagonni mag'lub etdi; ajdahoning bahaybat gavdasi Thangorodrim cho'qqilariga qulab, ulkan tog'larni talqon qildi."
+    },
+    {
+      "title": "Beleriandning g'arq bo'lishi va davrlar almashinuvi",
+      "content": "G'azab Urushidagi mislsiz seysmik va sehrli to'qnashuvlar oqibatida Beleriand qit'asi yorilib, Buyuk Dengiz suvlari ostida qoldi va butunlay g'arq bo'ldi (faqat Tol Morwen va Lindon qirg'oqlari saqlanib qoldi). Morgoth Angband tubidan sudrab chiqildi; uning bo'yniga Angainor kishanlari solinib, u Dunyo Tashqarisidagi Abadiy Bo'shliqqa (Door of Night) uloqtirildi. Qolgan ikkita Silmaril esa Maedhros va Maglor tomonidan tortib olindi, ammo ularning kuygan qo'llari toshlarni ushlab turolmay, biri yer qa'riga, biri dengizga otildi. Shu tariqa Birinchi Davr o'z nihoyasiga yetdi."
+    }
+  ]
+}

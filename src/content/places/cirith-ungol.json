@@ -1,0 +1,64 @@
+{
+  "id": "cirith-ungol",
+  "name": "Cirith Ungol va Minas Morgul",
+  "elvish_name": "Cirith Ungol / Minas Morgul (Minas Ithil)",
+  "type": "qalʼa",
+  "region": "orta-yer",
+  "coordinates": {
+    "map_id": "orta-yer",
+    "x": 1300,
+    "y": 580
+  },
+  "founded_era": "Ikkinchi davr 3320 (Minas Ithil sifatida)",
+  "destroyed_era": "Toʻrtinchi davr (Qirol Elessar farmoni bilan vayron qilingan)",
+  "rulers": [
+    "Isildur (dastlabki asoschi)",
+    "Angmar Jodugar-qiroli (Nazgûl Sardori)",
+    "Shagrat (Cirith Ungol minorasi sardori)"
+  ],
+  "notable_events": [
+    "Uchinchi davr 2002-yilda Nazgûllar tomonidan Minas Ithilning zabt etilishi va Minas Morgulga aylantirilishi",
+    "Shelob inida (Torech Ungol) Frodo Bagginsning zaharlanishi va Samwise Gamgeening Shelobni yaralashi",
+    "Samwise Gamgeening Cirith Ungol minorasiga bostirib kirib, Frodoni orklar tutqunligidan qutqarishi"
+  ],
+  "textual_status": "author_published",
+  "summary": "Ephel Dúath (Soya Togʻlari) tizmasini kesib oʻtuvchi baland togʻ dovoni («Oʻrgimchak Darasi»), uning etagidagi qoʻrquv shahri Minas Morgul («Qora Jodu Minorasi», qadimgi Minas Ithil) hamda dovon choʻqqisidagi qorovul minorasi. Dovon ostidagi Torech Ungol gʻorlarida qadimiy zulmat maxluqi Shelob makon tutgan.",
+  "sources": [
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "The Stairs of Cirith Ungol",
+      "page": "705",
+      "notes": "Morgul vodiysi, Minas Morguldan Jodu-qirol qoʻshinining chiqishi va Cirith Ungol zinapoyalari."
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "Shelob's Lair",
+      "page": "718",
+      "notes": "Torech Ungol gʻorlari va Samning Shelob bilan jangi."
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "The Tower of Cirith Ungol",
+      "page": "898",
+      "notes": "Samning Cirith Ungol minorasida Frodoni qutqarishi."
+    }
+  ],
+  "description_sections": [
+    {
+      "title": "Oʻrgimchak Dovoni va Qora Qalʼa",
+      "content": "Cirith Ungol (Sindarincha: 'Oʻrgimchak Yorigʻi') — Ephel Dúath (Soya Togʻlari) orqali Mordorga olib boruvchi baland va oʻta xavfli togʻ dovonidir. Bu yerda bahaybat qadimiy maxluq — Ungoliantning soʻnggi nasli boʻlgan Shelob oʻzining qorongʻu toʻrlari bilan in qurgan edi.\n\nDovonning tepasida Cirith Ungol Minorasi qad rostlagan. Ushbu uch qavatli pishiq tosh qalʼa dastlab Gondor tomonidan Minas Ithilni himoya qilish uchun qurilgan, ammo keyinchalik oʻrklar garnizoni qarorgohiga aylangan."
+    },
+    {
+      "title": "Frodo va Samning dovondagi sinovlari",
+      "content": "Gollum Frodo va Samwiseni aynan Cirith Ungol tuzogʻiga boshlab bordi. Shelob Frodoning boʻyniga zaharli nishini urib uni falajlaganida, Samwise Galadriel billuri va Sting xanjari bilan bahaybat maxluqni yaralab qochirdi.\n\nOʻrklar Frodoning tanasini minoraga olib ketganlarida, Shagrat va Gorbag toʻdalari oʻrtasida mithril sovut ustida qonli janjal chiqdi. Samwise minoraga bostirib kirib, qolgan dushmanlarni yengdi va oʻz xoʻjayinini ozod qildi."
+    },
+    {
+      "title": "Shelob uyasi, Torech Ungol va Ikki Kuzatuvchi haykallari",
+      "content": "Cirith Ungol (O'rgimchak Yorig'i) Mordorning g'arbiy chegarasidagi Ephel Dúath tog'lari orqali o'tadigan eng xavfli yashirin dovondir. Dovon ichida qadimgi maxluq – bahaybat o'rgimchak Shelobning qorong'i labirinti (Torech Ungol) joylashgan. Qal'aning ichki darvozasida esa 'Ikki Kuzatuvchi' (Two Watchers) deb ataluvchi la'nati tosh haykallar turgan; ular o'zlarining ko'rinmas sehrli to'sig'i bilan har qanday begona vujudni to'xtatib qolgan. Samwise Gamgee Galadriel Flakoni (Phial of Galadriel) nuri yordamida ushbu sehrni sindirib, zindondan Frodoni qutqarib oldi."
+    },
+    {
+      "title": "Gondorning qadimiy qal'asi va Uchinchi Davr zindoni",
+      "content": "Cirith Ungol minorasi dastlab So'nggi Ittifoq urushidan so'ng Gondor qirollari tomonidan Mordorni ichkaridan nazorat qilish va yovuzlikning qaytishini oldini olish maqsadida qurilgan edi. Biroq Gondor zaiflashgach, qal'a Nazgûllar tomonidan egallanib, Sauronning eng dahshatli zindoniga aylantirildi. Qal'a uch qavatli baland minoradan iborat bo'lib, uning ichida Shagrat va Gorbag boshchiligidagi o'rklar Frodo olib ketilganida mithril ko'ylak ustida qonli janjal ko'tarib, bir-birlarini qirib tashladilar."
+    }
+  ]
+}

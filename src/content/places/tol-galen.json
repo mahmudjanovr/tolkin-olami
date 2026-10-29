@@ -1,0 +1,39 @@
+{
+  "id": "tol-galen",
+  "name": "Tol Galen",
+  "elvish_name": "Tol Galen (Yashil Orol)",
+  "type": "oʻlka",
+  "region": "beleriand",
+  "coordinates": {
+    "map_id": "beleriand",
+    "x": 1620,
+    "y": 450
+  },
+  "founded_era": "Birinchi davr",
+  "destroyed_era": "Birinchi davr 587",
+  "rulers": [
+    "Beren",
+    "Lúthien"
+  ],
+  "notable_events": [
+    "Beren va Lúthienning tirilishi",
+    "Dior tugʻilishi",
+    "Nauglamír keltirilishi"
+  ],
+  "textual_status": "author_published",
+  "summary": "Tol Galen — Janubiy Ossiriandda, Adurant daryosi oʻrtasida joylashgan «Yashil Orol». Mandos zallaridan qaytgan Beren va Lúthien ikkinchi foniy umrlarini shu yerda, Dor Firn-i-Guinar («Tirik Oʻliklar Oʻlkasi»)da sokinlikda oʻtkazganlar.",
+  "sources": [
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of Beren and Lúthien",
+      "page": "188",
+      "notes": "Tol Galenda Beren va Lúthienning foniy hayoti."
+    }
+  ],
+  "description_sections": [
+    {
+      "title": "Yashil Orol va Tiriklar Oʻlkasi",
+      "content": "Tol Galen (Sindarincha: 'Yashil Orol') — Janubiy Ossiriandda, Adurant daryosi ikki shoxobchaga boʻlingan joyda joylashgan goʻzal oroldir. Uchinchi Davrdan ancha avval, oʻlimdan qaytgan Beren va Lúthien oʻzlarining ikkinchi foniy hayotini aynan shu orolda kechirganlar.\n\nShu sababli butun oʻlka 'Dor Firn-i-Guinar' ('Tirik Oʻliklar Oʻlkasi') deb atalgan. Bu yerda ularning oʻgʻli Dior Eluchíl dunyoga kelgan."
+    }
+  ]
+}

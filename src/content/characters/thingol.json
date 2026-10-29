@@ -1,0 +1,95 @@
+{
+  "id": "thingol",
+  "name": "Elu Thingol",
+  "original_name": "Elwë Singollo",
+  "spouse": "Melian (Maia)",
+  "children": [
+    "Lúthien Tinúviel"
+  ],
+  "aliases": [
+    "Elwë Singollo (Quenya: Kulrang Rido)",
+    "Elu Thingol (Sindarin)",
+    "Yashirin Shoh (The Hidden King)"
+  ],
+  "titles": [
+    "Doriath Qiroli",
+    "Beleriand va Sindar Oliy Hukmdori",
+    "Menegroth Sohibi"
+  ],
+  "race": "elflar",
+  "sub_race": "Teleri / Sindar (Calaquendi)",
+  "culture": "Doriath (Menegroth)",
+  "birth_year": "Daraxtlar davri (Cuiviénenda uygʻongan)",
+  "death_year": "Birinchi davr 502 (Menegrothda oʻldirilgan)",
+  "house_id": "edain-va-yarim-elflar",
+  "weapons_and_artifacts": [
+    "Aranrúth (Qirol Gʻazabi — keyinchalik Númenor qirollari qilichiga aylangan)",
+    "Nauglamír (Silmaril oʻrnatilgan mittilar marjoni)"
+  ],
+  "primary_locations": [
+    "menegroth",
+    "doriath",
+    "beleriand"
+  ],
+  "textual_status": "posthumous_edited",
+  "summary": "Cuiviénendan Buyuk Yurishni boshlagan Teleri elflarining Finwë va Ingwë qatoridagi ilk elchisi, Oʻrta-yerda qolgan Elflar ichida Ikki Daraxt nurini koʻrgan yagona Calaquendi. Maia Melianga uylanib, Doriath qirolligi va Menegroth saroyiga asos solgan, biroq Silmaril vasvasasi tufayli halokatga uchragan ulugʻvor shoh.",
+  "etymology": "Sindarin tilida 'Elu Thingol' Quenya tilidagi 'Elwë Singollo' ismining oʻzgargan shakli boʻlib, sindë ('kulrang') va collo ('rido, yopinchiq') — 'Kulrang Rido Sohibi' maʼnosini anglatadi.",
+  "biography_sections": [
+    {
+      "title": "Valinor elchisi va Nan Elmoth jozibasi",
+      "content": "Elwë Cuiviénen koʻli boʻyida uygʻongan ilk elflardan biri boʻlib, Oromë tanlagan uch elchi qatorida Finwë va Ingwë bilan birga Valinorga bordi va Ikki Daraxt nuridan bahramand boʻldi. Qaytib kelgach, u ukasi Olwë bilan birga Teleri qabilasini Gʻarbga boshlab bordi.\n\nBiroq Sharqiy Beleriandning Nan Elmoth oʻrmonida u Maia Melianni uchratib, uning husni va qoʻshigʻiga maftun boʻldi. Uzoq yillar davom etgan sehrli sukutdan uygʻonganida, Teleri xalqining bir qismi Amanga suzib ketgan, uni qidirib qolganlar esa 'Sindar' (Kulrang Elflar) nomini olgan edi. Elwë ularni birlashtirib, Beleriandning Oliy Qiroli — Elu Thingolga aylandi."
+    },
+    {
+      "title": "Menegrothning barpo etilishi va Noldor bilan ziddiyat",
+      "content": "Belegost va Nogrod mitti ustalarining yordami bilan Thingol Esgalduin daryosi qoyalarida 'Ming Gʻorlar' saroyi — Menegrothni qurdirdi. Noldor shahzodalari Beleriandga qaytganida, Thingol dastlab ularni sovuq kutib oldi.\n\nAlqualondëdagi Birinchi Qarindosh Qirgʻini (Teleri kemalarining tortib olinishi) haqida haqiqatni eshitgach, Thingol qattiq gʻazabga kelib, oʻz mulkida Quenya (Noldor) tilida soʻzlashni qatʼiyan man etdi. Shu farmon tufayli Sindarin tili butun Oʻrta-yer elflarining asosiy muloqot tiliga aylandi."
+    },
+    {
+      "title": "Beren sharti, Túringa otalik va Nauglamír fojiasi",
+      "content": "Qizi Lúthienni foniy inson Berendan ajratish maqsadida Thingol unga bajarib boʻlmas shart — Morgoth tojidan Silmaril keltirishni buyurdi va shu orqali oʻz qirolligini Fëanor Qasamyodi halokatiga bogʻlab qoʻydi. Berenning mardligi va Huan jasoratini koʻrgach, Thingol tavba qilib, ularga oq fotiha berdi hamda Nirnaeth Arnoediaddan keyin Húrinning oʻgʻli Túrinni oʻz farzandidek tarbiyaladi.\n\nAmmo Húrin Nargothronddan Nauglamír marjonini keltirib berganida, Thingolning qalbini Silmaril va oltin marjonni birlashtirish hirsi egalladi. Nogrod mittilari gavharni marjonga oʻrnatgach, uni oʻzlariga talab qildilar; takabbur soʻzlar bilan ularni haqorat qilgan Thingol Menegroth xazinasida mittilar tomonidan oʻldirildi."
+    },
+    {
+      "title": "Sindar Oliy Shohi, Menegroth shon-shavkati va kibr fojiasi",
+      "content": "Elu Thingol (Elwë Singollo) butun Beleriand Sindar elflarining Oliy Shohi bo'lib, elflarning eng ulug'vor va bo'ydor vakili sanalgan. U Cuiviénendan Valinorga elchi sifatida borgan uch elfdan biri edi, ammo Melian muhabbati sababli O'rta-yerda qoldi. Thingol Menegroth zallaridan turib ko'p asrlar davomida adolatli hukmronlik qildi. Biroq uning xarakterida Noldorga nisbatan shubha va inson zotini past ko'rish kabi kibr unsurlari mavjud edi. Berenga berilgan imkonsiz Silmaril sharti aynan shu kibrning mevasidir."
+    },
+    {
+      "title": "Nauglamír, Nogrod gnomlari xiyonati va qirolning qulashi",
+      "content": "Thingol Beren keltirgan muqaddas Silmarilni Húrin Nargothrond xarobalaridan olib kelgan afsonaviy Nauglamír (Mittilar Marjoni) bilan birlashtirishni orzu qildi. Bu nozik zargarlik ishini bajarish uchun Menegrothga chaqirilgan Nogrod mitti ustalari Silmaril go'zalligiga oshiq bo'lib, uni o'zlariniki deb da'vo qildilar. Thingol ularni haqoratlab haydamoqchi bo'lganida, gnomlar unga tashlanib, shohona zallarda shafqatsizlarcha o'ldirdilar. Thingolning o'limi Doriathning qulashiga va elflar bilan gnomlar o'rtasida asrlar davom etgan qonli adovatga sabab bo'ldi. Thingolning uzoq yillik hukmronligi Beleriandning oltin asri sifatida yodda qoldi. Uning kibri va fojiali oʻlimi esa barcha hukmdorlarga sharaf, boylik va javohirlar oldida adolat va ehtiyotkorlikni unutmaslik kerakligini oʻrgatuvchi buyuk tarixiy saboq boʻldi."
+    }
+  ],
+  "sources": [
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of Thingol and Melian",
+      "page": "55"
+    },
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of the Return of the Noldor",
+      "page": "128"
+    },
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of the Ruin of Doriath",
+      "page": "232"
+    },
+    {
+      "book_slug": "the-children-of-hurin",
+      "chapter": "Túrin in Doriath",
+      "page": "76"
+    }
+  ],
+  "related_characters": [
+    "melian",
+    "luthien",
+    "beren",
+    "finwe",
+    "finrod",
+    "galadriel",
+    "turin",
+    "hurin",
+    "morwen",
+    "beleg",
+    "cirdan"
+  ],
+  "adaptations": []
+}

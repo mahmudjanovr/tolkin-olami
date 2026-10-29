@@ -1,0 +1,103 @@
+{
+  "id": "arwen",
+  "name": "Arwen Undómiel",
+  "original_name": "Arwen Undómiel",
+  "father_name": "Elrond",
+  "mother_name": "Celebrían",
+  "spouse": "Aragorn II Elessar",
+  "children": [
+    "Eldarion (valiahd oʻgʻil)",
+    "Bir necha qizlari"
+  ],
+  "aliases": [
+    "Undómiel (Oqshom Yulduzi)",
+    "Gondor va Arnor Qirolichasi",
+    "Lúthien Qiyofasi"
+  ],
+  "titles": [
+    "Gondor va Arnor Birlashgan Qirolligi Oliy Qirolichasi",
+    "Imladris Malika-qizi"
+  ],
+  "race": "elflar",
+  "sub_race": "Yarim-elf (Peredhel)",
+  "culture": "Rivendell / Lothlórien / Gondor",
+  "birth_year": "Uchinchi davr 241",
+  "death_year": "Toʻrtinchi davr 121 (Lothlóriendagi Cerin Amrothda vafot etgan)",
+  "house_id": "elros-va-gondor-shohlari",
+  "weapons_and_artifacts": [
+    "Oqshom Yulduzi gavhari (Evenstar billur marjoni)",
+    "Aragorn uchun toʻqigan Shohona Qora Bayroq (Oq Daraxt, Yetti Yulduz va Elendil Toji naqshli)"
+  ],
+  "primary_locations": [
+    "rivendell",
+    "minas-tirith"
+  ],
+  "textual_status": "author_published",
+  "uncertainty_notes": "Tolkien 'The Lord of the Rings' Ilovasi A (V: 'The Tale of Aragorn and Arwen') dostonida Arwenning qismatini Lúthien va Beren afsonasi bilan qiyoslagan: Arwen Yarim-elf naslidan boʻlgani sababli, otasi Elrond bilan Boqiy Gʻarbga ketib mangu yashash yoki Aragorn bilan qolib foniy inson oʻlimini (The Gift of Men) qabul qilish tanloviga ega edi. U muhabbat yoʻlida boqiylikdan voz kechgan Eldarning soʻnggi Oqshom Yulduzi boʻldi. Aragorn vafot etgach, u huvillab qolgan Lothlórienga yolgʻiz qaytib, Cerin Amroth tepaligida sokin koʻz yumdi.",
+  "summary": "Elrond va Celebríanning kenja qizi, Galadrielning sevimli nevarasi, Rivendell va Lothlórien malikasi. Oʻz davrida Lúthien Tinúvielning yer yuzidagi tirik timsoli deb eʼzozlangan. Aragorn II Elessar bilan turmush qurib, Eldar boqiyligidan insonlar foniyligi foydasiga voz kechgan. Gondor va Arnor Birlashgan Qirolligining Oliy Qirolichasi, Eldarionning onasi. Uchinchi davrda Elflar va Insonlarning eng soʻnggi buyuk ittifoqini oʻz nikohi bilan muhrlagan afsonaviy ayol.",
+  "etymology": "Sindarin tilida 'Arwen' — ar- ('olijanob, shohona') va gwen ('qiz, bokira ayol') soʻzlaridan olinib, 'Shohona Qiz' maʼnosini bildiradi. Uning Quenya epitet nomi 'Undómiel' esa undómë ('oqshom shafagʻi, yulduzli gʻira-shira') va elen ('yulduz') soʻzlaridan tuzilib, 'Oqshom Yulduzi' (Evenstar) deganidir.",
+  "biography_sections": [
+    {
+      "title": "Kelib chiqishi va Oqshom Yulduzi husni",
+      "content": "Arwen Undómiel Uchinchi davrning 241-yilida Rivendell Hukmdori Elrond va Celebrian (Galadrielning qizi) oilasida dunyoga kelgan. U Lúthien Tinúvielning toʻgʻridan-toʻgʻri avlodi boʻlib, xalq orasida 'Lúthienning Oʻrta-yerda qayta tirilgan timsoli' deb eʼzozlangan.\n\nUning goʻzalligi, qora sochlarining jilosi va koʻzlaridagi yulduzlar nuri sababli elflar unga 'Undómiel' — 'Oqshom Yulduzi' (Evenstar) nomini berdilar, chunki u Elflar davrining botish pallasidagi eng soʻnggi va eng yorqin goʻzallik nuri edi."
+    },
+    {
+      "title": "Aragorn bilan uchrashuv va Cerin Amrotdagi ahd",
+      "content": "Arwen uzoq yillar oʻz onasi va buvisi Galadriel huzurida Lothlórienda yashadi. 2951-yilda yigirma yoshli Aragorn Rivendell oʻrmonida Arwenni ilk bor koʻrganida, uni afsonaviy Lúthien deb oʻylab hushidan ketayozdi.\n\n2980-yilda Aragorn Lothlórienga kelganida, Arwen va Aragorn Cerin Amrot tepaligida, tillarang elanor va kumush niphredil gullari orasida bir-birlariga mangulik ahd berdilar. Arwen Elrond qizi sifatida berilgan elflar boqiyligidan voz kechib, insonlar taqdiri — oʻlim inʼomini (The Gift of Men) qabul qilishga va Aragorn bilan foniy hayot kechirishga qaror qildi."
+    },
+    {
+      "title": "Halqa Urushidagi maʼnaviy madad va Qirollik Bayrogʻi",
+      "content": "Uchinchi davrning soʻnggi yillarida Arwen Rivendellda qolib, yashirincha Aragorn uchun Oliy Qirol Bayrogʻini toʻqidi. Qora shoyi matoga mithril, oltin va qimmatbaho toshlar bilan Gondorning Oq Daraxti, Elendilning Yetti Yulduzi va Oliy Shoh toji naqsh qilib tikildi.\n\nUshbu bayroq Halqa Urushining hal qiluvchi pallasida Halbarad boshchiligidagi Kulrang Otliqlar (Grey Company) orqali Aragornga yetkazildi. Pelargirda va Pelennor dalalarida bu bayroqning koʻtarilishi dushman qalbiga dahshat, ittifoqchilarga esa cheksiz umid baxsh etdi."
+    },
+    {
+      "title": "Qayta Birlashgan Qirollik Qirolichasi",
+      "content": "Sauron qulagach, 3019-yilning Midsummer (Yoz oʻrtasi) bayramida Arwen Minas Tirithga keldi va buyuk tantanalar bilan Aragorn II Elessarga turmushga chiqdi. U Qayta Birlashgan Qirollikning Oliy Qirolichasi (High Queen) taxtiga oʻtirdi.\n\nArwen oʻzining donishmandligi, mehr-shafqati va olijanobligi bilan urushdan vayron boʻlgan mamlakatning qayta tiklanishida eriga eng yaqin maslahatchi boʻldi. U Frodoga oʻzining oq billur yulduzli marjonini sovgʻa qilib, uning ruhiy jarohatlariga malham tiladi."
+    },
+    {
+      "title": "Fojiaviy vidolashuv va Cerin Amrotdagi soʻnggi sukunat",
+      "content": "Aragorn va Arwen 120 yil davomida baxtli va adolatli hukmronlik qildilar. Ularning oʻgʻli Eldarion va bir necha qizlari dunyoga keldi. Toʻrtinchi davrning 120-yilida Qirol Elessar vafot etganida, Arwen insonlar oʻlimining butun achchiq fojiasini his qildi.\n\nOʻz oilasi va farzandlari bilan vidolashgan Arwen boʻshab qolgan, elflar tark etgan Lothlórienga yolgʻiz qaytib bordi. Cerin Amrot tepaligida, bir paytlar ahd bergan gullar soʻngan maskanda, u 3021-yil qishida orom topdi. Uning qabri mallorn daraxtlari ostida, dunyo oʻzgarib ketgunga qadar abadiy sukunatda qoldi."
+    }
+  ],
+  "sources": [
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "The Steward and the King",
+      "page": "961"
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "Appendix A: Annals of the Kings and Rulers (V: Here Follows a Part of the Tale of Aragorn and Arwen)",
+      "page": "1057"
+    },
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of the Rings of Power and the Third Age",
+      "page": "298"
+    }
+  ],
+  "related_characters": [
+    "aragorn",
+    "elrond",
+    "galadriel",
+    "gandalf",
+    "elendil",
+    "isildur",
+    "eowyn",
+    "faramir"
+  ],
+  "adaptations": [
+    {
+      "medium": "film",
+      "title": "The Lord of the Rings Film Trilogy",
+      "creator": "Peter Jackson",
+      "year": 2001,
+      "divergence_notes": "Filmda Liv Tyler ijrosidagi Arwen kitobdagiga qaraganda ancha ko'proq jangovar harakatlarda ishtirok etadi. Ayniqsa, 'The Fellowship of the Ring' filmida Glorfindel o'rniga aynan Arwen yarador Frodoning oti bilan Nazgûllardan qochadi va Bruinen toshqinini chaqiradi (kitobda toshqinni Elrond va Gandalf chaqiradi, Frodoning qutqaruvchisi esa Glorfindeldir)."
+    }
+  ],
+  "image": {
+    "src": "/images/characters/arwen.webp",
+    "src_thumb": "/images/characters/arwen-thumb.webp",
+    "alt": "Arwen Undómiel oy yogʻdusida Rivendell ayvonida, boʻynida Evenstar billur marjoni bilan",
+    "caption": "Arwen Undómiel — Rivendell oqshom yulduzi, Elrond qizi va Gondor Oliy Qirolichasi"
+  }
+}

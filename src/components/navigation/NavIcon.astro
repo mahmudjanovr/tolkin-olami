@@ -1,0 +1,18 @@
+---
+/**
+ * NavIcon.astro — Vector icon rendering via SVG Sprite symbols
+ * High performance, zero duplicate path DOM overhead, perfectly theme-adaptable.
+ */
+
+interface Props {
+  icon: 'star' | 'book' | 'crown' | 'compass' | 'tree' | 'spheres' | 'feather' | 'scroll' | 'document' | 'quill' | 'chevron' | 'close' | 'menu' | 'search';
+  size?: number;
+  class?: string;
+}
+
+const { icon, size = 20, class: className = '' } = Astro.props;
+---
+
+<svg class={className} width={size} height={size} aria-hidden="true">
+  <use href={`#nav-icon-${icon}`} />
+</svg>

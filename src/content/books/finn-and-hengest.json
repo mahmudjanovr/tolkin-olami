@@ -1,0 +1,62 @@
+{
+  "id": "finn-and-hengest",
+  "title_uz": "Finn va Hengest",
+  "title_original": "Finn and Hengest: The Fragment and the Episode",
+  "aliases": [
+    "Finn va Hengest",
+    "Finn and Hengest",
+    "Finnsburg jangi",
+    "Tolkien Tarixiy-Filologik Tadqiqoti"
+  ],
+  "publication_year": 1982,
+  "publisher": "George Allen & Unwin",
+  "category": "letters_academic",
+  "editor": "Alan Bliss",
+  "isbn": "978-0-04-829003-8",
+  "cover_image": {
+    "src": "/images/books/finn-and-hengest.webp",
+    "alt": "Finn va Hengest kitobi muqovasi (HarperCollins, 2006) — Ted Nasmith chizgan dubulgʻali va qalqonli qadimgi anglo-sakson jangchilari",
+    "edition_title": "HarperCollins Paperback Edition (2006)",
+    "publisher": "HarperCollins / George Allen & Unwin",
+    "year": 1982,
+    "isbn": "978-0-261-10359-7",
+    "artist": "Ted Nasmith",
+    "source": "HarperCollins / British Library"
+  },
+  "synopsis": "«Finn va Hengest: Parvozi va Epizod» (Finn and Hengest: The Fragment and the Episode) — J.R.R. Tolkienning Oksford universitetida 1920–1930-yillarda oʻqigan maʼruzalari asosida professor Alan Bliss tomonidan tahrir qilinib, 1982-yilda chop etilgan yuksak ilmiy-filologik monografiya. Asar V asrdagi qadimgi germaniy qabilalari — frizlar, danlar va yutlar oʻrtasidagi fojiaviy urushni qalamga olgan ikki qadimiy manba: «Finnsburg parchasi» (The Fight at Finnsburg) va «Beowulf» dostonidagi «Finnsburg epizodi»ni qiyosiy-tarixiy tahlil qiladi.",
+  "detailed_sections": [
+    {
+      "title": "Qadimgi matnlarning sirlari va Tolkien gipotezasi",
+      "content": "V asrga oid Finnsburg jangi qadimgi qahramonlik dostonlarining eng qorongʻu va bahsli epizodlaridan biridir. Bir tomonda qadimgi qoʻlyozmadan koʻchirilgan, ammo asl nusxasi yoʻqolgan 48 misrali «Jang parchasi», ikkinchi tomonda esa «Beowulf» dostoni qahramoni Hrothgar saroyida baxshi kuylagan 90 misrali lirik-epik «Epizod» turardi. Uzoq vaqt davomida tarixchilar ushbu ikki matndagi shaxslar, ittifoqlar va millatlarning chalkashligini yecha olmagan edilar. Tolkien oʻzining tengsiz lingvistik tahlili bilan ushbu voqealarning toʻliq xronologik va genealogik zanjirini tiklab berdi."
+    },
+    {
+      "title": "Finnsburg qalʼasi qamali va fojiaviy nizo",
+      "content": "Voqealar Frizlar qiroli Finn saroyida kechadi. Finn Danlar malikasi Hildeburhga uylangan boʻlib, bu nikoh ikki dushman xalq oʻrtasida sulh oʻrnatishi kerak edi. Biroq malikaning ukasi Hnaef boshchiligidagi 60 nafar dan jangchisi saroyga mehmonga kelganida, tunda xoinona hujumga uchraydilar. Danlar saroyning ikki darvozasini besh kun davomida qahramonlarcha himoya qiladilar. Jangda Hnaef ham, Finning oʻgʻli ham halok boʻladi. Qonli durangdan soʻng ikki tomon qish fasli uchun majburiy sulh tuzadilar, biroq qalbida qasos oʻti yongan Hnaefning oʻrinbosari Hengest bahor kelganda qasamyodini yangilaydi va Finn saroyini yoqib, qirolni qatl etadi."
+    },
+    {
+      "title": "Hengest va Britaniyaning anglo-saksonlar tomonidan zabt etilishi",
+      "content": "Tolkien monografiyasining eng muhim tarixiy xulosasi — ushbu dostondagi Hengest aynan V asr oʻrtalarida Britaniyaga kemalarda bostirib kelib, Kent qirolligiga asos solgan afsonaviy Hengest (Hengest va Horsa) bilan bir shaxs ekanligini isbotlashidir. Tolkien Hengestning Yutlar (Jutes) qabilasidan boʻlganini, Finnsburg fojiasidan soʻng uning qanday qilib Shimoliy dengizdan oʻtib, Britaniya tarixining yangi sahifasini ochganini tilshunoslik dalillari bilan koʻrsatib beradi."
+    },
+    {
+      "title": "Alan Blissning mehnati va kitobning akademik qiymati",
+      "content": "Tolkien vafotidan soʻng Dublin universitet kolleji professori Alan Bliss yozuvchining qoralamalarini tartibga solib, matnlarning toʻliq glossariysi (qadimgi inglizcha lugʻati), grammatik sharhlari va tarixiy xaritalarini tayyorladi. Ushbu kitob Tolkienning shunchaki ertakchi emas, balki qadimgi Yevropa qabilalarining migratsiyasi, qonunlari va qahramonlik etikasini zarrabin ostida oʻrgangan ulkan olim boʻlganining yana bir yorqin dalilidir."
+    }
+  ],
+  "key_themes": [
+    "Qadimgi german qahramonlik etikasi va qasamyod fojiasi",
+    "Anglo-saksonlarning Britaniyaga koʻchishi tarixi",
+    "Qiyosiy filologiya va matn tiklash metodikasi"
+  ],
+  "uzbek_editions": [
+    {
+      "title": "Finn va Hengest",
+      "translator": "Ilmiy guruh",
+      "publisher": "Nashr qilinmagan",
+      "year": 2026,
+      "format": "Akademik monografiya",
+      "notes": "Oʻzbek tilida toʻliq nashr etilmagan.",
+      "status": "untranslated"
+    }
+  ],
+  "translation_status_summary": "Oʻzbek tilida toʻliq nashr etilmagan (untranslated)."
+}

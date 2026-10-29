@@ -1,0 +1,101 @@
+{
+  "id": "beren",
+  "name": "Beren",
+  "original_name": "Beren Erchamion",
+  "father_name": "Barahir",
+  "mother_name": "Emeldir (Erkak-yurak)",
+  "spouse": "Lúthien Tinúviel",
+  "children": [
+    "Dior Eluchíl"
+  ],
+  "aliases": [
+    "Camlost (Boʻshqoʻl)",
+    "Erchamion (Birqoʻl)",
+    "Dorthonion Ovchisi"
+  ],
+  "titles": [
+    "Dorthonion Bahodiri",
+    "Silmaril Qutqaruvchisi",
+    "Tol Galen Hukmdori"
+  ],
+  "race": "insonlar",
+  "sub_race": "Edain",
+  "culture": "Bëor xonadoni",
+  "birth_year": "Birinchi davr 432",
+  "death_year": "Birinchi davr 503",
+  "house_id": "edain-va-yarim-elflar",
+  "weapons_and_artifacts": [
+    "Barahir uzugi",
+    "Angrist pichogʻi",
+    "Silmaril"
+  ],
+  "primary_locations": ["menegroth", "nargothrond"],
+  "textual_status": "posthumous_edited",
+  "uncertainty_notes": "Matn evolyutsiyasi va teologiya: Tolkienning 1917-yildagi 'The Tale of Tinúviel' (HoME II) qoralamasida Beren Noldorin elfi sifatida tasvirlangan. 1925–1931-yillardagi 'The Lay of Leithian' (HoME III) dostonida esa u Barahir oʻgʻli va Bëor xonadoniga mansub inson etib qatʼiylashtirilgan. Mandos zallaridan Lúthien bilan foniylik shartida qaytarilishi teologik jihatdan Ilúvatarning bevosita inoyati boʻlib, elflar va insonlar oʻrtasidagi ilk nikohga asos solgan.",
+  "summary": "Barahir va Emeldirning oʻgʻli, Bëor xonadonining eng buyuk inson qahramoni. Dorthoniondagi yolgʻiz partizanlik kurashidan soʻng Doriathga kelgan, Thingol qoʻygan imkonsiz shartni bajarib, Lúthien bilan birga Morgothning temir tojidan Silmarilni kesib olgan hamda foniylik shartida oʻlimdan qaytgan afsonaviy bahodir.",
+  "etymology": "Sindarin tilida 'Beren' — *beren ('jasur, dovyurak, botir') oʻzagidan olingan. 'Erchamion' epiteti er ('yagona, bir') va cam ('qoʻl') soʻzlaridan tuzilib, 'Birqoʻl' maʼnosini beradi; 'Camlost' esa cam ('qoʻl') va lost ('boʻsh') soʻzlaridan olinib, Carcharoth Silmaril bilan qoʻlini uzib olganidan keyin Thingol oldida berilgan 'Boʻshqoʻl' laqabidir.",
+  "biography_sections": [
+    {
+      "title": "Dorthoniondagi partizanlik va Tarn Aeluin qirgʻini",
+      "content": "Beren Birinchi davrning 432-yilida Dorthonionda Barahir xonadonida tavallud topdi. Dagor Bragollach halokatidan soʻng uning vatani Morgoth zulmati ostida qoldi. Barahir 12 nafar sadoqatli jangchisi bilan togʻlarda yashirinib, partizanlik urushini olib bordi; Beren esa bu otryadning eng yosh va chaqqon jangchisi edi.\n\nMorgoth maxfiy qarorgoh — Tarn Aeluin koʻlini Gorlimning xiyonati vositasida fosh qildi va Barahir otryadini qirib tashladi. Beren oʻsha paytda razvedkada boʻlgani sababli omon qoldi. U otasining jasadini topib dafn etdi, orqlar sardorini quvib yetib, otasining uzugi — Barahir uzugini qaytarib oldi. Shundan soʻng u toʻrt yil davomida Dorthonion oʻrmonlarida yolgʻiz oʻzi ov qildi va Morgoth qoʻshiniga qaqshatqich zarbalar berdi."
+    },
+    {
+      "title": "Doriathga kelish va Lúthien bilan uchrashuv",
+      "content": "Morgoth uning boshiga katta mukofot tayinlab, oʻrmonga boʻrilar va xavfli maxluqlarni tashlagach, Beren janubga qochishga majbur boʻldi. U hech bir inson bosib oʻtmagan dahshatli Ered Gorgoroth va Nan Dungortheb changalzorlaridan tirik oʻtib, Melian sehri bilan himoyalangan Doriath chegarasiga yetib keldi.\n\nNeldoreth oʻrmonida Beren shabnamli maysazorlar ustida raqs tushayotgan Lúthien Tinúvielni — Qirol Thingol va Melianning yagona qizini koʻrib qoldi. Beren uni 'Tinúviel' ('Bulbul') deb atadi va ular bir-birini cheksiz muhabbat bilan sevib qolishdi."
+    },
+    {
+      "title": "Thingolning sharti va Tol-in-Gaurhoth zindoni",
+      "content": "Thingol foniylik naslidan boʻlgan inson oʻz qiziga qoʻl choʻzganidan gʻazablandi va Berenga imkonsiz shart qoʻydi: agar u Morgothning temir tojidan bitta Silmarilni kesib olib kelsa, Lúthienga uylanishiga ruxsat berishini aytdi.\n\nBeren Doriathni tark etib, Nargothrondga bordi va Qirol Finrod Felagundga Barahir uzugini koʻrsatdi. Finrod qasamyodiga sodiq qolib, oʻn nafar sadoqatli jangchisi bilan Berenga hamroh boʻldi. Biroq Tol-in-Gaurhoth (Boʻrilar Oroli) yaqinida ular Sauron tomonidan asirga olindi. Sauron zindonida ulkan qora boʻri birma-bir jangchilarni gʻajidi. Finrod Berenni qutqarish uchun boʻri bilan yakkama-yakka olishib, uni tishlari bilan oʻldirdi, biroq oʻzi ham ogʻir yaralanib jon berdi. Shu onda Lúthien va Valinorning buyuk iti Huan yetib kelib, Sauronni tor-mor keltirdi va Berenni ozod qildi."
+    },
+    {
+      "title": "Angband qaʼridan Silmarilni kesib olish",
+      "content": "Lúthienning sehri yordamida Draugluin boʻrisi va Thuringwethil koʻrshashapalasining qiyofasiga kirgan Beren va Lúthien Angbandning chuqur zallariga kirib bordi. Lúthien oʻzining ilohiy qoʻshigʻi bilan Morgoth va uning butun qora saroyini chuqur uyquga ketkazdi.\n\nMorgoth behush yiqilganida, Beren Curufinning Angrist pichogʻi bilan uning temir tojidan bir Silmarilni kesib oldi. U ikkinchi toshni ham kesmoqchi boʻlganida, pichoq tigʻi sinib, parchasi Morgothning yuziga tegdi va qora hukmdor uygʻona boshladi. Qalʼa darvozasida ularni Morgothning shaxsan oʻzi boqqan bahaybat maxluq — Carcharoth kutib turardi. Beren Silmaril nuri bilan uni qaytarmoqchi boʻldi, ammo maxluq Berenning oʻng qoʻlini muqaddas gavhar bilan birga uzib yutib yubordi. Muqaddas toshning olovi Carcharothning ich-etini kuydirib, uni telba qildi va u faryod solib qochib ketdi."
+    },
+    {
+      "title": "Qaytish, oʻlim va Mandosdan tirilish",
+      "content": "Burgutlar Beren va Lúthienni Doriathga olib keldi. Thingol huzurida Beren kesilgan bilagini koʻrsatib: 'Qoʻlimda Silmaril bor — zero u maxluq qornidadir', dedi. Shundan soʻng Doriathda Carcharothga qarshi buyuk ov boshlandi. Jangda Beren va Huan maxluqni oʻldirdi, ammo Beren ogʻir yaralanib, Menegrothda jon berdi.\n\nLúthienning ruhi ayriliq gʻamiga chiday olmay, Mandos zallariga ravona boʻldi. U Mandos hukmdori oldida shunday mungli va fojiali qoʻshiq kuyladiki, hatto toshbagʻir Mandosning ham koʻnglida shafqat uygʻondi. Yagona Yaratuvchi Eru Ilúvatar ularga Arda tarixidagi yagona marhamatni ato etdi: Beren va Lúthien ikkalasi ham foniylar sifatida qayta tirilib, Ossirianddagi Tol Galen (Yashil Orol)da sokin umr kechirdilar va Birinchi davrning 503-yilida birgalikda foniy dunyoni tark etdilar."
+    }
+  ],
+  "image": {
+    "src": "/images/characters/beren.webp",
+    "src_thumb": "/images/characters/beren-thumb.webp",
+    "alt": "Beren Dorthonion oʻrmonida ovchi libosida, barmogʻida Barahir uzugi bilan",
+    "caption": "Beren Erchamion — Bëor xonadoni qahramoni, Barahir uzugining sohibi"
+  },
+  "sources": [
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of Beren and Lúthien",
+      "page": "162"
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "A Knife in the Dark",
+      "page": "191"
+    },
+    {
+      "book_slug": "history-of-middle-earth",
+      "chapter": "The Lay of Leithian (HoME III)",
+      "page": "150"
+    },
+    {
+      "book_slug": "beren-and-luthien",
+      "chapter": "The Tale of Tinúviel va Quenta Silmarillion",
+      "page": "29"
+    }
+  ],
+  "related_characters": [
+    "aragorn",
+    "luthien",
+    "thingol",
+    "melian",
+    "finrod",
+    "curufin",
+    "mandos",
+    "melkor",
+    "sauron",
+    "elrond",
+    "feanor"
+  ],
+  "adaptations": []
+}

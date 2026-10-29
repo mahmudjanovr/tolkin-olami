@@ -1,0 +1,52 @@
+{
+  "id": "birinchi-qarindosh-qirgini",
+  "title": "Birinchi Qarindosh Qirgʻini",
+  "subtitle": "Alqualondë oq bandargohidagi fojea",
+  "era": "daraxtlar_davri",
+  "year_text": "Daraxtlar davri 1495",
+  "location_id": "alqualonde",
+  "characters": [
+    "feanor"
+  ],
+  "belligerents": {
+    "side_a": [
+      "Fëanor Noldori"
+    ],
+    "side_b": [
+      "Olwë Telerilari"
+    ]
+  },
+  "outcome": "Noldor Teleri kemalarini qon evaziga qo'lga kiritdi, ammo bu fojia Mandos La'natini keltirib chiqardi va Noldorning butun keyingi taqdirini qora kulfat bilan muhrladi.",
+  "preceding_event": "silmarillarning-ogirlanishi",
+  "succeeding_event": "mandos-qargishi",
+  "textual_status": "author_published",
+  "sources": [
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of the Flight of the Noldor",
+      "page": "86"
+    }
+  ],
+  "description_sections": [
+    {
+      "title": "Fojianing kelib chiqishi: Fëanor talabi va Olwëning rad javobi",
+      "content": "Morgoth Valinorning Ikki Daraxtini yo'q qilib, Silmarillarni o'g'irlagach, Fëanor Noldor xalqini O'rta-yerga qochishga va qasamyod qilishga undadi. Buyuk Dengizni (Belegaer) kechib o'tish uchun ularga qudratli kemalar zarur edi. Fëanor oqqush shaklidagi oq port Alqualondëga kelib, Teleri hukmdori Olwëdan oq kemalarni berishni yoki O'rta-yerga eltib qo'yishni talab qildi. Biroq Olwë Telerining kemalari xuddi Noldor javohirlari kabi muqaddas ijod mevasi ekanini, ularni hech qachon begonalarga bermasligini va Valar irodasiga qarshi bormasligini aytib, taklifni qat'iy rad etdi."
+    },
+    {
+      "title": "Alqualondë bandargohidagi qonli to'qnashuv",
+      "content": "Rad javobidan g'azablangan Fëanor o'z lashkariga kemalarni kuch bilan tortib olishni buyurdi. Teleri o'zlarining muqaddas kemalarini himoya qilish uchun Noldor jangchilarini dengizga uloqtira boshladilar va engil kamonlardan o'q yog'dirdilar. Shunda Fëanor jangchilari qilich yalang'ochladilar. Fingon boshchiligidagi Noldorning ikkinchi to'lqini yetib kelganida, ular Teleri Noldorga hujum qilmoqda deb noto'g'ri o'ylab, jangga qo'shildilar. Natijada qurolsiz va yengil qurollangan Teleri elflari shafqatsizlarcha qirib tashlandi; ularning ko'plab kemalari egallab olindi va port qonga belandi."
+    },
+    {
+      "title": "Aramand qirg'og'idagi Mandos La'nati",
+      "content": "Ushbu mudhish jinoyatdan so'ng, Noldor kemalarda va qirg'oq bo'ylab shimolga, Aramand muzliklariga qarab yo'l oldi. U yerda baland qoya ustida Valar xabarchisi – Mandos (Namo) paydo bo'ldi va 'Shimol Bashorati' (The Doom of Mandos) yoki Noldor La'natini e'lon qildi. Mandos qardosh qonini to'kkan Noldor xalqi O'rta-yerda hech qachon tinchlik topolmasligini, ularning barcha buyuk rejalari xiyonat va umidsizlik bilan yakunlanishini, jismoniy halokatga uchrashlarini va Valinor darvozalari ular uchun abadiy yopilishini bildirdi. Finarfin bu dahshatli la'natni eshitib, o'z xalqining bir qismi bilan orqaga, Valinorga qaytdi va afv etildi."
+    },
+    {
+      "title": "Tarixiy va falsafiy oqibatlari",
+      "content": "Birinchi Qarindosh Qirg'ini elflar tarixidagi birinchi qonli gunoh bo'lib, Arda Beg'uborligining (Arda Unmarred) yakuniy halokatini ifodalaydi. Fëanorning xudbinligi va kibri butun bir sulolani fojeaga yetakladi. Losgardagi kemalarning yoqib yuborilishi va Fingolfin xalqining Helcaraxë muzliklaridan o'tishdagi mislsiz azoblari aynan shu qirg'inning bevosita oqibatidir. Beleriandga yetib borgach, Thingol ushbu qirg'in haqida eshitib, o'z saltanatida Noldor tili Quenyada so'zlashishni taqiqladi va qotillarga Menegroth darvozalarini yopdi."
+    },
+    {
+      "title": "Elflar ruhiyatidagi abadiy jarohat va afv etilmas gunoh",
+      "content": "Alqualondë qirg'ini elflarning boqiy hayotida hech qachon bitmaydigan ma'naviy jarohat qoldirdi. Ilgari kasallik va o'lim nimaligini bilmagan elflar birinchi marta o'z qonlarining o'z qardoshlari qilichidan to'kilganiga guvoh bo'ldilar. Bu voqea Noldor va Teleri o'rtasida asrlar davomida dushmanlik urug'ini sochdi. Hatto G'azab Urushidan keyin ham ko'plab Teleri elflari Noldor bilan gaplashishdan bosh tortdilar va ularni kechirish uchun yuzlab yillar kerak bo'ldi."
+    }
+  ]
+}

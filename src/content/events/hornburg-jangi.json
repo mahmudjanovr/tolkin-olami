@@ -1,0 +1,59 @@
+{
+  "id": "hornburg-jangi",
+  "title": "Hornburg Jangi",
+  "subtitle": "Helm darasidagi mudofaa va Rohan najoti",
+  "era": "uchinchi_davr",
+  "year_text": "Uchinchi davr 3019 (3–4-mart)",
+  "location_id": "helms-deep",
+  "characters": [
+    "theoden",
+    "aragorn",
+    "legolas",
+    "gimli",
+    "eomer",
+    "saruman",
+    "gandalf"
+  ],
+  "belligerents": {
+    "side_a": [
+      "Rohan qoʻshini (Qirol Théoden, Éomer)",
+      "Uzuk Qardoshligi jangchilari (Aragorn, Legolas, Gimli)",
+      "Gandalf va Erkenbrand boshchiligidagi yordamchi otliqlar",
+      "Huornlar"
+    ],
+    "side_b": [
+      "Isengard Uruk-hailari",
+      "Dúnland jangchilari",
+      "Saruman oʻrklari"
+    ]
+  },
+  "outcome": "Sarumanning Isengard qo'shini butunlay qirib tashlandi; Rohan o'z mustaqilligini saqlab qoldi; Rohirrim va Gondor ittifoqi mustahkamlanib, Pelennor jangiga yo'l ochildi.",
+  "preceding_event": "isengardning-vayron-qilinishi",
+  "succeeding_event": "pelargir-jangi",
+  "textual_status": "author_published",
+  "sources": [
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "Helm's Deep",
+      "page": "532"
+    }
+  ],
+  "description_sections": [
+    {
+      "title": "Sarumanning tajovuzi va Helm chuqurligiga chekinish",
+      "content": "Uchinchi Davrning 3019-yilida Saruman o'zining o'n mingdan ortiq Uruk-hai, qora o'rklar va Dunland yovvoyi insonlaridan iborat muntazam armiyasini Rohanni butunlay yo'q qilish uchun yo'lladi. Podshoh Théoden Gandalf tomonidan Saruman afsunidan ozod qilingach, o'z xalqi va qo'shinini ochiq dashtdagi Edorasdan qadimiy mustahkam tosh qal'a – Hornburgga (Helm's Deep) olib bordi. Hornburg baland qoyalar orasida joylashgan bo'lib, uning qalin tosh devorlari (Deeping Wall) ming yillar davomida har qanday hujumni qaytargan edi."
+    },
+    {
+      "title": "Qamal tuni va Isengard olovining portlashi",
+      "content": "Tunning qorong'usida yomg'ir ostida Uruk-hai lashkarlari qora to'lqindek Hornburg devorlariga yopirildilar. Aragorn, Legolas va Gimli qal'a himoyasida tengsiz jasorat ko'rsatdilar. Biroq Saruman o'zining shaytoniy ixtirosi – 'Orthanc olovi' (porox / portlovchi modda) vositasida Deeping Wall devorining suv o'tadigan kanalini portlatib yubordi. Metin tosh devor dahshatli gumburlash bilan qulab, dushman lashkari qal'a hovlisiga bostirib kirdi. Himoyachilar orqaga chekinib, Hornburg minorasining ichki zallarida qamalda qoldilar."
+    },
+    {
+      "title": "Helm karnayining sadosi va Théodenning qahramonona shiddati",
+      "content": "Tong ota boshlagan pallada barcha umidlar so'ngandek tuyuldi. Shunda Podshoh Théoden va Aragorn taslim bo'lish o'rniga dushman ustiga otda hujum qilishga qaror qildilar. Qal'a minorasidagi qadimiy Helm karnayi (Horn of Helm Hammerhand) chalindi; uning tog'lar aro aks-sado bergan dahshatli ovozi dushman yuragiga vahima soldi. Théoden o'zining oltin dubulg'asida otliq safi bilan darvozadan otilib chiqdi. Bu shiddatli zarba Uruk-hai saflarini yorib, ularni chuqurlikdan tashqariga uloqtirdi."
+    },
+    {
+      "title": "Erkenbrand va Gandalfning yetib kelishi hamda Huornlar o'rmoni",
+      "content": "Aynan shu tongda sharqiy qoyalar tepasida oq ot minib kelgan Gandalf Oq va G'arbiy Qoplon sardori Erkenbrand boshchiligidagi ming kishilik yangi otliq qo'shin paydo bo'ldi. Quyosh nurlari ularning nayzalarida chaqnadi. Shuningdek, vodiyning pastki chiqish joyida tunda kutilmaganda paydo bo'lgan sirli va qora Huornlar o'rmoni – tirik daraxtlar qo'shini turardi. Ikki o't orasida qolgan Uruk-hai armiyasi sarosimada ushbu qorong'i o'rmon ichiga qochdi va u yerdan birorta ham dushman tirik chiqmadi. Rohan to'liq ozod qilindi. Hornburg mudofaasi Rohirrim xalqining matonatini butun Oʻrta-yerga namoyon etdi. Gimli va Legolasning devor ustidagi doʻstona musobaqasi esa mitti va elflar oʻrtasidagi ming yillik sovuqlikni eritib, ularning abadiy doʻstligiga poydevor qoʻydi. Bu zafar Sarumanning butun kuchini sindirdi va Oʻrta-yer ozod xalqlariga cheksiz umid bagʻishladi."
+    }
+  ]
+}

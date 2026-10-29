@@ -1,0 +1,98 @@
+{
+  "id": "luthien",
+  "name": "Lúthien Tinúviel",
+  "original_name": "Lúthien Tinúviel",
+  "father_name": "Elu Thingol (Elwë)",
+  "mother_name": "Melian (Maia)",
+  "spouse": "Beren Erchamion",
+  "children": [
+    "Dior Eluchíl (Thingol Vorisi)"
+  ],
+  "aliases": [
+    "Tinúviel (Gʻira-shira Qizi / Bulbul)",
+    "Lúthien (Sehrlovchi Gul)",
+    "Thúringwethil (Qiyofa niqobi sifatida)"
+  ],
+  "titles": [
+    "Doriath Malika Qizi",
+    "Ilúvatar Farzandlarining Eng Goʻzali"
+  ],
+  "race": "elflar",
+  "sub_race": "Sindar / Yarim-Maia (Keyinchalik foniy)",
+  "culture": "Doriath (Menegroth)",
+  "birth_year": "Daraxtlar davri YT 1200",
+  "death_year": "Birinchi davr ~503 (Ikkinchi bor foniy sifatida vafot etgan)",
+  "house_id": "elros-va-gondor-shohlari",
+  "weapons_and_artifacts": [
+    "Sehrli uxlatuvchi qora soch ridolari",
+    "Silmaril va Nauglamír marjoni (Tol Galen davrida)"
+  ],
+  "primary_locations": [
+    "menegroth",
+    "doriath",
+    "nargothrond",
+    "beleriand"
+  ],
+  "textual_status": "author_published",
+  "uncertainty_notes": "Lúthien obrazining adabiy va biografik ildizi bevosita J.R.R. Tolkienning rafiqasi Edith Mary Tolkien (1889–1971) bilan bogʻliq. 1917-yilda Roos (Yorkshire) oʻrmonida Edithning gullar orasida raqsga tushishi Tolkienda 'Beren va Lúthien' afsonasini uygʻotgan; ularning Oxforddagi umumiy qabrtoshiga ham 'Beren' va 'Lúthien' nomlari oʻyib yozilgan.",
+  "summary": "Doriath qiroli Thingol va Maia Melianning yagona qizi, olamda yaralgan barcha Elflar va Insonlar ichida eng goʻzali. Foniy inson Berenga koʻngil qoʻyib, Tol-in-Gaurhothda Sauronni, Angbandda esa Morgothning oʻzini sehrli qoʻshigʻi bilan uxlatgan hamda sevgilisi uchun boqiylikdan voz kechib, foniylik qismatini tanlagan afsonaviy qahramon.",
+  "etymology": "Sindarin tilida 'Lúthien' — 'Sehrlovchi, guldek maftunkor qiz' maʼnosini anglatadi. Beren unga bergan 'Tinúviel' ismi esa tinú ('yulduzli oqshom, gʻira-shira') va -iel ('qizi') qismlaridan iborat boʻlib, 'Oqshom Qizi' yoki shoirona 'Bulbul' deganidir.",
+  "biography_sections": [
+    {
+      "title": "Doriath bulbuli va Ilúvatar farzandlarining eng goʻzali",
+      "content": "Lúthien Tinúviel Sindar Oliy Qiroli Elu Thingol va dono Maia Melianning yagona qizi boʻlib, Daraxtlar Davrida Doriathning goʻzal Menegroth saroyida dunyoga kelgan. U Ilúvatar farzandlari orasida husn, ovoz va sehr boʻyicha eng tengsiz qahramon edi.\n\nU Neldoreth oʻrmonlarida raqsga tushib kuylaganida, qish chekinar, gullar ochilar va butun tabiat uning ovoziga mahliyo boʻlar edi. Elflar unga 'Tinúviel' — 'Bulbul' deb nom berdilar."
+    },
+    {
+      "title": "Beren bilan uchrashuv va Silmaril sharti",
+      "content": "Birinchi Davrning 465-yilida Dorthonion qirgʻinidan qochib kelgan inson Beren oʻrmonda Lúthienning raqsini koʻrib, uni sevib qoldi. Thingol bir foniy insonning oʻz qiziga koʻngil qoʻyganidan gʻazablanib, imkonsiz shart qoʻydi: Beren Morgothning temir tojidan bitta Silmarilni olib kelishi shart edi.\n\nBeren yolgʻiz ketganida, Lúthien otasining taqiqlariga qaramay Hirilorn daraxtidagi qamoqdan qochib, oʻz sevgilisini qutqarish uchun xavfli safarga otlandi."
+    },
+    {
+      "title": "Tol-in-Gaurhoth zafari va Huan sadoqati",
+      "content": "Sauron Beren va Finrod Felagundni oʻzining boʻrilar qalʼasida (Tol-in-Gaurhoth) asir qilganida, Lúthien Valinorning buyuk iti Huan bilan birga yetib keldi. Lúthien koʻprik ustida shunday sehrli qoʻshiq kuyladiki, Sauronning barcha maxluqlari uyquga ketdi.\n\nSauron bahaybat boʻri qiyofasida Huanga tashlanganida magʻlubiyatga uchradi va qalʼa kalitlarini Lúthienga topshirib qochdi. Lúthien oʻz qoʻshigʻi bilan qora qasr devorlarini agʻdardi va Berenni qutqardi."
+    },
+    {
+      "title": "Angband qaʼrida Morgothni uyquga ketkazish",
+      "content": "Beren va Lúthien qora maxluqlar qiyofasiga kirib Angbandning eng chuqur tubsizligiga — Morgothning taxti oldiga kirib bordilar. Lúthien Morgoth va uning butun qora saroyi oldida sehrli raqs tushib, afsun qoʻshigʻini kuyladi.\n\nUning ovozi shunchalik qudratli ediki, hatto qora Vala Morgoth ham oʻz taxtida hushidan ketib uxlab qoldi va temir toji polga dumalab tushdi. Beren xanjar bilan tojdagi Silmarillardan birini kesib oldi. Qochish chogʻida Angband eshigi posboni bahaybat boʻri Carcharoth Berenning Silmaril ushlagan qoʻlini tishlab uzib yutib yubordi."
+    },
+    {
+      "title": "Mandos oldidagi marsiya va foniylik inʼomi",
+      "content": "Thingol huzuriga qaytganlaridan soʻng, Carcharoth Doriathga bostirib kirdi. Vahshiy boʻri oʻldirildi, ammo Beren ham ogʻir yaralanib jon berdi. Lúthienning qaygʻusi shunchalik cheksiz ediki, uning ruhi tanasini tark etib Mandos Zallariga yetib bordi.\n\nMandos taxti oldida Lúthien butun olam tarixidagi eng taʼsirli va fojiaviy marsiyani kuyladi. Hech qachon rahm qilmagan qattiqqoʻl Vala Mandos ilk bor koʻzyosh toʻkdi. Manwë va Eru Ilúvatar irodasi bilan Lúthienga tengsiz tanlov berildi: yo Valinorda boqiy yashash, yo Beren bilan birga foniy inson sifatida Oʻrta-yerga qaytib, oʻlim inʼomini baham koʻrish.\n\nLúthien foniylikni tanladi. Ular Tol Galenda tinch va baxtli hayot kechirdilar. Ularning oʻgʻli Dior orqali Elrond, Elros va Aragorn sulolasi — insonlar va elflarning eng yuksak nasli vujudga keldi."
+    }
+  ],
+  "sources": [
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of Beren and Lúthien",
+      "page": "162"
+    },
+    {
+      "book_slug": "beren-and-luthien",
+      "chapter": "The Tale of Tinúviel & The Lay of Leithian",
+      "page": "27"
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "A Knife in the Dark",
+      "page": "191"
+    },
+    {
+      "book_slug": "letters-of-jrr-tolkien",
+      "chapter": "Letter 340 (To Christopher Tolkien, 11 July 1972)",
+      "page": "420"
+    }
+  ],
+  "related_characters": [
+    "beren",
+    "thingol",
+    "melian",
+    "finrod",
+    "mandos",
+    "sauron",
+    "melkor",
+    "elwing",
+    "elrond",
+    "arwen",
+    "aragorn"
+  ],
+  "adaptations": []
+}

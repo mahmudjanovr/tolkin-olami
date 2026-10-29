@@ -1,0 +1,79 @@
+{
+  "id": "unfinished-tales",
+  "title_uz": "Tugallanmagan Afsonalar",
+  "title_original": "Unfinished Tales of Númenor and Middle-earth",
+  "aliases": [
+    "Tugallanmagan Afsonalar",
+    "Unfinished Tales",
+    "Númenor va Oʻrta-yer Tugallanmagan Qissalari",
+    "UT"
+  ],
+  "publication_year": 1980,
+  "publisher": "George Allen & Unwin",
+  "category": "posthumous_reconstructed",
+  "editor": "Christopher Tolkien",
+  "isbn": "978-0-261-10362-7",
+  "cover_image": {
+    "src": "/images/books/unfinished-tales.webp",
+    "alt": "Tugallanmagan Afsonalar birinchi nashri original changqopi (George Allen & Unwin, 1980) — J.R.R. Tolkien chizgan naqshinkor ajdarsimon dubulgʻa timsoli",
+    "edition_title": "First Edition Dust Jacket (George Allen & Unwin, 1980)",
+    "publisher": "George Allen & Unwin",
+    "year": 1980,
+    "isbn": "978-0-261-10362-7",
+    "artist": "J.R.R. Tolkien",
+    "source": "George Allen & Unwin / British Library"
+  },
+  "synopsis": "«Tugallanmagan Afsonalar» (Unfinished Tales of Númenor and Middle-earth) — J.R.R. Tolkien qalamiga mansub, Christopher Tolkien tomonidan batafsil ilmiy izohlar va matn variantlari bilan 1980-yilda chop etilgan fundamental toʻplam. Ushbu kitob «Silmarillion»dan farqli ravishda, matnlarni yagona sunʼiy syujetga birlashtirmasdan, balki otasining asl qoralamalarini oʻzgarishsiz, parcha-parcha holatda taqdim etadi. Kitob toʻrt qismdan iborat boʻlib, Birinchi, Ikkinchi va Uchinchi Davrlarning eng qorongʻu va qiziqarli nuqtalarini, shuningdek Istari (Sehrgarlar), Palantíri (Koʻruvchi Toshlar) va Drúedain xalqi haqidagi maxsus tadqiqotlarni qamrab oladi.",
+  "detailed_sections": [
+    {
+      "title": "Birinchi Davr: Tuorning Vinyamarga safari va Narn i Chîn Húrin",
+      "content": "Birinchi qism ikki yirik durdonani oʻz ichiga oladi. «Of Tuor and his Coming to Gondolin» — Tolkienning eng yetuk nasriy asarlaridan biri boʻlib, Tuorning dengiz xudosi Ulmo amri bilan Nevrastdagi tashlandiq Vinyamar saroyiga kelishi, u yerdagi qurol-aslahalarni kiyishi va Ulmoning toʻlqinlar qaʼridan bevosita namoyon boʻlishi tasvirlanadi. Ikkinchi asar — «Narn i Chîn Húrin» (Húrin farzandlari dostoni) boʻlib, Túrin Turambarning fojiasi «Silmarillion»dagidan ancha batafsil, qahramonning ruhiy iztiroblari, Beleg Cúthalion bilan doʻstligi va Nargothronddagi xatolari toʻliq ochib beriladi."
+    },
+    {
+      "title": "Ikkinchi Davr: Númenor tavsifi va Aldarion hamda Erendis",
+      "content": "Ikkinchi qism Númenor orolining geografiyasi, florasi va maʼmuriy boʻlinishini xaritalar bilan tasvirlashdan boshlanadi. Bu yerda Oʻrta-yerdagi eng noyob psixologik qissa — «Aldarion and Erendis: The Mariner's Wife» (Dengizchining xotini) oʻrin olgan. Unda buyuk kema ustasi shahzoda Aldarionning dengizga boʻlgan cheksiz muhabbati bilan uning rafiqasi Erendisning quruqlik va oʻrmonlarga bogʻliqligi oʻrtasidagi fojiaviy nizo qalamga olinadi. Shuningdek, Elros xonadoni shohlarining toʻliq roʻyxati va Galadriel hamda Celebornning Ikkinchi Davrdagi sarguzashtlari, ularning Eregion va Lórien bilan aloqalari haqidagi ziddiyatli qoralamalar keltiriladi."
+    },
+    {
+      "title": "Uchinchi Davr: Nargis maydonlari fojiasi, Cirion va Eorl qasami",
+      "content": "Uchinchi qism «Uzuklar Hukmdori» voqealarining bevosita tarixiy ildizlarini yoritadi. «The Disaster of the Gladden Fields» Isildurning Yagona Uzuk bilan birga orklar pistirmasiga tushib halok boʻlishi jarayonini soatma-soat koʻrsatadi. «Cirion and Eorl» dostonida esa Gondor noibi Cirion va Éothéod yetakchisi Eorl Yosh oʻrtasida Halifirien tepaligidagi Elendil qabri ustida ichilgan tarixiy qasam, Rohanning tashkil topishi va ikki xalqning abadiy doʻstligi hikoya qilinadi. «The Quest of Erebor» qismida esa Gandalf Minas Tirithda qahramonlarga nima sababdan Bilboni Erebor safariga qoʻshganini va Smaugni yoʻq qilish Sauronning shimoliy rejasini qanday barbod etganini soʻzlab beradi."
+    },
+    {
+      "title": "Toʻrtinchi Qism: Istari ordeni, Palantíri va Drúedain sirlari",
+      "content": "Toʻrtinchi qism Oʻrta-yer mifologiyasining maxsus tushunchalariga bagʻishlangan. «The Drúedain» qadimgi oʻrmon yovvoyi odamlari (Woses) va ularning gʻayritabiiy tosh haykallari haqida maʼlumot beradi. «The Istari» inshosi Sehrgarlar ordenining kelib chiqishi, Gandalfning nima sababdan Valinorda Olórin deb atalgani, Radagastning xatosi va Ikki Moviy Sehrgar (Alatar va Pallando) taqdirini yoritadi. «The Palantíri» esa yettita Koʻruvchi Toshning qanday ishlashi, ularning fikr uzatish mexanikasi, Saruman va Denethorning toshlar orqali Sauron ruhiy taʼsiriga tushib qolishi sabablarini texnik va falsafiy jihatdan tahlil qiladi."
+    },
+    {
+      "title": "Aldarion va Erendis: Oʻrta-yerdagi eng realistik psixologik drama",
+      "content": "«Tugallanmagan Afsonalar» kitobidagi «Dengizchining xotini» (Aldarion and Erendis) qissasi Tolkien ijodida mutlaqo betakror oʻrin tutadi. Bu yerda yovuz maxluqlar, orklar yoki sehrli uzuklar yoʻq; butun fojia ikki insonning xarakteri, dunyoqarashi va turmush tarzi oʻrtasidagi murosasiz ziddiyatdan kelib chiqadi. Aldarion — dengizga oshiq, nomaʼlum ufqlar sari talpinuvchi buyuk kemasoz; Erendis esa oʻz oʻrmonlari va osoyishta zaminiga bogʻlangan magʻrur ayol. Ularning bir-birini sevsalar-da, bir-biriga yon bosa olmasliklari, yolgʻizlik va nafratga aylangan muhabbati Tolkienning inson psixologiyasini qanchalik chuqur his qilganini koʻrsatadi."
+    },
+    {
+      "title": "Palantíri sirlari: Maʼlumotlar uzatish va ruhiy manipulyatsiya",
+      "content": "Kitobning toʻrtinchi qismidagi «Koʻruvchi Toshlar» (The Palantíri) inshosi Oʻrta-yer texnologiyasi va maʼlumotlar xavfsizligining ajoyib tahlilidir. Tolkien Fëanor tomonidan yasalgan yettita toshning qanday qilib fikr va tasvirlarni uzoq masofaga uzatishini, toshlar yolgʻon koʻrsata olmasligini, biroq Sauron qanday qilib haqiqatning faqat bir qismini koʻrsatish orqali Denethorni umidsizlikka tushirgani va Sarumanni oʻziga boʻysundirganini tushuntiradi. Bu insho zamonaviy axborot urushlari, manipulyatsiya va haqiqatni buzib koʻrsatish mexanizmlarining dahoona bashoratidir."
+    },
+    {
+      "title": "Nargis maydonlari fojiasi (Disaster of the Gladden Fields)",
+      "content": "«Tugallanmagan Afsonalar» kitobidagi eng muhim tarixiy parchalardan biri — Isildurning Ikkinchi Davr 3441-yilda Sauron yengilganidan soʻng Shimolga, Arnor poytaxtiga qaytayotganda yuz bergan halokati haqidagi bobdir. Isildur oʻzining ikki yuz nafar saralangan Dúnedain otliqlari va uch toʻngʻich oʻgʻli (Elendur, Aratan, Ciryon) bilan Gladden daryosi vodiysidan oʻtayotganida, togʻlardan bostirib tushgan ikki mingdan ortiq orklar pistirmasiga duch keladi. Dúnedain jangchilari afsonaviy poʻlat mudofaa doirasini hosil qilib soʻnggi nafasgacha kurashadilar. Elendur otasiga Uzukni qutqarish uchun daryodan suzib qochishni yolvorib soʻraydi. Isildur Yagona Uzukni barmogʻiga taqib daryoga sakraydi, ammo Uzuk oʻz xoʻjayiniga xiyonat qilib, suv ostida barmogʻidan sirgʻalib tushadi. Suv yuziga chiqqan Isildurni orklar payqab qolib, oʻqlar bilan oʻldiradilar. Narsil qilichi parchalari Oxtar tomonidan Rivendellga yetkaziladi. Ushbu bob Yagona Uzukning Uchinchi Davrda qanday qilib yoʻqolib qolganini soatbay aniqlikda tushuntiruvchi yagona kanonik manbadir."
+    },
+    {
+      "title": "Oʻzbek kitobxonlari uchun ahamiyati va tarjima istiqbollari",
+      "content": "«Tugallanmagan Afsonalar» asari oʻzbek adabiy muhitida Oʻrta-yer mifologiyasining ichki mexanizmlarini chuqur anglash uchun eng muhim manba hisoblanadi. Asarda keltirilgan qahramonlarning ruhiy monologlari, geografik va texnik tavsiflar (ayniqsa Palantíri va Istari haqidagi insholar) oʻzbek tilida adabiy-ilmiy atamalarning boyishiga xizmat qiladi. Hozirda ushbu kitob toʻliq oʻzbek tiliga tarjima qilinmagan boʻlsa-da, «Tolkien Olami» portali doirasidagi ushbu tahlillar boʻlajak professional tarjimalar uchun mustahkam akademik poydevor yaratadi."
+    }
+  ],
+  "key_themes": [
+    "Matnshunoslik evolyutsiyasi va qoralamalar qimmati",
+    "Oila, muhabbat va ruhiy begonalashuv",
+    "Geostrategik siyosat va tarixiy tasodiflar poydevori",
+    "Ilohiy vazifadorlik va Istari burchi"
+  ],
+  "uzbek_editions": [
+    {
+      "title": "Tugallanmagan Afsonalar",
+      "translator": "Ilmiy guruh",
+      "publisher": "Nashrga tayyorlanmoqda",
+      "year": 2026,
+      "format": "Akademik nashr",
+      "notes": "Oʻzbek tilida toʻliq nashr etilmagan; manbashunoslik tahlillari ushbu platformada berilgan.",
+      "status": "untranslated"
+    }
+  ],
+  "translation_status_summary": "Oʻzbek tilida toʻliq rasmiy nashr etilmagan (untranslated)."
+}

@@ -1,0 +1,94 @@
+{
+  "id": "maedhros",
+  "name": "Maedhros Baland",
+  "original_name": "Maitimo (Nelyafinwë)",
+  "father_name": "Fëanor",
+  "mother_name": "Nerdanel Dono",
+  "children": [],
+  "aliases": [
+    "Nelyafinwë (Quenya: Uchinchi Finwë)",
+    "Maitimo (Kelishgan qomatli)",
+    "Russandol (Mis-qizil boshli)",
+    "Erchamion (Bir qoʻlli)"
+  ],
+  "titles": [
+    "Fëanor Xonadoni Boshligʻi",
+    "Himring va Sharqiy Chegaralar Hukmdori",
+    "Maedhros Ittifoqi Asoschisi"
+  ],
+  "race": "elflar",
+  "sub_race": "Noldor",
+  "culture": "Tirion / Himring",
+  "birth_year": "Daraxtlar davri",
+  "death_year": "Birinchi davr 587 (Silmaril bilan birga olovli jarlikka oʻzini tashlagan)",
+  "house_id": "finwe-xonadoni",
+  "weapons_and_artifacts": [
+    "Silmaril (Birinchi davr yakunida Eönwë qarorgohidan olib qochilgan)",
+    "Himring qilichi (chap qoʻlda tutilgan)"
+  ],
+  "primary_locations": [
+    "formenos",
+    "mithrim",
+    "tirion",
+    "beleriand"
+  ],
+  "textual_status": "posthumous_edited",
+  "summary": "Fëanor va Nerdanelning yetti oʻgʻlining toʻngʻichi, mis-qizil sochli buyuk sarkarda va diplomat. Fingon tomonidan Thangorodrimdan qutqarilgach, Noldor Oliy Qirolligi tojidan amakisi Fingolfin foydasiga voz kechgan, Himring tepaligini qahramonlarcha mudofaa qilgan, biroq otasining mudhish Qasamyodi tufayli fojiali yakunga uchragan shahzoda.",
+  "etymology": "Sindarin tilidagi 'Maedhros' ismi Quenya tilidagi 'Maitimo' ('Chiroyli qomatli') va 'Russandol' ('Mis-qizil sochli' — onasi Nerdanelning otasi Mahtanga tortgan) nomlarining birlashmasidan hosil boʻlgan.",
+  "biography_sections": [
+    {
+      "title": "Qasamyod, Losgar olovi va Thangorodrim tutqunligi",
+      "content": "Maedhros Fëanorning toʻngʻich oʻgʻli boʻlib, olti ukasi bilan birga Tirionda otasining mudhish Qasamyodini takrorladi. Biroq Fëanor Losgarda Teleri kemalarini yoqib yuborganida, Maedhros doʻsti Fingon va Fingolfin qoʻshiniga xiyonat qilishdan bosh tortib, chetda turdi.\n\nFëanor halok boʻlgach, Morgoth muzokara bahonasida Maedhrosni tuzoqqa tushirib asir oldi va uni Thangorodrimning tik qoyasiga oʻng bilagidan temir xalqa bilan osib qoʻydi. Oʻttiz yillik azobdan soʻng Fingon Thorondor yordamida uning oʻng qoʻlini bilagidan kesib qutqardi. Shundan keyin Maedhros chap qoʻli bilan qilich oʻynatishni avvalgidan ham dahshatli darajada oʻzlashtirdi."
+    },
+    {
+      "title": "Tojdan voz kechish va Himring mudofaasi",
+      "content": "Qutqarilgach, Maedhros Losgardagi xiyonat uchun tavba va minnatdorchilik sifatida ukalarining noroziligiga qaramay Noldor Oliy Qirolligi huquqidan amakisi Fingolfin foydasiga voz kechdi. Oʻz ukalari janjal chiqarmasligi uchun ularni Sharqiy Beleriand chegaralariga olib ketdi va Himring tepaligida mustahkam qalʼa qurdi.\n\nDagor Bragollach jangida barcha atrofdagi elatlar qulaganida ham Maedhrosning Himring qalʼasi yengilmadi. Beren va Lúthien jasoratidan ruhlangan Maedhros Morgothga qarshi buyuk 'Maedhros Ittifoqi'ni tuzdi, ammo Nirnaeth Arnoediad jangida Ulfangning xiyonati sababli uning qoʻshini tor-mor etildi."
+    },
+    {
+      "title": "Qasamyod qulligi va Olovli jarlikdagi oʻlim",
+      "content": "Yillar oʻtib, mudhish Fëanor Qasamyodi Maedhros va ukalarini Doriathga (Dior ustiga) va Sirion quyilishiga hujum qilishga majbur etdi. Bundan qattiq vijdon azobida qolgan Maedhros va Maglor yetim qolgan Elrond va Elrosni oʻz farzandlaridek mehr bilan tarbiyalab oʻstirdilar.\n\nGʻazab Urushi yakunida Maedhros va Maglor Eönwë qarorgohidan qolgan ikki Silmarilni olib qochdilar. Ammo toʻkilgan begunoh qonlar tufayli muqaddas gavhar Maedhrosning qolgan yagona qoʻlini ayovsiz kuydirdi. Silmarilga boʻlgan huquqlari abadiy boy berilganini va Qasamyod bekor ekanini anglagan Maedhros chidab boʻlmas dard ichida Silmaril bilan birga yerning olovli yorigʻiga oʻzini tashlab halok boʻldi."
+    },
+    {
+      "title": "Thangorodrim qoyasidagi zanjirbandlik va Fingon najoti",
+      "content": "Maedhros Fëanorning to'ng'ich o'g'li bo'lib, otasining vafotidan so'ng Noldor yetakchiligini o'z zimmasiga oldi. Morgoth uni elchilik muzokaralarida ayyorona asir olib, o'ng qo'lidan temir bilaguzuk bilan Thangorodrim cho'qqisiga zanjirband qildi. U yerda ko'p yillar azob chekkan Maedhrosni uning sodiq do'sti Fingon Buyuk Burgut Thorondor yordamida qutqardi. Qo'lini bilaguzukdan chiqarishning iloji bo'lmagani sababli Fingon uning o'ng bilagini kesishga majbur bo'ldi. Maedhros chap qo'lida qilich tutishni o'rgandi va avvalgidan ham xatarli jangchiga aylandi."
+    },
+    {
+      "title": "Oliy Shohlikdan voz kechish va qonli qismatning intihosi",
+      "content": "Noldor orasida birlikni saqlab qolish uchun Maedhros Oliy Shohlik huquqini amakisi Fingolfinga topshirdi. U Sharqiy Beleriandda Himring qal'asini qurib, 'Maedhros Ittifoqi'ni tuzdi. Biroq otasining qarg'ishi uning taqdirini qora kulfat bilan ta'qib qildi: u Doriath va Sirion bandargohlaridagi ikkita qonli Qirg'inga boshchilik qilishga majbur bo'ldi. G'azab Urushidan so'ng Eönwë qarorgohidan Silmarilni o'g'irladi, ammo tosh uning qotil qo'llarini olovdek yondirgani sababli, cheksiz pushaymonlik va ruhiy azob ichida yer yorig'idagi tubsiz olovga o'zini tashlab halok bo'ldi. Maedhrosning fojeasi butun Tolkien asarlaridagi eng taʼsirli dramatik chiziqlardan biridir. U qalbida adolat va doʻstlikni saqlashga intilgan boʻlsa-da, qasamyodning qora kishanlari uni qayta-qayta gunohga boshladi. Uning ruhiy azoblari va oʻlimi qasamyodning halokatli qudratini abadiy eslatib turadi."
+    }
+  ],
+  "sources": [
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of the Flight of the Noldor",
+      "page": "83"
+    },
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of the Return of the Noldor",
+      "page": "110"
+    },
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of the Fifth Battle: Nirnaeth Arnoediad",
+      "page": "188"
+    },
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of the Voyage of Eärendil and the War of Wrath",
+      "page": "253"
+    }
+  ],
+  "related_characters": [
+    "feanor",
+    "nerdanel",
+    "maglor",
+    "curufin",
+    "fingolfin",
+    "fingon",
+    "elrond",
+    "elros",
+    "melkor"
+  ],
+  "adaptations": []
+}

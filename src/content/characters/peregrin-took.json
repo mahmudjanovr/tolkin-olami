@@ -1,0 +1,94 @@
+{
+  "id": "peregrin-took",
+  "name": "Peregrin Tuk (Pippin)",
+  "original_name": "Peregrin Took (Razanur Tûk)",
+  "father_name": "Paladin II Tuk (Shayr Tani)",
+  "mother_name": "Eglantin Benks",
+  "spouse": "Olmos (Diamond of Long Cleeve)",
+  "children": [
+    "Faramir I Tuk"
+  ],
+  "aliases": [
+    "Pippin",
+    "Ernil i Pheriannath (Yarimboʻylilar shahzodasi)",
+    "Qalʼa soqchisi (Guard of the Citadel)",
+    "Tuk XXXII (Shayr Tani)"
+  ],
+  "titles": [
+    "Uzuk Birodarligi aʼzosi",
+    "Minas Tirit Qalʼasi ritsari",
+    "Shayr Tani (Thain of the Shire)",
+    "Shimoliy Shohlik maslahatchisi"
+  ],
+  "race": "xobbitlar",
+  "sub_race": "Fallohayd avlodi",
+  "culture": "Shayr xobbitlari (Buyuk Smial)",
+  "birth_year": "U.D. 2990",
+  "death_year": "T.D. 63 dan keyin (Gondorda dafn etilgan)",
+  "house_id": "shayr-xonadonlari",
+  "weapons_and_artifacts": [
+    "Gʻarbqoʻrgʻon (Barrow-downs) xanjari (keyinchalik Qora Darvoza oldida Troll boshligʻini oʻldirgan)",
+    "Minas Tirit Qalʼasi soqchisining kumush va qora zirhi hamda Oq Daraxt dubulgʻasi"
+  ],
+  "primary_locations": [
+    "the-shire",
+    "rivendell",
+    "fangorn",
+    "isengard",
+    "minas-tirith"
+  ],
+  "textual_status": "author_published",
+  "summary": "Uzuk Birodarligining eng yosh aʼzosi, Frodo Begginsning sodiq hamrohi va Gondor Qalʼasi ritsari. Minas Tirit qamali chogʻida Faramirning hayotini saqlab qolgan, Qora Darvoza jangida qahramonlik koʻrsatgan va keyinchalik Shayrning oʻttiz ikkinchi Tani boʻlgan.",
+  "biography_sections": [
+    {
+      "title": "Yoshlik qiziquvchanligi va Uzuk Birodarligi",
+      "content": "Peregrin Tuk Shayrning eng boy va sarguzashtsevar Tuk xonadonining merosxoʻri boʻlib, Birodarlik aʼzolari orasida hali voyaga yetmagan (xobbitlar mezoniga koʻra 33 yoshga toʻlmagan) yagona ishtirokchi edi. Uning bolalarcha qiziquvchanligi Moria konlarida quduqqa tosh tashlab, orklarni uygʻotib yuborishiga, keyinroq esa Izengard oʻljasi boʻlgan Ortank Palantiriga qarashiga sabab boʻlgan. Biroq aynan Palantir voqeasi Sauronni chalgʻitib, Dushmanni Yagona Uzuk Pippinning qoʻlida ekaniga ishontirgan va Frodoning Mordorga sezdirmay kirishiga yordam bergan."
+    },
+    {
+      "title": "Minas Tirit qasamyodi va Faramirning qutqarilishi",
+      "content": "Gendalf Pippinni xavfsizlik uchun Minas Tiritga olib borganida, Boromirning halok boʻlganidan qaygʻuga botgan Noib Denetor II oldida Pippin minnatdorchilik va gʻurur bilan Gondorga xizmat qilishga qasamyod ichgan. Minas Tirit qamali vaqtida aqldan ozgan Denetor oʻzining yarador oʻgʻli Faramirni tiriklayin yoqib yubormoqchi boʻlganida, Pippin oʻz qasamyodidan voz kechib, Beregond va Gendalfni yordamga chaqirgan hamda Faramirni olovdan qutqarib qolgan."
+    },
+    {
+      "title": "Qora Darvoza jangi va Shayr Tani",
+      "content": "Morannon (Qora Darvoza) oldidagi soʻnggi jangda Pippin Gondor soqchilari safida turib, doʻsti Beregondga hujum qilgan ulkan Olog-xay (trolllar sardori)ni oʻzining Gʻarbqoʻrgʻon xanjari bilan mahv etgan. Urushdan soʻng u Merri bilan birga Sarumanning bezorilariga qarshi Shayrni koʻtargan. T.D. 13-yilda u Shayr Tani unvonini meros qilib olgan, Buklend va Tuklendda boy kutubxona toʻplagan hamda hayotining soʻnggi yillarini Merri bilan birga Rohan va Gondorda oʻtkazib, qirol Elessar maqbarasi yoniga dafn etilgan."
+    },
+    {
+      "title": "Tooklar nasli, Palantír sinovi va Gondor Qal'asi Posboni",
+      "content": "Peregrin Took (Pippin) Buyuk Took sulolasining kenja vakili bo'lib, uning xarakterida xobbitlarga xos beg'uborlik va yashirin jasorat uyg'unlashgan edi. Orthanc palantíriga qiziquvchanlik bilan qarab Sauronning shaxsan o'zi bilan to'qnashganida ham, u hech qanday sirlarni fosh qilmadi va bu orqali Gandalfga qimmatli vaqt yutib berdi. Minas Tirithga kelgach, u Boromir jasorati evaziga Denethor II ga sadoqat qasamyodini ichdi va Qal'a Posboni (Guard of the Citadel) qora-kumush libosini kiydi."
+    },
+    {
+      "title": "Faramirni qutqarish, Morannon jangi va Thainlik davri",
+      "content": "Denethor Faramirni tiriklayin yoqmoqchi bo'lganida, Pippin o'z hayotini xatarga qo'yib Gandalf va Beregondni yordamga chaqirdi va Faramirni dahshatli o'limdan qutqarib qoldi. Morannon jangida u ulkan tog' trollini o'ldirib, o'zining mislsiz jangovar mahoratini ko'rsatdi. Shire ozod qilingach, Pippin Shire Thaini (Thain of the Shire) bo'ldi va uzoq yillar xalqqa xizmat qildi. U umrining oxirida Merry bilan birga Gondorga keldi va shon-sharaf bilan dafn etildi. Peregrin Tookning begʻubor samimiyati va cheksiz doʻstona vafosi eng qorongʻi kunlarda ham atrofdagilarga umid baxsh etgan. Uning Gondordagi xizmati va Faramirni oʻlimdan qutqarishi kichik xobbitlarning ham dunyo taqdirini oʻzgartira olishini isbotladi. Pippinning Minas Tirithdagi qahramonligi xobbitlar shaʼnini shohlar saroyida yuksaltirdi. Uning fidoyiligi va sadoqati doʻstlikning har qanday imperiya qudratidan ustun ekanini koʻrsatdi. Pippinning jasorati va vafodorligi butun Shire xalqi uchun abadiy gʻurur manbaiga aylandi."
+    }
+  ],
+  "etymology": "Haqiqiy Vestron tilidagi ismi Razanur Tûk boʻlib, «sayohatchi, musofir» maʼnosini beradi; Tolkien buni lotincha Peregrinus («sayohatchi») soʻziga moslab Peregrin (qisqartmasi Pippin) deb oʻgirgan.",
+  "sources": [
+    {
+      "book_slug": "the-fellowship-of-the-ring",
+      "chapter": "I kitob, 4-bob (Qoʻziqorinlarga yaqin yoʻl)",
+      "page": "86"
+    },
+    {
+      "book_slug": "the-two-towers",
+      "chapter": "III kitob, 11-bob (Ortank Palantiri)",
+      "page": "592"
+    },
+    {
+      "book_slug": "the-return-of-the-king",
+      "chapter": "V kitob, 1-bob (Minas Tirit) va 7-bob (Denetorning gulxani)",
+      "page": "747"
+    }
+  ],
+  "related_characters": [
+    "frodo-baggins",
+    "meriadoc-brandybuck",
+    "samwise-gamgee",
+    "gandalf",
+    "boromir",
+    "faramir",
+    "denethor-ii",
+    "treebeard",
+    "aragorn"
+  ],
+  "adaptations": []
+}

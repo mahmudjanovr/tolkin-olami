@@ -1,0 +1,80 @@
+{
+  "id": "tuor",
+  "name": "Tuor",
+  "original_name": "Tuor Eladar",
+  "father_name": "Huor (Húrinning ukasi)",
+  "mother_name": "Rían (Belegund qizi)",
+  "spouse": "Idril Celebrindal",
+  "children": [
+    "Eärendil Dengizchi"
+  ],
+  "aliases": [
+    "Ulmondil (Ulmo Doʻsti)",
+    "Oqarnu Qanoti Sardori"
+  ],
+  "titles": [
+    "Ulmoning Elchisi",
+    "Gondolinning Oqqush Qanoti Xonadoni Boshligʻi",
+    "Eldar Qatoriga Qoʻshilgan Yagona Foniy"
+  ],
+  "race": "insonlar",
+  "sub_race": "Edain (Hador Xonadoni — keyinchalik Eldar boqiyligi berilgan)",
+  "culture": "Mithrim / Gondolin / Sirion",
+  "birth_year": "Birinchi davr 472",
+  "death_year": "Boqiy (Idril bilan Valinorga suzib ketib, Noldor qatoriga qabul qilingan)",
+  "house_id": "elros-va-gondor-shohlari",
+  "weapons_and_artifacts": [
+    "Dramborleg (Gondolinda besh barobar zarba beruvchi ulkan jangovar bolta — keyinchalik Númenor qirollari merosi)",
+    "Vinyamardagi Ulmo qalqoni, dubulgʻasi va zirhi"
+  ],
+  "primary_locations": ["mithrim", "gondolin", "beleriand"],
+  "textual_status": "posthumous_edited",
+  "uncertainty_notes": "Tolkien 1954-yilda Peter Hastingsga yozgan 153-maktubida ('Letters of J.R.R. Tolkien') Tuorning boqiylikka oʻtishi Lúthienning foniylikka oʻtishi kabi Eru Ilúvatarning toʻgʻridan-toʻgʻri va yagona istisno irodasi ekanini, Arda tarixida faqatgina Tuor qoni oʻzgartirilib Eldar qatoriga qoʻshilganini tasdiqlagan.",
+  "summary": "Nirnaeth Arnoediad qahramoni Huorning oʻgʻli, Húrinning jiyani va Túrinning amakivachchasi. Vala Ulmo tomonidan tanlanib, yashirin Gondolinga elchi boʻlib borgan, Turgonning qizi Idrilga uylanib, Eärendilni dunyoga keltirgan va Gondolin qulaganida Maeglinni oʻldirib, omon qolgan xalqni qutqargan buyuk qahramon.",
+  "etymology": "Sindarin va Edain tillarida 'Tuor' — 'Kuch-quvvat, Gʻayratli Himoyachi' maʼnosini anglatadi.",
+  "biography_sections": [
+    {
+      "title": "Mithrim elflari tarbiyasi va Vinyamardagi Ulmo zuhuri",
+      "content": "Tuor otasi Huor Nirnaeth Arnoediad jangida halok boʻlganidan soʻng tugʻildi. Onasi Rían uni Mithrimning kulrang elflari sardori Annaël tarbiyasiga topshirib, oʻzi Huorning jasadi qolgan Haudh-en-Ndenginda vafot etdi. Oʻn olti yoshida Tuor Sharqlik Lorgan qoʻliga qul boʻlib tushdi, uch yildan soʻng qochib chiqib, Androth gʻorlarida yovvoyi bosqinchilarga qarshi yolgʻiz kurashdi.\n\nUlmo yuborgan yetti oqqushga ergashib, Tuor Nevrastdagi tashlandiq Vinyamar saroyiga keldi va Turgon u uchun qoldirib ketgan qalqon, qilich hamda dubulgʻani kiydi. Dengiz qirgʻogʻida Suvlar Hukmdori Ulmo unga shaxsan koʻrinib, oʻzining kumush ridosini yopdi va dengizda omon qolgan elf Voronwë hamrohligida Gondolinga borib, Turgonni ogohlantirishni buyurdi."
+    },
+    {
+      "title": "Gondolin shahzodasi, Maeglinning oʻldirilishi va Gʻarbga suzish",
+      "content": "Tuor Ulmoning soʻzlari bilan Gondolinga kirganida, Qirol Turgon amakisi Huorning bashoratini eslab, uni oʻz oʻgʻlidek qabul qildi. Tuor Oqqush Qanoti xonadoniga bosh boʻldi va Birinchi davrning 502-yilida Turgonning qizi Idril Celebrindalga uylandi; keyingi bahorda ulardan Eärendil tugʻildi.\n\nMorgoth qoʻshinlari Gondolinga bostirib kirganida, Tuor Dramborleg boltasi bilan Balroglardan beshtasini va orq sarkardasi Othrodni chopib tashladi, xiyonatkor Maeglinni devordan uloqtirdi hamda Idril va Glorfindel bilan qochqinlarni Sirion quyilishiga olib tushdi. Keksayganida dengiz sogʻinchi kuchaygan Tuor 'Eärrámë' ('Dengiz Qanoti') kemasini qurib, Idril bilan birga Gʻarbga suzib ketdi va Ilúvatar marhamati bilan boqiy Eldar safiga qabul qilindi."
+    }
+  ],
+  "sources": [
+    {
+      "book_slug": "the-fall-of-gondolin",
+      "chapter": "Of Tuor and his Coming to Gondolin",
+      "page": "145"
+    },
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of Tuor and the Fall of Gondolin",
+      "page": "238"
+    },
+    {
+      "book_slug": "unfinished-tales",
+      "chapter": "Of Tuor and his Coming to Gondolin",
+      "page": "17"
+    },
+    {
+      "book_slug": "letters-of-jrr-tolkien",
+      "chapter": "Letter 153 (To Peter Hastings, September 1954)",
+      "page": "193"
+    }
+  ],
+  "related_characters": [
+    "idril",
+    "earendil",
+    "turgon",
+    "ulmo",
+    "hurin",
+    "turin",
+    "maeglin",
+    "glorfindel",
+    "elros",
+    "elrond"
+  ],
+  "adaptations": []
+}

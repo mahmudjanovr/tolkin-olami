@@ -1,0 +1,73 @@
+{
+  "id": "radagast",
+  "name": "Radagast Qoʻngʻir",
+  "original_name": "Aiwendil",
+  "children": [],
+  "aliases": [
+    "Aiwendil (Quenya: Qushlar Doʻsti)",
+    "Radagast the Brown (Qoʻngʻir Radagast)",
+    "Qushlar Jinovchisi",
+    "Rhosgobel Xoʻjayini"
+  ],
+  "titles": [
+    "Istari (Sehrgarlar) Ordeni Aʼzosi",
+    "Yavannaning Elchisi",
+    "Oʻsimliklar va Jonivorlar Ustasi"
+  ],
+  "race": "ainur",
+  "sub_race": "Maia (Istar)",
+  "culture": "Valinor / Rhosgobel (Mirkwood)",
+  "birth_year": "Zamon yaralishidan avval (Uchinchi davr ~1000-yilda Oʻrta-yerga kelgan)",
+  "death_year": "Boqiy",
+  "weapons_and_artifacts": [
+    "Qoʻngʻir sehrgar hassasi"
+  ],
+  "primary_locations": ["rivendell", "bree"],
+  "textual_status": "author_published",
+  "uncertainty_notes": "'Unfinished Tales'dagi 'The Istari' essesida Tolkien Radagast Oʻrta-yerdagi oʻrmonlar va qushlarga haddan ziyod bogʻlanib qolgani uchun Sauronga qarshi siyosiy missiyasidan chetlashganini yozadi. Biroq u Saruman kabi xiyonat qilmagan; Yavanna unga aynan tabiat va jonivorlarni zulmatdan asrash vazifasini yuklagani bois, u oʻz burchini boshqacha shaklda bajargan deb baholanadi.",
+  "summary": "Valinordan Oʻrta-yerga yuborilgan besh Istari (Sehrgar)dan biri, Yavannaning xizmatkori. Mirkwood chetidagi Rhosgobelda yashab, qushlar va yovvoyi hayvonlar tilini mukammal bilgan, Buyuk Burgutlar (Gwaihir) orqali Gandalfni Orthanc tutqunligidan qutqarilishiga bevosita sababchi boʻlgan tabiat homiysi.",
+  "etymology": "Valinordagi Quenya ismi 'Aiwendil' — aiwë ('qush') va -(n)dil ('doʻst, sevuvchi') soʻzlaridan tuzilib, 'Qushlar Doʻsti' maʼnosini anglatadi. 'Radagast' esa Anduin vodiysi insonlari tilida 'Hayvonlar Gʻamxoʻri' deganidir.",
+  "biography_sections": [
+    {
+      "title": "Yavannaning tanlovi va Rhosgobel maskani",
+      "content": "Valinorda Manwë Sauronga qarshi Oʻrta-yerga elchilar yuborish uchun kengash chaqirganida, Yavanna Curumodan (Sarumandan) Aiwendilni ham oʻzi bilan birga olib ketishni talab qildi. Saruman bundan norozi boʻlsa-da, rad eta olmadi va keyinchalik Radagastga doimo past nazar bilan qaradi.\n\nOʻrta-yerga yetib kelgach, Radagast Elflar va Insonlar siyosatidan koʻra daraxtlar, giyohlar va yovvoyi hayvonlarga mehr qoʻydi. U janubiy Mirkwood (Yashil Oʻrmon) chegarasidagi Rhosgobelda oʻrnashib, Beorn va Tumanli Togʻlarning Buyuk Burgutlari bilan yaqin doʻstlik oʻrnatdi."
+    },
+    {
+      "title": "Halqa Urushidagi xizmati va Gwaihirning yuborilishi",
+      "content": "Uchinchi davrning 3018-yil yozida Saruman Radagastning soddadilligidan foydalanib, uni Gandalfni qidirib topishga va Nazgûllarning daragi haqida xabar berib, Gandalfni Isengardga yoʻllashga koʻndirdi. Radagast Bree yaqinida Gandalfni uchratib, Sarumanning xabarini halollik bilan yetkazdi.\n\nBiroq xiyonatdan bexabar Radagast Gandalfning iltimosini soʻzsiz bajarib, barcha qushlar va Burgutlar Hukmdori Gwaihirga xabarlar yigʻish va Isengardga yetkazish topshirigʻini berdi. Aynan shu buyruq tufayli Gwaihir Orthanc minorasi choʻqqisiga uchib kelib, tutqunlikdagi Gandalfni qutqarib oldi ва Sarumanning tuzogʻini chippakka chiqardi."
+    }
+  ],
+  "sources": [
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "The Council of Elrond",
+      "page": "256"
+    },
+    {
+      "book_slug": "the-hobbit",
+      "chapter": "Queer Lodgings",
+      "page": "114"
+    },
+    {
+      "book_slug": "unfinished-tales",
+      "chapter": "The Istari",
+      "page": "390"
+    }
+  ],
+  "related_characters": [
+    "gandalf",
+    "saruman",
+    "yavanna",
+    "manwe",
+    "elrond"
+  ],
+  "adaptations": [
+    {
+      "medium": "film",
+      "title": "The Hobbit Film Trilogy",
+      "creator": "Peter Jackson",
+      "year": 2012,
+      "divergence_notes": "Filmda Radagast quyonlar qo'shilgan chanada yuruvchi g'alati va komik chol sifatida ko'rsatilgan hamda Dol Guldurga shaxsan kiradi. Kitobda esa u vazmin, tabiat ilmining donishmand ustasi bo'lib, Bilbo safarida bevosita qatnashmaydi, faqat Gandalf va Beorn tomonidan hurmat bilan tilga olinadi."
+    }
+  ]
+}

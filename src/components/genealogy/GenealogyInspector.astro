@@ -1,0 +1,409 @@
+---
+/**
+ * TOLKIEN OLAMI — Nasabnoma Shaxs Inspektori (Genealogy Inspector)
+ *
+ * Desktopda oʻng paneldagi ilmiy kartochka, mobilda pastdan chiquvchi
+ * Bottom Sheet dialogi koʻrinishida ishlaydi.
+ * Standart holatda yopiq turadi va faqat biror shaxs tanlanganda ochiladi.
+ */
+---
+
+<aside id="genealogy-inspector" class="genealogy-inspector" aria-label="Shaxs tafsilotlari paneli" hidden>
+  <div class="inspector-card">
+    <div class="inspector-header">
+      <div class="header-titles">
+        <span class="inspector-badge" id="inspector-race-badge">Elflar</span>
+        <h3 class="person-title" id="inspector-name">—</h3>
+        <p class="person-original-name" id="inspector-original-name"></p>
+      </div>
+      <button
+        type="button"
+        id="inspector-close-btn"
+        class="inspector-close-btn"
+        aria-label="Inspektorni yopish"
+        title="Yopish (Escape)"
+      >
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <div class="inspector-body">
+      <!-- Unvonlar va Xronologiya -->
+      <div class="meta-grid">
+        <div class="meta-item">
+          <span class="meta-label">Unvoni:</span>
+          <span class="meta-value" id="inspector-titles">Nomaʼlum</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Davri / Yashagan yillari:</span>
+          <span class="meta-value" id="inspector-dates">Nomaʼlum</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Madaniyati:</span>
+          <span class="meta-value" id="inspector-culture">Oʻrta-yer</span>
+        </div>
+      </div>
+
+      <!-- Qisqacha ilmiy tavsif -->
+      <div class="person-summary-block">
+        <h4 class="block-heading">Ilmiy Tavsif</h4>
+        <p class="person-summary" id="inspector-summary"></p>
+      </div>
+
+      <!-- Matnshunoslik Noaniqligi / Ziddiyatli Nasab Izohi -->
+      <div class="uncertainty-callout" id="inspector-uncertainty-box" hidden>
+        <div class="callout-header">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="12" y1="8" x2="12" y2="12"></line>
+            <line x1="12" y1="16" x2="12.01" y2="16"></line>
+          </svg>
+          <strong>Matnshunoslik va Variantlar Izohi</strong>
+        </div>
+        <p class="uncertainty-text" id="inspector-uncertainty-text"></p>
+      </div>
+
+      <!-- Qarindoshlik Navigatsiyasi (Kinship Navigation) -->
+      <div class="kinship-section">
+        <h4 class="block-heading">Qarindoshlik Rishtalari</h4>
+        
+        <div class="kinship-group">
+          <span class="kinship-label">Ota-onasi:</span>
+          <div class="kinship-pills" id="inspector-parents-pills">
+            <span class="kinship-empty">Qayd etilmagan</span>
+          </div>
+        </div>
+
+        <div class="kinship-group">
+          <span class="kinship-label">Turmush oʻrtogʻi:</span>
+          <div class="kinship-pills" id="inspector-spouses-pills">
+            <span class="kinship-empty">Qayd etilmagan</span>
+          </div>
+        </div>
+
+        <div class="kinship-group">
+          <span class="kinship-label">Farzandlari:</span>
+          <div class="kinship-pills" id="inspector-children-pills">
+            <span class="kinship-empty">Qayd etilmagan</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Oksford Manbasi -->
+      <div class="citation-section">
+        <h4 class="block-heading">Oksford Akademik Iqtibosi</h4>
+        <blockquote class="citation-block">
+          <span class="citation-work" id="inspector-citation-work">The Lord of the Rings</span>
+          <span class="citation-section-text" id="inspector-citation-section">Appendices</span>
+        </blockquote>
+      </div>
+
+      <!-- Ensiklopedik Maqola Havolasi -->
+      <div class="article-link-section" id="inspector-article-section" hidden>
+        <a href="#" id="inspector-article-link" class="article-button">
+          <span>Ensiklopedik maqolani oʻqish</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M7 17l9.2-9.2M17 17V7H7"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</aside>
+
+<style>
+  .genealogy-inspector {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 360px;
+    max-height: calc(100% - 2rem);
+    background-color: var(--color-bg-base);
+    border: 1px solid var(--color-border-strong);
+    border-radius: 3px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    z-index: 30;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: transform 220ms ease, opacity 220ms ease;
+  }
+
+  [data-theme="night"] .genealogy-inspector {
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.45);
+    background-color: var(--color-bg-elevated);
+  }
+
+  .genealogy-inspector[hidden] {
+    display: none;
+  }
+
+  .inspector-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow-y: auto;
+  }
+
+  .inspector-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 1.25rem 1.25rem 0.75rem;
+    border-bottom: 1px solid var(--color-border-subtle);
+    background-color: var(--color-bg-elevated);
+  }
+
+  .header-titles {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .inspector-badge {
+    align-self: flex-start;
+    font-family: var(--font-sans-ui);
+    font-size: 0.6875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    padding: 0.15rem 0.5rem;
+    border-radius: 4px;
+    background-color: var(--color-accent-gold-subtle);
+    color: var(--color-accent-gold);
+    border: 1px solid var(--color-border-gold);
+  }
+
+  .person-title {
+    font-family: var(--font-serif-heading);
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0;
+    color: var(--color-text-primary);
+  }
+
+  .person-original-name {
+    font-family: var(--font-serif-heading);
+    font-style: italic;
+    font-size: 0.9375rem;
+    color: var(--color-text-secondary);
+    margin: 0;
+  }
+
+  .inspector-close-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: var(--color-text-secondary);
+    padding: 0.35rem;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 150ms ease, color 150ms ease;
+  }
+
+  .inspector-close-btn:hover {
+    background-color: var(--color-bg-subtle);
+    color: var(--color-text-primary);
+  }
+
+  .inspector-body {
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .meta-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    background-color: var(--color-bg-elevated);
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+    border: 1px solid var(--color-border-subtle);
+  }
+
+  .meta-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.125rem;
+  }
+
+  .meta-label {
+    font-family: var(--font-sans-ui);
+    font-size: 0.6875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-muted);
+  }
+
+  .meta-value {
+    font-family: var(--font-sans-ui);
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-text-primary);
+  }
+
+  .block-heading {
+    font-family: var(--font-serif-heading);
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0 0 0.5rem 0;
+    color: var(--color-text-primary);
+    border-bottom: 1px solid var(--color-border-subtle);
+    padding-bottom: 0.25rem;
+  }
+
+  .person-summary {
+    font-family: var(--font-serif-body);
+    font-size: 0.875rem;
+    line-height: 1.6;
+    color: var(--color-text-secondary);
+    margin: 0;
+  }
+
+  .uncertainty-callout {
+    background-color: var(--color-bg-elevated);
+    border-left: 3px solid var(--color-status-variant);
+    padding: 0.75rem 1rem;
+    border-radius: 0 6px 6px 0;
+  }
+
+  .callout-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: var(--font-sans-ui);
+    font-size: 0.75rem;
+    color: var(--color-status-variant);
+    margin-bottom: 0.35rem;
+  }
+
+  .uncertainty-text {
+    font-family: var(--font-sans-ui);
+    font-size: 0.8125rem;
+    line-height: 1.5;
+    color: var(--color-text-secondary);
+    margin: 0;
+  }
+
+  .kinship-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .kinship-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+
+  .kinship-label {
+    font-family: var(--font-sans-ui);
+    font-size: 0.6875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-muted);
+  }
+
+  .kinship-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+  }
+
+  :global(.kinship-pill) {
+    background-color: var(--color-bg-elevated);
+    border: 1px solid var(--color-border-strong);
+    color: var(--color-text-primary);
+    font-family: var(--font-sans-ui);
+    font-size: 0.75rem;
+    padding: 0.2rem 0.55rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 150ms ease, border-color 150ms ease, color 150ms ease;
+  }
+
+  :global(.kinship-pill:hover) {
+    background-color: var(--color-accent-gold-subtle);
+    border-color: var(--color-accent-gold);
+    color: var(--color-accent-gold-hover);
+  }
+
+  .kinship-empty {
+    font-family: var(--font-sans-ui);
+    font-size: 0.75rem;
+    font-style: italic;
+    color: var(--color-text-muted);
+  }
+
+  .citation-block {
+    margin: 0;
+    padding: 0.6rem 0.85rem;
+    background-color: var(--color-bg-elevated);
+    border-left: 2px solid var(--color-accent-gold);
+    border-radius: 0 4px 4px 0;
+    font-family: var(--font-serif-body);
+    font-size: 0.8125rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+  }
+
+  .citation-work {
+    font-style: italic;
+    font-weight: 600;
+    color: var(--color-text-primary);
+  }
+
+  .citation-section-text {
+    color: var(--color-text-muted);
+  }
+
+  .article-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+    padding: 0.6rem 1rem;
+    background-color: var(--color-forest);
+    border: 1px solid var(--color-forest-deep);
+    color: #FAF8F2;
+    font-family: var(--font-sans-ui);
+    font-size: 0.8125rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: background-color 150ms ease;
+  }
+
+  .article-button:hover {
+    background-color: var(--color-forest-deep);
+  }
+
+  /* Mobil Moslashuvchanlik (Bottom Sheet Mode) */
+  @media (max-width: 1023px) {
+    .genealogy-inspector {
+      position: fixed;
+      top: auto;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      max-height: 75vh;
+      border-radius: 16px 16px 0 0;
+      border-left: none;
+      border-right: none;
+      border-bottom: none;
+      box-shadow: 0 -8px 32px rgba(0, 0, 0, 0.25);
+    }
+  }
+</style>

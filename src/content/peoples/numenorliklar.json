@@ -1,0 +1,64 @@
+{
+  "id": "numenorliklar",
+  "name": "Númenorliklar",
+  "other_names": [
+    "Dúnedain",
+    "Târik-at-Khadim",
+    "Gʻarb Insonlari",
+    "Dengiz Qirollari"
+  ],
+  "race_category": "insonlar",
+  "divisions_and_clans": [
+    "Sodiqlar (Elendili — Valar va elflarga sadoqatli qatlam)",
+    "Qirol Odamlari (Ar-Adûnâim — Oʻlimdan qochuvchi va mustamlakachi firqa)"
+  ],
+  "origin_era": "Ikkinchi davr 32",
+  "associated_languages": [
+    "adunaic",
+    "westron",
+    "sindarin"
+  ],
+  "primary_realms": [
+    "numenor",
+    "osgiliath",
+    "pelargir"
+  ],
+  "textual_status": "author_published",
+  "summary": "Númenorliklar (Dúnedain / Gʻarb Shohlari) — Ikkinchi Davrda Buyuk Dengiz oʻrtasidagi Andor (Elenna) orolida yashagan, insoniyat tarixidagi eng qudratli dengiz imperiyasi va texnologik sivilizatsiyasiga asos solgan xalqdir. Ular oʻzlarining ulkan meʼmorchiligi, kemasozligi va uzoq umrlari bilan ajralib turganlar, biroq kibr va oʻlimdan qoʻrqish oqibatida butun qitʼalari okean qaʼriga gʻarq boʻlgan.",
+  "sources": [
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Akallabêth: The Downfall of Númenor",
+      "page": "259",
+      "notes": "Númenor sivilizatsiyasi, dengiz safari sanʼati va halokati."
+    },
+    {
+      "book_slug": "lotr-return",
+      "chapter": "Appendix A: Annals of the Kings and Rulers",
+      "page": "1032",
+      "notes": "Númenor qirollari shajarasi va Sodiqlarning Oʻrta-yerga qochishi."
+    }
+  ],
+  "description_sections": [
+    {
+      "title": "Yulduz Oroli va buyuk sivilizatsiya poydevori",
+      "content": "Birinchi Davr urushlarida Noldor bilan yelkama-yelka turgan Edain qabilalariga mukofot sifatida Valar dengiz oʻrtasida besh burchakli yulduz shaklidagi Númenor (Gʻarbdagi Oʻlka) orolini barpo etdilar. Uchinchi Davr boshlarida Elros (Tar-Minyatur) orolning birinchi qiroli boʻldi. Poytaxt Armenelos shahrida shohona qasrlar qad koʻtardi, orol markazidagi muqaddas Meneltarma choʻqqisi esa Yaratuvchi Eruga shukronalik keltiriladigan eng oliy ziyoratgohga aylandi. Númenorliklarga uzoq umr, cheksiz aql-zakovat va tabiat boyliklari berildi."
+    },
+    {
+      "title": "Dengizchilik qudrati va Oʻrta-yerdagi portlar",
+      "content": "Númenorliklar kemasozlik sanʼatida shunday yuksaklikka erishdilarki, ularning yogʻoch va poʻlat qoplamali kemalari barcha dengizlarni kezib chiqdi. Oltinchi shoh Tar-Aldarion Buyuk Dengizchilar Gildiyasiga asos soldi. Ular Oʻrta-yer qirgʻoqlariga kelib, Lond Daer, Pelargir va Umbar kabi ulkan istehkom-shaharlar qurdilar. Dastlab ular Oʻrta-yerning yovvoyi odamlariga shifokorlik, qonunchilik va dehqonchilikni oʻrgatuvchi murabbiylar boʻldilar; elflar bilan qalin doʻstlik oʻrnatdilar."
+    },
+    {
+      "title": "Maʼnaviy inqiroz va Qora Númenorliklar",
+      "content": "Biroq asrlar oʻtib, númenorliklar qalbida oʻlimdan qoʻrqish va Boqiy Gʻarbdagi elflarning boqiyligiga nisbatan hasad paydo boʻldi. Valar ularga oʻlim laʼnat emas, balki Eruning erkin inʼomi ekanini tushuntirishga urinishdi, ammo shohlar bu nasihatlarga quloq solmadilar. Ular Oʻrta-yer xalqlariga yordam berish oʻrniga, ularni shafqatsiz talovchi va qul qiluvchi zolimlarga aylandilar. Xalq ikki toifaga boʻlindi: aksariyat qismi — Shoh Odamlari (keyinchalik Qora Númenorliklar) va kam sonli Sadoqatlilar (Elendili)."
+    },
+    {
+      "title": "Akallabêth: Kibrning yakuniy toʻfoni",
+      "content": "Yigirma toʻrtinchi shoh Ar-Pharazôn Oʻrta-yerga qoʻshin tortib, Sauronni asir oldi. Bu Sauronning tuzogʻi edi: u tez orada qirolning yaqin maslahatchisiga aylanib, Armenelosda Melkor ibodatxonasini qurdirdi va insonlarni qurbonlik qila boshladi. Keksayib qolgan Ar-Pharazôn boqiylikni kuch bilan tortib olish uchun ulkan armada bilan Boqiy Yerlarga bostirib bordi. Eru Ilúvatar dengizlarni harakatga keltirdi: ulkan toʻlqin butun orolni yutib yubordi va sivilizatsiya dengiz tubiga choʻkdi. Faqat Elendil va uning oʻgʻillari toʻqqiz kemada qochib qutulib, Oʻrta-yerda yangi davrni boshladilar."
+    },
+    {
+      "title": "Memorchilik, fan va oʻlimdan qoʻrqish falsafasi",
+      "content": "Númenorliklar oʻz qudratining choʻqqisida Oʻrta-yer tarixidagi eng buyuk meʼmorlar va muhandislarga aylandilar. Ular Orthanc minorasi kabi sinmas qora toshdan binolar qurdilar, Anduin boʻylab mahobatli portlar barpo etdilar. Biroq ularning aql-zakovati oʻsgani sayin, oʻlim muqarrarligidan qoʻrquv ham kuchayib bordi. Ular oʻz shohlarini mumiyolash va bahaybat maqbaralar qurishga haddan ziyod berilib ketdilar. Oʻlimni Eru Ilúvatarning insonlarga bergan ozodlik inʼomi emas, balki qargʻish deb bilish ularning maʼnaviy qulashining bosh sababiga aylandi. Númenor kemasozlik sanʼati shunchalik taraqqiy etganki, ularning bahaybat oq yelkanli kemalari butun dunyo ummonlarini aylanib chiqishga qodir edi. Ular sharqiy va janubiy qitʼalarga madaniyat, qishloq xoʻjaligi va temirchilik ilmini olib bordilar, ammo oxir-oqibat oʻzlarining magʻrurliklari qurboni boʻldilar."
+    }
+  ]
+}

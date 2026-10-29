@@ -1,0 +1,66 @@
+{
+  "id": "maeglin",
+  "name": "Maeglin",
+  "original_name": "Lómion (Maeglin)",
+  "father_name": "Eöl Qorongʻi Elf",
+  "mother_name": "Aredhel Oq (Turgonning singlisi)",
+  "children": [],
+  "aliases": [
+    "Lómion (Quenya: Gʻira-shira Farzandi — onasi bergan ism)",
+    "Maeglin (Sindarin: Oʻtkir Nigoh — otasi bergan ism)"
+  ],
+  "titles": [
+    "Gondolin Shahzodasi",
+    "Koʻrshapalak (Mole) Xonadoni Sardori"
+  ],
+  "race": "elflar",
+  "sub_race": "Sindar / Noldor",
+  "culture": "Nan Elmoth / Gondolin",
+  "birth_year": "Birinchi davr ~320",
+  "death_year": "Birinchi davr 510 (Gondolin devorlaridan Tuor tomonidan uloqtirilgan)",
+  "house_id": "finwe-xonadoni",
+  "weapons_and_artifacts": [
+    "Anguirel (Eöl meteorit temiridan yasagan qora qilich — Anglachelning egizagi)"
+  ],
+  "primary_locations": ["gondolin", "beleriand"],
+  "textual_status": "posthumous_edited",
+  "summary": "Qorongʻi Elf Eöl va Fingolfin qizi Aredhelning oʻgʻli, Gondolin qiroli Turgonning jiyani. Togʻ maʼdanlarini topishda tengsiz usta va qudratli jangchi boʻlishiga qaramay, amakivachchasi Idrilga boʻlgan javobsiz ehtirosi hamda Tuorga hasadi oqibatida Morgothga yashirin Gondolinning joylashuvini sotgan mashʼum xoin.",
+  "etymology": "Sindarin tilida 'Maeglin' — maeg ('oʻtkir, teshib oʻtuvchi') va glîn ('koʻz, nigoh') soʻzlaridan tuzilib, 'Oʻtkir Nigoh' maʼnosini anglatadi. Onasi Aredhel unga yashirincha bergan Quenya ismi 'Lómion' esa 'Oqshom / Zulmat Oʻgʻli' deganidir.",
+  "biography_sections": [
+    {
+      "title": "Nan Elmoth zulmati va Gondolinga qochish",
+      "content": "Maeglin qorongʻi Nan Elmoth oʻrmonida temirchi Eöl va Gondolin malikasi Aredhel oilasida tugʻildi. U qomatda Noldor shahzodasidek kelishgan boʻlsa-da, feʼl-atvori otasi kabi kamgap, sirli va quyosh nuridan koʻra yerosti maʼdanlariga oshno edi.\n\nOnasining Noldor haqidagi hikoyalaridan ruhlangan Maeglin otasining Anguirel qilichini oʻgʻirlab, Aredhel bilan birga Gondolinga qochdi. Ortidan quvib kelgan Eöl Turgon saroyida Maeglinga zaharli nayza otdi; Aredhel oʻgʻlini toʻsib halok boʻldi, Eöl esa qoyadan uloqtirib qatl etildi. Oʻlimi oldidan Eöl Maeglinni ham oʻzi kabi jarlikka qulab oʻlishini qargʻadi."
+    },
+    {
+      "title": "Idrilga ehtiros, Morgoth tutqunligi va Xiyonat",
+      "content": "Turgon jiyani Maeglinni oʻz oʻgʻlidek ardoqladi; Maeglin Echoriath togʻlaridan temir va poʻlat qazib olib, Gondolin qurol-aslahalarini mislsiz darajada kuchaytirdi. Ammo u amakivachchasi Idrilni telbalarcha sevib qoldi; elf qonunlarida bunday yaqin qarindoshlik nikohi man etilgani va Idril Tuorni tanlagani Maeglinning qalbini qora hasadga toʻldirdi.\n\nTurgonning taqiqini buzib, togʻ tashqarisiga maʼdan qidirib chiqqan Maeglin orqlar tomonidan tutib olinib, Angbandga keltirildi. Morgothning qiynoqlaridan qoʻrqqan va Gondolin taxti hamda Idrilni qoʻlga kiritish vaʼdasiga uchgan Maeglin yashirin shaharning aniq yoʻlini va mudofaa sirlarini Morgothga sotdi. Gondolin qulagan kechada u Idril va Eärendilga hujum qilganida, Tuor u bilan tomda olishib, Maeglinni shahar devorlaridan Amon Gwareth jarligiga uloqtirib oʻldirdi va Eölning qargʻishi bajo boʻldi."
+    }
+  ],
+  "sources": [
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of Maeglin",
+      "page": "132"
+    },
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of Tuor and the Fall of Gondolin",
+      "page": "242"
+    },
+    {
+      "book_slug": "the-fall-of-gondolin",
+      "chapter": "The Fall of Gondolin",
+      "page": "165"
+    }
+  ],
+  "related_characters": [
+    "turgon",
+    "idril",
+    "tuor",
+    "earendil",
+    "melkor",
+    "glorfindel",
+    "fingolfin"
+  ],
+  "adaptations": []
+}

@@ -1,0 +1,123 @@
+{
+  "id": "galadriel",
+  "name": "Galadriel",
+  "original_name": "Artanis Nerwen",
+  "father_name": "Finarfin",
+  "mother_name": "Eärwen (Alqualondë Oqqushi)",
+  "spouse": "Celeborn Dono",
+  "children": [
+    "Celebrían (Elrondning rafiqasi)"
+  ],
+  "aliases": [
+    "Oltin Oʻrmon Sohibasi",
+    "Oʻrmon Malikasi",
+    "Artanis (Aslzoda qiz)",
+    "Nerwen (Erkak-qiz)",
+    "Oq Xonim",
+    "Lothlórien Bekasi"
+  ],
+  "titles": [
+    "Lothlórien Malikasi",
+    "Eldar Donishmandi",
+    "Eregionning Sobiq Hukmdori",
+    "Oq Kengash Aʼzosi"
+  ],
+  "race": "elflar",
+  "sub_race": "Noldor",
+  "culture": "Eldar (Noldor / Vanyar / Teleri sintezi)",
+  "birth_year": "Daraxtlar davri 1362",
+  "house_id": "finwe-xonadoni",
+  "weapons_and_artifacts": [
+    "Nenya (Oq Uzuk / Suv Uzugi - Olmos Uzuk)",
+    "Galadriel Koʻzgusi",
+    "Galadriel Billuri (Eärendil nuri shishasi)"
+  ],
+  "primary_locations": [
+    "lothlorien",
+    "tirion",
+    "doriath"
+  ],
+  "textual_status": "author_published",
+  "uncertainty_notes": "Matnshunoslik evolyutsiyasi: Tolkien oʻz umrining soʻnggi yillarida ('The History of Galadriel and Celeborn', Unfinished Tales) Galadrielning Noldor isyonidagi ishtirokini qayta koʻrib chiqqan. Kechki tahrirlarda Galadriel Fëanor qasamyodiga mutlaqo aloqador boʻlmagan, Alqualondëdagi qarindosh qirgʻinida Teleri tomonida turib jang qilgan va Oʻrta-yerga Valarning taqiqisiz, oʻz mustaqil kemasida suzib oʻtgan deb tasvirlangan. 1977-yilgi The Silmarillion nashrida esa u Noldor yetakchilari bilan birga Helcaraxë orqali oʻtgan deb qoldirilgan.",
+  "summary": "Finarfin va Eärwenning qizi, Noldorning eng ulugʻ, goʻzal va donishmand malikasi. Sochlarida Ikki Daraxt nurini jamlagan, Oʻrta-yerda Doriath, Eregion va Lothlórien hukmdori boʻlgan. Uchinchi davrda Nenya uzugi yordamida oʻz sarhadlarini vaqt va yemirilishdan saqlagan, Sauronga qarshi Oq Kengashni tashkil etgan hamda Frodo oldidagi Buyuk Sinovdan oʻtib, Gʻarbga qaytish marhamatiga sazovor boʻlgan muqaddas siymo.",
+  "etymology": "Onasi unga 'Nerwen' ('Erkaksimon qiz' — uning boʻyi balandligi va gʻayritabiiy jismoniy quvvati sababli), otasi esa 'Artanis' ('Aslzoda qiz') deb ism bergan. Sindarin tilidagi mashhur 'Galadriel' ismi uning sevgilisi Celeborn tomonidan berilgan boʻlib, galad ('nur, jilo') va rî/riell ('toj kiygan qiz') soʻzlaridan tuzilgan va 'Nur toj kiygan malika' maʼnosini bildiradi (uning oltin-kumush sochlari tojsimon oʻrilgani uchun).",
+  "biography_sections": [
+    {
+      "title": "Valinordagi hayot va Ikki Daraxt nuri",
+      "content": "Galadriel Finarfin va Eärwenning kenja qizi boʻlib, Valinorda Daraxtlar Davrining 1362-yilida dunyoga kelgan. Uning sochlari oltin va kumushning qoʻshilgan jilosidek porlardi, chunki ularda Laurelin va Telperion nuri aks etgan edi. Rivoyatlarga koʻra, hatto Fëanorning oʻzi ham Silmarillarni yaratishda aynan Galadriel sochlarining nurlaridan ilhomlangan.\n\nFëanor Noldorni Beleriandga boshlaganida, Galadriel qasamyod qilmagan boʻlsa-da, yangi oʻlkalarda oʻz qirolligiga ega boʻlish va Oʻrta-yerni koʻrish orzusida Helcaraxë muzliklarini piyoda kesib oʻtgan jasur elflar safida boʻldi."
+    },
+    {
+      "title": "Doriathdagi taʼlim va Celeborn bilan ittifoq",
+      "content": "Beleriandda Galadriel Doriath qirolligida qirol Thingol va Malika Melian huzurida uzoq yillar yashadi. U dono Maia Meliandan chuqur ruhiy saboqlar, tabiat sirlari va oʻz oʻlkasini himoya qilish ilmini oʻrgandi. U yerda Teleporno (Celeborn) bilan tanishib turmush qurdi.\n\nBirinchi Davr oxiridagi Gʻazab Urushidan soʻng Valar koʻplab elflarga Valinorga qaytishga ruxsat berdi, ammo Galadriel magʻrurlik va oʻz burchini his qilib Oʻrta-yerda qolishni tanladi."
+    },
+    {
+      "title": "Lothlórien bekasi va Nenya uzugi",
+      "content": "Ikkinchi Davrda Celebrimbor Eregionda Uch Elflar Uzugini yasaganida, eng pishiq va muqaddas uzuklardan biri boʻlgan Nenyani (Oq olmosli Suv Uzugi) Galadrielga topshirdi. Sauron zulmatidan himoya qilish uchun Galadriel Nenyani maxfiy saqladi.\n\nU Celeborn bilan birga Lothlórien (Oltin Oʻrmon) oʻlkasiga kelib, uni mallorn daraxtlari va Nenya qudrati bilan qudratli panohgohga aylantirdi. U yerda vaqt sekinlashar, xazonrezlik va chirish kirmas, elflar qadimiy goʻzallikda yashar edilar."
+    },
+    {
+      "title": "Uzuk sinovi va buyuk voz kechish",
+      "content": "Halqa Urushida Uzuk Birodarligi Lórienga kelganida, Frodo Galadrielga Yagona Uzukni oʻz ixtiyori bilan taklif qildi. Bu Galadrielning butun hayotidagi eng dahshatli va yuksak sinov edi: agar u Uzukni olsa, Sauronni yengib 'Dengizdek qudratli va qoʻrqinchli Qirolicha'ga aylanar, ammo oʻzi yovuzlikka asir boʻlar edi.\n\nGaladriel chuqur kurashdan soʻng vasvasani yengdi: 'Men sinovdan oʻtdim. Men kichrayaman va Gʻarbga ketaman, Galadriel boʻlib qolaman', dedi. Bu voz kechish uning Valinorga qaytish yoʻlidagi barcha maʼnaviy toʻsiqlarni olib tashladi."
+    },
+    {
+      "title": "Dol Guldurning qulashi va Boqiy Gʻarbga qaytish",
+      "content": "Halqa Urushining soʻnggi kunlarida Sauron qoʻshinlari Lórienga uch marta hujum qildi, ammo Galadriel va Nenyani yenga olmadi. Sauron qulagach, Galadriel Dol Guldurga kirib, uning qora tosh devorlarini yer bilan yakson qildi va oʻrmonni zulmatdan tozaladi.\n\n3021-yilda u Oq Kemada Elrond, Gandalf va xobbitlar bilan birga Boqiy Gʻarbga — oʻzining tugʻilgan Valinor zaminiga suzib ketdi. U Noldorning Oʻrta-yerdagi eng buyuk va soʻnggi peshvosi boʻlib tarixga kirdi."
+    }
+  ],
+  "image": {
+    "src": "/images/characters/galadriel.webp",
+    "src_thumb": "/images/characters/galadriel-thumb.webp",
+    "alt": "Galadriel Lothlóriendagi mallorn daraxtlari ostida, barmogʻida Nenya suv uzugi bilan",
+    "caption": "Galadriel — Lothlórien bekasi, Finarfin qizi, Nenya (Suv uzugi) sohibasi"
+  },
+  "sources": [
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "The Mirror of Galadriel",
+      "page": "360"
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "Farewell to Lórien",
+      "page": "379"
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "The Grey Havens",
+      "page": "1004"
+    },
+    {
+      "book_slug": "unfinished-tales",
+      "chapter": "The History of Galadriel and Celeborn",
+      "page": "228"
+    },
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of the Flight of the Noldor",
+      "page": "82"
+    }
+  ],
+  "related_characters": [
+    "finarfin",
+    "finrod",
+    "celeborn",
+    "melian",
+    "celebrimbor",
+    "finwe",
+    "feanor",
+    "fingolfin",
+    "elrond",
+    "arwen",
+    "gandalf",
+    "frodo-baggins",
+    "sauron"
+  ],
+  "adaptations": [
+    {
+      "medium": "film",
+      "title": "The Lord of the Rings Film Trilogy",
+      "creator": "Peter Jackson",
+      "year": 2001,
+      "divergence_notes": "Filmda Galadrielning sinovdan o'tishi va Nenya qudrati qorong'i yashil dahshat effektlari bilan vizual bo'rttirilgan. Kitobda esa bu sahna ko'proq chuqur ichki ruhiy va teologik kurash sifatida tasvirlangan."
+    }
+  ]
+}

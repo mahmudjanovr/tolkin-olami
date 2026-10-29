@@ -1,0 +1,38 @@
+{
+  "id": "falas",
+  "name": "Falas",
+  "elvish_name": "Falas (Brithombar va Eglarest)",
+  "type": "qirollik",
+  "region": "beleriand",
+  "coordinates": {
+    "map_id": "beleriand",
+    "x": 480,
+    "y": 640
+  },
+  "founded_era": "Daraxtlar davri",
+  "destroyed_era": "Birinchi davr 473",
+  "rulers": [
+    "Círdan"
+  ],
+  "notable_events": [
+    "Falasning ilk qamali",
+    "Finrod bilan ittifoq va qalʼalar yangilanishi",
+    "Falasning qulashi"
+  ],
+  "textual_status": "author_published",
+  "summary": "Falas — Gʻarbiy Beleriandning dengiz sohili va Círdan boshchiligidagi Falathrim (kema quruvchi Sindar) saltanati. Brithombar va Eglarest mustahkam dengiz qalʼalari bilan mashhur boʻlib, Nirnaeth Arnoediaddan soʻng Morgoth lashkarlari tomonidan vayron etilgan.",
+  "sources": [
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of the Eldamar and the Princes of the Eldalië",
+      "page": "58",
+      "notes": "Círdan va Falas bandargohlari tarixi."
+    }
+  ],
+  "description_sections": [
+    {
+      "title": "Círdan bandargohlari: Brithombar va Eglarest",
+      "content": "Falas — Gʻarbiy Beleriand qirgʻogʻidagi goʻzal dengiz boʻyi oʻlkasidir. Bu yerda kema-ustasi Círdan boshchiligidagi Falathrim (Sohil Elflari) yashagan. Ular Brithombar va Eglarest nomli ikkita buyuk tosh bandargoh-shaharlarni barpo etganlar.\n\nBu bandargohlar Beleriandning birinchi kema qurish markazlari boʻlgan. Nirnaeth Arnoediaddan soʻng Morgoth qoʻshinlari har ikki shaharni qamal qilib vayron qildi; Círdan va omon qolganlar Balar oroliga qochdilar."
+    }
+  ]
+}

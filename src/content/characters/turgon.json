@@ -1,0 +1,102 @@
+{
+  "id": "turgon",
+  "name": "Turgon Donishmand",
+  "original_name": "Turukáno",
+  "father_name": "Fingolfin",
+  "mother_name": "Anairë",
+  "spouse": "Elenwë (Helcaraxë muzliklarida halok boʻlgan)",
+  "children": [
+    "Idril Celebrindal"
+  ],
+  "aliases": [
+    "Turukáno (Quenya: Jasur Hukmdor)",
+    "Yashirin Shoh",
+    "Turgon the Wise"
+  ],
+  "titles": [
+    "Gondolin Qiroli va Asoschisi",
+    "Surgun qilingan Noldor Oliy Qiroli",
+    "Nevrast Hukmdori"
+  ],
+  "race": "elflar",
+  "sub_race": "Noldor",
+  "culture": "Tirion / Nevrast / Gondolin",
+  "birth_year": "Daraxtlar davri YT 1300",
+  "death_year": "Birinchi davr 510 (Gondolinning qulashida Qirol Minorasi bilan birga halok boʻlgan)",
+  "house_id": "finwe-xonadoni",
+  "weapons_and_artifacts": [
+    "Glamdring (Dushman Bolgʻasi — ming yillardan soʻng Gandalf topib olgan qilich)",
+    "Glingal va Belthil (Gondolindagi Ikki Daraxt haykallari)"
+  ],
+  "primary_locations": [
+    "gondolin",
+    "tirion",
+    "beleriand"
+  ],
+  "textual_status": "posthumous_edited",
+  "summary": "Fingolfinning ikkinchi oʻgʻli, Idrilning otasi va Eärendilning bobosi. Vala Ulmoning koʻrsatmasi bilan Oʻrab Oluvchi Togʻlar orasida yashirin va muhtasham Gondolin shahrini barpo etgan, akasi Fingon vafotidan soʻng Noldor Oliy Qiroliga aylangan hamda oʻz shahrini oxirgi nafasigacha himoya qilib halok boʻlgan buyuk hukmdor.",
+  "etymology": "Sindarin tilidagi 'Turgon' Quenya tilidagi 'Turukáno' ismidan olingan boʻlib, turu- ('gʻalaba, hokimiyat') va káno ('qoʻmondon, hukmdor') — 'Gʻolib Hukmdor' maʼnosini anglatadi.",
+  "biography_sections": [
+    {
+      "title": "Helcaraxë qaygʻusi va Yashirin Gondolinning qurilishi",
+      "content": "Turgon otasi Fingolfin bilan Helcaraxëning qahraton muzliklaridan oʻtayotganida, uning sevikli Vanyar xotini Elenwë muz yorilib halok boʻldi, qizi Idrilni esa Turgon oʻz hayotini xavfga qoʻyib qutqarib qoldi. Shu kundan boshlab Turgon Fëanor va uning oʻgʻillarini hech qachon kechirmadi.\n\nDastlab Nevrastdagi Vinyamarda yashagan Turgonga Vala Ulmo Tumladen yashirin vodiysini koʻrsatdi. Ellik ikki yil davomida yashirin mehnat qilib, Turgon Tirionga taqlid qilingan oppoq toshli Gondolin shahrini barpo etdi va oʻz xalqini u yerga koʻchirdi."
+    },
+    {
+      "title": "Nirnaeth Arnoediad va Huorning bashorati",
+      "content": "Qariyb toʻrt asr davomida Gondolin Morgothdan sir saqlandi. Biroq Nirnaeth Arnoediad (Sanoqsiz Koʻz Yoshlari Jangi) boshlanganida, Turgon oʻzining oʻn ming kishilik yaltiroq qoʻshini bilan akasi Fingonga yordamga chiqdi. Fingon jangda halok boʻlgach, Turgon Noldor Oliy Qiroliga aylandi.\n\nJang boy berilgach, inson sarkardalari Húrin va Huor oʻz qoʻshinlari bilan Rivil kechuvini toʻsib, Turgonga Gondolinga yashirincha chekinish imkonini berdilar. Halok boʻlishidan oldin Huor Turgonga: 'Sening va mening xonadonimdan yangi bir Yulduz (Eärendil) tugʻilib, Elflar va Insonlarni qutqaradi', deb bashorat qildi."
+    },
+    {
+      "title": "Ulmoning ogohlantirishi va Gondolinning qulashi",
+      "content": "Yillar oʻtib Huorning oʻgʻli Tuor Ulmoning zirhida Gondolinga kelib, shaharni tark etish va Sirion quyilishiga tushish haqidagi Valaning ogohlantirishini yetkazdi. Turgon Tuorni iliq kutib olib, qizi Idrilni unga nikohlab bergan boʻlsa-da, oʻz qoʻli bilan yaratgan goʻzal shahriga boʻlgan muhabbati va magʻrurligi tufayli Gondolinni tashlab ketishdan bosh tortdi.\n\nJiyani Maeglinning xiyonati sababli Birinchi davrning 510-yilida Morgothning Balroglari, ajdaholari va orq qoʻshinlari Gondolinga bostirib kirdi. Turgon Qirol Minorasi zinapoyalarida Glamdring qilichi bilan mardona jang qildi va minora qulashi bilan vayronalar ostida halok boʻldi."
+    },
+    {
+      "title": "Gondolin Donishmandi, Noldor Oliy Shohligi va Yetti Darvoza",
+      "content": "Turgon (Fingolfinning ikkinchi o'g'li) Noldorning eng ehtiyotkor va chuqur fikrlovchi podshohi edi. Fingon Nirnaeth Arnoediadda halok bo'lgach, Noldor Oliy Shohligi uning zimmasiga o'tdi. Turgon Gondolinni besh yuz yil davomida dunyodan butunlay yashirib keldi. Uning qurol-aslahalari va lashkari Birinchi Davrning eng tartibli va intizomli armiyasi edi. Biroq shahar xavfsizligiga haddan ziyod ishonish va tashqi dunyo bilan aloqalarni uzish Turgonning asosiy fojiasiga aylandi."
+    },
+    {
+      "title": "Ulmo ogohlantirishini rad etish va shohona halokat",
+      "content": "Tuor Ulmo xabari bilan Gondolinga kelib, shaharni tark etish va dengizga chekinish kerakligini aytganida, Turgon o'zining oq minorasi va go'zal zallaridan ajralishni istamadi. Bu qat'iyat oxir-oqibat Maeglin xiyonati orqali shaharning olov ichida qolishiga olib keldi. Dushman bostirib kirganda, Turgon o'z jangchilariga qochishni buyurib, o'zi shohona minorasida qoldi va minoraning qulashi bilan birga shonli halokat topdi. Uning jasorati va madaniy merosi Tuor va Idril avlodlarida yashashda davom etdi. Turgonning Gondolindagi meʼmoriy va harbiy dahosi Noldor sanʼatining choʻqqisi edi. Uning shahar bilan birga halok boʻlishi elflar tarixidagi eng goʻzal davrning fojiali yakunini ifodalaydi, biroq uning naslidan chiqqan Eärendil dunyoga najot keltirdi."
+    }
+  ],
+  "sources": [
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of Maeglin",
+      "page": "131"
+    },
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of the Fifth Battle: Nirnaeth Arnoediad",
+      "page": "190"
+    },
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of Tuor and the Fall of Gondolin",
+      "page": "238"
+    },
+    {
+      "book_slug": "the-fall-of-gondolin",
+      "chapter": "The Fall of Gondolin",
+      "page": "37"
+    },
+    {
+      "book_slug": "the-hobbit",
+      "chapter": "A Short Rest",
+      "page": "51"
+    }
+  ],
+  "related_characters": [
+    "fingolfin",
+    "fingon",
+    "finrod",
+    "ulmo",
+    "idril",
+    "tuor",
+    "earendil",
+    "maeglin",
+    "glorfindel",
+    "hurin",
+    "gandalf"
+  ],
+  "adaptations": []
+}

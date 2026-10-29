@@ -1,0 +1,108 @@
+{
+  "id": "thorin-oakenshield",
+  "name": "Thorin II Oakenshield",
+  "original_name": "Thorin II",
+  "father_name": "Thráin II",
+  "children": [],
+  "aliases": [
+    "Thorin Emandubon (Oakenshield)",
+    "Togʻosti Qiroli (King under the Mountain)"
+  ],
+  "titles": [
+    "Durin Xalqi Oliy Qiroli",
+    "Erebor Hukmdori",
+    "Moviy Togʻlar (Ered Luin) Mittilar Sardori"
+  ],
+  "race": "mitti-odamlar",
+  "sub_race": "Durin xalqi (Uzunsoqollar)",
+  "culture": "Erebor / Ered Luin",
+  "birth_year": "Uchinchi davr 2746",
+  "death_year": "Uchinchi davr 2941 (Besh Qoʻshin jangida halok boʻlgan)",
+  "house_id": "durin-avlodlari",
+  "weapons_and_artifacts": [
+    "Orcrist (Gondolin qadimiy qilichi — Goblin Yorgich)",
+    "Eman shoxi qalqoni (Oakenshield)",
+    "Erebor maxfiy eshigi kaliti va xaritasi",
+    "Arkenstone (Togʻ Yuragi)"
+  ],
+  "primary_locations": [
+    "erebor",
+    "ered-luin",
+    "rivendell"
+  ],
+  "textual_status": "author_published",
+  "uncertainty_notes": "Tolkien 'The Lord of the Rings' Ilovasi A (III: 'Durin's Folk') va 'Unfinished Tales' ('The Quest of Erebor') asarlarida Thorinning feʼl-atvorini chuqur tahlil qilgan: u shohona gʻurur, yuksak masʼuliyat va jangovar dovyuraklik timsoli boʻlsa-da, ajdarho xazinasi sehrli taʼsiri (dragon-sickness) ostida adolat mezonlarini vaqtinchalik yoʻqotgan. Biroq Bilbo Bagginsning tinchlik yoʻlidagi fidoyiligini anglab, oʻlim toʻshagida u bilan chin yurakdan yarashgan va haqiqiy fojiaviy qahramon sifatida vafot etgan.",
+  "summary": "Thráin II ning toʻngʻich oʻgʻli, Thrórning nevarasi, Durin xonadonining bevosita vorisi va Togʻosti Qiroli. Azanulbizar jangida singan eman shoxini qalqon qilib orqlar bilan jang qilgani sababli 'Oakenshield' laqabini olgan. Uzoq yillar Ered Luindagi quvgʻin xalqini boshqargan. 2941-yilda Gandalf va Bilbo Baggins bilan Erebor safariga otlanib, oʻz vatanini qaytarib olgan va Besh Qoʻshin jangida qahramonlarcha halok boʻlgan mitti hukmdori.",
+  "etymology": "Qadimiy skandinavcha 'Dvergatal' roʻyxatida 'Thorin' — 'Jasur, Dovyurak, Bardoshli' maʼnosini anglatadi. 'Oakenshield' epiteti esa uning Azanulbizar jangida qalqoni singach, yerda yotgan eman butogʻi va poʻstlogʻini qalqon oʻrnida mardona ishlatganidan kelib chiqqan (oaken — eman, shield — qalqon).",
+  "biography_sections": [
+    {
+      "title": "Erebor shahzodasi va Smaugning bosqini",
+      "content": "Thorin II Oakenshield Uchinchi davrning 2746-yilida Ereborning Togʻosti Qiroli Thráin II oilasida tugʻilgan. U yoshligida Erebor oltin va toshlarga toʻla buyuk va qudratli saltanat edi.\n\n2770-yilda oltin ajdar Smaug toʻsatdan Ereborni vayron qildi va xalqni quvib chiqardi. Thorin, uning otasi va bobosi Thrór xalqining omon qolgan qismi bilan janubga qochishga majbur boʻldilar."
+    },
+    {
+      "title": "Azanulbizar jangi va 'Emantoʻqmoq' nomi",
+      "content": "2799-yilda Mittilar va Oʻrklar Urushining eng qonli toʻqnashuvi — Moria darvozasi oldidagi Azanulbizar jangi boʻlib oʻtdi. Jang qizgʻin pallasida Thorinning qalqoni sinib ketdi.\n\nU yerdan emanning yoʻgʻon shoxini kesib olib, uni qalqon va toʻqmoq sifatida ishlatib dushmanning barcha zarbalarini qaytardi. Shu qahramonligi uchun unga 'Oakenshield' ('Emantoʻqmoq') laqabi berildi. Otasi Thráin II Dol Guldurda yoʻqolgach, Thorin surgundagi xalqining Qiroliga aylandi."
+    },
+    {
+      "title": "Erebor safari va Yolgʻiz Togʻning qaytarilishi",
+      "content": "Moviy Togʻlarda temirchilik qilib yurgan Thorin 2941-yilda Bree tavernasida Gandalf bilan uchrashdi. Gandalf uni Ereborni ajdardan qaytarib olishga va xobbit Bilbo Bagginsni safarga qoʻshishga koʻndirdi.\n\nOʻn uch mitti va Bilbo xavfli sarguzashtlarni yengib Erebordagi maxfiy eshikni topdilar. Smaug koʻl shahri Esgarothga hujum qilib Bard tomonidan oʻldirilgach, Thorin oʻz ajdodlarining Togʻosti Qiroli taxtini qayta egalladi."
+    },
+    {
+      "title": "Oltin vasvasasi va Arkenstone mojarosi",
+      "content": "Ulkan xazinaga ega boʻlgan Thorin ajdarning oltin laʼnati taʼsiriga tushdi: u oʻzini oʻrab olgan xalqlar — Koʻl odamlari va Mirkwood elflari bilan xazinani boʻlishishdan qatʼiyan bosh tortdi va Ereborni tosh devor bilan mustahkamladi.\n\nBilbo tinchlik oʻrnatish uchun Arkenstoneni Elflar qiroliga bergach, Thorin Bilboni xoin deb haqoratladi va oʻz qarindoshi Dáin II Ironfootni yordamga chaqirib urush boshlashga tayyorlandi."
+    },
+    {
+      "title": "Besh Armiya Jangi, shonli oʻlim va kechirim",
+      "content": "Tumanli Togʻlar oʻrklari va varglari toʻsatdan hujum qilgach, Mittilar, Elflar va Insonlar ittifoq tuzib 'Besh Armiya Jangi'ga kirdilar. Thorin oʻz xatosini tushunib, oʻn ikki hamrohi bilan devorlarni yorib chiqdi va qahramonona jangga tashlandi.\n\nU oʻrklar yetakchisi Bolg qoʻriqchilari bilan jangda ogʻir yaralandi. Vafot etishidan oldin u Bilboni huzuriga chaqirib, undan kechirim soʻradi: 'Agar koʻproq odamlar oltindan koʻra yaxshi ovqat, quvnoq qoʻshiq va tinchlikni qadrlaganlarida, dunyo yanada baxtliroq boʻlar edi', dedi. U Erebor qaʼriga, koʻkragiga Arkenstone va ustiga Orcrist qilichi qoʻyilgan holda dafn etildi."
+    }
+  ],
+  "sources": [
+    {
+      "book_slug": "the-hobbit",
+      "chapter": "An Unexpected Party",
+      "page": "8"
+    },
+    {
+      "book_slug": "the-hobbit",
+      "chapter": "The Clouds Burst",
+      "page": "278"
+    },
+    {
+      "book_slug": "the-hobbit",
+      "chapter": "The Return Journey",
+      "page": "288"
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "Appendix A: Annals of the Kings and Rulers (III: Durin's Folk)",
+      "page": "1072"
+    },
+    {
+      "book_slug": "unfinished-tales",
+      "chapter": "The Quest of Erebor",
+      "page": "321"
+    }
+  ],
+  "related_characters": [
+    "thrain-ii",
+    "balin",
+    "dain-ironfoot",
+    "durin-i",
+    "smaug",
+    "bard-the-bowman",
+    "thranduil",
+    "bilbo-baggins",
+    "gandalf",
+    "gimli",
+    "elrond"
+  ],
+  "adaptations": [
+    {
+      "medium": "film",
+      "title": "The Hobbit Film Trilogy",
+      "creator": "Peter Jackson",
+      "year": 2012,
+      "divergence_notes": "Filmda Richard Armitage ijrosidagi Thorin ancha yoshroq, romantikroq va jangari shoh sifatida gavdalantirilgan. Kitobda Azog Azanulbizar jangida Dáin tomonidan o'ldirilgan bo'lsa, filmda Azog omon qolib, Thorinning shaxsiy qasoskor ashaddiy dushmaniga aylantirilgan va ular Besh Qo'shin jangida muz ustida yakkama-yakka olishadilar."
+    }
+  ]
+}

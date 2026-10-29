@@ -1,0 +1,25 @@
+{
+  "id": "kuma",
+  "name": "Kúma (Tashqi Boʻshliq)",
+  "concept_type": "cosmic_realm",
+  "associated_ainur": [
+    "melkor",
+    "varda"
+  ],
+  "ontological_evolution": "Yaratilishdan avval Melkor Yashirin Olovni izlab yolgʻiz kezgan cheksiz boʻshliq; Eä yaratilgach, moddiy olam devorlari (Walls of the World) ortidagi tashqi zulmat hamda Birinchi davr yakunida Gʻazab Urushidan soʻng Morgoth Tun Darvozasi (Door of Night) ortiga surgun qilingan makon.",
+  "textual_status": "posthumous_edited",
+  "summary": "Kúma (Quenya tilida «Boʻshliq», shuningdek Avakúma yoki Tashqi Zulmat) — Eä (Moddiy Koinot) va vaqt chegaralaridan tashqarida joylashgan mutlaq zulmat va moddiyatsiz boʻshliq makoni.",
+  "sources": [
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Ainulindalë / Quenta Silmarillion, Chapter 24: Of the Voyage of Eärendil and the War of Wrath",
+      "page": "16"
+    }
+  ],
+  "cosmology_sections": [
+    {
+      "title": "Olamdan tashqaridagi cheksiz zulmat",
+      "content": "Kúma (Quenya tilida: 'Boʻshliq') — Eä moddiy olamining chegaralaridan tashqarida joylashgan, vaqt, nur va materiyadan mahrum boʻlgan cheksiz zulmatdir.\n\nGʻazab Urushidan soʻng Valar Morgothni zanjirband qilib, Dunyo Darvozalaridan (Doors of Night) Kúma boʻshligʻiga uloqtirdilar. Morgoth oxirgi zamongacha — Dagor Dagorath jangigacha shu boʻshliqda zanjirlangan holda qoladi."
+    }
+  ]
+}

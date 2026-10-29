@@ -1,0 +1,595 @@
+---
+import { getCollection, type CollectionEntry } from 'astro:content';
+import EntityLayout from '@/layouts/EntityLayout.astro';
+import { resolveEntityLinks } from '@/utils/entity-resolver';
+import { REGISTERED_JOURNEYS } from '@/data/journeys/journey-registry';
+
+export async function getStaticPaths() {
+  const [places, allCharacters, allEvents, allPeoples] = await Promise.all([
+    getCollection('places'),
+    getCollection('characters'),
+    getCollection('events'),
+    getCollection('peoples'),
+  ]);
+
+  return places.map((place) => {
+    const placeId = place.data.id || place.id;
+
+    // Ushbu joy bilan bog'liq qahramonlar (primary_locations yoki rulers orqali)
+    const rulerSet = new Set(place.data.rulers || []);
+    const associatedCharacters = allCharacters.filter(
+      (char) =>
+        (char.data.primary_locations || []).includes(placeId) ||
+        rulerSet.has(char.data.id || char.id)
+    );
+
+    // Ushbu joyda sodir bo'lgan tarixiy voqealar
+    const associatedEvents = allEvents.filter(
+      (evt) => evt.data.location_id === placeId
+    );
+
+    // Ushbu hududni asosiy makon tutgan xalqlar
+    const associatedPeoples = allPeoples.filter((p) =>
+      (p.data.primary_realms || []).includes(placeId)
+    );
+
+    // Ushbu joydan o'tuvchi tarixiy sayohat bosqichlari
+    const journeyStages: Array<{
+      journeyId: string;
+      journeyTitle: string;
+      sequence: number;
+      stageTitle: string;
+      dateUz: string;
+    }> = [];
+
+    for (const journey of Object.values(REGISTERED_JOURNEYS)) {
+      for (const stage of journey.stages) {
+        if (stage.placeId === placeId) {
+          journeyStages.push({
+            journeyId: journey.id,
+            journeyTitle: journey.titleUz,
+            sequence: stage.sequence,
+            stageTitle: stage.titleUz,
+            dateUz: stage.dateUz,
+          });
+        }
+      }
+    }
+
+    return {
+      params: { slug: placeId },
+      props: {
+        place,
+        associatedCharacters,
+        associatedEvents,
+        associatedPeoples,
+        journeyStages,
+      },
+    };
+  });
+}
+
+interface Props {
+  place: CollectionEntry<'places'>;
+  associatedCharacters: CollectionEntry<'characters'>[];
+  associatedEvents: CollectionEntry<'events'>[];
+  associatedPeoples: CollectionEntry<'peoples'>[];
+  journeyStages: Array<{
+    journeyId: string;
+    journeyTitle: string;
+    sequence: number;
+    stageTitle: string;
+    dateUz: string;
+  }>;
+}
+
+const {
+  place,
+  associatedCharacters,
+  associatedEvents,
+  associatedPeoples,
+  journeyStages,
+} = Astro.props;
+const data = place.data;
+const placeId = data.id || place.id;
+
+const breadcrumbs = [
+  { label: 'Xaritalar va Geografiya', href: '/xaritalar/' },
+  { label: data.name },
+];
+
+const regionLabels: Record<string, string> = {
+  beleriand: 'Beleriand (Birinchi Davr)',
+  'orta-yer': 'Oʻrta-yer (Uchinchi Davr)',
+  numenor: 'Númenor Oroli',
+  valinor: 'Valinor (Aman)',
+  harad: 'Harad va Sharq',
+};
+
+const typeLabels: Record<string, string> = {
+  shahar: 'Shahar va maskan',
+  qirollik: 'Qirollik va davlat',
+  'togʻ': 'Togʻ va choʻqqi',
+  daryo: 'Daryo va kechuv',
+  'qalʼa': 'Qalʼa va istehkom',
+  'oʻlka': 'Tarixiy oʻlka va hudud',
+};
+
+const resolvedRulers = resolveEntityLinks(data.rulers || [], 'characters');
+const resolvedCharLinks = associatedCharacters.map((c) => {
+  const cId = c.data.id || c.id;
+  return {
+    id: cId,
+    name: c.data.name,
+    href: `/qahramonlar/${cId}/`,
+    collection: 'characters' as const,
+  };
+});
+const resolvedEventLinks = associatedEvents.map((e) => {
+  const eId = e.data.id || e.id;
+  return {
+    id: eId,
+    name: e.data.title,
+    href: `/tarix/${eId}/`,
+    collection: 'events' as const,
+  };
+});
+const resolvedPeopleLinks = associatedPeoples.map((p) => {
+  const pId = p.data.id || p.id;
+  return {
+    id: pId,
+    name: p.data.name,
+    href: `/xalqlar-va-tillar/${pId}/`,
+    collection: 'peoples' as const,
+  };
+});
+
+const relatedGroups = [
+  {
+    title: 'Hukmdorlar va Saroy',
+    items: resolvedRulers,
+  },
+  {
+    title: 'Bogʻliq Shaxslar',
+    items: resolvedCharLinks,
+  },
+  {
+    title: 'Tarixiy Voqealar',
+    items: resolvedEventLinks,
+  },
+  {
+    title: 'Xalqlar va Madaniyatlar',
+    items: resolvedPeopleLinks,
+  },
+].filter((g) => g.items.length > 0);
+
+const crossLinkIds = [
+  ...(data.rulers || []),
+  ...associatedCharacters.map((c) => c.data.id || c.id),
+  ...associatedEvents.map((e) => e.data.id || e.id),
+  ...associatedPeoples.map((p) => p.data.id || p.id),
+];
+const relatedItems = resolveEntityLinks([...new Set(crossLinkIds)]);
+
+const atlasUrl = `/xaritalar/?hudud=${data.region}&joy=${placeId}`;
+---
+
+<EntityLayout
+  title={data.name}
+  originalName={data.elvish_name}
+  category={typeLabels[data.type] || data.type}
+  breadcrumbs={breadcrumbs}
+  textualStatus={data.textual_status}
+  sources={data.sources}
+  relatedItems={relatedItems}
+  relatedGroups={relatedGroups}
+  leadSummary={data.summary}
+>
+  <div class="place-details">
+    <section class="place-overview-section">
+      <h2>Geografik va Tarixiy Tavsif</h2>
+      <p class="place-summary-text">{data.summary}</p>
+
+      {data.description_sections && data.description_sections.length > 0 && (
+        <div class="place-description-sections">
+          {data.description_sections.map((section) => (
+            <div class="place-section-block">
+              <h3>{section.title}</h3>
+              {section.content.split('\n\n').map((para) => (
+                <p>{para}</p>
+              ))}
+            </div>
+          ))}
+        </div>
+      )}
+
+      {data.coordinates ? (
+        <div class="atlas-cta-banner">
+          <div class="atlas-cta-info">
+            <span class="atlas-cta-tag">Kartografik Koordinata</span>
+            <h3 class="atlas-cta-title">
+              {regionLabels[data.region] || data.region} xaritasida joylashuvi
+            </h3>
+            <p class="atlas-cta-coords">
+              Planar koordinatalar: <code>X: {data.coordinates.x}, Y: {data.coordinates.y}</code> ({data.coordinates.map_id})
+            </p>
+          </div>
+          <a href={atlasUrl} class="atlas-cta-btn">
+            🗺️ Interaktiv Xaritada Koʻrish →
+          </a>
+        </div>
+      ) : (
+        <div class="atlas-cta-banner">
+          <div class="atlas-cta-info">
+            <span class="atlas-cta-tag">Aman Geografiyasi</span>
+            <h3 class="atlas-cta-title">
+              {regionLabels[data.region] || data.region} hududi
+            </h3>
+            <p class="atlas-cta-coords">
+              Ushbu toponim Boqiy Gʻarb (Aman) hududiga tegishli boʻlib, Arda chegaralaridan tashqarida joylashgan.
+            </p>
+          </div>
+          <a href="/olam/ainulindale/" class="atlas-cta-btn">
+            ✦ Kosmologik Makonni Oʻrganish →
+          </a>
+        </div>
+      )}
+    </section>
+
+    {resolvedRulers.length > 0 && (
+      <section class="place-sub-section">
+        <h2>Hukmdorlar va Boshqaruvchilar</h2>
+        <div class="entity-pills-list">
+          {resolvedRulers.map((ruler) =>
+            ruler.href ? (
+              <a href={ruler.href} class="entity-pill">
+                <span class="pill-icon" aria-hidden="true">👑</span>
+                <span>{ruler.name}</span>
+              </a>
+            ) : (
+              <span class="entity-pill unlinked">{ruler.name}</span>
+            )
+          )}
+        </div>
+      </section>
+    )}
+
+    {associatedCharacters.length > 0 && (
+      <section class="place-sub-section">
+        <h2>Ushbu Maskan Bilan Bogʻliq Shaxslar</h2>
+        <div class="entity-pills-list">
+          {associatedCharacters.map((char) => {
+            const cId = char.data.id || char.id;
+            return (
+              <a href={`/qahramonlar/${cId}/`} class="entity-pill">
+                <span class="pill-icon" aria-hidden="true">✦</span>
+                <span>{char.data.name}</span>
+              </a>
+            );
+          })}
+        </div>
+      </section>
+    )}
+
+    {associatedEvents.length > 0 && (
+      <section class="place-sub-section">
+        <h2>Sodir Boʻlgan Tarixiy Voqealar</h2>
+        <div class="place-events-list">
+          {associatedEvents.map((evt) => {
+            const eId = evt.data.id || evt.id;
+            return (
+              <a href={`/tarix/${eId}/`} class="place-event-card">
+                <div class="event-card-top">
+                  <span class="event-card-year">{evt.data.year_text}</span>
+                  <span class="event-card-arrow" aria-hidden="true">→</span>
+                </div>
+                <h3 class="event-card-name">{evt.data.title}</h3>
+                <p class="event-card-outcome">{evt.data.outcome}</p>
+              </a>
+            );
+          })}
+        </div>
+      </section>
+    )}
+
+    {journeyStages.length > 0 && (
+      <section class="place-sub-section">
+        <h2>Tarixiy Marshrutlar va Sayohat Bosqichlari</h2>
+        <div class="place-events-list">
+          {journeyStages.map((st) => (
+            <a
+              href={`/xaritalar/?sayr=${st.journeyId}&bosqich=${st.sequence}`}
+              class="place-event-card"
+            >
+              <div class="event-card-top">
+                <span class="event-card-year">
+                  {st.journeyTitle} • {st.sequence}-bosqich ({st.dateUz})
+                </span>
+                <span class="event-card-arrow" aria-hidden="true">🧭</span>
+              </div>
+              <h3 class="event-card-name">{st.stageTitle}</h3>
+            </a>
+          ))}
+        </div>
+      </section>
+    )}
+  </div>
+
+  <div slot="metadata" class="place-metadata">
+    <div class="meta-row">
+      <span class="meta-label">Hudud:</span>
+      <span class="meta-val">{regionLabels[data.region] || data.region}</span>
+    </div>
+    <div class="meta-row">
+      <span class="meta-label">Toponim turi:</span>
+      <span class="meta-val">{typeLabels[data.type] || data.type}</span>
+    </div>
+    {data.elvish_name && (
+      <div class="meta-row">
+        <span class="meta-label">Elfcha / Asl nomi:</span>
+        <span class="meta-val"><em>{data.elvish_name}</em></span>
+      </div>
+    )}
+    {data.founded_era && (
+      <div class="meta-row">
+        <span class="meta-label">Asos solingan davr:</span>
+        <span class="meta-val">{data.founded_era}</span>
+      </div>
+    )}
+    {data.destroyed_era && (
+      <div class="meta-row">
+        <span class="meta-label">Vayron boʻlgan davr:</span>
+        <span class="meta-val">{data.destroyed_era}</span>
+      </div>
+    )}
+    {data.coordinates && (
+      <div class="meta-row">
+        <span class="meta-label">Planar koordinata:</span>
+        <span class="meta-val">
+          <a href={atlasUrl} class="meta-link">
+            X: {data.coordinates.x}, Y: {data.coordinates.y}
+          </a>
+        </span>
+      </div>
+    )}
+  </div>
+</EntityLayout>
+
+<style>
+  .place-details {
+    display: flex;
+    flex-direction: column;
+    gap: 2.25rem;
+  }
+
+  .place-summary-text {
+    font-size: 1.125rem;
+    line-height: 1.75;
+    margin-bottom: 1.5rem;
+  }
+
+  .place-description-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+    margin-bottom: 1.75rem;
+  }
+
+  .place-section-block h3 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--color-accent-gold-text);
+    margin: 0 0 0.5rem 0;
+  }
+
+  .place-section-block p {
+    font-size: 1rem;
+    line-height: 1.75;
+    color: var(--color-text-primary);
+    margin-bottom: 0.85rem;
+  }
+
+  .atlas-cta-banner {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.25rem 1.5rem;
+    background-color: var(--color-bg-elevated);
+    border: 1px solid var(--color-border-subtle);
+    border-left: 3px solid var(--color-accent-gold);
+    border-radius: 3px;
+    box-shadow: var(--shadow-sm);
+  }
+
+  @media (min-width: 640px) {
+    .atlas-cta-banner {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  .atlas-cta-tag {
+    display: block;
+    font-family: var(--font-sans-ui);
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-accent-gold-text);
+    margin-bottom: 0.2rem;
+  }
+
+  .atlas-cta-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin: 0 0 0.25rem 0;
+    color: var(--color-text-primary);
+  }
+
+  .atlas-cta-coords {
+    font-family: var(--font-sans-ui);
+    font-size: 0.8125rem;
+    color: var(--color-text-muted);
+    margin: 0;
+  }
+
+  .atlas-cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.55rem 1.125rem;
+    font-family: var(--font-sans-ui);
+    font-size: 0.8125rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    color: #FAF8F2;
+    background-color: var(--color-forest);
+    border: 1px solid var(--color-forest-deep);
+    border-radius: 3px;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background-color 0.15s ease, border-color 0.15s ease;
+  }
+
+  .atlas-cta-btn:hover {
+    background-color: var(--color-forest-deep);
+  }
+
+  .place-sub-section {
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--color-border-subtle);
+  }
+
+  .place-sub-section h2 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: var(--color-text-primary);
+  }
+
+  .entity-pills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .entity-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.3rem 0.65rem;
+    font-family: var(--font-sans-ui);
+    font-size: 0.8125rem;
+    font-weight: 500;
+    color: var(--color-text-primary);
+    background-color: var(--color-bg-elevated);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 3px;
+    text-decoration: none;
+    transition: border-color 0.15s ease, color 0.15s ease, background-color 0.15s ease;
+  }
+
+  .entity-pill:hover {
+    border-color: var(--color-border-gold);
+    color: var(--color-accent-gold-text);
+    background-color: var(--color-accent-gold-subtle);
+  }
+
+  .pill-icon {
+    color: var(--color-accent-gold-text);
+    font-size: 0.75rem;
+  }
+
+  .place-events-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.85rem;
+  }
+
+  @media (min-width: 640px) {
+    .place-events-list {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .place-event-card {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1.15rem;
+    background-color: var(--color-bg-elevated);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 3px;
+    text-decoration: none;
+    box-shadow: var(--shadow-sm);
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  }
+
+  .place-event-card:hover {
+    border-color: var(--color-border-gold);
+    box-shadow: var(--shadow-md);
+  }
+
+  .event-card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.35rem;
+  }
+
+  .event-card-year {
+    font-family: var(--font-sans-ui);
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--color-accent-gold);
+  }
+
+  .event-card-arrow {
+    color: var(--color-text-muted);
+    font-size: 0.85rem;
+  }
+
+  .event-card-name {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--color-text-primary);
+    margin: 0 0 0.35rem 0;
+  }
+
+  .event-card-outcome {
+    font-size: 0.8125rem;
+    line-height: 1.5;
+    color: var(--color-text-secondary);
+    margin: 0;
+  }
+
+  .meta-row {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    margin-bottom: 0.75rem;
+    font-family: var(--font-sans-ui);
+    font-size: 0.875rem;
+  }
+
+  .meta-label {
+    color: var(--color-text-muted);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  .meta-val {
+    color: var(--color-text-primary);
+    font-weight: 500;
+  }
+
+  .meta-link {
+    color: var(--color-accent-gold);
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .meta-link:hover {
+    text-decoration: underline;
+  }
+</style>

@@ -1,0 +1,78 @@
+{
+  "id": "dain-ironfoot",
+  "name": "Dain II Temiroyoq",
+  "original_name": "Dáin II Ironfoot",
+  "father_name": "Nain (Gror oʻgʻli)",
+  "mother_name": "Nomaʼlum",
+  "spouse": "Nomaʼlum",
+  "children": [
+    "Torin III Toshdubulgʻa (Stonehelm)"
+  ],
+  "aliases": [
+    "Temiroyoq Dain",
+    "Temir Tepaliklar hukmdori",
+    "Togʻ osti Qiroli"
+  ],
+  "titles": [
+    "Durin xalqining Qiroli",
+    "Togʻ osti Qiroli (King under the Mountain)",
+    "Temir Tepaliklar Xoʻjayini (Lord of the Iron Hills)"
+  ],
+  "race": "mitti-odamlar",
+  "sub_race": "Uzunsoqollar (Longbeards)",
+  "culture": "Temir Tepaliklar va Erebor",
+  "birth_year": "U.D. 2767",
+  "death_year": "U.D. 3019 (17-mart, Deyl jangi)",
+  "house_id": "durin-avlodlari",
+  "weapons_and_artifacts": [
+    "Qizil jangovar bolta (Barazanthathûl)"
+  ],
+  "primary_locations": [
+    "erebor",
+    "khazad-dum"
+  ],
+  "textual_status": "author_published",
+  "summary": "Durin xonadonining buyuk jangchisi va davlat arbobi. Yoshligida Azanulbizar jangida ork yoʻlboshchisi Azogni oʻldirgan, Besh Qoʻshin Jangidan soʻng Togʻ osti Qiroli taxtiga oʻtirgan va Uzuk Urushida Erebor darvozasi oldida qirol Brand jasadini himoya qilib qahramonlarcha halok boʻlgan.",
+  "biography_sections": [
+    {
+      "title": "Azanulbizar qahramoni va Durin balosi vahiysi",
+      "content": "Dain II U.D. 2799-yilda Moria sharqiy darvozasi oldidagi qonli Azanulbizar jangida atigi oʻttiz ikki yoshda (mitti-odamlar uchun juda yosh) boʻlishiga qaramay mislsiz jasorat koʻrsatgan. Ork sardori Azog uning otasi Nainning boʻynini sindirib oʻldirganda, Dain zinapoyadan yuqoriga otilib chiqib, oʻzining qizil boltasi bilan Azogning boshini tanasidan judo qilgan. Shundan soʻng u qorongʻu Moria darvozasi ichiga nazar tashlab, ichkarida mudhish «Durin balosi» (Balrog) uygʻoq ekanini sezgan va qirol Train II ni Khazad-dûmga kirmaslikka koʻndirgan."
+    },
+    {
+      "title": "Besh Qoʻshin Jangi va Erebor Qiroli",
+      "content": "U.D. 2941-yilda amakivachchasi Torin Emanqalqonning chaqirigʻiga binoan Dain Temir Tepaliklardan besh yuz nafar ogʻir qurollangan jangchi bilan Ereborga yetib kelgan. Besh Qoʻshin Jangida Torin va uning jiyanlari Fili hamda Kili halok boʻlgach, Dain II qonuniy merosxoʻr sifatida Togʻ osti Qiroli taxtini egallagan. Torindan farqli ravishda, Dain boylikni adolat bilan taqsimlab, Kamonchi Bardga Arkenstoun evaziga boylikning oʻn toʻrtdan bir qismini bergan va elflar hamda Deyl insonlari bilan mustahkam doʻstlik oʻrnatgan."
+    },
+    {
+      "title": "Uzuk Urushi va Deyl jangidagi sharafli oʻlim",
+      "content": "Uzuk Urushi arafasida Sauronning elchisi Ereborga kelib, Bilbo Beggins va Yagona Uzuk haqida maʼlumot evaziga uchta Mitti-odamlar Uzugini va Moria qirolligini vaʼda qilganida, Dain ularni rad etib, maslahat uchun Gloin va Gimlini Rivendellga yuborgan. U.D. 3019-yil mart oyida Sharqliklarning ulkan qoʻshini Deyl va Ereborga bostirib kirganda, 252 yoshli keksa qirol Dain II ikki yuz ellik yoshida ham yigitlardek bolta oʻynatib, Erebor darvozasi oldida halok boʻlgan ittifoqchisi — Deyl qiroli Brandning jasadini uch kun davomida himoya qilib, jang maydonida jon bergan."
+    }
+  ],
+  "etymology": "Dáin nomi Qadimgi Skandinav tilidagi «Völuspá» dostonidagi mitti-odamlar roʻyxatidan olingan.",
+  "sources": [
+    {
+      "book_slug": "the-hobbit",
+      "chapter": "17-bob (Bulutlar yorildi) va 18-bob (Ortga qaytish)",
+      "page": "265"
+    },
+    {
+      "book_slug": "the-fellowship-of-the-ring",
+      "chapter": "II kitob, 2-bob (Elrond kengashi)",
+      "page": "241"
+    },
+    {
+      "book_slug": "the-return-of-the-king",
+      "chapter": "Ilova A, III qism (Durin xalqi) va Ilova B",
+      "page": "1075"
+    }
+  ],
+  "related_characters": [
+    "thorin-oakenshield",
+    "balin",
+    "gimli",
+    "bard-the-bowman",
+    "thranduil",
+    "bilbo-baggins",
+    "durin-i"
+  ],
+  "adaptations": []
+}

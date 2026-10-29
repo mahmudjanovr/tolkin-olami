@@ -1,0 +1,39 @@
+{
+  "id": "quenya",
+  "name": "Quenya",
+  "family": "Eldarin (Amanya)",
+  "writing_systems": [
+    "tengwar",
+    "sarati"
+  ],
+  "inventor": "Fëanor (Tengwar yozuvi)",
+  "phonology_overview": "Quenya tili fonetik jihatdan qadimgi fin (Suomi) va lotin tillarining eng ohangdor unsurlariga asoslangan. Undoshlar tizimida jarangli portlovchi tovushlar (b, d, g) faqat burun undoshlari bilan birikma hosil qilgandagina uchraydi (mb, nd, ng, ld, rd). Qat'iy fonotaktik qoidalarga ko'ra, so'zlar odatda unli bilan yoki kamdan-kam hollarda t, s, n, l, r undoshlari bilan tugaydi. Bo'g'in urg'usi klassik lotin tili qonuniyatlariga o'xshash: agar o'tmishdagi bo'g'in (penult) uzun bo'lsa (uzun unli yoki qo'sh undoshdan iborat bo'lsa), urg'u unga tushadi, aks holda undan oldingi uchinchi bo'g'inga (antepenult) ko'chadi. Unlilar tizimi beshta asosiy unli (a, e, i, o, u) va ularning uzun variantlari (á, é, í, ó, ú) hamda oltita diftongdan (ai, oi, ui, au, eu, iu) tashkil topgan.",
+  "sample_text_original": "Ai! laurië lantar lassi súrinen, yéni únótimë ve rámar aldaron!",
+  "sample_text_uz": "Oh! Oltindek to'kilmoqda barglar shamolda, daraxtlar qanotlaridek son-sanoqsiz yillar o'tdi!",
+  "textual_status": "author_published",
+  "sources": [
+    {
+      "book_slug": "lotr-fellowship",
+      "chapter": "Farewell to Lórien",
+      "page": "377"
+    }
+  ],
+  "grammar_and_vocabulary_sections": [
+    {
+      "title": "Elflar Lotinchasi: Fonetika, garmoniya va fonotaktika",
+      "content": "J.R.R. Tolkien o'zining lingvistik asarlarida Quenyani 'Elflar Lotinchasi' (Elven Latin) deb atagan, chunki u O'rta-yer tarixining Uchinchi Davrida xuddi o'rta asrlar Yevropasidagi lotin tili kabi ilmiy, marosimiy, yuksak adabiy va muqaddas til maqomiga ega bo'lgan. Tilning fonetik jozibasi fin tilining vokalik tuzilishi va boy unlilar tizimidan ilhomlangan. Undosh klasterlari nihoyatda chegaralangan: so'z boshida qo'shaloq undoshlarga deyarli yo'l qo'yilmaydi (faqat qu va bir necha yarim unlilar istisno). So'z oxirida esa faqat tish va til oldi undoshlari (t, n, r, l, s) kelishi mumkin. Bu qat'iy fonotaktik cheklovlar Quenyaga xos bo'lgan billurdek jarangdor, oquvchan va musiqiy intonatsiyani ta'minlaydi."
+    },
+    {
+      "title": "Agglyutinativ grammatika, kelishiklar va son toifalari",
+      "content": "Quenya grammatik jihatdan rivojlangan agglyutinativ (qo'shimchalar ulanuvchi) til hisoblanadi. Unda o'zakka ketma-ket qo'shimchalar qo'shish orqali grammatik ma'nolar yasaladi. Otlarda o'nta kelishik mavjud: bosh kelishik (nominative), qaratqich (genitive -o), tushum (accusative), egalik/kelib chiqish (possessive -va), jo'nalish (allative -nna), o'rin-payt (locative -ssë), chiqish (ablative -llo), vosita (instrumental -nen), moslashuv/respektiv (respective -s) va maqsad/dativ (-n). Son toifasida to'rtta shakl ajratiladi: birlik, ikkilik (dual - juft a'zolar yoki tabiiy juftliklar uchun, masalan maryat - 'uning ikki qo'li'), oddiy ko'plik (-r yoki -i) va umumiy/to'liq ko'plik (partitive plural -li). Fe'llar boshlang'ich (baza) va hosila (A-fe'llar) guruhlariga bo'linib, zamon, shaxs va mayl qo'shimchalari orqali tuslanadi."
+    },
+    {
+      "title": "Tarixiy evolyutsiyasi: Valinordan O'rta-yergacha",
+      "content": "Quenya tili Birlamchi Elf tili (Primitive Quendian) va Umumiy Eldarin tilidan kelib chiqqan bo'lib, Valinorda Vanyar va Noldor elflari tomonidan taraqqiy ettirilgan. Buyuk Noldor ko'chishi paytida O'rta-yerga keltirilgan, biroq Alqualondëdagi Qardoshlar Qirg'inidan (Kinslaying) xabar topgan Sindar Oliy Hukmdori Thingol o'z saltanatida Quenyada so'zlashishni qat'iyan taqiqlab qo'ygan. Natijada Quenya kundalik so'zlashuv doirasidan chiqib, faqat oliy tabaqalar, olimlar, qo'shiqchilar va marosimlar tiliga aylandi. Gondor va Arnor qirollari o'zlarining rasmiy toj kiyish marosimlarida, qonun matnlarida va shajaralarida Quenyadan foydalanganlar. Aragornning (Elessar) toj kiyish marosimidagi mashhur qasami ('Et Eärello Endorenna utúlien...') aynan Quenya tilida jaranglagan."
+    },
+    {
+      "title": "Adabiy namunalar va Namárië tahlili",
+      "content": "Tolkien merosidagi eng yirik va mukammal Quenya matni Galadrielning 'Namárië' (Lórien bilan xayrlashuv) marsiyasidir. Unda Quenya sintaksisi, she'riy vazni va obrazlilik salohiyati to'liq namoyon bo'ladi. 'Ai! laurië lantar lassi súrinen, yéni únótimë ve rámar aldaron!' (Oh! Oltin barglar shamolda to'kiladi, hisobsiz yillar daraxt qanotlaridek o'tmoqda). Shuningdek, Elendilning O'rta-yerga qadam qo'yganda aytgan qasami va Fëanor qasamining parchalari ushbu tilning ulug'vor va tantanavor tabiatini ko'rsatadi. Fëanor tomonidan yaratilgan Tengwar alifbosining 'Klassik Quenya uslubi' (Classical Mode) aynan ushbu tilning fonetik nozikliklarini mukammal ifodalash uchun loyihalashtirilgan."
+    }
+  ]
+}

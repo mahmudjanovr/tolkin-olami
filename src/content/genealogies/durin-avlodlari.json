@@ -1,0 +1,99 @@
+{
+  "id": "durin-avlodlari",
+  "title": "Durin Avlodlari (Uzunsoqollar) Nasabnomasi",
+  "house_name": "Durin xonadoni (Khazad-dûm va Erebor Qirollari)",
+  "founder_id": "durin-i",
+  "era": "Daraxtlar davri — Uchinchi davr",
+  "summary": "Aulë tomonidan yaratilgan Yetti Mitti Oqsoqolining eng ulugʻi — Oʻlimsiz Durin I nasabi. Khazad-dûm (Moria) va keyinchalik Togʻosti Qirolligi (Erebor) hukmdorlari boʻlgan Uzunsoqollar sulolasi.",
+  "members": [
+    {
+      "character_id": "durin-i",
+      "spouse_ids": [],
+      "parent_ids": [],
+      "generation": 1,
+      "order": 1,
+      "is_uncertain": false
+    },
+    {
+      "character_id": "durin-vi",
+      "spouse_ids": [],
+      "parent_ids": [],
+      "generation": 2,
+      "order": 1,
+      "is_uncertain": false
+    },
+    {
+      "character_id": "nain-i",
+      "spouse_ids": [],
+      "parent_ids": ["durin-vi"],
+      "generation": 3,
+      "order": 1,
+      "is_uncertain": false
+    },
+    {
+      "character_id": "thror",
+      "spouse_ids": [],
+      "parent_ids": ["dain-i"],
+      "generation": 4,
+      "order": 1,
+      "is_uncertain": false
+    },
+    {
+      "character_id": "thrain-ii",
+      "spouse_ids": [],
+      "parent_ids": ["thror"],
+      "generation": 5,
+      "order": 1,
+      "is_uncertain": false
+    },
+    {
+      "character_id": "thorin-oakenshield",
+      "spouse_ids": [],
+      "parent_ids": ["thrain-ii"],
+      "generation": 6,
+      "order": 1,
+      "is_uncertain": false
+    },
+    {
+      "character_id": "dis",
+      "spouse_ids": [],
+      "parent_ids": ["thrain-ii"],
+      "generation": 6,
+      "order": 2,
+      "is_uncertain": false
+    },
+    {
+      "character_id": "fili",
+      "spouse_ids": [],
+      "parent_ids": ["dis"],
+      "generation": 7,
+      "order": 1,
+      "is_uncertain": false
+    },
+    {
+      "character_id": "kili",
+      "spouse_ids": [],
+      "parent_ids": ["dis"],
+      "generation": 7,
+      "order": 2,
+      "is_uncertain": false
+    },
+    {
+      "character_id": "dain-ironfoot",
+      "spouse_ids": [],
+      "parent_ids": ["nain"],
+      "generation": 7,
+      "order": 3,
+      "is_uncertain": false
+    }
+  ],
+  "branches": ["Khazad-dûm Oliy Shajarasi", "Kulrang Togʻlar va Erebor Tarmoqlari", "Temir Tepaliklar Tarmoqlari"],
+  "sources": [
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "Appendix A: Annals of the Kings and Rulers (III: Durin's Folk)",
+      "page": "1071",
+      "notes": "Durin xalqining toʻliq nasabnomaviy jadvali va Moria fojiasi."
+    }
+  ]
+}

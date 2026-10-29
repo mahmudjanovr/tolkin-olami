@@ -1,0 +1,47 @@
+{
+  "id": "buckland",
+  "name": "Buckland (Bukland / Brendi Xol)",
+  "elvish_name": "Buckland",
+  "type": "oʻlka",
+  "region": "orta-yer",
+  "coordinates": {
+    "map_id": "orta-yer",
+    "x": 604,
+    "y": 1395
+  },
+  "founded_era": "Uchinchi Davr 2340",
+  "rulers": [
+    "Brendibak xoʻjayini (Master of Buckland)",
+    "Gorhendad Brandybuck"
+  ],
+  "notable_events": [
+    "Gorhendad Brandybuck tomonidan Brendi Xol qasri va Bukland mustamlakasining barpo etilishi (2340-yil)",
+    "Qari Oʻrmon (Old Forest) tahdidlaridan saqlanish uchun yigirma chaqirimlik Baland Toʻsiq (High Hay) butazorining bunyod etilishi",
+    "Frodo Baggins va safdoshlarining Qora Suvoriylardan qochib Buklberi paromi orqali oʻtishi (3018-yil)",
+    "Bukland xobbitlarining sarosima chalingan karnayi — Bukland uygʻonishi (Awake! Fear! Fire! Foes!) bong urishi"
+  ],
+  "textual_status": "author_published",
+  "summary": "Bukland — Baranduin (Brendivin) daryosining sharqiy sohillari bilan vahimali Qari Oʻrmon oraligʻida joylashgan yarim mustaqil xobbit oʻlkasi. 2340-yilda Gorhendad Oldbuck tomonidan asos solingan boʻlib, aholisi suvdan va qayiqlardan qoʻrqmaydigan oʻziga xos jasur feʼl-atvori bilan ajralib turadi. Oʻlkaning markazi Brendi Tepaligida qazilgan afsonaviy Brendi Xol saroyidir.",
+  "sources": [
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "A Conspiracy Unmasked",
+      "notes": "Bukland geografiyasi, Crickhollow uyi va Brendibaklar odati."
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "Fog on the Barrow-downs",
+      "notes": "Baland Toʻsiq (High Hay) va Qari Oʻrmon chegarasi."
+    }
+  ],
+  "description_sections": [
+    {
+      "title": "Brendivin ortidagi mustaqil maskan",
+      "content": "Buckland (Brendiyurt) — Shayrning sharqiy chegarasida, Brendivin daryosi va Qadimiy Oʻrmon (Old Forest) oʻrtasida joylashgan oʻziga xos avtonom xobbit oʻlkasidir. U Uchinchi davrning 2340-yilida Gorhendad Oldbuck tomonidan asos solingan.\n\nBuckland xobbitlari qayiqda suzishni bilishi, tunda eshiklarini qulflab yotishi va jasurligi bilan boshqa Shir xobbitlaridan ajralib turadi. Oʻlka sharqdan yigirma mil uzunlikdagi 'Baland Toʻsiq' (High Hay) devori bilan himoyalangan."
+    },
+    {
+      "title": "Brandy Hall va Crickhollow",
+      "content": "Oʻlka markazida Bucklebury qasri va yuzlab xonalardan iborat ulkan yerosti maskani — Brandy Hall joylashgan boʻlib, u Brandybuck xonadonining bosh qarorgohidir.\n\nCrickhollow qishlogʻida Frodo Nazgûllardan yashirinish uchun uy sotib olgan va aynan shu yerdan Qadimiy Oʻrmon orqali xavfli safarga qochib chiqqan edi."
+    }
+  ]
+}

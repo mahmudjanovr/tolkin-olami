@@ -1,0 +1,118 @@
+{
+  "id": "feanor",
+  "name": "Fëanor",
+  "original_name": "Curufinwë (Fëanáro)",
+  "father_name": "Finwë",
+  "mother_name": "Míriel Þerindë",
+  "spouse": "Nerdanel Dono",
+  "children": [
+    "Maedhros",
+    "Maglor",
+    "Celegorm",
+    "Caranthir",
+    "Curufin",
+    "Amrod",
+    "Amras"
+  ],
+  "aliases": [
+    "Silmarillar yaratuvchisi",
+    "Fëanáro (Olov ruhi)",
+    "Noldor ustasi"
+  ],
+  "titles": [
+    "Noldor Oliy Qiroli",
+    "Tirion va Formenos Hukmdori"
+  ],
+  "race": "elflar",
+  "sub_race": "Noldor",
+  "culture": "Valinor Noldori",
+  "birth_year": "Daraxtlar davri 1169",
+  "death_year": "Birinchi davr 1",
+  "house_id": "finwe-xonadoni",
+  "weapons_and_artifacts": [
+    "Silmarillar",
+    "Tengwar yozuvi",
+    "Palantíri (Koʻrish toshlari)",
+    "Fëanor chiroqlari"
+  ],
+  "primary_locations": [
+    "tirion",
+    "formenos",
+    "mithrim"
+  ],
+  "textual_status": "author_published",
+  "uncertainty_notes": "Matnshunoslik va filologiya: 'The Shibboleth of Fëanor' (HoME XII) asarida Tolkien Fëanorning tildagi 'th' (þ) va 's' tovushlari boʻyicha qatʼiy pozitsiyasini Finwë xonadonidagi ichki siyosiy ziddiyat ramzi sifatida tahlil qilgan. 'Morgoth's Ring' (HoME X) qoralamalarida Fëanorning dunyoga kelishi onasi Mírielning hayotiy quvvatini batamom soʻrib olgani, bu esa Valinorda yuz bergan ilk oʻlim va Arda jarohatining ilk alomati sifatida koʻrsatilgan.",
+  "summary": "Finwë va Mírielning yagona oʻgʻli, Arda tarixidagi eng tengsiz aql, hunarmandlik va sanʼat sohibi. Ikki Daraxt nurini mujassam etgan uch Silmarilni yaratgan, ammo oʻzining betizgin gʻururi va Melkor fitnasi oqibatida Noldor qasamyodini qabul qilib, xalqini fojiaviy surgun tomon yetaklagan buyuk sarkarda.",
+  "etymology": "Quenya tilida 'Fëanáro' — fëa ('ruh') va nár ('olov') soʻzlaridan tarkib topgan boʻlib, 'Olov ruhi' maʼnosini anglatadi (onasi Míriel bergan ona-ism). Otasi bergan asl ismi 'Curufinwë' esa curu ('mahorat, sanʼat') va Finwë ('yetakchi') soʻzlaridan tuzilgan boʻlib, 'Mohir Finwë' deganidir.",
+  "biography_sections": [
+    {
+      "title": "Tiriondagi yoshlik va oʻtli deha",
+      "content": "Fëanor (asl ismi Curufinwë) Finwë va Míriel Therindëning yagona farzandi boʻlib, Valinorda tugʻilgan. Uning onasi Fëanorni dunyoga keltirishda butun jismoniy va ruhiy kuchini sarflab vafot etdi. Uning otasi unga 'Fëanáro' ('Olov Ruhi') ismini berdi.\n\nFëanor barcha Ilúvatar farzandlari orasida aql, jismoniy goʻzallik, hunarmandchilik va soʻz qudrati boʻyicha eng ulugʻvor deha edi. U Rúmil yozuvini mukammallashtirib Tengwar yozuv tizimini ixtiro qildi, shuningdek koʻruvchi toshlar — Palantírlarni yaratdi."
+    },
+    {
+      "title": "Silmarillarning yaratilishi",
+      "content": "Daraxtlar Davrining eng yuksak choʻqqisida Fëanor oʻzining eng buyuk moʻjizasini yaratdi: u Valinorning Ikki Daraxti — Telperion va Laurelin nurlarini uchta pishiq billur gavhar qaʼriga qamradi. Bu gavharlar 'Silmarillar' deb ataldi.\n\nSilmarillar shunchalik muqaddas va pokiza ediki, hatto Varda ularni hech qanday yovuz qoʻl yoki nohaq kishi tegina olmasligi (kuydirib kul qilishi) uchun duo qildi, Mandos esa Arda taqdiri aynan shu gavharlar bilan bogʻliq ekanini bashorat qildi."
+    },
+    {
+      "title": "Melkor xiyonati va Fëanor Qasamyodi",
+      "content": "Melkor Noldor orasida nizo urugʻini sepib, Fëanor va uning ukasi Fingolfin oʻrtasida adovat uygʻotdi. Melkor va Ungoliant Ikki Daraxtni yoʻq qilib, Formenosdagi xazinadan Silmarillarni oʻgʻirlab Finwëni oʻldirganlarida, Fëanorning qaygʻusi telbalik darajasiga yetdi.\n\nU Tirion maydonida Melkorni 'Morgoth' ('Qora Dushman') deb laʼnatladi va oʻzining yetti oʻgʻli bilan birga dahshatli 'Fëanor Qasamyodi'ni (Oath of Fëanor) ichdi: kim boʻlishidan qatʼi nazar — Vala, elf yoki inson — Silmarilni tortib olgan har qanday zotga qarshi abadiy qonli urush eʼlon qildilar."
+    },
+    {
+      "title": "Alqualondëdagi Birinchi Qirgʻin va Losgar alangasi",
+      "content": "Beleriandga oʻtish uchun kemalarga muhtoj boʻlgan Fëanor, Alqualondë bandargohida kema berishdan bosh tortgan Teleri elflariga hujum qildi. Bu elflar tarixidagi birinchi qardoshlar qirgʻini boʻldi va Mandos Noldor boshiga abadiy laʼnat (Doom of Mandos) yogʻilishini eʼlon qildi.\n\nOʻrta-yerga yetib kelgach, Fëanor kemalarni Losgar qirgʻogʻida yoqib yubordi va orqada qolgan ukasi Fingolfin qoʻshinini muzli Helcaraxë oʻlimiga tashlab ketdi."
+    },
+    {
+      "title": "Dagor-nuin-Giliath va Fëanorning oʻlimi",
+      "content": "Mithrim koʻli boʻyida Morgoth qoʻshinlari toʻsatdan hujum qildi, ammo Yulduzlar Ostidagi Jangda (Dagor-nuin-Giliath) Fëanor oʻrklarni tor-mor qildi. Gʻazabdan koʻzi koʻr boʻlgan Fëanor oʻz soqchilaridan ancha ilgarilab ketib, Angband ostonasigacha quvib bordi.\n\nU yerda Balroglar uni qurshovga oldi. Fëanor Balroglar sarkardasi Gothmog bilan tengsiz duelda ogʻir yaralandi. Oʻgʻillari uni qutqarib olib chiqishganida, u Angbandning qora choʻqqilariga qarab, Noldor bu qalʼani hech qachon ololmasligini angladi, ammo oʻgʻillariga qasamyodga sodiq qolishni buyurdi. U vafot etganida, uning olovli ruhi shunchalik qudratli ediki, uning tanasi bir zumda kulga aylanib ketdi."
+    }
+  ],
+  "image": {
+    "src": "/images/characters/feanor.webp",
+    "src_thumb": "/images/characters/feanor-thumb.webp",
+    "alt": "Fëanor qoʻlida porlab turgan Silmaril gavhari bilan, Valinordagi ustaxonasida",
+    "caption": "Fëanor — Finwëning toʻngʻich oʻgʻli, Silmarillar yaratuvchisi va Noldor Oliy Qiroli"
+  },
+  "sources": [
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of Fëanor and the Unchaining of Melkor",
+      "page": "64"
+    },
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of the Silmarils and the Unrest of the Noldor",
+      "page": "73"
+    },
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of the Flight of the Noldor",
+      "page": "82"
+    },
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of the Return of the Noldor",
+      "page": "106"
+    },
+    {
+      "book_slug": "history-of-middle-earth",
+      "chapter": "The Shibboleth of Fëanor (HoME XII)",
+      "page": "331"
+    }
+  ],
+  "related_characters": [
+    "finwe",
+    "miriel",
+    "nerdanel",
+    "maedhros",
+    "maglor",
+    "curufin",
+    "celebrimbor",
+    "fingolfin",
+    "finarfin",
+    "galadriel",
+    "melkor",
+    "aule",
+    "mandos"
+  ],
+  "adaptations": []
+}

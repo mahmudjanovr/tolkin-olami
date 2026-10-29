@@ -1,0 +1,58 @@
+{
+  "id": "the-peoples-of-middle-earth",
+  "title_uz": "Oʻrta-yer Xalqlari",
+  "title_original": "The Peoples of Middle-earth",
+  "aliases": [
+    "The Peoples of Middle-earth",
+    "HoME 12",
+    "The History of Middle-earth: Volume 12"
+  ],
+  "publication_year": 1996,
+  "publisher": "HarperCollins",
+  "editor": "Christopher Tolkien",
+  "category": "textual_history",
+  "isbn": "978-0-261-10348-1",
+  "synopsis": "«The History of Middle-earth» turkumining yakuniy, oʻn ikkinchi jildi boʻlib, unda «Uzuklar Hukmdori» kitobining mashhur Ilovalari (Appendices) tarixi, tillar va alifbolar evolyutsiyasi, Fëanorning shajarasi va tili haqidagi «The Shibboleth of Fëanor», shuningdek Tolkien hayotining soʻnggi yillarida yozilgan qoralamalari hamda tugallanmay qolgan «The New Shadow» (Yangi Soya) romani jamlangan.",
+  "cover_image": {
+    "src": "/images/books/the-peoples-of-middle-earth.webp",
+    "alt": "Oʻrta-yer Xalqlari kitobi muqovasi",
+    "edition_title": "HarperCollins 1996 First Edition (Archival Design)",
+    "publisher": "HarperCollins",
+    "year": 1996,
+    "isbn": "978-0-261-10348-1",
+    "artist": "Christopher Tolkien (matnshunoslik loyihasi)",
+    "source": "Bibliografik arxiv dizayni (unverified authentic cover)"
+  },
+  "key_themes": [
+    "Uzuklar Hukmdori Ilovalarining yaratilish tarixi va shajaralar",
+    "The Shibboleth of Fëanor: Ismlar, tillar va Noldor siyosiy ixtiloflari",
+    "Tolkienning soʻnggi yozuvlari: Glorfindel, Círdan va Besh Sehrgar kelib chiqishi",
+    "The New Shadow: Toʻrtinchi Davrda insonlar qalbida qayta uygʻongan yovuzlik"
+  ],
+  "detailed_sections": [
+    {
+      "title": "Tarixiy zamin va oʻn ikki jildlik mehnati intihosi",
+      "content": "1996-yilda chop etilgan «Oʻrta-yer Xalqlari» Christopher Tolkienning deyarli chorak asr davom etgan mislsiz tahririy va matnshunoslik mehnati – 12 jildlik «The History of Middle-earth» turkumini muvaffaqiyatli yakunladi. Kitob «Uzuklar Hukmdori» asarining tarixiy asoslarini va uning ortidagi ulkan arxiv qatlamlarini toʻliq ochib beradi."
+    },
+    {
+      "title": "The Shibboleth of Fëanor va Noldor ijtimoiy nizolari",
+      "content": "Asardagi eng mashhur insho «The Shibboleth of Fëanor» boʻlib, unda Quenya tilidagi «th» tovushining «s»ga oʻzgarishi Noldor shahzodalari oʻrtasida qanday qilib qonli siyosiy nizo va gʻurur masalasiga aylangani koʻrsatiladi. Fëanor bu tovushni oʻzgartirishdan bosh tortib, uni onasi Míriel xotirasiga sadoqat deb bilgan. Shuningdek, ushbu inshoda Galadrielning kelib chiqishi va uning Boqiy Gʻarbdan ketishi sabablari batafsil tahlil qilinadi."
+    },
+    {
+      "title": "The New Shadow: Toʻrtinchi Davrning dahshatli ogohlantirishi",
+      "content": "Kitobning eng eʼtiborli qismlaridan biri Tolkien shoh Elessar vafotidan keyin, qirol Eldarion davridagi Gondor haqida boshlagan «The New Shadow» (Yangi Soya) romanining ilk bobidir. Unda insonlar Sauron va urushlarni unutib, yashirin qora ibodatxonalarga sigʻina boshlagani tasvirlanadi. Tolkien ushbu asarni davom ettirishdan bosh tortgan, chunki u insoniyatning tinchlik davridagi chirishi va yovuzlikka qaytishi haddan ziyod tushkun va qaygʻuli mavzu ekanini his qilgan edi."
+    },
+    {
+      "title": "Oʻzbek kitobxoni uchun ahamiyati",
+      "content": "Bu kitob Oʻrta-yerning faqat ertak emas, balki real insoniy psixologiya, jamiyat qonuniyatlari va sivilizatsiyalar inqirozi haqidagi chuqur falsafiy epos ekanini isbotlovchi yakuniy asardir. U oʻzbek adabiyotidagi epik tafakkurni rivojlantirish uchun qimmatli ilmiy manbadir."
+    }
+  ],
+  "uzbek_editions": [
+    {
+      "title": "Oʻrta-yer Xalqlari",
+      "status": "untranslated",
+      "notes": "Oʻzbek tiliga tarjima qilinmagan. Keng qamrovli tarixiy va tilshunoslik izohlari talab etiladi."
+    }
+  ],
+  "translation_status_summary": "Oʻzbek tilida nashr etilmagan. Ilmiy-tadqiqot nashri doirasida rejalashtirilgan."
+}

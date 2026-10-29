@@ -1,0 +1,32 @@
+{
+  "id": "mandos-va-fea-hroa",
+  "name": "Fëa va Hröa: Ruh, Tana va Mandos Zallari Metafizikasi",
+  "concept_type": "metaphysical_force",
+  "associated_ainur": [
+    "mandos",
+    "nienna"
+  ],
+  "ontological_evolution": "Tolkienning antropoligik va teologik qarashlariga koʻra («Athrabeth Finrod ah Andreth» hamda «Laws and Customs among the Eldar»), barcha ongli Eru Farzandlari ruhiy mohiyat — fëa (iroda, ong, shaxsiyat) hamda moddiy tana — hröa (Ardaning jismoniy moddasi) birligidan iborat. Elflarda fëa Arda hayoti bilan chambarchas bogʻliq; agar ularning hröasi nobud boʻlsa, fëa Mandos Zallariga (Kutish Zallari) chorlanadi va maʼlum vaqtdan soʻng Manwë va Mandos irodasi bilan yangi tanada qayta mujassam boʻlishi mumkin. Insonlarda esa oʻlim fëa va hröaning ajralishidir; inson fëasi Mandos zallarida vaqtincha toʻxtab, soʻng Arda sarhadlaridan butunlay tashqariga — Yagona Eru huzuriga yoʻl oladi («Insonlar inʼomi» / The Gift of Men).",
+  "textual_status": "posthumous_edited",
+  "summary": "Fëa (Ruh) va Hröa (Tana) dualligi, Elflarning dunyoviy boqiyligi, Mandos Zallaridagi qayta mujassamlashuv hamda Insonlarning dunyo sarhadlaridan tashqariga chiqishi («Insonlar inʼomi») metafizikasi.",
+  "sources": [
+    {
+      "book_slug": "history-of-middle-earth",
+      "chapter": "Morgoth's Ring: Laws and Customs among the Eldar",
+      "page": "207",
+      "notes": "Fëa va hröa tabiati, Mandos Zallaridagi qayta tirilish qonuniyatlari."
+    },
+    {
+      "book_slug": "history-of-middle-earth",
+      "chapter": "Morgoth's Ring: Athrabeth Finrod ah Andreth",
+      "page": "303",
+      "notes": "Finrod va Andreth suhbati: insonlar oʻlimi va elflar boqiyligi teologiyasi."
+    }
+  ],
+  "cosmology_sections": [
+    {
+      "title": "Ruh va Tana: Elflar va Insonlar taqdiri",
+      "content": "Tolkien metafizikasida har bir ongli mavjudot Fëa (boqiy jon / ruh) va Hröa (moddiy tana) birligidan iborat. Elflarning Fëasi Arda bilan chambarchas bogʻlangan boʻlib, tanasi halok boʻlsa ham ruhi Mandos Zallariga (Halls of Mandos) boradi va vaqti kelib qayta tanaga ega boʻlishi mumkin.\n\nInsonlarga esa Eru 'Insonlar Inʼomi'ni (Gift of Men) bergan: ularning ruhi vafot etgach, Arda chegaralaridan butunlay chiqib, yaratuvchi Eru huzuriga yoʻl oladi. Bu inʼom insonlarni dunyo charchogʻidan va boqiylik azobidan xalos etadi."
+    }
+  ]
+}

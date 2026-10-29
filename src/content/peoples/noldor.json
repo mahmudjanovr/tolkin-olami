@@ -1,0 +1,52 @@
+{
+  "id": "noldor",
+  "name": "Noldor",
+  "other_names": [
+    "Chuqur bilim egalari",
+    "Golodhrim"
+  ],
+  "race_category": "elflar",
+  "divisions_and_clans": [
+    "Fëanor xonadoni",
+    "Fingolfin xonadoni",
+    "Finarfin xonadoni"
+  ],
+  "origin_era": "Daraxtlar davri",
+  "associated_languages": [
+    "quenya",
+    "sindarin"
+  ],
+  "primary_realms": [
+    "Valinor",
+    "Hithlum",
+    "Gondolin",
+    "Nargothrond"
+  ],
+  "textual_status": "author_published",
+  "summary": "Noldor (Quenya: 'Donishmandlar', 'Chuqur bilim egalari') — Elflarning Ikkinchi qabilasi (Tatyar tarmogʻi) boʻlib, ulugʻvor metallurgiya, tosh oʻymakorligi, tilshunoslik va fojiali tarixiy qismat bilan ajralib turadi. Ular Valinorda Aulë taʼlimini olib, Tirionda yashaganlar, Silmarillar yaratilishi, Alqualondëdagi Qarindosh Qirgʻini, Belerianddagi buyuk qirolliklar (Hithlum, Nargothrond, Gondolin) va Eregiondagi Qudrat Uzuklarining yasalishida markaziy oʻrin tutganlar.",
+  "sources": [
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Of Eldamar and the Princes of the Eldalië",
+      "page": "59"
+    }
+  ],
+  "description_sections": [
+    {
+      "title": "Kelib chiqishi, Finwë va Aulë maktabi",
+      "content": "Noldor Elflarning Buyuk Sayohati (Great Journey) chogʻida oʻzlarining birinchi Oliy Qiroli Finwë boshchiligida Valinorga yetib borganlar. Ular Túna tepaligida oppoq marmardan qurilgan goʻzal Tirion shahrida qoʻnim topdilar. Tabiatan chuqur bilimga, kashfiyotlarga va moddiy olam sirlarini oʻrganishga chanqoq boʻlgan Noldor hunarmandlik va yer osti metallari xudosi boʻlgan Vala Aulëning eng sevimli shogirdlariga aylandilar. Aulë ularga metallarni eritish, qurollar va zargarlik buyumlari yasash, toshlarni sayqallash va qimmatbaho javohirlar yaratish sirlarini oʻrgatdi. Noldorning eng buyuk dahosi Fëanor Tengwar alifbosini, fikrni uzoq masofaga uzatuvchi Palantír toshlarini va nihoyat Valinordagi Ikki Daraxt (Telperion va Laurelin) nurlarini oʻzida mujassam etgan tengsiz uchta muqaddas Silmaril gavharini yaratdi."
+    },
+    {
+      "title": "Morgoth makri, Qasamyod va Alqualondë fojiasi",
+      "content": "Melkor Noldor orasiga yashirin hasad, shubha va yolgʻon urugʻlarini sochdi. Finwë oʻldirilib, Silmarillar oʻgʻirlab ketilgach, Fëanor oʻzining yetti oʻgʻli bilan birgalikda daxshatli Qasam ichdi. Bu qasam barcha Ilúvatar farzandlariga fojia keltirdi. Valinordan Oʻrta-yerga qaytish uchun kemalar talab qilgan Noldor dengizchi Teleri elflarining oq oqqush kemalarini tortib olish maqsadida Alqualondë bandargohida Birinchi Qarindosh Qirgʻinini sodir etdilar. Shundan soʻng taqdir hukmdori Mandos ularga mashhur «Noldor Qismati» (Doom of Mandos) laʼnatini eʼlon qildi: ularning barcha ezgu ishlari xiyonat bilan tugashi, oʻldirilganlar ruhi Mandos zallarida uzoq yigʻlashi va Ardaning soʻnggi kunigacha Oʻrta-yerda faqat koʻz yosh va qaygʻu topishlari bashorat qilindi. Fëanor kemalarda suzib ketib, ularni yoqib yuborgach, Fingolfin boshchiligidagi asosiy xalq sovuq Helcaraxë muzliklarini yovvoyi azob-uqubat bilan bosib oʻtishga majbur boʻldi."
+    },
+    {
+      "title": "Beleriand shohliklari, qahramonlik va inqiroz",
+      "content": "Beleriandga yetib kelgan Noldor oʻzlarining buyuk shohliklarini qurdilar: Fingolfin va Fingon Hithlumda, Finrod Felagund Nargothrond gʻorlarida, Turgon esa Amon Gwareth tepaligida yashirin Gondolin shahrida hukmronlik qildi. Ular toʻrt yuz yildan ortiq vaqt davomida Angband qalʼasini qamal qilib, Morgoth armiyalarini tutib turdilar. Biroq Dagor Bragollach (Toʻsatdan Alanga jangi) va Nirnaeth Arnoediad (Sanoqsiz Koʻz Yoshlari jangi) natijasida Noldor shohliklari birin-ketin vayron boʻldi. Fingolfin Morgoth bilan yakkama-yakka jangga kirishib, qora hukmdorni yetti bor yaraladi va afsonaviy tarzda halok boʻldi. Oxir-oqibat Fëanor oʻgʻillarining ikkinchi va uchinchi qarindosh qirgʻinlari (Menegroth va Sirion etaklarida) Noldor sharafini yanada yerga urdi."
+    },
+    {
+      "title": "Ikkinchi va Uchinchi Davrlar: Eregion va Boqiy Gʻarbga qaytish",
+      "content": "Gʻazab Urushidan soʻng koʻplab Noldor Valinorga qaytdi, ammo Oʻrta-yerda qolganlar Gil-galad boshchiligida Lindon qirolligiga, Fëanor nabirasi Celebrimbor boshchiligida esa Eregion (Ost-in-Edhil) zargarlar makoniga asos soldilar. Eregionda Noldor mitti-xalq (Khazad-dûm) bilan chuqur doʻstlik oʻrnatdilar va Annatar qiyofasidagi Sauron aldoviga uchrab, Qudrat Uzuklarini yasadilar. Uchinchi Davrda Noldorning soni kamayib bordi; ularning eng buyuk namoyandalari Elrond (Rivendell) va Galadriel (Lothlórien) oʻzlarining elflar uzuklari (Vilya va Nenya) orqali vaqt zangini toʻxtatib, oʻtmish goʻzalligini asrab turdilar. Halqa Urushida Yagona Uzuk yoʻq qilingach, Uch Uzuk ham oʻz kuchini yoʻqotdi va Noldor kemalarga chiqib, Boqiy Gʻarb sari abadiy yoʻl oldilar."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "id": "bywater",
+  "name": "Bywater (Suvboʻyi)",
+  "elvish_name": "Bywater",
+  "type": "shahar",
+  "region": "orta-yer",
+  "coordinates": {
+    "map_id": "orta-yer",
+    "x": 512,
+    "y": 1406
+  },
+  "founded_era": "Uchinchi Davr 1601",
+  "rulers": [],
+  "notable_events": [
+    "Yashil Ajdarho (Green Dragon) mayxonasida Bilbo va Torin boshliq mitti-odamlarning yigʻilishi (2941-yil)",
+    "Suvboʻyi jangi (Battle of Bywater) — Uzuk Urushining soʻnggi toʻqnashuvi va Shirning ozod qilinishi (3019-yil)"
+  ],
+  "textual_status": "author_published",
+  "summary": "Suvboʻyi (Bywater) — Shirning Gʻarbiy Toʻrtligida, Hobbitondan bir necha chaqirim sharqda, Katta Sharqiy Yoʻl boʻyida joylashgan gavjum xobbit qishlogʻi. Bu yerda mashhur Yashil Ajdarho (The Green Dragon) va Buta (The Ivy Bush) mayxonalari, shuningdek Suv havzasi (Bywater Pool) joylashgan. 3019-yilda Meri va Pippin boshchiligidagi xobbitlar Suvboʻyi jangida bosqinchi qaroqchilarni yengib, Shirni qutqarganlar.",
+  "sources": [
+    {
+      "book_slug": "the-hobbit",
+      "chapter": "An Unexpected Party",
+      "notes": "Bilboning Yashil Ajdarho mayxonasiga shoshilib borishi va safarning amaliy boshlanishi."
+    },
+    {
+      "book_slug": "the-lord-of-the-rings",
+      "chapter": "The Scouring of the Shire",
+      "notes": "Suvboʻyi jangi tafsilotlari va qishloq xobbitlarining qarshilik harakati."
+    }
+  ],
+  "description_sections": [
+    {
+      "title": "Suvboʻyi koʻli va Yashil Ajdar tavernasi",
+      "content": "Bywater (Suvboʻyi) — Hobbitondan atigi ikki mil sharqda, katta suv havzasi (Bywater Pool) boʻyida joylashgan gavjum posyolka. Bu yerda paxta yetishtiruvchilar, bogʻbonlar va hunarmand xobbitlar istiqomat qiladi.\n\nPosyolkaning eng mashhur maskani — 'Yashil Ajdar' (The Green Dragon) tavernasi boʻlib, u xobbitlarning bosh uchrashuv, yangilik almashish va pivoxoʻrlik markazi boʻlgan."
+    },
+    {
+      "title": "Suvboʻyi jangi (Battle of Bywater)",
+      "content": "3019-yil 3-noyabrida Bywater koʻchalarida Halqa Urushining eng soʻnggi toʻqnashuvi — Suvboʻyi jangi boʻlib oʻtdi. Merry Brandybuck va Pippin Took boshchiligidagi yuzlab xobbitlar Sarumanning qaroqchilar toʻdasini qurshab olib yengdilar va Shirni zulmatdan ozod qildilar."
+    }
+  ]
+}
