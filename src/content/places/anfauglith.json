@@ -1,7 +1,7 @@
 {
   "id": "anfauglith",
   "name": "Anfauglith",
-  "elvish_name": "Dor-nu-Fauglith / Ard-galen (Boʻgʻuvchi chang zamini)",
+  "elvish_name": "Dor-nu-Fauglith / Ard-galen",
   "type": "oʻlka",
   "region": "beleriand",
   "coordinates": {
@@ -17,31 +17,45 @@
   ],
   "notable_events": [
     "Dagor-nuin-Giliath",
-    "Dagor Aglareb",
-    "Dagor Bragollach",
-    "Nirnaeth Arnoediad",
-    "Gʻazab Urushi"
+    "Dagor Aglareb (Shonli Jang)",
+    "Dagor Bragollach (Toʻsatdan Olov Jangi)",
+    "Nirnaeth Arnoediad (Behisob Koʻz Yoshlar Jangi)",
+    "Haudh-en-Ndengin tepaligining vujudga kelishi"
   ],
   "textual_status": "author_published",
-  "summary": "Anfauglith — Beleriand shimolida, Dorthonion va Thangorodrim togʻlari oraligʻida yastanib yotgan ulkan tekislik. Dastlab 'Ard-galen' (Yashil mintaqa) deb atalgan seroʻt dasht Dagor Bragollachda Morgothning olovli daryolari tufayli yonib, jonsiz va boʻgʻuvchi chang-toʻzonli sahroga aylangan. Mashhur Nirnaeth Arnoediad (Behisob Koʻz Yoshlar Jangi) aynan shu kulsahroda kechgan.",
+  "summary": "Anfauglith (Sindarin tilida: «Boʻgʻuvchi Chang») — Beleriand shimolida, Dorthonion platosi va Thangorodrim togʻlari oraligʻida yastanib yotgan ulkan tarixiy tekislikdir. Dastlab «Ard-galen» («Yashil Zamin») deb atalgan seroʻt va bepoyon dasht qariyb toʻrt yuz yil davomida Noldor chavandozlarining tulporlari oʻtlagan va Angband Qamalining markazi boʻlgan; Birinchi Davrning 455-yilidagi Dagor Bragollach alangasida jonsiz kulsahroga aylantirilgan va 472-yildagi mashhur Nirnaeth Arnoediad jangi aynan shu yerda kechgan.",
   "sources": [
     {
       "book_slug": "silmarillion",
-      "chapter": "Of the Ruin of Beleriand and the Fall of Fingolfin",
-      "page": "151",
-      "notes": "Ard-galenning yonib kul boʻlishi va Anfauglith nomini olishi."
+      "chapter": "Quenta Silmarillion, 14-bob: \"Beleriand va uning oʻlkalari haqida\"",
+      "page": "120",
+      "notes": "Ard-galen tekisligi va Noldor otliqlarining qamali."
     },
     {
       "book_slug": "silmarillion",
-      "chapter": "Of the Fifth Battle: Nirnaeth Arnoediad",
+      "chapter": "Quenta Silmarillion, 18-bob: \"Beleriand halokati va Fingolfin qulashi haqida\"",
+      "page": "151",
+      "notes": "Ard-galenning olov bilan kuydirilishi va Anfauglith nomini olishi."
+    },
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Quenta Silmarillion, 20-bob: \"Beshinchi Jang: Nirnaeth Arnoediad\"",
       "page": "188",
-      "notes": "Anfauglith sahrosidagi Behisob Koʻz Yoshlar Jangi."
+      "notes": "Nirnaeth Arnoediad fojiasi va Haudh-en-Ndengin tepaligi."
     }
   ],
   "description_sections": [
     {
-      "title": "Yashil Tekislikdan Boʻgʻuvchi Changsahrogacha",
-      "content": "Dastlab Ard-galen ('Yashil Maskan') deb atalgan bu hudud Dorthonion va Angband oʻrtasida yastanib yotgan yam-yashil bepoyon tekislik edi. Noldor chavandozlari bu yerda oʻz tulporlarini boqib, Angbandni qamal qilib turar edilar.\n\nBirinchi Davrning 455-yilida Morgoth Angbanddan olovli daryolar va zaharli gazlarni otib chiqardi. Butun tekislik yonib kulga aylandi va 'Anfauglith' ('Boʻgʻuvchi Chang') nomini oldi. 472-yildagi mashhur Nirnaeth Arnoediad (Sanab Boʻlmas Koʻzyoshlar Jangi) aynan shu qaqroq sahroda boʻlib oʻtdi."
+      "title": "Ard-galen: Noldor tulporlari va Angband Qamali",
+      "content": "Dastlab bu bepoyon zamin «Ard-galen» (Sindarin tilida «Yashil Mintaqa») deb atalar edi. Gʻarbda Hithlum togʻlari (Ered Wethrin), janubda baland Dorthonion qaragʻayzorlari, sharqda esa Lothlann choʻllari bilan oʻralgan bu kenglik nihoyatda seroʻt, tekis va yam-yashil yaylov edi.\n\nFingolfin va uning oʻgʻillari boshchiligidagi Noldor elflari bu yerda oʻzlarining chopqir oq tulporlarini boqdilar. Dagor Aglareb («Shonli Jang») zafaridan soʻng Noldor otliq qoʻshini Ard-galen tekisligi boʻylab erkin harakatlanib, qariyb toʻrt yuz yil mobaynida Morgothni oʻz inidan chiqarmay, mashhur «Angband Qamali»ni (Siege of Angband) mustahkam ushlab turdilar."
+    },
+    {
+      "title": "Dagor Bragollach va Olovli Choʻlga aylanish",
+      "content": "Birinchi Davrning 455-yili qishida kutilmaganda Thangorodrim choʻqqilaridan olov, tutun va zaharli gazlarning dahshatli sellari otilib chiqdi. Bu toʻsatdan yopirilgan alanga Ard-galen boʻylab shamoldan ham tez yugurdi; bir necha soat ichida butun yashil yaylovlar, oʻt-oʻlanlar va oʻrmon chekkalari kulga aylandi.\n\nTekislikdagi barcha oʻsimliklar yoʻqolib, tuproq boʻgʻuvchi qora chang va oltingugurt hidli quruq toʻzonga aylandi. Shu fojeadan soʻng elflar bu oʻlkani «Dor-nu-Fauglith» («Boʻgʻuvchi Chang Ziyodi») va «Anfauglith» («Boʻgʻuvchi Chang») deb atadilar; unda na bir qush uchar, na bir giyoh unar edi."
+    },
+    {
+      "title": "Nirnaeth Arnoediad va Haudh-en-Ndengin",
+      "content": "Birinchi Davrning 472-yilida elflar, insonlar va mittilarning birlashgan ulkan armiyasi Morgothga qarshi hal qiluvchi jangga aynan Anfauglith sahrosida kirdilar. Sharqlik Uldorning xiyonati sababli bu toʻqnashuv Oʻrta-yer tarixidagi eng qaygʻuli magʻlubiyat — «Nirnaeth Arnoediad»ga («Sanab Boʻlmas Koʻz Yoshlar Jangi») aylandi. Oliy Shoh Fingon Balroglar tomonidan qatl etildi, Húrin Thalion esa oʻzining ikki tigʻli boltasi bilan yetmishta troll va oʻrkni yer tishlatib, soʻnggi nafasigacha «Aurë entuluva!» («Kun yana keladi!») deb hayqirgancha asir olindi.\n\nJangdan soʻng Morgothning buyrugʻi bilan oʻrklar halok boʻlgan barcha elflar, insonlar va ularning otlarining jasadlarini, singan qalqon va qurollarini tekislik oʻrtasiga toʻplab, ulkan tepalik qilib yidilar. Bu mudhish yodgorlik «Haudh-en-Ndengin» («Halok Boʻlganlar Tepaligi») yoki «Haudh-en-Nirnaeth» («Koʻz Yoshlar Tepaligi») deb ataldi. Butun kulsahro jonsiz qolgan bir paytda, faqat va faqat shu tepalik ustidagina qahramonlar sharafiga baland va yashil maysa qayta unib chiqdi."
     }
   ]
 }

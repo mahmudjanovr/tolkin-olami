@@ -5,26 +5,44 @@
   "associated_ainur": [
     "yavanna",
     "nienna",
-    "varda"
+    "varda",
+    "manwe"
   ],
-  "ontological_evolution": "Illuin va Ormal chiroqlari qulaganidan soʻng Yavanna qoʻshigʻi va Nienna koʻz yoshlari bilan Ezellohar tepaligida unib chiqqan. Telperion va Laurelin nurlari keyinchalik Fëanor tomonidan Silmarillarga jamlangan.",
+  "ontological_evolution": "Ardaning ilk yoritqichlari boʻlgan Illuin va Ormal chiroqlari Melkor tomonidan agʻdarilgach, Vala Yavannaning Ezellohar tepaligidagi ilohiy qoʻshigʻi va Niennaning shifobaxsh koʻz yoshlari bilan Telperion va Laurelin unib chiqqan. Daraxtlarning aralashgan muqaddas nuri Fëanor tomonidan Silmarillarga muhrlangan; daraxtlar nobud boʻlgach, ularning soʻnggi kurtaklari Quyosh va Oyni, koʻchatlari esa Gondorning Oq Daraxti sulolasini boshlab bergan.",
   "textual_status": "author_published",
-  "summary": "Telperion (Kumush daraxt) va Laurelin (Oltin daraxt) — Valinorning muqaddas nur manbalari. Ularning yettita soatlik navbatma-navbat porlashi Aman yillari hisobini belgilagan.",
+  "summary": "Valinorning Ikki Daraxti — kumush bargli Telperion (Silpion / Ninquelótë) va tillarang bargli Laurelin (Malinalda / Culúrien) — Boqiy Gʻarbdagi Valinor saltanatini yoritgan eng muqaddas birlamchi nur manbalaridir. Ularning yettita soatlik navbatma-navbat porlashi va nurlarining qoʻshilishi Daraxtlar Davrining oʻn ikki soatlik kun hisobini belgilab bergan; Melkor va Ungoliant tomonidan zaharlab quritilgan bu nurlar Silmarillar gavharida, Quyosh va Oyda hamda Gondor Oq Daraxti shajarasi orqali abadiylikka muhrlangan.",
   "sources": [
     {
       "book_slug": "silmarillion",
-      "chapter": "Of the Beginning of Days",
-      "page": "38"
+      "chapter": "Quenta Silmarillion, 1-bob: \"Kunlarning boshlanishi haqida\"",
+      "page": "38",
+      "notes": "Ezellohar tepaligida Ikki Daraxtning unib chiqishi va nurlar tartibi."
+    },
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Quenta Silmarillion, 8-bob: \"Valinorning qorongʻulashishi haqida\"",
+      "page": "76",
+      "notes": "Melkor va Ungoliantning xiyonati, daraxtlarning zaharlanishi."
+    },
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Quenta Silmarillion, 9-bob: \"Noldorning qochishi haqida\"",
+      "page": "82",
+      "notes": "Fëanorning Silmarillarni ochishdan bosh tortishi va nurning yoʻqotilishi."
     }
   ],
   "cosmology_sections": [
     {
-      "title": "Valinor Nurlarining Manbai",
-      "content": "Valinorning Ikki Daraxti — kumush bargli Telperion va tillarang gulli Laurelin — Vala Yavannaning Ezellohar tepaligida kuylagan qoʻshigʻi va Niennaning koʻzyoshlari bilan unib chiqqan buyuk ilohiy moʻjizadir.\n\nDaraxtlar navbatma-navbat yetti soatdan nur sochar, ularning nurlari qoʻshilgan paytda Valinorda tong va shomning sehrli jilosi hukm surar edi. Bu nurlar Ardaning eng sof, birlamchi va muqaddas nuri hisoblangan."
+      "title": "Ezellohar tepaligidagi tugʻilish va Nurning 12 soatlik davri",
+      "content": "Shimoliy va janubiy buyuk chiroqlar (Illuin va Ormal) qulab, Oʻrta-yer qorongʻulikka botgach, Valar Boqiy Gʻarbdagi Aman qitʼasiga chekindilar. Valinor darvozalari oldidagi yashil Ezellohar (Corollairë) tepaligida Vala Yavanna yerga oʻtirib, oʻsimliklarning tugʻilishi haqidagi buyuk dostonini kuyladi, motam Malikasi Nienna esa oʻzining shifobaxsh koʻz yoshlarini tepalik tuprogʻiga toʻkdi.\n\nShu tariqa Olamning eng muqaddas moʻjizasi — Ikki Daraxt unib chiqdi. Toʻngʻich daraxt Telperion boʻlib, uning quyuq yashil barglarining orqa tomoni kumushdek jilolanar, oq gullaridan billurdek yorqin kumush shudring tomchilar edi (Varda bu shudringni toʻplab yulduzlarni yoqdi). Ikkinchi daraxt Laurelin boʻlib, uning yosh nihollardek nafis barglari oltin hoshiyali edi va shoxlaridan issiq oltin alanga purkalardi. Har bir daraxt yetti soat davomida asta-sekin kuchayib va soʻnib nur sochar, har kuni ikki marta ularning oltin va kumush nurlari qoʻshilib, Valinor osmonida sehrli shom va tong shafaqlarini vujudga keltirardi."
     },
     {
-      "title": "Melkor va Ungoliant tomonidan soʻndirilishi",
-      "content": "Melkor va bahaybat qora oʻrgimchak Ungoliant Ikki Daraxtni zaharlab, ularning hayot sharbatini soʻrib oldilar. Daraxtlar nobud boʻldi, ammo ularning soʻnggi kumush guli Oyni (Isil), soʻnggi tillarang mevasi esa Quyoshni (Anar) yaratish uchun osmonga koʻtarildi. Fëanor esa bu nurlarni oʻz vaqtida Silmarillarga muhrlagan edi."
+      "title": "Fëanorning eng buyuk moʻjizasi: Silmarillar",
+      "content": "Valinordagi elflar va Valar Ikki Daraxtning nuri ostida uzoq asrlar davomida cheksiz baxtiyorlikda yashadilar. Noldor elflarining eng isteʼdodli zargari va donishmandi Fëanor bu nurning abadiy emasligini, yaratilgan har qanday tirik goʻzallik bir kun kelib nobud boʻlishi mumkinligini chuqur his qildi.\n\nU yillar davomida uzluksiz izlanib, sinmas va oʻchmas qattiq billur jism — «silima» moddasini ixtiro qildi. Fëanor Ikki Daraxtning aralashgan eng sof va tirik nurlarini ushbu billur ichiga kiritib, uchta muqaddas gavhar — Silmarillarni (Silmarilli) yaratdi. Yulduzlar Malikasi Varda bu gavharlarga ilohiy duo berdi, shuning uchun hech bir nopok, yovuz yoki qora niyatli qoʻl ularni kuymasdan ushlay olmas edi. Daraxtlarning asl nuri butun koinotda faqat shu uch toshda saqlanib qoldi."
+    },
+    {
+      "title": "Zulmat tushishi va tirik daraxtlar shajarasi",
+      "content": "Melkor va Boʻshliq maxluqi Ungoliant Valinor bayrami paytida yashirincha Ezelloharga keldilar. Melkor oʻzining qora nayzasi bilan har ikki daraxtning tanasini teshib, ularning hayotbaxsh sharbatini oqizdi; bahaybat oʻrgimchak Ungoliant esa bu sharbatni oxirgi tomchisigacha soʻrib olib, daraxtlarga qora zaharni purkadi. Nur manbalari butunlay soʻnib, Valinor motamga burkandi. Yavanna Fëanordan Silmarillarni ochib, ularning nuri bilan daraxtlarni tiriltirishni iltimos qilganida, Fëanor: «Men oʻz yuragimni oʻz qoʻlim bilan sindirmayman», deb rad javobini berdi.\n\nBiroq Ikki Daraxtning soʻnggi nafasi butkul yoʻqolmadi: ularning soʻnggi guli va mevasidan Quyosh va Oy yaraldi. Shuningdek, Yavanna Telperion xotirasiga atab Tirion shahrida uning aynan oʻxshashi boʻlgan «Galathilion» koʻchatini yaratdi. Ushbu koʻchatdan Tol Eressëadagi Celeborn, undan Númenordagi Nimloth va nihoyat Gondor poytaxti Minas Tirithdagi afsonaviy Oq Daraxt (White Tree of Gondor) sulolasi tarqaldi."
     }
   ]
 }

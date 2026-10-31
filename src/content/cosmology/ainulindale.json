@@ -9,29 +9,35 @@
     "aule",
     "varda"
   ],
-  "ontological_evolution": "Mifologik afsona bo'yicha olam ilohiy simfoniya orqali vujudga kelgan, keyingi qo'lyozmalarda esa bu metafizik ramziy tushuncha sifatida talqin qilingan.",
+  "ontological_evolution": "Tolkien mifologiyasida borliqning yaratilishi ramziy polifonik simfoniya (Ainur musiqasi) orqali tasvirlangan. Kechki matnshunoslik esselarida («Morgoth's Ring: Myths Transformed») bu afsona Eru Ilúvatarning mutlaq yaratuvchilik irodasi, erkin iroda va determinizm oʻrtasidagi chuqur teologik va falsafiy munosabatlar asosi sifatida talqin qilingan.",
   "textual_status": "posthumous_edited",
-  "summary": "Ainulindalë (Ainur Musiqasi) va Oʻchmas Olov (Yashirin Olov / The Secret Fire) — Arda va butun moddiy koinotning yaralishiga asos boʻlgan ilohiy simfoniya hamda faqat Eru Ilúvatarga mansub boʻlgan, borliqqa haqiqiy hayot, erkin iroda va ong baxsh etuvchi oliy metafizik qudrat.",
+  "summary": "Ainulindalë (Quenya tilida: «Ainur Musiqasi») va Oʻchmas Olov (The Secret Fire / Imperishable Flame) — Arda va butun moddiy borliqning yaratilishiga poydevor boʻlgan ilohiy simfoniya hamda faqat Eru Ilúvatarga mansub boʻlgan, jonsiz materiyaga haqiqiy ong, ruh (fëa) va erkin iroda baxsh etuvchi oliy metafizik qudratdir. Uchta buyuk ilohiy mavzudan iborat bu simfoniyada Melkorning shaxsiy xudbinlik bilan kiritgan barcha dissonanslari oxir-oqibat koinotning yanada chuqurroq va fojiaviy goʻzalligiga xizmat qilishi ochib berilgan.",
   "sources": [
     {
       "book_slug": "silmarillion",
-      "chapter": "Ainulindalë: The Music of the Ainur",
-      "page": "15"
+      "chapter": "Ainulindalë: \"Ainur musiqasi (The Music of the Ainur)\"",
+      "page": "15",
+      "notes": "Eru Ilúvatar, uchta musiqiy mavzu, Melkor dissonansi va Oʻchmas Olov."
     },
     {
-      "book_slug": "history-of-middle-earth",
-      "chapter": "Vol. X: Morgoth's Ring — Ainulindalë",
-      "page": "3"
+      "book_slug": "morgoths-ring",
+      "chapter": "I qism: \"Ainulindalëning matnshunoslik evolyutsiyasi\"",
+      "page": "3",
+      "notes": "Christopher Tolkienning Ainulindalë qoʻlyozmalari va metafizik tahlili."
     }
   ],
   "cosmology_sections": [
     {
       "title": "Ainur Musiqasi: Borliqning ilohiy simfoniyasi",
-      "content": "Ainulindalë (Quenya tilida: 'Ainur Musiqasi') — Arda va butun Eä borligʻining yaratilishiga asos boʻlgan ulugʻvor ilohiy kosmologik voqeadir. Yagona Xudo — Eru Ilúvatar oʻz fikridan Ainurni yaratdi va ularga Buyuk Mavzuni (The Great Theme) taqdim etib, musiqiy garmoniya yaratishni buyurdi.\n\nAinur sadosi butun Boʻshliqni toʻldirdi. Har bir Ainu oʻzining ilohiy tushunchasiga koʻra simfoniyaga hissa qoʻshdi va bu musiqada kelajakdagi butun koinot tarixi shakllandi."
+      "content": "Eä moddiy olami vujudga kelishidan avval, faqat Yagona Yaratuvchi — Eru Ilúvatar va Uning tafakkuridan tugʻilgan muqaddas ruhlar — Ainur mavjud edi. Eru ularni Abadiy Zallarda (Timeless Halls) jamlab, har biriga oʻz fikridan kelib chiqqan musiqiy qobiliyatlarni oʻrgatdi.\n\nSoʻngra Ilúvatar barcha Ainur oldiga oʻzining eng buyuk musiqiy mavzusini («The Great Theme») qoʻydi va ularga oʻzaro hamohanglikda, uygʻun polifoniya bilan buyuk simfoniya kuylashni buyurdi. Ainurning minglab ohangdor ovozlari aralashib, cheksiz Boʻshliqni toʻldirdi; bu ilohiy xorda kelajakdagi butun koinotning shakli, yulduzlar harakati, daryolar oqimi va jonli tabiatning barcha bosqichlari musiqiy timsollarda oldindan mujassamlashdi."
     },
     {
-      "title": "Melkor dissonansi va Uchinchi Mavzu",
-      "content": "Ainur orasida eng qudratlisi boʻlgan Melkor oʻzining manmanligi va boshqarish hirsi tufayli musiqaga oʻzining baland, qoʻpol va shovqinli ohanglarini kiritdi. Bu koinotda birinchi nizo va nomutanosiblikni vujudga keltirdi.\n\nIlúvatar Melkorning dissonansiga qarshi yangi mavzularni, xususan Oʻz Farzandlari — Elflar va Insonlar yaratilishini ifodalovchi Uchinchi Mavzuni kiritdi. Eru Melkorga: 'Hech bir ohang Mening izmimdan tashqari boʻlolmaydi, sen qanchalik buzishga urinma, bu oxir-oqibat Mening ulugʻvorligimga xizmat qiladi' deb uqtirdi."
+      "title": "Melkorning uch karra dissonansi va Ilúvatar mavzulari",
+      "content": "Ainur ichida eng katta bilim va qudrat egasi boʻlgan Melkor musiqaga oʻzining shaxsiy gʻoyalarini kiritishni, oʻzini boshqalardan ustun qoʻyishni istadi. U garmoniyani buzib, quloqni teshuvchi, baland, qoʻpol va shovqinli ohanglarni (dissonans) kuylay boshladi; koʻplab kuchsizroq Ainur oʻz ohanglarini yoʻqotib, Melkorning betartib qichqirigʻiga ergashdilar.\n\nShunda Ilúvatar oʻrnidan turib, tabassum bilan Birinchi Mavzudan ham goʻzalroq boʻlgan Ikkinchi Mavzuni kiritdi. Melkor unga qarshi yanada kuchli gʻazab bilan yangi nizo boshlaganida, Eru qoshlarini chimirib, Uchinchi Mavzuni boshlab berdi. Bu mavzu mayin, sokin, chuqur gʻam-qaygʻu va yengilmas sabr bilan toʻla boʻlib, uning ichida Ilúvatarning Farzandlari — Elflar va Insonlarning butun fojiali va shonli taqdiri mujassam edi. Melkorning gʻalayonli shovqini bu sokin chuqurlik oldida choʻkib ketdi. Ilúvatar musiqani toʻxtatib, Melkorga qatʼiy xitob qildi: «Hech bir ohang Mening izmimdan tashqari boʻlolmaydi; sen qanchalik buzishga urinma, bu oxir-oqibat faqat Mening ulugʻvorligimni oshirishga xizmat qiladi!»"
+    },
+    {
+      "title": "Oʻchmas Olov (The Secret Fire) va Erkin Iroda siri",
+      "content": "Musiqa tugagach, Eru Ainurga ular kuylagan narsalarning koʻrinishini (viziyani) namoyon etdi. Ainur hayratda qoldilar, chunki ular kuylagan simfoniya tirik dunyoni ifodalar edi. Biroq bu manzara hali shunchaki tush va ilohiy xayol edi, uning mustaqil jismoniy vujudi yoʻq edi.\n\nShu onda Eru Ilúvatar koinot markaziga oʻzining oliy moʻjizasi — «Oʻchmas Olov»ni (Secret Fire / Imperishable Flame) yubordi va «Eä!» deb amr qildi. Oʻchmas Olov — faqat va faqat Yaratuvchiga tegishli boʻlgan mutlaq ilohiy quvvatdir; birorta ham Ainu (hatto eng qudratli Vala yoki Melkor ham) oʻzicha bu olovni hosil qila olmaydi. Aynan Oʻchmas Olov tirik mavjudotlarga chinakam erkin iroda, oʻz-oʻzini anglash va mustaqil ruh (fëa) ato etadi; shu sababli Aulë mittilarni yaratganida ular Eruning Oʻchmas Olovisiz faqat qoʻgʻirchoq boʻlib qolgan edilar, Eru Olovni ularga bagʻishlagachgina ular tirik xalqqa aylandilar."
     }
   ]
 }

@@ -14,27 +14,39 @@
     "Gondor shohlari"
   ],
   "notable_events": [
-    "Qardoshlikning boʻlinishi",
-    "Boromirning qahramonona halokati",
-    "Uruk-hailar xuruji"
+    "Uzuk Birodarligining parchalanishi (Breaking of the Fellowship)",
+    "Frodoning Koʻruvchi Taxtdagi vahiysi",
+    "Boromirning qahramonona halokati va dafn etilishi",
+    "Uch Ovchilarning taʼqibni boshlashi"
   ],
   "textual_status": "author_published",
-  "summary": "Nen Hithoel koʻlining gʻarbiy qirgʻogʻida, Rauros sharsharasi ustida qad koʻtargan qadimiy tepalik («Koʻz Tepaligi»). Choʻqqisida Númenor meʼmorchiligi mahsuli boʻlgan Koʻruvchi Taxt (Seat of Seeing) joylashgan boʻlib, u yerdan yuzlab chaqirim masofadagi oʻlkalar kaftdek koʻringan. Bu yerda Uzuk Qardoshligi boʻlinib, Boromir mardlarcha halok boʻlgan.",
+  "summary": "Amon Hen (Sindarin tilida: «Koʻz Choʻqqisi» yoki «Nazar Tepaligi») — Buyuk Anduin daryosining oʻng sohilida, Nen Hithoel koʻli boʻyida va hayqiruvchi Rauros sharsharasi ustida qad koʻtargan qadimiy togʻdir. Choʻqqisida Gondorning dastlabki shohlari tomonidan barpo etilgan tosh Koʻruvchi Taxt (Seat of Seeing) oʻrnatilgan boʻlib, u yerdan yuzlab chaqirim masofadagi butun Oʻrta-yer olisliklari kaftdek koʻringan; Uchinchi Davrning 3019-yilida Uzuk Birodarligi aynan shu choʻqqi etaklarida parchalanib, Boromir mardlarcha halok boʻlgan.",
   "sources": [
     {
-      "book_slug": "the-lord-of-the-rings",
-      "chapter": "The Breaking of the Fellowship",
-      "page": "410"
+      "book_slug": "the-fellowship-of-the-ring",
+      "chapter": "II kitob, 10-bob: \"Birodarlikning boʻlinishi (The Breaking of the Fellowship)\"",
+      "page": "395",
+      "notes": "Amon Hen choʻqqisi, Koʻruvchi Taxt va Frodoning vahiysi."
+    },
+    {
+      "book_slug": "the-two-towers",
+      "chapter": "III kitob, 1-bob: \"Boromirning oʻlimi (The Departure of Boromir)\"",
+      "page": "415",
+      "notes": "Boromirning soʻnggi jangi, buyuk burgʻu sadosi va qayiqda dafn etilishi."
     }
   ],
   "description_sections": [
     {
-      "title": "Nazar Tepaligi va Koʻruvchi Taxt",
-      "content": "Amon Hen (Sindarincha: 'Koʻz Tepaligi' yoki 'Nazar Tepaligi') — Anduin daryosining oʻng qirgʻogʻida, Nen Hithoel koʻlining janubiy chekkasida joylashgan qadimiy tepalikdir. Qarama-qarshi qirgʻoqda Amon Lhaw ('Quloq Tepaligi') joylashgan.\n\nTepalik choʻqqisida Ikkinchi davrda Gondorliklar tomonidan toshdan yasalgan Koʻruvchi Taxt (Seat of Seeing) oʻrnatilgan boʻlib, unda oʻtirgan odam yuzlab chaqirim naridagi olislarni ravshan koʻra olar edi."
+      "title": "Anduin darvozalari, Emyn Muil va Koʻruvchi Taxt",
+      "content": "Amon Hen — qoyali Emyn Muil tizmasining janubiy nuqtasida, keng Nen Hithoel koʻlining gʻarbiy qirgʻogʻida joylashgan baland, qalin oʻrmonlar bilan qoplangan choʻqqidir. Qarama-qarshi sharqiy sohilida «Amon Lhaw» («Quloq Choʻqqisi»), daryo oʻrtasida esa daxlsiz tik qoya orol «Tol Brandir» qad rostlagan.\n\nGondorning dastlabki qudratli qirollari davrida Amon Hen choʻqqisiga tosh zinalar oʻyilib, uning eng baland nuqtasida toʻrtta yoʻnilgan ustun va sirli «Koʻruvchi Taxt» (Seat of Seeing) barpo etilgan edi. Bu taxtda oʻtirgan kishining koʻzlari sehrli tarzda oʻtkirlashib, shimoldagi Tumanli Togʻlardan tortib janubdagi Buyuk Dengizgacha va sharqdagi Mordor togʻlarigacha boʻlgan butun masofalarni koʻrish qobiliyatiga ega boʻlar edi."
     },
     {
-      "title": "Uzuk Birodarligining parchalanishi",
-      "content": "3019-yil 26-fevralida Uzuk Birodarligi Amon Henda toʻxtadi. Shu yerda Boromir Frodoning uzugini tortib olmoqchi boʻldi. Frodo qochib chiqib, Koʻruvchi Taxtga oʻtirdi va Yagona Uzuk orqali Oʻrta-yerdagi barcha urushlar, Minas Tirith qamali va Barad-dûrdagi Qora Koʻzning oʻziga tikilib turganini koʻrdi.\n\nTepalik etagidagi oʻrmonda Boromir Merry va Pippinni himoya qilib qahramonlarcha halok boʻldi. Bu voqea bilan Uzuk Birodarligi parokanda boʻlib, qahramonlar oʻzlarining alohida taqdirlari tomon yoʻl oldilar."
+      "title": "Frodoning vahiysi va Sauron Koʻzi bilan toʻqnashuv",
+      "content": "U.D. 3019-yil 26-fevralda Uzuk Birodarligi oʻzlarining elf qayiqlarida Amon Hen etagidagi Parth Galen maysazoriga toʻxtadilar. Boromir Yagona Uzuk vasvasasiga tushib, Frododan uni kuch bilan tortib olmoqchi boʻlganida, Frodo barmogʻiga Uzukni taqib koʻrinmas boʻldi va tepalik zinalari boʻylab Koʻruvchi Taxt tomon qochdi.\n\nTaxtga oʻtirgan zahoti Frodoning koʻz oʻngida butun Oʻrta-yerdagi dahshatli manzara ochildi: Rohanda yonayotgan qishloqlar, Gondor sohillariga yaqinlashayotgan Qora Flot, Mirkwooddagi elflar urushi va Barad-dûr choʻqqisidagi qonli qora alanga bilan yonuvchi Sauron Koʻzi. Koʻz Frodoni payqab, uning ustiga oʻzining qora irodasini tashlamoqchi boʻlgan daqiqada, olislardan oqsoqol sehrgarning (Gandalfning) gʻoyibona ovozi yangradi: «Uzukni yech, nodon! Yech uni!» Frodo bor irodasini toʻplab Uzukni barmogʻidan yulib oldi va Mordorga yolgʻiz borish qaroriga keldi."
+    },
+    {
+      "title": "Boromirning qahramonona intihosi va Birodarlikning parchalanishi",
+      "content": "Ayni shu paytda Isengarddan Saruman yuborgan Uglúk boshchiligidagi Uruk-hai toʻdasi va Mordor oʻrklari Amon Hen oʻrmonlariga yopirilib keldilar. Oʻz xatosini tushunib tavba qilgan Boromir xobbitlar Merry va Pippinni himoya qilish uchun yalangʻoch qilich bilan yovuz dushmanlar halqasiga tashlandi. U oʻnlab oʻrklarni yer tishlatdi va yordam chorlab oʻzining buyuk oq burgʻusini (Great Horn of Gondor) chaldi; burgʻu sadosi daralarni larzaga keltirdi, biroq yordam yetib kelguncha Boromir koʻplab zaharli qora oʻqlar bilan yaralanib yiqildi.\n\nAragorn yetib kelganida Boromir uning qoʻlida jon berdi. Aragorn, Legolas va Gimli qahramon noib oʻgʻlining jasadini elf qayigʻiga yotqizib, qurollari va singan burgʻusi bilan birga Rauros sharsharasining oppoq toʻlqinlariga topshirdilar. Frodo va Sam daryodan oʻtib Sharq tomon yoʻl olgach, Uch Ovchilar asir olingan doʻstlarini qutqarish uchun Rohan dashtlari boʻylab afsonaviy taʼqibni boshladilar; shu tariqa Amon Henda Uzuk Birodarligi oʻz missiyasining ikkinchi va eng ogʻir bosqichiga qadam qoʻydi."
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "id": "brethil",
-  "name": "Brethil Oʻrmoni",
+  "name": "Brethil",
   "elvish_name": "Brethil",
   "type": "oʻlka",
   "region": "beleriand",
@@ -13,27 +13,49 @@
   "destroyed_era": "Birinchi davr 587",
   "rulers": [
     "Haleth",
+    "Haldan",
     "Brandir"
   ],
   "notable_events": [
-    "Haleth xalqining koʻchishi",
-    "Carcharoth ovi",
-    "Glaurungning halokati"
+    "Haleth xalqining Brethilga koʻchishi",
+    "Teiglin kechuvlari mudofaasi",
+    "Cabed-en-Arasda Glaurungning oʻldirilishi",
+    "Húrin va Morwenning vidolashuvi"
   ],
   "textual_status": "author_published",
-  "summary": "Brethil — Teiglin va Sirion daryolari oraligʻidagi ulugʻvor qayin oʻrmoni. Edainning Haleth xalqi (Haladin) maskani boʻlgan. Beren va Huan ishtirokidagi Carcharoth ovi hamda keyinchalik Túrin Turambar tomonidan Glaurungning oʻldirilishi shu yerda roʻy bergan.",
+  "summary": "Brethil — Markaziy Beleriandda, Sirion va Teiglin daryolari oraligʻida yastanib yotgan qadimiy qayin oʻrmonidir. Edainning uch ulugʻ qabilasidan biri boʻlgan Haleth xalqi (Haladin) maskani hisoblangan bu oʻlka Teiglin kechuvlarini Angband oʻrklaridan qahramonona himoya qilgan hamda Túrin Turambar, Niënor va ajdar Glaurungning fojiali qismatiga guvoh boʻlgan.",
   "sources": [
     {
       "book_slug": "silmarillion",
-      "chapter": "Of the Coming of Men into the West",
+      "chapter": "Quenta Silmarillion, 17-bob: \"Insonlarning Gʻarbga kelishi haqida\"",
       "page": "142",
-      "notes": "Haleth xalqining Brethilga joylashishi."
+      "notes": "Xonim Haleth va uning elining Brethil oʻrmoniga joylashishi."
+    },
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Quenta Silmarillion, 21-bob: \"Túrin Turambar haqida\"",
+      "page": "220",
+      "notes": "Cabed-en-Aras jangi, Glaurung halokati va fojia toshi."
+    },
+    {
+      "book_slug": "the-children-of-hurin",
+      "chapter": "14-bob: \"Túrin Brethil oʻrmonida\"",
+      "page": "194",
+      "notes": "Amon Obel tepaligi, Ephel Brandir va Haladin madaniyati."
     }
   ],
   "description_sections": [
     {
-      "title": "Haleth xalqi va Teiglin daryosi",
-      "content": "Brethil — Doriath gʻarbida, Sirion va Teiglin daryolari oraligʻida joylashgan qalin qayin oʻrmonidir. Birinchi Davrda Thingolning ruxsati bilan bu yerga Edainning uch xonadonidan biri boʻlgan Haleth Xalqi (Haladin) joylashgan.\n\nOʻrmon markazida Amon Obel tepaligi va Ephel Brandir istehkomi joylashgan. Túrin Turambar oʻz hayotining soʻnggi yillarini shu yerda oʻtkazgan va Cabed-en-Aras darasida bahaybat ajdar Glaurungni oʻldirgan."
+      "title": "Geografik relyefi va Haleth xalqining joylashuvi",
+      "content": "Brethil (Sindarin tilida «oq qayin daraxti») — Doriath gʻarbida, qudratli Sirion daryosi va uning tez oqar irmogʻi Teiglin oraligʻidagi serhosil, tepalikli oʻrmon hududidir. Insonlar Beleriandga kirib kelganida, jasur yoʻlboshchi Haleth boshchiligidagi Haladin xalqi Thargeliondagi qonli qirgʻinlardan soʻng gʻarbga intilib bu yerga yetib keldi.\n\nDoriath qiroli Thingol dastlab insonlarning oʻrmonga kirishiga qarshi boʻldi, biroq Halethning mustahkam va boʻysunmas ruhiyatini koʻrgach, ularga bitta shart bilan ruxsat berdi: Haladin jangchilari Teiglin kechuvlari (Crossings of Teiglin) orqali Doriath chegarasiga bostirib keluvchi oʻrklarni qaytarishi lozim edi. Haleth ahli bu vazifani asrlar davomida sharaf bilan bajardi."
+    },
+    {
+      "title": "Amon Obel va Ephel Brandir istehkomi",
+      "content": "Brethil oʻrmonining qoq oʻrtasida Amon Obel deb ataluvchi baland tosh tepalik qad rostlagan edi. Tepalik ustida Haladin xalqining asosiy turar joyi va yogʻoch hamda toshdan qurilgan mustahkam qalʼasi — Ephel Brandir joylashgan edi. Haleth xalqi boshqa insonlar kabi keng yerlarni haydamay, oʻrmon tabiatiga zarar yetkazmasdan, ovchilik va daraxt kesish bilan tirikchilik qilar edilar.\n\nUlar kamonchilik va oʻrmon pistirmalarida benihoya mohir boʻlib, oʻzlarining oʻtkir boltalarini muqaddas qurol deb bilganlar. Dagor Bragollach va Nirnaeth Arnoediad janglarida ham oʻrmon botqoqliklari va chakalakzorlari ularni dushmanning toʻgʻridan-toʻgʻri qirgʻinidan asrab qoldi."
+    },
+    {
+      "title": "Cabed-en-Aras, Glaurungning halokati va fojiali meros",
+      "content": "Nargothrond qulaganidan soʻng Túrin Turambar qochib Brethilga keldi va Brandir Choʻloq boshchiligidagi Haleth xalqiga qoʻshildi. Oʻrmon chetida u xotirasini yoʻqotgan Niënor Nínielni topib, unga uylandi. B.D. 499-yilda ajdar Glaurung Brethilni yoqib yuborish uchun yaqinlashganda, Túrin Teiglin daryosining tik qoyali Cabed-en-Aras («Kiyik Sakrashi») darasida yashirinib, ajdarning yumshoq qorniga oʻzining qora qilichi Gurthangni sanchdi.\n\nBiroq oʻlim toʻshagidagi ajdar barcha sirni fosh qildi: Níniel oʻz akasiga xotin boʻlganini bilib, oʻzini chuqur girdobga otdi; Túrin esa oʻz qilichi ustiga yiqilib jon berdi. Oʻsha kundan boshlab bu dahshatli jarlik «Cabed Naeramarth» («Dahshatli Qismat Sakrashi») deb ataldi. Qabr tepasiga oʻrnatilgan tosh (Túrin va Finduilas yodgorligi) oldida yillar oʻtib keksa Húrin va uning xotini Morwen bir-birlarini topib, soʻnggi bor quchoqlashdilar; Gʻazab Urushidan soʻng butun Beleriand choʻkkanida ham, bu tosh joylashgan tepalik Buyuk Dengizda Tol Morwen oroli boʻlib omon qoldi."
     }
   ]
 }

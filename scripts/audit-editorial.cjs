@@ -89,6 +89,7 @@ function auditTerminology() {
     mittiCount: 0,
     mittiOdamCount: 0,
     gnomCount: 0,
+    forbiddenGnomViolations: [],
     // Ork vs Oʻrk vs O'rk
     orkStraight: 0,
     orkTurned: 0,
@@ -125,7 +126,12 @@ function auditTerminology() {
 
       termMatches.mittiCount += (text.match(/mitti(?!\s*odam)/gi) || []).length;
       termMatches.mittiOdamCount += (text.match(/mitti[\s-]odam/gi) || []).length;
-      termMatches.gnomCount += (text.match(/gnom/gi) || []).length;
+
+      const gnomMatches = text.match(/gnom/gi) || [];
+      termMatches.gnomCount += gnomMatches.length;
+      if (gnomMatches.length > 0 && !(col === 'articles' && file === 'legendarium-matn-tarixi.md')) {
+        termMatches.forbiddenGnomViolations.push(`${col}/${file} (${gnomMatches.length} occurrences)`);
+      }
 
       termMatches.orkStraight += (text.match(/o'rk/gi) || []).length;
       termMatches.orkTurned += (text.match(/o\u02BBrk/gi) || []).length;
@@ -152,7 +158,7 @@ function auditTerminology() {
   return termMatches;
 }
 
-// 3. Naming Conventions Analysis
+// 3. Naming Conventions & Metadata Analysis
 function auditNames() {
   const charDetails = [];
   const charDir = path.join(CONTENT, 'characters');
@@ -172,8 +178,9 @@ function auditNames() {
     }
   }
 
-  // Check places
+  // Check places & elvish_name formatting
   const placeDetails = [];
+  const invalidElvishNames = [];
   const placeDir = path.join(CONTENT, 'places');
   if (fs.existsSync(placeDir)) {
     for (const file of fs.readdirSync(placeDir)) {
@@ -187,6 +194,16 @@ function auditNames() {
         region: data.region,
         hasCoords: !!data.coordinates,
       });
+
+      if (data.elvish_name) {
+        // elvish_name must not have parentheses with descriptive glosses like (Temir Zindon), (Qora tilda), etc.
+        if (/\(.*[a-zʻʼ].*\)/i.test(data.elvish_name)) {
+          invalidElvishNames.push({
+            file,
+            elvish_name: data.elvish_name,
+          });
+        }
+      }
     }
   }
 
@@ -221,7 +238,7 @@ function auditNames() {
     }
   }
 
-  return { charDetails, placeDetails, peopleDetails, langDetails };
+  return { charDetails, placeDetails, peopleDetails, langDetails, invalidElvishNames };
 }
 
 // 4. Citation and Sources Audit
@@ -374,6 +391,7 @@ function run() {
       places: names.placeDetails,
       peoples: names.peopleDetails,
       languages: names.langDetails,
+      invalidElvishNames: names.invalidElvishNames,
     },
     citations,
     depthSummary: Object.keys(depth).map((col) => ({
@@ -385,7 +403,21 @@ function run() {
   };
 
   fs.writeFileSync(path.join(ROOT, 'scripts', 'editorial-audit-result.json'), JSON.stringify(report, null, 2), 'utf8');
-  console.log('✓ Editorial audit complete. Result written to scripts/editorial-audit-result.json');
+
+  console.log('\n--- EDITORIAL AUDIT GATES ---');
+  console.log(`1. Invalid Book Slugs: ${citations.invalidBookSlugs.length} ${citations.invalidBookSlugs.length === 0 ? '✓ PASS' : '✗ FAIL'}`);
+  console.log(`2. Forbidden "gnom" violations: ${terminology.forbiddenGnomViolations.length} ${terminology.forbiddenGnomViolations.length === 0 ? '✓ PASS' : '✗ FAIL'}`);
+  console.log(`3. Invalid elvish_name formatting: ${names.invalidElvishNames.length} ${names.invalidElvishNames.length === 0 ? '✓ PASS' : '✗ FAIL'}`);
+  
+  // Total places with wordCount < 400
+  const thinPlaces = depth['places'].filter((i) => i.wordCount < 400);
+  console.log(`4. Thin Places (< 400 words): ${thinPlaces.length} ${thinPlaces.length === 0 ? '✓ PASS' : '✗ FAIL'}`);
+
+  // Total cosmology with wordCount < 400
+  const thinCosmology = depth['cosmology'].filter((i) => i.wordCount < 400);
+  console.log(`5. Thin Cosmology (< 400 words): ${thinCosmology.length} ${thinCosmology.length === 0 ? '✓ PASS' : '✗ FAIL'}`);
+
+  console.log('\n✓ Editorial audit complete. Result written to scripts/editorial-audit-result.json');
 }
 
 run();

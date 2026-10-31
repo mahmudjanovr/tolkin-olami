@@ -2,7 +2,7 @@
   "id": "durin-i",
   "name": "Durin I (Boqiy Durin)",
   "original_name": "Durin the Deathless",
-  "father_name": "Aule tomonidan yaratilgan",
+  "father_name": "Aulë tomonidan yaratilgan",
   "mother_name": "Yoʻq",
   "spouse": "Nomaʼlum",
   "children": [
@@ -21,7 +21,7 @@
   "race": "mitti-odamlar",
   "sub_race": "Uzunsoqollar (Longbeards)",
   "culture": "Khazad-dûm (Moria)",
-  "birth_year": "Daraxtlar Davri (Aule tomonidan yaratilgan, B.D. boshlarida uygʻongan)",
+  "birth_year": "Daraxtlar Davri (Aulë tomonidan yaratilgan, B.D. boshlarida uygʻongan)",
   "death_year": "Birinchi Davr oxirlari",
   "house_id": "durin-avlodlari",
   "weapons_and_artifacts": [
@@ -33,44 +33,36 @@
     "khazad-dum"
   ],
   "textual_status": "author_published",
-  "summary": "Vala Aule tomonidan yaratilgan Mitti-odamlarning Yetti Otasidan eng ulugʻi va birinchisi, Uzunsoqollar qabilasi hamda Khazad-dûm (Moria) yerosti qirolligining asoschisi. U shunchalik uzoq umr koʻrganki, xalqi uni «Boqiy Durin» deb ulugʻlagan.",
+  "summary": "Vala Aulë tomonidan yaratilgan Mittilarning Yetti Otasidan eng ulugʻi va birinchisi, Uzunsoqollar qabilasi hamda Khazad-dûm (Moria) yerosti saltanatining asoschisi. U shunchalik uzoq umr koʻrganki, xalqi uni «Boqiy Durin» deb ulugʻlagan.",
   "biography_sections": [
     {
       "title": "Gundabad togʻida uygʻonish va Kheled-zâram",
-      "content": "Aule Mitti-odamlarning Yetti Otasini yaratganida, Ilúvatar ularning Ilk Farzandlar (elflar)dan oldin uygʻonishiga ruxsat bermagan. Kuivienenda elflar uygʻongach, Durin I Tumangli Togʻlarning eng shimolidagi Gundabad togʻi ostida yolgʻiz koʻz ochgan. U janubga qarab uzoq sayohat qilgan va uchta ulkan choʻqqi — Barazinbar (Qizil Shox), Zirakzigil (Kumush Choʻqqi) va Bundushathûr (Bulutli Bosh) etagidagi sokin vodiyga (Azanulbizar) yetib kelgan. U yerdagi Koʻzgu-koʻl (Kheled-zâram) suviga engashib qaraganida, kunduz kuni boʻlishiga qaramay boshi uzra yettita yulduz tojdor boʻlib porlaganini koʻrgan."
+      "content": "Aulë Mittilarning Yetti Otasini yaratganida, Eru Ilúvatar ularning Ilk Farzandlar (elflar)dan oldin uygʻonishiga ruxsat bermagan. Kuiviénenda elflar uygʻongach, Durin I Tumanli Togʻlarning eng shimolidagi Gundabad togʻi ostida yolgʻiz koʻz ochgan. U janubga qarab uzoq sayohat qilgan va uchta ulkan choʻqqi — Barazinbar (Qizil Shox), Zirakzigil (Kumush Choʻqqi) va Bundushathûr (Bulutli Bosh) etagidagi sokin Azanulbizar vodiysiga yetib kelgan. U yerdagi Koʻzgu-koʻl (Kheled-zâram) suviga engashib qaraganida, kunduz kuni boʻlishiga qaramay boshi uzra yettita yulduz toj shaklida porlaganini koʻrgan va buni ilohiy nishon deb bilgan."
     },
     {
       "title": "Khazad-dûmning bunyod etilishi",
-      "content": "Kheled-zâram tepasidagi gʻorlarda Durin oʻz xalqining eng ulugʻ maskani — Khazad-dûm («Mitti-odamlar qasri», keyinchalik Moria)ga asos solgan. U yerga boshqa mitti-odamlar toʻplanib, Durinni oʻz qirollari deb tan olishgan. Uning hukmronligi davrida ulkan tosh ustunli zallar oʻyilib, mitril konlari ochilgan va Khazad-dûm sanʼat hamda boylikda tengsiz markazga aylangan."
+      "content": "Kheled-zâram tepasidagi gʻorlarda Durin oʻz xalqining eng ulugʻ maskani — Khazad-dûm («Mittilar qasri», keyinchalik Moria)ga asos solgan. U yerga boshqa mitti-odamlar toʻplanib, Durinni oʻz qirollari deb tan olishgan va Uzunsoqollar (Longbeards) sulolasi boshlangan. Uning hukmronligi davrida ulkan tosh ustunli zallar oʻyilib, afsonaviy mithril konlari ochilgan va Khazad-dûm sanʼat hamda boylikda tengsiz markazga aylangan."
     },
     {
       "title": "Boqiylik va qayta tugʻilish eʼtiqodi",
-      "content": "Durin I Birinchi Davrning soʻnggi yillarigacha juda uzoq yashagani sababli «Boqiy» (Deathless) laqabini olgan. Vafot etganidan soʻng, mitti-odamlar anʼanasiga koʻra, uning ruhi Aule zallarida kutib turishi va oʻz sulolasida unga aynan oʻxshash besh nafar merosxoʻr (Durin II dan Durin VI gacha) hamda soʻnggi Durin VII shaklida qayta dunyoga kelishiga ishonilgan."
-    },
-    {
-      "title": "Boqiy Durin, Kheled-zâram ko'li va Khazad-dûm asos solinishi",
-      "content": "Durin I Aulë tomonidan yaratilgan Yetti Mitti Ota-bobolarining eng birinchisi va eng ulug'i edi. U Gundobad tog'ida uyg'onib, yolg'iz o'zi janubga qarab yo'l oldi. Tumanli Tog'lar bag'ridagi ko'zgudek sokin Kheled-zâram (Ko'zgu Ko'li) bo'yiga kelganida, suv yuzasida o'z boshining ustida yetti yulduzdan iborat toj aks etganini ko'rdi. U buni ilohiy nishon deb bilib, shu yerda butun mitti xalqining eng buyuk poytaxti – Khazad-dûm (Moria) saltanatiga asos soldi va Uzunsoqollar (Longbeards) sulolasini boshlab berdi."
-    },
-    {
-      "title": "Uzoq umr, reinkarnatsiya e'tiqodi va Durin merosi",
-      "content": "Durin nihoyatda uzoq umr ko'rgani va Birinchi Davrning ko'p asrlari davomida adolatli hukmronlik qilgani sababli 'Boqiy Durin' (Durin the Deathless) deb ataldi. Mittilar e'tiqodiga ko'ra, ularning buyuk otasi haqiqatan o'lmagan, balki oradan asrlar o'tib o'z avlodlarida aynan o'zining qiyofasi, fe'l-atvori va xotirasi bilan qayta dunyoga keladi (Durin II dan Durin VII gacha bo'lgan podshohlar uning qayta tug'ilishi deb hisoblangan). Uning nomi mitti madaniyatining eng muqaddas tayanchi va birlik timsoli bo'lib qoldi. Durin I ning poydevori Khazad-dûm nafaqat mitti xalqining, balki butun Oʻrta-yer meʼmorchiligining tengsiz durdonasi edi. Uning kashf etgan maʼdanlari va tosh zallari asrlar osha mitti-odamlarning gʻurur manbai boʻlib, uning xotirasi barcha yetti qabila tomonidan muqaddas saqlandi. Boqiy Durinning nomi har bir mitti jangchisining yuragida muqaddas olovdek yondi. U asos solgan Khazad-dûm esa erkin xalqlarning eng mahobatli togʻ saroyi sifatida afsonalarda yashadi. Durin I ning oʻlmas merosi barcha mitti avlodlari uchun eng yuksak qadriyat boʻlib qoldi; uning nomi har bir erkin togʻ zallarida asrlar osha jarangladi. Mittilar oʻzlarining birinchi shohlarini chuqur ehtirom bilan eslab, uning nomini oʻzlarining eng buyuk jangovar shiorlariga aylantirdilar."
+      "content": "Durin I Birinchi Davrning soʻnggi yillarigacha juda uzoq yashagani sababli «Boqiy» (Deathless) laqabini olgan. Mittilar eʼtiqodiga koʻra, ularning buyuk otasi haqiqatan oʻlmagan, balki oradan asrlar oʻtib oʻz avlodlarida aynan oʻzining qiyofasi, feʼl-atvori va xotirasi bilan qayta dunyoga keladi (Durin II dan Durin VII gacha boʻlgan podshohlar uning qayta tugʻilishi deb eʼzozlangan). U asos solgan Khazad-dûm esa erkin xalqlarning eng mahobatli togʻ saroyi sifatida afsonalarda yashadi."
     }
   ],
   "etymology": "Durin nomi Qadimgi Skandinav tilidagi «Völuspá» dostonidan olingan boʻlib, «uyqusiragan» yoki «eshik qoʻriqchisi» maʼnosini beradi; Tolkien olamida bu Shimol insonlari tilidagi tashqi ism boʻlib, uning haqiqiy Khuzdul ismi sir saqlangan.",
   "sources": [
     {
-      "book_slug": "the-silmarillion",
-      "chapter": "Quenta Silmarillion, 2-bob (Aule va Yavanna haqida)",
+      "book_slug": "silmarillion",
+      "chapter": "Quenta Silmarillion, 2-bob: \"Aulë va Yavanna haqida\"",
       "page": "44"
     },
     {
       "book_slug": "the-fellowship-of-the-ring",
-      "chapter": "II kitob, 4-bob (Qorongʻulikdagi sayohat — Gimli qoʻshigʻi)",
+      "chapter": "II kitob, 4-bob: \"Qorongʻulikdagi sayohat (Gimli qoʻshigʻi)\"",
       "page": "315"
     },
     {
       "book_slug": "the-return-of-the-king",
-      "chapter": "Ilova A, III qism (Durin xalqi)",
+      "chapter": "Ilova A, III qism: \"Durin xalqi\"",
       "page": "1071"
     }
   ],

@@ -1,7 +1,7 @@
 {
   "id": "menegroth",
   "name": "Menegroth",
-  "elvish_name": "Menegroth (Ming gʻor)",
+  "elvish_name": "Menegroth",
   "type": "shahar",
   "region": "beleriand",
   "coordinates": {
@@ -13,38 +13,43 @@
   "destroyed_era": "Birinchi davr 506",
   "rulers": [
     "Thingol",
-    "Melian"
+    "Melian",
+    "Dior"
   ],
   "notable_events": [
-    "Beren va Lúthien uchrashuvi",
-    "Nauglamír mojarosi"
+    "Beren va Lúthienning uchrashuvi",
+    "Nauglamír mojarosi va Thingolning oʻldirilishi",
+    "Nogrod armiyasining bosqini",
+    "Fëanor oʻgʻillarining Ikkinchi Qardoshlar Qirgʻini"
   ],
   "textual_status": "author_published",
-  "summary": "Menegroth — Doriath oʻrmonlarida, Esgalduin daryosi boʻyida joylashgan Sindar qiroli Elu Thingol va Mayar Melianning Ming gʻor saroy-qalʼasi. Mittilar tomonidan oʻyilgan eng nafis yerosti maskani.",
+  "summary": "Menegroth (Sindarin tilida: «Ming Gʻor») — Doriath oʻrmonlarining qoq markazida, Esgalduin daryosi boʻyidagi tosh qoyalarga oʻyib barpo etilgan Sindar Oliy Shohi Elu Thingol va Maia Melianning afsonaviy poytaxtidir. Moviy Togʻlarning Belegost mittilari yordamida togʻ ichida qadimgi oʻrmonlar shaklida oʻyilgan bu meʼmoriy moʻjiza Melian Kamari orqali dushmanlardan asralgan; biroq Silmaril qadalgan Nauglamír tufayli Nogrod mittilari va Fëanor oʻgʻillari hujumiga uchrab, fojiali tarzda qulagan.",
   "sources": [
     {
       "book_slug": "silmarillion",
-      "chapter": "Of the Sindar",
+      "chapter": "Quenta Silmarillion, 10-bob: \"Sindar haqida\"",
       "page": "93",
-      "notes": "Belegost mittilari yordamida Ming gʻorning barpo etilishi."
+      "notes": "Belegost mittilari yordamida Ming Gʻorning barpo etilishi va Melian nuri."
+    },
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Quenta Silmarillion, 22-bob: \"Doriath halokati haqida\"",
+      "page": "231",
+      "notes": "Menegrothning Nogrod mittilari tomonidan talanishi va Ikkinchi Qirgʻin."
     }
   ],
   "description_sections": [
     {
-      "title": "Minglab Gʻorlar Saroyi va Melian Kamari",
-      "content": "Menegroth (Sindarincha: 'Minglab Gʻorlar') — Doriath oʻrmonida Esgalduin daryosi boʻyidagi tosh qoyalarga oʻyilgan Elu Thingol va dono Maia Melianning afsonaviy poytaxtidir. U Belerianddagi eng goʻzal va xavfsiz shohlik hisoblangan.\n\nBelegost mittilari va elflar birgalikda saroyni oʻyib, uning marmar ustunlarini oltingugurt va billurlar bilan bezatganlar; shiftida yulduzlar charogʻon boʻlib turgan. Melian oʻzining ilohiy sehrli 'Kamari' (Girdle of Melian) bilan Doriathni oʻrab olgan boʻlib, hech bir dushman bu chegaradan oʻtolmas edi."
+      "title": "Ming Gʻor saroyi va Melian Kamari moʻjizasi",
+      "content": "Menegroth (Sindarincha meneg — «ming» + groth/rod — «gʻor, zallar») — Esgalduin daryosining janubiy qirgʻogʻidagi baland tosh qoyaga oʻyib solingan Oʻrta-yerning eng nafis poytaxti edi. Qalʼaga faqat daryo ustidan oʻtgan yagona tosh koʻprik orqali kirilar edi.\n\nSaroy ichidagi yuzlab zallarning ustunlari Belegost mittilari tomonidan toshdan qadimgi bahaybat chinorlar, zaranglar va qaragʻaylar shaklida yoʻnilgan boʻlib, ularning shoxlarida oltin qushlar va billur chiroqlar porlab turardi. Zallardan kumush favvoralar oqib, devorlarida elflar toʻqigan eng goʻzal gobelenlar osilgan edi. Maia Melian oʻzining ilohiy nuri va sehrli Kamari (Girdle of Melian) bilan butun shaharni qoplagan boʻlib, Thingol va Melianning irodasisiz hech bir yovuz maxluq bu daxlsiz maskanga qadam qoʻya olmas edi."
     },
     {
-      "title": "Nauglamír va Doriathning qulashi",
-      "content": "Thingol Beren olib kelgan Silmarilni mittilar yasagan afsonaviy oltin marjon — Nauglamírga qadashni buyurdi. Nogrod mitti ustalari marjonga mahliyo boʻlib, Thingolni oʻz saroyida xiyonatkorona oʻldirdilar.\n\nMelian qaygʻudan Oʻrta-yerni tark etgach, sehrli kamar soʻndi. Nogrod armiyasi va keyinchalik Fëanor oʻgʻillari Menegrothga bostirib kirib, goʻzal saroyni butkul xarobaga aylantirdilar."
+      "title": "Beren, Lúthien va Nauglamír mojarosi",
+      "content": "Menegroth taxt zallarida Oʻrta-yer afsonalarining eng buyuk voqealari roʻy berdi. Inson bahodiri Beren aynan shu yerda Thingol oldiga kelib Lúthienning qoʻlini soʻragan va shoh undan Morgoth tojidan Silmarilni keltirishni talab qilgan edi.\n\nYillar oʻtib Silmaril qoʻlga kiritilgach, keksa Thingol bu muqaddas gavharni Húrin keltirgan afsonaviy mitti marjoni — Nauglamírga oʻrnatishni istadi. Ushbu nozik zargarlik ishini bajarish uchun Menegrothga taklif qilingan Nogrod mitti ustalari Silmarilning tengsiz goʻzalligiga oshiq boʻlib, marjonni oʻzlariniki deb eʼlon qildilar. Thingol ularning kibrini haqoratlab saroydan quvmoqchi boʻlganida, gʻazablangan zargarlar shohga tashlanib, uni oʻz taxti poyida shafqatsizlarcha oʻldirdilar."
     },
     {
-      "title": "Ming G'or mo'jizasi, Melian sehri va Belegost ustalari",
-      "content": "Menegroth (Sindarincha: 'Ming G'or') Doriath o'rmoni markazidagi Esgalduin daryosi bo'yida qoyatosh ichiga o'yib qurilgan Sindar poytaxtidir. Qal'ani qurishda Thingolga Belegost mitti-odamlari yordam bergan; zallarning ustunlari toshdan o'yilgan ulkan bamisoli chinorlar shaklida bo'lib, billur chiroqlar bilan yoritilgan. Melian Kamari (Girdle of Melian) bu maskanni barcha dushmanlardan asragan. Ammo Thingol Nauglamír bo'yniga Silmarilni qadashni buyurganida, gnom zargarlari bilan chiqqan qonli nizo Menegrothning fojiali qulashini boshlab berdi."
-    },
-    {
-      "title": "Sindar madaniyatining cho'qqisi va fojiali talon-toroj",
-      "content": "Menegroth ichidagi favvoralar, daryo bo'yidagi bog'lar va yulduzsimon chiroqlar bilan bezatilgan g'orlar elflar dunyosining eng nafis san'at namunasi edi. Doriath elflari tashqi dunyo urushlaridan xoli holda bu yerda asrlar davomida osoyishta yashadilar. Biroq Nauglamír va Silmaril kulfati sababli Nogrod gnomlari shahar ichiga bostirib kirib, Thingolni o'ldirdilar va saroyni taladilar. Keyinchalik Fëanor o'g'illari ham ikkinchi marta shaharga hujum qilib (Ikkinchi Qirg'in), Menegrothni butunlay xarobaga aylantirdilar. Menegroth zallaridagi tosh ustunlar va qadimiy yodgorliklar elflar sanʼatining eng yuksak choʻqqisi edi. Uning qulashi goʻzallik va sanʼatning ochkoʻzlik va qon toʻkish oldida qanchalik oson nobud boʻlishini koʻrsatuvchi eng taʼsirli va qaygʻuli saboq boʻlib qoldi. Doriathning ushbu poytaxti oʻzining billur zallari va afsonaviy musiqalari bilan elflar xotirasida eng goʻzal afsona boʻlib qoldi. Ming Gʻorning fojiali taqdiri elflarga hatto eng qudratli sehrli himoya ham ichki adovat va ochkoʻzlik oldida ojiz ekanini abadiy eslatib turdi. Shahar Beleriandning eng yorqin durdonasi boʻlib qoldi."
+      "title": "Doriathning qulashi va Ikkinchi Qardoshlar Qirgʻini",
+      "content": "Thingolning oʻlimi bilan Melian chuqur motamga botdi va Oʻrta-yerni butunlay tark etib Valinorga qaytdi. Uning ketishi bilan Ming Gʻorni asrlar davomida himoya qilgan sehrli Kamar bir zumda soʻndi.\n\nNogrod armiyasi himoyasiz qolgan shaharga bostirib kirdi, tosh koʻprikda qonli jang kechdi va Menegroth zallari talanib, elflar qirildi. Keyinchalik Beren va Lúthienning oʻgʻli Dior Eluchíl poytaxtni qayta tiklashga uringan boʻlsa-da, Silmaril Menegrothda ekanini eshitgan Fëanor oʻgʻillari shaharga ikkinchi marta toʻsatdan hujum qildilar (Ikkinchi Qardoshlar Qirgʻini). Dior va uning xotini Nimloth halok boʻldi, muqaddas zallar butunlay vayronaga aylantirildi va Beleriandning eng nafis gʻor-saroyi tarix sahnasidan mangu yoʻqoldi."
     }
   ]
 }

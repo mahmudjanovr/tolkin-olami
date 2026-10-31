@@ -1,27 +1,43 @@
 {
   "id": "ea",
-  "name": "Eä (Moddiy Olam)",
+  "name": "Eä",
   "concept_type": "cosmic_realm",
   "associated_ainur": [
     "manwe",
     "ulmo",
     "aule",
-    "varda"
+    "varda",
+    "melkor"
   ],
-  "ontological_evolution": "Eru Ilúvatar tomonidan 'Eä!' (Boʻl!) amri bilan Ainur koʻrgan viziyaning Boʻshliq ichida moddiy borliqqa aylantirilishi. Arda shu olamning kichik bir qismidir.",
+  "ontological_evolution": "Eru Ilúvatar tomonidan «Eä!» («Mavjud boʻl!») ilohiy farmoni orqali Ainur kuylagan Ulugʻ Musiqa va koʻrgan viziyaning Boʻshliq (Kúma) ichida Oʻchmas Olov (Imperishable Flame) vositasida haqiqiy moddiy borliqqa, jismoniy koinotga va vaqt oqimiga aylantirilishi. Arda (Yer) ushbu cheksiz fazoviy olamning kichik, ammo eng markaziy sahnasidir.",
   "textual_status": "author_published",
-  "summary": "Eä — mavjud boʻlgan butun moddiy koinot boʻlib, Ainulindalë (Ainur musiqasi)ning moddiylashgan shaklidir. Uning tashqarisida faqat Kúma (Cheksiz Boʻshliq) va Ilúvatar huzuri (Abadiy Zallar) joylashgan.",
+  "summary": "Eä (Quenya tilida: «Mavjud boʻlsin!» yoki «U bor!») — Eru Ilúvatar tomonidan yaratilgan butun moddiy koinot, fazo-vaqt kontinuumi va fizik borliqdir. Ainulindalë (Ainur musiqasi)ning moddiy gavdalanishi boʻlgan bu koinot Boʻshliq qaʼriga Oʻchmas Olovning kiritilishi bilan barpo etilgan; uning chegaralari Dunyo Devorlari (Walls of the World) bilan oʻralgan boʻlib, Valar va Maiar oʻz borliqlarini ushbu olamning oxirigacha uning qonuniyatlariga bogʻlagan holda unga kirganlar.",
   "sources": [
     {
       "book_slug": "silmarillion",
-      "chapter": "Ainulindalë: The Music of the Ainur",
-      "page": "20"
+      "chapter": "Ainulindalë: \"Ainur musiqasi (The Music of the Ainur)\"",
+      "page": "19",
+      "notes": "Eruning «Eä!» amri, Oʻchmas Olovning koinot markaziga yuborilishi va Ainurning tushishi."
+    },
+    {
+      "book_slug": "morgoths-ring",
+      "chapter": "I qism: \"Ainulindalëning tahrirlari va Eä metafizikasi\"",
+      "page": "9",
+      "notes": "Eä olamining ontologik mohiyati, koinot devorlari va astronomik tuzilishi."
     }
   ],
   "cosmology_sections": [
     {
-      "title": "Ilohiy 'Boʻlsin!' amri va Oʻchmas Olov",
-      "content": "Eä (Quenya tilida: 'Boʻlsin!' yoki 'Mavjud boʻlgan Olam') — Eru Ilúvatar tomonidan Boʻshliq qaʼriga Oʻchmas Olovni (Secret Fire) yuborish orqali haqiqiy jismoniy mavjudlikka keltirilgan moddiy koinotdir.\n\nAinur faqat tushda koʻrgan olam endi haqiqiy vaqt, makon, materiya va yulduzlarga ega boʻldi. Ainurning bir qismi ushbu yaratilgan olamga tushib, uning qonuniyatlarini boshqarishga kirishdilar; ular Valar va Maiar deb ataldi."
+      "title": "Ontologik mohiyati va «Eä!» ilohiy amri",
+      "content": "Quenya tilida «Eä» soʻzi feʼlning hozirgi zamon shakli boʻlib, «u mavjuddir» yoki buyruq maylida «Mavjud boʻlsin!», «Boʻl!» degan maʼnoni anglatadi. Ainur Eru Ilúvatar huzurida Ulugʻ Musiqani (Ainulindalë) kuylab, boʻlajak dunyo manzarasini (viziyani) koʻrganlaridan soʻng, bu manzara gʻoyib boʻldi.\n\nShunda Ilúvatar Boʻshliq (Kúma) sari boqib: «Eä! Bu narsalar mavjud boʻlsin! Men Boʻshliqqa Oʻchmas Olovni (Secret Fire / Imperishable Flame) yuboraman va u Olamning yuragida yonadi, va Olam boʻladi; va Musiqada qatnashganlardan kim xohlasa, u yerga tushishi mumkin», dedi. Shu tariqa shunchaki ilohiy xayol va musiqiy simfoniya boʻlgan gʻoya real moddiy zarrachalar, yulduzlar, fazo va vaqt qonuniyatlariga ega boʻlgan tirik fizik borliqqa aylandi."
+    },
+    {
+      "title": "Koinot tuzilishi: Kúma, Dunyo Devorlari va sarhadlar",
+      "content": "Tolkien kosmologiyasida Eä cheksiz emas, balki Eru tomonidan belgilangan muayyan sarhadlarga ega boʻlgan maxsus moddiy doiradir. Eä atrofini Tashqi Boʻshliq (Kúma / The Void) oʻrab turadi; koinotning moddiy chegaralari esa «Dunyo Devorlari» (Walls of the World) deb ataluvchi eng soʻnggi koʻrinmas kosmik toʻsiq bilan chegaralangan.\n\nEä ichida Arda (Yer) va uning samoviy qatlamlari — quyi havo qatlami (Vista), yulduzlar va sof yorugʻlik sferasi (Ilmen) hamda butun koinotni oʻrab turuvchi tashqi kosmik ummon (Vaiya) joylashgan. Morgoth Birinchi Davr oxiridagi Gʻazab Urushida magʻlub boʻlgach, Dunyo Devorlaridagi «Tun Darvozasi» (Door of Night) orqali aynan Eä doirasidan tashqariga, sovuq Boʻshliqqa uloqtirilgan."
+    },
+    {
+      "title": "Valarning kirishi va Vaqtning boshlanishi",
+      "content": "Eä barpo etilishi bilan Oʻrta-yer mifologiyasida «Tarix» va «Vaqt» (Time) tushunchasi boshlandi. Abadiy Zallarda (Timeless Halls) vaqt mavjud boʻlmagan, u yerda faqat ilohiy abadiyat hukm surgan; Eä ichida esa jarayonlar ketma-ketligi, oʻtmish, bugun va kelajak oqimi vujudga keldi.\n\nAinurning eng qudratli vakillari — Manwë, Varda, Ulmo, Aulë va Melkor boshchiligidagi Valar Eä ichiga qadam qoʻydilar. Ular koinotga kirgan lahzalarida oʻzlarining qudrati va borligʻini ushbu olamning umriga abadiy bogʻladilar: ular Eä qachongacha mavjud boʻlsa, oʻshangacha undan chiqa olmaydilar va uning yakuniy nuqtasiga — «Arda Qayta Tiklanishi»ga (Arda Healed) qadar uning qonuniyatlarini mukammallashtirish uchun xizmat qiladilar."
     }
   ]
 }

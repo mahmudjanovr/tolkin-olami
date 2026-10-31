@@ -1,7 +1,7 @@
 {
   "id": "himring",
   "name": "Himring",
-  "elvish_name": "Himring (Doimiy Sovuq)",
+  "elvish_name": "Himring",
   "type": "qalʼa",
   "region": "beleriand",
   "coordinates": {
@@ -16,22 +16,43 @@
   ],
   "notable_events": [
     "Dagor Bragollachda Himring mudofaasi",
-    "Maedhros Ittifoqi"
+    "Maedhros Ittifoqining tuzilishi",
+    "Nirnaeth Arnoediad oqibatlari"
   ],
   "textual_status": "author_published",
-  "summary": "Himring — Beleriand shimoli-sharqidagi baland, daraxtsiz tepalik ustida Maedhros barpo etgan eng mustahkam Noldor qalʼasi. Dagor Bragollachda yagona boʻlib dushman zarbasini qaytargan.",
+  "summary": "Himring — Sharqiy Belerianddagi Maedhros Chegarasi (March of Maedhros) markazida qad rostlagan eng mahobatli va olinmas Noldor qalʼasidir. Fëanorning toʻngʻich oʻgʻli Maedhros tomonidan keng, daraxtsiz va sovuq tepalik ustida barpo etilgan bu istehkom Dagor Bragollach olovli boʻronida yagona boʻlib Morgoth qoʻshinlarining shiddatli zarbasini qaytargan va Gʻazab Urushidan soʻng uning choʻqqisi Buyuk Dengizda Himling oroli sifatida saqlanib qolgan.",
   "sources": [
     {
       "book_slug": "silmarillion",
-      "chapter": "Of Beleriand and its Realms",
+      "chapter": "Quenta Silmarillion, 14-bob: \"Beleriand va uning oʻlkalari haqida\"",
       "page": "124",
-      "notes": "Himring tepaligi va Maedhros chegaralari."
+      "notes": "Himring tepaligi relyefi va Maedhros istehkomlari tavsifi."
+    },
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Quenta Silmarillion, 18-bob: \"Beleriand halokati va Fingolfin qulashi haqida\"",
+      "page": "153",
+      "notes": "Dagor Bragollachda Himring qalʼasining mardona mudofaasi."
+    },
+    {
+      "book_slug": "unfinished-tales",
+      "chapter": "I qism: \"Tuor va uning Gondolinga kelishi\"",
+      "page": "54",
+      "notes": "Gʻazab Urushidan keyin Buyuk Dengizda omon qolgan Himling oroli xaritasi."
     }
   ],
   "description_sections": [
     {
-      "title": "Maedhrosning sovuq qalʼasi",
-      "content": "Himring (Sindarincha: 'Doimiy Sovuq') — Sharqiy Belerianddagi keng tepaliklarning eng baland choʻqqisidir. Uning choʻqqisida Fëanorning toʻngʻich oʻgʻli Maedhros oʻzining mustahkam tosh qalʼasini barpo etgan.\n\nDagor Bragollach dahshatida boshqa barcha shimoliy qalʼalar qulaganida ham, faqat Himring Maedhrosning jasorati tufayli dushmanga boʻyin bermay qoldi. Beleriand dengizga choʻkkach, Himring choʻqqisi orol boʻlib omon qoldi va Uchinchi davrda ham dengiz oʻrtasida saqlanib turdi."
+      "title": "Strategik joylashuvi va Maedhros Chegarasi",
+      "content": "Himring (Sindarin tilida «Doimiy Sovuq» yoki «Doimiy Muzlik») — Sharqiy Beleriand va shimoldagi qaqroq Lothlann tekisliklari oraligʻida joylashgan keng va daraxtsiz tepaliklar zanjirining eng baland choʻqqisidir. Fëanor oʻgʻillari oʻrtasida yerlar taqsimlanganda, toʻngʻich oʻgʻil Maedhros Morgothning Angband qalʼasiga eng yaqin va eng xavfli shimoli-sharqiy yoʻnalishni oʻziga oldi.\n\nU Himring choʻqqisida mahobatli tosh qalʼa va qoʻriqchi minoralar qurdirdi. Ushbu istehkom Lothlann orqali bostirib keluvchi oʻrk qoʻshinlari yoʻlini kesib qoʻygan hamda sharqdagi Maglor Yorigʻi (Maglor's Gap) va gʻarbdagi Aglon Dovoni ustidan toʻliq harbiy nazorat oʻrnatish imkonini bergan. Tepalikning sovuq shamollari va qalin tosh devorlari uni Belerianddagi eng daxlsiz mudofaa tayanchiga aylantirdi."
+    },
+    {
+      "title": "Dagor Bragollachdagi yengilmas mudofaa va Maedhros Ittifoqi",
+      "content": "Birinchi Davrning 455-yilida Morgoth toʻsatdan olov va zahar daryolarini yuborib, Qoʻqqisdan Alanga Jangini (Dagor Bragollach) boshlaganida, shimoliy istehkomlarning deyarli barchasi — Dorthonion, Aglon dovoni va Maglor yorigʻi bir necha kunda kulga aylandi. Biroq Himring qalʼasi Maedhrosning metin irodasi va uning jangchilarining mislsiz jasorati tufayli dushmanga taslim boʻlmadi.\n\nMaedhros nafaqat oʻz qalʼasini saqlab qoldi, balki Dorthonion va Lothlanndan qochgan koʻplab elflar va insonlarni oʻz himoyasiga oldi. U Aglon dovonini qayta yopdi va oʻrklarni orqaga surdi. Aynan Himring devorlari ortida Maedhros keyinchalik elflar, mittilar va insonlarning birlashgan fronti — mashhur «Maedhros Ittifoqi» (Union of Maedhros) rejasini ishlab chiqdi."
+    },
+    {
+      "title": "Nirnaeth Arnoediad oqibatlari va Himling oroli",
+      "content": "B.D. 472-yildagi Behisob Koʻz Yoshlar Jangida (Nirnaeth Arnoediad) Sharqlik Uldorning xiyonati sababli Ittifoq dahshatli magʻlubiyatga uchragach, Himring himoyachilari ham chekinishga majbur boʻldilar. Oʻrklar boʻshab qolgan qalʼani egallab, uning devorlarini vayron qildilar. Maedhros va uning omon qolgan ukalari janubdagi Amon Ereb choʻqqisiga qochdilar.\n\nBirinchi Davr nihoyasida Gʻazab Urushi natijasida butun Beleriand qitʼasi parchalanishi va dengiz qaʼriga gʻarq boʻlishi chogʻida ham, mustahkam granit qoyalardan iborat Himring choʻqqisi suv ostida qolmadi. Uchinchi va Toʻrtinchi Davrlarda Buyuk Dengiz (Belegaer) oʻrtasida Lindon qirgʻoqlaridan gʻarbda «Himling» deb ataluvchi yashil orol sifatida koʻrinib turdi; bu orol qadimgi Beleriandning suv yuzasidagi kam sonli tirik yodgorliklaridan biri boʻlib qoldi."
     }
   ]
 }

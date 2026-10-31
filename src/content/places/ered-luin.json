@@ -1,6 +1,6 @@
 {
   "id": "ered-luin",
-  "name": "Ered Luin (Moviy Togʻlar / Blue Mountains)",
+  "name": "Ered Luin",
   "elvish_name": "Ered Luin / Ered Lindon",
   "type": "togʻ",
   "region": "orta-yer",
@@ -11,41 +11,48 @@
   },
   "founded_era": "Daraxtlar Davri (Olamning ilk shakllanish davri)",
   "rulers": [
-    "Broadbeams va Firebeards mitti-odamlar sulolalari",
-    "Torin II Emanqalqon (surgundagi qarorgoh)"
+    "Broadbeams va Firebeards mitti sulolalari",
+    "Thorin II Oakenshield (surgundagi qarorgoh)"
   ],
   "notable_events": [
-    "Birinchi Davrda Belegost va Nogrod mitti-odamlar shaharlarining gullab-yashnashi",
-    "Qahr Urushi (War of Wrath) yakunida togʻ tizmasining yorilib, Lhûn (Lune) qoʻltigʻining hosil boʻlishi",
-    "Moria va Erebordan ayrilgan Torin II Emanqalqonning janubiy Ered Luinda mitti-odamlar manzilgohini tiklashi (Uchinchi Davr 2802-yil)"
+    "Birinchi Davrda Belegost va Nogrod mitti shaharlarining gullab-yashnashi",
+    "Gʻazab Urushi yakunida togʻ tizmasining yorilib, Lhûn (Lune) qoʻltigʻining hosil boʻlishi",
+    "Thorin II Oakenshield tomonidan janubiy Ered Luinda yangi zallar va konlarning barpo etilishi (U.D. 2802)"
   ],
   "textual_status": "author_published",
-  "summary": "Ered Luin (Moviy Togʻlar, shuningdek Ered Lindon) — Eriadorning gʻarbiy sarhadlari boʻylab shimoldan janubga choʻzilgan ulugʻvor togʻ tizmasi. Birinchi Davrda u Eriador va Beleriand oʻrtasidagi tabiiy devor boʻlib, bagʻrida mitti-odamlarning qadimiy Belegost va Nogrod shaharlari joylashgan. Qahr Urushidagi halokatlar oqibatida tizma oʻrtasidan yorilib, Lhûn (Lune) qoʻltigʻi paydo boʻlgan. Uchinchi Davrda uning gʻarbiy etaklarida Lindon elflar diyori, sharqiy yonbagʻirlarida esa Torin Emanqalqon boshchiligidagi Durin xalqining surgundagi zallari faoliyat yuritgan.",
+  "summary": "Ered Luin (Sindarin tilida: «Moviy Togʻlar», shuningdek Ered Lindon) — Oʻrta-yerning gʻarbiy sarhadlari boʻylab shimoldan janubga choʻzilgan qadimiy va ulugʻvor togʻ tizmasidir. Birinchi Davrda u Eriador va Beleriand oʻrtasidagi ulkan tabiiy chegara boʻlib, qaʼrida Belegost va Nogrod mitti saltanatlari joylashgan; Gʻazab Urushida tizma oʻrtasidan yorilib Lhûn koʻrfazi ochilgan, Uchinchi Davrda esa uning janubiy zallarida Thorin Oakenshield boshchiligidagi Durin xalqi surgunda yashab, Erebor safari rejasini tuzganlar.",
   "sources": [
     {
-      "book_slug": "the-lord-of-the-rings",
-      "chapter": "Appendix A: Durin's Folk",
-      "notes": "Torin Emanqalqon va uning xalqining Moviy Togʻlardagi (Ered Luin) surgundagi zallari va faoliyati."
-    },
-    {
-      "book_slug": "the-hobbit",
-      "chapter": "An Unexpected Party",
-      "notes": "Torin va mitti-odamlarning Moviy Togʻlardan Shirga kelishi va Erebor safariga otlanishi."
+      "book_slug": "the-return-of-the-king",
+      "chapter": "Ilova A, III qism: \"Durin xalqi\"",
+      "page": "1072",
+      "notes": "Thorin Oakenshield va uning xalqining Moviy Togʻlardagi surgun zallari."
     },
     {
       "book_slug": "silmarillion",
-      "chapter": "Of Beleriand and its Realms",
-      "notes": "Ered Luin tizmasining qadimiy geografiyasi hamda Belegost va Nogrod shaharlari."
+      "chapter": "Quenta Silmarillion, 14-bob: \"Beleriand va uning oʻlkalari haqida\"",
+      "page": "122",
+      "notes": "Ered Luin tizmasining qadimiy geografiyasi hamda Belegost va Nogrod."
+    },
+    {
+      "book_slug": "unfinished-tales",
+      "chapter": "III qism, 3-bob: \"Erebor yurishi haqida\"",
+      "page": "322",
+      "notes": "Gandalf va Thorinning uchrashuvi hamda Ered Luindan yoʻlga chiqish."
     }
   ],
   "description_sections": [
     {
-      "title": "Moviy Togʻlar: Beleriand chegarasi va mittilar vatani",
-      "content": "Ered Luin (Moviy Togʻlar) — Oʻrta-yerning eng gʻarbiy chekkasida shimoldan janubga choʻzilgan qadimiy togʻ tizmasidir. Birinchi Davrda u Beleriand va Eriador oʻrtasidagi tabiiy chegara boʻlib, uning qaʼrida Mittilarning ikki buyuk shahri — Nogrod va Belegost joylashgan edi.\n\nGʻazab Urushida Beleriand dengizga choʻkkach, Moviy Togʻlar oʻrtasidan yorilib, Lhûn koʻrfazi (Gulf of Lhûn) vujudga keldi."
+      "title": "Moviy Togʻlar: Beleriand chegarasi va mittilarning qadimiy vatani",
+      "content": "Ered Luin (Sindarin tilida «Moviy Togʻlar», ered — «togʻlar» + luin — «moviy, koʻk») — ilk afsonalar davrida Valar tomonidan Oʻrta-yer chegaralarini mustahkamlash chogʻida koʻtarilgan eng qadimiy tizmalardan biridir. Birinchi Davrda bu tizma sharqdagi ulkan yovvoyi Eriador oʻlkalari bilan gʻarbdagi afsonaviy Beleriand va Ossiriand oraligʻidagi tabiiy devor vazifasini oʻtagan.\n\nTizmaning qoq oʻrtasidagi Dolmed choʻqqisi yonbagʻirlarida mittilarning Yetti Ota-bobolaridan tarqalgan Olovsoqollar (Firebeards) va Kengyelkalar (Broadbeams) qabilalari oʻzlarining Belegost (Gabilgathol) va Nogrod (Tumunzahar) yerosti poytaxtlarini barpo etdilar. Bu yerda Oʻrta-yerning eng mashhur zanjir sovutlari, Narsil qilichi va Ajdar-dubulgʻalari bolgʻalangan."
     },
     {
-      "title": "Surgundagi Durin xonadoni va Erebor safari boshlanishi",
-      "content": "Smaug Ereborni vayron qilgach, Thráin II va Thorin Oakenshield boshchiligidagi Durin xalqi Moviy Togʻlarga koʻchib kelib yangi konlar va saroylar barpo etdilar. Ular bu yerda qurolsozlik va temirchilik bilan kun kechirdilar.\n\nThorin aynan Moviy Togʻlardagi qarorgohidan oʻzining tarixiy Erebor safarini rejalashtirgan va Gandalf bilan ilk uchrashuvini oʻtkazgan."
+      "title": "Gʻazab Urushi halokati va Lhûn (Lune) qoʻltigʻining ochilishi",
+      "content": "Birinchi Davr oxirida yuz bergan ellik yillik Gʻazab Urushi natijasida Valinor armiyasining dahshatli kuchi Beleriand zaminini parchalab yubordi. Okean toʻlqinlari gʻarbdan bostirib kelib, Ered Luin tizmasining qoq oʻrtasidagi granit qoyalarni yorib oʻtdi va ichkariga chuqur kirib borgan ulkan «Lhûn Koʻrfazi»ni (Gulf of Lhûn) hosil qildi.\n\nBelegost va Nogrod shaharlari qulab, ularning konlari suv ostida qoldi. Tizma ikkiga — Shimoliy va Janubiy Moviy Togʻlarga ajralib qoldi. Koʻrfazning eng toʻrida Círdan va elflar mashhur Kulrang Bandargohlarni (Mithlond) qurdilar; omon qolgan mittilarning katta qismi esa Tumanli Togʻlardagi Khazad-dûm (Moria) saltanatiga koʻchib oʻtdilar."
+    },
+    {
+      "title": "Surgundagi Durin xalqi va Thorin Oakenshield zallari",
+      "content": "Uchinchi Davrning 2770-yilida oltin ajdar Smaug Ereborni vayron qilgach, Moria va Togʻosti Saltanatidan ayrilgan Durin xalqi uzoq yillar darbadarlikda yashadi. Azanulbizar qonli jangidan soʻng, 2802-yilda qirol Thráin II va uning jasur oʻgʻli Thorin Oakenshield oʻz xalqini Janubiy Moviy Togʻlarga (Ered Luin) olib keldilar.\n\nUlar togʻ bagʻrida yangi temir va kumush konlarini ochdilar, mustahkam yerosti zallarini qurdilar va qoʻshni Bree insonlari hamda Shayr xobbitlari bilan qizgʻin savdo-sotiq oʻrnatdilar. Thorin oʻz xalqining boyligini qayta tikladi, biroq uning qalbida ota-bobolari yurti Erebor sogʻinchi hech qachon soʻnmadi. Aynan Ered Luindagi zallaridan yoʻlga chiqqan Thorin Bree mayxonasida Gandalf bilan uchrashdi va oʻzining tarixiy safari rejasini ishlab chiqib, oʻn ikki nafar mitti bilan birga Shayr sari otlandi."
     }
   ]
 }

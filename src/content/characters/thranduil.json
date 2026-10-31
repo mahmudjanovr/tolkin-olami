@@ -1,8 +1,8 @@
 {
   "id": "thranduil",
-  "name": "Tranduil",
+  "name": "Thranduil",
   "original_name": "Thranduil",
-  "father_name": "Orofer",
+  "father_name": "Oropher",
   "mother_name": "Nomaʼlum",
   "spouse": "Nomaʼlum",
   "children": [
@@ -20,7 +20,7 @@
   "race": "elflar",
   "sub_race": "Sindar",
   "culture": "Qorongʻu Oʻrmon (Nandor / Silvan) elflari",
-  "birth_year": "B.D. (Doriat)",
+  "birth_year": "B.D. (Doriath)",
   "death_year": "Oʻlmas",
   "weapons_and_artifacts": [
     "Kuzgi barglar va rezavorlar yoki bahorgi gullardan yasalgan toj",
@@ -32,36 +32,36 @@
     "erebor"
   ],
   "textual_status": "author_published",
-  "summary": "Qorongʻu Oʻrmon (avvalgi Katta Yashil Oʻrmon) elflarining Sindar naslli qiroli va Legolasning otasi. «Xobbit» asarida Torin Emanqalqon guruhini asir olgan va Besh Qoʻshin Jangida ishtirok etgan, keyinchalik Uzuk Urushida Dol Guldur qoʻshinlariga qarshi Shimolni himoya qilgan.",
+  "summary": "Qorongʻu Oʻrmon (avvalgi Katta Yashil Oʻrmon) elflarining Sindar naslli qiroli va Legolasning otasi. «Hobbit» asarida Thorin Oakenshield guruhini asir olgan va Besh Qoʻshin Jangida ishtirok etgan, keyinchalik Uzuk Urushida Dol Guldur qoʻshinlariga qarshi Shimolni himoya qilgan.",
   "biography_sections": [
     {
-      "title": "Doriat merosi va Soʻnggi Ittifoq",
-      "content": "Tranduil Birinchi Davrda Doriatda tugʻilgan Sindar zodagoni Oroferning oʻgʻli edi. Ikkinchi Davrda u otasi bilan birga Tumangli Togʻlardan sharqqa oʻtib, Katta Yashil Oʻrmonning mahalliy Silvan (oʻrmon) elflari ustidan hukmronlik oʻrnatgan. Ikkinchi Davr oxiridagi Soʻnggi Ittifoq urushida Orofer Dagorlad jangida halok boʻlgach, Tranduil tirik qolgan qoʻshinning uchdan bir qismini oʻrmonga qaytarib olib kelib, yangi qirol boʻlgan. Uchinchi Davrda Dol Guldur soyasi kuchaygach, u oʻz xalqini shimolga, Daryo ortidagi mustahkam yerosti gʻor-saroylariga koʻchirgan."
+      "title": "Doriath merosi va Soʻnggi Ittifoq",
+      "content": "Thranduil Birinchi Davrda Doriathda tugʻilgan Sindar zodagoni Oropherning oʻgʻli edi. Ikkinchi Davrda u otasi bilan birga Tumanli Togʻlardan sharqqa oʻtib, Katta Yashil Oʻrmonning mahalliy Silvan (oʻrmon) elflari ustidan hukmronlik oʻrnatgan. Ikkinchi Davr oxiridagi Soʻnggi Ittifoq urushida Oropher Dagorlad jangida halok boʻlgach, Thranduil tirik qolgan qoʻshinning uchdan bir qismini oʻrmonga qaytarib olib kelib, yangi qirol boʻlgan. Uchinchi Davrda Dol Guldur soyasi kuchaygach, u oʻz xalqini shimolga, Oʻrmon Daryosi ortidagi mustahkam yerosti gʻor-saroylariga koʻchirgan."
     },
     {
-      "title": "Torin guruhi va Besh Qoʻshin Jangi",
-      "content": "U.D. 2941-yilda Torin Emanqalqon va uning mitti-odamlari Qorongʻu Oʻrmondan oʻtayotib, elflar bazmlarini bezovta qilgani va safar maqsadini yashirgani uchun Tranduil tomonidan zindonga tashlangan; biroq Bilbo Beggins koʻrinmas uzuk yordamida ularni bochkalarda qutqarib chiqqan. Ajdar Smaug oʻldirilgach, Tranduil Koʻl-shahar (Esgaroth) aholisiga yordam koʻrsatgan va Kamonchi Bard bilan birga Ereborga yurish qilgan. Mitti-odamlar bilan nizoni u yoقتirmagan, orklar va varglar hujum qilganda esa Besh Qoʻshin Jangida mitti-odamlar va insonlar bilan yelkama-yelka jang qilgan. Jangdan soʻng u Torin qabriga Orkrist qilichini qoʻygan va Bilboni «Elf-doʻsti» deb eʼtirof etgan."
+      "title": "Thorin guruhi va Besh Qoʻshin Jangi",
+      "content": "U.D. 2941-yilda Thorin Oakenshield va uning mittilari Qorongʻu Oʻrmondan oʻtayotib, elflar bazmlarini bezovta qilgani va safar maqsadini yashirgani uchun Thranduil tomonidan zindonga tashlangan; biroq Bilbo Baggins koʻrinmas uzuk yordamida ularni bochkalarda qutqarib chiqqan. Ajdar Smaug oʻldirilgach, Thranduil Koʻl-shahar (Esgaroth) aholisiga yordam koʻrsatgan va Kamonchi Bard bilan birga Ereborga yurish qilgan. Mittilar bilan bemaʼni nizoni u yoqtirmagan, oʻrklar va varglar hujum qilganda esa Besh Qoʻshin Jangida mittilar va insonlar bilan yelkama-yelka jang qilgan. Jangdan soʻng u Thorin qabriga Orcrist qilichini qoʻygan va Bilboni «Elf-doʻsti» deb eʼtirof etgan."
     },
     {
       "title": "Uzuk Urushi va Yashil Barglar Oʻrmoni",
-      "content": "Uzuk Urushi arafasida Aragorn tomonidan asir olingan Gollum Tranduil qoʻriqchilari nazoratiga topshirilgan, biroq orklar hujumi paytida qochib ketgan; Tranduil bu xabarni yetkazish uchun oʻgʻli Legolasni Rivendellga yuborgan. U.D. 3019-yil mart oyida Dol Guldur qoʻshinlari Tranduil qirolligiga hujum qilganida, u Daraxtlar ostidagi uzoq va shiddatli jangda gʻalaba qozongan. Soʻngra Keleborn va Galadriel bilan uchrashib, oʻrmonning butun shimoliy qismidan iborat yangi Eryn Lasgalen qirolligini barpo etgan."
+      "content": "Uzuk Urushi arafasida Aragorn tomonidan asir olingan Gollum Thranduil qoʻriqchilari nazoratiga topshirilgan, biroq oʻrklar hujumi paytida qochib ketgan; Thranduil bu xabarni yetkazish uchun oʻgʻli Legolasni Rivendellga yuborgan. U.D. 3019-yil mart oyida Dol Guldur qoʻshinlari Thranduil qirolligiga hujum qilganida, u Daraxtlar ostidagi uzoq va shiddatli jangda gʻalaba qozongan. Soʻngra Celeborn va Galadriel bilan uchrashib, oʻrmonning butun shimoliy qismidan iborat yangi Eryn Lasgalen qirolligini barpo etgan."
     }
   ],
   "etymology": "Sindarin tilida Thranduil «joʻshqin bahor» (tharan — «kuchli, joʻshqin» + tuilë / ethuil — «bahor») maʼnosini anglatadi.",
   "sources": [
     {
       "book_slug": "the-hobbit",
-      "chapter": "8-bob (Chivinlar va oʻrgimchaklar) hamda 17-bob (Bulutlar yorildi)",
+      "chapter": "8-bob: \"Chivinlar va oʻrgimchaklar\" hamda 17-bob: \"Bulutlar yorildi\"",
       "page": "160"
     },
     {
       "book_slug": "the-fellowship-of-the-ring",
-      "chapter": "II kitob, 2-bob (Elrond kengashi)",
+      "chapter": "II kitob, 2-bob: \"Elrond kengashi\"",
       "page": "255"
     },
     {
       "book_slug": "the-return-of-the-king",
-      "chapter": "Ilova B (Yillar solnomasi)",
+      "chapter": "Ilova B: \"Yillar solnomasi\"",
       "page": "1093"
     }
   ],

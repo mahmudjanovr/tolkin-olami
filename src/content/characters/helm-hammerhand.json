@@ -1,18 +1,18 @@
 {
   "id": "helm-hammerhand",
-  "name": "Xelm Bolgʻaqoʻl",
+  "name": "Helm Hammerhand (Bolgʻaqoʻl)",
   "original_name": "Helm Hammerhand",
   "father_name": "Gram",
   "mother_name": "Nomaʼlum",
   "spouse": "Nomaʼlum",
   "children": [
-    "Xalet",
-    "Xama",
-    "Xild (Frealafning onasi — Xelmning singlisi)"
+    "Haleth",
+    "Hama",
+    "Hild (Frealafning onasi — Helmning singlisi)"
   ],
   "aliases": [
     "Bolgʻaqoʻl (Hammerhand)",
-    "Xornburg arvohi"
+    "Hornburg arvohi"
   ],
   "titles": [
     "Rohanning Toʻqqizinchi Qiroli (birinchi sulolaning soʻnggi shohi)"
@@ -24,38 +24,38 @@
   "death_year": "U.D. 2759",
   "house_id": "rohan-shohlari",
   "weapons_and_artifacts": [
-    "Xelmning buyuk burgʻusi (Horn of Helm Hammerhand)"
+    "Helmning buyuk burgʻusi (Horn of Helm Hammerhand)"
   ],
   "primary_locations": [
     "helms-deep",
     "edoras"
   ],
   "textual_status": "author_published",
-  "summary": "Rohanning toʻqqizinchi qiroli va Eorl xonadonining birinchi tarmogʻidagi soʻnggi shoh. Jismoniy qudrati va Uzoq Qish davridagi fojiali qamalda yalang qoʻl bilan dushmanlarni qirib tashlagani tufayli afsonaga aylangan; uning sharafiga Xelm Darasi (Helm's Deep) nomlangan.",
+  "summary": "Rohanning toʻqqizinchi qiroli va Eorl xonadonining birinchi tarmogʻidagi soʻnggi shoh. Jismoniy qudrati va Uzoq Qish davridagi fojiali qamalda yalang qoʻl bilan dushmanlarni qirib tashlagani tufayli afsonaga aylangan; uning sharafiga Helm Darasi (Helm's Deep) nomlangan.",
   "biography_sections": [
     {
-      "title": " Freka bilan mojaro va Bolgʻaqoʻl laqabi",
-      "content": "Gramning oʻgʻli Xelm nihoyatda bahaybat va jismonan qudratli shoh boʻlgan. U.D. 2754-yilda Dunland qoni aralashgan boy va takabbur zodagon Freka Edorasga katta qoʻshin bilan kelib, Xelmning qizini oʻz oʻgʻli Vulfga nikohlab berishni talab qilgan va qirolni haqoratlagan. Kengash tugagach, Xelm Frekani saroy tashqarisiga olib chiqib, yalang mushti bilan bir zarbada urib oʻldirgan va Frekaning qarindoshlarini davlat xoini deb eʼlon qilgan. Shu voqeadan soʻng u «Bolgʻaqoʻl» (Hammerhand) nomini olgan."
+      "title": "Freca bilan mojaro va Bolgʻaqoʻl laqabi",
+      "content": "Gramning oʻgʻli Helm nihoyatda bahaybat va jismonan qudratli shoh boʻlgan. U.D. 2754-yilda Dunland qoni aralashgan boy va takabbur zodagon Freca Edorasga katta mulozimlari bilan kelib, Helmning qizini oʻz oʻgʻli Wulfga nikohlab berishni talab qilgan va qirolni ochiq haqoratlagan. Kengash tugagach, Helm Frecani saroy tashqarisiga olib chiqib, yalang mushti bilan bir zarbada urib oʻldirgan va uning qarindoshlarini davlat xoini deb eʼlon qilgan. Shu voqeadan soʻng u «Bolgʻaqoʻl» (Hammerhand) nomini olgan."
     },
     {
       "title": "Dunland bosqini va Uzoq Qish qamali",
-      "content": "Toʻrt yildan soʻng, U.D. 2758-yilda Frekaning oʻgʻli Vulf Dunlandliklar va Umbar qaroqchilari yordamida Rohanga bostirib kirib, Edorasni egallagan (Xelmning oʻgʻli Xalet Oltin Saroy eshigini himoya qilib halok boʻlgan). Qirol Xelm katta yoʻqotishlar bilan Suthburg (keyinchalik Xornburg) qalʼasiga va chuqur daraga chekingan. Shu yili besh oy davom etgan dahshatli «Uzoq Qish» (U.D. 2758–2759) boshlanib, qamalda qolgan Rohirrim va ularning dushmanlari ochlik hamda sovuqdan qirila boshlagan. Xelmning kichik oʻgʻli Xama oziq-ovqat qidirib chiqqanida boʻronda halok boʻlgan."
+      "content": "Toʻrt yildan soʻng, U.D. 2758-yilda Frecaning oʻgʻli Wulf Dunlandliklar va Umbar qaroqchilari yordamida Rohanga bostirib kirib, Edorasni egallagan (Helmning toʻngʻich oʻgʻli Haleth Oltin Saroy eshigini himoya qilib mardlarcha halok boʻlgan). Qirol Helm katta yoʻqotishlar bilan Suthburg (keyinchalik Hornburg) qalʼasiga va chuqur daraga chekingan. Shu yili besh oy davom etgan dahshatli «Uzoq Qish» (U.D. 2758–2759) boshlanib, qamalda qolgan Rohirrim va ularning dushmanlari ochlik hamda sovuqdan qirila boshlagan. Helmning kichik oʻgʻli Hama oziq-ovqat qidirib chiqqanida boʻronda halok boʻlgan."
     },
     {
       "title": "Oq arvoh va muzlagan qirol",
-      "content": "Oʻgʻillarining oʻlimi va ochlikdan yovvoyilashgan Xelm oq libos kiyib, tungi qor boʻronlarida dushman qarorgohiga yolgʻiz tushib borgan va qurolsiz, yalang qoʻllari bilan Dunlandliklarni boʻgʻib oʻldirgan. Dushmanlar uni hech qanday temir oʻldira olmaydigan qor arvohi deb oʻylab dahshatga tushishgan; har gal hujumga chiqishdan oldin Xelm qalʼa minorasidan ulkan burgʻusini chalib, darani larzaga keltirar edi. Bir kuni tunda burgʻu yangragach, Xelm qaytib kelmagan: ertalab quyosh chiqqanida uni damba ustida tik turgancha, tizzasigacha qor ichida muzlab qolgan, biroq yiqilmagan holda topishgan. Koʻp oʻtmay uning jiyani Frealaf Edorasni ozod qilib, Vulfni oʻldirgan va ikkinchi qirollar tarmogʻini boshlab bergan."
+      "content": "Oʻgʻillarining oʻlimi va ochlikdan yovvoyilashgan Helm oq libos kiyib, tungi qor boʻronlarida dushman qarorgohiga yolgʻiz tushib borgan va qurolsiz, yalang qoʻllari bilan Dunlandliklarni boʻgʻib oʻldirgan. Dushmanlar uni hech qanday temir oʻldira olmaydigan qor arvohi deb oʻylab dahshatga tushishgan; har gal hujumga chiqishdan oldin Helm qalʼa minorasidan ulkan burgʻusini chalib, darani larzaga keltirar edi. Bir kuni tunda burgʻu yangragach, Helm qaytib kelmagan: ertalab quyosh chiqqanida uni damba ustida tik turgancha, tizzasigacha qor ichida muzlab qolgan, ammo yiqilmagan holda topishgan. Koʻp oʻtmay uning jiyani Fréaláf Edorasni ozod qilib, Wulfni oʻldirgan va ikkinchi qirollar sulolasini boshlab bergan."
     }
   ],
   "etymology": "Qadimgi ingliz tilida helm «dubulgʻa» hamda koʻchma maʼnoda «himoyachi, hukmdor» degan maʼnoni anglatadi.",
   "sources": [
     {
       "book_slug": "the-return-of-the-king",
-      "chapter": "Ilova A, II qism (Eorl xonadoni)",
+      "chapter": "Ilova A, II qism: \"Eorl xonadoni\"",
       "page": "1065"
     },
     {
       "book_slug": "the-two-towers",
-      "chapter": "III kitob, 7-bob (Xelm Darasi)",
+      "chapter": "III kitob, 7-bob: \"Helm Darasi\"",
       "page": "528"
     }
   ],

@@ -4,7 +4,7 @@
   "original_name": "Treebeard (Fangorn)",
   "father_name": "Yavanna duosi va Ilúvatar ruhi bilan uygʻongan",
   "mother_name": "Yoʻq",
-  "spouse": "Fimbretil (Wandlimb — yoʻqolgan Ent-xotin)",
+  "spouse": "Fimbrethil (Wandlimb — yoʻqolgan Ent-xotin)",
   "children": [],
   "aliases": [
     "Fangorn",
@@ -21,51 +21,43 @@
   "birth_year": "Daraxtlar Davri (Elflar uygʻongan chogʻda)",
   "death_year": "Tirik (Oʻrta-yerning eng qadimgi jonzoti)",
   "weapons_and_artifacts": [
-    "Ent-ichimligi (Ent-draughts — Entvel daryosining hayotbaxsh suvi)"
+    "Ent-ichimligi (Ent-draughts — Entwash daryosining hayotbaxsh suvi)"
   ],
   "primary_locations": [
     "fangorn",
     "isengard"
   ],
   "textual_status": "author_published",
-  "summary": "Valier malikasi Yavanna tomonidan daraxtlarni himoya qilish uchun yaratilgan Entlar (Daraxtlar Choʻponlari) xalqining eng qadimgi vakili va Fangorn oʻrmonining qoʻriqchisi. Uzuk Urushida Merri va Pippin bilan uchrashgach, Entlarni Sarumanning Izengard qalʼasiga qarshi soʻnggi yurishga boshlagan.",
+  "summary": "Valier malikasi Yavanna tomonidan daraxtlarni himoya qilish uchun yaratilgan Entlar (Daraxtlar Choʻponlari) xalqining eng qadimgi vakili va Fangorn oʻrmonining qoʻriqchisi. Uzuk Urushida Merri va Pippin bilan uchrashgach, Entlarni Sarumanning Isengard qalʼasiga qarshi soʻnggi yurishga boshlagan.",
   "biography_sections": [
     {
       "title": "Oʻrta-yerning eng qadimgi choʻponi",
-      "content": "Gendalfning taʼkidlashicha, Daraxtsaqol «Quyosh ostida yurgan barcha tirik mavjudotlarning eng qadimgisi» edi. Yavanna Aule yaratgan mitti-odamlar daraxtlarni kesishidan xavotirga tushganda, Manve orqali Eru Ilúvatar daraxtlar orasida yuruvchi dono ruxlar — Entlarni yuborgan. Qadimgi zamonlarda Daraxtsaqol Beleriyanddan tortib Eriadorning ulkan oʻrmonlarigacha kezib yurgan, elflardan soʻzlashishni oʻrgangan va oʻzining Ent-xotini Fimbretilni sevgan. Biroq Sauron bilan urushlarda Ent-xotinlarning bogʻlari vayron boʻlib, ular bedarak yoʻqolgan, Daraxtsaqol esa qolgan Entlar bilan Tumangli Togʻlar etagidagi Fangorn oʻrmoniga chekingan."
+      "content": "Gandalfning taʼkidlashicha, Daraxtsaqol «Quyosh ostida yurgan barcha tirik mavjudotlarning eng qadimgisi» edi. Yavanna Aulë yaratgan mittilar daraxtlarni kesishidan xavotirga tushganda, Manwë orqali Eru Ilúvatar daraxtlar orasida yuruvchi dono ruhlar — Entlarni uygʻotgan. Qadimgi zamonlarda Daraxtsaqol Belerianddan tortib Eriadorning ulkan oʻrmonlarigacha kezib yurgan, elflardan soʻzlashishni oʻrgangan va oʻzining sevikli yori Fimbrethilni sevgan. Biroq Sauron bilan urushlarda Ent-xotinlarning bogʻlari vayron boʻlib, ular bedarak yoʻqolgan; Daraxtsaqol esa qolgan Entlar bilan Tumanli Togʻlar etagidagi Fangorn oʻrmoniga chekingan."
     },
     {
-      "title": "Merri va Pippin bilan uchrashuv",
-      "content": "Uchinchi Davr oxirlarida qoʻshni Izengardda yashovchi afsungar Saruman oʻzining ork qoʻshinlari va temirchilik oʻchoqlari uchun Fangorn daraxtlarini shafqatsizlarcha kesa boshlagan. U.D. 3019-yil fevral oyida Uruk-xaylar tutqunligidan qochgan Meriadok Brendibak va Peregrin Tuk Fangorn oʻrmoniga kirib, Daraxtsaqol bilan uchrashishgan. Ikki xobbitning kutilmagan tashrifi va ularning Saruman xiyonati haqidagi hikoyasi odatda shoshilmaydigan Daraxtsaqolni harakatga keltirgan."
+      "title": "Merry va Pippin bilan uchrashuv",
+      "content": "Uchinchi Davr oxirlarida qoʻshni Isengardda yashovchi sehrgar Saruman oʻzining oʻrk qoʻshinlari va temirchilik oʻchoqlari uchun Fangorn daraxtlarini shafqatsizlarcha kesa boshlagan. U.D. 3019-yil fevral oyida Uruk-hai tutqunligidan qochgan Meriadoc Brandybuck va Peregrin Took Fangorn oʻrmoniga kirib, Daraxtsaqol bilan uchrashishgan. Ikki hobbitning kutilmagan tashrifi va ularning Saruman xiyonati haqidagi xabari doimo vazmin va shoshilmaydigan Daraxtsaqolni gʻazabga keltirgan."
     },
     {
-      "title": "Entlarнинг soʻnggi yurishi va Izengardning qulashi",
-      "content": "Daraxtsaqol Derndingle vodiysida uch kunlik Entmoot (Entlar kengashi)ni chaqirib, Entlar va yarim-uygʻoq daraxtlar (Huornlar)ni Izengardga qarshi yurishga koʻndirgan. Ular Izengardning tosh devorlarini yalang qoʻllari bilan parchalab, Izengard daryosining toʻgʻonini buzib tashlashgan va Sarumanning yerosti oʻchoqlarini suv ostida qoldirib, afsungarni Ortank minorasida qamal qilishgan; shu bilan birga Huornlar Xelm Darasiga borib, Sarumanning qochayotgan ork qoʻshinini butunlay yoʻq qilishgan. Urushdan soʻng qirol Aragorn Ortank kalitlarini topshirganida, Daraxtsaqol Izengard atrofida «Ortank Qoʻriqхоna Bogʻi» (Treegarth of Orthanc)ni barpo etgan."
-    },
-    {
-      "title": "Fangorn o'rmoni Oqsoqoli, Eng qadimgi mavjudot va Entmoot",
-      "content": "Daraxtsoqol (Sindarincha: Fangorn) O'rta-yerda qadam bosgan barcha tirik mavjudotlarning eng keksasi bo'lib, 'Tirik narsalarning eng qadimiysi' deb atalgan. U Yavanna tomonidan yaratilgan birinchi Entlar avlodidan bo'lib, Fangorn o'rmonining qo'riqchisi edi. Xobbitlar Merry va Pippin uning o'rmoniga kirib kelganlarida, Daraxtsoqol Sarumanning daraxtlarni qirib tashlaganini ko'rib g'azabga to'ldi. U uch kunlik Entlar Kengashini (Entmoot) chaqirdi va Entlarning Isengardga qarshi so'nggi mashhur yurishini boshladi."
-    },
-    {
-      "title": "Yo'qolgan Ent-xotinlar dardi va tabiatning qismati",
-      "content": "Daraxtsoqolning qalbida doimo chuqur qayg'u – yo'qolgan Ent-xotinlar (Entwives), xususan o'zining sevgilisi Fimbrethil dardi yashar edi. Ikkinchi Davrda Sauron Anduin yerlarini yoqib yuborganida Ent-xotinlar bedarak yo'qolgan va shundan beri yangi Ent bolalari (Entings) tug'ilmay qo'ygan edi. Daraxtsoqol o'zining sekin, ammo qudratli falsafasi bilan O'rta-yerning texniklashuv va sanoatlashuv davriga qarshi turgan eng oliyjanob tabiat ruhiyati bo'lib gavdalanadi. Daraxtsoqolning chuqur xotirasi va tinch donoligi tez oʻtuvchi dunyo tashvishlariga qarshi turgan eng ulugʻvor ustundir. Uning Entlarni uygʻotib Isengardga yurish qilishi tabiatning oʻzini xorlagan har qanday tajovuzkorni yoʻq qilishga qodir yashirin qudratini butun dunyoga namoyon etdi. Daraxtsoqol oʻzining asriy ildizlari bilan qadimiy dunyoning tirik xotirasini ushlab turgan edi. Uning boshlagan Entlar yurishi tabiatning oʻzini xorlagan zoʻravonlikka bergan eng qudratli va adolatli javobi boʻldi. Daraxtsoqolning sadoqati va asriy donoligi Fangorn oʻrmonini va uning tirik jonzotlarini koʻp asrlik kulfatlardan asrab qoldi; uning dostonlari tabiatning soʻnmas xotirasidir. Daraxtsoqolning sadoqati va asriy donoligi tabiatning eng oliyjanob kuchlarini birlashtirib, dunyoni qora zulmatdan asrab qolishda beqiyos oʻrin tutdi. Uning nomini xobbitlar va elflar doimo hurmat va hayrat bilan tilga oldilar; Daraxtsoqol qadimiy oʻrmonlarning mangu qalqoni boʻlib qoldi."
+      "title": "Entlar Kengashi va Isengardning qulashi",
+      "content": "Daraxtsaqol Derndingle vodiysida uch kunlik Entmoot (Entlar kengashi)ni chaqirib, Entlar va uygʻoq daraxtlar (Huornlar)ni Isengardga qarshi soʻnggi yurishga boshlagan. Ular Isengardning qalin tosh devorlarini yalang qoʻllari bilan parchalab, Isen daryosi toʻgʻonini buzib tashlashgan va Sarumanning yerosti zavodlarini suv ostida qoldirib, xoin sehrgarni Orthanc minorasida qamal qilishgan. Huornlar esa Helm Darasiga yetib borib, Sarumanning qochayotgan oʻrk qoʻshinini tor-mor etgan. Urushdan soʻng qirol Aragorn Orthanc kalitlarini topshirganida, Daraxtsaqol qasrdan qolgan yerlarda «Orthanc Bogʻi» (Treegarth of Orthanc)ni barpo etgan."
     }
   ],
   "etymology": "Sindarin tilida Fangorn «soqol-daraxt» (fang — «soqol» + orn — «daraxt») maʼnosini anglatadi; Vestron (umumiy til) tarjimasi Treebeard (Daraxtsaqol)dir.",
   "sources": [
     {
       "book_slug": "the-two-towers",
-      "chapter": "III kitob, 4-bob (Daraxtsaqol) va 9-bob (Suv oqizgan vayronalar)",
+      "chapter": "III kitob, 4-bob: \"Daraxtsaqol\" va 9-bob: \"Vayronalar uzra toshqin\"",
       "page": "463"
     },
     {
       "book_slug": "the-return-of-the-king",
-      "chapter": "VI kitob, 6-bob (Koʻplab xayrlashuvlar)",
+      "chapter": "VI kitob, 6-bob: \"Koʻplab xayrlashuvlar\"",
       "page": "979"
     },
     {
-      "book_slug": "the-silmarillion",
-      "chapter": "Quenta Silmarillion, 2-bob (Aule va Yavanna haqida)",
+      "book_slug": "silmarillion",
+      "chapter": "Quenta Silmarillion, 2-bob: \"Aulë va Yavanna haqida\"",
       "page": "45"
     }
   ],

@@ -1,7 +1,7 @@
 {
   "id": "henneth-annun",
   "name": "Henneth Annûn",
-  "elvish_name": "Henneth Annûn (Botayotgan Quyosh Derazasi)",
+  "elvish_name": "Henneth Annûn",
   "type": "qalʼa",
   "region": "orta-yer",
   "coordinates": {
@@ -14,33 +14,38 @@
     "Faramir (Ithilien qoʻriqchilari sardori)"
   ],
   "notable_events": [
-    "Faramirning Frodo Baggins va Samwise Gamgeeni qabul qilishi va Yagona Uzuk vasvasasidan voz kechishi",
-    "Gollumning Taqiqlangan Hovuzda (Forbidden Pool) tutib olinishi va Frodo tomonidan oʻlimdan qutqarilishi"
+    "Faramirning Frodo Baggins va Samwise Gamgeeni qabul qilishi hamda Yagona Uzukdan voz kechishi",
+    "Gollumning Taqiqlangan Hovuzda (Forbidden Pool) tutilishi va Frodo oʻtinchisi bilan saqlab qolinishi",
+    "Haradrim karvoniga qarshi pistirma va Osgiliath mudofaasiga tayyorgarlik"
   ],
   "textual_status": "author_published",
-  "summary": "Shimoliy Ithilien oʻrmonlarida joylashgan, Gondor qoʻriqchilarining eng maxfiy gʻor-qoʻrgʻoni. Sindarin tilida «Gʻarb Derazasi» (Window of the Sunset) maʼnosini anglatadi; gʻor ogʻzidan gʻarbga qaragan sharshara otilib tushib, quyosh botayotganda suv pardasi oltin rangda jilvalanadi va pastda Taqiqlangan Hovuzni hosil qiladi.",
+  "summary": "Henneth Annûn (Sindarin tilida: «Botayotgan Quyosh Darchasi» yoki «Gʻarb Derazasi») — Shimoliy Ithilien oʻrmonlarida, goʻzal sharshara ortida yashiringan Gondor chegarachilarining (Rangers of Ithilien) eng maxfiy gʻor-istehkomidir. Uchinchi Davrning 2901-yilida Hukmdor Noib Túrin II tomonidan barpo etilgan bu maskan daxlsiz harbiy qonunlar bilan qoʻriqlangan boʻlib, Halqa Urushida Faramir aynan shu gʻorda Yagona Uzuk vasvasasini magʻlub etgan va Oʻrta-yer qismatini qutqarishga hissa qoʻshgan.",
   "sources": [
     {
-      "book_slug": "the-lord-of-the-rings",
-      "chapter": "The Window on the West",
+      "book_slug": "the-two-towers",
+      "chapter": "IV kitob, 5-bob: \"Gʻarbdagi deraza (The Window on the West)\"",
       "page": "669",
-      "notes": "Henneth Annûn sharsharasi va Faramirning Frodo bilan suhbati."
+      "notes": "Henneth Annûn sharsharasi, gʻor ichi va Faramirning Frodo bilan suhbati."
     },
     {
-      "book_slug": "the-lord-of-the-rings",
-      "chapter": "The Forbidden Pool",
+      "book_slug": "the-two-towers",
+      "chapter": "IV kitob, 6-bob: \"Taqiqlangan hovuz (The Forbidden Pool)\"",
       "page": "684",
-      "notes": "Gollumning Taqiqlangan Hovuzda baliq ovlashi va Faramir oldidagi soʻroq."
+      "notes": "Gollumning tunda tutilishi va Faramirning oʻlim jazosidan kechishi."
     }
   ],
   "description_sections": [
     {
-      "title": "Botayotgan Quyosh Darchasi",
-      "content": "Henneth Annûn (Sindarincha: 'Gʻarbiy Darcha' yoki 'Botayotgan Quyosh Darchasi') — goʻzal Ithilien oʻrmonlarida, sharsharalar ortida yashiringan maxfiy gʻor-qalʼadir. Uchinchi davrning 2901-yilida Gondor Bosh Noibi Túrin II buyrugʻi bilan Ithilien chegarachilari (Rangers of Ithilien) uchun maxfiy tayanch nuqtasi sifatida barpo etilgan.\n\nGʻorning ogʻzini sharqirab oqayotgan baland sharshara toʻsib turadi, uning ortidan botayotgan quyosh nuri suv tomchilarida yetti rangda jilolanadi. Gʻorga faqat yashirin suvosti yoʻllari orqali, koʻzlari bogʻlangan holda kirish mumkin edi."
+      "title": "Ithilien oʻrmonlari va Gʻarbiy Darcha meʼmorchiligi",
+      "content": "Uchinchi Davrning 2901-yilida Mordor oʻrklari Ithilien viloyatiga tinimsiz hujumlar qilib, aholini Anduin ortiga quvib chiqarganida, Gondor Hukmdor Noibi Túrin II dushmanga qarshi partizanlik urushi olib borish uchun oʻrmonlarda bir nechta maxfiy gʻor-boshpanalar qurdirdi. Ularning eng goʻzali va eng mustahkami Henneth Annûn edi.\n\nTabiiy yerosti gʻori kengaytirilib, uning ustidan oquvchi togʻ soyining yoʻnalishi sunʼiy ravishda oʻzgartirilgan: oqim baland ark shaklidagi gʻor ogʻzi uzra otilib tushib, suvdan iborat yaltiroq parda hosil qilgan. Kechki payt botayotgan quyosh nuri bu suv pardasini oltin va yoqut ranglariga boʻyagan; gʻor ichidagi jangchilar toʻlqinlar ortidan xuddi derazadan qaragandek gʻarbdagi Oq Togʻlar va oʻrmonlarni kuzatib turganlar."
     },
     {
-      "title": "Faramir, Frodo va Gollum uchrashuvi",
-      "content": "3019-yil mart oyida Faramir boshchiligidagi chegarachilar Harad karvoniga pistirma qoʻyganlarida, tasodifan Frodo va Samwiseni asir oldilar. Xobbitlar koʻzlari bogʻlangan holda Henneth Annûnga keltirildi.\n\nGollum gʻor yaqinidagi Taqiqlangan Havzada (Forbidden Pool) baliq ovlayotganda qoʻlga olindi. Gondor qonunlariga koʻra bu yerga ruxsatsiz kelgan har qanday zot qatl qilinishi shart edi, ammo Frodoning oʻtinishi bilan Faramir uning jonini saqlab qoldi va xobbitlarni oziq-ovqat bilan taʼminlab Mordorga yoʻlga soldi."
+      "title": "Taqiqlangan Havza va daxlsiz harbiy qonunlar",
+      "content": "Gʻor sharsharasi pastda chuqur, toshloq va qorongʻu «Taqiqlangan Havza»ni (Forbidden Pool) hosil qilgan. Bu maskanning maxfiyligini saqlash uchun Gondor qonunlarida oʻta qatʼiy qoida oʻrnatilgan edi: Noib yoki sardorning ruxsatisiz bu havzaga kirgan yoki gʻor oʻrnini koʻrgan har qanday kishi zudlik bilan qatl qilinishi shart edi.\n\nHatto doʻstona tashrif buyurgan xobbitlar — Frodo va Sam ham bu yerga koʻzlari qora mato bilan bogʻlangan holda keltirildilar. Tunda Anborn boshchiligidagi soqchilar havzada baliq ovlayotgan gʻalati maxluq Gollumni payqaganlarida, uning ustiga oʻnlab kamonlar oʻqtalindi; biroq Frodo oʻrtaga tushib Faramirdan unga rahm qilishini oʻtindi va gʻor boʻsagʻasiga tushib Gollumni asir qilib saqlab qoldi."
+    },
+    {
+      "title": "Faramirning maʼnaviy zafari va Uzukdan voz kechish",
+      "content": "Henneth Annûn zallarida Faramir va Frodo oʻrtasida chuqur falsafiy suhbat kechdi. Samwise beixtiyor ogʻzidan Frododa Isildur Balosi (Yagona Uzuk) borligini gullab qoʻyganida, butun gʻorda sukunat choʻkdi. Boromirdan farqli oʻlaroq, sof Númenor hikmati va vazminligiga ega boʻlgan Faramir Oʻrta-yerning eng yuksak axloqiy qahramonligini koʻrsatdi.\n\nU qoʻlini koʻtarib shunday dedi: «Men bu narsani hatto yoʻl chetida yotgan boʻlsa ham, hatto Minas Tirith qulayotgan boʻlib, faqat u orqaligina shaharni qutqarish mumkin boʻlsa ham olmayman!» Faramir Uzukni musodara qilish oʻrniga xobbitlarga taʼzim qildi, ularga oziq-ovqat, suv va yogʻoch hassalar tuhfa qilib, Cirith Ungol dovoni sari yoʻlga kuzatib qoʻydi; bu buyuk fidoiylik Halqa topshirigʻining yakuniy gʻalabasini taʼminlagan eng hal qiluvchi burilishlardan biri boʻldi."
     }
   ]
 }

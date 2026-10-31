@@ -1,6 +1,6 @@
 {
   "id": "anar-va-isil",
-  "name": "Anar va Isil (Quyosh, Oy va Eärendil Yulduzi)",
+  "name": "Anar va Isil",
   "concept_type": "celestial_body",
   "associated_ainur": [
     "varda",
@@ -8,20 +8,35 @@
     "yavanna",
     "ulmo"
   ],
-  "ontological_evolution": "Valinorning Ikki Daraxti Morgoth va Ungoliant tomonidan nobud qilingach, Laurelinning soʻnggi olovli mevasi (Anar — Quyosh, Maia Arien boshqaruvida) va Telperionning soʻnggi kumush guli (Isil — Oy, Maia Tilion boshqaruvida) Aulë yasagan kemalarda osmon gumbaziga koʻtarilgan. Birinchi davr soʻngida ularga Silmaril taqqan Eärendilning Vingilótë kemasi (Gil-Estel yulduzi) qoʻshilgan.",
+  "ontological_evolution": "Valinorning Ikki Daraxti Morgoth va Ungoliant tomonidan nobud qilingach, Yavannaning ilohiy qoʻshigʻi va Niennaning koʻz yoshlari tufayli Laurelinning soʻnggi olovli mevasi (Anar — Quyosh) hamda Telperionning soʻnggi kumush guli (Isil — Oy) vujudga keldi. Aulë yasagan nurli kemalarda Maia Arien va Maia Tilion boshqaruvida samoga koʻtarilgan bu yoritqichlar orqali Oʻrta-yerda Quyosh Davrlari boshlangan va Insonlar uygʻongan.",
   "textual_status": "posthumous_edited",
-  "summary": "Anar (Quyosh), Isil (Oy) va Gil-Estel (Eärendilning Umid Yulduzi) — Ikki Daraxtning soʻnggi pokiza nurlaridan hamda Silmarildan yaralgan, Oʻrta-yerni zulmatdan himoya qiluvchi va Insonlarning uygʻonish davrini boshlab bergan muqaddas samoviy jismlar.",
+  "summary": "Anar (Quyosh) va Isil (Oy) — Valinorning Ikki Daraxtidan qolgan soʻnggi pokiza nurlardan yaralgan, Oʻrta-yerni zulmatdan xalos etgan va zamon hisobini belgilab bergan muqaddas samoviy yoritqichlardir. Vala Aulë yasagan billur kemalarda Maiar Arien va Tilion tomonidan osmon gumbazida boshqariluvchi bu nurlar Insonlarning (Ilúvatar Ikkinchi Farzandlari) uygʻonish davrini boshlab bergan hamda Morgoth maxluqlarini qorongʻu gʻorlarga chekinishga majbur qilgan.",
   "sources": [
     {
       "book_slug": "silmarillion",
-      "chapter": "Chapter 11: Of the Sun and Moon and the Hiding of Valinor / Chapter 24: Of the Voyage of Eärendil",
-      "page": "98"
+      "chapter": "Quenta Silmarillion, 11-bob: \"Quyosh va Oy hamda Valinorning yashirilishi haqida\"",
+      "page": "98",
+      "notes": "Anar va Isilning yaratilishi, Aulë kemalari hamda Arien va Tilion sayohati."
+    },
+    {
+      "book_slug": "morgoths-ring",
+      "chapter": "V qism: \"Myths Transformed (Quyosh va Oy haqidagi muqobil astronomik talqinlar)\"",
+      "page": "369",
+      "notes": "Tolkienning kechki kosmologik qarashlarida Quyoshning qadimiy kelib chiqishi."
     }
   ],
   "cosmology_sections": [
     {
-      "title": "Ikki Daraxtning soʻnggi merosi",
-      "content": "Anar (Quyosh) va Isil (Oy) — Ikki Daraxt nobud boʻlganidan soʻng Aulë tomonidan yasalgan billur kemalarga joylangan samoviy jismlardir. Oyni Maiar Tilion, Quyoshni esa Maiar Arien boshqaradi.\n\nQuyoshning ilk bor Sharqdan koʻtarilishi bilan Birinchi Davr boshlandi va Oʻrta-yerda Insonlar — Ilúvatarning Ikkinchi Farzandlari uygʻondilar."
+      "title": "Ikki Daraxtning soʻnggi merosi va samoviy kemalar",
+      "content": "Morgoth va bahaybat oʻrgimchak Ungoliant Valinorning Ikki Daraxtini zaharlab quritganlarida, butun Olam yana qorongʻulik qaʼriga gʻarq boʻldi. Vala Yavanna Ezellohar tepaligiga oʻtirib oʻzining eng mungli qoʻshigʻini kuyladi, Nienna esa tosh barglar ustiga oʻzining shifobaxsh koʻz yoshlarini toʻkdi.\n\nBu ilohiy nolalarga javoban, oʻlayotgan kumush daraxt Telperion oʻzining soʻnggi yaprogʻida bitta ulkan kumush gul tugdi; oltin daraxt Laurelin esa oʻzining soʻnggi shoxida alanga purkovchi bitta oltin mevani dunyoga keltirdi. Aulë bu ikki yodgorlik uchun nurni oʻtkazuvchi va alanga taʼsirida erimaydigan billur kemalar (vessels) yasadi. Yulduzlar Malikasi Varda esa bu kemalarni samoviy Ilmen qatlamiga koʻtarib, ularning kechayu-kunduz harakatlanish yoʻllarini belgilab berdi."
+    },
+    {
+      "title": "Tilion va Arien: Olov va Kumush yetakchilari",
+      "content": "Samoviy jismlarni boshqarish uchun Valar oʻz saflaridan eng pokiza ikki Maia ruhini tanlab oldilar. Oltin Quyosh kemasini (Anar / Vása — «Olovli Yurak») boshqarish yosh olov ruhi Arienda topshirildi. Arien boshidanoq qora sehrga boʻysunmagan, oʻzining asl alangasini saqlab qolgan va koʻzlari hatto elflar uchun ham haddan tashqari porloq boʻlgan ilohiy qiz edi.\n\nKumush Oy kemasini (Isil / Rána — «Darbadar») boshqarish esa ovchi Vala Oromëning xizmatkori boʻlgan Tilionga topshirildi. Tilion kumush nurni, sokin koʻllarni va oʻrmon sukunatini sevar edi. Biroq Tilionning tartibsiz feʼl-atvori sababli Oy osmonda oʻzgaruvchan tezlikda suzdi va tez-tez Arienning oltin kemasiga haddan tashqari yaqinlashib, uning nuri bilan qoplanishga intildi; bu esa xalqlar koʻz oʻngida Quyosh va Oy tutilishlarini vujudga keltirdi."
+    },
+    {
+      "title": "Insonlarning uygʻonishi va Oʻrta-yerning yangi davri",
+      "content": "Quyoshning ilk bor koʻtarilishi Oʻrta-yer tarixida yangi sahifani — Birinchi Quyosh Davrini ochib berdi. Oltin nur birinchi marta koinot ufqlarini yoritgan lahzada, Oʻrta-yerning eng sharqiy chekkasidagi Hildórien oʻlkasida Eru Ilúvatarning Ikkinchi Farzandlari — Insonlar (Atani) koʻz ochdilar.\n\nElflar yulduzlar ostida uygʻonib, nurni bamisoli sokin goʻzallik deb bilgan boʻlsalar, Insonlar toʻgʻridan-toʻgʻri Quyoshning issiq nurlari ostida hayotga qadam qoʻydilar. Quyoshning muqaddas alangasidan dahshatga tushgan Morgoth esa oʻzining Thangorodrim zindonlariga bekinishga majbur boʻldi; uning oʻrklari, trollari va qorongʻulik maxluqlari kunduzgi yorugʻlikdan qochib, faqat tunda harakatlanadigan boʻlib qoldilar."
     }
   ]
 }

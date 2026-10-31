@@ -1,66 +1,59 @@
 {
   "id": "denethor-ii",
-  "name": "Denetor II",
+  "name": "Denethor II",
   "original_name": "Denethor II",
-  "father_name": "Ektelion II",
+  "father_name": "Ecthelion II",
   "mother_name": "Nomaʼlum",
-  "spouse": "Finduilas (Dol Amrot malikasi)",
+  "spouse": "Finduilas (Dol Amroth malikasi)",
   "children": [
     "Boromir",
     "Faramir"
   ],
   "aliases": [
-    "Minas Tirit hukmdori"
+    "Minas Tirith hukmdori",
+    "Gondor Noibi"
   ],
   "titles": [
     "Gondorning Yigirma Oltinchi Hukmdor Noibi (Ruling Steward of Gondor)"
   ],
   "race": "insonlar",
-  "sub_race": "Dunedayn (Xurin xonadoni)",
+  "sub_race": "Dúnedain (Húrin xonadoni)",
   "culture": "Gondor",
   "birth_year": "U.D. 2930",
   "death_year": "U.D. 3019 (15-mart)",
   "weapons_and_artifacts": [
-    "Anor toshi (Minas Tirit Palantiri)",
+    "Anor toshi (Minas Tirith Palantíri)",
     "Gondor Noiblarining oq hassasi"
   ],
   "primary_locations": [
     "minas-tirith"
   ],
   "textual_status": "author_published",
-  "summary": "Gondorning soʻnggi va yigirma oltinchi Hukmdor Noibi, Boromir hamda Faramirning otasi. Chuqur donishmandlik, kuchli iroda va sof Numenor qoniga ega boʻlishiga qaramay, Anor Palantiri orqali Sauron bilan iroda kurashida umidsizlikka tushib, Minas Tirit qamali vaqtida oʻz joniga qasd qilgan.",
+  "summary": "Gondorning soʻnggi va yigirma oltinchi Hukmdor Noibi, Boromir hamda Faramirning otasi. Chuqur donishmandlik, kuchli iroda va sof Númenor qoniga ega boʻlishiga qaramay, Anor Palantíri orqali Sauron bilan iroda toʻqnashuvida umidsizlikka tushib, Minas Tirith qamali vaqtida fojiali tarzda oʻz joniga qasd qilgan.",
   "biography_sections": [
     {
-      "title": "Donishmandlik va Torongil bilan raqobat",
-      "content": "Ektelion II ning oʻgʻli Denetor yoshligidanoq uzoqni koʻra biluvchi, magʻrur va qadimgi bilimlarga chanqoq shaxs boʻlib, uning tomirlarida sof Numenor qoni oqar edi. Otasining hukmronligi davrida Gondorga «Torongil» nomi ostida kelgan Aragorn (boʻlajak qirol Elessar) katta shuhrat qozonganida, Denetor uning asl shaxsini va Gendalf bilan yaqinligini sezib qolgan hamda Shimoliy merosxoʻr uning oʻrnini egallashidan xavotirlangan."
+      "title": "Donishmandlik va Thorongil bilan raqobat",
+      "content": "Ecthelion II ning oʻgʻli Denethor yoshligidanoq uzoqni koʻra biluvchi, magʻrur va qadimgi bilimlarga chanqoq yetakchi boʻlib, uning tomirlarida sof Númenor qoni oqar edi. Otasining hukmronligi davrida Gondorga «Thorongil» nomi ostida xizmat qilgan Aragorn (boʻlajak qirol Elessar) katta harbiy shuhrat qozonganida, Denethor uning asl kelib chiqishini va Gandalf bilan yaqinligini sezib qolgan hamda Shimoliy merosxoʻr uning xonadoni oʻrnini egallashidan xavotirlangan."
     },
     {
-      "title": "Finduilasning oʻlimi va Palantir tuzogʻi",
-      "content": "U.D. 2976-yilda Denetor Dol Amrot shahzodasining qizi Finduilasga uylangan, ammo malika Mordor soyasidan soʻlib, U.D. 2988-yilda erta vafot etgan. Rafiqasining oʻlimidan soʻng yanada tund va yolgʻiz boʻlib qolgan Denetor Oq Minoradagi Anor Palantiridan foydalanishga jurʼat etgan. Oʻzining haqiqiy huquqiy egasi sifatida u Sauronga boʻysunmagan boʻlsa-da, Qora Hukmdor tosh orqali unga faqat Mordorning yengilmas qoʻshinlarini koʻrsatib, Noibning qalbiga chuqur umidsizlik urugʻini sepgan."
+      "title": "Finduilasning oʻlimi va Palantír tuzogʻi",
+      "content": "U.D. 2976-yilda Denethor Dol Amroth shahzodasi Adrahilning qizi Finduilasga uylangan, ammo nozik malika Mordor soyasidan soʻlib, U.D. 2988-yilda erta vafot etgan. Rafiqasining oʻlimidan soʻng yanada tund va yolgʻiz boʻlib qolgan Denethor Oq Minoradagi Anor Palantíridan foydalanishga jurʼat etgan. Qonuniy noib sifatida uning kuchli irodasi Sauronga toʻgʻridan-toʻgʻri boʻysunmagan boʻlsa-da, Qora Hukmdor tosh orqali unga faqat Mordorning cheksiz qoʻshinlarini koʻrsatib, Noibning qalbiga chuqur umidsizlik urugʻini sepgan."
     },
     {
-      "title": "Fojiali yakun",
-      "content": "Toʻngʻich va eng sevimli oʻgʻli Boromirning halok boʻlishi Denetorni qattiq larzaga solgan. Minas Tirit qamali oldidan kichik oʻgʻli Faramir ham ogʻir yaralangach, Denetor Palantirga soʻnggi bor qarab, Qora kemalarni koʻrgan va Gʻarb butunlay yengildi degan xulosaga kelgan. Aqldan ozgan Noib Rath Dinen maqbarasida oʻzi va Faramir uchun gulxan yoqtirgan; Gendalf va Pippin Faramirni qutqarib qolishgan, biroq Denetor Noiblik hassasini sindirib, Anor Palantirini bagʻriga bosgancha olov ichida halok boʻlgan."
-    },
-    {
-      "title": "Minas Tirithning 26-chi Noibi, mag'rur aql va Palantír fojiasi",
-      "content": "Denethor II (Ecthelion II ning o'g'li) Gondorning hukmron noibi bo'lib, nihoyatda o'tkir aql, ulkan g'urur va metin irodaga ega edi. U shahar mudofaasini ko'p yillar davomida mohirlik bilan boshqardi, Pelennor atrofida Rammas Echor devorini mustahkamladi. Biroq u Minas Tirithdagi qadimiy Anárion palantíridan foydalanishga jur'at etdi. Sauron tosh orqali unga o'zining behisob legionlarini, cheksiz qudratini va mag'lubiyat muqarrarligini ko'rsatib, Denethorning mustahkam irodasini asta-sekin sindirdi va uni umidsizlik girdobiga tashladi."
-    },
-    {
-      "title": "Boromir dardi, Faramirga adolatsizlik va o'choqdagi intihosi",
-      "content": "Katta o'g'li Boromirning o'limi Denethorga qaqshatqich zarba bo'ldi. Kichik o'g'li Faramirni Osgiliath mudofaasiga nomutanosib topshiriq bilan yuborishi uning aqlini yanada xiralashtirdi. Faramir yarador bo'lib qaytganida va shahar qamal qilinganida, Denethor barcha umidlardan voz kechdi. U Gandalfning maslahatlarini rad etib, Aragornning shohlik da'vosiga bo'ysunishni istamadi. Rath Dínendagi ajdodlar maqbarasida o'zini va behush o'g'lini tiriklayin yoqishga uringan Denethor, palantírni ko'kragiga bosgan holda o'z joniga qasd qildi; Faramir esa Beregond va Pippin jasorati tufayli olovdan qutqarib qolindi. Denethor II ning fojiasi shundaki, u oʻzining aql-zakovati va mustahkam irodasiga haddan ortiq ishondi va yovuzlikka qarshi yolgʻiz oʻzi kurashishga urindi. Uning shahar mudofaasidagi xizmatlari beqiyos boʻlsa-da, umidsizlik va kibr uning buyuk qalbini sindirdi va oʻzining shonli nomini fojiali oʻlim bilan yakunladi. Denethor II oʻzining soʻnggi daqiqalarigacha Gondorni dushman oyogʻi ostida qolmasligi uchun barcha aql-zakovatini safarbar etdi. Uning fojiasi esa buyuk qalbning ham umidsizlik girdobida sinishi mumkinligini koʻrsatuvchi eng qaygʻuli saboq boʻldi. Denethor II ning Minas Tirith devorlari ortidagi koʻp yillik metin mudofaasi Sauronning rejalarini uzoq vaqt ushlab turdi; uning jasorati Gondor xalqi xotirasida chuqur hurmat bilan eslanadi. Uning qatʼiyati Gondorning oʻsha ogʻir yillarda dushmanga taslim boʻlmasligida hal qiluvchi tayanch boʻldi; u Oq Shahar tarixidagi eng qudratli noiblardan biri edi."
+      "title": "Minas Tirith qamali va oʻchoqdagi intihosi",
+      "content": "Toʻngʻich va sevimli oʻgʻli Boromirning halok boʻlishi Denethorga qaqshatqich ruhiy zarba boʻldi. Pelennor dalalarida kichik oʻgʻli Faramir ham ogʻir yaralangach, Denethor Palantírga soʻnggi bor qarab, daryoda Qora flot yaqinlashayotganini koʻrgan va butun Gʻarb tamom boʻldi degan xulosaga kelgan. Aqldan ozgan Noib Rath Dínendagi ajdodlar maqbarasida oʻzi va Faramir uchun gulxan yoqtirgan; Gandalf va Pippin Faramirni qutqarib qolishgan, biroq Denethor Noiblik hassasini sindirib, Palantírni bagʻriga bosgancha alanga ichida halok boʻlgan."
     }
   ],
-  "etymology": "Sindarin tilida Denethor nomi birinchi davrdagi Nandor elflari shohi Denetor sharafiga qoʻyilgan boʻlib, «novcha va chaqqon» maʼnosini anglatadi.",
+  "etymology": "Sindarin tilida Denethor nomi Birinchi Davrdagi Nandor elflari qiroli Denethor sharafiga qoʻyilgan boʻlib, «novcha va chaqqon» maʼnosini anglatadi.",
   "sources": [
     {
       "book_slug": "the-return-of-the-king",
-      "chapter": "V kitob, 1-bob (Minas Tirit), 4-bob (Shahar qamali) va 7-bob (Denetorning gulxani)",
+      "chapter": "V kitob, 1-bob: \"Minas Tirith\", 4-bob: \"Shahar qamali\" va 7-bob: \"Denethorning gulxani\"",
       "page": "753"
     },
     {
       "book_slug": "the-return-of-the-king",
-      "chapter": "Ilova A (Gondor va Anor shohlari)",
+      "chapter": "Ilova A: \"Gondor va Anárion shohlari\"",
       "page": "1055"
     }
   ],

@@ -1,9 +1,10 @@
 {
   "id": "xazad",
-  "name": "Xazad (Mittilar)",
+  "name": "Khazad (Mittilar)",
   "other_names": [
     "Naugrim",
-    "Togʻ farzandlari"
+    "Togʻ farzandlari",
+    "Gonnhirrim"
   ],
   "race_category": "mitti-odamlar",
   "divisions_and_clans": [
@@ -16,10 +17,10 @@
     "khuzdul"
   ],
   "primary_realms": [
-    "Khazad-dum",
-    "Nogrod",
-    "Belegost",
-    "Erebor"
+    "khazad-dum",
+    "nogrod",
+    "belegost",
+    "erebor"
   ],
   "textual_status": "author_published",
   "summary": "Xazad (Mittilar / Naugrim / Qadimgi Durin Xalqi) — Vala Aulë tomonidan Ilúvatar farzandlari uygʻonishidan oldin yashirincha toshdan yaratilgan, pishiq-puxta, magʻrur, metallsozlik va togʻ-kon sanʼatida tengsiz yerosti xalqidir. Ular Moria (Khazad-dûm), Erebor va Moviy Togʻlarda buyuk yerosti saltanatlarini qurganlar.",

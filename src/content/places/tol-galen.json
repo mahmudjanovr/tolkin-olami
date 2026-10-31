@@ -1,7 +1,7 @@
 {
   "id": "tol-galen",
   "name": "Tol Galen",
-  "elvish_name": "Tol Galen (Yashil Orol)",
+  "elvish_name": "Tol Galen",
   "type": "oʻlka",
   "region": "beleriand",
   "coordinates": {
@@ -16,24 +16,39 @@
     "Lúthien"
   ],
   "notable_events": [
-    "Beren va Lúthienning tirilishi",
-    "Dior tugʻilishi",
-    "Nauglamír keltirilishi"
+    "Beren va Lúthienning Mandosdan qaytishi",
+    "Dior Eluchílning dunyoga kelishi",
+    "Nauglamír va Silmarilning orolga keltirilishi",
+    "Sarn Athrad qasosi"
   ],
   "textual_status": "author_published",
-  "summary": "Tol Galen — Janubiy Ossiriandda, Adurant daryosi oʻrtasida joylashgan «Yashil Orol». Mandos zallaridan qaytgan Beren va Lúthien ikkinchi foniy umrlarini shu yerda, Dor Firn-i-Guinar («Tirik Oʻliklar Oʻlkasi»)da sokinlikda oʻtkazganlar.",
+  "summary": "Tol Galen — Janubiy Ossiriandda (Yetti Daryo Oʻlkasi), Adurant daryosining ikki shoxobchasi oraligʻida joylashgan afsonaviy «Yashil Orol»dir. Mandos zallaridan foniy inson sifatida qaytgan Beren Erchamion va elflar malikasi Lúthien Tinúviel oʻzlarining ikkinchi baxtiyor umrlarini shu yerda oʻtkazganlar; butun oʻlka Dor Firn-i-Guinar («Tirik Oʻliklar Oʻlkasi») deb atalgan va Lúthien koʻksidagi Silmaril tufayli Valinor jozibasiga burkangan.",
   "sources": [
     {
       "book_slug": "silmarillion",
-      "chapter": "Of Beren and Lúthien",
+      "chapter": "Quenta Silmarillion, 19-bob: \"Beren va Lúthien haqida\"",
       "page": "188",
-      "notes": "Tol Galenda Beren va Lúthienning foniy hayoti."
+      "notes": "Mandosdan qaytish va Tol Galenda sokin foniy hayot kechirish."
+    },
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Quenta Silmarillion, 22-bob: \"Doriath halokati haqida\"",
+      "page": "235",
+      "notes": "Sarn Athrad jangi, Nauglamírning keltirilishi va Lúthienning soʻnggi kunlari."
     }
   ],
   "description_sections": [
     {
-      "title": "Yashil Orol va Tiriklar Oʻlkasi",
-      "content": "Tol Galen (Sindarincha: 'Yashil Orol') — Janubiy Ossiriandda, Adurant daryosi ikki shoxobchaga boʻlingan joyda joylashgan goʻzal oroldir. Uchinchi Davrdan ancha avval, oʻlimdan qaytgan Beren va Lúthien oʻzlarining ikkinchi foniy hayotini aynan shu orolda kechirganlar.\n\nShu sababli butun oʻlka 'Dor Firn-i-Guinar' ('Tirik Oʻliklar Oʻlkasi') deb atalgan. Bu yerda ularning oʻgʻli Dior Eluchíl dunyoga kelgan."
+      "title": "Adurant daryosi qoʻynidagi jannatmonand maskan",
+      "content": "Tol Galen (Sindarin tilida «Yashil Orol») — Beleriandning sharqiy chekkasida, Moviy Togʻlar (Ered Luin) etaklaridagi yam-yashil Ossiriand zaminida joylashgan edi. Bu yerda Gelion daryosining yettinchi va eng janubiy irmogʻi boʻlgan Adurant oqimi ikkiga ajralib, oʻrtada nihoyatda sokin, yovvoyi gullar va baland daraxtlar bilan qoplangan orolni hosil qilgan.\n\nOssiriand oʻrmonlarida yashovchi Yashil Elflar (Laiquendi) begonalarni xush koʻrmas edilar, biroq Beren va Lúthienning yuksak muhabbati va jasorati oldida taʼzim qilib, bu muqaddas orolni ularga xavfsiz maskan sifatida topshirdilar. Bu zaminga Beleriand shimolidagi urushlar, oʻrklar va qonli toʻqnashuvlarning birorta ham aks-sadosi yetib kelmagan."
+    },
+    {
+      "title": "Dor Firn-i-Guinar va Foniy Umr Moʻjizasi",
+      "content": "Angband zindonlaridan Silmarilni tortib olgach halok boʻlgan Beren va uning ortidan joni uzilgan Lúthien Mandos huzuriga borgan edilar. U yerda Lúthienning ilohiy nolasi Mandos tosh yuragini eritdi va Eru Ilúvatar irodasi bilan Lúthienga foniy inson kabi oʻlish huquqi berilib, ikki oshiq Oʻrta-yerga qaytarildi.\n\nUlar Tol Galenga kelib maskan tutdilar. Hech bir tirik inson ularning ovozini eshitmagani va yuzini koʻrmagani sababli, bu hudud elflar orasida «Dor Firn-i-Guinar» — «Tirik Oʻliklar Oʻlkasi» deb atala boshlandi. Shu orolda ularning yagona oʻgʻli, kelajakda Thingol taxtining merosxoʻri boʻladigan goʻzal Dior Eluchíl dunyoga keldi va voyaga yetdi."
+    },
+    {
+      "title": "Nauglamír, Silmaril nuri va soʻnggi vidolashuv",
+      "content": "Doriath shohi Thingol Nogrod mittilari tomonidan oʻldirilib, saroy talangach, gʻolib mittilar xazinani Moviy Togʻlarga olib qochayotgan edilar. Beren Laiquendi jangchilari va oʻgʻli Dior bilan Sarn Athrad kechuvida pistirma qoʻyib, dushmanni tor-mor etdi va Thingol uchun yasalgan muqaddas Nauglamír marjonini qaytarib oldi.\n\nBeren ushbu marjonda porlagan Silmarilni Tol Galenga keltirib, oʻz sevgilisi Lúthienning boʻyniga taqdi. Rivoyatlarga koʻra, Lúthien koʻksida muqaddas nur taratgan bu javohir bilan Tol Galen bir muddatga Valinorning Boqiy Bogʻlaridek ilohiy goʻzallikka burkandi; tirik inson koʻzi koʻrgan eng buyuk nafosat shu yerda namoyon boʻldi. Beren va Lúthien oʻzlarining ikkinchi foniy umrlarini tinchlikda tugatib bu dunyoni tark etganlaridan soʻng, Silmaril Dior tomonidan Doriathga olib ketildi va orol qaytib oʻzining sokin yolgʻizligiga choʻmdi."
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "id": "vinyamar",
   "name": "Vinyamar",
-  "elvish_name": "Vinyamar (Yangi Makon)",
+  "elvish_name": "Vinyamar",
   "type": "shahar",
   "region": "beleriand",
   "coordinates": {
@@ -15,23 +15,39 @@
     "Turgon"
   ],
   "notable_events": [
-    "Turgonning dengiz boʻyidagi hukmronligi",
-    "Tuorning qurollarni topishi"
+    "Turgonning Nevrastdagi shohligi",
+    "Gondolinga yashirin koʻchish",
+    "Tuorning Vinyamar qurollarini kiyishi",
+    "Ulmoning dengiz toʻlqinlaridan namoyon boʻlishi"
   ],
   "textual_status": "author_published",
-  "summary": "Vinyamar — Taras togʻi etagida, Nevrast sohilida Turgon tomonidan barpo etilgan Noldorning ilk shahri. Gondolinga koʻchishdan avval Turgon Ulmo amri bilan bu yerda qalqon va sovut qoldirgan, keyinchalik ularni Tuor topgan.",
+  "summary": "Vinyamar — Beleriandning gʻarbiy sohilida, Taras togʻi etagidagi Nevrast oʻlkasida Fingolfinning ikkinchi oʻgʻli Turgon tomonidan barpo etilgan Noldorning ilk dengizboʻyi poytaxtidir. Turgon xalqi bilan yashirin Gondolinga ketishidan oldin Vala Ulmo amri bilan saroy taxti oldida qurol-aslahalarni qoldirgan; asrlar oʻtib inson qahramoni Tuor bu yerga kelib qurollarni kiygan va Ulmoning bevosita vahiysiga sazovor boʻlgan.",
   "sources": [
     {
       "book_slug": "silmarillion",
-      "chapter": "Of Tuor and the Fall of Gondolin",
-      "page": "238",
-      "notes": "Vinyamarning barpo etilishi va Tuorning Ulmo bilan uchrashuvi."
+      "chapter": "Quenta Silmarillion, 15-bob: \"Noldorning Belerianddagi qalʼalari haqida\"",
+      "page": "125",
+      "notes": "Vinyamarning barpo etilishi va Turgonning Nevrastdagi dastlabki hukmronligi."
+    },
+    {
+      "book_slug": "unfinished-tales",
+      "chapter": "I qism: \"Tuor va uning Gondolinga kelishi haqida\"",
+      "page": "17",
+      "notes": "Vinyamar vayronalari, oqqushlar yoʻli, Tuorning qurollarni topishi va Ulmo bilan uchrashuv."
     }
   ],
   "description_sections": [
     {
-      "title": "Nevrastdagi Birinchi Qalʼa va Ulmo qurollari",
-      "content": "Vinyamar (Sindarincha: 'Yangi Maskanning Boshlanishi') — Nevrast oʻlkasida Taras togʻi etagida Turgon tomonidan barpo etilgan Noldorning ilk poytaxtidir. Turgon xalqi bilan yashirin Gondolinga koʻchib ketayotganida, dengiz xudosi Ulmo amri bilan saroy zalida oʻzining dubulgʻasi, sovuti, qalqoni va qilichini qoldirgan.\n\nOradan asrlar oʻtgach, inson Tuor Vinyamarga yetib kelib, ushbu ilohiy qurollarni kiydi va Ulmoning buyrugʻi bilan Gondolinni ogohlantirish uchun yoʻlga chiqdi."
+      "title": "Nevrast sohili va Turgonning dastlabki poytaxti",
+      "content": "Vinyamar (Quenya tilida «Yangi Makon» yoki «Yangi Turar Joy») — Buyuk Dengiz (Belegaer) sohilidagi Taras togʻi poyida, salqin tumanlar qoplagan Nevrast oʻlkasida qad rostlagan tosh shahar edi. Noldor elflari Oʻrta-yerga qaytganlarida, Fingolfin oʻgʻli Turgon bu yerda oʻz saltanatini oʻrnatdi.\n\nVinyamarda dengizni sevuvchi mahalliy Sindar elflari bilan Valinordan kelgan Noldor ustalari birinchi boʻlib toʻliq uygʻunlikda va doʻstlikda yashadilar. Shaharning baland tosh minoralari va marmar zallari bevosita toʻlqinlarga qarab turgan boʻlib, elflar dengiz qushlari sadosi ostida kemasozlik va tosh yoʻnish sanʼatini rivojlantirdilar."
+    },
+    {
+      "title": "Gondolinga yashirin koʻchish va Ulmoning vasiyati",
+      "content": "Birinchi Davrning 53-yilida Suvlar Hukmdori Vala Ulmo Turgonning tushiga kirib, unga daxlsiz yashirin maskan izlashni buyurdi va Tumladen vodiysiga yoʻl koʻrsatdi. Turgon yashirincha qoyatoshlar ichida Gondolin shahrini qurib bitirgach, B.D. 116-yilda butun xalqi bilan Vinyamarni butkul tark etdi.\n\nKetish oldidan Ulmo yana Turgonga zohir boʻlib, saroy zallarida oʻz oʻlchamlariga mos boʻlmagan uzun nayza, oq qanotli dubulgʻa, kumush sovut va oq qalqon qoldirishni buyurdi: «Vaqti kelib bu qurollarni kiyib kelgan shaxs Gondolinni halokatdan ogohlantiruvchi elchi boʻladi», deb vasiyat qildi. Vinyamar shahar sifatida kimsasiz qoldi, ammo uning qalin tosh devorlari shamol va toʻlqinlar zarbasiga asrlar davomida bardosh berdi."
+    },
+    {
+      "title": "Tuorning kelishi va Ulmoning dengizdan zohir boʻlishi",
+      "content": "Oradan qariyb toʻrt yuz yil oʻtgach, Hador xonadonining bahodir oʻgʻli Tuor gʻarbga qarab yolgʻiz safar qilib, yettita oq oqqush ortidan ergashgan holda kimsasiz Vinyamarning xaroba saroyiga yetib keldi. U devorda osigʻlik turgan zanglamas qurollarni topdi, ularni egniga kiydi va dengiz boʻyiga tushdi.\n\nShu onda dengiz yuzida dahshatli poʻrtana koʻtarilib, Vala Ulmo oʻzining ulugʻvor, yashil-moviy toʻlqinlardan iborat ulkan gavdasi bilan bevosita Tuorning koʻz oʻngida namoyon boʻldi. Bu Valarning Oʻrta-yerda foniylarga bevosita koʻringan kam sonli lahzalaridan biri edi. Ulmo Tuorga Gondolin shohini yaqinlashib kelayotgan qora qismatdan ogohlantirishni topshirdi va unga yoʻl koʻrsatuvchi sifatida Gondolinlik kema halokatidan omon qolgan elf Voronwëni yoʻliqtirdi."
     }
   ]
 }

@@ -4,29 +4,44 @@
   "concept_type": "metaphysical_force",
   "associated_ainur": [
     "mandos",
-    "nienna"
+    "nienna",
+    "manwe"
   ],
-  "ontological_evolution": "Tolkienning antropoligik va teologik qarashlariga koʻra («Athrabeth Finrod ah Andreth» hamda «Laws and Customs among the Eldar»), barcha ongli Eru Farzandlari ruhiy mohiyat — fëa (iroda, ong, shaxsiyat) hamda moddiy tana — hröa (Ardaning jismoniy moddasi) birligidan iborat. Elflarda fëa Arda hayoti bilan chambarchas bogʻliq; agar ularning hröasi nobud boʻlsa, fëa Mandos Zallariga (Kutish Zallari) chorlanadi va maʼlum vaqtdan soʻng Manwë va Mandos irodasi bilan yangi tanada qayta mujassam boʻlishi mumkin. Insonlarda esa oʻlim fëa va hröaning ajralishidir; inson fëasi Mandos zallarida vaqtincha toʻxtab, soʻng Arda sarhadlaridan butunlay tashqariga — Yagona Eru huzuriga yoʻl oladi («Insonlar inʼomi» / The Gift of Men).",
+  "ontological_evolution": "Tolkienning chuqur antropoligik va teologik qarashlariga koʻra («Athrabeth Finrod ah Andreth» hamda «Laws and Customs among the Eldar»), barcha ongli Eru Farzandlari ruhiy mohiyat — fëa (iroda, ong, shaxsiyat) hamda moddiy tana — hröa (Ardaning jismoniy moddasi) birligidan iborat. Elflarda fëa Arda hayoti bilan chambarchas bogʻliq; agar ularning hröasi nobud boʻlsa, fëa Mandos Zallariga (Kutish Zallari) chorlanadi va maʼlum vaqtdan soʻng Manwë va Mandos irodasi bilan yangi tanada qayta mujassam boʻlishi mumkin. Insonlarda esa oʻlim fëa va hröaning ajralishidir; inson fëasi Mandos zallarida vaqtincha toʻxtab, soʻng Arda sarhadlaridan butunlay tashqariga — Yagona Eru huzuriga yoʻl oladi («Insonlar inʼomi» / The Gift of Men).",
   "textual_status": "posthumous_edited",
-  "summary": "Fëa (Ruh) va Hröa (Tana) dualligi, Elflarning dunyoviy boqiyligi, Mandos Zallaridagi qayta mujassamlashuv hamda Insonlarning dunyo sarhadlaridan tashqariga chiqishi («Insonlar inʼomi») metafizikasi.",
+  "summary": "Fëa (Ruh) va Hröa (Tana) dualligi — Tolkien olamidagi ongli borliqning fundamental metafizik poydevoridir. Ushbu taʼlimot Elflarning Arda doirasidagi dunyoviy boqiyligi, ularning halokatdan soʻng Mandos Zallarida (Halls of Awaiting) tozalanishi va yangi jismda qayta tirilishi hamda Insonlarning dunyo sarhadlaridan butunlay chiqib, Yaratuvchi Eru huzuriga yoʻl olishini («Insonlar Inʼomi» / The Gift of Men) tushuntirib beradi.",
   "sources": [
     {
-      "book_slug": "history-of-middle-earth",
-      "chapter": "Morgoth's Ring: Laws and Customs among the Eldar",
+      "book_slug": "morgoths-ring",
+      "chapter": "II qism: \"Laws and Customs among the Eldar (Eldar qonunlari va odatlari)\"",
       "page": "207",
-      "notes": "Fëa va hröa tabiati, Mandos Zallaridagi qayta tirilish qonuniyatlari."
+      "notes": "Fëa va hröa tabiati, tanasiz ruhlar va Mandos Zallaridagi qayta gavdalanish."
     },
     {
-      "book_slug": "history-of-middle-earth",
-      "chapter": "Morgoth's Ring: Athrabeth Finrod ah Andreth",
+      "book_slug": "morgoths-ring",
+      "chapter": "IV qism: \"Athrabeth Finrod ah Andreth (Finrod va Andreth bahsi)\"",
       "page": "303",
-      "notes": "Finrod va Andreth suhbati: insonlar oʻlimi va elflar boqiyligi teologiyasi."
+      "notes": "Insonlar oʻlimi tabiati, boqiylik charchogʻi va Eruning Arda ichiga kirishi haqidagi teologiya."
+    },
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Quenta Silmarillion, 1-bob: \"Kunlarning boshlanishi haqida\"",
+      "page": "42",
+      "notes": "Elflar va Insonlar taqdiri, Mandos Zallari va Insonlar inʼomi."
     }
   ],
   "cosmology_sections": [
     {
-      "title": "Ruh va Tana: Elflar va Insonlar taqdiri",
-      "content": "Tolkien metafizikasida har bir ongli mavjudot Fëa (boqiy jon / ruh) va Hröa (moddiy tana) birligidan iborat. Elflarning Fëasi Arda bilan chambarchas bogʻlangan boʻlib, tanasi halok boʻlsa ham ruhi Mandos Zallariga (Halls of Mandos) boradi va vaqti kelib qayta tanaga ega boʻlishi mumkin.\n\nInsonlarga esa Eru 'Insonlar Inʼomi'ni (Gift of Men) bergan: ularning ruhi vafot etgach, Arda chegaralaridan butunlay chiqib, yaratuvchi Eru huzuriga yoʻl oladi. Bu inʼom insonlarni dunyo charchogʻidan va boqiylik azobidan xalos etadi."
+      "title": "Fëa va Hröa dualligi: Ruh va Moddaning uygʻunligi",
+      "content": "Quenya tilida «fëa» — erkin iroda, ong va shaxsiyatni ifodalovchi boqiy ruh boʻlsa, «hröa» — Eä moddiy zarrachalaridan tashkil topgan jismoniy tana hisoblanadi. Eru Ilúvatar har bir ongli zotni yaratganda bu ikki unsur oʻrtasida mukammal garmoniyani oʻrnatgan.\n\nBiroq Elflar va Insonlar bu uygʻunlikda tubdan farq qiladilar. Elflarning fëasi nihoyatda qudratli boʻlib, u toʻgʻridan-toʻgʻri Ardaning umri bilan bogʻlangan; dunyo qachongacha yashasa, elflar ham oʻshangacha yashaydilar. Oʻrta-yerda ming yillar oʻtishi bilan elflarning alangali fëasi ularning moddiy hröasini asta-sekin ich-ichidan yeb bitiradi va ular koʻzga koʻrinmas nurli sharpalarga aylanadilar («Elflarning soʻnishi» — Fading of the Elves)."
+    },
+    {
+      "title": "Mandos Zallari va Elflarning qayta gavdalanishi",
+      "content": "Agar biror elf urushda, zahardan yoki cheksiz qaygʻudan halok boʻlsa, uning hröasi (tanasi) tuproqqa aylanadi, ammo fëasi (ruhi) hech qachon yoʻqolmaydi. Oʻlim daqiqasida barcha tanasiz ruhlar Boqiy Gʻarbdagi Hukm Hukmdori Mandos (Námo)ning dengiz boʻyidagi zallariga (Halls of Awaiting) chorlanadi.\n\nMandos Zallarida ruhlar oʻtmishdagi azob-uqubatlardan va xatolardan Niennaning koʻz yoshlari vositasida xalos boʻladilar, saboq oladilar va poklanadilar. Ruh oʻz xatolarini anglab, ruhiy xotirjamlikka erishgach, Mandosning qarori va Oliy Shoh Manwëning roziligi bilan Valar oʻsha ruh uchun Valinorda uning aynan avvalgi qiyofasidagi yangi jismoniy tanani (hröa) bunyod etadilar. Masalan, Gondolinda Balrog bilan jangda halok boʻlgan Glorfindel va Doriathda jon bergan Finrod Felagund Mandosdan qayta tirilib, yangi tanada Valinor bogʻlarida yashaganlar; faqat Fëanor kabi oʻta ogʻir gunohkorlar dunyo oxirigacha zallarda qoladilar."
+    },
+    {
+      "title": "Insonlar Inʼomi va Athrabeth Finrod ah Andreth",
+      "content": "Insonlar taqdiri esa butunlay boshqacha boʻlib, Tolkien kosmologiyasining eng buyuk sirlaridan biridir. Elflarning ruhi Ardaning ichki doirasiga qulflangan boʻlsa, Insonlarga Eru Ilúvatar maxsus sovgʻa — «Insonlar Inʼomi»ni (The Gift of Men) ato etgan.\n\nInson tanasi keksayib yoki jarohatdan oʻlgach, uning ruhi Mandos zallarida faqat juda qisqa muddat toʻxtaydi va darhol butun Eä koinotining chegaralaridan tashqariga — vaqt va makondan xoli boʻlgan Yagona Eru huzuriga uchib ketadi. Elflar insonlarning bu ketishini tushunmaydilar va ularga hasad bilan boqadilar, chunki insonlar dunyo charchogʻidan va vaqtning ogʻir yukidan xalos boʻladilar. «Athrabeth Finrod ah Andreth» asarida Finrod Noldor donishmandi sifatida inson donishmandi Andrethga tushuntiradiki, insonlarning oʻlimi Morgoth tarqatgan qora laʼnat emas, balki Eruning cheksiz mehridir; vaqti kelib aynan insonlar orqali Eru butun parchalangan dunyoni qayta davolaydi."
     }
   ]
 }

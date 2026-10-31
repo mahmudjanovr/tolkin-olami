@@ -1,25 +1,47 @@
 {
   "id": "kuma",
-  "name": "Kúma (Tashqi Boʻshliq)",
+  "name": "Kúma",
   "concept_type": "cosmic_realm",
   "associated_ainur": [
     "melkor",
-    "varda"
+    "varda",
+    "manwe"
   ],
-  "ontological_evolution": "Yaratilishdan avval Melkor Yashirin Olovni izlab yolgʻiz kezgan cheksiz boʻshliq; Eä yaratilgach, moddiy olam devorlari (Walls of the World) ortidagi tashqi zulmat hamda Birinchi davr yakunida Gʻazab Urushidan soʻng Morgoth Tun Darvozasi (Door of Night) ortiga surgun qilingan makon.",
+  "ontological_evolution": "Yaratilishdan avval Melkor Oʻchmas Olovni oʻz xohishicha yaratish maqsadida yolgʻiz kezgan cheksiz yoʻqlik; Eä barpo etilgach, moddiy olam devorlari (Walls of the World) ortidagi tashqi qorongʻulik va materiyasiz fazo; Birinchi Davr yakunida Gʻazab Urushidan soʻng Morgoth «Tun Darvozasi» (Door of Night) ortiga surgun qilingan va oxirzamon Dagor Dagorath jangigacha zanjirlangan mutlaq makon.",
   "textual_status": "posthumous_edited",
-  "summary": "Kúma (Quenya tilida «Boʻshliq», shuningdek Avakúma yoki Tashqi Zulmat) — Eä (Moddiy Koinot) va vaqt chegaralaridan tashqarida joylashgan mutlaq zulmat va moddiyatsiz boʻshliq makoni.",
+  "summary": "Kúma (Quenya tilida: «Boʻshliq», shuningdek Avakúma yoki Tashqi Zulmat) — Eä (Moddiy Koinot) va vaqt chegaralaridan tashqarida, Abadiy Zallar ostida joylashgan materiyasiz, nursiz va fozoviy oʻlchovsiz mutlaq yoʻqlik makonidir. Yaratilish tongida Melkor bu yerda Oʻchmas Olovni behuda qidirgan; Gʻazab Urushida Valar magʻlub boʻlgan Morgothni Eä doirasidan chiqarib, Tun Darvozasi ortidagi aynan shu Kúma boʻshligʻiga uloqtirganlar.",
   "sources": [
     {
       "book_slug": "silmarillion",
-      "chapter": "Ainulindalë / Quenta Silmarillion, Chapter 24: Of the Voyage of Eärendil and the War of Wrath",
-      "page": "16"
+      "chapter": "Ainulindalë: \"Ainur musiqasi\"",
+      "page": "15",
+      "notes": "Melkorning Boʻshliqda yolgʻiz kezishi va Oʻchmas Olovni izlashi."
+    },
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Quenta Silmarillion, 24-bob: \"Eärendil sayohati va Gʻazab Urushi\"",
+      "page": "254",
+      "notes": "Morgothning Tun Darvozasidan Tashqi Boʻshliqqa surgun qilinishi."
+    },
+    {
+      "book_slug": "morgoths-ring",
+      "chapter": "II qism: \"Valaquenta tahrirlari va Boʻshliq metafizikasi\"",
+      "page": "39",
+      "notes": "Avakúma, koinot devorlari va Dagor Dagorath bashorati."
     }
   ],
   "cosmology_sections": [
     {
-      "title": "Olamdan tashqaridagi cheksiz zulmat",
-      "content": "Kúma (Quenya tilida: 'Boʻshliq') — Eä moddiy olamining chegaralaridan tashqarida joylashgan, vaqt, nur va materiyadan mahrum boʻlgan cheksiz zulmatdir.\n\nGʻazab Urushidan soʻng Valar Morgothni zanjirband qilib, Dunyo Darvozalaridan (Doors of Night) Kúma boʻshligʻiga uloqtirdilar. Morgoth oxirgi zamongacha — Dagor Dagorath jangigacha shu boʻshliqda zanjirlangan holda qoladi."
+      "title": "Metafizik mohiyati: Moddiyatsizlik va Boʻshliq",
+      "content": "Quenya tilida «Kúma» soʻzi «boʻshliq», «yoʻqlik» yoki «hech narsa boʻlmagan joy» degan maʼnoni anglatadi (baʼzan Avakúma — «tashqi boʻshliq» deb yuritiladi). Tolkien teologiyasida Kúma — Eru Ilúvatar maskani boʻlgan Abadiy Zallar (Timeless Halls) hamda moddiy koinot (Eä)dan mutlaqo ajralib turuvchi uchinchi metafizik qatlamdir.\n\nUndan farqli ravishda, Eä ichida vaqt, materiya, gravitatsiya va yorugʻlik mavjud; Kúmada esa hech qanday jismoniy unsur yoki harakat yoʻq. Dunyo yaratilishidan avval Melkor oʻzicha yangi tirik mavjudotlarni yaratish ilinjida «Oʻchmas Olov»ni (Secret Fire) qidirib, Kúmaning sovuq qorongʻuligida uzoq vaqt yolgʻiz sargardon boʻlgan, biroq Olov Eruning huzurida ekanini tushunmay, uning qalbida Eruga nisbatan hasad va adovat tugʻilgan."
+    },
+    {
+      "title": "Dunyo Devorlari, Tun Darvozasi va Eärendil soqchiligi",
+      "content": "Eä moddiy olami yaratilganida, Eru uning chegaralarini koʻrinmas «Dunyo Devorlari» (Walls of the World) bilan oʻrab qoʻydi. Bu devorlar orqali faqat bitta chiqish yoʻli — Valar tomonidan yaratilgan va qoʻriqlanuvchi «Tun Darvozasi» (Door of Night / Moritarnum) mavjud edi.\n\nGʻazab Urushida Valinor lashkarlari Angbandni yakson qilgach, Valar Morgothni tutib, uning boʻyniga temir tojni yoqa qilib kiydirdilar va «Angainor» deb ataluvchi uzilmas temir zanjir bilan bogʻlab, Tun Darvozasidan Kúma boʻshligʻiga uloqtirdilar. Morgoth Eä olamidan butkul chiqarib yuborildi; Eärendil esa peshonasida Silmarilni porlatib, samoviy chegaralarda kechayu-kunduz suzib, Qora Hukmdorning Boʻshliqdan qaytmasligini nazorat qiluvchi abadiy soqchiga aylandi."
+    },
+    {
+      "title": "Dagor Dagorath bashorati va Boʻshliqdan qaytish",
+      "content": "Christopher Tolkien tomonidan «The History of Middle-earth» asarlarida hujjatlashtirilgan Mandosning Ikkinchi Bashoratiga (Second Prophecy of Mandos) koʻra, Vaqtning oxirida Morgoth Kúma qaʼrida oʻz kuchini asta-sekin toʻplaydi va Tun Darvozasini buzib oʻtish yoʻlini topadi.\n\nU yana Eä sarhadlariga kirib, Quyosh va Oyni yoʻq qiladi va «Dagor Dagorath» («Barcha Janglarning Jangi») deb nomlangan oxirzamon toʻqnashuvi boshlanadi. Bu toʻqnashuvda Valinor qahramonlari, jumladan qayta tirilgan Túrin Turambar oʻzining qora qilichi Gurthang bilan Morgothning qalbini teshib, yovuzlikni abadiy yoʻq qiladi. Shundan soʻng koinot poklanib, Oʻchmas Olov yangi Ikkinchi Musiqa vositasida Ardaning mukammal ikkinchi shaklini (Arda Healed) barpo etadi."
     }
   ]
 }

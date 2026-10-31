@@ -1,7 +1,7 @@
 {
   "id": "thangorodrim",
   "name": "Thangorodrim",
-  "elvish_name": "Thangorodrim (Zulm Togʻlari)",
+  "elvish_name": "Thangorodrim",
   "type": "togʻ",
   "region": "beleriand",
   "coordinates": {
@@ -15,28 +15,44 @@
     "Morgoth"
   ],
   "notable_events": [
-    "Maedhrosning zanjirband etilishi",
-    "Fingon va Torondor jasorati",
-    "Ancalagon the Black qulashi"
+    "Maedhrosning choʻqqiga zanjirband etilishi va Fingon tomonidan qutqarilishi",
+    "Húrinning tosh taxtga oʻtqazilishi va laʼnatlanishi",
+    "Gʻazab Urushi va qora ajdar Ancalagonning qulashi"
   ],
   "textual_status": "author_published",
-  "summary": "Thangorodrim — Angband eshiklari ustida Morgoth tomonidan hosil qilingan uchta bahaybat qora vulqon choʻqqisi. Kul, tutun va zaharli gazlar burqirab turgan bu choʻqqilar Gʻazab urushida qulagan Ancalagon the Black tanasi ostida yakson boʻlgan.",
+  "summary": "Thangorodrim (Sindarin tilida: «Zulmat va Majburlash Togʻlari») — Angband darvozalari ustida Qora Hukmdor Morgoth tomonidan yerosti oʻchoqlari kuli, slag va toshlaridan hosil qilingan uchta bahaybat qora vulqon choʻqqisidir. Beleriand osmonini doimiy zaharli tutun va qora bulutlar bilan qoplagan bu choʻqqilar Maedhros va Húrinning cheksiz azob-uqubatlariga guvoh boʻlgan hamda Gʻazab Urushida Eärendil urib tushirgan ulkan qora ajdar Ancalagon the Blackning tanasi ostida chil-parchin boʻlib yakson qilingan.",
   "sources": [
     {
       "book_slug": "silmarillion",
-      "chapter": "Of the Return of the Noldor",
+      "chapter": "Quenta Silmarillion, 13-bob: \"Noldorning qaytishi haqida\"",
       "page": "110",
-      "notes": "Thangorodrim choʻqqilari va Maedhros qismati."
+      "notes": "Thangorodrim qoyalari, Maedhrosning zanjirband etilishi va Fingon jasorati."
+    },
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Quenta Silmarillion, 21-bob: \"Túrin Turambar haqida\"",
+      "page": "205",
+      "notes": "Húrinning Thangorodrim choʻqqisidagi tosh taxtga mixlanishi."
+    },
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Quenta Silmarillion, 24-bob: \"Eärendil sayohati va Gʻazab Urushi\"",
+      "page": "252",
+      "notes": "Ancalagon the Blackning qulashi va choʻqqilarning barbod boʻlishi."
     }
   ],
   "description_sections": [
     {
-      "title": "Zulmatning Uch Choʻqqisi",
-      "content": "Thangorodrim (Sindarincha: 'Zulmat Togʻlari') — Angband darvozasi tepasida Morgoth tomonidan yerosti chiqindilari, qora kul va qoyalardan koʻtarilgan uchta bahaybat qora vulqon choʻqqisidir. Ularning ustidan tunu-kun zaharli qora tutun chiqib, Beleriand osmonini quyoshdan toʻsib turgan.\n\nChoʻqqilarning biriga Morgoth Fëanorning toʻngʻich oʻgʻli Maedhrosni oʻng qoʻlidan zanjirband qilib osib qoʻygan edi; Fingon burgut Thorondor yordamida Maedhrosning qoʻlini kesib uni qutqarib olgan."
+      "title": "Zulmatning Uch Choʻqqisi va Angband darvozalari",
+      "content": "Thangorodrim (Sindarin tilida thang — «majburlash, zulm» + gorod — «dahshat, qoʻrquv» + rîm — «togʻ zanjiri») — Temir Togʻlar (Ered Engrin) tizmasining eng qudratli nuqtasida joylashgan edi. Valinordan qaytgan Morgoth oʻzining qadimiy Angband («Temir Zindon») qalʼasini chuqurlashtirib qazar ekan, yer ostidan chiqarilgan millionlab tonna qora tosh, erigan metall chiqindilari va vulqon kulidan uchta bahaybat, qop-qora oʻtkir qirrali choʻqqini hosil qildi.\n\nChoʻqqilarning tubida ulkan ark shaklidagi Angband Bosh Darvozasi joylashgan edi. Choʻqqilarning kraterlaridan tun-u kun qora zaharli tutun, kul va kuydiruvchi bugʻlar burqirab chiqib, Quyosh va Oy nurini toʻsib turar, oʻsimliklarni quritib, Beleriand shimolini mangu qorongʻulik va sovuqqa mahkum etgan edi."
     },
     {
-      "title": "Ancalagon the Black qulashi",
-      "content": "Gʻazab Urushining soʻnggi pallasida Morgoth oʻzining soʻnggi dahshatli quroli — qanotli ajdarlar toʻdasini jangga tashladi. Ularning eng kattasi — qora ajdar Ancalagon the Black osmonda Eärendilning uchar kemasi Vingilot bilan toʻqnashdi.\n\nEärendil Ancalagonni oʻldirdi; bahaybat ajdarning jasadi osmondan qulab tushib, Thangorodrimning uchala choʻqqisini ham parchalab kul qildi."
+      "title": "Toshga zanjirlangan qahramonlar va Húrin laʼnati",
+      "content": "Morgoth Thangorodrimni nafaqat mudofaa istehkCountryomi, balki dushmanlarini jazolash va xoʻrlash maskani sifatida ishlatdi. Fëanorning toʻngʻich oʻgʻli Maedhros asirga olingach, Morgoth uni togʻning eng tik va daxlsiz qoyasiga olib chiqib, oʻng qoʻlining bilagiga sehrli temir kishan urib osib qoʻydi. Shahzoda Fingon qudratli burgut Thorondor yordamida bu choʻqqiga uchib chiqib, oʻz doʻstining qoʻlini kesish orqali uni qutqarib oldi.\n\nNirnaeth Arnoediad jangidan soʻng esa Morgoth asirga olingan inson bahodiri Húrin Thalionni choʻqqining baland joyidagi tosh oʻrindiqqa oʻtqazdi va unga qora afsun soldi: Húrin koʻp yillar davomida qimirlay olmasdan, Morgothning koʻzlari bilan oʻz xotini Morwen va farzandlari Túrin hamda Niënorning boshiga tushgan barcha fojialarni koʻrib, ruhiy azob chekishga majbur boʻldi."
+    },
+    {
+      "title": "Gʻazab Urushi va Ancalagonning qulashi",
+      "content": "Birinchi Davrning soʻngida Valinor armiyasi va Vanyar elflari Oʻrta-yerga bostirib kelib, qirq yildan ortiq davom etgan dahshatli Gʻazab Urushini boshlaganlarida, Angbandning barcha qoʻshinlari tor-mor etildi. Soʻnggi chorasiz qolgan Morgoth Thangorodrim gʻorlaridan oʻzining eng soʻnggi maxfiy quroli — qanotli olov-ajdarlar toʻdasini osmonga koʻtardi.\n\nUlarning yoʻlboshchisi butun osmonni qoplagan bahaybat qora ajdar Ancalagon the Black edi. Biroq peshonasida muqaddas Silmaril porlagan Eärendil oʻzining uchar kemasi Vingilotda va Thorondor boshchiligidagi barcha Buyuk Burgutlar bilan jangga kirdi. Tun boʻyi kechgan havoyi toʻqnashuvda Eärendil Ancalagonni magʻlub etdi; osmondan qulab tushgan ulkan qora maxluq oʻzining ulkan ogʻirligi va alangasi bilan Thangorodrimning uchala choʻqqisini ham urib maydaladi. Choʻqqilarning qulashi bilan Angband zindonlari ochiq qoldi va Beleriand qitʼasining dengiz qaʼriga gʻarq boʻlish jarayoni boshlandi."
     }
   ]
 }

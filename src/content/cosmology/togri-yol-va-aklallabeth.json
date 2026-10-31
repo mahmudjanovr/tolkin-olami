@@ -6,27 +6,41 @@
     "manwe",
     "ulmo"
   ],
-  "ontological_evolution": "Dastlab Arda Yassi Yer (Flat Earth) sifatida barpo etilgan boʻlib, uning gʻarbiy chekkasida Valinor (Aman) joylashgan edi. Ikkinchi davr oxirida Ar-Pharazon boshchiligidagi Númenor qoʻshini Valinorga bostirib kirgach, Valar dunyo hukmini Eru Ilúvatarga topshirdi. Ilúvatar Akallabêth chogʻida Númenorni dengiz qaʼriga choʻktirdi, Amanni moddiy koinot kavislaridan chiqarib oldi va dunyoni shar shakliga (dumaloq Yerga) aylantirdi. Shundan soʻng Aman zaminiga faqatgina elflarning maxsus oq kemalari egri koinot chizigʻidan chiqib, toʻgʻri traektoriya boʻylab olib boruvchi «Toʻgʻri Yoʻl» (The Straight Road) orqali yetib borishi mumkin boʻldi.",
+  "ontological_evolution": "Dastlab Arda Yassi Yer (Flat Earth) sifatida barpo etilgan boʻlib, uning gʻarbiy chekkasida Valinor (Aman) joylashgan edi. Ikkinchi Davr oxirida Ar-Pharazôn boshchiligidagi ulkan Númenor floti Valinorga bostirib kirgach, Valar dunyo hukmini Eru Ilúvatarga topshirdi. Ilúvatar Akallabêth chogʻida Númenorni dengiz qaʼriga choʻktirdi, Amanni moddiy koinot kavislaridan chiqarib oldi va dunyoni shar shakliga (dumaloq Yerga) aylantirdi. Shundan soʻng Aman zaminiga faqatgina elflarning maxsus oq kemalari egri koinot chizigʻidan chiqib, toʻgʻri traektoriya boʻylab olib boruvchi «Toʻgʻri Yoʻl» (The Straight Road) orqali yetib borishi mumkin boʻldi.",
   "textual_status": "author_published",
-  "summary": "Yassi Arda, Dunyoning Dumaloqlashuvi va Toʻgʻri Yoʻl (The Straight Road) — Tolkien kosmologiyasidagi eng ulkan fazoviy-metafizik burilish. Akallabêth hodisasi tufayli moddiy olam sferik shaklga keltirilib, Qadimgi Gʻarb (Aman) odamlar intiluvidan ajratilgan.",
+  "summary": "Yassi Arda, Dunyoning Dumaloqlashuvi va Toʻgʻri Yoʻl (The Straight Road) — Tolkien kosmologiyasidagi eng ulkan fazoviy-metafizik burilishdir. Ikkinchi Davrning 3319-yilida yuz bergan Akallabêth hodisasi tufayli Eru Ilúvatar moddiy dunyoni sharsimon shaklga keltirib, Boqiy Gʻarbni (Aman va Tol Eressëa) foniylar qoʻli yetmaydigan samoviy oʻlchamga olib qoʻydi; endilikda bu muqaddas oʻlkaga faqat elflarning Oq Kemalari «Toʻgʻri Yoʻl» orqali kavisli egri fazoni yorib oʻtib yetib borishi mumkin boʻldi.",
   "sources": [
     {
       "book_slug": "silmarillion",
-      "chapter": "Akallabêth: The Downfall of Númenor",
+      "chapter": "Akallabêth: \"Númenorning qulashi (The Downfall of Númenor)\"",
       "page": "278",
       "notes": "Dunyoning oʻzgarishi, Amanning moddiy doiradan chiqarilishi va Toʻgʻri Yoʻl."
     },
     {
-      "book_slug": "lotr-return",
-      "chapter": "Appendix A: The Númenórean Kings",
+      "book_slug": "the-return-of-the-king",
+      "chapter": "Ilova A: \"Númenor qirollari\"",
       "page": "1035",
-      "notes": "Akallabêth va Straight Road metafizikasi."
+      "notes": "Akallabêth va Straight Road metafizikasi, elflarning soʻnggi kemalari."
+    },
+    {
+      "book_slug": "morgoths-ring",
+      "chapter": "V qism: \"Myths Transformed (Yassi Yer va Dumaloq Yer kosmologik evolyutsiyasi)\"",
+      "page": "375",
+      "notes": "Tolkienning Arda shakllanishi boʻyicha kechki ilmiy va falsafiy yozishmalari."
     }
   ],
   "cosmology_sections": [
     {
-      "title": "Dunyoning dumaloqlashuvi va Toʻgʻri Yoʻl",
-      "content": "Númenor halokatigacha (Akallabêth) Arda yassi tekislik boʻlib, Oʻrta-yerdan kema bilan gʻarbga suzib toʻgʻridan-toʻgʻri Valinorga borish mumkin edi. Biroq insonlar xiyonatidan soʻng Eru dunyoni sharsimon qilib oʻzgartirdi.\n\nValinor zamin doirasidan tashqariga olindi. Endilikda dunyo boʻylab suzgan har qanday kema aylana boʻylab qaytib keladi. Faqat elflarning Oq Kemalari ilohiy ruxsat bilan 'Toʻgʻri Yoʻl' (Straight Road) orqali kavisli egri fazoni yorib oʻtib, Boqiy Gʻarbdagi Amanga yetib borishi mumkin."
+      "title": "Yassi Arda: Qadimgi dunyo geometriyasi va qatlamlari",
+      "content": "Birinchi va Ikkinchi Davrlar davomida Arda tekis yassi disk (Flat Earth) shaklida boʻlgan. Uning sharqida Oʻrta-yer qitʼalari, gʻarbida esa Buyuk Dengiz (Belegaer) ortida Valinor va Boqiy Gʻarb (Aman) joylashgan edi. Har qanday kemachi agar gʻarbga qarab suzaversa, oxir-oqibat Tol Eressëa va Valinor qirgʻoqlariga yetib borishi mumkin edi.\n\nBiroq Valar insonlarning oʻlmaslik vasvasasiga tushmasligi uchun «Valar Taqvimi»ni (Ban of the Valar) oʻrnatdilar: Númenorliklarga oʻz orollarining gʻarbiy qirgʻogʻi koʻrinmaydigan darajada uzoqqa, gʻarbga qarab suzish qatʼiyan man etildi. Uzoq asrlar davomida dunyo shu yassi muvozanatda yashadi."
+    },
+    {
+      "title": "Akallabêth: Dunyoning Oʻzgarishi (Changing of the World)",
+      "content": "Ikkinchi Davrning 3319-yilida Sauronning hiylasiga aldangan Númenorning soʻnggi qiroli Ar-Pharazôn cheksiz qudratli «Katta Qayiqlar» (The Great Armament) flotini tuzib, oʻlmaslikni kuch bilan tortib olish maqsadida Boqiy Gʻarbdagi Valinor sohillariga bostirib kirdi.\n\nShu daqiqada Valar oʻz boshqaruv huquqini bir chetga surib, koinot hukmini bevosita Eru Ilúvatarga topshirdilar. Eru Ardaning butun fizik geometriyasini bir lahzada oʻzgartirdi («Dunyoning Oʻzgarishi» — The Changing of the World). Buyuk Dengiz oʻrtasida ulkan qaʼr ochilib, Ar-Pharazônning butun floti va afsonaviy Númenor qitʼasi suv tubiga gʻarq boʻldi. Eru Amanni moddiy dunyo doiralaridan chiqarib oldi va dunyoning ikki chekkasini birlashtirib, Yerni sferik shar shakliga keltirdi."
+    },
+    {
+      "title": "Toʻgʻri Yoʻl (The Straight Road) va Elflarning Oq Kemalari",
+      "content": "Dunyoning dumaloqlashuvidan soʻng yangi koinot qonuni vujudga keldi: endilikda har qanday inson kemasi gʻarbga qarab suzsa, u faqat kavisli egri chiziq boʻylab harakatlanadi va oʻzining boshlagan joyiga (yoki yangi ochilgan sharqiy yerlarga) aylanib qaytib keladi. Foniy insonlar uchun Valinor jismonan butunlay yoʻqoldi.\n\nBiroq Valar elflar uchun qadimgi osmon kavislarini teshib oʻtuvchi ilohiy yoʻlni — «Toʻgʻri Yoʻl»ni (The Straight Road) ochiq qoldirdilar. Mithlonddan (Kulrang Bandargohlardan) suzib chiqqan elflarning maxsus Oq Kemalari yorugʻlik va havoning egri sathidan chiqib, toʻgʻri traektoriya boʻylab Oʻrta-yer atmosferasini yorib oʻtadi va moddiy koinotdan tashqaridagi qadimiy Boqiy Gʻarbga — Valinorga yetib boradi. Uchinchi Davr yakunida Yagona Uzukni yoʻq qilgan Frodo Baggins, Bilbo, Gandalf, Galadriel va Elrond aynan shu Toʻgʻri Yoʻl orqali Oʻrta-yerni mangu tark etdilar."
     }
   ]
 }

@@ -1,22 +1,22 @@
 {
   "id": "thrain-ii",
-  "name": "Train II",
+  "name": "Thráin II",
   "original_name": "Thráin II",
-  "father_name": "Tror (Togʻ osti Qiroli)",
+  "father_name": "Thrór (Togʻ osti Qiroli)",
   "mother_name": "Nomaʼlum",
   "spouse": "Nomaʼlum",
   "children": [
-    "Torin II Emanqalqon",
+    "Thorin II Oakenshield",
     "Frerin",
-    "Dis (Fili va Kilining onasi)"
+    "Dís (Fili va Kílining onasi)"
   ],
   "aliases": [
     "Surgundagi Qirol",
-    "Tror oʻgʻli Train"
+    "Thrór oʻgʻli Thráin"
   ],
   "titles": [
     "Durin xalqining Surgundagi Qiroli",
-    "Yetti Mitti-odamlar Uzugining soʻnggi saqlovchisi"
+    "Yetti Mitti Uzugining soʻnggi saqlovchisi"
   ],
   "race": "mitti-odamlar",
   "sub_race": "Uzunsoqollar (Longbeards)",
@@ -26,7 +26,7 @@
   "house_id": "durin-avlodlari",
   "weapons_and_artifacts": [
     "Durin xonadonining Qudrat Uzugi (Yetti Uzukning birinchisi va soʻnggisi)",
-    "Tror xaritasi va Erebor maxfiy eshigining kumush kaliti"
+    "Thrór xaritasi va Erebor maxfiy eshigining kumush kaliti"
   ],
   "primary_locations": [
     "erebor",
@@ -35,36 +35,36 @@
     "mirkwood"
   ],
   "textual_status": "author_published",
-  "summary": "Togʻ osti Qiroli Trorning oʻgʻli va Torin Emanqalqonning otasi. Otasi Moria darvozasi oldida Azog tomonidan oʻldirilgach, Mitti-odamlar va Orklar urushiga (Azanulbizar jangiga) boshchilik qilgan; keyinchalik Dol Guldur zindonida halok boʻlishidan oldin Erebor xaritasi va kalitini Gendalfga topshirgan.",
+  "summary": "Togʻ osti Qiroli Thrórning oʻgʻli va Thorin Oakenshieldning otasi. Otasi Moria darvozasi oldida Azog tomonidan oʻldirilgach, Mittilar va Oʻrklar urushiga (Azanulbizar jangiga) boshchilik qilgan; keyinchalik Dol Guldur zindonida halok boʻlishidan oldin Erebor xaritasi va kalitini Gandalfga topshirgan.",
   "biography_sections": [
     {
-      "title": "Erebordan surgun va Mitti-odamlar urushi",
-      "content": "U.D. 2770-yilda ajdar Smaug Ereborga hujum qilganida, Train otasi qirol Tror hamda oʻgʻli Torin bilan maxfiy eshik orqali qochib qutulgan. U.D. 2790-yilda keksa Tror Moria darvozasiga yolgʻiz borib, ork sardori Azog tomonidan shafqatsizlarcha oʻldirilgan. Bu xabarni eshitgan Train yetti kun toshdek qotib oʻtirgach, «Bunga chidab boʻlmaydi!» deb hayqirgan va barcha yetti mitti-odamlar xonadonini qasos urushiga chorlagan. Olti yillik yerosti janglari U.D. 2799-yilda Azanulbizar vodiysidagi buyuk gʻalaba bilan yakunlangan; jangda Train bir koʻzidan ayrilgan va kichik oʻgʻli Frerinni yoʻqotgan."
+      "title": "Erebordan surgun va Mittilar urushi",
+      "content": "U.D. 2770-yilda ajdar Smaug Ereborga hujum qilganida, Thráin otasi qirol Thrór hamda oʻgʻli Thorin bilan maxfiy eshik orqali qochib qutulgan. U.D. 2790-yilda keksa Thrór Moria darvozasiga yolgʻiz borib, oʻrk sardori Azog tomonidan shafqatsizlarcha oʻldirilgan. Bu xabarni eshitgan Thráin yetti kun toshdek qotib oʻtirgach, «Bunga chidab boʻlmaydi!» deb hayqirgan va barcha yetti mitti xonadonini qasos urushiga chorlagan. Olti yillik qonli yerosti janglari U.D. 2799-yilda Azanulbizar vodiysidagi buyuk gʻalaba bilan yakunlangan; jangda Thráin bir koʻzidan ayrilgan va kichik oʻgʻli Frerinni yoʻqotgan."
     },
     {
       "title": "Moviy Togʻlar va Uzuk vasvasasi",
-      "content": "Azanulbizardan soʻng Train oʻz xalqining qolgan qismi bilan Eriador gʻarbidagi Moviy Togʻlar (Ered Luin)ga koʻchib oʻtgan. Ammo uning qoʻlida otasidan meros qolgan Durin xonadonining Qudrat Uzugi bor edi: vaqt oʻtishi bilan Uzukning yovuz taʼsiri Trainning qalbida oltinga boʻlgan tinimsiz vasvasani uygʻotgan. U.D. 2841-yilda u Balin, Dvalin va bir nechta hamrohlari bilan Ereborga qaytish uchun yoʻlga chiqqan, biroq Sauronning aygʻoqchilari uni taʼqib qilgan."
+      "content": "Azanulbizardan soʻng Thráin oʻz xalqining qolgan qismi bilan Eriador gʻarbidagi Moviy Togʻlar (Ered Luin)ga koʻchib oʻtgan. Ammo uning qoʻlida otasidan meros qolgan Durin xonadonining Qudrat Uzugi bor edi: vaqt oʻtishi bilan Uzukning yovuz taʼsiri Thráinning qalbida oltinga boʻlgan tinimsiz vasvasani uygʻotgan. U.D. 2841-yilda u Balin, Dwalin va bir nechta hamrohlari bilan Ereborga qaytish uchun yoʻlga chiqqan, biroq Sauronning aygʻoqchilari uni taʼqib qilgan."
     },
     {
-      "title": "Dol Guldur tutqunligi va Gendalfga vasiyat",
-      "content": "U.D. 2845-yilda Qorongʻu Oʻrmon chekkasida tunayotgan Train qorongʻu kechada Sauron xizmatkorlari tomonidan oʻgʻirlab ketilgan va Dol Guldur zindonlariga tashlangan. U yerda qiynoqlar ostida undan Mitti-odamlarning soʻnggi Uzugi tortib olingan. U.D. 2850-yilda Dol Guldurga yashirincha kirgan Gendalf zindonda oʻz ismini ham unutgan, hushidan ayrilayotgan keksa mitti-odamni topgan; Train jon berishidan oldin Gendalfga oʻgʻli Toringa yetkazish uchun Erebor xaritasi va maxfiy eshik kalitini topshirgan."
+      "title": "Dol Guldur tutqunligi va Gandalfga vasiyat",
+      "content": "U.D. 2845-yilda Qorongʻu Oʻrmon chekkasida tunayotgan Thráin qorongʻu kechada Sauron xizmatkorlari tomonidan oʻgʻirlab ketilgan va Dol Guldur zindonlariga tashlangan. U yerda qiynoqlar ostida undan Mittilarning soʻnggi Uzugi tortib olingan. U.D. 2850-yilda Dol Guldurga yashirincha kirgan Gandalf zindonda oʻz ismini ham unutgan, hushidan ayrilayotgan keksa mitti hukmdorini topgan; Thráin jon berishidan oldin Gandalfga oʻgʻli Thoringa yetkazish uchun Erebor xaritasi va maxfiy eshik kalitini topshirgan."
     }
   ],
   "etymology": "Thráin nomi Qadimgi Skandinav tilidagi «Völuspá» dostonidan olingan boʻlib, «oʻjar, qaysar, qatʼiyatli» maʼnosini anglatadi.",
   "sources": [
     {
       "book_slug": "the-hobbit",
-      "chapter": "1-bob (Kutilmagan ziyofat)",
+      "chapter": "1-bob: \"Kutilmagan mehmonlar\"",
       "page": "26"
     },
     {
       "book_slug": "the-return-of-the-king",
-      "chapter": "Ilova A, III qism (Durin xalqi)",
+      "chapter": "Ilova A, III qism: \"Durin xalqi\"",
       "page": "1074"
     },
     {
       "book_slug": "unfinished-tales",
-      "chapter": "III qism, 3-bob (Erebor yurishi)",
+      "chapter": "III qism, 3-bob: \"Erebor yurishi\"",
       "page": "321"
     }
   ],

@@ -1,7 +1,7 @@
 # Tolkien Olami — Loyihaning Haqiqiy Holati Audit Hisoboti (Current State Audit)
 
 > **Avtomatik yaratilgan:** Ushbu hisobot `scripts/audit-content.cjs` skripti orqali loyihaning haqiqiy holatini sinchkovlik bilan skanerlash orqali tuzildi.  
-> **Sana:** 2026-10-29 13:44:18 UTC  
+> **Sana:** 2026-10-31 11:29:30 UTC  
 > **Muhit:** Node v24.21.0, Astro 7.3.8
 
 ---
@@ -63,19 +63,19 @@ Qahramonlar kartochkalari va batafsil sahifalarida ishlatiladigan ilmiy portretl
 ### Portret Kutilayotgan Qahramonlar Namunasi (60 tadan bir qismi)
 - `finarfin` (Finarfin)
 - `eorl` (Yosh Eorl)
+- `denethor-ii` (Denethor II)
 - `maeglin` (Maeglin)
-- `helm-hammerhand` (Xelm Bolgʻaqoʻl)
 - `maglor` (Maglor)
 - `bard-the-bowman` (Kamonchi Bard (Bard I))
 - `nienor` (Niënor Níniel)
+- `helm-hammerhand` (Helm Hammerhand (Bolgʻaqoʻl))
 - `balin` (Balin)
 - `elwing` (Elwing Oq)
 - `smaug` (Smaug)
-- `thrain-ii` (Train II)
 - `morwen` (Morwen Eledhwen)
-- `dain-ironfoot` (Dain II Temiroyoq)
+- `thrain-ii` (Thráin II)
+- `dain-ironfoot` (Dáin II Ironfoot (Temiroyoq))
 - `beleg` (Beleg Cúthalion)
-- `thranduil` (Tranduil)
 - *...va yana 45 ta qahramon (qarang: Faza 7 portretlar paketi)*
 
 ---
@@ -133,26 +133,26 @@ Quyidagi jadvallarda fayl hajmiga koʻra eng ixcham (yupqa boʻlishi mumkin boʻ
 | :-: | :--- | :--- | :-: |
 | 1 | `finarfin.json` | Finarfin | 3499 B |
 | 2 | `eorl.json` | Yosh Eorl | 3659 B |
-| 3 | `maeglin.json` | Maeglin | 3743 B |
-| 4 | `helm-hammerhand.json` | Xelm Bolgʻaqoʻl | 3759 B |
+| 3 | `denethor-ii.json` | Denethor II | 3661 B |
+| 4 | `maeglin.json` | Maeglin | 3743 B |
 | 5 | `maglor.json` | Maglor | 3778 B |
 | 6 | `bard-the-bowman.json` | Kamonchi Bard (Bard I) | 3793 B |
 | 7 | `nienor.json` | Niënor Níniel | 3794 B |
-| 8 | `balin.json` | Balin | 3816 B |
-| 9 | `elwing.json` | Elwing Oq | 3882 B |
-| 10 | `smaug.json` | Smaug | 3908 B |
+| 8 | `helm-hammerhand.json` | Helm Hammerhand (Bolgʻaqoʻl) | 3806 B |
+| 9 | `balin.json` | Balin | 3816 B |
+| 10 | `elwing.json` | Elwing Oq | 3882 B |
 
 ### Toʻplam: `cosmology` (Jami: 8 ta)
 
 | # | Slug / Fayl | Nomi / Sarlavhasi | Fayl Hajmi (bayt) |
 | :-: | :--- | :--- | :-: |
-| 1 | `ea.json` | Eä (Moddiy Olam) | 1329 B |
-| 2 | `kuma.json` | Kúma (Tashqi Boʻshliq) | 1423 B |
-| 3 | `anar-va-isil.json` | Anar va Isil (Quyosh, Oy va Eärendil Yulduzi) | 1610 B |
-| 4 | `ikki-daraxt.json` | Valinorning Ikki Daraxti | 1749 B |
-| 5 | `ainulindale.json` | Ainulindalë va Oʻchmas Olov | 2259 B |
-| 6 | `togri-yol-va-aklallabeth.json` | Yassi Arda, Dunyoning Dumaloqlashuvi va Toʻgʻri Yoʻl | 2294 B |
-| 7 | `mandos-va-fea-hroa.json` | Fëa va Hröa: Ruh, Tana va Mandos Zallari Metafizikasi | 2399 B |
+| 1 | `ea.json` | Eä | 4211 B |
+| 2 | `anar-va-isil.json` | Anar va Isil | 4446 B |
+| 3 | `kuma.json` | Kúma | 4448 B |
+| 4 | `ainulindale.json` | Ainulindalë va Oʻchmas Olov | 4781 B |
+| 5 | `togri-yol-va-aklallabeth.json` | Yassi Arda, Dunyoning Dumaloqlashuvi va Toʻgʻri Yoʻl | 4954 B |
+| 6 | `ikki-daraxt.json` | Valinorning Ikki Daraxti | 5175 B |
+| 7 | `mandos-va-fea-hroa.json` | Fëa va Hröa: Ruh, Tana va Mandos Zallari Metafizikasi | 5277 B |
 | 8 | `muqaddas-nur.json` | Muqaddas Nur | 6611 B |
 
 ### Toʻplam: `events` (Jami: 17 ta)
@@ -187,14 +187,14 @@ Quyidagi jadvallarda fayl hajmiga koʻra eng ixcham (yupqa boʻlishi mumkin boʻ
 | :-: | :--- | :--- | :-: |
 | 1 | `westron.json` | Westron (Umumiy Nutq / Adûni) | 4715 B |
 | 2 | `adunaic.json` | Adûnaic (Númenor Tili) | 4810 B |
-| 3 | `cirth.json` | Cirth (Angerthas Runalari) | 4825 B |
-| 4 | `khuzdul.json` | Khuzdul | 4826 B |
-| 5 | `quenya.json` | Quenya | 4844 B |
+| 3 | `khuzdul.json` | Khuzdul | 4826 B |
+| 4 | `cirth.json` | Cirth (Angerthas Runalari) | 4852 B |
+| 5 | `quenya.json` | Quenya | 4855 B |
 | 6 | `tengwar.json` | Tengwar | 4929 B |
 | 7 | `valarin.json` | Valarin (Ainur Tili) | 4965 B |
-| 8 | `rohirric.json` | Rohirric (Rohan Tili) | 5009 B |
+| 8 | `rohirric.json` | Rohirric (Rohan Tili) | 5020 B |
 | 9 | `sindarin.json` | Sindarin | 5170 B |
-| 10 | `qora-nutq.json` | Qora Nutq (Black Speech) | 5274 B |
+| 10 | `qora-nutq.json` | Qora Nutq (Black Speech) | 5296 B |
 
 ### Toʻplam: `peoples` (Jami: 11 ta)
 
@@ -204,10 +204,10 @@ Quyidagi jadvallarda fayl hajmiga koʻra eng ixcham (yupqa boʻlishi mumkin boʻ
 | 2 | `sindar.json` | Sindar | 4827 B |
 | 3 | `noldor.json` | Noldor | 4914 B |
 | 4 | `nandor-va-silvan.json` | Nandor va Oʻrmon Elflari | 4921 B |
-| 5 | `xazad.json` | Xazad (Mittilar) | 4963 B |
-| 6 | `rohirrim.json` | Rohirrim (Rohan Chavandozlari) | 4970 B |
-| 7 | `numenorliklar.json` | Númenorliklar | 5059 B |
-| 8 | `entlar.json` | Entlar (Onodrim) | 5066 B |
+| 5 | `rohirrim.json` | Rohirrim (Rohan Chavandozlari) | 4970 B |
+| 6 | `xazad.json` | Khazad (Mittilar) | 4982 B |
+| 7 | `entlar.json` | Entlar (Onodrim) | 5069 B |
+| 8 | `numenorliklar.json` | Númenorliklar | 5070 B |
 | 9 | `dunedain.json` | Dúnedain (Gʻarb Insonlari) | 5081 B |
 | 10 | `istari.json` | Istari (Sehrgarlar Ordeni) | 5268 B |
 
@@ -215,16 +215,16 @@ Quyidagi jadvallarda fayl hajmiga koʻra eng ixcham (yupqa boʻlishi mumkin boʻ
 
 | # | Slug / Fayl | Nomi / Sarlavhasi | Fayl Hajmi (bayt) |
 | :-: | :--- | :--- | :-: |
-| 1 | `himring.json` | Himring | 1470 B |
-| 2 | `tol-galen.json` | Tol Galen | 1491 B |
-| 3 | `brethil.json` | Brethil Oʻrmoni | 1522 B |
-| 4 | `vinyamar.json` | Vinyamar | 1551 B |
-| 5 | `falas.json` | Falas | 1588 B |
-| 6 | `belegost.json` | Belegost | 1606 B |
-| 7 | `dorthonion.json` | Dorthonion | 1669 B |
-| 8 | `nogrod.json` | Nogrod | 1682 B |
-| 9 | `tol-sirion.json` | Tol Sirion (Tol-in-Gaurhoth) | 1692 B |
-| 10 | `dunharrow.json` | Dunharrow | 1880 B |
+| 1 | `nargothrond.json` | Nargothrond | 3687 B |
+| 2 | `orodruin.json` | Orodruin (Hukm Togʻi) | 3837 B |
+| 3 | `barad-dur.json` | Barad-dûr | 3841 B |
+| 4 | `helms-deep.json` | Helm jarligi (Helm's Deep / Hornburg) | 3893 B |
+| 5 | `gondolin.json` | Gondolin | 3894 B |
+| 6 | `paths-of-the-dead.json` | Oʻliklar Yoʻli | 3920 B |
+| 7 | `havens-of-sirion.json` | Sirion Bandargohi | 3924 B |
+| 8 | `angband.json` | Angband | 3945 B |
+| 9 | `alqualonde.json` | Alqualondë | 3948 B |
+| 10 | `dead-marshes.json` | Oʻlik Botqoqliklar | 3948 B |
 
 ---
 

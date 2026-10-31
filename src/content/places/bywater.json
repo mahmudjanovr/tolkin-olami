@@ -1,7 +1,6 @@
 {
   "id": "bywater",
-  "name": "Bywater (Suvboʻyi)",
-  "elvish_name": "Bywater",
+  "name": "Bywater",
   "type": "shahar",
   "region": "orta-yer",
   "coordinates": {
@@ -12,31 +11,38 @@
   "founded_era": "Uchinchi Davr 1601",
   "rulers": [],
   "notable_events": [
-    "Yashil Ajdarho (Green Dragon) mayxonasida Bilbo va Torin boshliq mitti-odamlarning yigʻilishi (2941-yil)",
-    "Suvboʻyi jangi (Battle of Bywater) — Uzuk Urushining soʻnggi toʻqnashuvi va Shirning ozod qilinishi (3019-yil)"
+    "Thorin va Bilbo boshchiligidagi Mittilarning Yashil Ajdarho mayxonasida yigʻilishi (U.D. 2941)",
+    "Suvboʻyi jangi (Battle of Bywater) — Halqa Urushining soʻnggi toʻqnashuvi (3019-yil 3-noyabr)",
+    "Shayrning qaroqchilardan butkul ozod qilinishi"
   ],
   "textual_status": "author_published",
-  "summary": "Suvboʻyi (Bywater) — Shirning Gʻarbiy Toʻrtligida, Hobbitondan bir necha chaqirim sharqda, Katta Sharqiy Yoʻl boʻyida joylashgan gavjum xobbit qishlogʻi. Bu yerda mashhur Yashil Ajdarho (The Green Dragon) va Buta (The Ivy Bush) mayxonalari, shuningdek Suv havzasi (Bywater Pool) joylashgan. 3019-yilda Meri va Pippin boshchiligidagi xobbitlar Suvboʻyi jangida bosqinchi qaroqchilarni yengib, Shirni qutqarganlar.",
+  "summary": "Bywater (Suvboʻyi) — Shayrning Gʻarbiy Toʻrtligida, Hobbitondan bir necha chaqirim sharqda, Katta Sharqiy Yoʻl yaqinidagi osoyishta koʻl boʻyida joylashgan gavjum va muhim qasabadir. Bu yerda Oʻrta-yerning eng mashhur xobbit mayxonalari — «Yashil Ajdarho» (The Green Dragon) va «Pechakgul» (The Ivy Bush) joylashgan boʻlib, 2941-yilda Bilbo Bagginsning Erebor safari aynan shu yerdan boshlangan; 3019-yilda esa Merry va Pippin boshchiligidagi xobbitlar Suvboʻyi jangida Saruman qaroqchilarini tor-mor etib, Halqa Urushining soʻnggi jangini gʻalaba bilan yakunlaganlar.",
   "sources": [
     {
       "book_slug": "the-hobbit",
-      "chapter": "An Unexpected Party",
-      "notes": "Bilboning Yashil Ajdarho mayxonasiga shoshilib borishi va safarning amaliy boshlanishi."
+      "chapter": "1-bob: \"Kutilmagan mehmonlar (An Unexpected Party)\"",
+      "page": "30",
+      "notes": "Bilboning Yashil Ajdarho mayxonasiga yugurib kelishi va Erebor safarining boshlanishi."
     },
     {
-      "book_slug": "the-lord-of-the-rings",
-      "chapter": "The Scouring of the Shire",
-      "notes": "Suvboʻyi jangi tafsilotlari va qishloq xobbitlarining qarshilik harakati."
+      "book_slug": "the-return-of-the-king",
+      "chapter": "VI kitob, 8-bob: \"Shayrni tozalash (The Scouring of the Shire)\"",
+      "page": "995",
+      "notes": "Suvboʻyi jangi, fermer Cotton xonadoni va qishloq koʻchalaridagi gʻalaba."
     }
   ],
   "description_sections": [
     {
-      "title": "Suvboʻyi koʻli va Yashil Ajdar tavernasi",
-      "content": "Bywater (Suvboʻyi) — Hobbitondan atigi ikki mil sharqda, katta suv havzasi (Bywater Pool) boʻyida joylashgan gavjum posyolka. Bu yerda paxta yetishtiruvchilar, bogʻbonlar va hunarmand xobbitlar istiqomat qiladi.\n\nPosyolkaning eng mashhur maskani — 'Yashil Ajdar' (The Green Dragon) tavernasi boʻlib, u xobbitlarning bosh uchrashuv, yangilik almashish va pivoxoʻrlik markazi boʻlgan."
+      "title": "Bywater havzasi va qishloq madaniyati",
+      "content": "Bywater qishlogʻi Oʻrta Daryo (The Water) sohilida, sokin va qamishzor Bywater Havzasi (Bywater Pool) boʻyida yastanib yotgan goʻzal xobbit maskanidir. Hobbiton bilan chambarchas tutashgan bu qasabada unumdor bogʻlar, polizlar, paxtakorlar va un tegirmonlari joylashgan boʻlib, uning aholisi Shayrning eng mehnatkash va quvnoq tabaqasini tashkil etgan.\n\nQishloqning markaziy koʻchasida ikkita mashhur taverna qad rostlagan: Hobbiton chegarasidagi «Pechakgul» (The Ivy Bush) — keksa xobbitlar, jumladan Sam Gamgeening otasi Gaffer Hamfast pivo ichib, Bilboning sirlarini muhokama qiladigan joy boʻlsa, daryo koʻprigi yonidagi «Yashil Ajdarho» (The Green Dragon) — butun Shayr boʻylab eng yirik yangilik almashish va sayohatchilar uchrashuv maydoni edi."
     },
     {
-      "title": "Suvboʻyi jangi (Battle of Bywater)",
-      "content": "3019-yil 3-noyabrida Bywater koʻchalarida Halqa Urushining eng soʻnggi toʻqnashuvi — Suvboʻyi jangi boʻlib oʻtdi. Merry Brandybuck va Pippin Took boshchiligidagi yuzlab xobbitlar Sarumanning qaroqchilar toʻdasini qurshab olib yengdilar va Shirni zulmatdan ozod qildilar."
+      "title": "Thorin va Bilboning safari boshlanishi",
+      "content": "Uchinchi Davrning 2941-yili 27-aprel tongida Gandalf va Thorin Oakenshield boshliq oʻn uch nafar mitti Bilbo Bagginsga maktub qoldirib, uni soat oʻn birda aynan Bywaterdagi «Yashil Ajdarho» mayxonasida kutishlarini tayinladilar.\n\nBilbo oʻzining shinam Bag End inidan shoshilib chiqib, roʻmolchasini ham unutgan holda yugurib Bywaterga keldi va doʻstlariga qoʻshildi. Aynan Bywater koʻprigidan oʻtib, xobbitlar va mittilar Oʻrta-yer tarixini oʻzgartirgan Yolgʻiz Togʻ (Erebor) sari afsonaviy yurishni boshladilar."
+    },
+    {
+      "title": "Suvboʻyi jangi — Halqa Urushining soʻnggi zarbasi",
+      "content": "U.D. 3019-yil 3-noyabrda Bywater qishlogʻi tarixiy voqea maydoniga aylandi. Saruman («Sharkey») boshchiligidagi qaroqchilar toʻdasi qishloqni qamab olgan bir paytda, urushdan qaytgan Merry Brandybuck va Pippin Took fermer Tom Cotton va uning oʻgʻillari bilan birgalikda dushmanga qarshi harbiy pistirma uyushtirdilar.\n\nMerryning mohir sarkardaligi tufayli xobbitlar qishloqning tor yoʻllarini ogʻir aravlar bilan toʻsib, yuzdan ortiq qurollangan qaroqchilarni qopqonga tushirdilar. Qisqa va shiddatli kechgan «Suvboʻyi jangi»da (Battle of Bywater) bosqinchilar tor-mor etildi; Frodo begunoh qon toʻkilishining oldini olib, taslim boʻlganlarni asirga oldi. Bu toʻqnashuv butun Oʻrta-yer boʻylab Halqa Urushining rasman eng soʻnggi jangi boʻlib tarixga kirdi va oradan koʻp oʻtmay Samwise Gamgee Bywaterlik goʻzal Rosie Cottonga uylanib, qishloqning tinch hayotini qayta tikladi."
     }
   ]
 }

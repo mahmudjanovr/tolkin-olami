@@ -1,7 +1,7 @@
 {
   "id": "tol-sirion",
-  "name": "Tol Sirion (Tol-in-Gaurhoth)",
-  "elvish_name": "Tol-in-Gaurhoth (Boʻrilar oroli)",
+  "name": "Tol Sirion",
+  "elvish_name": "Tol Sirion / Tol-in-Gaurhoth",
   "type": "qalʼa",
   "region": "beleriand",
   "coordinates": {
@@ -17,24 +17,45 @@
     "Sauron"
   ],
   "notable_events": [
-    "Minas Tirith minorasining qulashi",
-    "Finrod va Sauron qoʻshiqlar jangi",
-    "Huanning Sauron ustidan gʻalabasi"
+    "Minas Tirith minorasining barpo etilishi",
+    "Sauron tomonidan qalʼaning egallanishi (B.D. 457)",
+    "Finrod va Sauron oʻrtasidagi sehrli qoʻshiqlar jangi",
+    "Huanning Sauron ustidan qozongan gʻalabasi va minoraning qulashi"
   ],
   "textual_status": "author_published",
-  "summary": "Tol Sirion — Sirion daryosi oqimida, Ered Wethrin va Echoriath oraligʻidagi strategik orol-qalʼa. Dastlab Finrod tomonidan Minas Tirith minorasi qurilgan. Dagor Bragollachdan soʻng Sauron egallab, dahshatli Boʻrilar oroliga (Tol-in-Gaurhoth) aylantirgan. Lúthien va Huan tomonidan vayron etilgan.",
+  "summary": "Tol Sirion — Sirion daryosining Ered Wethrin va Echoriath togʻlari oraligʻidagi tor Sirion Yorigʻida (Pass of Sirion) joylashgan oʻta muhim strategik orol-qalʼadir. Dastlab Finrod Felagund tomonidan dushman yoʻlini toʻsish maqsadida Minas Tirith («Kuzatuv Minorasi») nomi bilan barpo etilgan bu istehkom Dagor Bragollachdan soʻng Sauron tomonidan qora sehr bilan egallanib, dahshatli «Tol-in-Gaurhoth» («Boʻrilar Oroli»)ga aylantirilgan; Finrod shu zindonda Beren hayotini saqlab qolish uchun jon bergan, Lúthien va Valinor iti Huan esa Sauronni magʻlub etib qalʼani yer bilan yakson qilganlar.",
   "sources": [
     {
       "book_slug": "silmarillion",
-      "chapter": "Of Beren and Lúthien",
-      "page": "164",
-      "notes": "Tol-in-Gaurhoth qamali va Finrodning qahramonona halokati."
+      "chapter": "Quenta Silmarillion, 14-bob: \"Beleriand va uning oʻlkalari haqida\"",
+      "page": "120",
+      "notes": "Tol Sirion oroli va Finrod tomonidan Minas Tirith minorasining qurilishi."
+    },
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Quenta Silmarillion, 18-bob: \"Beleriand halokati haqida\"",
+      "page": "156",
+      "notes": "Sauronning qora tuman bilan qalʼani bosib olishi."
+    },
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Quenta Silmarillion, 19-bob: \"Beren va Lúthien haqida\"",
+      "page": "170",
+      "notes": "Finrod va Sauron jangi, Huanning gʻalabasi va tosh minoraning qulashi."
     }
   ],
   "description_sections": [
     {
-      "title": "Sirion darasi va Boʻrilar Oroli",
-      "content": "Tol Sirion — Sirion daryosining Ered Wethrin va Dorthonion oʻrtasidagi tor darasida joylashgan strategik oroldir. Bu yerda Finrod Felagund qadimiy Minas Tirith ('Qoʻriqchi Minora') qalʼasini barpo etgan edi.\n\nDagor Bragollachdan soʻng Sauron qalʼaga qora tuman bilan bostirib kirib uni egalladi va orolni 'Tol-in-Gaurhoth' ('Boʻrilar Oroli')ga aylantirdi. Finrod va Beren shu zindonda asir boʻldi. Lúthien va Huan Sauronni yengib qalʼani vayron qildilar."
+      "title": "Sirion Yorigʻi va Finrodning Minas Tirith minorasi",
+      "content": "Tol Sirion (Sindarin tilida «Sirion Oroli») — daryo oqimi qoyali darada ikkiga ajralgan joyda hosil boʻlgan tor toshloq orol edi. Bu dara shimoldagi keng Ard-galen tekisliklaridan Markaziy va Gʻarbiy Beleriandga olib boruvchi asosiy darvoza sanalgan.\n\nBirinchi Davrning 60-yillarida Finrod Felagund Nargothrondga ketishidan oldin shu orolda oq toshdan mahobatli minora qurdirdi va uni «Minas Tirith» («Kuzatuv Minorasi») deb atadi. Uzoq yillar davomida bu qalʼada Finrodning ukasi Orodreth boshchiligidagi Noldor soqchilari turib, Angband oʻrklari harakatini doimiy nazorat qildilar va dushmanning janubga siljishiga yoʻl bermadilar."
+    },
+    {
+      "title": "Sauronning qora sehri va Tol-in-Gaurhoth",
+      "content": "Birinchi Davrning 457-yilida, Dagor Bragollach jangidan ikki yil oʻtib, Morgothning bosh sarkardasi Sauron Tol Sirionga hujum qildi. U minora ustiga qoʻrquv va qora tuman afsunini yogʻdirdi; Orodreth jangchilari bu dahshatli sehrga dosh berolmay qalʼani tark etdilar va Nargothrondga qochdilar.\n\nSauron oq minorani oʻz qarorgohiga aylantirdi va uni yovuz boʻrilar (werewolves), vahshiy mahluqlar hamda ularning boshligʻi bahaybat Draugluin bilan toʻldirdi. Shundan soʻng butun Beleriand bu orolni «Tol-in-Gaurhoth» — «Boʻrilar Oroli» deb atay boshladi; qasrdan uchgan qora koʻrshapalaklar (jumladan jodugar Thuringwethil) Morgothga har bir harakat haqida xabar tashir edi."
+    },
+    {
+      "title": "Finrodning fidoiyligi, Huan jasorati va minoraning qulashi",
+      "content": "Silmarilni qoʻlga kiritish uchun yoʻlga chiqqan Beren va Finrod oʻn nafar hamrohlari bilan oʻrk qiyofasida bu daradan oʻtayotganlarida Sauron ularni sezib qoldi va orol zindoniga tashladi. Sauron va Finrod oʻrtasida Oʻrta-yer tarixidagi eng mashhur «Sehrli Qoʻshiqlar Jangi» boʻlib oʻtdi; Finrod bor kuchi bilan qarshilik koʻrsatdi, ammo Valinordagi Qardoshlar Qirgʻini xotirasining qora soyasi tufayli yengildi. Zindonda boʻri birma-bir ularning hamrohlarini yeb bitirganda, soʻnggi daqiqada Finrod zanjirlarini uzib, Berenni qutqarish uchun mahluqni tishlari va yalang qoʻllari bilan boʻgʻib oʻldirdi, biroq oʻzi ham ogʻir yaralanib jon berdi.\n\nBeren faryod chekayotgan onda Lúthien va Valinorning buyuk iti Huan orol koʻprigiga yetib keldilar. Huan boʻrilar sardori Draugluinni halok etdi. Sauronning oʻzi ulkan boʻri qiyofasida chiqib Huanga tashlandi, biroq qadimgi bashoratga koʻra it uni boʻgʻzidan tishlab yiqitdi. Sauron magʻlubiyatni tan olib orol kalitlarini topshirdi va koʻrshapalak qiyofasida Taur-nu-Fuinga qochdi. Lúthien qoʻshiq kuylab qora tosh minorani poydevorigacha qulatdi, zindonlarni ochib asirlarni ozod qildi va Finrod jasadini orolning yashil tepaligiga dafn etdilar; uning qabri Beleriand choʻkkuniga qadar hech qachon dushman oyogʻi tegmagan muqaddas ziyoratgoh boʻlib qoldi."
     }
   ]
 }

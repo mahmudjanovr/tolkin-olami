@@ -1,7 +1,6 @@
 {
   "id": "buckland",
-  "name": "Buckland (Bukland / Brendi Xol)",
-  "elvish_name": "Buckland",
+  "name": "Buckland",
   "type": "oʻlka",
   "region": "orta-yer",
   "coordinates": {
@@ -11,37 +10,44 @@
   },
   "founded_era": "Uchinchi Davr 2340",
   "rulers": [
-    "Brendibak xoʻjayini (Master of Buckland)",
-    "Gorhendad Brandybuck"
+    "Master of Buckland (Brendibak Xoʻjayini)",
+    "Gorhendad Brandybuck",
+    "Meriadoc Brandybuck (Halqa Urushidan soʻng)"
   ],
   "notable_events": [
-    "Gorhendad Brandybuck tomonidan Brendi Xol qasri va Bukland mustamlakasining barpo etilishi (2340-yil)",
-    "Qari Oʻrmon (Old Forest) tahdidlaridan saqlanish uchun yigirma chaqirimlik Baland Toʻsiq (High Hay) butazorining bunyod etilishi",
-    "Frodo Baggins va safdoshlarining Qora Suvoriylardan qochib Buklberi paromi orqali oʻtishi (3018-yil)",
-    "Bukland xobbitlarining sarosima chalingan karnayi — Bukland uygʻonishi (Awake! Fear! Fire! Foes!) bong urishi"
+    "Gorhendad Oldbuck tomonidan Brandy Hall va Buckland oʻlkasining barpo etilishi (U.D. 2340)",
+    "Qari Oʻrmon xavfidan saqlanish uchun yigirma chaqirimlik Baland Toʻsiq (High Hay) butazorining ekilishi",
+    "Frodo va safdoshlarining Bucklebury paromidan oʻtishi (3018-yil)",
+    "Nazgûl hujumi paytida Buckland karnayining («Awake! Fear! Fire! Foes!») chalinishi"
   ],
   "textual_status": "author_published",
-  "summary": "Bukland — Baranduin (Brendivin) daryosining sharqiy sohillari bilan vahimali Qari Oʻrmon oraligʻida joylashgan yarim mustaqil xobbit oʻlkasi. 2340-yilda Gorhendad Oldbuck tomonidan asos solingan boʻlib, aholisi suvdan va qayiqlardan qoʻrqmaydigan oʻziga xos jasur feʼl-atvori bilan ajralib turadi. Oʻlkaning markazi Brendi Tepaligida qazilgan afsonaviy Brendi Xol saroyidir.",
+  "summary": "Buckland — Baranduin (Brandywine) daryosining sharqiy sohillari bilan vahimali Qari Oʻrmon (Old Forest) oraligʻida joylashgan yarim mustaqil xobbit oʻlkasidir. Uchinchi Davrning 2340-yilida Gorhendad Oldbuck tomonidan asos solingan bu oʻlka xalqi Stoor qabilasi qoni kuchliligi sababli suvdan va qayiqlardan qoʻrqmaydigan, tunda eshiklarini qulflab yotadigan jasur feʼl-atvori bilan ajralib turadi; oʻlka markazi Bucklebury tepaligida oʻyilgan koʻp qavatli Brandy Hall saroyidir.",
   "sources": [
     {
-      "book_slug": "the-lord-of-the-rings",
-      "chapter": "A Conspiracy Unmasked",
-      "notes": "Bukland geografiyasi, Crickhollow uyi va Brendibaklar odati."
+      "book_slug": "the-fellowship-of-the-ring",
+      "chapter": "I kitob, 5-bob: \"Fitna fosh boʻldi (A Conspiracy Unmasked)\"",
+      "page": "104",
+      "notes": "Buckland geografiyasi, Crickhollow uyi va Brandybucklar urugʻi odatlari."
     },
     {
-      "book_slug": "the-lord-of-the-rings",
-      "chapter": "Fog on the Barrow-downs",
-      "notes": "Baland Toʻsiq (High Hay) va Qari Oʻrmon chegarasi."
+      "book_slug": "the-fellowship-of-the-ring",
+      "chapter": "I kitob, 11-bob: \"Pichoq zulmatda (A Knife in the Dark)\"",
+      "page": "173",
+      "notes": "Nazgûllarning Crickhollowga hujumi va Buckland hushyorlik karnayi sadosi."
     }
   ],
   "description_sections": [
     {
-      "title": "Brendivin ortidagi mustaqil maskan",
-      "content": "Buckland (Brendiyurt) — Shayrning sharqiy chegarasida, Brendivin daryosi va Qadimiy Oʻrmon (Old Forest) oʻrtasida joylashgan oʻziga xos avtonom xobbit oʻlkasidir. U Uchinchi davrning 2340-yilida Gorhendad Oldbuck tomonidan asos solingan.\n\nBuckland xobbitlari qayiqda suzishni bilishi, tunda eshiklarini qulflab yotishi va jasurligi bilan boshqa Shir xobbitlaridan ajralib turadi. Oʻlka sharqdan yigirma mil uzunlikdagi 'Baland Toʻsiq' (High Hay) devori bilan himoyalangan."
+      "title": "Brendivin ortidagi yarim mustaqil oʻlka va High Hay toʻsigʻi",
+      "content": "Buckland geografik jihatdan Shayrning toʻrtta asosiy toʻrtligiga kirmaydi: u Baranduin daryosining sharqiy qirgʻogʻida, daryo va sirli Qari Oʻrmon (Old Forest) oraligʻidagi tor, ammo uzun erkin oʻlka hisoblanadi. Uchinchi Davrning 2340-yilida oʻn birinchi Teyn Gorhendad Oldbuck oʻz xonadoni bilan bu yerga koʻchib oʻtib, oʻz familiyasini «Brandybuck» deb oʻzgartirdi.\n\nOʻlka sharq tomondan qariyb yigirma milga choʻzilgan qalin, tikanli «Baland Toʻsiq» (High Hay) butazori bilan oʻrab olingan. Bu toʻsiq qadimiy oʻrmonning yovuz daraxtlari va qorongʻu maxluqlarining xobbit qishloqlariga bostirib kirishidan ishonchli qalqon boʻlib xizmat qilgan. Bucklandliklar qayiqda suzishni, baliq ovlashni bilishlari va kechalari eshiklarini qulflab yotishlari bilan boshqa sodda xobbitlardan tubdan farq qilganlar."
     },
     {
-      "title": "Brandy Hall va Crickhollow",
-      "content": "Oʻlka markazida Bucklebury qasri va yuzlab xonalardan iborat ulkan yerosti maskani — Brandy Hall joylashgan boʻlib, u Brandybuck xonadonining bosh qarorgohidir.\n\nCrickhollow qishlogʻida Frodo Nazgûllardan yashirinish uchun uy sotib olgan va aynan shu yerdan Qadimiy Oʻrmon orqali xavfli safarga qochib chiqqan edi."
+      "title": "Brandy Hall va Master of Buckland",
+      "content": "Oʻlkaning yuragi — Bucklebury tepaligi bagʻriga oʻyilgan afsonaviy «Brandy Hall» (Brendi Koshonasi) saroyidir. Gorhendad bu yerda tepalikni butunlay teshib oʻtuvchi yerosti zallarini qazishni boshlagan va yillar davomida bu majmua yuzlab xonadonlar, oilalar va oziq-ovqat omborlarini oʻz ichiga olgan haqiqiy shahar-qalʼaga aylangan.\n\nBuckland oʻlkasini Shayr Teyni emas, balki Brandybucklar sulolasining toʻngʻich vakili boʻlgan «Master of Buckland» (Buckland Xoʻjayini) boshqargan. Daryodan oʻtish uchun esa xobbitlar boshqaradigan afsonaviy Bucklebury Paromi (Bucklebury Ferry) xizmat qilgan; Frodo va uning doʻstlari Qora Suvoriylar taʼqibidan qochib, aynan shu parom orqali qutulib qolganlar."
+    },
+    {
+      "title": "Crickhollow, Fitna fosh etilishi va Buckland hushyorligi",
+      "content": "Frodo Baggins Shirni yashirincha tark etish niyatida Bucklandning sokin Crickhollow qishlogʻida kichik uy sotib olgan edi. Biroq bu yerda Merry, Pippin va Sam oʻzlarining sodiq doʻstona «fitnasi»ni fosh qildilar va Frodoni xavfli yoʻlda yolgʻiz qoldirmaslikka qasamyod qildilar.\n\nFrodo va doʻstlari Qari Oʻrmon orqali qochib ketganlaridan soʻng, uyda yolgʻiz qolgan Fredegar Bolger («Fatty Bolger») tunda eshikni buzib kirgan uch nafar Nazgûlni koʻrib dahshatga tushdi. U orqa eshikdan qochib, qadimiy Buckland Karnayini chalib, butun oʻlka boʻylab mashhur hushyorlik sadosini («Awake! Fear! Fire! Foes!») yangratdi. Yuzlab qurollangan jasur xobbitlar darhol koʻchalarga chiqib, Qora Suvoriylarni Buckland sarhadlaridan qochishga majbur qildilar."
     }
   ]
 }

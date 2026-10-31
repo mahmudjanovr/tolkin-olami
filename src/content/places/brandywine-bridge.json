@@ -1,6 +1,6 @@
 {
   "id": "brandywine-bridge",
-  "name": "Brandywine Bridge (Toshkoʻprik / Bridge of Stonebows)",
+  "name": "Brandywine Bridge",
   "elvish_name": "Baranduin Bridge",
   "type": "qalʼa",
   "region": "orta-yer",
@@ -12,29 +12,39 @@
   "founded_era": "Uchinchi Davr (Arnor qirolligi davri)",
   "rulers": [],
   "notable_events": [
-    "Marcho va Blanco boshchiligidagi xobbitlarning koʻprikdan oʻtib Shirga asos solishi (1601-yil)",
-    "Arnor qiroli Argeleb II tomonidan xobbitlarga Toshkoʻprikni taʼmirlab saqlash sharti bilan yer inʼom etilishi",
-    "Uzuk izlovchi Nazgûllarning Toshkoʻprik orqali Shirga kirib kelishi (3018-yil)",
-    "Saruman qaroqchilari tomonidan koʻprikka temir darvozalar va darvozabon minorasi oʻrnatilishi (3019-yil)"
+    "Marcho va Blanco boshchiligidagi xobbitlarning koʻprikdan oʻtib Shayrga asos solishi (1601-yil)",
+    "Arnor qiroli Argeleb II tomonidan koʻprikni taʼmirlab saqlash sharti bilan Shayr nizomi berilishi",
+    "Qora Chavandozlar (Nazgûl)ning Toshkoʻprik orqali Shayrga bostirib kirishi (3018-yil)",
+    "Halqa Urushidan soʻng toʻsiq darvozalarning olib tashlanishi va koʻprikning qayta ochilishi"
   ],
   "textual_status": "author_published",
-  "summary": "Brendivin Toshkoʻprigi (Bridge of Stonebows) — Baranduin daryosi ustiga Arnorning qadimiy Dúnedain muhandislari tomonidan qad koʻtargan uch ravokli ulkan tosh koʻprik. U Katta Sharqiy Yoʻlning Shirga kirishdagi bosh strategik oʻtish joyidir. 1601-yilda Marcho va Blanco ushbu koʻprikdan oʻtib Shirga asos solganlar, shuningdek qirol shartiga koʻra xobbitlar uni doimo soz holatda saqlashga masʼul boʻlganlar.",
+  "summary": "Brandywine Bridge (Toshkoʻprik / Bridge of Stonebows) — Baranduin (Brandywine) daryosi ustiga Arnorning qadimiy Dúnedain muhandislari tomonidan qad koʻtargan uch ravoqli mahobatli tosh koʻprikdir. U Katta Sharqiy Yoʻlning (Great East Road) Shayrga kirishdagi bosh strategik ostonasi sanaladi; 1601-yilda Marcho va Blanco ushbu koʻprikdan oʻtib Shayr zaminiga asos solganlar hamda qirol shartiga koʻra xobbitlar uni doimo soz holatda saqlashga masʼul boʻlganlar.",
   "sources": [
     {
-      "book_slug": "the-lord-of-the-rings",
-      "chapter": "Prologue: Concerning Hobbits",
-      "notes": "Marcho va Blanconing Toshkoʻprikdan oʻtishi va Arnor qiroli bilan bitim."
+      "book_slug": "the-fellowship-of-the-ring",
+      "chapter": "Muqaddima: \"Xobbitlar haqida (Concerning Hobbits)\"",
+      "page": "10",
+      "notes": "Marcho va Blanconing Toshkoʻprikdan oʻtishi va Arnor qiroli bilan tarixiy bitim."
     },
     {
-      "book_slug": "the-lord-of-the-rings",
-      "chapter": "The Scouring of the Shire",
-      "notes": "Toshkoʻprikdagi temir panjarali darvoza va soqchilar posti tasviri."
+      "book_slug": "the-return-of-the-king",
+      "chapter": "VI kitob, 8-bob: \"Shayrni tozalash (The Scouring of the Shire)\"",
+      "page": "981",
+      "notes": "Toshkoʻprikdagi temir panjarali tikanli darvoza va soqchilar posti tasviri."
     }
   ],
   "description_sections": [
     {
-      "title": "Buyuk Sharqiy Yoʻlning tosh koʻprigi",
-      "content": "Brandywine Bridge (Sindarincha: Cirith Baranduin) — buyuk Baranduin (Brendivin) daryosi ustiga Arnor qirolligi davrida qurilgan ulkan uch arkali tosh koʻprikdir. U Buyuk Sharqiy Yoʻlning (Great East Road) muhim strategik qismi boʻlib, Shayrni Bree va sharqiy yerlar bilan bogʻlagan.\n\nUchinchi davrning 1601-yilida Arnor Qiroli Argeleb II ikki xobbit aka-uka — Marcho va Blancoga Brendivin koʻprigini saqlash va qirol elchilarini erkin oʻtkazish sharti bilan daryoning narigi tomonidagi yerlarni (Shayrni) bergan."
+      "title": "Arnor meʼmorchiligi va Toshkoʻprik (Bridge of Stonebows)",
+      "content": "Brandywine Bridge (xobbitlar tilida «Toshkoʻprik» — Bridge of Stonebows) — keng va chuqur oquvchi Baranduin daryosining ikki sohilini bogʻlab turuvchi uchta ulkan tosh arkadan iborat mustahkam muhandislik inshootidir. U Arnor qirolligining gullagan davrida, Shimoliy Dúnedain tosh ustalari tomonidan Eriador boʻylab Fornost va Annúminas poytaxtlarini Sharqiy yoʻllar bilan bogʻlash maqsadida bunyod etilgan.\n\nKoʻprikning mustahkam granit poydevorlari asrlar davomidagi bahorgi toshqinlar va muz parchalanishlariga bardosh bergan. Koʻprik ustidan oʻtuvchi Katta Sharqiy Yoʻl Shayrni gʻarbdagi Oq Minoralar bilan, sharqda esa Bree qasabasi, Rivendell va Tumanli Togʻlar dovonlari bilan bogʻlab turuvchi yagona arteriya edi."
+    },
+    {
+      "title": "Marcho va Blanco koʻchishi hamda Qirol bitimi",
+      "content": "Uchinchi Davrning 1601-yilida (Shayr Solnomasining 1-yili) Fallohide qabilasidan boʻlgan aka-uka xobbitlar — Marcho va Blanco Bree qasabasidan yoʻlga chiqib, Arnor Oliy Shohi Argeleb II huzuriga bordilar va daryoning narigi tomonidagi kimsasiz yashil yerlarga koʻchish uchun rasmiy ijozat soʻradilar.\n\nQirol Argeleb II ularning iltimosini qabul qilib, bir nechta shart qoʻydi: xobbitlar qirol fuqarolari deb tan olinishi, qirol xabarchilari va elchilarini daryodan toʻsiqsiz oʻtkazishi hamda ushbu Buyuk Toshkoʻprikni va unga tutash yoʻllarni doimo oʻz hisoblaridan taʼmirlab, soz holatda saqlashi lozim edi. Xobbitlar bu shartni qatʼiy bajardilar va hatto Fornost qulaganidan keyin ham koʻprikning har bir toshini ehtiyotkorlik bilan asradilar."
+    },
+    {
+      "title": "Halqa Urushidagi qora soyalar va darvozaning buzilishi",
+      "content": "U.D. 3018-yil sentyabrida qora plashlarga burkangan toʻqqiz nafar Nazgûl Yagona Uzuk izidan kelib, tumanli kechada aynan shu Toshkoʻprik orqali Shayr sarhadlariga kirib keldilar. Keyinchalik Sarumanning qaroqchilar toʻdasi mamlakatni egallagach, erkin xobbitlar qochib ketmasligi va tashqaridan yordam kelmasligi uchun koʻprikning ikki boshiga baland temir panjarali tikanli darvozalar oʻrnatdilar va darvoza oldida ikki qavatli gʻishtin soqchixona qurdilar.\n\n3019-yil 28-oktabrda Frodo, Sam, Merry va Pippin qaytib kelganlarida, qaroqchilar ularni koʻprikdan oʻtkazishdan bosh tortdilar. Biroq qurollangan toʻrt qahramon zudlik bilan darvozani buzib, qoʻrqoq soqchilarni qurolsizlantirdilar va Toshkoʻprikni qayta ozod qilib, butun Shayr boʻylab milliy ozodlik qoʻzgʻolonini boshlab berdilar."
     }
   ]
 }

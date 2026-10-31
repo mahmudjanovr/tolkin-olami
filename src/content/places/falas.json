@@ -1,7 +1,7 @@
 {
   "id": "falas",
   "name": "Falas",
-  "elvish_name": "Falas (Brithombar va Eglarest)",
+  "elvish_name": "Falas",
   "type": "qirollik",
   "region": "beleriand",
   "coordinates": {
@@ -15,24 +15,45 @@
     "Círdan"
   ],
   "notable_events": [
-    "Falasning ilk qamali",
-    "Finrod bilan ittifoq va qalʼalar yangilanishi",
-    "Falasning qulashi"
+    "Falasning ilk qamali va ozod etilishi",
+    "Finrod Felagund bilan ittifoq va Barad Nimras qurilishi",
+    "Falas bandargohlarining qulashi (B.D. 473)",
+    "Balar oroliga qochish"
   ],
   "textual_status": "author_published",
-  "summary": "Falas — Gʻarbiy Beleriandning dengiz sohili va Círdan boshchiligidagi Falathrim (kema quruvchi Sindar) saltanati. Brithombar va Eglarest mustahkam dengiz qalʼalari bilan mashhur boʻlib, Nirnaeth Arnoediaddan soʻng Morgoth lashkarlari tomonidan vayron etilgan.",
+  "summary": "Falas — Gʻarbiy Beleriandning Buyuk Dengizga tutashgan goʻzal sohili va donishmand Kema-ustasi Círdan boshchiligidagi Falathrim (Sohil Sindarlari) saltanatidir. Oʻrta-yerning ilk kemasozlik va marvarid terish markazi boʻlgan bu oʻlka Brithombar va Eglarest nomli mahobatli tosh bandargohlari bilan mashhur boʻlgan; Birinchi Davrning 473-yilida Morgothning ulkan armiyasi tomonidan vayron qilingach, omon qolganlar Balar oroli va Sirion boʻylariga chekinganlar.",
   "sources": [
     {
       "book_slug": "silmarillion",
-      "chapter": "Of the Eldamar and the Princes of the Eldalië",
-      "page": "58",
-      "notes": "Círdan va Falas bandargohlari tarixi."
+      "chapter": "Quenta Silmarillion, 10-bob: \"Sindar haqida\"",
+      "page": "91",
+      "notes": "Círdan va Falas elflarining dengiz bilan doʻstligi va Balar marvaridlari."
+    },
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Quenta Silmarillion, 14-bob: \"Beleriand va uning oʻlkalari haqida\"",
+      "page": "120",
+      "notes": "Brithombar va Eglarest geografiyasi, Finrod tomonidan mustahkamlanishi."
+    },
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Quenta Silmarillion, 20-bob: \"Beshinchi Jang: Nirnaeth Arnoediad\"",
+      "page": "196",
+      "notes": "B.D. 473-yilda Falasning qamal qilinishi va vayron etilishi."
     }
   ],
   "description_sections": [
     {
-      "title": "Círdan bandargohlari: Brithombar va Eglarest",
-      "content": "Falas — Gʻarbiy Beleriand qirgʻogʻidagi goʻzal dengiz boʻyi oʻlkasidir. Bu yerda kema-ustasi Círdan boshchiligidagi Falathrim (Sohil Elflari) yashagan. Ular Brithombar va Eglarest nomli ikkita buyuk tosh bandargoh-shaharlarni barpo etganlar.\n\nBu bandargohlar Beleriandning birinchi kema qurish markazlari boʻlgan. Nirnaeth Arnoediaddan soʻng Morgoth qoʻshinlari har ikki shaharni qamal qilib vayron qildi; Círdan va omon qolganlar Balar oroliga qochdilar."
+      "title": "Falathrim madaniyati, marvaridlar va ilk kemasozlik",
+      "content": "Falas (Sindarin tilida «Toʻlqin urilgan qirgʻoq» yoki «Dengiz Sohili») — Nevrastdan janubda, Belegaer dengizining koʻpik sochuvchi toʻlqinlari boʻyida joylashgan edi. Bu yerda yashovchi Teleri tarmogʻi boʻlgan Falathrim elflari Oʻrta-yerda birinchi boʻlib yogʻochdan yengil suzuvchi qayiqlar va koʻrkam oqqush kemalarini yasadilar.\n\nUlar dengiz mayasi Ossë bilan yaqin doʻst boʻlib, uning saboqlari tufayli toʻlqinlar tilini va shamol yoʻnalishlarini oʻrgandilar. Falas suvlari son-sanoqsiz yirik va shaffof marvaridlarga boy edi; Falathrim elflari bu marvaridlarni Doriath qiroli Thingolga hadya qilar, evaziga Menegroth ustalari ularga zargarlik buyumlari va qurollar yetkazib berar edilar."
+    },
+    {
+      "title": "Finrod Felagund bilan ittifoq va Barad Nimras minorasi",
+      "content": "Noldor knyazlari Beleriandga qaytganlarida, Nargothrond hukmdori Finrod Felagund Falas ahlining sadoqatli doʻstiga aylandi. Finrodning mitti ustalari yordamida Brithombar va Eglarest portlari ulkan granit tosh devorlar, toʻlqinqaytargichlar va mustahkam dengiz minoralari bilan qayta qurilib, Beleriandning eng qudratli bandargohlariga aylantirildi.\n\nShuningdek, Eglarest va Brithombar oraligʻidagi baland burunda Finrod tomonidan «Barad Nimras» («Oq Shox Minorasi») deb atalgan mahobatli mayoq-qalʼa bunyod etildi. Ushbu minora gʻarbdan kelishi mumkin boʻlgan har qanday dushman flotini uzoqdan payqash uchun xizmat qilar edi, garchi Morgoth dengizda kema qurishga hech qachon jurʼat eta olmagan boʻlsa ham."
+    },
+    {
+      "title": "Falasning fojiali qulashi va Balar oroliga chekinish",
+      "content": "Birinchi Davrning 472-yilidagi Nirnaeth Arnoediad halokatidan soʻng, Beleriandda Morgothga ochiq maydonda qarshilik koʻrsatuvchi biron-bir kuch qolmadi. 473-yilda Qora Hukmdor oʻzining oʻrklar va qamal mashinalaridan iborat son-sanoqsiz qoʻshinini toʻgʻridan-toʻgʻri Falas bandargohlariga yoʻnaltirdi.\n\nBrithombar va Eglarest shaharlari qahramonona qarshilik koʻrsatgan boʻlsalar-da, dushmanning ogʻir tosh otar mashinalari qalin devorlarni buzib oʻtdi; shaharlar yondirildi, minglab elflar asir olinib Angband konlariga haydaldi. Círdan omon qolgan kam sonli jangchilari va yosh Ereinion Gil-galad bilan birga soʻnggi kemalarda janubdagi Balar oroliga va Sirion etaklaridagi xavfsiz qamishzorlarga qochishga muvaffaq boʻldi."
     }
   ]
 }

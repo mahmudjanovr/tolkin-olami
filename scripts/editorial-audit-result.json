@@ -1,16 +1,16 @@
 {
   "orthography": {
     "counts": {
-      "straightApos": 4411,
-      "modifierTurnedComma": 9810,
+      "straightApos": 4143,
+      "modifierTurnedComma": 10964,
       "rightSingleQuote": 1,
       "leftSingleQuote": 0,
-      "modifierLetterApos": 887
+      "modifierLetterApos": 949
     },
     "oGPatterns": {
-      "standardTurned": 9810,
+      "standardTurned": 10964,
       "standardRightQuote": 0,
-      "straightQuote": 2345,
+      "straightQuote": 2177,
       "other": 0
     },
     "sampleInconsistencies": [
@@ -63,16 +63,6 @@
         "file": "characters/cirdan.json",
         "straight": 19,
         "turned": 39
-      },
-      {
-        "file": "characters/denethor-ii.json",
-        "straight": 24,
-        "turned": 57
-      },
-      {
-        "file": "characters/durin-i.json",
-        "straight": 25,
-        "turned": 53
       },
       {
         "file": "characters/earendil.json",
@@ -210,11 +200,6 @@
         "turned": 32
       },
       {
-        "file": "characters/melian.json",
-        "straight": 27,
-        "turned": 53
-      },
-      {
         "file": "characters/melkor.json",
         "straight": 1,
         "turned": 93
@@ -256,18 +241,13 @@
       },
       {
         "file": "characters/thingol.json",
-        "straight": 16,
-        "turned": 41
+        "straight": 8,
+        "turned": 49
       },
       {
         "file": "characters/thorin-oakenshield.json",
         "straight": 3,
         "turned": 74
-      },
-      {
-        "file": "characters/treebeard.json",
-        "straight": 21,
-        "turned": 59
       },
       {
         "file": "characters/turgon.json",
@@ -308,11 +288,6 @@
         "file": "places/amon-sul.json",
         "straight": 8,
         "turned": 41
-      },
-      {
-        "file": "places/anfauglith.json",
-        "straight": 1,
-        "turned": 24
       },
       {
         "file": "places/angband.json",
@@ -385,11 +360,6 @@
         "turned": 32
       },
       {
-        "file": "places/menegroth.json",
-        "straight": 17,
-        "turned": 42
-      },
-      {
         "file": "places/minas-tirith.json",
         "straight": 9,
         "turned": 28
@@ -398,11 +368,6 @@
         "file": "places/morannon.json",
         "straight": 19,
         "turned": 28
-      },
-      {
-        "file": "places/nargothrond.json",
-        "straight": 19,
-        "turned": 27
       },
       {
         "file": "places/orodruin.json",
@@ -521,8 +486,8 @@
       },
       {
         "file": "languages/cirth.json",
-        "straight": 37,
-        "turned": 20
+        "straight": 13,
+        "turned": 44
       },
       {
         "file": "languages/khuzdul.json",
@@ -560,11 +525,6 @@
         "turned": 11
       },
       {
-        "file": "cosmology/ainulindale.json",
-        "straight": 2,
-        "turned": 20
-      },
-      {
         "file": "cosmology/muqaddas-nur.json",
         "straight": 1,
         "turned": 65
@@ -572,27 +532,28 @@
     ]
   },
   "terminology": {
-    "hobbitCount": 91,
-    "xobbitCount": 158,
-    "mittiCount": 252,
-    "mittiOdamCount": 77,
-    "gnomCount": 15,
-    "orkStraight": 50,
-    "orkTurned": 31,
-    "orkNoApos": 46,
-    "elfCount": 625,
-    "tolkienCount": 532,
+    "hobbitCount": 94,
+    "xobbitCount": 170,
+    "mittiCount": 271,
+    "mittiOdamCount": 48,
+    "gnomCount": 1,
+    "forbiddenGnomViolations": [],
+    "orkStraight": 49,
+    "orkTurned": 61,
+    "orkNoApos": 36,
+    "elfCount": 662,
+    "tolkienCount": 539,
     "tolkinCount": 0,
     "khazadCount": 62,
-    "xazadCount": 5,
-    "khuzdulCount": 26,
+    "xazadCount": 4,
+    "khuzdulCount": 29,
     "xuzdulCount": 0,
-    "theodenCount": 91,
+    "theodenCount": 93,
     "teodenCount": 5,
-    "thranduilCount": 21,
-    "tranduilCount": 12,
-    "thingolCount": 118,
-    "tingolCount": 2
+    "thranduilCount": 31,
+    "tranduilCount": 2,
+    "thingolCount": 127,
+    "tingolCount": 0
   },
   "namesSample": {
     "totalChars": 81,
@@ -698,11 +659,11 @@
       },
       {
         "id": "celeborn",
-        "name": "Keleborn",
+        "name": "Celeborn",
         "original_name": "Celeborn",
         "race": "elflar",
         "sub_race": "Sindar (Teleri)",
-        "culture": "Doriat va Lotlorien elflari",
+        "culture": "Doriath va Lothlórien elflari",
         "textual_status": "disputed_variant"
       },
       {
@@ -734,7 +695,7 @@
       },
       {
         "id": "dain-ironfoot",
-        "name": "Dain II Temiroyoq",
+        "name": "Dáin II Ironfoot (Temiroyoq)",
         "original_name": "Dáin II Ironfoot",
         "race": "mitti-odamlar",
         "sub_race": "Uzunsoqollar (Longbeards)",
@@ -743,10 +704,10 @@
       },
       {
         "id": "denethor-ii",
-        "name": "Denetor II",
+        "name": "Denethor II",
         "original_name": "Denethor II",
         "race": "insonlar",
-        "sub_race": "Dunedayn (Xurin xonadoni)",
+        "sub_race": "Dúnedain (Húrin xonadoni)",
         "culture": "Gondor",
         "textual_status": "author_published"
       },
@@ -968,7 +929,7 @@
       },
       {
         "id": "helm-hammerhand",
-        "name": "Xelm Bolgʻaqoʻl",
+        "name": "Helm Hammerhand (Bolgʻaqoʻl)",
         "original_name": "Helm Hammerhand",
         "race": "insonlar",
         "sub_race": "Shimol insonlari (Rohirrim)",
@@ -1229,7 +1190,7 @@
       },
       {
         "id": "thrain-ii",
-        "name": "Train II",
+        "name": "Thráin II",
         "original_name": "Thráin II",
         "race": "mitti-odamlar",
         "sub_race": "Uzunsoqollar (Longbeards)",
@@ -1238,7 +1199,7 @@
       },
       {
         "id": "thranduil",
-        "name": "Tranduil",
+        "name": "Thranduil",
         "original_name": "Thranduil",
         "race": "elflar",
         "sub_race": "Sindar",
@@ -1331,7 +1292,7 @@
       {
         "id": "alqualonde",
         "name": "Alqualondë",
-        "elvish_name": "Oqqushlar Bandargohi (Swanhaven)",
+        "elvish_name": "Alqualondë",
         "type": "shahar",
         "region": "valinor",
         "hasCoords": false
@@ -1355,7 +1316,7 @@
       {
         "id": "anfauglith",
         "name": "Anfauglith",
-        "elvish_name": "Dor-nu-Fauglith / Ard-galen (Boʻgʻuvchi chang zamini)",
+        "elvish_name": "Dor-nu-Fauglith / Ard-galen",
         "type": "oʻlka",
         "region": "beleriand",
         "hasCoords": true
@@ -1363,7 +1324,7 @@
       {
         "id": "angband",
         "name": "Angband",
-        "elvish_name": "Angamando (Temir Zindon)",
+        "elvish_name": "Angamando",
         "type": "qalʼa",
         "region": "beleriand",
         "hasCoords": true
@@ -1371,7 +1332,7 @@
       {
         "id": "barad-dur",
         "name": "Barad-dûr",
-        "elvish_name": "Lugbúrz (Qora tilda)",
+        "elvish_name": "Barad-dûr",
         "type": "qalʼa",
         "region": "orta-yer",
         "hasCoords": true
@@ -1379,14 +1340,14 @@
       {
         "id": "belegost",
         "name": "Belegost",
-        "elvish_name": "Gabilgathol (Ulugʻ Qalʼa)",
+        "elvish_name": "Belegost",
         "type": "shahar",
         "region": "beleriand",
         "hasCoords": true
       },
       {
         "id": "brandywine-bridge",
-        "name": "Brandywine Bridge (Toshkoʻprik / Bridge of Stonebows)",
+        "name": "Brandywine Bridge",
         "elvish_name": "Baranduin Bridge",
         "type": "qalʼa",
         "region": "orta-yer",
@@ -1394,15 +1355,14 @@
       },
       {
         "id": "bree",
-        "name": "Bri (Bree)",
-        "elvish_name": "Bree",
+        "name": "Bree",
         "type": "shahar",
         "region": "orta-yer",
         "hasCoords": true
       },
       {
         "id": "brethil",
-        "name": "Brethil Oʻrmoni",
+        "name": "Brethil",
         "elvish_name": "Brethil",
         "type": "oʻlka",
         "region": "beleriand",
@@ -1410,32 +1370,30 @@
       },
       {
         "id": "buckland",
-        "name": "Buckland (Bukland / Brendi Xol)",
-        "elvish_name": "Buckland",
+        "name": "Buckland",
         "type": "oʻlka",
         "region": "orta-yer",
         "hasCoords": true
       },
       {
         "id": "bywater",
-        "name": "Bywater (Suvboʻyi)",
-        "elvish_name": "Bywater",
+        "name": "Bywater",
         "type": "shahar",
         "region": "orta-yer",
         "hasCoords": true
       },
       {
         "id": "cirith-ungol",
-        "name": "Cirith Ungol va Minas Morgul",
-        "elvish_name": "Cirith Ungol / Minas Morgul (Minas Ithil)",
+        "name": "Cirith Ungol",
+        "elvish_name": "Cirith Ungol / Minas Morgul",
         "type": "qalʼa",
         "region": "orta-yer",
         "hasCoords": true
       },
       {
         "id": "dead-marshes",
-        "name": "Oʻlik Botqoqliklar (Dead Marshes)",
-        "elvish_name": "Nindalf va Dagorlad botqoqliklari",
+        "name": "Oʻlik Botqoqliklar",
+        "elvish_name": "Nindalf",
         "type": "oʻlka",
         "region": "orta-yer",
         "hasCoords": true
@@ -1443,7 +1401,7 @@
       {
         "id": "dorthonion",
         "name": "Dorthonion",
-        "elvish_name": "Taur-nu-Fuin (Zulmat ostidagi oʻrmon)",
+        "elvish_name": "Dorthonion / Taur-nu-Fuin",
         "type": "oʻlka",
         "region": "beleriand",
         "hasCoords": true
@@ -1451,7 +1409,6 @@
       {
         "id": "dunharrow",
         "name": "Dunharrow",
-        "elvish_name": "Dúnharg",
         "type": "qalʼa",
         "region": "orta-yer",
         "hasCoords": true
@@ -1459,7 +1416,6 @@
       {
         "id": "edoras",
         "name": "Edoras",
-        "elvish_name": "Edoras",
         "type": "shahar",
         "region": "orta-yer",
         "hasCoords": true
@@ -1474,7 +1430,7 @@
       },
       {
         "id": "ered-luin",
-        "name": "Ered Luin (Moviy Togʻlar / Blue Mountains)",
+        "name": "Ered Luin",
         "elvish_name": "Ered Luin / Ered Lindon",
         "type": "togʻ",
         "region": "orta-yer",
@@ -1483,7 +1439,7 @@
       {
         "id": "falas",
         "name": "Falas",
-        "elvish_name": "Falas (Brithombar va Eglarest)",
+        "elvish_name": "Falas",
         "type": "qirollik",
         "region": "beleriand",
         "hasCoords": true
@@ -1499,7 +1455,6 @@
       {
         "id": "havens-of-sirion",
         "name": "Sirion Bandargohi",
-        "elvish_name": "Havens of Sirion",
         "type": "shahar",
         "region": "beleriand",
         "hasCoords": true
@@ -1515,7 +1470,7 @@
       {
         "id": "henneth-annun",
         "name": "Henneth Annûn",
-        "elvish_name": "Henneth Annûn (Botayotgan Quyosh Derazasi)",
+        "elvish_name": "Henneth Annûn",
         "type": "qalʼa",
         "region": "orta-yer",
         "hasCoords": true
@@ -1523,15 +1478,14 @@
       {
         "id": "himring",
         "name": "Himring",
-        "elvish_name": "Himring (Doimiy Sovuq)",
+        "elvish_name": "Himring",
         "type": "qalʼa",
         "region": "beleriand",
         "hasCoords": true
       },
       {
         "id": "hobbiton",
-        "name": "Hobbiton (Xobbiton / Bag End)",
-        "elvish_name": "Hobbiton",
+        "name": "Hobbiton",
         "type": "shahar",
         "region": "orta-yer",
         "hasCoords": true
@@ -1563,15 +1517,14 @@
       {
         "id": "menegroth",
         "name": "Menegroth",
-        "elvish_name": "Menegroth (Ming gʻor)",
+        "elvish_name": "Menegroth",
         "type": "shahar",
         "region": "beleriand",
         "hasCoords": true
       },
       {
         "id": "michel-delving",
-        "name": "Michel Delving (Maykl Delving)",
-        "elvish_name": "Michel Delving",
+        "name": "Michel Delving",
         "type": "shahar",
         "region": "orta-yer",
         "hasCoords": true
@@ -1586,8 +1539,8 @@
       },
       {
         "id": "morannon",
-        "name": "Morannon (Qora Darvoza)",
-        "elvish_name": "Morannon (Cirith Gorgor)",
+        "name": "Morannon",
+        "elvish_name": "Morannon / Cirith Gorgor",
         "type": "qalʼa",
         "region": "orta-yer",
         "hasCoords": true
@@ -1603,7 +1556,7 @@
       {
         "id": "nogrod",
         "name": "Nogrod",
-        "elvish_name": "Tumunzahar (Chuqur Manzil)",
+        "elvish_name": "Novrod",
         "type": "shahar",
         "region": "beleriand",
         "hasCoords": true
@@ -1627,7 +1580,6 @@
       {
         "id": "paths-of-the-dead",
         "name": "Oʻliklar Yoʻli",
-        "elvish_name": "Taur Im-Dúath",
         "type": "oʻlka",
         "region": "orta-yer",
         "hasCoords": true
@@ -1651,7 +1603,7 @@
       {
         "id": "thangorodrim",
         "name": "Thangorodrim",
-        "elvish_name": "Thangorodrim (Zulm Togʻlari)",
+        "elvish_name": "Thangorodrim",
         "type": "togʻ",
         "region": "beleriand",
         "hasCoords": true
@@ -1659,23 +1611,22 @@
       {
         "id": "tol-galen",
         "name": "Tol Galen",
-        "elvish_name": "Tol Galen (Yashil Orol)",
+        "elvish_name": "Tol Galen",
         "type": "oʻlka",
         "region": "beleriand",
         "hasCoords": true
       },
       {
         "id": "tol-sirion",
-        "name": "Tol Sirion (Tol-in-Gaurhoth)",
-        "elvish_name": "Tol-in-Gaurhoth (Boʻrilar oroli)",
+        "name": "Tol Sirion",
+        "elvish_name": "Tol Sirion / Tol-in-Gaurhoth",
         "type": "qalʼa",
         "region": "beleriand",
         "hasCoords": true
       },
       {
         "id": "tuckborough",
-        "name": "Tuckborough (Tukborog / Buyuk Smiallar)",
-        "elvish_name": "Tuckborough",
+        "name": "Tuckborough",
         "type": "shahar",
         "region": "orta-yer",
         "hasCoords": true
@@ -1683,7 +1634,7 @@
       {
         "id": "vinyamar",
         "name": "Vinyamar",
-        "elvish_name": "Vinyamar (Yangi Makon)",
+        "elvish_name": "Vinyamar",
         "type": "shahar",
         "region": "beleriand",
         "hasCoords": true
@@ -1737,12 +1688,12 @@
       },
       {
         "id": "xazad",
-        "name": "Xazad (Mittilar)",
+        "name": "Khazad (Mittilar)",
         "race_category": "mitti-odamlar"
       },
       {
         "id": "xobbitlar",
-        "name": "Xobbitlar (Shayr Xalqi)",
+        "name": "Hobbitlar (Shayr Xalqi)",
         "race_category": "boshqa"
       }
     ],
@@ -1831,7 +1782,8 @@
           "cirth"
         ]
       }
-    ]
+    ],
+    "invalidElvishNames": []
   },
   "citations": {
     "existingBookSlugs": [
@@ -1871,94 +1823,29 @@
       "tree-and-leaf",
       "unfinished-tales"
     ],
-    "totalCitations": 487,
+    "totalCitations": 518,
     "citationsByBook": {
-      "silmarillion": 157,
-      "the-lord-of-the-rings": 157,
+      "silmarillion": 181,
+      "the-lord-of-the-rings": 143,
       "letters-of-jrr-tolkien": 20,
-      "unfinished-tales": 24,
-      "the-hobbit": 24,
-      "the-fellowship-of-the-ring": 11,
-      "the-return-of-the-king": 18,
-      "the-children-of-hurin": 11,
-      "history-of-middle-earth": 17,
+      "unfinished-tales": 27,
+      "the-hobbit": 23,
+      "the-fellowship-of-the-ring": 19,
+      "the-return-of-the-king": 31,
+      "the-children-of-hurin": 13,
+      "history-of-middle-earth": 14,
       "beren-and-luthien": 8,
-      "the-silmarillion": 5,
       "the-fall-of-gondolin": 9,
-      "the-two-towers": 6,
+      "the-two-towers": 10,
       "the-war-of-the-jewels": 2,
-      "morgoths-ring": 4,
+      "morgoths-ring": 11,
       "the-peoples-of-middle-earth": 3,
       "the-fall-of-numenor": 1,
-      "lotr-towers": 1,
-      "lotr-return": 4,
       "the-adventures-of-tom-bombadil": 1,
-      "lotr-fellowship": 2,
       "the-nature-of-middle-earth": 1,
       "tree-and-leaf": 1
     },
-    "invalidBookSlugs": [
-      {
-        "collection": "characters",
-        "file": "celeborn.json",
-        "book_slug": "the-silmarillion"
-      },
-      {
-        "collection": "characters",
-        "file": "durin-i.json",
-        "book_slug": "the-silmarillion"
-      },
-      {
-        "collection": "characters",
-        "file": "glaurung.json",
-        "book_slug": "the-silmarillion"
-      },
-      {
-        "collection": "characters",
-        "file": "shelob.json",
-        "book_slug": "the-silmarillion"
-      },
-      {
-        "collection": "characters",
-        "file": "treebeard.json",
-        "book_slug": "the-silmarillion"
-      },
-      {
-        "collection": "peoples",
-        "file": "entlar.json",
-        "book_slug": "lotr-towers"
-      },
-      {
-        "collection": "peoples",
-        "file": "numenorliklar.json",
-        "book_slug": "lotr-return"
-      },
-      {
-        "collection": "languages",
-        "file": "qora-nutq.json",
-        "book_slug": "lotr-fellowship"
-      },
-      {
-        "collection": "languages",
-        "file": "qora-nutq.json",
-        "book_slug": "lotr-return"
-      },
-      {
-        "collection": "languages",
-        "file": "quenya.json",
-        "book_slug": "lotr-fellowship"
-      },
-      {
-        "collection": "languages",
-        "file": "rohirric.json",
-        "book_slug": "lotr-return"
-      },
-      {
-        "collection": "cosmology",
-        "file": "togri-yol-va-aklallabeth.json",
-        "book_slug": "lotr-return"
-      }
-    ],
+    "invalidBookSlugs": [],
     "statusCounts": {
       "author_published": 122,
       "posthumous_edited": 46,
@@ -1996,6 +1883,17 @@
           "wordCount": 386
         },
         {
+          "file": "denethor-ii.json",
+          "summaryWords": 41,
+          "sectionCount": 3,
+          "sectionTitles": [
+            "Donishmandlik va Thorongil bilan raqobat",
+            "Finduilasning oʻlimi va Palantír tuzogʻi",
+            "Minas Tirith qamali va oʻchoqdagi intihosi"
+          ],
+          "wordCount": 408
+        },
+        {
           "file": "eorl.json",
           "summaryWords": 32,
           "sectionCount": 3,
@@ -2026,257 +1924,75 @@
             "Idrilga ehtiros, Morgoth tutqunligi va Xiyonat"
           ],
           "wordCount": 420
-        },
-        {
-          "file": "balin.json",
-          "summaryWords": 32,
-          "sectionCount": 3,
-          "sectionTitles": [
-            "Surgundagi yillar va Erebor yurishi",
-            "Bilbo Beggins bilan doʻstlik",
-            "Moria ekspeditsiyasi va Mazarbul qabri"
-          ],
-          "wordCount": 426
         }
       ]
     },
     {
       "col": "places",
       "total": 45,
-      "thinItems": [
-        {
-          "file": "himring.json",
-          "summaryWords": 22,
-          "sectionCount": 1,
-          "sectionTitles": [
-            "Maedhrosning sovuq qalʼasi"
-          ],
-          "wordCount": 157
-        },
-        {
-          "file": "tol-galen.json",
-          "summaryWords": 29,
-          "sectionCount": 1,
-          "sectionTitles": [
-            "Yashil Orol va Tiriklar Oʻlkasi"
-          ],
-          "wordCount": 166
-        },
-        {
-          "file": "brethil.json",
-          "summaryWords": 33,
-          "sectionCount": 1,
-          "sectionTitles": [
-            "Haleth xalqi va Teiglin daryosi"
-          ],
-          "wordCount": 169
-        },
-        {
-          "file": "belegost.json",
-          "summaryWords": 33,
-          "sectionCount": 1,
-          "sectionTitles": [
-            "Gabilgathol: Moviy Togʻlarning ulugʻvor mitti shahri"
-          ],
-          "wordCount": 172
-        },
-        {
-          "file": "falas.json",
-          "summaryWords": 31,
-          "sectionCount": 1,
-          "sectionTitles": [
-            "Círdan bandargohlari: Brithombar va Eglarest"
-          ],
-          "wordCount": 175
-        },
-        {
-          "file": "vinyamar.json",
-          "summaryWords": 31,
-          "sectionCount": 1,
-          "sectionTitles": [
-            "Nevrastdagi Birinchi Qalʼa va Ulmo qurollari"
-          ],
-          "wordCount": 176
-        },
-        {
-          "file": "dorthonion.json",
-          "summaryWords": 31,
-          "sectionCount": 1,
-          "sectionTitles": [
-            "Qaragʻaylar Oʻlkasidan Dahshat Oʻrmonigacha"
-          ],
-          "wordCount": 180
-        },
-        {
-          "file": "nogrod.json",
-          "summaryWords": 36,
-          "sectionCount": 1,
-          "sectionTitles": [
-            "Tumunzahar: Poʻlatsozlar va Nauglamír qasri"
-          ],
-          "wordCount": 185
-        },
-        {
-          "file": "tol-sirion.json",
-          "summaryWords": 36,
-          "sectionCount": 1,
-          "sectionTitles": [
-            "Sirion darasi va Boʻrilar Oroli"
-          ],
-          "wordCount": 188
-        },
-        {
-          "file": "dunharrow.json",
-          "summaryWords": 47,
-          "sectionCount": 2,
-          "sectionTitles": [
-            "Baland togʻ panohgohi va Firienfeld",
-            "Rohan armiyasining yigʻilishi"
-          ],
-          "wordCount": 210
-        },
-        {
-          "file": "anfauglith.json",
-          "summaryWords": 45,
-          "sectionCount": 1,
-          "sectionTitles": [
-            "Yashil Tekislikdan Boʻgʻuvchi Changsahrogacha"
-          ],
-          "wordCount": 227
-        },
-        {
-          "file": "thangorodrim.json",
-          "summaryWords": 33,
-          "sectionCount": 2,
-          "sectionTitles": [
-            "Zulmatning Uch Choʻqqisi",
-            "Ancalagon the Black qulashi"
-          ],
-          "wordCount": 227
-        },
-        {
-          "file": "tuckborough.json",
-          "summaryWords": 44,
-          "sectionCount": 1,
-          "sectionTitles": [
-            "Buyuk Smiallar va Tan qarorgohi"
-          ],
-          "wordCount": 227
-        },
-        {
-          "file": "amon-hen.json",
-          "summaryWords": 43,
-          "sectionCount": 2,
-          "sectionTitles": [
-            "Nazar Tepaligi va Koʻruvchi Taxt",
-            "Uzuk Birodarligining parchalanishi"
-          ],
-          "wordCount": 238
-        },
-        {
-          "file": "michel-delving.json",
-          "summaryWords": 48,
-          "sectionCount": 1,
-          "sectionTitles": [
-            "Oq Tepaliklar poytaxti va Mathom uyi"
-          ],
-          "wordCount": 239
-        },
-        {
-          "file": "bywater.json",
-          "summaryWords": 52,
-          "sectionCount": 2,
-          "sectionTitles": [
-            "Suvboʻyi koʻli va Yashil Ajdar tavernasi",
-            "Suvboʻyi jangi (Battle of Bywater)"
-          ],
-          "wordCount": 257
-        },
-        {
-          "file": "brandywine-bridge.json",
-          "summaryWords": 53,
-          "sectionCount": 1,
-          "sectionTitles": [
-            "Buyuk Sharqiy Yoʻlning tosh koʻprigi"
-          ],
-          "wordCount": 260
-        },
-        {
-          "file": "buckland.json",
-          "summaryWords": 45,
-          "sectionCount": 2,
-          "sectionTitles": [
-            "Brendivin ortidagi mustaqil maskan",
-            "Brandy Hall va Crickhollow"
-          ],
-          "wordCount": 298
-        },
-        {
-          "file": "henneth-annun.json",
-          "summaryWords": 39,
-          "sectionCount": 2,
-          "sectionTitles": [
-            "Botayotgan Quyosh Darchasi",
-            "Faramir, Frodo va Gollum uchrashuvi"
-          ],
-          "wordCount": 309
-        },
-        {
-          "file": "ered-luin.json",
-          "summaryWords": 68,
-          "sectionCount": 2,
-          "sectionTitles": [
-            "Moviy Togʻlar: Beleriand chegarasi va mittilar vatani",
-            "Surgundagi Durin xonadoni va Erebor safari boshlanishi"
-          ],
-          "wordCount": 353
-        }
-      ],
+      "thinItems": [],
       "smallest": [
         {
-          "file": "himring.json",
-          "summaryWords": 22,
-          "sectionCount": 1,
+          "file": "nargothrond.json",
+          "summaryWords": 21,
+          "sectionCount": 4,
           "sectionTitles": [
-            "Maedhrosning sovuq qalʼasi"
+            "Narog daryosi gʻorlaridagi buyuk saltanat",
+            "Túrin Turambar va Glaurungning bostirib kirishi",
+            "Felagund shon-shavkati, Narog qoyalari va Glaurung kulfati",
+            "Amrûn qoyalari, mittilar merosi va Mormegil fojiasi"
           ],
-          "wordCount": 157
+          "wordCount": 414
         },
         {
-          "file": "tol-galen.json",
-          "summaryWords": 29,
-          "sectionCount": 1,
+          "file": "alqualonde.json",
+          "summaryWords": 38,
+          "sectionCount": 5,
           "sectionTitles": [
-            "Yashil Orol va Tiriklar Oʻlkasi"
+            "Oqqushlar Bandargohi va Olmos Qirgʻoq",
+            "Teleri kemasozligi va marvaridlar sohilidagi hayot",
+            "Birinchi Qarindosh Qirg'ini va shaharning qonli fojiasi",
+            "G'azab Urushidagi Teleri kemalari",
+            "Eldamar ko'rfazi tabiati va marvarid saroylar"
           ],
-          "wordCount": 166
+          "wordCount": 449
         },
         {
-          "file": "brethil.json",
-          "summaryWords": 33,
-          "sectionCount": 1,
+          "file": "angband.json",
+          "summaryWords": 32,
+          "sectionCount": 4,
           "sectionTitles": [
-            "Haleth xalqi va Teiglin daryosi"
+            "Temir Zindon: Morgothning qora saltanati",
+            "Gʻazab Urushi va mutlaq yoʻq boʻlish",
+            "Thangorodrim cho'qqilari va yerosti do'zaxi labirintlari",
+            "Birinchi Davr urushlarining bosh o'chog'i va qora saltanat"
           ],
-          "wordCount": 169
+          "wordCount": 458
         },
         {
-          "file": "belegost.json",
-          "summaryWords": 33,
-          "sectionCount": 1,
+          "file": "barad-dur.json",
+          "summaryWords": 23,
+          "sectionCount": 5,
           "sectionTitles": [
-            "Gabilgathol: Moviy Togʻlarning ulugʻvor mitti shahri"
+            "Qora Minora: Oʻrta-yerdagi eng dahshatli qalʼa",
+            "Yetti yillik qamal va qayta tiklanish",
+            "Uzukning yoʻq qilinishi va mutlaq qulash",
+            "Lugbúrzning qora poydevori va Sauron irodasining timsoli",
+            "Yetti yillik qamal, quyma po'lat darvozalar va O'rta-yer zulmati"
           ],
-          "wordCount": 172
+          "wordCount": 458
         },
         {
-          "file": "falas.json",
-          "summaryWords": 31,
-          "sectionCount": 1,
+          "file": "dead-marshes.json",
+          "summaryWords": 44,
+          "sectionCount": 4,
           "sectionTitles": [
-            "Círdan bandargohlari: Brithombar va Eglarest"
+            "Oʻlik Botqoqliklar: Urush va botqoq siri",
+            "Gollumning xobbitlarni botqoqlikdan olib oʻtishi",
+            "Dagorlad jangi sharpalari va zaharli tumanlar",
+            "Sauron ta'siri, tumanlar va botqoq ruhiyatlari"
           ],
-          "wordCount": 175
+          "wordCount": 460
         }
       ]
     },
@@ -2468,7 +2184,7 @@
           "summaryWords": 0,
           "sectionCount": 5,
           "sectionTitles": [
-            "Daeron ixtirosi: Doriath o'rmonlaridan boshlangan runalar",
+            "Daeron ixtirosi: Doriath oʻrmonlaridan boshlangan runalar",
             "Angerthas Moria va Angerthas Erebor: Mittilar takomillashtiruvi",
             "Tarixiy artefaktlar: Mazarbul Kitobi va Balin qabri",
             "Boshqa xalqlar tomonidan o'zlashtirilishi",
@@ -2574,119 +2290,62 @@
     {
       "col": "cosmology",
       "total": 8,
-      "thinItems": [
-        {
-          "file": "ea.json",
-          "summaryWords": 25,
-          "sectionCount": 1,
-          "sectionTitles": [
-            "Ilohiy 'Boʻlsin!' amri va Oʻchmas Olov"
-          ],
-          "wordCount": 152
-        },
-        {
-          "file": "kuma.json",
-          "summaryWords": 24,
-          "sectionCount": 1,
-          "sectionTitles": [
-            "Olamdan tashqaridagi cheksiz zulmat"
-          ],
-          "wordCount": 164
-        },
-        {
-          "file": "anar-va-isil.json",
-          "summaryWords": 31,
-          "sectionCount": 1,
-          "sectionTitles": [
-            "Ikki Daraxtning soʻnggi merosi"
-          ],
-          "wordCount": 189
-        },
-        {
-          "file": "ikki-daraxt.json",
-          "summaryWords": 21,
-          "sectionCount": 2,
-          "sectionTitles": [
-            "Valinor Nurlarining Manbai",
-            "Melkor va Ungoliant tomonidan soʻndirilishi"
-          ],
-          "wordCount": 199
-        },
-        {
-          "file": "togri-yol-va-aklallabeth.json",
-          "summaryWords": 31,
-          "sectionCount": 1,
-          "sectionTitles": [
-            "Dunyoning dumaloqlashuvi va Toʻgʻri Yoʻl"
-          ],
-          "wordCount": 254
-        },
-        {
-          "file": "ainulindale.json",
-          "summaryWords": 41,
-          "sectionCount": 2,
-          "sectionTitles": [
-            "Ainur Musiqasi: Borliqning ilohiy simfoniyasi",
-            "Melkor dissonansi va Uchinchi Mavzu"
-          ],
-          "wordCount": 261
-        },
-        {
-          "file": "mandos-va-fea-hroa.json",
-          "summaryWords": 22,
-          "sectionCount": 1,
-          "sectionTitles": [
-            "Ruh va Tana: Elflar va Insonlar taqdiri"
-          ],
-          "wordCount": 289
-        }
-      ],
+      "thinItems": [],
       "smallest": [
         {
           "file": "ea.json",
-          "summaryWords": 25,
-          "sectionCount": 1,
+          "summaryWords": 62,
+          "sectionCount": 3,
           "sectionTitles": [
-            "Ilohiy 'Boʻlsin!' amri va Oʻchmas Olov"
+            "Ontologik mohiyati va «Eä!» ilohiy amri",
+            "Koinot tuzilishi: Kúma, Dunyo Devorlari va sarhadlar",
+            "Valarning kirishi va Vaqtning boshlanishi"
           ],
-          "wordCount": 152
+          "wordCount": 502
         },
         {
           "file": "kuma.json",
-          "summaryWords": 24,
-          "sectionCount": 1,
+          "summaryWords": 55,
+          "sectionCount": 3,
           "sectionTitles": [
-            "Olamdan tashqaridagi cheksiz zulmat"
+            "Metafizik mohiyati: Moddiyatsizlik va Boʻshliq",
+            "Dunyo Devorlari, Tun Darvozasi va Eärendil soqchiligi",
+            "Dagor Dagorath bashorati va Boʻshliqdan qaytish"
           ],
-          "wordCount": 164
+          "wordCount": 509
         },
         {
           "file": "anar-va-isil.json",
-          "summaryWords": 31,
-          "sectionCount": 1,
+          "summaryWords": 57,
+          "sectionCount": 3,
           "sectionTitles": [
-            "Ikki Daraxtning soʻnggi merosi"
+            "Ikki Daraxtning soʻnggi merosi va samoviy kemalar",
+            "Tilion va Arien: Olov va Kumush yetakchilari",
+            "Insonlarning uygʻonishi va Oʻrta-yerning yangi davri"
           ],
-          "wordCount": 189
+          "wordCount": 520
         },
         {
-          "file": "ikki-daraxt.json",
-          "summaryWords": 21,
-          "sectionCount": 2,
+          "file": "ainulindale.json",
+          "summaryWords": 70,
+          "sectionCount": 3,
           "sectionTitles": [
-            "Valinor Nurlarining Manbai",
-            "Melkor va Ungoliant tomonidan soʻndirilishi"
+            "Ainur Musiqasi: Borliqning ilohiy simfoniyasi",
+            "Melkorning uch karra dissonansi va Ilúvatar mavzulari",
+            "Oʻchmas Olov (The Secret Fire) va Erkin Iroda siri"
           ],
-          "wordCount": 199
+          "wordCount": 568
         },
         {
           "file": "togri-yol-va-aklallabeth.json",
-          "summaryWords": 31,
-          "sectionCount": 1,
+          "summaryWords": 65,
+          "sectionCount": 3,
           "sectionTitles": [
-            "Dunyoning dumaloqlashuvi va Toʻgʻri Yoʻl"
+            "Yassi Arda: Qadimgi dunyo geometriyasi va qatlamlari",
+            "Akallabêth: Dunyoning Oʻzgarishi (Changing of the World)",
+            "Toʻgʻri Yoʻl (The Straight Road) va Elflarning Oq Kemalari"
           ],
-          "wordCount": 254
+          "wordCount": 576
         }
       ]
     },

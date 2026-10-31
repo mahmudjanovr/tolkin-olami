@@ -1,7 +1,7 @@
 {
   "id": "dorthonion",
   "name": "Dorthonion",
-  "elvish_name": "Taur-nu-Fuin (Zulmat ostidagi oʻrmon)",
+  "elvish_name": "Dorthonion / Taur-nu-Fuin",
   "type": "oʻlka",
   "region": "beleriand",
   "coordinates": {
@@ -12,29 +12,50 @@
   "founded_era": "Daraxtlar davri",
   "destroyed_era": "Birinchi davr 587",
   "rulers": [
-    "Barahir",
     "Angrod",
-    "Aegnor"
+    "Aegnor",
+    "Barahir"
   ],
   "notable_events": [
-    "Dagor Bragollach",
-    "Barahir partizanlari qarshiligi",
-    "Berenning quvgʻini"
+    "Dagor Bragollach halokati",
+    "Tarn Aeluin fojiasi va Barahir partizanlari qirgʻini",
+    "Berenning yolgʻiz qochishi",
+    "Beleg va Gwindorning Túrinni qutqarishi"
   ],
   "textual_status": "author_published",
-  "summary": "Dorthonion — Beleriand shimolidagi baland qaragʻayzor togʻli oʻlka. Dastlab Finarfin oʻgʻillari Angrod va Aegnor hamda Bëor xonadoni (Barahir va Beren) makoni boʻlgan. Dagor Bragollachdan soʻng Morgoth zulmati qoplab, Taur-nu-Fuin nomini olgan.",
+  "summary": "Dorthonion (Sindarin tilida: «Qaragʻaylar Oʻlkasi») — Beleriand shimolida, yashil Ard-galen tekisligi janubida qad rostlagan ulkan qoyali va qalin qaragʻayzor togʻli platodir. Dastlab Finarfin oʻgʻillari Angrod va Aegnor hamda Bëor xonadoni insonlarining vatanparvar maskani boʻlgan bu oʻlka Dagor Bragollach olovli toʻfonidan soʻng Morgoth va Sauronning qora afsunlari ostida qolib, dahshatli «Taur-nu-Fuin» («Tungi Soya Oʻrmoni»)ga aylantirilgan.",
   "sources": [
     {
       "book_slug": "silmarillion",
-      "chapter": "Of the Ruin of Beleriand and the Fall of Fingolfin",
-      "page": "150",
-      "notes": "Dorthonion qulashi va Barahir qahramonligi."
+      "chapter": "Quenta Silmarillion, 14-bob: \"Beleriand va uning oʻlkalari haqida\"",
+      "page": "121",
+      "notes": "Dorthonion platosi, Angrod, Aegnor va Ladros oʻlkasi tavsifi."
+    },
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Quenta Silmarillion, 18-bob: \"Beleriand halokati va Fingolfin qulashi haqida\"",
+      "page": "151",
+      "notes": "Dagor Bragollachda Dorthonionning yondirilishi va Barahir jasorati."
+    },
+    {
+      "book_slug": "the-children-of-hurin",
+      "chapter": "8-bob: \"Kamondek egilgan zamin\"",
+      "page": "110",
+      "notes": "Taur-nu-Fuin dahshati, Beleg Cúthalion va Gwindorning qutqaruv yurishi."
     }
   ],
   "description_sections": [
     {
-      "title": "Qaragʻaylar Oʻlkasidan Dahshat Oʻrmonigacha",
-      "content": "Dorthonion (Sindarincha: 'Qaragʻaylar Makoni') — Beleriandning shimoliy chegarasida joylashgan baland, qoyali va qalin qaragʻayzorlar bilan qoplangan togʻli oʻlka edi. Birinchi Davrda bu yerda Finarfin oʻgʻillari Angrod va Aegnor hukmronlik qilgan, shuningdek Bëor xonadoni insonlari (Beren ajdodlari) yashagan.\n\nDagor Bragollach (Toʻsatdan Olov Jangi)da Morgoth oʻlkani olov bilan qopladi. Angrod va Aegnor halok boʻldi, oʻlka Sauron sehriga asir boʻlib 'Taur-nu-Fuin' ('Tungi Soya Oʻrmoni') deb nomlandi."
+      "title": "Qaragʻaylar Oʻlkasi va Bëor xonadoni maskani",
+      "content": "Dorthonion — sharqdan gʻarbga oltmish liga choʻzilgan, janubda qalin Doriath oʻrmonlariga tutashgan va shimolda ochiq tekisliklarga qaragan baland togʻli hudud edi. Uning qoyali qirlari va zangori qaragʻayzorlari qishin-yozin salqin va qalin tumanlar bilan qoplangan boʻlardi. Noldor elflari Beleriandga kelganida, Finarfin oʻgʻillari Angrod va Aegnor bu strategik balandlikda mustahkam istehkomlar qurdilar.\n\nInsonlarning Bëor xonadoni Gʻarbga yetib kelgach, Noldor Oliy Shohi Finrod Felagund ularga Dorthonionning sharqiy qismidagi Ladros vodiysini hadya qildi. Bu yerda Bregolas va uning ukasi Barahir boshchiligidagi jasur insonlar elflar bilan qonli doʻstlik rishtalarini bogʻlab, Angbanddan keluvchi oʻrklarga qarshi ishonchli shimoliy qalqon boʻlib xizmat qildilar."
+    },
+    {
+      "title": "Dagor Bragollach olovi va Tarn Aeluin fojiasi",
+      "content": "Birinchi Davrning 455-yilida Morgoth Angband togʻlaridan olov va zahar toshqinlarini yuborganida, Dorthonion bir kechada olovli halqada qoldi. Angrod va Aegnor mardlarcha halok boʻldilar, Bëor jangchilarining aksariyati oʻrmonlar bilan birga kulga aylandi. Biroq Barahir oʻzining oʻn ikki nafar sadoqatli jangchisi (shu jumladan oʻgʻli Beren) bilan togʻlarning baland choʻqqisidagi muqaddas Tarn Aeluin koʻli boʻyiga chekindi.\n\nUlar yillar davomida kimsasiz gʻorlarda yashab, Morgoth qoʻshinlariga qaqshatqich partizanlik zarbalarini berdilar. Sauron koʻp urinishlardan soʻng bechora Gorlimni aldamchi sharpalar bilan tuzoqqa tushirib, Tarn Aeluin yashirin manzilini bilib oldi; barcha partizanlar oʻldirildi, faqat oʻsha kechada ovda boʻlgan Beren qochib qutuldi va Beleriand boʻylab mashhur dostonini boshladi."
+    },
+    {
+      "title": "Taur-nu-Fuin zulmati va uning keyingi afsonalari",
+      "content": "Barahir jangchilari qatl etilgach, Sauron butun oʻlkaga qora tumanlar, qonxoʻr bahaybat oʻrgimchaklar va aql-hushni yoʻqotuvchi saroblar afsunini yubordi. Shundan soʻng bu qadimiy goʻzal qaragʻayzor «Taur-nu-Fuin» — «Zulmat ostidagi Oʻrmon» deb atala boshlandi; uning qorongʻu daraxtlari ostiga quyosh nuri kirmas, yoʻlovchilar oʻz soya-sharparalaridan qoʻrqib aqldan ozar edilar.\n\nKeyinchalik Nargothrond shahzodasi Gwindor va mashhur elf kamonchisi Beleg Cúthalion asirga olingan Túrinni oʻrklardan qutqarish uchun aynan shu dahshatli Taur-nu-Fuin oʻrmoni qaʼriga kirdilar. Birinchi Davr oxirida Gʻazab Urushi toʻlqinlari Beleriandni yutib yuborganida ham, Dorthonionning eng baland granit choʻqqisi choʻkmasdan, yangi dengizda «Tol Fuin» deb atalgan sovuq va kimsasiz orol sifatida saqlanib qoldi."
     }
   ]
 }

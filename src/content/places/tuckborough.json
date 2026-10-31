@@ -1,7 +1,6 @@
 {
   "id": "tuckborough",
-  "name": "Tuckborough (Tukborog / Buyuk Smiallar)",
-  "elvish_name": "Tuckborough",
+  "name": "Tuckborough",
   "type": "shahar",
   "region": "orta-yer",
   "coordinates": {
@@ -11,32 +10,49 @@
   },
   "founded_era": "Uchinchi Davr 2683",
   "rulers": [
-    "Shir Teyni (Thain of the Shire)",
+    "Shire Teyni (Thain of the Shire)",
     "Tuk xonadoni (Took family)"
   ],
   "notable_events": [
     "Buyuk Smiallar (Great Smials) yerosti majmuasining Isengrim II tomonidan barpo etilishi (2683-yil)",
-    "Shir Teyni martabasining Tuklar sulolasiga oʻtishi",
-    "Shir tarixi va shajaralari bitilgan qadimiy Sariq Teri (Yellowskin) kitobining yuritilishi"
+    "Shire Teyni martabasining Tuklar sulolasiga oʻtishi",
+    "Shayrni tozalash paytida qaroqchilarga qarshi daxlsiz qarshilik",
+    "Peregrin I hukmronligi"
   ],
   "textual_status": "author_published",
-  "summary": "Tukborog — Shirning Yashil Tepaliklar oʻlkasida (Green Hill Country), Tuklar yeri (Tookland) markazida joylashgan eng qadimiy va nufuzli qasaba. Bu yerda Tuklar sulolasining koʻp asrlik chuqur yerosti xiyobonlari boʻlgan Buyuk Smiallar (Great Smials) joylashgan. Tukborog Shirning anʼanaviy harbiy yetakchisi — Teynning doimiy qarorgohi hisoblanadi.",
+  "summary": "Tuckborough — Shayrning Yashil Tepaliklar oʻlkasida (Green Hill Country), Tookland markazida joylashgan eng qadimiy va nufuzli qasabadir. Bu yerda Tuklar sulolasining koʻp asrlik chuqur yerosti xiyobonlari boʻlgan afsonaviy Buyuk Smiallar (Great Smials) joylashgan; Tuckborough Shayrning oliy harbiy boshligʻi — Teynning (Thain) doimiy qarorgohi boʻlib, Saruman bosqini chogʻida bosqinchilarga taslim boʻlmagan yagona istehkom markazi boʻlib qolgan.",
   "sources": [
     {
-      "book_slug": "the-lord-of-the-rings",
-      "chapter": "Prologue: Of the Ordering of the Shire",
+      "book_slug": "the-fellowship-of-the-ring",
+      "chapter": "Muqaddima: \"Shayr tuzilishi haqida (Of the Ordering of the Shire)\"",
+      "page": "14",
       "notes": "Tuk sulolasi, Teyn lavozimi va Buyuk Smiallarning qurilish tarixi."
     },
     {
-      "book_slug": "the-lord-of-the-rings",
-      "chapter": "Appendix C: Family Trees",
-      "notes": "Tukborog Tuklarining shajaraviy nasabnomasi va Sariq Teri manbasi."
+      "book_slug": "the-return-of-the-king",
+      "chapter": "VI kitob, 8-bob: \"Shayrni tozalash (The Scouring of the Shire)\"",
+      "page": "994",
+      "notes": "Tookland qarshiligi, Pippinning oʻz xalqini jangga chorlashi."
+    },
+    {
+      "book_slug": "the-return-of-the-king",
+      "chapter": "Ilova C: \"Xobbitlar shajaralari\"",
+      "page": "1102",
+      "notes": "Tuckborough Tuklarining nasabnomasi va Sariq Teri (Yellowskin) kitobi."
     }
   ],
   "description_sections": [
     {
-      "title": "Buyuk Smiallar va Tan qarorgohi",
-      "content": "Tuckborough — Yashil Tepaliklar (Green Hills) etagida joylashgan Took xonadonining qadimiy poytaxtidir. Bu yerda Shayrning harbiy boshligʻi boʻlgan Tan (Thain of the Shire) yashagan.\n\nShahar markazida yuzlab xonalar, yoʻlaklar va zallardan iborat mashhur 'Buyuk Smiallar' (Great Smials) joylashgan boʻlib, u Peregrin Took (Pippin) va uning ajdodlari istiqomat qilgan qudratli yerosti qalʼasi boʻlgan."
+      "title": "Tookland yuragi va Buyuk Smiallar meʼmorchiligi",
+      "content": "Tuckborough — Shayrning Janubiy va Gʻarbiy qismlari chegarasidagi sersoya Yashil Tepaliklar etagida joylashgan. Uchinchi Davrning 2683-yilida oʻninchi Teyn Isengrim II bu yerda oʻz sulolasi uchun Oʻrta-yerdagi eng ulkan va murakkab yerosti xobbit maskani — «Buyuk Smiallar»ni (Great Smials) qazishni boshladi.\n\nOddiy xobbit inlaridan farqli ravishda, Buyuk Smiallar togʻ bagʻriga bir necha qavat boʻlib kirib borgan yuzlab yorugʻ xonalar, qabulxona zallari, omborxonalar va kutubxonalardan iborat haqiqiy yerosti shaharchasi edi. Aynan shu yerda Tuklar xonadonining bir necha asrlik yilliklari bitilgan «Sariq Teri» (Yellowskin) kitobi hamda Bilbo va Frodo yozgan Qizil Kitobning (Red Book of Westmarch) eng toʻliq nusxalari ehtiyotkorlik bilan asrab kelingan."
+    },
+    {
+      "title": "Shire Teyni martabasi va Tuklar nufuzi",
+      "content": "Fornostdagi Shimoliy Qirollik (Arthedain) qulaganidan soʻng, xobbitlar oʻz qonunlarini saqlab qolish uchun qirol nomidan ish yurituvchi «Teyn» (Thain) martabasini taʼsis etdilar. Dastlab bu unvon Oldbuck xonadoniga tegishli edi, biroq ular Bucklandga koʻchib ketgach, 1979-yilda bu martaba Tuklar xonadoniga oʻtdi.\n\nTeyn Shayr Kengashining raisi va xalq lashkarining (Muster of the Shire) bosh qoʻmondoni sanalardi. Xobbitlar tinchliksevar xalq boʻlgani sababli bu vazifa asosan faxriy unvon hisoblangan, biroq «Qari Tuk» (Gerontius Took — 130 yil umr koʻrgan mashhur oqsoqol) va uning avlodlari butun mamlakatda eng katta boylik, hurmat va siyosiy erkinlikka ega edilar."
+    },
+    {
+      "title": "Shayrni tozalash va Peregrin Took merosi",
+      "content": "Halqa Urushi yillarida Saruman («Sharkey») oʻzining qaroqchilar toʻdasi bilan Shayrni egallab, uning bogʻlarini vayron qilib, zavodlar qurganida ham Tuckborough bosqinchilarga boʻysunmadi. Pippinning otasi boʻlgan Teyn Paladin II Buyuk Smiallarning barcha darvozalarini qulflab, qalin tosh toʻsiqlar oʻrnatdi va har qanday bosqinchini kamon bilan otishni buyurdi.\n\nFrodo, Sam, Merry va Pippin qaytib kelganlarida, Pippin zudlik bilan Tuckboroughga borib, Rohan burgʻusi sadosi ostida yuzlab qurollangan Tookland xobbitlarini jangga koʻtardi. Ular Bywater jangida Saruman toʻdalarini tor-mor etishda asosiy zarbdor kuch boʻldilar. Urushdan soʻng Pippin «Teyn Peregrin I» nomi bilan Tuckborough hukmdoriga aylandi va Gondor qiroli Elessar uni Shimoliy Qirollikning Oliy Maslahatchisi etib tayinladi."
     }
   ]
 }

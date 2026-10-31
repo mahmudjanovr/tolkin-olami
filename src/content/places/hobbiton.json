@@ -1,7 +1,6 @@
 {
   "id": "hobbiton",
-  "name": "Hobbiton (Xobbiton / Bag End)",
-  "elvish_name": "Hobbiton",
+  "name": "Hobbiton",
   "type": "shahar",
   "region": "orta-yer",
   "coordinates": {

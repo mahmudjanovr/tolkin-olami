@@ -1,7 +1,6 @@
 {
   "id": "michel-delving",
-  "name": "Michel Delving (Maykl Delving)",
-  "elvish_name": "Michel Delving",
+  "name": "Michel Delving",
   "type": "shahar",
   "region": "orta-yer",
   "coordinates": {
@@ -11,32 +10,50 @@
   },
   "founded_era": "Uchinchi Davr 1601",
   "rulers": [
-    "Shir Meri (Mayor of Michel Delving)",
-    "Will Whitfoot"
+    "Shire Meri (Mayor of Michel Delving)",
+    "Will Whitfoot",
+    "Samwise Gamgee"
   ],
   "notable_events": [
-    "Shirning yagona boshqaruv idorasi — Merlik mahkamasining faoliyati",
-    "Mathom-house (Matomlar uyi) muzeyining barpo etilishi va nodir ashyolar toʻplanishi",
-    "Shirriflar (Shir mirshablari) bosh qarorgohining tashkil qilinishi"
+    "Oq Tepaliklardagi Erkin Yarmarka (Free Fair) va mer saylovlari",
+    "Mathom-house muzeyining barpo etilishi va Bilboning mithril sovuti saqlanishi",
+    "Lockholes zindonining ochilishi va Shayrni tozalashdan keyingi tiklanish",
+    "Samwise Gamgeening yetti marta mer etib saylanishi"
   ],
   "textual_status": "author_published",
-  "summary": "Maykl Delving — Shirning eng yirik aholi punkti va amaldagi maʼmuriy markazi boʻlib, Oq Tepaliklar (White Downs) etagida, Gʻarbiy Toʻrtlikda joylashgan. Bu yerda har yetti yilda erkin saylanadigan Shir Meri, Pochtameyster idorasi hamda xobbitlar foydalanmaydigan, lekin tashlab yuborishga koʻzlari qiymaydigan qadimiy sovgʻa va yodgorliklar saqlanadigan Mathom-house muzeyi mavjud.",
+  "summary": "Michel Delving — Shayrning eng yirik shahri va amaldagi maʼmuriy markazi boʻlib, Oq Tepaliklar (White Downs) etagida, Gʻarbiy Toʻrtlikda (Westfarthing) joylashgan. Bu yerda har yetti yilda erkin saylanadigan Shayr Meri, Bosh Pochtameyster idorasi, Shirriflar (mirshablar) qarorgohi hamda xobbitlar foydalanmaydigan, lekin tashlab yuborishga koʻzlari qiymaydigan qadimiy sovgʻa va nodir yodgorliklar saqlanadigan mashhur Mathom-house muzeyi joylashgan.",
   "sources": [
     {
-      "book_slug": "the-lord-of-the-rings",
-      "chapter": "Prologue: Concerning Hobbits",
-      "notes": "Maykl Delving merligi, Mathom-house va Shir politsiyasi tuzilishi."
+      "book_slug": "the-fellowship-of-the-ring",
+      "chapter": "Muqaddima: \"Xobbitlar haqida (Concerning Hobbits)\"",
+      "page": "9",
+      "notes": "Michel Delving shahri, merlik tizimi va Mathom-house tarixi."
     },
     {
-      "book_slug": "the-lord-of-the-rings",
-      "chapter": "The Grey Havens",
-      "notes": "Samwise Gamgeening Maykl Delving meri etib saylanishi haqidagi xronika."
+      "book_slug": "the-return-of-the-king",
+      "chapter": "VI kitob, 8-bob: \"Shayrni tozalash\"",
+      "page": "998",
+      "notes": "Lockholes zindonidan Will Whitfoot va boshqa xobbitlarning ozod qilinishi."
+    },
+    {
+      "book_slug": "the-return-of-the-king",
+      "chapter": "Ilova B: \"Yillar solnomasi\"",
+      "page": "1096",
+      "notes": "Samwise Gamgeening ketma-ket yetti marta mer boʻlib saylanishi."
     }
   ],
   "description_sections": [
     {
-      "title": "Oq Tepaliklar poytaxti va Mathom uyi",
-      "content": "Michel Delving — Oq Tepaliklarda (White Downs) joylashgan Shayrning eng yirik shahri va norasmiy poytaxtidir. Bu yerda har yetti yilda bir marta saylanadigan Shayr Meri (Mayor of Michel Delving) va Shirifflar (Shirriffs — politsiya) boshligʻi qarorgoh qurgan.\n\nShaharda mashhur 'Mathom House' muzeyi joylashgan boʻlib, unda xobbitlar oʻzlari uchun foydasiz, ammo tashlab yuborishga koʻzi qiymaydigan qiziqarli buyumlarni (eski qurollar, yodgorliklar) saqlashgan. Bilboning mithril sovuti ham uzoq yillar shu muzeyda osigʻliq turgan."
+      "title": "Oq Tepaliklar etagidagi eng yirik qasaba",
+      "content": "Michel Delving (qadimgi inglizcha micel — «katta, buyuk» + delving — «qazilma, yerosti ini») — Shayrning gʻarbiy darvozasi ostonasida, goʻzal Oq Tepaliklar (White Downs) bagʻrida joylashgan eng yirik va gavjum qasabadir. Bu yerda qadimiy chuqur smiallar (inlar) bilan bir qatorda yogʻoch va pishiq gʻishtdan qurilgan koʻrkam uylar, bozor maydonlari va ustaxonalar qad rostlagan edi.\n\nShahar Shayrning toʻrtta toʻrtligini bogʻlovchi Buyuk Sharqiy Yoʻl ustida joylashgan boʻlib, gʻarbdan Kulrang Bandargohlarga qarab oʻtuvchi elflar va sharqqa qarab sayohat qiluvchi mitti savdogarlarining toʻxtash joyi sanalgan. Bu esa Michel Delvingga boshqa xobbit qishloqlariga nisbatan ancha keng dunyoqarash va boy madaniy muhit baxsh etgan."
+    },
+    {
+      "title": "Mathom-house muzeyi va Lockholes zindoni",
+      "content": "Shaharning eng mashhur diqqatga sazovor maskani — «Mathom-house» deb atalgan ulkan bino edi. Xobbitlar tilida «mathom» deb oʻzlariga hozircha amaliy foydasi tegmaydigan, ammo esdalik sifatida juda qadrli boʻlgani uchun tashlab yuborishga koʻzlari qiymaydigan har qanday buyumga aytilardi. Xobbitlar bir-birlariga tugʻilgan kunlarida sovgʻa ulashishni sevardilar va koʻpincha aylanib kelgan sovgʻalar oxir-oqibat shu muzeyga topshirilardi. Bilbo Baggins oʻzining Erebor safaridan olib kelgan yaltiroq elf mithril sovutini uzoq yillar aynan shu muzeyda saqlagan.\n\nBiroq qorongʻu kunlarda, Saruman va uning qaroqchilari Shayrni egallagan paytda, Michel Delvingning qadimgi chuqur yerosti omborlari «Lockholes» («Qulflangan Inlar») deb ataluvchi qorongʻu zindonga aylantirildi. Semiz va oqkoʻngil shahar meri Will Whitfoot va koʻplab erkin xobbitlar oylarcha shu yerda azob chekdilar, to Frodo va uning birodarlari ularni ozod qilguncha."
+    },
+    {
+      "title": "Erkin Yarmarka va Mer boshqaruvi",
+      "content": "Shayrda haqiqiy davlat boshligʻi boʻlmagan; yagona umumxalq tomonidan saylanadigan amaldor — Michel Delving Meri (Mayor of Michel Delving) edi. Mer har yetti yilda bir marta, Lithe (yoz oʻrtasi bayrami) kunlarida Oq Tepaliklarda oʻtkaziladigan dabdabali «Erkin Yarmarka»da (Free Fair) xobbitlarning umumiy ovoz berishi bilan saylanardi.\n\nMerning asosiy vazifasi bayram bazmlarini ochish, Shayr Pochtameysteri sifatida maktublar yetkazilishini taʼminlash hamda oʻn ikki nafar qonun posbonidan iborat Shirriflar (mirshablar) xizmatini nazorat qilishdan iborat boʻlgan. Halqa Urushidan soʻng, U.D. 1427-yildan boshlab Samwise Gamgee Michel Delving shahar meri etib saylandi va oʻzining donoligi, saxiyligi bilan xalq mehrini qozonib, ketma-ket yetti marta (jami 49 yil) bu yuksak lavozimni sharaf bilan boshqardi."
     }
   ]
 }

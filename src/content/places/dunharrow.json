@@ -1,7 +1,6 @@
 {
   "id": "dunharrow",
   "name": "Dunharrow",
-  "elvish_name": "Dúnharg",
   "type": "qalʼa",
   "region": "orta-yer",
   "coordinates": {
@@ -14,26 +13,38 @@
     "Rohan qirollari"
   ],
   "notable_events": [
-    "Rohirrim lashkarining jangga toʻplanishi",
-    "Aragornning Oʻliklar Yoʻliga kirish qarori"
+    "Rohirrim lashkarining jangga toʻplanishi (Muster of Rohan)",
+    "Aragornning Oʻliklar Yoʻliga kirish qarori",
+    "Éowyn va Merryning Dernhelm niqobida jangga otlanishi"
   ],
   "textual_status": "author_published",
-  "summary": "Oq Togʻlar (Ered Nimrais) qaʼridagi Harrowdale darasi tepasida joylashgan qadimiy togʻ istehkomi va boshpanasi. Rohirrim xalqi uchun eng daxlsiz togʻ mudofaa joyi boʻlib, uning etagida Dimholt oʻrmoni va Oʻliklar Yoʻliga olib boruvchi sirli eshik joylashgan. Halqa Urushida Qirol Théoden olti ming otliqni aynan shu yerda jangga toʻplagan.",
+  "summary": "Dunharrow (Rohirric: Dúnharg — «Togʻ Istehkomi / Muqaddas Tosh Maskan») — Oq Togʻlar (Ered Nimrais) bagʻridagi Harrowdale darasi tepasida, Starkhorn va Irensaga choʻqqilari oraligʻida joylashgan eng daxlsiz togʻ boshpanasi va harbiy istehkomdir. Ikkinchi Davr zulmat yillarida qadimgi togʻ insonlari tomonidan qoyalarga oʻyilgan bu maskan Rohirrim xalqi uchun soʻnggi panoh boʻlib xizmat qilgan; uning etagidagi Dimholt oʻrmonida Oʻliklar Yoʻlining qora eshigi joylashgan boʻlib, Halqa Urushida Qirol Théoden olti ming saralangan otliqni aynan shu yerda qasamyodga toʻplagan.",
   "sources": [
     {
-      "book_slug": "the-lord-of-the-rings",
-      "chapter": "The Muster of Rohan",
-      "page": "795"
+      "book_slug": "the-return-of-the-king",
+      "chapter": "V kitob, 2-bob: \"Kulrang Boʻlinmaning oʻtishi\"",
+      "page": "765",
+      "notes": "Dimholt oʻrmoni, Qora Eshik va Oʻliklar Yoʻli afsonasi."
+    },
+    {
+      "book_slug": "the-return-of-the-king",
+      "chapter": "V kitob, 3-bob: \"Rohanning lashkar toʻplashi (The Muster of Rohan)\"",
+      "page": "785",
+      "notes": "Firienfeld tekisligi, Púkel-odamlar va Théoden qoʻshini."
     }
   ],
   "description_sections": [
     {
-      "title": "Baland togʻ panohgohi va Firienfeld",
-      "content": "Dunharrow — Oq Togʻlarning Starkhorn choʻqqisi etagidagi baland qoyatosh tekisligi (Firienfeld) ustida joylashgan yengilmas qadimiy istehkomdir. Unga olib boruvchi yagona yoʻl qoyatoshga oʻyilgan ilon izi (zigzag) zinalardan iborat.\n\nZinalar boʻylab qadimiy davrlarda Insonlar tomonidan oʻyilgan bahaybat Púkel-men (tosh haykallar) oʻrnatilgan. Tekislik oxirida qaragʻayzorlar ortida Oʻliklar Yoʻlining qora darvozasi (Dark Door) joylashgan."
+      "title": "Qadimiy togʻ relyefi, Firienfeld va Púkel-odamlar",
+      "content": "Dunharrow — Edorasdan janubga, Snowbourn daryosi darasi (Harrowdale) boʻylab chuqur togʻlar bagʻriga kirganda uchraydigan ulkan tabiiy qalʼadir. Daraning eng toʻrida tik koʻtarilgan qoyatosh yuziga qadimgi zamonlarda keng ilonizi (zigzag) zinalar oʻyilgan boʻlib, unga faqat bitta-bitta otliq koʻtarila olar edi.\n\nHar bir burilishda oʻtirgan holatda qoʻllarini qorniga qoʻygan gʻalati tosh haykallar — «Púkel-odamlar» (Púkel-men) oʻrnatilgan boʻlib, ular Númenorliklar kelishidan ancha oldin, Qorongʻu Yillarda yashagan tubjoy insonlar tomonidan yaratilgan. Zinaning yuqorisida keng, yam-yashil va sovuq togʻ shamollari esib turuvchi Firienfeld tekisligi ochiladi; bu tekislik oʻn minglab odamlar va otlarni oziq-ovqat bilan taʼminlay oladigan xavfsiz boshpana hisoblangan."
     },
     {
-      "title": "Rohan armiyasining yigʻilishi",
-      "content": "3019-yil martida Shoh Théoden Rohanning barcha viloyatlaridan kelgan chavandozlarni aynan Dunharrow tekisligida toʻpladi. Bu yerda olti ming kishilik saralangan otliq qoʻshin Pelennor jangi uchun qasamyod qildi. Éowyn va Merry ham aynan shu yerdan yashirincha jangga otlandilar."
+      "title": "Dimholt oʻrmoni va Oʻliklar Yoʻli ostonasi",
+      "content": "Firienfeld tekisligining janubiy chekkasida, dahshatli Dwimorberg («Sharpa Togʻi») poyida qora qaragʻaylardan iborat qalin Dimholt oʻrmoni qad rostlagan. Daraxtlar oralab ikki qator tik qadimgi tosh ustunlar oʻrnatilgan boʻlib, ular toʻgʻridan-toʻgʻri togʻ bagʻridagi bahaybat gʻor ogʻziga — «Qora Eshik»ka (The Dark Door) olib boradi.\n\nBu eshik ortida Oq Togʻlarni janubga qarab yorib oʻtuvchi Oʻliklar Yoʻli (Paths of the Dead) yotadi. Ikkinchi Davrda Isildurga bergan qasamini buzgani sababli laʼnatlangan togʻ insonlarining sharpalari shu gʻorlarda asrlar davomida zanjirband yashagan. U.D. 3019-yil 8-martda Isildurning qonuniy vorisi Aragorn Legolas, Gimli va Dúnedain chavandozlari bilan birga laʼnatlangan sharpalarni qasamni bajarishga chaqirish uchun ushbu qora eshikdan ichkariga qadam qoʻydi."
+    },
+    {
+      "title": "Rohanning Yigʻini va Éowyn jasorati",
+      "content": "Hornburg jangidagi gʻalabadan soʻng qirol Théoden va uning lashkari Gondorga yordamga otlanishdan oldin barcha viloyatlardan kelgan Rohirrim kuchlarini aynan Dunharrow tekisligida toʻpladilar. Saruman xavfi bartaraf etilganidan soʻng, bu yerda butun mamlakatning keksalar, ayollar va bolalari Éowyn boshchiligida xavfsiz panoh topgan edilar.\n\nFirienfeldda olti ming nafar ogʻir qurollangan, nayzali otliq saf tortdi. Gondor elchisi Hirgon keltirgan Qizil Oʻqni koʻrgan Théoden zudlik bilan Minas Tirith qamalini yorish uchun yurish buyurdi. Xalqini tashlab ketishni istamagan va jangga intilgan jasur malika Éowyn esa «Dernhelm» nomi ostida oddiy otliq kiyimini kiyib, kichik hobbit Merry Bagginsni (Pippin Rivendellda boʻlgani kabi Merry Rohanda xizmat qilayotgan edi) oʻz egariga yashirgan holda lashkar safiga yashirincha qoʻshildi."
     }
   ]
 }

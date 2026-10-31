@@ -1,7 +1,7 @@
 {
   "id": "belegost",
   "name": "Belegost",
-  "elvish_name": "Gabilgathol (Ulugʻ Qalʼa)",
+  "elvish_name": "Belegost",
   "type": "shahar",
   "region": "beleriand",
   "coordinates": {
@@ -15,23 +15,44 @@
     "Azaghâl"
   ],
   "notable_events": [
-    "Menegrothni oʻyib qurish",
-    "Nirnaeth Arnoediadda Glaurungni yarador qilish"
+    "Menegroth saroyining elflar bilan birgalikda oʻyilishi",
+    "Nirnaeth Arnoediadda ajdar Glaurungning qochirilishi",
+    "Doriath talon-torojida qatnashishdan bosh tortish"
   ],
   "textual_status": "author_published",
-  "summary": "Belegost — Moviy togʻlar (Ered Luin)ning Dolmed choʻqqisi shimolida joylashgan yirik mitti shahri. Temirchilik, zanjir sovut toʻqish va qattiq tosh oʻymakorligi bilan dong taratgan. Qirol Azaghâl Nirnaeth Arnoediadda Glaurungni yarador qilib, qahramonlik koʻrsatgan.",
+  "summary": "Belegost (Khuzdul tilida: Gabilgathol — «Ulugʻ Qalʼa») — Moviy Togʻlar (Ered Luin)ning Dolmed choʻqqisi yonida joylashgan eng qadimiy va qudratli mitti saltanatlaridan biridir. Mittilarning Olovsoqollar (Firebeards) va Kengyelkalar (Broadbeams) qabilalari maskani boʻlgan bu yerosti shahri zanjirli sovut toʻqish, tosh oʻymakorligi va olovbardosh qurollar yasash sanʼatida butun Oʻrta-yerda tengsiz boʻlgan; qirol Azaghâl Nirnaeth Arnoediad jangida ajdar Glaurungni yaralab dushmanning asosiy zarbasini toʻxtatgan.",
   "sources": [
     {
       "book_slug": "silmarillion",
-      "chapter": "Of the Sindar",
+      "chapter": "Quenta Silmarillion, 10-bob: \"Sindar haqida\"",
       "page": "92",
-      "notes": "Belegost mittilari va Thingol bilan ittifoq."
+      "notes": "Belegost mittilari va Thingol bilan ittifoq, Menegrothning qurilishi."
+    },
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Quenta Silmarillion, 20-bob: \"Beshinchi Jang: Nirnaeth Arnoediad\"",
+      "page": "193",
+      "notes": "Azaghâlning qahramonona jangi va Glaurungni chekinishga majbur qilishi."
+    },
+    {
+      "book_slug": "silmarillion",
+      "chapter": "Quenta Silmarillion, 22-bob: \"Doriath halokati haqida\"",
+      "page": "233",
+      "notes": "Belegost mittilarining Nogrod fitnasidan bosh tortishi."
     }
   ],
   "description_sections": [
     {
-      "title": "Gabilgathol: Moviy Togʻlarning ulugʻvor mitti shahri",
-      "content": "Belegost (Mitti tilida: Gabilgathol — 'Buyuk Qalʼa') — Moviy Togʻlarning (Ered Luin) sharqiy yonbagʻrida joylashgan qadimiy mitti shohligidir. U Mittilarning Kengyelkalilar (Broadbeams) va Olovsoqollar (Firebeards) qabilasi tomonidan Daraxtlar Davrida barpo etilgan.\n\nBelegost ustalari zanjirli sovut toʻqish boʻyicha dunyoda tengsiz boʻlganlar. Ularning Qiroli Azaghâl Nirnaeth Arnoediad jangida bahaybat ajdar Glaurungni yaralab qochirgan, ammo oʻzi ajdar ostida qolib qahramonlarcha halok boʻlgan."
+      "title": "Dolmed togʻi bagʻridagi yerosti saltanati va meʼmorchilik",
+      "content": "Belegost (Sindarin tilida «Ulugʻ Qalʼa», beleg — «ulkan, qudratli» + ost — «qalʼa, shahar») — Ered Luin togʻ tizmasining markaziy qismidagi mahobatli Dolmed choʻqqisining shimoliy yonbagʻrida joylashgan ulkan gʻor-saroylar majmuasi edi. Daraxtlar Davrida asos solingan bu shahar oʻzining chuqur maʼdan konlari, tosh zallari va yerosti ustunlari bilan ajralib turardi.\n\nDoriath qiroli Elu Thingol oʻz poytaxti Menegrothni (Ming Gʻor) barpo etishga qaror qilganida, aynan Belegost ustalari eng mohir tosh yoʻnuvchilar sifatida yollangan edilar. Mittilar elflar bilan birgalikda togʻ ichida qadimgi chinorlar shaklidagi marmar ustunlarni yoʻnib, shohona zallarni qurdilar va evaziga Círdan sovgʻa qilgan buyuk Balar marvaridlarini oldilar."
+    },
+    {
+      "title": "Temirchilik va olovga chidamli zirhlar sanʼati",
+      "content": "Belegost mittilari metallga ishlov berishda Oʻrta-yerda birinchi boʻlib halqali temir sovut (ring mail) toʻqish texnologiyasini kashf etdilar. Ularning temirchilik ustaxonalari yasagan qalqonlar, oʻtkir boltalar va ogʻir jangovar niqoblar nafaqat qilich zarbalarini qaytargan, balki olovli alangaga ham bardosh berar edi.\n\nBelegostliklar oʻzlarining yuzlarini qoplovchi qoʻrqinchli metall niqoblari bilan mashhur boʻlib, bu niqoblar ajdarlarning koʻzni qamashtiruvchi sehrli nigohi va purkayotgan alangasidan mukammal himoya qilgan. Beleriand xalqlari ichida faqat Belegost jangchilarigina olovli mahluqlarga yuzma-yuz tik boqishga qodir edilar."
+    },
+    {
+      "title": "Nirnaeth Arnoediad jasorati va Doriath fitnasidan chetlanish",
+      "content": "Birinchi Davrning 472-yildagi Nirnaeth Arnoediad jangida Maedhros Ittifoqi safida qatnashgan Belegost armiyasiga ularning shohi Azaghâl shaxsan boshchilik qildi. Ajdarlar Otasi Glaurung butun ittifoq qanotlarini yondirib, elflar va insonlarni parokanda qilganda, faqat Belegost mittilari ajdarni qalin halqa bilan oʻrab oldilar. Glaurung Azaghâlni ezib oʻldirgan boʻlsa-da, mitti shoh soʻnggi nafasida pichogʻini ajdarning qorniga sanchib, uni jang maydonidan qochishga majbur etdi. Mittilar oʻz yoʻlboshchilarining jasadini koʻtarib, dafn marsiyasini kuylab maydondan chiqib ketdilar; ularning dahshatli motamiga hatto oʻrklar ham xalal berishga jurʼat eta olmadilar.\n\nKeyinchalik qoʻshni Nogrod mittilari Silmarilni egallash maqsadida Doriathga bostirib kirishga chaqirganlarida, Belegost oqsoqollari bu adolatsiz qon toʻkishdan qatʼiyan bosh tortdilar va oʻz birodarlarini Thingolga qarshi urush qilmaslikka undadilar. Gʻazab Urushidan soʻng Ered Luin togʻlari parchalangach, Belegost xalqi asta-sekin Tumanli Togʻlardagi Khazad-dûm (Moria) saltanatiga koʻchib oʻtib, Durin xalqining qudratini yanada oshirdilar."
     }
   ]
 }
