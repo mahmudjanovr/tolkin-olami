@@ -163,6 +163,8 @@ Loyihaning barcha meʼmoriy spetsifikatsiyalari `docs/` katalogida toʻliq bayon
 8. [08. Amalga Oshirish Yoʻl Xaritasi (Roadmap)](docs/08_IMPLEMENTATION_ROADMAP.md) — Fazalar taqsimoti va Faza 7 ish paketlari.
 9. [09. Kutiladigan Xatoliklar va Ularning Oldini Olish](docs/09_FAILURE_MODES_AND_MITIGATIONS.md) — Xarita, shajara va qidiruv boʻyicha himoyalar.
 10. [10. Loyihaning Haqiqiy Holati Audit Hisoboti](docs/10_CURRENT_STATE.md) — Kontent toʻplamlari, portretlar, xaritalar va yupqa yozuvlar auditi.
+11. [11. Oʻzbek Tahririyat Uslubiyoti va Sifat Standartlari](docs/11_EDITORIAL_STYLE_GUIDE.md) — Imlo, fonetika, atamalar lugʻati va minimal sifat mezonlari.
+12. [12. Kanonik Manbalar Siyosati va Iqtibos Standartlari](docs/12_CANONICAL_SOURCE_POLICY.md) — Toʻrt pogʻonali matn ierarxiyasi, birlamchi vs ikkilamchi manbalar va Oksford iqtibos tizimi.
 
 ---
 

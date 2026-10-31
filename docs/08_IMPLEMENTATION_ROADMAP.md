@@ -130,23 +130,26 @@ Loyiha qatʼiy bosqichma-bosqich (phased) tartibda amalga oshiriladi. Har bir fa
 
 ### Faza 7: Kontentni toʻldirish va sayqallash (Jarayonda / In Progress)
 - **Maqsad:** Mavjud texnik poydevor ustida ensiklopediya kontentining ilmiy qamrovini, portretlar va kartografik aktivlarini chuqurlashtirish hamda mukammallashtirish.
-- **Kelgusi Ish Paketlari (Upcoming Work Packages):**
-  1. **Style & glossary (Uslubiyot va atamalar lugʻati):**
-     - Oʻzbekcha lotin imlosidagi toponimlar, xalqlar va qahramonlar nomlarining akademik lugʻatini toʻliq standartlashtirish.
-     - Diakritik belgilar (`ë`, `ä`, `ú`, `oʻ`, `gʻ`) va tarjima izohlarini tartibga solish.
-  2. **Deepening thin entries (Yupqa yozuvlarni chuqurlashtirish):**
-     - `docs/10_CURRENT_STATE.md` dagi eng kichik fayllarni (10 ta eng qisqa maqola, joy va voqealar) birlamchi matn iqtiboslari bilan boyitish.
-     - Maqolalar matnini kamida belgilangan minimal soʻz hajmiga yetkazish va boʻsh boʻlimlarni yoʻqotish.
-  3. **New content (Yangi kanonik kontentlar):**
-     - Yangi qahramonlar, muhim tarixiy voqealar va kosmologik konsepsiyalarni Zod sxemalari asosida qoʻshish.
-     - Christopher Tolkienning *The History of Middle-earth* jildlari boʻyicha bibliografik tahlillarni kengaytirish.
-  4. **Portraits (Qahramon portretlari tizimi):**
-     - Hozirgi 21 ta portretga ega boʻlmagan qolgan 60 ta qahramon uchun ilmiy va vizual kanonga mos portret aktivlarini (300x400 va 600x800 WebP) tayyorlash.
-     - `src/data/character-portraits.ts` manifestini toʻliq toʻldirish.
-  5. **Maps (Kartografiya va yangi xaritalar):**
-     - `docs/02` da vaʼda qilingan Númenor orol-qirolligi (`numenor-planar.svg`) va Valinor (`valinor-planar.svg`) vektor SVG xaritalarini yaratish.
-     - Leaflet atlas registriga yangi xaritalar va ularga tegishli toponimlar koordinatalarini ulash.
-  6. **Final QA & deploy (Yakuniy sifat nazorati va nashr):**
-     - Barcha toʻplamlar boʻyicha toʻliq `npm run build`, `vitest run`, `astro check` va `test:e2e` regressiya sinovlarini oʻtkazish.
-     - Cloudflare Pages ishlab chiqarish muhitiga yakuniy versiyani joylashtirish.
+- **Ish Paketlari Rejasi (Work Packages):**
+  1. **Paket 0: Boshlangʻich Holat va Hujjatlar Sinxronizatsiyasi (Package 0 — Yakunlandi, 2026-10-29):**
+     - Barcha testlar va qurish tizimi (build) tekshirildi (232 sahifa, 320 Vitest, 64 Playwright, 0 astro check xatosi).
+     - `scripts/audit-content.cjs` orqali `docs/10_CURRENT_STATE.md` hisoboti tuzildi va root `README.md` yaratildi.
+  2. **Paket 1: Tahririyat Standartlari va Sifat Poydevori (Package 1 — Yakunlandi, 2026-10-31):**
+     - Butun kontent bazasi orfografiya, fonetika, atamalar va manbalar boʻyicha chuqur audit qilindi (`scripts/audit-editorial.cjs`).
+     - [docs/11_EDITORIAL_STYLE_GUIDE.md](docs/11_EDITORIAL_STYLE_GUIDE.md) — Oʻzbekcha tahririyat uslubiyoti, `oʻ`/`gʻ` (U+02BB), Tolkien fonetikasi (`Th`, `Dh`, `Kh`, `C`), atamalar lugʻati va har bir toʻplam uchun minimal sifat mezonlari yaratildi.
+     - [docs/12_CANONICAL_SOURCE_POLICY.md](docs/12_CANONICAL_SOURCE_POLICY.md) — Toʻrt pogʻonali matn ierarxiyasi (`author_published`, `posthumous_edited`, `draft_variant`, `disputed_variant`), birlamchi vs ikkilamchi manbalar, Oksford iqtibos standarti va ziddiyatli masalalar qoʻllanmasi ishlab chiqildi.
+  3. **Paket 2: Yupqa Yozuvlarni Chuqurlashtirish va Nomuvofiqliklarni Tuzatish (Package 2 — Navbatdagi):**
+     - Aniqlangan 12 ta noaniq `book_slug` havolalarini toʻgʻrilash (`the-silmarillion` -> `silmarillion`, `lotr-*` -> rasmiy jild sluglari).
+     - `places` toʻplamidagi `elvish_name` maydonini tozalash (faqat elvish nomlarni qoldirish).
+     - 400 soʻzdan kam boʻlgan 20 ta joy va 7 ta kosmologiya maqolalarini birlamchi asarlar asosida boyitish.
+     - «Celeborn», «Helm», «Thranduil», «Dáin» kabi nomuvofiq transliteratsiyalarni standartlashtirish.
+  4. **Paket 3: Yangi Kanonik Kontentlar (Package 3):**
+     - Yangi muhim shaxslar, tarixiy janglar va kosmologik tushunchalarni Zod sxemalari asosida qoʻshish.
+     - HoME bibliografik tahlillarini kengaytirish.
+  5. **Paket 4: Qahramon Portretlari Tizimi (Package 4):**
+     - Hozirgi 21 ta portretdan tashqari qolgan 60 ta qahramon uchun kanonga mos WebP portretlarini tayyorlash va manifestni toʻldirish.
+  6. **Paket 5: Kartografiya va Yangi Xaritalar (Package 5):**
+     - Númenor (`numenor-planar.svg`) va Valinor (`valinor-planar.svg`) planar SVG xaritalarini integratsiya qilish.
+  7. **Paket 6: Yakuniy QA va Ishlab Chiqarish Nashri (Package 6):**
+     - Barcha testlarni toʻliq tekshirish, Cloudflare Pages deployini yakunlash.
 
