@@ -64,6 +64,11 @@
   --shadow-md: 0 4px 12px rgba(26, 24, 22, 0.06);
   --shadow-lg: 0 12px 28px rgba(26, 24, 22, 0.09);
   --shadow-overlay: 0 20px 48px rgba(26, 24, 22, 0.16);
+
+  /* Yagona Konteyner va Xarita Sirti Tokenlari (Shared Container & Map Canvas Tokens) */
+  --container-max: 1240px;
+  --container-pad: 1.5rem;
+  --color-map-canvas: #dfd3bb;
 }
 
 /* --------------------------------------------------------------------------
@@ -124,6 +129,9 @@ html[data-applied-mode="night"] {
   --shadow-md: 0 4px 14px rgba(0, 0, 0, 0.35);
   --shadow-lg: 0 14px 32px rgba(0, 0, 0, 0.45);
   --shadow-overlay: 0 24px 56px rgba(0, 0, 0, 0.65);
+
+  /* Tungi Xarita Sirti */
+  --color-map-canvas: #141f1c;
 }
 
 /* --------------------------------------------------------------------------
@@ -178,5 +186,6 @@ html[data-applied-mode="night"] {
     --shadow-md: 0 4px 14px rgba(0, 0, 0, 0.35);
     --shadow-lg: 0 14px 32px rgba(0, 0, 0, 0.45);
     --shadow-overlay: 0 24px 56px rgba(0, 0, 0, 0.65);
+    --color-map-canvas: #141f1c;
   }
 }

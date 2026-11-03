@@ -57,13 +57,21 @@ const mapPlaces = places.map((p) => ({
     aria-label={`${currentMap.titleUz} interaktiv xaritasi`}
     tabindex="0"
   >
-    <!-- Zaxira (No-JS / Yuklanish xatosi) ko'rinishi -->
+    <!-- Zaxira (No-JS / Yuklanish xatosi) ko'rinishi: Non-JS fallback rasm va ro'yxat havolasi -->
     <noscript>
-      <div class="atlas-noscript-warning">
-        <p>
-          Interaktiv xaritadan foydalanish uchun JavaScript yoqilgan boʻlishi kerak.
-          Siz toʻgʻridan-toʻgʻri <a href="#atlas-katalog">Toponimlar Katalogidan</a> toʻliq foydalanishingiz mumkin.
-        </p>
+      <div class="atlas-noscript-fallback">
+        <img
+          src={currentMap.assetUrl}
+          alt={`${currentMap.titleUz} kartografik xaritasi`}
+          class="atlas-fallback-map-img"
+          loading="eager"
+        />
+        <div class="atlas-noscript-note">
+          <p>
+            Interaktiv xaritadan foydalanish uchun JavaScript talab etiladi.
+            Barcha toʻliq maʼlumotlar uchun <a href="#toponimlar">Toponimlar katalogidan</a> foydalanishingiz mumkin.
+          </p>
+        </div>
       </div>
     </noscript>
   </div>
@@ -99,21 +107,66 @@ const mapPlaces = places.map((p) => ({
 <style>
   .atlas-map-wrapper {
     position: relative;
+    z-index: 1;
     width: 100%;
+    max-width: 100%;
     height: 100%;
-    min-height: 520px;
-    background-color: var(--color-bg-base);
-    border: 1px solid var(--color-border-subtle);
-    border-radius: 6px;
+    min-height: 320px;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
     overflow: hidden;
   }
 
   .atlas-map-container {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    min-height: 320px;
+    background-color: var(--color-map-canvas, #dfd3bb);
+    outline: none;
+    overflow: hidden;
+  }
+
+  .atlas-map-container.leaflet-container,
+  :global(.atlas-map-container.leaflet-container) {
+    position: relative !important;
+    overflow: hidden !important;
+    max-width: 100% !important;
+    background-color: var(--color-map-canvas, #dfd3bb) !important;
+  }
+
+  .atlas-noscript-fallback {
+    position: relative;
     width: 100%;
     height: 100%;
-    min-height: 520px;
-    background-color: #f2ece0;
-    outline: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-map-canvas, #dfd3bb);
+    overflow: hidden;
+  }
+
+  .atlas-fallback-map-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+  }
+
+  .atlas-noscript-note {
+    position: absolute;
+    bottom: 1rem;
+    background: rgba(247, 245, 240, 0.95);
+    border: 1px solid var(--color-border-subtle);
+    padding: 0.75rem 1.25rem;
+    border-radius: 4px;
+    font-family: var(--font-sans-ui);
+    font-size: 0.875rem;
+    color: var(--color-text-secondary);
+    box-shadow: var(--shadow-md);
   }
 
   .atlas-map-container:focus-visible {
@@ -736,6 +789,14 @@ const mapPlaces = places.map((p) => ({
       startZoom = urlState.z ?? currentMapDef.defaultCenter.zoom;
     }
 
+    const rawSearchParams = new URLSearchParams(window.location.search);
+    let hasExplicitViewTarget =
+      isJourneyActive ||
+      !!urlState.joy ||
+      rawSearchParams.has('x') ||
+      rawSearchParams.has('y') ||
+      rawSearchParams.has('z');
+
     // Leaflet Map obyekti yaratish
     const map = L.map(container, {
       crs: L.CRS.Simple,
@@ -746,11 +807,40 @@ const mapPlaces = places.map((p) => ({
       maxBounds: currentLeafletBounds,
       maxBoundsViscosity: 1.0,
       wheelDebounceTime: 80,
-      zoomSnap: 1,
+      zoomSnap: 0.05,
       zoomDelta: 1,
     });
 
+    function fitMapToContainer(animate = false) {
+      if (!container || container.clientWidth <= 0 || container.clientHeight <= 0) return;
+      map.invalidateSize({ animate: false });
+      map.fitBounds(currentLeafletBounds, { animate: false, padding: [0, 0] });
+      const coverZoom = Math.max(
+        -1.45,
+        map.getBoundsZoom(currentLeafletBounds, true)
+      );
+      map.setView(
+        L.latLng(currentMapDef.defaultCenter.y, currentMapDef.defaultCenter.x),
+        coverZoom,
+        { animate }
+      );
+    }
+
     map.setView(startCenter, startZoom, { animate: false });
+    map.invalidateSize({ animate: false });
+    if (!hasExplicitViewTarget) {
+      fitMapToContainer(false);
+    }
+    requestAnimationFrame(() => {
+      if (container.clientWidth > 0 && container.clientHeight > 0) {
+        if (!hasExplicitViewTarget && !selectedPlaceId && !isJourneyActive) {
+          fitMapToContainer(false);
+        } else {
+          map.invalidateSize({ animate: false });
+        }
+        scheduleMarkerCollisionUpdate();
+      }
+    });
 
     // Planar SVG xarita qatlami (ImageOverlay)
     let currentOverlay = L.imageOverlay(currentMapDef.assetUrl, currentLeafletBounds).addTo(map);
@@ -806,6 +896,7 @@ const mapPlaces = places.map((p) => ({
     const jPane = map.getPane('journeyPane');
     if (jPane) {
       jPane.style.zIndex = '550';
+      jPane.style.pointerEvents = 'none';
     }
     const journeyRenderer = L.svg({ pane: 'journeyPane', padding: 1.0 });
 
@@ -1816,10 +1907,9 @@ const mapPlaces = places.map((p) => ({
       closeInspector(false);
       renderMarkersForRegion(targetRegionId);
 
-      const targetCenter = L.latLng(newMapDef.defaultCenter.y, newMapDef.defaultCenter.x);
-      map.setView(targetCenter, newMapDef.defaultCenter.zoom, { animate: !isReducedMotion });
-
       if (pushHistory) {
+        hasExplicitViewTarget = false;
+        fitMapToContainer(!isReducedMotion);
         const query = serializeAtlasParams({
           hudud: targetRegionId,
           x: newMapDef.defaultCenter.x,
@@ -1827,6 +1917,9 @@ const mapPlaces = places.map((p) => ({
           z: newMapDef.defaultCenter.zoom,
         });
         window.history.pushState({ atlasRegion: targetRegionId }, '', `?${query}`);
+      } else {
+        const targetCenter = L.latLng(newMapDef.defaultCenter.y, newMapDef.defaultCenter.x);
+        map.setView(targetCenter, newMapDef.defaultCenter.zoom, { animate: !isReducedMotion });
       }
 
       announce(`${newMapDef.titleUz} xaritasi yuklandi.`);
@@ -1850,30 +1943,32 @@ const mapPlaces = places.map((p) => ({
 
     // Boshqaruv tugmalari (AtlasControls)
     document.getElementById('btn-zoom-in')?.addEventListener('click', () => {
-      map.zoomIn();
+      const nextZoom = map.getZoom() < -1 ? 0 : Math.round(map.getZoom()) + 1;
+      map.setZoom(Math.min(currentMapDef.maxZoom, nextZoom));
     }, { signal });
 
     document.getElementById('btn-zoom-out')?.addEventListener('click', () => {
-      map.zoomOut();
+      const prevZoom = Math.round(map.getZoom()) - 1;
+      map.setZoom(Math.max(currentMapDef.minZoom, prevZoom));
     }, { signal });
 
     document.getElementById('btn-reset-view')?.addEventListener('click', () => {
-      map.setView(
-        L.latLng(currentMapDef.defaultCenter.y, currentMapDef.defaultCenter.x),
-        currentMapDef.defaultCenter.zoom,
-        { animate: !isReducedMotion }
-      );
+      hasExplicitViewTarget = false;
+      fitMapToContainer(!isReducedMotion);
       closeInspector(true);
     }, { signal });
 
     document.getElementById('btn-focus-shire')?.addEventListener('click', () => {
+      hasExplicitViewTarget = true;
       if (currentMapDef.id !== 'orta-yer') {
         switchMap('orta-yer', false);
       }
       if (isJourneyActive) {
         toggleJourneyMode(false, false);
       }
-      map.setView(L.latLng(1400, 495), 1, { animate: !isReducedMotion });
+      map.stop();
+      map.setView(L.latLng(1400, 495), 1, { animate: false });
+      updateMarkerCollisions();
       closeInspector(false);
       const urlParams = new URLSearchParams(window.location.search);
       urlParams.set('hudud', 'orta-yer');
@@ -2011,12 +2106,28 @@ const mapPlaces = places.map((p) => ({
 
     // ResizeObserver: Oyna o'lchami o'zgarganda oq xarita bo'lib qolishini oldini olish
     let resizeTimer: ReturnType<typeof setTimeout> | null = null;
+    let lastContainerW = container.clientWidth;
+    let lastContainerH = container.clientHeight;
     const resizeObserver = new ResizeObserver(() => {
       if (resizeTimer) clearTimeout(resizeTimer);
       resizeTimer = setTimeout(() => {
         if (container.clientWidth > 0 && container.clientHeight > 0) {
+          const sizeChanged =
+            container.clientWidth !== lastContainerW || container.clientHeight !== lastContainerH;
+          lastContainerW = container.clientWidth;
+          lastContainerH = container.clientHeight;
           placementCache.invalidate();
-          map.invalidateSize({ animate: false });
+          if (
+            sizeChanged &&
+            !hasExplicitViewTarget &&
+            !selectedPlaceId &&
+            !isJourneyActive &&
+            map.getZoom() <= currentMapDef.defaultCenter.zoom
+          ) {
+            fitMapToContainer(false);
+          } else {
+            map.invalidateSize({ animate: false });
+          }
           scheduleMarkerCollisionUpdate();
         }
       }, 100);
@@ -2061,6 +2172,23 @@ const mapPlaces = places.map((p) => ({
       } else if (e.key === 'Home') {
         map.fitBounds(currentLeafletBounds, { animate: !isReducedMotion });
         e.preventDefault();
+      }
+    }, { signal });
+
+    // "Xaritada ko'rish" tugmalari orqali toponimni xaritada darhol fokuslash
+    document.addEventListener('click', (e) => {
+      const target = (e.target as HTMLElement)?.closest<HTMLElement>('.focus-marker-btn, [data-focus-id]');
+      if (!target) return;
+      const placeId = target.getAttribute('data-focus-id');
+      const regionId = target.getAttribute('data-focus-region');
+      if (placeId) {
+        e.preventDefault();
+        if (regionId && regionId !== currentMapDef.id) {
+          switchMap(regionId, false);
+        }
+        selectPlace(placeId, true, true);
+        const mapEl = document.getElementById('atlas-canvas-container');
+        mapEl?.scrollIntoView({ behavior: isReducedMotion ? 'auto' : 'smooth' });
       }
     }, { signal });
 

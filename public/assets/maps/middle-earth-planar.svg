@@ -48,8 +48,8 @@
       .me-label-farthing { font-family: 'IM Fell English', Georgia, serif; font-size: 11px; font-style: italic; letter-spacing: 0.14em; fill: #6a5944; text-anchor: middle; paint-order: stroke fill; stroke: #f7f4ec; stroke-width: 2px; stroke-linejoin: round; opacity: 0.92; }
       .me-shire-boundary { stroke: #8a785d; stroke-width: 0.8; stroke-dasharray: 3, 3; fill: none; opacity: 0.65; }
       .me-shire-hedge { stroke: #3a4c2f; stroke-width: 1.4; stroke-dasharray: 4, 2; fill: none; opacity: 0.82; }
-      .me-border-rim { fill: none; stroke: #261f18; stroke-width: 4; }
-      .me-border-inner { fill: none; stroke: #4a3b2b; stroke-width: 1; }
+      .me-border-rim { fill: none; stroke: none; display: none; }
+      .me-border-inner { fill: none; stroke: none; display: none; }
     </style>
   
     <!-- Reusable Hand-Engraved Cartographic Tree Symbols -->

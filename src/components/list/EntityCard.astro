@@ -1,0 +1,596 @@
+---
+export interface MetaRow {
+  label: string;
+  value?: string | number | null;
+}
+
+export interface SecondaryLink {
+  label: string;
+  href?: string;
+  icon?: string;
+  actionClass?: string;
+  attributes?: Record<string, string>;
+}
+
+export interface Props {
+  id?: string;
+  typeChip?: string;
+  name: string;
+  originalName?: string;
+  excerpt: string;
+  metaRows?: MetaRow[];
+  source?: string;
+  badge?: string;
+  badgeVariant?: 'canonical' | 'variant' | 'apocrypha' | 'info' | 'gold';
+  detailHref: string;
+  detailLabel?: string;
+  secondaryLink?: SecondaryLink;
+  technicalChips?: string[];
+  imageUrl?: string;
+  imageAlt?: string;
+  searchCorpus?: string;
+  dataAttributes?: Record<string, string>;
+  class?: string;
+  layout?: 'vertical' | 'horizontal-desktop';
+}
+
+const {
+  id,
+  typeChip,
+  name,
+  originalName,
+  excerpt,
+  metaRows = [],
+  source,
+  badge,
+  badgeVariant = 'info',
+  detailHref,
+  detailLabel = 'Batafsil',
+  secondaryLink,
+  technicalChips = [],
+  imageUrl,
+  imageAlt = '',
+  searchCorpus,
+  dataAttributes = {},
+  class: className = '',
+  layout = 'vertical',
+} = Astro.props;
+
+// Fixed up to 2 meta rows (pad with placeholder if fewer than 2 requested)
+const normalizedMetaRows: MetaRow[] = metaRows.slice(0, 2);
+---
+
+<article
+  class={`entity-card ${layout === 'horizontal-desktop' ? 'layout-horizontal-desktop' : ''} ${className}`}
+  id={id}
+  data-entity-id={id}
+  data-search-corpus={searchCorpus}
+  {...dataAttributes}
+>
+  {Astro.slots.has('media') ? (
+    <div class="entity-image-wrapper entity-media-slot">
+      <a href={detailHref} class="entity-image-link" tabindex="-1" aria-hidden="true">
+        <slot name="media" />
+      </a>
+    </div>
+  ) : imageUrl ? (
+    <div class="entity-image-wrapper">
+      <a href={detailHref} class="entity-image-link" tabindex="-1" aria-hidden="true">
+        <img
+          src={imageUrl}
+          alt={imageAlt || name}
+          class="entity-image"
+          loading="lazy"
+          decoding="async"
+        />
+      </a>
+    </div>
+  ) : null}
+
+  <div class="entity-card-content">
+    <header class="entity-card-header">
+      <div class="entity-chips-group">
+        {typeChip && <span class="entity-type-chip">{typeChip}</span>}
+        {badge && <span class={`entity-badge badge-${badgeVariant}`}>{badge}</span>}
+      </div>
+
+      {technicalChips.length > 0 && (
+        <div class="entity-tech-chips" aria-label="Texnik parametrlar">
+          {technicalChips.map((chip) => (
+            <span class="tech-chip">{chip}</span>
+          ))}
+        </div>
+      )}
+    </header>
+
+    <div class="entity-title-block">
+      <h3 class="entity-name">
+        <a href={detailHref} class="entity-name-link">{name}</a>
+      </h3>
+      {originalName && (
+        <p class="entity-original-name font-serif" lang="en">
+          <em>{originalName}</em>
+        </p>
+      )}
+    </div>
+
+    <slot name="after-title" />
+
+    <p class="entity-excerpt" title={excerpt}>
+      {excerpt}
+    </p>
+
+    {normalizedMetaRows.length > 0 && (
+      <dl class="entity-meta-rows">
+        {normalizedMetaRows.map((row) => (
+          <div class="entity-meta-row">
+            <dt class="entity-meta-dt">{row.label}:</dt>
+            <dd class="entity-meta-dd">{row.value != null && String(row.value).trim() !== '' ? row.value : '—'}</dd>
+          </div>
+        ))}
+      </dl>
+    )}
+
+    {source && (
+      <p class="entity-source">
+        <span class="source-label">Manba:</span> {source}
+      </p>
+    )}
+
+    <footer class="entity-card-footer">
+      <a href={detailHref} class="entity-primary-btn" aria-label={`${name} haqida batafsil ma'lumot`}>
+        {detailLabel} <span aria-hidden="true">→</span>
+      </a>
+
+      {secondaryLink && (
+        secondaryLink.href ? (
+          <a
+            href={secondaryLink.href}
+            class={`entity-secondary-btn ${secondaryLink.actionClass || ''}`}
+            {...secondaryLink.attributes}
+          >
+            {secondaryLink.icon && <span class="btn-icon" aria-hidden="true" set:html={secondaryLink.icon} />}
+            <span>{secondaryLink.label}</span>
+          </a>
+        ) : (
+          <button
+            type="button"
+            class={`entity-secondary-btn ${secondaryLink.actionClass || ''}`}
+            {...secondaryLink.attributes}
+          >
+            {secondaryLink.icon && <span class="btn-icon" aria-hidden="true" set:html={secondaryLink.icon} />}
+            <span>{secondaryLink.label}</span>
+          </button>
+        )
+      )}
+    </footer>
+  </div>
+</article>
+
+<style>
+  .entity-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-width: 0;
+    max-width: 100%;
+    overflow: hidden;
+    background-color: var(--color-bg-elevated);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 6px;
+    padding: 1.25rem;
+    position: relative;
+    box-sizing: border-box;
+    transition:
+      border-color var(--transition-fast, 0.2s ease),
+      box-shadow var(--transition-fast, 0.2s ease),
+      transform var(--transition-fast, 0.2s ease);
+  }
+
+  .entity-card:hover {
+    border-color: var(--color-border-gold);
+    box-shadow: var(--shadow-md);
+  }
+
+  .entity-card:focus-within {
+    border-color: var(--color-accent-gold);
+  }
+
+  .entity-card-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .entity-image-wrapper {
+    overflow: hidden;
+    min-width: 0;
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    background-color: var(--color-bg-subtle);
+    border: 1px solid var(--color-border-subtle);
+    aspect-ratio: 16 / 9;
+    box-sizing: border-box;
+  }
+
+  .entity-image-link {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .entity-image {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-medium, 0.3s ease);
+  }
+
+  .entity-card:hover .entity-image {
+    transform: scale(1.03);
+  }
+
+  /* Desktopda gorizontal (muqova chapda), mobilda vertikal (muqova tepada) */
+  @media (min-width: 640px) {
+    .entity-card.layout-horizontal-desktop {
+      flex-direction: row;
+      gap: 1.25rem;
+      align-items: stretch;
+    }
+
+    .entity-card.layout-horizontal-desktop .entity-image-wrapper {
+      margin: 0;
+      width: 105px !important;
+      max-width: 105px !important;
+      flex-shrink: 0;
+      border-radius: 4px;
+      align-self: flex-start;
+      aspect-ratio: 2 / 3 !important;
+      border: 1px solid var(--color-border-subtle);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+      background-color: var(--color-bg-base);
+    }
+
+    .entity-card.layout-horizontal-desktop .entity-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      aspect-ratio: 2 / 3;
+    }
+  }
+
+  @media (max-width: 639px) {
+    .entity-card.layout-horizontal-desktop {
+      flex-direction: column;
+    }
+
+    .entity-card.layout-horizontal-desktop .entity-image-wrapper {
+      margin: 0 auto 1rem auto !important;
+      width: 110px !important;
+      max-width: 110px !important;
+      aspect-ratio: 2 / 3 !important;
+      border-radius: 4px;
+      border: 1px solid var(--color-border-subtle);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+    }
+  }
+
+  /* Custom media / portrait slot handling */
+  .entity-image-wrapper.entity-media-slot {
+    aspect-ratio: 3 / 4;
+    height: auto;
+    border-bottom: 1px solid var(--color-border-subtle);
+    display: flex;
+    align-items: stretch;
+  }
+
+  .entity-image-wrapper.entity-media-slot .entity-image-link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .entity-image-wrapper.entity-media-slot :global(.character-portrait-figure) {
+    border: none;
+    border-radius: 0;
+    height: 100%;
+    width: 100%;
+    background: transparent;
+  }
+
+  .entity-image-wrapper.entity-media-slot :global(.portrait-media-wrapper),
+  .entity-image-wrapper.entity-media-slot :global(.portrait-fallback) {
+    height: 100%;
+    width: 100%;
+  }
+
+  @media (min-width: 640px) {
+    .entity-card.layout-horizontal-desktop .entity-image-wrapper.entity-media-slot {
+      width: 110px;
+      height: 155px;
+      aspect-ratio: 3 / 4;
+      border-radius: 4px;
+      border: 1px solid var(--color-border-subtle);
+      overflow: hidden;
+    }
+  }
+
+  .entity-card-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .entity-chips-group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.375rem;
+  }
+
+  .entity-type-chip {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.1875rem 0.5rem;
+    border-radius: 4px;
+    background-color: var(--color-bg-subtle);
+    border: 1px solid var(--color-border-subtle);
+    font-family: var(--font-sans-ui);
+    font-size: 0.6875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--color-accent-gold);
+  }
+
+  .entity-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.1875rem 0.5rem;
+    border-radius: 4px;
+    font-family: var(--font-sans-ui);
+    font-size: 0.6875rem;
+    font-weight: 600;
+  }
+
+  .badge-canonical {
+    background-color: var(--color-forest-subtle);
+    color: var(--color-status-canonical);
+    border: 1px solid var(--color-forest);
+  }
+
+  .badge-variant {
+    background-color: var(--color-accent-gold-subtle);
+    color: var(--color-status-variant);
+    border: 1px solid var(--color-status-variant);
+  }
+
+  .badge-apocrypha {
+    background-color: rgba(123, 62, 62, 0.1);
+    color: var(--color-status-apocrypha);
+    border: 1px solid var(--color-status-apocrypha);
+  }
+
+  .badge-info {
+    background-color: var(--color-bg-subtle);
+    color: var(--color-text-secondary);
+    border: 1px solid var(--color-border-subtle);
+  }
+
+  .badge-gold {
+    background-color: var(--color-accent-gold-subtle);
+    color: var(--color-accent-gold-text);
+    border: 1px solid var(--color-border-gold);
+  }
+
+  .entity-tech-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+  }
+
+  .tech-chip {
+    font-family: var(--font-mono, monospace);
+    font-size: 0.6875rem;
+    color: var(--color-text-muted);
+    background-color: var(--color-bg-base);
+    padding: 0.125rem 0.375rem;
+    border-radius: 3px;
+    border: 1px solid var(--color-border-subtle);
+  }
+
+  .entity-title-block {
+    margin-bottom: 0.625rem;
+  }
+
+  .entity-name {
+    font-family: var(--font-serif-heading);
+    font-size: 1.25rem;
+    line-height: 1.3;
+    margin: 0 0 0.1875rem;
+  }
+
+  .entity-name-link {
+    color: var(--color-text-primary);
+    text-decoration: none;
+    transition: color var(--transition-fast, 0.2s ease);
+  }
+
+  .entity-name-link:hover,
+  .entity-name-link:focus-visible {
+    color: var(--color-link);
+    text-decoration: underline;
+  }
+
+  .entity-name-link:focus-visible {
+    outline: 2px solid var(--color-focus-ring);
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+
+  .entity-original-name {
+    font-size: 0.875rem;
+    font-style: italic;
+    color: var(--color-text-muted);
+    margin: 0;
+    line-height: 1.3;
+  }
+
+  .entity-excerpt {
+    font-family: var(--font-serif-body);
+    font-size: 0.9375rem;
+    line-height: 1.55;
+    color: var(--color-text-secondary);
+    margin: 0 0 0.875rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .entity-meta-rows {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    margin: 0 0 0.75rem;
+    padding: 0.5rem 0;
+    border-top: 1px dashed var(--color-border-subtle);
+    border-bottom: 1px dashed var(--color-border-subtle);
+    font-size: 0.8125rem;
+    font-family: var(--font-sans-ui);
+  }
+
+  .entity-meta-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 0.5rem;
+  }
+
+  .entity-meta-dt {
+    color: var(--color-text-muted);
+    flex-shrink: 0;
+  }
+
+  .entity-meta-dd {
+    color: var(--color-text-primary);
+    font-weight: 500;
+    text-align: right;
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .entity-source {
+    font-size: 0.75rem;
+    font-family: var(--font-sans-ui);
+    color: var(--color-text-muted);
+    margin: 0 0 1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .source-label {
+    font-weight: 600;
+    color: var(--color-text-secondary);
+  }
+
+  .entity-card-footer {
+    margin-top: auto;
+    padding-top: 0.875rem;
+    border-top: 1px solid var(--color-border-subtle);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .entity-primary-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375rem;
+    padding: 0.375rem 0.75rem;
+    background-color: var(--color-bg-base);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 4px;
+    font-family: var(--font-sans-ui);
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: var(--color-link);
+    text-decoration: none;
+    transition:
+      background-color var(--transition-fast, 0.2s ease),
+      border-color var(--transition-fast, 0.2s ease),
+      color var(--transition-fast, 0.2s ease);
+  }
+
+  .entity-primary-btn:hover {
+    background-color: var(--color-accent-gold-subtle);
+    border-color: var(--color-accent-gold);
+    color: var(--color-link-hover);
+  }
+
+  .entity-primary-btn:focus-visible {
+    outline: 2px solid var(--color-focus-ring);
+    outline-offset: 2px;
+  }
+
+  .entity-secondary-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375rem;
+    padding: 0.375rem 0.625rem;
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-family: var(--font-sans-ui);
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--color-text-secondary);
+    text-decoration: none;
+    cursor: pointer;
+    transition:
+      background-color var(--transition-fast, 0.2s ease),
+      color var(--transition-fast, 0.2s ease),
+      border-color var(--transition-fast, 0.2s ease);
+  }
+
+  .entity-secondary-btn:hover {
+    background-color: var(--color-bg-subtle);
+    color: var(--color-text-primary);
+    border-color: var(--color-border-subtle);
+  }
+
+  .entity-secondary-btn:focus-visible {
+    outline: 2px solid var(--color-focus-ring);
+    outline-offset: 2px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .entity-card,
+    .entity-image,
+    .entity-primary-btn,
+    .entity-secondary-btn {
+      transition: none !important;
+      transform: none !important;
+    }
+  }
+</style>

@@ -10,7 +10,11 @@ test.describe('Qahramon Portretlari va Illyustratsiya Tizimi (E2E)', () => {
       const count = await cards.count();
       expect(count).toBeGreaterThanOrEqual(8);
 
-      // Fëanor kartasini tekshirish
+      // Fëanor kartasini tekshirish (Alifbo bo'yicha 'F' harfiga o'tish)
+      const jumpF = page.locator('.jump-letter-btn[data-jump-letter="F"]');
+      if (await jumpF.count() > 0) {
+        await jumpF.click();
+      }
       const feanorCard = page.locator('.character-card[data-character-id="feanor"]');
       await expect(feanorCard).toBeVisible();
 
@@ -30,7 +34,7 @@ test.describe('Qahramon Portretlari va Illyustratsiya Tizimi (E2E)', () => {
     test('Dastlabki kartalarda eager, keyingilarida lazy loading qoʻllanilgan', async ({ page }) => {
       await page.goto('/qahramonlar/');
 
-      const firstCardImg = page.locator('.character-card').first().locator('.portrait-img');
+      const firstCardImg = page.locator('.character-card:has(.portrait-img)').first().locator('.portrait-img');
       const lastCardImg = page.locator('.character-card:has(.portrait-img)').last().locator('.portrait-img');
 
       await expect(firstCardImg).toHaveAttribute('loading', 'eager');

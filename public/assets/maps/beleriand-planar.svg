@@ -39,8 +39,8 @@
       .bel-label-subregion { font-family: 'IM Fell English', Georgia, serif; font-size: 15px; font-style: italic; letter-spacing: 0.12em; fill: #4d3d2c; text-anchor: middle; paint-order: stroke fill; stroke: #f7f4ec; stroke-width: 2.5px; stroke-linejoin: round; }
       .bel-label-water { font-family: Georgia, serif; font-size: 13px; font-style: italic; letter-spacing: 0.08em; fill: #334a57; text-anchor: middle; paint-order: stroke fill; stroke: #f7f4ec; stroke-width: 2.2px; stroke-linejoin: round; }
       .me-forest-floor { fill: #dfd6be; fill-opacity: 0.35; stroke: #6b573e; stroke-width: 0.8; stroke-dasharray: 4, 4; }
-      .bel-border-rim { fill: none; stroke: #261f18; stroke-width: 4; }
-      .bel-border-inner { fill: none; stroke: #4a3b2b; stroke-width: 1; }
+      .bel-border-rim { fill: none; stroke: none; display: none; }
+      .bel-border-inner { fill: none; stroke: none; display: none; }
     </style>
   
     <!-- Reusable Hand-Engraved Cartographic Tree Symbols (pre-blended solid colors for fast rasterization) -->

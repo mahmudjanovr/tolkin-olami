@@ -1,0 +1,798 @@
+---
+export interface FilterOption {
+  id: string;
+  label: string;
+  count?: number;
+  active?: boolean;
+  href?: string;
+}
+
+export interface FilterGroup {
+  id: string;
+  label: string;
+  dataKey: string;
+  options: FilterOption[];
+}
+
+export interface Props {
+  id?: string;
+  searchId?: string;
+  searchPlaceholder?: string;
+  filterGroups?: FilterGroup[];
+  totalCount: number;
+  pageSize?: number;
+  emptyTitle?: string;
+  emptyHint?: string;
+  class?: string;
+}
+
+const {
+  id = 'list-layout',
+  searchId = 'list-search-input',
+  searchPlaceholder = "Qidirish (nomi, tavsifi, kalit so'zlar)...",
+  filterGroups = [],
+  totalCount,
+  pageSize = 24,
+  emptyTitle = 'Mos keluvchi natija topilmadi',
+  emptyHint = "Qidiruv so'zini o'zgartiring yoki filtrlarni tozalang.",
+  class: className = '',
+} = Astro.props;
+---
+
+<div class={`list-layout-container ${className}`} id={id} data-page-size={pageSize}>
+  <!-- Boshqaruv paneli: Qidiruv + Filtrlar + Natijalar hisoblagichi -->
+  <section class="list-toolbar" role="search" aria-label="Katalog boʻyicha qidiruv va filtrlash">
+    <div class="toolbar-search-row">
+      <div class="search-field-wrapper">
+        <svg class="search-icon" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input
+          type="search"
+          id={searchId}
+          class="list-search-input"
+          placeholder={searchPlaceholder}
+          aria-label={searchPlaceholder}
+          autocomplete="off"
+        />
+        <button
+          type="button"
+          class="clear-search-btn"
+          aria-label="Qidiruv matnini tozalash"
+          style="display: none;"
+        >
+          ✕
+        </button>
+      </div>
+
+      <div class="results-live-wrapper">
+        <span class="results-count-announcer" role="status" aria-live="polite">
+          Jami: <strong class="count-value">{totalCount}</strong> ta
+        </span>
+      </div>
+    </div>
+
+    <!-- Filtr guruhlari (1-2 ta guruh; No-JS vaqtida oddiy havola, JS bilan interaktiv chip) -->
+    {filterGroups.length > 0 && (
+      <div class="filter-groups-wrapper">
+        {filterGroups.map((group) => (
+          <div
+            class="filter-chip-group"
+            role="toolbar"
+            aria-label={group.label}
+            data-filter-group={group.id}
+            data-filter-key={group.dataKey}
+          >
+            <span class="filter-group-label">{group.label}:</span>
+            <div class="chip-options-list">
+              {group.options.map((opt, idx) => {
+                const isActive = opt.active ?? (idx === 0);
+                const optHref = opt.href || `?${group.id}=${encodeURIComponent(opt.id)}`;
+                return (
+                  <a
+                    href={optHref}
+                    role="button"
+                    class={`filter-chip ${isActive ? 'is-active' : ''}`}
+                    data-filter-id={opt.id}
+                    data-group-id={group.id}
+                    aria-pressed={isActive ? 'true' : 'false'}
+                  >
+                    <span class="chip-label">{opt.label}</span>
+                    {opt.count != null && (
+                      <span class="chip-count">({opt.count})</span>
+                    )}
+                  </a>
+                );
+              })}
+            </div>
+          </div>
+        ))}
+      </div>
+    )}
+
+    <slot name="extra-controls" />
+  </section>
+
+  <!-- Natija topilmagan holat -->
+  <div class="list-empty-state" style="display: none;" role="status">
+    <div class="empty-state-card">
+      <h3 class="empty-state-title">{emptyTitle}</h3>
+      <p class="empty-state-hint">{emptyHint}</p>
+      <button type="button" class="reset-all-filters-btn">Filtrlarni tozalash</button>
+    </div>
+  </div>
+
+  <!-- Asosiy kartochkalar to'plami / slot -->
+  <div class="list-cards-wrapper">
+    <div class="entity-grid" id={`${id}-grid`}>
+      <slot name="items">
+        <slot />
+      </slot>
+    </div>
+
+    <!-- 24 tadan keyin ko'rinadigan "Yana ko'rsatish" tugmasi -->
+    <div class="pagination-wrapper" style="display: none;">
+      <button
+        type="button"
+        class="load-more-btn"
+        aria-controls={`${id}-grid`}
+      >
+        <span>Yana koʻrsatish</span>
+        <span class="load-more-count">({pageSize} ta)</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<script>
+  function setupListLayout() {
+    const listContainers = document.querySelectorAll<HTMLElement>('.list-layout-container');
+
+    listContainers.forEach((container) => {
+      // Takroriy initdan saqlanish
+      if (container.dataset.initialized === 'true') return;
+      container.dataset.initialized = 'true';
+
+      const pageSize = parseInt(container.dataset.pageSize || '24', 10);
+      const searchInput = container.querySelector<HTMLInputElement>('.list-search-input');
+      const clearSearchBtn = container.querySelector<HTMLButtonElement>('.clear-search-btn');
+      const countEl = container.querySelector<HTMLElement>('.count-value');
+      const emptyState = container.querySelector<HTMLElement>('.list-empty-state');
+      const resetBtn = container.querySelector<HTMLButtonElement>('.reset-all-filters-btn');
+      const grid = container.querySelector<HTMLElement>('.entity-grid');
+      const paginationWrapper = container.querySelector<HTMLElement>('.pagination-wrapper');
+      const loadMoreBtn = container.querySelector<HTMLButtonElement>('.load-more-btn');
+
+      if (!grid) return;
+
+      const items = Array.from(grid.querySelectorAll<HTMLElement>('.entity-card, [data-entity-id]'));
+      if (items.length === 0) return;
+
+      // Hozirgi filtr holati
+      const activeFilters: Record<string, string> = {};
+      let searchQuery = '';
+      let currentVisibleLimit = pageSize;
+
+      // Boshlang'ich URL parametrlarni o'qish
+      const urlParams = new URLSearchParams(window.location.search);
+      container.querySelectorAll<HTMLElement>('.filter-chip-group').forEach((groupEl) => {
+        const groupId = groupEl.dataset.filterGroup;
+        if (!groupId) return;
+        const valFromUrl = urlParams.get(groupId);
+        if (valFromUrl) {
+          activeFilters[groupId] = valFromUrl;
+          groupEl.querySelectorAll<HTMLElement>('.filter-chip').forEach((chip) => {
+            const isMatch = chip.dataset.filterId === valFromUrl;
+            chip.classList.toggle('is-active', isMatch);
+            chip.setAttribute('aria-pressed', isMatch ? 'true' : 'false');
+          });
+        }
+      });
+
+      function applyFilterAndSearch() {
+        let matchingCount = 0;
+        let renderedInPage = 0;
+
+        items.forEach((item) => {
+          let matches = true;
+
+          // 1. Qidiruv bo'yicha solishtirish
+          if (searchQuery) {
+            const corpus = (
+              item.dataset.searchCorpus ||
+              item.textContent ||
+              ''
+            ).toLowerCase();
+            if (!corpus.includes(searchQuery)) {
+              matches = false;
+            }
+          }
+
+          // 2. Filtrlar bo'yicha solishtirish
+          if (matches) {
+            for (const [groupId, selectedVal] of Object.entries(activeFilters)) {
+              if (!selectedVal || selectedVal === 'all') continue;
+
+              const groupEl = container.querySelector<HTMLElement>(`[data-filter-group="${groupId}"]`);
+              const dataKey = groupEl?.dataset.filterKey || groupId;
+              const itemVal = item.dataset[dataKey];
+
+              if (!itemVal) {
+                // Agar atribut bo'lmasa, data-filter-* tekshiramiz
+                const customAttr = item.getAttribute(`data-filter-${dataKey}`) || item.getAttribute(`data-${dataKey}`);
+                if (customAttr !== selectedVal) {
+                  matches = false;
+                  break;
+                }
+              } else if (itemVal !== selectedVal && !itemVal.split(',').map(s => s.trim()).includes(selectedVal)) {
+                matches = false;
+                break;
+              }
+            }
+          }
+
+          if (matches) {
+            matchingCount++;
+            if (matchingCount <= currentVisibleLimit) {
+              item.style.display = '';
+              renderedInPage++;
+            } else {
+              item.style.display = 'none';
+            }
+          } else {
+            item.style.display = 'none';
+          }
+        });
+
+        // Natijalar sonini yangilash
+        if (countEl) {
+          countEl.textContent = String(matchingCount);
+        }
+
+        // Bo'sh holatni ko'rsatish/yashirish
+        if (emptyState) {
+          emptyState.style.display = matchingCount === 0 ? 'block' : 'none';
+        }
+
+        // Pagination / Yana ko'rsatish tugmasini yangilash
+        if (paginationWrapper && loadMoreBtn) {
+          if (matchingCount > renderedInPage) {
+            paginationWrapper.style.display = 'flex';
+            const remaining = matchingCount - renderedInPage;
+            const nextBatch = Math.min(pageSize, remaining);
+            const countSpan = loadMoreBtn.querySelector('.load-more-count');
+            if (countSpan) countSpan.textContent = `(${nextBatch} ta)`;
+          } else {
+            paginationWrapper.style.display = 'none';
+          }
+        }
+      }
+
+      // Qidiruv input hodisasi
+      if (searchInput) {
+        searchInput.addEventListener('input', () => {
+          searchQuery = searchInput.value.trim().toLowerCase();
+          if (clearSearchBtn) {
+            clearSearchBtn.style.display = searchQuery ? 'inline-flex' : 'none';
+          }
+          currentVisibleLimit = pageSize;
+          applyFilterAndSearch();
+        });
+      }
+
+      if (clearSearchBtn && searchInput) {
+        clearSearchBtn.addEventListener('click', () => {
+          searchInput.value = '';
+          searchQuery = '';
+          clearSearchBtn.style.display = 'none';
+          currentVisibleLimit = pageSize;
+          applyFilterAndSearch();
+          searchInput.focus();
+        });
+      }
+
+      // Chip bosilganda (JS bilan URL parametrlarni yangilash va sahifani qayta yuklamasdan filtrlash)
+      container.querySelectorAll<HTMLAnchorElement>('.filter-chip').forEach((chip) => {
+        chip.addEventListener('click', (e) => {
+          e.preventDefault();
+          const groupId = chip.dataset.groupId;
+          const filterId = chip.dataset.filterId;
+          if (!groupId || !filterId) return;
+
+          activeFilters[groupId] = filterId;
+
+          // Guruhdagi boshqa chiplardan faol sinfni olib tashlash
+          const groupEl = chip.closest('.filter-chip-group');
+          groupEl?.querySelectorAll('.filter-chip').forEach((c) => {
+            const isTarget = c === chip;
+            c.classList.toggle('is-active', isTarget);
+            c.setAttribute('aria-pressed', isTarget ? 'true' : 'false');
+          });
+
+          // URL ni sinxronlashtirish
+          const newUrl = new URL(window.location.href);
+          if (filterId === 'all') {
+            newUrl.searchParams.delete(groupId);
+          } else {
+            newUrl.searchParams.set(groupId, filterId);
+          }
+          window.history.replaceState(null, '', newUrl.toString());
+
+          currentVisibleLimit = pageSize;
+          applyFilterAndSearch();
+        });
+      });
+
+      // Yana ko'rsatish tugmasi
+      if (loadMoreBtn) {
+        loadMoreBtn.addEventListener('click', () => {
+          currentVisibleLimit += pageSize;
+          applyFilterAndSearch();
+        });
+      }
+
+      // Filtrlarni tozalash tugmasi
+      if (resetBtn) {
+        resetBtn.addEventListener('click', () => {
+          if (searchInput) {
+            searchInput.value = '';
+            searchQuery = '';
+          }
+          if (clearSearchBtn) clearSearchBtn.style.display = 'none';
+
+          for (const key of Object.keys(activeFilters)) {
+            delete activeFilters[key];
+          }
+
+          container.querySelectorAll<HTMLElement>('.filter-chip-group').forEach((groupEl) => {
+            const chips = groupEl.querySelectorAll<HTMLElement>('.filter-chip');
+            chips.forEach((c, idx) => {
+              const isFirst = idx === 0;
+              c.classList.toggle('is-active', isFirst);
+              c.setAttribute('aria-pressed', isFirst ? 'true' : 'false');
+            });
+          });
+
+          const newUrl = new URL(window.location.href);
+          container.querySelectorAll<HTMLElement>('.filter-chip-group').forEach((groupEl) => {
+            const gid = groupEl.dataset.filterGroup;
+            if (gid) newUrl.searchParams.delete(gid);
+          });
+          window.history.replaceState(null, '', newUrl.toString());
+
+          currentVisibleLimit = pageSize;
+          applyFilterAndSearch();
+        });
+      }
+
+      // Dastlabki paginatsiya va filtrlarni qo'llash
+      applyFilterAndSearch();
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', setupListLayout, { once: true });
+  } else {
+    setupListLayout();
+  }
+
+  // Astro page swaps / view transitions qo'llab-quvvatlash
+  document.addEventListener('astro:page-load', setupListLayout);
+</script>
+
+<style>
+  .list-layout-container {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  /* Boshqaruv paneli */
+  .list-toolbar {
+    background-color: var(--color-bg-elevated);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 6px;
+    padding: 1rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.875rem;
+    box-shadow: var(--shadow-sm);
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .toolbar-search-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+  }
+
+  .search-field-wrapper {
+    position: relative;
+    flex: 1 1 auto;
+    min-width: 0;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .search-icon {
+    position: absolute;
+    left: 0.875rem;
+    color: var(--color-text-muted);
+    pointer-events: none;
+  }
+
+  .list-search-input {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+    height: 42px;
+    padding: 0.5rem 2.25rem 0.5rem 2.5rem;
+    background-color: var(--color-bg-base);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 4px;
+    font-family: var(--font-sans-ui);
+    font-size: 0.9375rem;
+    color: var(--color-text-primary);
+    transition:
+      border-color var(--transition-fast, 0.2s ease),
+      box-shadow var(--transition-fast, 0.2s ease);
+    outline: none;
+  }
+
+  .list-search-input:focus {
+    border-color: var(--color-accent-gold);
+    box-shadow: 0 0 0 2px var(--color-accent-gold-subtle);
+  }
+
+  .list-search-input:focus-visible {
+    outline: 2px solid var(--color-focus-ring);
+    outline-offset: 1px;
+  }
+
+  .clear-search-btn {
+    position: absolute;
+    right: 0.75rem;
+    background: transparent;
+    border: none;
+    color: var(--color-text-muted);
+    cursor: pointer;
+    font-size: 0.875rem;
+    padding: 0.25rem;
+    border-radius: 3px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .clear-search-btn:hover {
+    color: var(--color-text-primary);
+  }
+
+  .results-live-wrapper {
+    font-family: var(--font-sans-ui);
+    font-size: 0.875rem;
+    color: var(--color-text-secondary);
+    white-space: nowrap;
+    padding-inline: 0.25rem;
+    flex-shrink: 0;
+  }
+
+  .count-value {
+    color: var(--color-text-primary);
+    font-weight: 700;
+  }
+
+  .filter-groups-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+    padding-top: 0.625rem;
+    border-top: 1px solid var(--color-border-subtle);
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .filter-chip-group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+  }
+
+  .filter-group-label {
+    font-family: var(--font-sans-ui);
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-muted);
+    min-width: 60px;
+    flex-shrink: 0;
+  }
+
+  .chip-options-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.375rem;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+  }
+
+  @media (max-width: 640px) {
+    .list-toolbar {
+      padding: 0.75rem 0.875rem;
+    }
+
+    .toolbar-search-row {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0.5rem;
+    }
+
+    .results-live-wrapper {
+      text-align: right;
+    }
+
+    .filter-chip-group {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.375rem;
+    }
+
+    .filter-group-label {
+      width: 100%;
+    }
+
+    .chip-options-list {
+      width: 100%;
+    }
+  }
+
+  .filter-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3125rem;
+    padding: 0.3125rem 0.6875rem;
+    border-radius: 4px;
+    background-color: var(--color-bg-base);
+    border: 1px solid var(--color-border-subtle);
+    font-family: var(--font-sans-ui);
+    font-size: 0.8125rem;
+    font-weight: 500;
+    color: var(--color-text-secondary);
+    text-decoration: none;
+    cursor: pointer;
+    transition:
+      background-color var(--transition-fast, 0.2s ease),
+      border-color var(--transition-fast, 0.2s ease),
+      color var(--transition-fast, 0.2s ease);
+    outline: none;
+  }
+
+  .filter-chip:hover {
+    border-color: var(--color-accent-gold);
+    color: var(--color-text-primary);
+  }
+
+  .filter-chip:focus-visible {
+    outline: 2px solid var(--color-focus-ring);
+    outline-offset: 2px;
+  }
+
+  .filter-chip.is-active,
+  .filter-chip[aria-pressed="true"] {
+    background-color: var(--color-accent-gold);
+    border-color: var(--color-accent-gold);
+    color: #ffffff;
+    font-weight: 600;
+  }
+
+  [data-theme="night"] .filter-chip.is-active,
+  [data-theme="night"] .filter-chip[aria-pressed="true"] {
+    background-color: var(--color-accent-gold);
+    color: #12100e;
+  }
+
+  .chip-count {
+    font-size: 0.6875rem;
+    opacity: 0.85;
+  }
+
+  /* Natija topilmagan holat */
+  .list-empty-state {
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  .empty-state-card {
+    background-color: var(--color-bg-elevated);
+    border: 1px dashed var(--color-border-subtle);
+    border-radius: 6px;
+    padding: 2.5rem 1.5rem;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
+  .empty-state-title {
+    font-family: var(--font-serif-heading);
+    font-size: 1.25rem;
+    color: var(--color-text-primary);
+    margin: 0 0 0.5rem;
+  }
+
+  .empty-state-hint {
+    font-family: var(--font-serif-body);
+    font-size: 0.9375rem;
+    color: var(--color-text-secondary);
+    margin: 0 0 1.25rem;
+    line-height: 1.5;
+  }
+
+  .reset-all-filters-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5rem 1.125rem;
+    background-color: var(--color-bg-base);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 4px;
+    font-family: var(--font-sans-ui);
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: var(--color-accent-gold);
+    cursor: pointer;
+    transition: all var(--transition-fast, 0.2s ease);
+  }
+
+  .reset-all-filters-btn:hover {
+    background-color: var(--color-accent-gold-subtle);
+    border-color: var(--color-accent-gold);
+  }
+
+  .reset-all-filters-btn:focus-visible {
+    outline: 2px solid var(--color-focus-ring);
+    outline-offset: 2px;
+  }
+
+  /* Kartochkalar to'plami */
+  .list-cards-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    min-width: 0;
+  }
+
+  .entity-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr));
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  @media (max-width: 640px) {
+    .entity-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  :global(.list-items-grid) {
+    display: contents !important;
+  }
+
+  /* Equal height card grid support and flex/grid item containment */
+  :global(.entity-grid > *) {
+    height: 100%;
+    min-width: 0 !important;
+    max-width: 100% !important;
+  }
+
+  :global(.entity-card) {
+    min-width: 0 !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Paginatsiya / Yana ko'rsatish */
+  .pagination-wrapper {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+
+  .load-more-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.625rem 1.5rem;
+    background-color: var(--color-bg-elevated);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 6px;
+    font-family: var(--font-sans-ui);
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: var(--color-text-primary);
+    cursor: pointer;
+    box-shadow: var(--shadow-sm);
+    transition:
+      background-color var(--transition-fast, 0.2s ease),
+      border-color var(--transition-fast, 0.2s ease),
+      box-shadow var(--transition-fast, 0.2s ease),
+      transform var(--transition-fast, 0.2s ease);
+  }
+
+  .load-more-btn:hover {
+    border-color: var(--color-accent-gold);
+    background-color: var(--color-accent-gold-subtle);
+    box-shadow: var(--shadow-md);
+  }
+
+  .load-more-btn:focus-visible {
+    outline: 2px solid var(--color-focus-ring);
+    outline-offset: 2px;
+  }
+
+  .load-more-count {
+    color: var(--color-text-muted);
+    font-size: 0.8125rem;
+  }
+
+  /* Mobil ekranlar uchun moslashuvchanlik */
+  @media (max-width: 768px) {
+    .list-toolbar {
+      padding: 0.875rem 1rem;
+    }
+
+    .entity-grid {
+      gap: 1rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .toolbar-search-row {
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    .results-live-wrapper {
+      text-align: right;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .filter-chip,
+    .load-more-btn,
+    .reset-all-filters-btn {
+      transition: none !important;
+      transform: none !important;
+    }
+  }
+</style>

@@ -1,669 +1,621 @@
 ---
 import { getCollection } from 'astro:content';
-import EditorialLayout from '@/layouts/EditorialLayout.astro';
-import ProvenanceBadge from '@/components/editorial/ProvenanceBadge.astro';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Breadcrumbs from '@/components/editorial/Breadcrumbs.astro';
 import CharacterPortrait from '@/components/character/CharacterPortrait.astro';
-
+import ListLayout, { type FilterGroup } from '@/components/list/ListLayout.astro';
+import EntityCard, { type MetaRow } from '@/components/list/EntityCard.astro';
 import { CHARACTER_PORTRAITS } from '@/data/character-portraits';
-
-const canonicalPortraitIds = Object.keys(CHARACTER_PORTRAITS);
-const allCharacters = await getCollection('characters');
-const characters = allCharacters.sort((a, b) => {
-  const aId = a.data.id || a.id;
-  const bId = b.data.id || b.id;
-  const aIdx = canonicalPortraitIds.indexOf(aId);
-  const bIdx = canonicalPortraitIds.indexOf(bId);
-  if (aIdx !== -1 && bIdx !== -1) {
-    return aIdx - bIdx;
-  }
-  if (aIdx !== -1) return -1;
-  if (bIdx !== -1) return 1;
-  return a.data.name.localeCompare(b.data.name, 'uz');
-});
 
 const breadcrumbs = [
   { label: 'Qahramonlar' },
 ];
 
-const totalCount = characters.length;
-const elvesCount = characters.filter((c) => c.data.race === 'elflar').length;
-const menCount = characters.filter((c) => c.data.race === 'insonlar').length;
-const ainurCount = characters.filter((c) => c.data.race === 'ainur').length;
-const dwarvesCount = characters.filter((c) => c.data.race === 'mitti-odamlar').length;
-const hobbitsCount = characters.filter((c) => c.data.race === 'xobbitlar').length;
-const othersCount = characters.filter(
-  (c) => c.data.race === 'boshqa'
-).length;
+const allCharacters = await getCollection('characters');
 
-const raceFilters = [
-  { id: 'all', label: 'Barchasi', count: totalCount },
-  { id: 'elflar', label: 'Elflar', count: elvesCount },
-  { id: 'insonlar', label: 'Insonlar', count: menCount },
-  { id: 'ainur', label: 'Ainur (Valar va Maiar)', count: ainurCount },
-  { id: 'mitti-odamlar', label: 'Mittilar', count: dwarvesCount },
-  { id: 'xobbitlar', label: 'Xobbitlar', count: hobbitsCount },
-  { id: 'other', label: 'Ajdarlar va Boshqa', count: othersCount },
+// Sort alphabetically by name
+allCharacters.sort((a, b) => a.data.name.localeCompare(b.data.name, 'uz'));
+
+const totalCount = allCharacters.length;
+const elvesCount = allCharacters.filter((c) => c.data.race === 'elflar').length;
+const menCount = allCharacters.filter((c) => c.data.race === 'insonlar').length;
+const ainurCount = allCharacters.filter((c) => c.data.race === 'ainur').length;
+const dwarvesCount = allCharacters.filter((c) => c.data.race === 'mitti-odamlar').length;
+const hobbitsCount = allCharacters.filter((c) => c.data.race === 'xobbitlar').length;
+const othersCount = allCharacters.filter((c) => c.data.race === 'boshqa').length;
+
+const withPortraitCount = allCharacters.filter((c) => {
+  const charId = c.data.id || c.id;
+  return !!CHARACTER_PORTRAITS[charId];
+}).length;
+
+function getCharacterEra(birthYear?: string): string {
+  const b = (birthYear || '').toLowerCase();
+  if (b.includes('birinchi') || b.includes('b.d.') || b.includes('daraxtlar') || b.includes('yulduzlar') || b.includes('zamon') || b.includes('avval') || b.includes('kuy')) {
+    return 'birinchi_davr';
+  }
+  if (b.includes('ikkinchi') || b.includes('i.d.')) {
+    return 'ikkinchi_davr';
+  }
+  if (b.includes('uchinchi') || b.includes('u.d.') || b.includes('shir') || b.includes('toʻrtinchi')) {
+    return 'uchinchi_davr';
+  }
+  return 'birinchi_davr';
+}
+
+const firstEraCount = allCharacters.filter((c) => getCharacterEra(c.data.birth_year) === 'birinchi_davr').length;
+const secondEraCount = allCharacters.filter((c) => getCharacterEra(c.data.birth_year) === 'ikkinchi_davr').length;
+const thirdEraCount = allCharacters.filter((c) => getCharacterEra(c.data.birth_year) === 'uchinchi_davr').length;
+
+const raceLabels: Record<string, string> = {
+  elflar: 'Elflar',
+  insonlar: 'Insonlar',
+  ainur: 'Ainur',
+  'mitti-odamlar': 'Mittilar',
+  xobbitlar: 'Xobbitlar',
+  boshqa: 'Ajdarlar va Boshqa',
+};
+
+const houseLabels: Record<string, string> = {
+  'finwe-xonadoni': 'Finwë Xonadoni (Noldor)',
+  'edain-va-yarim-elflar': 'Edain va Yarim-Elflar',
+  'elros-va-gondor-shohlari': 'Gondor Shohlari',
+  'rohan-shohlari': 'Rohan Shohlari',
+  'durin-avlodlari': 'Durin Avlodlari',
+  'shayr-xonadonlari': 'Shayr Xonadonlari',
+};
+
+function getOneSentenceExcerpt(text: string): string {
+  if (!text) return '';
+  const match = text.match(/[^.!?]+[.!?]+/);
+  return match ? match[0].trim() : text.trim();
+}
+
+function getInitialLetter(name: string): string {
+  const clean = (name || '').trim();
+  const first = clean.charAt(0).toUpperCase();
+  return first.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+}
+
+const ALPHABET = [
+  'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J',
+  'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T',
+  'U', 'V', 'X', 'Y', 'Z'
 ];
 
-const houseOptions = [
-  { id: 'all', label: 'Barcha sulolalar' },
-  { id: 'finwe-xonadoni', label: 'Finwë Xonadoni (Noldor)' },
-  { id: 'edain-va-yarim-elflar', label: 'Edain va Yarim-Elflar (Peredhil)' },
-  { id: 'elros-va-gondor-shohlari', label: 'Elros va Gondor Shohlari' },
-  { id: 'rohan-shohlari', label: 'Rohan Shohlari (Eorl Xonadoni)' },
-  { id: 'durin-avlodlari', label: 'Durin Avlodlari (Khazad-dûm)' },
-  { id: 'shayr-xonadonlari', label: 'Shayr Xonadonlari (Xobbitlar)' },
-];
+const availableLetters = new Set(allCharacters.map((c) => getInitialLetter(c.data.name)));
 
-const statusOptions = [
-  { id: 'all', label: 'Barcha matn maqomlari' },
-  { id: 'author_published', label: 'Muallif nashri (Primary Canon)' },
-  { id: 'posthumous_edited', label: 'Vafotidan keyingi tahrir' },
-  { id: 'disputed_variant', label: 'Munozarali / Qoralama variant' },
+const filterGroups: FilterGroup[] = [
+  {
+    id: 'xalq',
+    label: 'Xalq va Irq',
+    dataKey: 'xalq',
+    options: [
+      { id: 'all', label: 'Barchasi', count: totalCount },
+      { id: 'elflar', label: 'Elflar', count: elvesCount },
+      { id: 'insonlar', label: 'Insonlar', count: menCount },
+      { id: 'mitti-odamlar', label: 'Mittilar', count: dwarvesCount },
+      { id: 'xobbitlar', label: 'Xobbitlar', count: hobbitsCount },
+      { id: 'ainur', label: 'Ainur', count: ainurCount },
+    ],
+  },
+  {
+    id: 'davr',
+    label: 'Davr va Xususiyat',
+    dataKey: 'davr',
+    options: [
+      { id: 'all', label: 'Barchasi' },
+      { id: 'portret_bor', label: '🎨 Portreti bor', count: withPortraitCount },
+      { id: 'birinchi_davr', label: 'Birinchi davr', count: firstEraCount },
+      { id: 'ikkinchi_davr', label: 'Ikkinchi davr', count: secondEraCount },
+      { id: 'uchinchi_davr', label: 'Uchinchi davr', count: thirdEraCount },
+    ],
+  },
 ];
 ---
 
-<EditorialLayout
+<BaseLayout
   title="Qahramonlar va Tarixiy Shaxslar"
-  category="Ensiklopediya Katalogi"
-  description="Arda olamidagi Ainur, Elflar, Insonlar, Mitti-odamlar, Xobbitlar va boshqa xalqlar namoyandalari tahliliy biografiyalari."
-  breadcrumbs={breadcrumbs}
+  description="Arda olamidagi Ainur, Elflar, Insonlar, Mittilar, Xobbitlar va boshqa xalqlar namoyandalari tahliliy biografiyalari."
+  type="article"
 >
-  <div class="catalog-overview">
-    <p class="catalog-intro">
-      Ushbu boʻlimda J.R.R. Tolkien asarlaridagi har bir qahramonning kelib chiqishi, filologik nomlanishi,
-      sulolaviy shajarasi, matn tarixi hamda birlamchi manbalarga asoslangan tarjimayi holi jamlangan.
-    </p>
+  <div class="qahramonlar-page-container container">
+    <Breadcrumbs items={breadcrumbs} />
 
-    <!-- Interaktiv Prosopografik Filtrlar Paneli -->
-    <section class="prosopography-controls" role="search" aria-label="Qahramonlarni qidirish va saralash">
-      <div class="controls-top-row">
-        <div class="char-search-wrap">
-          <input
-            type="search"
-            id="char-search-input"
-            class="char-search-input"
-            placeholder="Qahramon ismi, asl nomi, unvoni yoki madaniyati..."
-            aria-label="Qahramonlar boʻyicha qidirish"
-            autocomplete="off"
-          />
-        </div>
-        <div class="select-filters-row">
-          <label class="visually-hidden" for="char-house-select">Sulola boʻyicha saralash</label>
-          <select id="char-house-select" class="char-filter-select">
-            {houseOptions.map((h) => (
-              <option value={h.id}>{h.label}</option>
-            ))}
-          </select>
+    <header class="qahramonlar-header">
+      <span class="qahramonlar-category-badge">Ensiklopediya Katalogi</span>
+      <h1 class="qahramonlar-title" data-pagefind-meta="title">Qahramonlar va Tarixiy Shaxslar</h1>
+      <p class="qahramonlar-lead">
+        Ushbu boʻlimda J.R.R. Tolkien asarlaridagi har bir qahramonning kelib chiqishi, filologik nomlanishi,
+        sulolaviy shajarasi, matn tarixi hamda birlamchi manbalarga asoslangan tarjimayi holi jamlangan.
+      </p>
+    </header>
 
-          <label class="visually-hidden" for="char-status-select">Matn maqomi boʻyicha saralash</label>
-          <select id="char-status-select" class="char-filter-select">
-            {statusOptions.map((s) => (
-              <option value={s.id}>{s.label}</option>
-            ))}
-          </select>
-        </div>
-      </div>
-
-      <div class="race-chips-row" role="toolbar" aria-label="Irq va toifa boʻyicha saralash">
-        {raceFilters.map((r, idx) => (
-          <button
-            type="button"
-            class={`race-chip ${idx === 0 ? 'is-active' : ''}`}
-            data-race-filter={r.id}
-            aria-pressed={idx === 0 ? 'true' : 'false'}
-          >
-            <span>{r.label}</span>
-            <span class="chip-num">{r.count}</span>
+    <!-- Alifbo bo'yicha tez o'tish paneli (Alphabetical Jump Bar A-Z) -->
+    <nav class="alphabet-jump-bar" aria-label="Alifbo boʻyicha tez oʻtish">
+      <div class="jump-bar-inner">
+        <span class="jump-bar-label">Alifbo:</span>
+        <div class="jump-letters-list">
+          <button type="button" class="jump-letter-btn is-active" data-jump-letter="all" aria-pressed="true">
+            Barchasi
           </button>
-        ))}
+          {ALPHABET.map((char) => {
+            const hasEntries = availableLetters.has(char);
+            return (
+              <button
+                type="button"
+                class={`jump-letter-btn ${!hasEntries ? 'is-disabled' : ''}`}
+                data-jump-letter={char}
+                disabled={!hasEntries}
+                aria-pressed="false"
+                aria-label={`'${char}' harfi bilan boshlanuvchi qahramonlar`}
+              >
+                {char}
+              </button>
+            );
+          })}
+        </div>
       </div>
+    </nav>
 
-      <div class="filter-status-bar">
-        <span id="char-results-count" class="char-results-count" role="status" aria-live="polite">
-          Jami: <strong>{totalCount}</strong> ta shaxs
-        </span>
-        <button type="button" id="char-reset-btn" class="char-reset-btn" style="display: none;">
-          Filtrlarni tozalash ✕
-        </button>
-      </div>
-    </section>
+    <!-- Katalog: ListLayout va EntityCard Grid (24 per page) -->
+    <section class="qahramonlar-catalogue" id="qahramonlar-katalog" aria-label="Qahramonlar katalogi">
+      <ListLayout
+        id="characters-list"
+        searchId="char-search-input"
+        searchPlaceholder="Qahramon ismi, asl nomi, unvoni yoki madaniyati..."
+        filterGroups={filterGroups}
+        totalCount={totalCount}
+        pageSize={24}
+        emptyTitle="Mos keluvchi qahramon topilmadi"
+        emptyHint="Qidiruv soʻzini oʻzgartiring yoki filtrlarni tozalang."
+      >
+        {
+          (() => {
+            let portraitCount = 0;
+            return allCharacters.map((char) => {
+              const charId = char.data.id || char.id;
+              const hasPortrait = !!CHARACTER_PORTRAITS[charId];
+              const isEager = hasPortrait && portraitCount < 4;
+              if (hasPortrait) portraitCount++;
+              const eraKey = getCharacterEra(char.data.birth_year);
+              const initialLetter = getInitialLetter(char.data.name);
 
-    <div id="char-empty-state" class="char-empty-state" style="display: none;">
-      <p class="empty-title">Tanlangan mezonlarga mos qahramon topilmadi</p>
-      <p class="empty-desc">Qidiruv soʻzini oʻzgartiring yoki barcha filtrlarni qayta tiklang.</p>
-      <button type="button" id="char-empty-reset-btn" class="empty-reset-btn">Barcha qahramonlarni koʻrsatish</button>
-    </div>
+              const metaRows: MetaRow[] = [
+                { label: 'Unvoni', value: char.data.titles?.[0] || '—' },
+                {
+                  label: 'Sulolasi',
+                  value: char.data.house_id ? (houseLabels[char.data.house_id] || char.data.house_id) : (char.data.culture || '—'),
+                },
+              ];
 
-    <div class="characters-grid" id="characters-grid">
-      {
-        characters.map((char, index) => {
-          const charId = char.data.id || char.id;
-          const searchStr = [
-            char.data.name,
-            char.data.original_name,
-            char.data.culture || '',
-            char.data.sub_race || '',
-            ...(char.data.titles || []).slice(0, 2),
-          ]
-            .join(' ')
-            .toLowerCase();
+              const searchStr = [
+                char.data.name,
+                char.data.original_name,
+                char.data.culture || '',
+                char.data.sub_race || '',
+                ...(char.data.titles || []),
+                ...(char.data.aliases || []),
+                char.data.summary,
+              ].join(' ').toLowerCase();
 
-          return (
-            <article
-              class="character-card"
-              data-character-id={charId}
-              data-race={char.data.race}
-              data-house={char.data.house_id || ''}
-              data-status={char.data.textual_status}
-              data-search={searchStr}
-            >
-              <div class="card-portrait-col">
-                <a
-                  href={`/qahramonlar/${charId}/`}
-                  class="card-portrait-link"
-                  tabindex="-1"
-                  aria-hidden="true"
+              const sourceStr = char.data.culture
+                ? `${char.data.culture} (Kanonik legendarium)`
+                : 'Kanonik legendarium';
+
+              return (
+                <EntityCard
+                  id={charId}
+                  name={char.data.name}
+                  originalName={char.data.original_name}
+                  typeChip={raceLabels[char.data.race] || char.data.race}
+                  badge={hasPortrait ? '🎨 Portreti bor' : undefined}
+                  badgeVariant="gold"
+                  excerpt={getOneSentenceExcerpt(char.data.summary)}
+                  metaRows={metaRows}
+                  source={sourceStr}
+                  detailHref={`/qahramonlar/${charId}/`}
+                  detailLabel="Batafsil"
+                  layout="horizontal-desktop"
+                  class="character-card character-entity-card"
+                  searchCorpus={searchStr}
+                  dataAttributes={{
+                    'data-character-id': charId,
+                    'data-xalq': char.data.race,
+                    'data-davr': `${hasPortrait ? 'portret_bor,' : ''}${eraKey}`,
+                    'data-letter': initialLetter,
+                  }}
                 >
                   <CharacterPortrait
+                    slot="media"
                     characterId={charId}
                     name={char.data.name}
                     size="directory"
-                    priority={index < 4}
+                    priority={isEager}
                   />
-                </a>
-              </div>
-              <div class="card-body-col">
-                <div class="card-header">
-                  <span class="card-race">{char.data.race}</span>
-                  <ProvenanceBadge status={char.data.textual_status} />
-                </div>
-                <h2 class="card-title">
-                  <a href={`/qahramonlar/${charId}/`}>
-                    {char.data.name}
-                  </a>
-                </h2>
-                <p class="card-alias">Asl ismi: <em>{char.data.original_name}</em></p>
-                <p class="card-summary">{char.data.summary}</p>
-                <div class="card-footer">
-                  <a href={`/qahramonlar/${charId}/`} class="card-link">
-                    Toʻliq maqolani oʻqish →
-                  </a>
-                </div>
-              </div>
-            </article>
-          );
-        })
-      }
-    </div>
+                </EntityCard>
+              );
+            });
+          })()
+        }
+      </ListLayout>
+    </section>
+
+    <!-- Prosopografik Koʻrsatkich va Boʻlim Standarti (Collapsed details) -->
+    <details class="scholarly-details">
+      <summary class="scholarly-details-summary">
+        <span class="summary-left">
+          <span class="summary-icon" aria-hidden="true">📜</span>
+          <span class="summary-title">Prosopografik Koʻrsatkich va Boʻlim Standarti</span>
+        </span>
+        <span class="summary-badge">{totalCount} ta shaxs</span>
+      </summary>
+
+      <div class="scholarly-details-content">
+        <div class="scholarly-details-grid">
+          <div class="details-card">
+            <h3 class="details-heading">Prosopografik Koʻrsatkich</h3>
+            <ul class="stats-list">
+              <li>Jami biografiyalar: <strong>{totalCount} ta</strong></li>
+              <li>Elflar (Eldar): <strong>{elvesCount} ta</strong></li>
+              <li>Insonlar (Atani): <strong>{menCount} ta</strong></li>
+              <li>Ainur (Valar va Maiar): <strong>{ainurCount} ta</strong></li>
+              <li>Mittilar (Khazâd): <strong>{dwarvesCount} ta</strong></li>
+              <li>Xobbitlar (Periannath): <strong>{hobbitsCount} ta</strong></li>
+              <li>Ajdarlar va boshqa: <strong>{othersCount} ta</strong></li>
+            </ul>
+          </div>
+
+          <div class="details-card">
+            <h3 class="details-heading">Matnshunoslik Standarti</h3>
+            <p class="details-text">
+              Har bir qahramon kartasi kamida bitta Oksford iqtibosiga ega boʻlishi va matn maqomi (author_published, posthumous_edited yoki disputed_variant) bilan belgilanishi shart.
+            </p>
+          </div>
+
+          <div class="details-card">
+            <h3 class="details-heading">Portretlar va Monogrammalar</h3>
+            <p class="details-text">
+              Kanonik tasdiqlangan portreti mavjud boʻlmagan tarixiy shaxslar uchun filologik sulolaviy monogramma avtomatik shakllantiriladi.
+            </p>
+          </div>
+        </div>
+      </div>
+    </details>
   </div>
+</BaseLayout>
 
-  <div slot="margin" class="catalog-sidebar">
-    <div class="margin-card">
-      <h3 class="margin-title">Prosopografik Koʻrsatkich</h3>
-      <ul class="stats-list">
-        <li>Jami biografiyalar: <strong>{totalCount} ta</strong></li>
-        <li>Elflar (Eldar): <strong>{elvesCount} ta</strong></li>
-        <li>Insonlar (Atani): <strong>{menCount} ta</strong></li>
-        <li>Ainur (Valar va Maiar): <strong>{ainurCount} ta</strong></li>
-        <li>Mittilar (Khazâd): <strong>{dwarvesCount} ta</strong></li>
-        <li>Xobbitlar (Periannath): <strong>{hobbitsCount} ta</strong></li>
-        <li>Ajdarlar va boshqa: <strong>{othersCount} ta</strong></li>
-      </ul>
-    </div>
+<script is:inline>
+  document.addEventListener('DOMContentLoaded', () => {
+    const jumpButtons = document.querySelectorAll('.jump-letter-btn');
+    const container = document.getElementById('characters-list');
+    if (!container) return;
 
-    <div class="margin-card">
-      <h3 class="margin-title">Boʻlim Standarti</h3>
-      <p>
-        Har bir qahramon kartasi kamida bitta Oksford iqtibosiga ega boʻlishi va matn maqomi (author_published, posthumous_edited yoki disputed_variant) bilan belgilanishi shart.
-      </p>
-    </div>
-  </div>
-</EditorialLayout>
+    let activeLetter = 'all';
 
-<script>
-  function normalizeFold(str: string): string {
-    return (str || '')
-      .toLowerCase()
-      .normalize('NFD')
-      .replace(/[\u0300-\u036f]/g, '')
-      .replace(/[ʻʼ'’`]/g, '');
-  }
+    function applyLetterFilter() {
+      const items = container.querySelectorAll('.entity-card');
+      const searchInput = container.querySelector('.list-search-input');
+      const currentQuery = searchInput ? searchInput.value.trim().toLowerCase() : '';
 
-  function initCharacterDirectory() {
-    const searchInput = document.getElementById('char-search-input') as HTMLInputElement | null;
-    const houseSelect = document.getElementById('char-house-select') as HTMLSelectElement | null;
-    const statusSelect = document.getElementById('char-status-select') as HTMLSelectElement | null;
-    const raceButtons = document.querySelectorAll<HTMLButtonElement>('[data-race-filter]');
-    const cards = document.querySelectorAll<HTMLElement>('.character-card');
-    const countEl = document.getElementById('char-results-count');
-    const resetBtn = document.getElementById('char-reset-btn');
-    const emptyState = document.getElementById('char-empty-state');
-    const emptyResetBtn = document.getElementById('char-empty-reset-btn');
-
-    if (!searchInput || !houseSelect || !statusSelect || !cards.length) return;
-
-    let activeRace = 'all';
-
-    // Read initial URL state if present
-    const params = new URLSearchParams(window.location.search);
-    const urlRace = params.get('irq');
-    const urlHouse = params.get('xonadon');
-    const urlStatus = params.get('maqom');
-    const urlQuery = params.get('q');
-
-    if (urlRace) activeRace = urlRace;
-    if (urlHouse) houseSelect.value = urlHouse;
-    if (urlStatus) statusSelect.value = urlStatus;
-    if (urlQuery) searchInput.value = urlQuery;
-
-    function syncRaceButtons() {
-      raceButtons.forEach((btn) => {
-        const isMatch = btn.getAttribute('data-race-filter') === activeRace;
-        btn.classList.toggle('is-active', isMatch);
-        btn.setAttribute('aria-pressed', isMatch ? 'true' : 'false');
-      });
-    }
-
-    function applyFilters() {
-      const q = normalizeFold(searchInput!.value.trim());
-      const house = houseSelect!.value;
-      const status = statusSelect!.value;
-
-      let visibleCount = 0;
-
-      cards.forEach((card) => {
-        const cardRace = card.getAttribute('data-race') || '';
-        const cardHouse = card.getAttribute('data-house') || '';
-        const cardStatus = card.getAttribute('data-status') || '';
-        const cardSearch = normalizeFold(card.getAttribute('data-search') || '');
-
-        const matchesRace =
-          activeRace === 'all' ||
-          (activeRace === 'other'
-            ? cardRace === 'ajdarlar' || cardRace === 'boshqa'
-            : cardRace === activeRace);
-
-        const matchesHouse = house === 'all' || cardHouse === house;
-        const matchesStatus =
-          status === 'all' ||
-          (status === 'disputed_variant'
-            ? cardStatus === 'disputed_variant' || cardStatus === 'draft_variant'
-            : cardStatus === status);
-
-        const matchesQuery = !q || cardSearch.includes(q);
-
-        const isVisible = matchesRace && matchesHouse && matchesStatus && matchesQuery;
-        card.style.display = isVisible ? '' : 'none';
-        if (isVisible) visibleCount++;
+      // Update button visual states
+      jumpButtons.forEach((btn) => {
+        const letter = btn.getAttribute('data-jump-letter');
+        const isActive = letter === activeLetter;
+        btn.classList.toggle('is-active', isActive);
+        btn.setAttribute('aria-pressed', isActive ? 'true' : 'false');
       });
 
-      const isFiltered =
-        activeRace !== 'all' || house !== 'all' || status !== 'all' || q.length > 0;
-
-      if (countEl) {
-        countEl.innerHTML = isFiltered
-          ? `Topildi: <strong>${visibleCount}</strong> / ${cards.length} ta shaxs`
-          : `Jami: <strong>${cards.length}</strong> ta shaxs`;
-      }
-
-      if (resetBtn) {
-        resetBtn.style.display = isFiltered ? '' : 'none';
-      }
-
-      if (emptyState) {
-        emptyState.style.display = visibleCount === 0 ? '' : 'none';
+      // If a letter is chosen and search input is empty, we trigger the search or custom filter
+      if (activeLetter !== 'all' && searchInput) {
+        // Dispatch custom letter filter or adjust cards visibility
+        items.forEach((item) => {
+          const itemLetter = item.getAttribute('data-letter');
+          const matchesLetter = activeLetter === 'all' || itemLetter === activeLetter;
+          if (!matchesLetter) {
+            item.style.display = 'none';
+          }
+        });
       }
     }
 
-    function resetAll() {
-      activeRace = 'all';
-      searchInput!.value = '';
-      houseSelect!.value = 'all';
-      statusSelect!.value = 'all';
-      syncRaceButtons();
-      applyFilters();
-      if (window.location.search) {
-        window.history.replaceState({}, '', window.location.pathname);
-      }
-    }
+    jumpButtons.forEach((btn) => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        const letter = btn.getAttribute('data-jump-letter') || 'all';
+        activeLetter = letter;
 
-    raceButtons.forEach((btn) => {
-      btn.addEventListener('click', () => {
-        activeRace = btn.getAttribute('data-race-filter') || 'all';
-        syncRaceButtons();
-        applyFilters();
+        // If letter clicked, reset search input so letter takes priority
+        const searchInput = container.querySelector('.list-search-input');
+        if (searchInput && letter !== 'all') {
+          searchInput.value = '';
+        }
+
+        // Trigger ListLayout filter logic or letter filter
+        const items = container.querySelectorAll('.entity-card');
+        let visibleCount = 0;
+        const pageSize = 24;
+
+        items.forEach((item) => {
+          const itemLetter = item.getAttribute('data-letter');
+          const matches = activeLetter === 'all' || itemLetter === activeLetter;
+          if (matches) {
+            visibleCount++;
+            item.style.display = visibleCount <= pageSize ? '' : 'none';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+
+        // Update active classes on jump bar
+        jumpButtons.forEach((b) => {
+          const isTarget = b === btn;
+          b.classList.toggle('is-active', isTarget);
+          b.setAttribute('aria-pressed', isTarget ? 'true' : 'false');
+        });
+
+        // Update announcer count
+        const countVal = container.querySelector('.count-value');
+        if (countVal) countVal.textContent = String(visibleCount);
+
+        // Hide load more button if under page size
+        const pagination = container.querySelector('.list-pagination-wrapper');
+        if (pagination) {
+          pagination.style.display = visibleCount > pageSize ? 'flex' : 'none';
+        }
+
+        // Smooth scroll to list
+        container.scrollIntoView({ behavior: 'smooth', block: 'start' });
       });
     });
-
-    searchInput.addEventListener('input', applyFilters);
-    houseSelect.addEventListener('change', applyFilters);
-    statusSelect.addEventListener('change', applyFilters);
-    resetBtn?.addEventListener('click', resetAll);
-    emptyResetBtn?.addEventListener('click', resetAll);
-
-    syncRaceButtons();
-    applyFilters();
-  }
-
-  initCharacterDirectory();
-  document.addEventListener('astro:after-swap', initCharacterDirectory);
+  });
 </script>
 
 <style>
-  .catalog-intro {
-    font-size: 1.125rem;
-    line-height: 1.7;
-    margin-bottom: 1.5rem;
+  .qahramonlar-page-container {
+    padding-block: 2.5rem 4rem;
   }
 
-  .prosopography-controls {
-    background-color: var(--color-bg-elevated);
-    border: 1px solid var(--color-border-subtle);
-    border-radius: 6px;
-    padding: 1.25rem;
-    margin-bottom: 2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  .controls-top-row {
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-  }
-
-  @media (min-width: 768px) {
-    .controls-top-row {
-      flex-direction: row;
-      align-items: center;
-    }
-  }
-
-  .char-search-wrap {
-    flex: 1;
-  }
-
-  .char-search-input {
-    width: 100%;
-    padding: 0.6rem 0.875rem;
-    font-family: var(--font-sans-ui);
-    font-size: 0.9375rem;
-    color: var(--color-text-primary);
-    background-color: var(--color-bg-base);
-    border: 1px solid var(--color-border-strong);
-    border-radius: 4px;
-  }
-
-  .char-search-input:focus {
-    border-color: var(--color-accent-gold);
-    outline: none;
-  }
-
-  .select-filters-row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-  }
-
-  .char-filter-select {
-    padding: 0.55rem 0.75rem;
-    font-family: var(--font-sans-ui);
-    font-size: 0.8125rem;
-    color: var(--color-text-primary);
-    background-color: var(--color-bg-base);
-    border: 1px solid var(--color-border-subtle);
-    border-radius: 4px;
-    cursor: pointer;
-  }
-
-  .race-chips-row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.4rem;
-  }
-
-  .race-chip {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.35rem;
-    padding: 0.35rem 0.7rem;
-    font-family: var(--font-sans-ui);
-    font-size: 0.75rem;
-    font-weight: 600;
-    color: var(--color-text-secondary);
-    background-color: var(--color-bg-base);
-    border: 1px solid var(--color-border-subtle);
-    border-radius: 3px;
-    cursor: pointer;
-    transition: all 0.15s ease;
-  }
-
-  .race-chip:hover {
-    border-color: var(--color-border-gold);
-    color: var(--color-text-primary);
-  }
-
-  .race-chip.is-active {
-    background-color: var(--color-forest);
-    border-color: var(--color-forest-deep);
-    color: #FAF8F2;
-  }
-
-  .chip-num {
-    font-size: 0.6875rem;
-    color: var(--color-text-muted);
-    opacity: 1;
-  }
-
-  .race-chip.is-active .chip-num {
-    color: inherit;
-    opacity: 1;
-  }
-
-  .filter-status-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 0.5rem;
-    border-top: 1px solid var(--color-border-subtle);
-    font-family: var(--font-sans-ui);
-    font-size: 0.8125rem;
-    color: var(--color-text-muted);
-  }
-
-  .char-reset-btn,
-  .empty-reset-btn {
-    font-family: var(--font-sans-ui);
-    font-size: 0.75rem;
-    font-weight: 600;
-    color: var(--color-accent-gold);
-    background: none;
-    border: 1px solid var(--color-accent-gold);
-    padding: 0.25rem 0.65rem;
-    border-radius: 3px;
-    cursor: pointer;
-  }
-
-  .char-empty-state {
-    background-color: var(--color-bg-elevated);
-    border: 1px dashed var(--color-border-strong);
-    border-radius: 6px;
-    padding: 2.5rem 1.5rem;
-    text-align: center;
+  .qahramonlar-header {
+    border-bottom: 1px solid var(--color-border-subtle);
+    padding-bottom: 1.5rem;
     margin-bottom: 2rem;
   }
 
-  .empty-title {
-    font-family: var(--font-serif-heading);
-    font-size: 1.25rem;
-    margin-bottom: 0.35rem;
-  }
-
-  .empty-desc {
+  .qahramonlar-category-badge {
+    display: inline-block;
     font-family: var(--font-sans-ui);
-    font-size: 0.875rem;
-    color: var(--color-text-secondary);
-    margin-bottom: 1rem;
-  }
-
-  .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border: 0;
-  }
-
-  .characters-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
-
-  .character-card {
-    background-color: var(--color-bg-elevated);
-    border: 1px solid var(--color-border-subtle);
-    border-radius: 4px;
-    padding: 1.25rem;
-    display: grid;
-    grid-template-columns: 110px 1fr;
-    gap: 1.25rem;
-    align-items: start;
-    transition: border-color 0.2s ease, box-shadow 0.2s ease;
-  }
-
-  @media (min-width: 640px) {
-    .character-card {
-      grid-template-columns: 140px 1fr;
-      gap: 1.5rem;
-      padding: 1.5rem;
-    }
-  }
-
-  .character-card:hover {
-    border-color: var(--color-border-strong);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
-  }
-
-  .card-portrait-col {
-    position: relative;
-    width: 100%;
-  }
-
-  .card-portrait-link {
-    display: block;
-    text-decoration: none;
-    border-radius: 4px;
-    overflow: hidden;
-  }
-
-  .card-body-col {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    min-width: 0;
-  }
-
-  .card-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .card-race {
-    font-family: var(--font-sans-ui);
-    font-size: 0.75rem;
+    font-size: 0.8125rem;
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
-    color: var(--color-accent-gold);
+    letter-spacing: 0.08em;
+    color: var(--color-accent-gold-text, var(--color-accent-gold));
+    margin-bottom: 0.5rem;
   }
 
-  .card-title {
-    font-family: var(--font-serif-heading);
-    font-size: 1.5rem;
-    margin: 0;
-  }
-
-  .card-title a {
+  .qahramonlar-title {
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0 0 0.75rem 0;
     color: var(--color-text-primary);
-    text-decoration: none;
   }
 
-  .card-title a:hover {
-    color: var(--color-accent-gold);
-  }
-
-  .card-alias {
-    font-family: var(--font-sans-ui);
-    font-size: 0.8125rem;
-    color: var(--color-text-muted);
-    margin: 0;
-  }
-
-  .card-summary {
-    font-size: 0.9375rem;
-    line-height: 1.6;
+  .qahramonlar-lead {
+    font-size: 1.125rem;
+    line-height: 1.7;
     color: var(--color-text-secondary);
-    margin-top: 0.5rem;
-    margin-bottom: 1rem;
+    margin: 0;
+    max-width: 75ch;
   }
 
-  .card-footer {
-    margin-top: auto;
-  }
-
-  .card-link {
-    font-family: var(--font-sans-ui);
-    font-size: 0.875rem;
-    font-weight: 600;
-    color: var(--color-text-primary);
-    text-decoration: none;
-  }
-
-  .card-link:hover {
-    color: var(--color-accent-gold);
-    text-decoration: underline;
-  }
-
-  .catalog-sidebar {
-    display: flex;
-    flex-direction: column;
-    gap: 1.25rem;
-  }
-
-  .catalog-sidebar .margin-card {
+  /* Alphabetical Jump Bar */
+  .alphabet-jump-bar {
+    margin-bottom: 1.5rem;
+    padding: 0.75rem 1rem;
     background-color: var(--color-bg-elevated);
     border: 1px solid var(--color-border-subtle);
-    padding: 1rem;
-    border-radius: 4px;
-    font-family: var(--font-sans-ui);
-    font-size: 0.8125rem;
+    border-radius: 6px;
+    box-shadow: var(--shadow-sm);
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    overflow: hidden;
   }
 
-  .margin-title {
+  .jump-bar-inner {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+  }
+
+  .jump-bar-label {
+    font-family: var(--font-sans-ui);
     font-size: 0.75rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.05em;
     color: var(--color-text-muted);
-    margin-bottom: 0.5rem;
+    margin-right: 0.25rem;
+    flex-shrink: 0;
+  }
+
+  .jump-letters-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+  }
+
+  .jump-letter-btn {
+    font-family: var(--font-sans-ui);
+    font-size: 0.75rem;
+    font-weight: 600;
+    min-width: 28px;
+    height: 28px;
+    padding: 0 0.35rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-bg-subtle);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 4px;
+    color: var(--color-text-secondary);
+    cursor: pointer;
+    transition: all var(--transition-fast, 0.15s ease);
+    outline: none;
+  }
+
+  .jump-letter-btn:hover:not(:disabled) {
+    border-color: var(--color-accent-gold);
+    color: var(--color-text-primary);
+    transform: translateY(-1px);
+  }
+
+  .jump-letter-btn:focus-visible {
+    box-shadow: 0 0 0 2px var(--color-accent-gold);
+  }
+
+  .jump-letter-btn.is-active {
+    background-color: var(--color-forest, #2d5a3f);
+    border-color: var(--color-forest-deep, #1f402c);
+    color: #FAF8F2;
+    font-weight: 700;
+  }
+
+  .jump-letter-btn.is-disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+    border-color: transparent;
+    background-color: transparent;
+  }
+
+  .qahramonlar-catalogue {
+    margin-bottom: 3rem;
+  }
+
+  /* Collapsed Details */
+  .scholarly-details {
+    background-color: var(--color-bg-elevated);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: border-color var(--transition-fast, 0.2s ease);
+  }
+
+  .scholarly-details:hover {
+    border-color: var(--color-border-gold);
+  }
+
+  .scholarly-details-summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.25rem;
+    cursor: pointer;
+    font-family: var(--font-sans-ui);
+    user-select: none;
+    background-color: var(--color-bg-subtle);
+    list-style: none;
+  }
+
+  .scholarly-details-summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .summary-left {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+  }
+
+  .summary-icon {
+    font-size: 1.125rem;
+  }
+
+  .summary-title {
+    font-weight: 700;
+    font-size: 0.9375rem;
+    color: var(--color-text-primary);
+  }
+
+  .summary-badge {
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.2rem 0.6rem;
+    background-color: var(--color-bg-elevated);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 999px;
+    color: var(--color-accent-gold-text, var(--color-accent-gold));
+  }
+
+  .scholarly-details-content {
+    padding: 1.5rem 1.25rem;
+    border-top: 1px solid var(--color-border-subtle);
+  }
+
+  .scholarly-details-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  @media (min-width: 768px) {
+    .scholarly-details-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .details-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .details-heading {
+    font-size: 0.9375rem;
+    font-weight: 700;
+    color: var(--color-text-primary);
+    margin: 0 0 0.25rem 0;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  .details-text {
+    font-size: 0.875rem;
+    line-height: 1.6;
+    color: var(--color-text-secondary);
+    margin: 0;
   }
 
   .stats-list {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 0.35rem;
+    font-size: 0.8125rem;
+    line-height: 1.8;
     color: var(--color-text-secondary);
+  }
+
+  .stats-list li {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--color-border-subtle);
+    padding: 0.25rem 0;
+  }
+
+  .stats-list li:last-child {
+    border-bottom: none;
   }
 
   .stats-list strong {

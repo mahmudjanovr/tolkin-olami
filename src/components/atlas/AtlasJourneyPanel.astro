@@ -267,6 +267,11 @@ const allJourneysList = Object.values(journeys);
     align-items: center;
     padding: 1rem 1.25rem 0.5rem;
     border-bottom: 1px solid var(--color-border-subtle);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: var(--color-bg-elevated);
+    flex-shrink: 0;
   }
 
   .journey-meta {
@@ -636,6 +641,10 @@ const allJourneysList = Object.values(journeys);
     padding: 0.75rem 1.25rem;
     background-color: var(--color-bg-subtle);
     border-top: 1px solid var(--color-border-subtle);
+    position: sticky;
+    bottom: 0;
+    z-index: 10;
+    flex-shrink: 0;
   }
 
   .journey-nav-btn {

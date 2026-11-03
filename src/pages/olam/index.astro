@@ -1,765 +1,720 @@
 ---
 import { getCollection } from 'astro:content';
-import EditorialLayout from '@/layouts/EditorialLayout.astro';
-import ProvenanceBadge from '@/components/editorial/ProvenanceBadge.astro';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Breadcrumbs from '@/components/editorial/Breadcrumbs.astro';
+import EntityCard, { type MetaRow } from '@/components/list/EntityCard.astro';
+import { REGISTERED_JOURNEYS } from '@/data/journeys/journey-registry';
 
 const breadcrumbs = [
-  { label: 'Arda va Kosmologiya' },
+  { label: 'Olam Hubi' },
 ];
 
+const allBooks = await getCollection('books');
+const allPlaces = await getCollection('places');
 const allCosmology = await getCollection('cosmology');
 
-interface LightStage {
-  id: string;
-  step: number;
-  name: string;
-  subtitle: string;
-  color: string;
-  glow: string;
-  era: string;
-  nature: string;
-  description: string;
-  transmission: string;
-  actors: string[];
-  link: { text: string; href: string };
+const totalBooks = allBooks.length;
+const totalPlaces = allPlaces.length;
+const totalJourneys = Object.keys(REGISTERED_JOURNEYS).length;
+
+function getTwoSentenceExcerpt(text: string): string {
+  if (!text) return '';
+  const sentences = text.match(/[^.!?]+[.!?]+/g);
+  if (sentences && sentences.length >= 2 && sentences[0] && sentences[1]) {
+    return `${sentences[0].trim()} ${sentences[1].trim()}`;
+  }
+  return text.trim();
 }
 
-const LIGHT_LINEAGE: LightStage[] = [
-  {
-    id: 'secret-fire',
-    step: 1,
-    name: 'Oʻchmas Olov',
-    subtitle: 'The Secret Fire / Anar Nára',
-    color: '#f97316',
-    glow: 'rgba(249, 115, 22, 0.45)',
-    era: 'Vaqtsizlik Makonlari (Yaratilishdan avval)',
-    nature: 'Birlamchi Ilohiy Ijodkorlik Quvvati',
-    description: 'Eru Ilúvatar qalbida mavjud boʻlgan va har qanday ongli mavjudotga mustaqil hayot baxsh etuvchi ilohiy ijodkorlik alangasi. Melkor uni Boʻshliqdan (Kúma) behuda qidirgan, biroq Olov faqat Yaratuvchi ixtiyoridadir.',
-    transmission: 'Ilúvatar «Eä!» amrini aytganda Olovni yaratilishning markaziga joylashtirdi va butun moddiy olamga hayotiy ziyo baxsh etdi.',
-    actors: ['Eru Ilúvatar'],
-    link: { text: 'Ainulindalë ontologiyasi', href: '/olam/ainulindale/' },
-  },
-  {
-    id: 'lamps',
-    step: 2,
-    name: 'Illuin va Ormal',
-    subtitle: 'Buyuk Chiroqlar / The Two Lamps',
-    color: '#eab308',
-    glow: 'rgba(234, 179, 8, 0.45)',
-    era: 'Chiroqlar Davri (Valian Years)',
-    nature: 'Dastlabki Moddiy Nur Manbalari',
-    description: 'Valar Ardaning shakllanishi chogʻida Shimol (Illuin) va Janub (Ormal) qutblarida Aulë yasagan ulugʻvor ustunlar ustiga quygan oltin va kumush yogʻdular. Varda ularni nurlantirgan va Manwë muqaddaslashtirgan.',
-    transmission: 'Melkor ustunlarni agʻdarib chiroqlarni sindirgach, nurlar Oʻrta-yer tuprogʻi va suvlariga singib ketdi; Valar esa gʻarbga — Amanga koʻchib oʻtdi.',
-    actors: ['Aulë', 'Varda', 'Manwë'],
-    link: { text: 'Muqaddas Nur manbalari', href: '/olam/muqaddas-nur/' },
-  },
-  {
-    id: 'trees',
-    step: 3,
-    name: 'Telperion va Laurelin',
-    subtitle: 'Valinorning Ikki Daraxti / The Two Trees',
-    color: '#38bdf8',
-    glow: 'rgba(56, 189, 248, 0.45)',
-    era: 'Daraxtlar Davri (Y.T. 1–1495)',
-    nature: 'Aman Zaminining Tirik Ziyosi',
-    description: 'Ezellohar tepaligida Yavanna qoʻshigʻi va Nienna koʻz yoshlari bilan unib chiqqan Kumush daraxt (Telperion) va Oltin daraxt (Laurelin). Ularning nuri 7 soatlik davriy almashinuvda butun Valinorni muqaddas ziyo bilan toʻldirgan.',
-    transmission: 'Melkor va Ungoliant daraxtlar shirasini quritgach, ularning soʻnggi guli va mevasi Varda tomonidan osmonga koʻtarilib Quyosh (Anar) va Oy (Isil)ga aylantirildi.',
-    actors: ['Yavanna', 'Nienna', 'Varda'],
-    link: { text: 'Ikki Daraxt tahlili', href: '/olam/ikki-daraxt/' },
-  },
-  {
-    id: 'silmarils',
-    step: 4,
-    name: 'Silmarillar',
-    subtitle: 'Fëanorning Uch Gavhari / The Three Silmarils',
-    color: '#a855f7',
-    glow: 'rgba(168, 85, 247, 0.45)',
-    era: 'Daraxtlar Davri 1450 — Birinchi Davr',
-    nature: 'Muqaddas Gavharlarga Muhrlangan Nur',
-    description: 'Fëanor tomonidan sinmas silima kristallidan yasalgan va Ikki Daraxtning tirik nurlari mujassamlangan tengsiz uch javohir. Varda ularni qutlagan boʻlib, har qanday yovuz va nopok qoʻlni oʻtkir olovdek kuydirgan.',
-    transmission: 'Morgoth oʻgʻirlab toji ustiga qadagan. Birinchisini Beren va Lúthien tortib olgan; Birinchi davr oxirida uch gavhar osmon, yer qaʼri va dengiz tubiga — butun Eä elementlariga singib ketgan.',
-    actors: ['Fëanor', 'Varda', 'Beren', 'Lúthien'],
-    link: { text: 'Silmaril Safari tarixi', href: '/tarix/silmaril-safari/' },
-  },
-  {
-    id: 'earendil',
-    step: 5,
-    name: 'Eärendil Yulduzi',
-    subtitle: 'Gil-Estel / The Star of High Hope',
-    color: '#06b6d4',
-    glow: 'rgba(6, 182, 212, 0.45)',
-    era: 'Birinchi Davr 542 — Hozirgacha',
-    nature: 'Samoviy Qutlugʻ Sayyora',
-    description: 'Beren va Lúthien qoʻlga kiritgan Silmarilni peshonasiga taqib, oq kema Vingilótëda koinot gumbaziga koʻtarilgan Eärendil. U Oʻrta-yer osmonida eng yorqin tong yulduzi (Gil-Estel) sifatida zulmatda umid timsoli boʻlib porlaydi.',
-    transmission: 'Uning samoviy nuri Valinor suvlari orqali Galadrielning koʻzgusi va shishasiga (Phial) aks ettirildi.',
-    actors: ['Eärendil', 'Elwing', 'Varda'],
-    link: { text: 'Anar, Isil va Eärendil Yulduzi', href: '/olam/anar-va-isil/' },
-  },
-  {
-    id: 'phial',
-    step: 6,
-    name: 'Galadriel Shishasi',
-    subtitle: 'Phial of Galadriel / Eärendil Nuri',
-    color: '#22c55e',
-    glow: 'rgba(34, 197, 94, 0.45)',
-    era: 'Uchinchi Davr 3019',
-    nature: 'Zulmatni Yorituvchi Oʻrta-yer Merosi',
-    description: 'Galadriel tomonidan Frodo Bagginsga inʼom etilgan kristall shisha. Unda Galadriel favvorasi suvlari va Eärendil yulduzi nuri (yaʼni Telperion va Oʻchmas Olovning davomi) jamlangan boʻlib, Shelob gʻorida va Mordor qorongʻiligida najot berdi.',
-    transmission: 'Oʻchmas Olovning qadimiy ilohiy silsilasi Uchinchi davrda foniy qahramonlarga yovuzlikka qarshi maʼnaviy najot qalqoni boʻlib xizmat qildi.',
-    actors: ['Galadriel', 'Frodo Baggins', 'Samwise Gamgee'],
-    link: { text: 'Galadriel shaxsi va merosi', href: '/qahramonlar/galadriel/' },
-  },
-];
+// Preview items
+const previewBooks = allBooks
+  .filter((b) => ['the-hobbit', 'the-lord-of-the-rings', 'silmarillion'].includes(b.data.id || b.id))
+  .slice(0, 3);
 
-const conceptTypeLabels: Record<string, string> = {
-  cosmic_realm: 'Kosmik Makon',
-  primeval_light: 'Ibtidoiy Nur',
-  celestial_body: 'Samoviy Jism',
-  metaphysical_force: 'Metafizik Kuch',
-};
+// Fallback if specific IDs differ
+const finalPreviewBooks = previewBooks.length === 3 ? previewBooks : allBooks.slice(0, 3);
+
+const previewPlaces = allPlaces
+  .filter((p) => ['rivendell', 'minas-tirith', 'gondolin'].includes(p.data.id || p.id))
+  .slice(0, 3);
+
+const finalPreviewPlaces = previewPlaces.length === 3 ? previewPlaces : allPlaces.slice(0, 3);
 ---
 
-<EditorialLayout
-  title="Arda Olamlari va Kosmologiya"
-  category="Kosmologiya va Metafizika"
-  description="Eä olamining yaratilishi, Valinor, Oʻrta-yer, Nur manbalari va Ilúvatar metafizik tuzilishi tahlili."
-  breadcrumbs={breadcrumbs}
+<BaseLayout
+  title="Olam Hubi: Kitoblar, Joylar va Xaritalar"
+  description="Tolkien olamining uch asosiy poydevori: kanonik kitoblar korpusi, toponimlar katalogi hamda interaktiv kartografik atlas."
+  type="article"
 >
-  <div class="cosmology-content">
-    <p class="section-lead">
-      Tolkien olamining ontologik asosi yuksak teologik va metafizik tushunchalarga qurilgan.
-      Eru Ilúvatar, Boʻshliq (The Void), Oʻchmas Olov (The Secret Fire) va moddiy koinot (Eä) oʻrtasidagi mutanosiblik
-      ushbu boʻlimning tadqiqot mavzusidir.
-    </p>
+  <div class="olam-hub-page container">
+    <Breadcrumbs items={breadcrumbs} />
 
-    <!-- Asosiy Kosmologik Mavzular -->
-    <div class="concepts-grid">
-      <div class="concept-card">
-        <h3>Eru Ilúvatar va Ainur</h3>
-        <p>Yagona Yaratuvchi va uning fikridan yaralgan ruhiy mohiyatlar — Valar va Maiar.</p>
-      </div>
+    <header class="hub-header">
+      <span class="hub-category-badge">Ensiklopediya Hubi</span>
+      <h1 class="hub-title" data-pagefind-meta="title">Arda Olami: Kitoblar, Joylar va Xaritalar</h1>
+      <p class="hub-lead">
+        Tolkien olamining geografik xaritalari, toponimlar ensiklopediyasi, kanonik bibliografiya hamda koinot yaratilishining metafizik asoslari jamlangan markaziy portal.
+      </p>
+    </header>
 
-      <div class="concept-card">
-        <h3>Eä va Boʻshliq</h3>
-        <p>Yaratilish amri bilan mavjudlikka keltirilgan butun moddiy olam va uning tashqarisidagi zulmat.</p>
-      </div>
-
-      <div class="concept-card">
-        <h3>Dastlabki Nur Manbalari</h3>
-        <p>Illuin va Ormal chiroqlari, Valinorning Ikki Daraxti (Telperion va Laurelin), Quyosh va Oy.</p>
-      </div>
-
-      <div class="concept-card">
-        <h3>Dumaloq Dunyo va Yassi Arda</h3>
-        <p>Akallabêthdan avvalgi yassi dunyo hamda Numenor choʻkishidan soʻng olamning oʻzgarishi (Straight Road).</p>
-      </div>
-    </div>
-
-    <!-- Interaktiv Ibtidoiy Nur Silsilasi Diagrammasi (Lineage of Primeval Light) -->
-    <section class="light-lineage-section" id="light-lineage">
-      <div class="lineage-header">
-        <span class="lineage-kicker">Koinot Ontologiyasi</span>
-        <h2 class="sub-heading">Ibtidoiy Nur Silsilasi (Lineage of Primeval Light)</h2>
-        <p class="lineage-lead">
-          Ilúvatar qalbida yashirin Oʻchmas Olovdan to Frodoning qoʻlidagi Galadriel Shishasigacha boʻlgan
-          ilohiy ziyo silsilasi. Quyidagi bosqichlarni bosib, nur qanday qilib oʻzgarib, saqlanib va avlodlarga oʻtganini kuzatishingiz mumkin:
-        </p>
-      </div>
-
-      <!-- Silsila Tugunlari (Pipeline Stepper) -->
-      <nav class="lineage-stepper-bar" aria-label="Ibtidoiy Nur Silsilasi bosqichlari" role="tablist">
-        {LIGHT_LINEAGE.map((st, idx) => (
-          <button
-            type="button"
-            class:list={['lineage-step-btn', { 'is-active': idx === 0 }]}
-            data-stage-id={st.id}
-            role="tab"
-            aria-selected={idx === 0 ? 'true' : 'false'}
-            aria-controls={`light-stage-panel-${st.id}`}
-            id={`light-stage-tab-${st.id}`}
-            title={`${st.step}. ${st.name}`}
-          >
-            <span class="step-num-badge" style={`--stage-color: ${st.color}; --stage-glow: ${st.glow}`}>
-              {st.step}
-            </span>
-            <span class="step-btn-info">
-              <strong class="step-name">{st.name}</strong>
-              <small class="step-subtitle">{st.subtitle.split('/')[0]}</small>
-            </span>
-          </button>
-        ))}
-      </nav>
-
-      <!-- Bosqich Tafsilotlari Kartalari -->
-      <div class="lineage-panels-deck">
-        {LIGHT_LINEAGE.map((st, idx) => (
-          <article
-            class:list={['lineage-detail-card', { 'is-active': idx === 0 }]}
-            id={`light-stage-panel-${st.id}`}
-            role="tabpanel"
-            aria-labelledby={`light-stage-tab-${st.id}`}
-            data-stage-card={st.id}
-          >
-            <div class="stage-top-meta">
-              <div class="stage-order-badge" style={`background-color: ${st.color}18; border-color: ${st.color}70`}>
-                Silsila {st.step}-bosqichi / 6
-              </div>
-              <span class="stage-era-pill">{st.era}</span>
+    <!-- 1. Uch Asosiy Katta Kirish Kartochkasi (Three Large Entry Cards) -->
+    <section class="hub-cards-section" aria-label="Asosiy ensiklopediya yoʻnalishlari">
+      <div class="hub-cards-grid">
+        <!-- 1-Karta: Kitoblar va Bibliografiya -->
+        <article class="hub-large-card">
+          <div class="card-glow-bg" aria-hidden="true"></div>
+          <header class="large-card-header">
+            <div class="header-tags-row">
+              <span class="hub-tag">Kanonik Korpus</span>
+              <span class="hub-counter-badge">{totalBooks} ta kitob</span>
             </div>
+            <h2 class="large-card-title">
+              <a href="/kitoblar/">Kitoblar va Bibliografiya</a>
+            </h2>
+            <p class="large-card-desc">
+              J.R.R. Tolkienning hayotlik nashrlari, Christopher Tolkien tahriridagi tiklangan asarlar va ilmiy toʻplamlar.
+            </p>
+          </header>
 
-            <div class="stage-title-row">
-              <div>
-                <h3 class="stage-heading">{st.name}</h3>
-                <span class="stage-nature-sub">{st.nature}</span>
-              </div>
-              <span class="stage-original-name">({st.subtitle})</span>
+          <div class="large-card-preview books-preview-shelf" aria-label="Tanlangan kitob muqovalari">
+            {finalPreviewBooks.map((b) => {
+              const bId = b.data.id || b.id;
+              return (
+                <a href={`/kitoblar/${bId}/`} class="preview-book-thumb" title={b.data.title_uz}>
+                  {b.data.cover_image && (
+                    <img
+                      src={b.data.cover_image.src}
+                      alt={b.data.title_uz}
+                      class="thumb-img book-cover"
+                      loading="lazy"
+                      width="80"
+                      height="120"
+                    />
+                  )}
+                  <span class="thumb-caption">{b.data.title_uz}</span>
+                </a>
+              );
+            })}
+          </div>
+
+          <footer class="large-card-footer">
+            <a href="/kitoblar/" class="hub-action-btn">
+              Kitoblar katalogiga oʻtish <span aria-hidden="true">→</span>
+            </a>
+          </footer>
+        </article>
+
+        <!-- 2-Karta: Joylar va Toponimlar -->
+        <article class="hub-large-card">
+          <div class="card-glow-bg" aria-hidden="true"></div>
+          <header class="large-card-header">
+            <div class="header-tags-row">
+              <span class="hub-tag">Geografik Katalog</span>
+              <span class="hub-counter-badge">{totalPlaces} ta toponim</span>
             </div>
+            <h2 class="large-card-title">
+              <a href="/xaritalar/#toponimlar">Joylar va Toponimlar</a>
+            </h2>
+            <p class="large-card-desc">
+              Oʻrta-yer va Beleriandning barcha shahar, qalʼa, oʻlka va geografik maskanlari ilmiy katalogi.
+            </p>
+          </header>
 
-            <p class="stage-description">{st.description}</p>
+          <div class="large-card-preview places-preview-list" aria-label="Muhim joylar namunalari">
+            {finalPreviewPlaces.map((p) => {
+              const pId = p.data.id || p.id;
+              return (
+                <a href={`/xaritalar/${pId}/`} class="preview-place-item">
+                  <div class="place-item-icon" aria-hidden="true">🏰</div>
+                  <div class="place-item-text">
+                    <span class="place-name">{p.data.name}</span>
+                    <span class="place-meta">{p.data.type} • {p.data.region}</span>
+                  </div>
+                </a>
+              );
+            })}
+          </div>
 
-            <div class="stage-meta-grid">
-              <div class="meta-cell">
-                <span class="meta-label">Nur transmissiyasi (Oʻtish qonuni):</span>
-                <p class="meta-val">{st.transmission}</p>
-              </div>
+          <footer class="large-card-footer">
+            <a href="/xaritalar/#toponimlar" class="hub-action-btn">
+              Toponimlar katalogiga oʻtish <span aria-hidden="true">→</span>
+            </a>
+          </footer>
+        </article>
 
-              <div class="meta-cell">
-                <span class="meta-label">Bogʻliq Ainur va Qahramonlar:</span>
-                <div class="actors-tags">
-                  {st.actors.map((actor) => (
-                    <span class="actor-tag">✦ {actor}</span>
-                  ))}
-                </div>
-              </div>
+        <!-- 3-Karta: Tarixiy Atlas va Xaritalar -->
+        <article class="hub-large-card">
+          <div class="card-glow-bg" aria-hidden="true"></div>
+          <header class="large-card-header">
+            <div class="header-tags-row">
+              <span class="hub-tag">Interaktiv Kartografiya</span>
+              <span class="hub-counter-badge">{totalJourneys} ta sayr • 2 ta atlas</span>
             </div>
+            <h2 class="large-card-title">
+              <a href="/xaritalar/">Tarixiy Atlas va Xaritalar</a>
+            </h2>
+            <p class="large-card-desc">
+              Beleriand va Oʻrta-yerning koʻp qatlamli Leaflet xaritasi, sayr marshrutlari va toponimik qidiruv tizimi.
+            </p>
+          </header>
 
-            <div class="stage-card-footer">
-              <a href={st.link.href} class="stage-read-link">
-                <span>{st.link.text}</span>
-                <span aria-hidden="true">→</span>
-              </a>
-            </div>
-          </article>
-        ))}
+          <div class="large-card-preview maps-preview-grid" aria-label="Xaritalar namoyishi">
+            <a href="/xaritalar/?xarita=orta-yer" class="preview-map-thumb" title="Oʻrta-yer xaritasi">
+              <img
+                src="/assets/maps/middle-earth-planar.svg"
+                alt="Oʻrta-yer tekis xaritasi"
+                class="thumb-img map-img"
+                loading="lazy"
+                width="110"
+                height="75"
+              />
+              <span class="thumb-caption">Oʻrta-yer atlasi</span>
+            </a>
+            <a href="/xaritalar/?xarita=beleriand" class="preview-map-thumb" title="Beleriand xaritasi">
+              <img
+                src="/assets/maps/beleriand-planar.svg"
+                alt="Beleriand tekis xaritasi"
+                class="thumb-img map-img"
+                loading="lazy"
+                width="110"
+                height="75"
+              />
+              <span class="thumb-caption">Beleriand atlasi</span>
+            </a>
+            <a href="/xaritalar/?sayr=bilbo" class="preview-map-thumb" title="Sayr marshrutlari">
+              <div class="journey-preview-icon">
+                <span class="icon-ring" aria-hidden="true">🧭</span>
+              </div>
+              <span class="thumb-caption">Tarixiy sayrlar</span>
+            </a>
+          </div>
+
+          <footer class="large-card-footer">
+            <a href="/xaritalar/" class="hub-action-btn">
+              Interaktiv atlasni ochish <span aria-hidden="true">→</span>
+            </a>
+          </footer>
+        </article>
       </div>
     </section>
 
-    <!-- Kanonik Kosmologiya Entitilari Katalogi -->
-    {allCosmology.length > 0 && (
-      <section class="cosmology-catalog-section">
-        <h2 class="section-heading">Kanonik Ontologik Tushunchalar</h2>
-        <div class="cosmo-cards-grid">
-          {allCosmology.map((c) => (
-            <article class="cosmo-entity-card">
-              <div class="card-top">
-                <span class="type-pill">{conceptTypeLabels[c.data.concept_type] || c.data.concept_type}</span>
-                <ProvenanceBadge status={c.data.textual_status} />
-              </div>
-              <h3 class="card-title">
-                <a href={`/olam/${c.data.id || c.id}/`}>
-                  {c.data.name}
-                </a>
-              </h3>
-              <p class="card-summary">{c.data.summary}</p>
-              <div class="card-footer">
-                <a href={`/olam/${c.data.id || c.id}/`} class="card-link">
-                  Ontologik tahlilni oʻqish →
-                </a>
-              </div>
-            </article>
-          ))}
-        </div>
-      </section>
-    )}
-  </div>
+    <!-- 2. Arda Kosmologiyasi va Mifologik Asoslar (Cosmology Section) -->
+    <section class="cosmology-section" aria-labelledby="cosmology-section-title">
+      <div class="section-title-wrap">
+        <span class="sub-kicker">Ontologiya va Metafizika</span>
+        <h2 id="cosmology-section-title" class="sub-heading">Arda Kosmologiyasi va Mifologik Asoslar</h2>
+        <p class="section-desc">
+          Eru Ilúvatar, Ainulindalë ilohiy musiqasi hamda moddiy koinotning yaralish falsafasiga bagʻishlangan ilmiy tahlillar.
+        </p>
+      </div>
 
-  <div slot="margin">
-    <div class="margin-card">
-      <h3 class="margin-title">Metafizika Meʼyori</h3>
-      <p>
-        Kosmologik tadqiqotlarda "Ainulindalë" va HoME 10-jildidagi "Morgoth's Ring" manbalari asos qilib olinadi.
-      </p>
-    </div>
-    <div class="margin-card">
-      <h3 class="margin-title">Boʻshliq va Ziyo</h3>
-      <p>
-        Kúma (Boʻshliq) moddiy emas, balki Eä dan tashqaridagi makondir. Yashirin Olov (The Secret Fire) esa hayot bagʻishlovchi quvvatdir.
-      </p>
-    </div>
+      <div class="cosmology-cards-grid">
+        {allCosmology.map((concept) => {
+          const cId = concept.data.id || concept.id;
+          const metaRows: MetaRow[] = [
+            { label: 'Konsept turi', value: concept.data.concept_type },
+            {
+              label: 'Ainur',
+              value: concept.data.associated_ainur && concept.data.associated_ainur.length > 0
+                ? concept.data.associated_ainur.slice(0, 3).join(', ')
+                : '—',
+            },
+          ];
+
+          return (
+            <EntityCard
+              id={cId}
+              name={concept.data.name}
+              typeChip={concept.data.concept_type}
+              excerpt={getTwoSentenceExcerpt(concept.data.summary)}
+              metaRows={metaRows}
+              source="Silmarillion & Myths Transformed"
+              detailHref={`/olam/${cId}/`}
+              detailLabel="Tafsilotlarni oʻqish"
+            />
+          );
+        })}
+      </div>
+    </section>
+
+    <!-- 3. Arda Ontologiyasi va Ilmiy Izohlar (Collapsed details) -->
+    <details class="scholarly-details">
+      <summary class="scholarly-details-summary">
+        <span class="summary-left">
+          <span class="summary-icon" aria-hidden="true">📜</span>
+          <span class="summary-title">Arda Ontologiyasi va Ilmiy Izohlar</span>
+        </span>
+        <span class="summary-badge">Akademik Manbashunoslik</span>
+      </summary>
+
+      <div class="scholarly-details-content">
+        <div class="scholarly-details-grid">
+          <div class="details-card">
+            <h3 class="details-heading">Birlamchi va Ikkilamchi Olam</h3>
+            <p class="details-text">
+              Tolkienning "On Fairy-Stories" essesiga koʻra, inson aqli faol sub-creator (ikkilamchi ijodkor) boʻlib, u tildagi har bir soʻz orqali mustaqil va haqiqatga ega boʻlgan Ikkilamchi Borliq (Secondary World) yaratadi.
+            </p>
+          </div>
+
+          <div class="details-card">
+            <h3 class="details-heading">Kanonik Manbalar</h3>
+            <p class="details-text">
+              Kosmologik dalillar "Silmarillion", "Morgoth's Ring" (HoME X) va "The Nature of Middle-earth" manbalaridagi kechki muallif qoralamalariga asoslangan.
+            </p>
+          </div>
+
+          <div class="details-card">
+            <h3 class="details-heading">Kartografik Aniq Koordinatalar</h3>
+            <p class="details-text">
+              Atlasdagi barcha toponimlar Pauline Baynes va Christopher Tolkien chizgan kanonik xaritalarning planar koordinatalariga bogʻlangan.
+            </p>
+          </div>
+        </div>
+      </div>
+    </details>
   </div>
-</EditorialLayout>
+</BaseLayout>
 
 <style>
-  .section-lead {
-    font-size: 1.125rem;
-    line-height: 1.7;
-    margin-bottom: 2rem;
+  .olam-hub-page {
+    padding-block: 2.5rem 4rem;
   }
 
-  .concepts-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.25rem;
-    margin-bottom: 3rem;
+  .hub-header {
+    border-bottom: 1px solid var(--color-border-subtle);
+    padding-bottom: 1.5rem;
+    margin-bottom: 2.5rem;
   }
 
-  @media (min-width: 640px) {
-    .concepts-grid {
-      grid-template-columns: 1fr 1fr;
-    }
-  }
-
-  .concept-card {
-    background-color: var(--color-bg-elevated);
-    border: 1px solid var(--color-border-subtle);
-    padding: 1.25rem;
-    border-radius: 4px;
-  }
-
-  .concept-card h3 {
-    font-size: 1.0625rem;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-  }
-
-  .concept-card p {
-    font-size: 0.875rem;
-    line-height: 1.6;
-    color: var(--color-text-secondary);
-    margin: 0;
-  }
-
-  .cosmology-catalog-section {
-    padding-top: 2rem;
-    border-top: 1px solid var(--color-border-subtle);
-  }
-
-  .section-heading {
-    font-size: 1.25rem;
-    font-weight: 700;
-    margin-bottom: 1.25rem;
-    color: var(--color-text-primary);
-  }
-
-  .cosmo-cards-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.25rem;
-  }
-
-  @media (min-width: 640px) {
-    .cosmo-cards-grid {
-      grid-template-columns: 1fr 1fr;
-    }
-  }
-
-  .cosmo-entity-card {
-    display: flex;
-    flex-direction: column;
-    padding: 1.25rem;
-    background-color: var(--color-bg-elevated);
-    border: 1px solid var(--color-border-subtle);
-    border-radius: 3px;
-    transition: border-color 0.15s ease, box-shadow 0.15s ease;
-  }
-
-  .cosmo-entity-card:hover {
-    border-color: var(--color-border-gold);
-    box-shadow: var(--shadow-sm);
-  }
-
-  .card-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 0.625rem;
-  }
-
-  .type-pill {
-    font-family: var(--font-sans-ui);
-    font-size: 0.75rem;
-    font-weight: 600;
-    color: var(--color-accent-gold-text);
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-  }
-
-  .card-title {
-    font-size: 1.125rem;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-  }
-
-  .card-title a {
-    color: var(--color-text-primary);
-    text-decoration: none;
-  }
-
-  .card-title a:hover {
-    color: var(--color-accent-gold-text);
-  }
-
-  .card-summary {
-    font-size: 0.875rem;
-    line-height: 1.6;
-    color: var(--color-text-secondary);
-    margin-bottom: 1rem;
-    flex-grow: 1;
-  }
-
-  .card-footer {
-    margin-top: auto;
-  }
-
-  .card-link {
+  .hub-category-badge {
+    display: inline-block;
     font-family: var(--font-sans-ui);
     font-size: 0.8125rem;
     font-weight: 600;
-    color: var(--color-link);
-    text-decoration: none;
-  }
-
-  .card-link:hover {
-    text-decoration: underline;
-  }
-
-  /* ==========================================================================
-     Lineage of Primeval Light (Ibtidoiy Nur Silsilasi) Styles
-     ========================================================================== */
-  .light-lineage-section {
-    background-color: var(--color-bg-elevated);
-    border: 1px solid var(--color-border-subtle);
-    border-radius: 3px;
-    padding: 1.75rem;
-    margin-bottom: 3.5rem;
-    box-shadow: var(--shadow-sm);
-  }
-
-  .lineage-header {
-    margin-bottom: 1.5rem;
-  }
-
-  .lineage-kicker {
-    display: inline-block;
-    font-family: var(--font-sans-ui);
-    font-size: 0.75rem;
-    font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.08em;
-    color: var(--color-accent-gold-text);
-    margin-bottom: 0.35rem;
+    color: var(--color-accent-gold-text, var(--color-accent-gold));
+    margin-bottom: 0.5rem;
   }
 
-  .lineage-lead {
-    font-size: 0.9375rem;
-    line-height: 1.65;
+  .hub-title {
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0 0 0.75rem 0;
+    color: var(--color-text-primary);
+  }
+
+  .hub-lead {
+    font-size: 1.125rem;
+    line-height: 1.7;
     color: var(--color-text-secondary);
     margin: 0;
+    max-width: 75ch;
   }
 
-  .lineage-stepper-bar {
+  /* Three Large Entry Cards */
+  .hub-cards-section {
+    margin-bottom: 4rem;
+  }
+
+  .hub-cards-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0.625rem;
-    margin-bottom: 1.5rem;
-    padding-bottom: 1.25rem;
-    border-bottom: 1px solid var(--color-border-subtle);
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
 
-  @media (min-width: 640px) {
-    .lineage-stepper-bar {
+  @media (min-width: 768px) {
+    .hub-cards-grid {
       grid-template-columns: repeat(3, 1fr);
     }
   }
 
-  @media (min-width: 900px) {
-    .lineage-stepper-bar {
-      grid-template-columns: repeat(6, 1fr);
-    }
+  .hub-large-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 1.75rem;
+    background-color: var(--color-bg-elevated);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 8px;
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-fast, 0.2s ease);
+    overflow: hidden;
   }
 
-  .lineage-step-btn {
+  .hub-large-card:hover {
+    border-color: var(--color-border-gold);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+  }
+
+  .large-card-header {
+    margin-bottom: 1.25rem;
+  }
+
+  .header-tags-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75rem;
+  }
+
+  .hub-tag {
+    font-family: var(--font-sans-ui);
+    font-size: 0.6875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--color-accent-gold-text, var(--color-accent-gold));
+  }
+
+  .hub-counter-badge {
+    font-family: var(--font-sans-ui);
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.15rem 0.5rem;
+    border-radius: 999px;
+    background-color: var(--color-bg-subtle);
+    border: 1px solid var(--color-border-subtle);
+    color: var(--color-text-muted);
+  }
+
+  .large-card-title {
+    font-size: 1.375rem;
+    font-weight: 700;
+    margin: 0 0 0.5rem 0;
+  }
+
+  .large-card-title a {
+    color: var(--color-text-primary);
+    text-decoration: none;
+  }
+
+  .large-card-title a:hover {
+    color: var(--color-accent-gold);
+  }
+
+  .large-card-desc {
+    font-size: 0.875rem;
+    line-height: 1.6;
+    color: var(--color-text-secondary);
+    margin: 0;
+  }
+
+  /* Previews inside large cards */
+  .large-card-preview {
+    margin-block: 1rem 1.5rem;
+    flex-grow: 1;
+  }
+
+  /* Books Preview Shelf */
+  .books-preview-shelf {
+    display: flex;
+    gap: 0.75rem;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0.75rem 0.5rem;
+    background-color: var(--color-bg-subtle);
+    border-radius: 6px;
+    border: 1px solid var(--color-border-subtle);
+  }
+
+  .preview-book-thumb {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    width: 72px;
+    flex-shrink: 0;
+    transition: transform 0.15s ease;
+  }
+
+  .preview-book-thumb:hover {
+    transform: translateY(-4px);
+  }
+
+  .thumb-img.book-cover {
+    width: 64px;
+    height: 96px;
+    object-fit: cover;
+    border-radius: 3px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .thumb-caption {
+    font-family: var(--font-sans-ui);
+    font-size: 0.625rem;
+    line-height: 1.2;
+    text-align: center;
+    margin-top: 0.35rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    color: var(--color-text-muted);
+  }
+
+  /* Places Preview List */
+  .places-preview-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .preview-place-item {
     display: flex;
     align-items: center;
-    gap: 0.625rem;
-    padding: 0.5rem 0.625rem;
-    background-color: var(--color-bg-base);
+    gap: 0.75rem;
+    padding: 0.5rem 0.75rem;
+    background-color: var(--color-bg-subtle);
     border: 1px solid var(--color-border-subtle);
-    border-radius: 3px;
-    cursor: pointer;
-    text-align: left;
-    transition: all 0.2s ease;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: all 0.15s ease;
   }
 
-  .lineage-step-btn:hover {
+  .preview-place-item:hover {
     border-color: var(--color-border-gold);
-    transform: translateY(-1px);
+    transform: translateX(3px);
   }
 
-  .lineage-step-btn.is-active {
-    background-color: var(--color-accent-gold-subtle);
-    border-color: var(--color-border-gold);
-    box-shadow: var(--shadow-sm);
+  .place-item-icon {
+    font-size: 1.25rem;
   }
 
-  .step-num-badge {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 28px;
-    height: 28px;
-    border-radius: 50%;
-    background-color: var(--stage-color);
-    color: #ffffff;
-    font-size: 0.8125rem;
-    font-weight: 700;
-    font-family: var(--font-sans-ui);
-    box-shadow: 0 0 8px var(--stage-glow);
-    flex-shrink: 0;
-  }
-
-  .step-btn-info {
+  .place-item-text {
     display: flex;
     flex-direction: column;
     min-width: 0;
   }
 
-  .step-name {
+  .place-name {
+    font-family: var(--font-sans-ui);
     font-size: 0.8125rem;
+    font-weight: 700;
     color: var(--color-text-primary);
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
   }
 
-  .step-subtitle {
+  .place-meta {
+    font-family: var(--font-sans-ui);
     font-size: 0.6875rem;
     color: var(--color-text-muted);
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
   }
 
-  .lineage-panels-deck {
-    position: relative;
-  }
-
-  .lineage-detail-card {
-    display: none;
-    background-color: var(--color-bg-elevated);
-    border: 1px solid var(--color-border-subtle);
-    border-radius: 3px;
-    padding: 1.5rem;
-    animation: fadeInStage 0.25s ease-in-out;
-  }
-
-  .lineage-detail-card.is-active {
-    display: block;
-  }
-
-  @keyframes fadeInStage {
-    from {
-      opacity: 0;
-      transform: translateY(4px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  .stage-top-meta {
+  /* Maps Preview Grid */
+  .maps-preview-grid {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 0.875rem;
-    flex-wrap: wrap;
     gap: 0.5rem;
-  }
-
-  .stage-order-badge {
-    font-family: var(--font-sans-ui);
-    font-size: 0.75rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    padding: 0.25rem 0.625rem;
-    border-radius: 4px;
-    border: 1px solid;
-    color: var(--color-text-primary);
-  }
-
-  .stage-era-pill {
-    font-family: var(--font-sans-ui);
-    font-size: 0.75rem;
-    color: var(--color-text-muted);
-    background-color: var(--color-bg-surface);
-    padding: 0.2rem 0.5rem;
-    border-radius: 4px;
-    border: 1px solid var(--color-border-subtle);
-  }
-
-  .stage-title-row {
-    display: flex;
     justify-content: space-between;
-    align-items: baseline;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    margin-bottom: 1rem;
-    padding-bottom: 0.75rem;
-    border-bottom: 1px solid var(--color-border-subtle);
   }
 
-  .stage-heading {
-    font-size: 1.375rem;
-    font-weight: 700;
-    color: var(--color-text-primary);
-    margin: 0 0 0.25rem 0;
-  }
-
-  .stage-nature-sub {
-    font-family: var(--font-sans-ui);
-    font-size: 0.8125rem;
-    color: var(--color-accent-gold);
-    font-weight: 600;
-  }
-
-  .stage-original-name {
-    font-size: 0.8125rem;
-    color: var(--color-text-muted);
-    font-style: italic;
-  }
-
-  .stage-description {
-    font-size: 0.9375rem;
-    line-height: 1.65;
-    color: var(--color-text-secondary);
-    margin-bottom: 1.25rem;
-  }
-
-  .stage-meta-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    margin-bottom: 1.25rem;
-    background-color: var(--color-bg-surface);
-    border: 1px solid var(--color-border-subtle);
-    border-radius: 6px;
-    padding: 1rem;
-  }
-
-  @media (min-width: 640px) {
-    .stage-meta-grid {
-      grid-template-columns: 1fr 1fr;
-    }
-  }
-
-  .meta-cell {
+  .preview-map-thumb {
     display: flex;
     flex-direction: column;
-    gap: 0.35rem;
-  }
-
-  .meta-label {
-    font-family: var(--font-sans-ui);
-    font-size: 0.75rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
-    color: var(--color-text-muted);
-  }
-
-  .meta-val {
-    font-size: 0.875rem;
-    line-height: 1.55;
-    color: var(--color-text-primary);
-    margin: 0;
-  }
-
-  .actors-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.35rem;
-  }
-
-  .actor-tag {
-    font-family: var(--font-sans-ui);
-    font-size: 0.75rem;
-    padding: 0.2rem 0.5rem;
-    background-color: var(--color-bg-elevated);
-    border: 1px solid var(--color-border-subtle);
-    border-radius: 4px;
-    color: var(--color-text-secondary);
-  }
-
-  .stage-card-footer {
-    display: flex;
-    justify-content: flex-end;
-  }
-
-  .stage-read-link {
-    font-family: var(--font-sans-ui);
-    font-size: 0.875rem;
-    font-weight: 600;
-    color: var(--color-accent-gold);
+    align-items: center;
     text-decoration: none;
+    flex: 1;
+    min-width: 0;
+    padding: 0.5rem;
+    background-color: var(--color-bg-subtle);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 6px;
+    transition: transform 0.15s ease, border-color 0.15s ease;
+  }
+
+  .preview-map-thumb:hover {
+    border-color: var(--color-border-gold);
+    transform: translateY(-2px);
+  }
+
+  .thumb-img.map-img {
+    width: 100%;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 3px;
+    background-color: var(--color-bg-base);
+  }
+
+  .journey-preview-icon {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-bg-elevated);
+    border-radius: 3px;
+  }
+
+  .icon-ring {
+    font-size: 1.5rem;
+  }
+
+  .large-card-footer {
+    margin-top: auto;
+    padding-top: 1rem;
+    border-top: 1px dashed var(--color-border-subtle);
+  }
+
+  .hub-action-btn {
     display: inline-flex;
     align-items: center;
     gap: 0.35rem;
+    font-family: var(--font-sans-ui);
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: var(--color-accent-gold);
+    text-decoration: none;
+    transition: color 0.15s ease;
   }
 
-  .stage-read-link:hover {
-    text-decoration: underline;
+  .hub-action-btn:hover {
+    color: var(--color-text-primary);
+  }
+
+  /* Cosmology Section */
+  .cosmology-section {
+    margin-bottom: 4rem;
+  }
+
+  .section-title-wrap {
+    margin-bottom: 1.5rem;
+  }
+
+  .sub-kicker {
+    display: block;
+    font-family: var(--font-sans-ui);
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--color-accent-gold-text, var(--color-accent-gold));
+    margin-bottom: 0.25rem;
+  }
+
+  .sub-heading {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 0 0.5rem 0;
+    color: var(--color-text-primary);
+  }
+
+  .section-desc {
+    font-size: 0.9375rem;
+    color: var(--color-text-secondary);
+    margin: 0;
+    max-width: 70ch;
+  }
+
+  .cosmology-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr));
+    gap: 1.25rem;
+  }
+
+  /* Collapsed Details */
+  .scholarly-details {
+    background-color: var(--color-bg-elevated);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: border-color var(--transition-fast, 0.2s ease);
+  }
+
+  .scholarly-details:hover {
+    border-color: var(--color-border-gold);
+  }
+
+  .scholarly-details-summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.25rem;
+    cursor: pointer;
+    font-family: var(--font-sans-ui);
+    user-select: none;
+    background-color: var(--color-bg-subtle);
+    list-style: none;
+  }
+
+  .scholarly-details-summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .summary-left {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+  }
+
+  .summary-icon {
+    font-size: 1.125rem;
+  }
+
+  .summary-title {
+    font-weight: 700;
+    font-size: 0.9375rem;
+    color: var(--color-text-primary);
+  }
+
+  .summary-badge {
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.2rem 0.6rem;
+    background-color: var(--color-bg-elevated);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 999px;
+    color: var(--color-accent-gold-text, var(--color-accent-gold));
+  }
+
+  .scholarly-details-content {
+    padding: 1.5rem 1.25rem;
+    border-top: 1px solid var(--color-border-subtle);
+  }
+
+  .scholarly-details-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  @media (min-width: 768px) {
+    .scholarly-details-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .details-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .details-heading {
+    font-size: 0.9375rem;
+    font-weight: 700;
+    color: var(--color-text-primary);
+    margin: 0 0 0.25rem 0;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  .details-text {
+    font-size: 0.875rem;
+    line-height: 1.6;
+    color: var(--color-text-secondary);
+    margin: 0;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .hub-large-card:hover,
+    .preview-book-thumb:hover,
+    .preview-place-item:hover,
+    .preview-map-thumb:hover {
+      transform: none;
+    }
   }
 </style>
-
-<script>
-  function initLightLineage() {
-    const stepButtons = document.querySelectorAll<HTMLButtonElement>('.lineage-step-btn');
-    const stageCards = document.querySelectorAll<HTMLElement>('.lineage-detail-card');
-
-    if (!stepButtons.length || !stageCards.length) return;
-
-    stepButtons.forEach((btn) => {
-      btn.addEventListener('click', () => {
-        const stageId = btn.getAttribute('data-stage-id');
-        if (!stageId) return;
-
-        stepButtons.forEach((b) => {
-          const isActive = b === btn;
-          b.classList.toggle('is-active', isActive);
-          b.setAttribute('aria-selected', isActive ? 'true' : 'false');
-        });
-
-        stageCards.forEach((c) => {
-          const isTarget = c.getAttribute('data-stage-card') === stageId;
-          c.classList.toggle('is-active', isTarget);
-        });
-      });
-
-      // Klaviatura boshqaruvi
-      btn.addEventListener('keydown', (e) => {
-        const btnsArray = Array.from(stepButtons);
-        const index = btnsArray.indexOf(btn);
-
-        if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
-          e.preventDefault();
-          const next = btnsArray[(index + 1) % btnsArray.length];
-          next?.focus();
-          next?.click();
-        } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
-          e.preventDefault();
-          const prev = btnsArray[(index - 1 + btnsArray.length) % btnsArray.length];
-          prev?.focus();
-          prev?.click();
-        }
-      });
-    });
-  }
-
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initLightLineage);
-  } else {
-    initLightLineage();
-  }
-</script>
