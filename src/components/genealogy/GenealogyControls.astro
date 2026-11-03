@@ -2,8 +2,8 @@
 /**
  * TOLKIEN OLAMI — Nasabnoma Boshqaruv Paneli (Genealogy Controls)
  *
- * Sulolalarni tanlash tablari, tezkor qidiruv, masshtab (zoom/pan)
- * va SVG/Matnli ko'rinish rejimlarini almashtirishni ta'minlaydi.
+ * Sulolalarni tanlash pilyulka tablari, rejim almashtirgich (Daraxt/Ro'yxat)
+ * hamda tezkor shaxs qidiruv maydonini ta'minlaydi.
  */
 
 export interface DynastyTab {
@@ -20,44 +20,30 @@ interface Props {
 const { dynasties, activeDynastyId } = Astro.props;
 ---
 
-<div class="genealogy-toolbar" role="toolbar" aria-label="Nasabnoma boshqaruv asboblari">
-  <!-- 1. Sulolalar Tablari -->
-  <div class="dynasty-tabs" role="tablist" aria-label="Sulolalar roʻyxati">
-    {dynasties.map((d) => (
-      <button
-        type="button"
-        role="tab"
-        class={`dynasty-tab-btn ${d.id === activeDynastyId ? 'active' : ''}`}
-        id={`tab-${d.id}`}
-        aria-selected={d.id === activeDynastyId ? 'true' : 'false'}
-        aria-controls={`dynasty-panel-${d.id}`}
-        data-dynasty-id={d.id}
-      >
-        <span class="tab-title">{d.title}</span>
-      </button>
-    ))}
-  </div>
-
-  <!-- 2. O'ng tomon: Qidiruv va Asboblar -->
-  <div class="toolbar-actions">
-    <!-- Qidiruv Maydoni -->
-    <div class="search-box">
-      <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-        <circle cx="11" cy="11" r="8"></circle>
-        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-      </svg>
-      <input
-        type="search"
-        id="genealogy-search-input"
-        class="search-input"
-        placeholder="Shaxs nomi boʻyicha qidiruv..."
-        aria-label="Nasabnomadan shaxs qidirish"
-        autocomplete="off"
-      />
-      <span class="search-count" id="search-results-count" hidden>0</span>
+<div class="genealogy-controls-container" aria-label="Nasabnoma boshqaruv asboblari">
+  <!-- 1. Olti buyuk sulola pilyulka tablari (Pill Tabs) -->
+  <nav class="dynasty-tabs-nav" aria-label="Sulolalar navigatsiyasi">
+    <div class="dynasty-tabs" role="tablist" aria-label="Sulolalar roʻyxati">
+      {dynasties.map((d) => (
+        <button
+          type="button"
+          role="tab"
+          class={`dynasty-tab-btn ${d.id === activeDynastyId ? 'active' : ''}`}
+          id={`tab-${d.id}`}
+          aria-selected={d.id === activeDynastyId ? 'true' : 'false'}
+          aria-controls={`dynasty-panel-${d.id}`}
+          data-dynasty-id={d.id}
+          tabindex={d.id === activeDynastyId ? 0 : -1}
+        >
+          <span class="tab-title">{d.title}</span>
+        </button>
+      ))}
     </div>
+  </nav>
 
-    <!-- Rejim Almashtirgich (Daraxt / Ro'yxat) -->
+  <!-- 2. Ixcham yagona qatorli asboblar paneli (Slim Toolbar) -->
+  <div class="genealogy-toolbar" role="toolbar" aria-label="Koʻrinish va qidiruv asboblari">
+    <!-- Chap: Koʻrinish rejimi almashtirgichi [Daraxt | Roʻyxat] -->
     <div class="view-mode-toggle" role="radiogroup" aria-label="Koʻrinish rejimi">
       <button
         type="button"
@@ -67,7 +53,7 @@ const { dynasties, activeDynastyId } = Astro.props;
         aria-checked="true"
         title="Interaktiv SVG Daraxti"
       >
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
           <circle cx="12" cy="5" r="3"></circle>
           <circle cx="6" cy="19" r="3"></circle>
           <circle cx="18" cy="19" r="3"></circle>
@@ -83,7 +69,7 @@ const { dynasties, activeDynastyId } = Astro.props;
         aria-checked="false"
         title="Matnli Ierarxik Roʻyxat"
       >
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
           <line x1="8" y1="6" x2="21" y2="6"></line>
           <line x1="8" y1="12" x2="21" y2="12"></line>
           <line x1="8" y1="18" x2="21" y2="18"></line>
@@ -95,60 +81,60 @@ const { dynasties, activeDynastyId } = Astro.props;
       </button>
     </div>
 
-    <!-- Masshtab (Zoom) Tugmalari -->
-    <div class="zoom-controls" aria-label="Masshtab boshqaruvi">
-      <button type="button" id="btn-zoom-in" class="ctrl-btn" aria-label="Kattalashtirish (+)" title="Kattalashtirish">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <line x1="12" y1="5" x2="12" y2="19"></line>
-          <line x1="5" y1="12" x2="19" y2="12"></line>
-        </svg>
-      </button>
-      <button type="button" id="btn-zoom-out" class="ctrl-btn" aria-label="Kichiklashtirish (-)" title="Kichiklashtirish">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <line x1="5" y1="12" x2="19" y2="12"></line>
-        </svg>
-      </button>
-      <button type="button" id="btn-zoom-reset" class="ctrl-btn" aria-label="Markazga qaytarish" title="Markazlashtirish">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <circle cx="12" cy="12" r="3"></circle>
-          <path d="M3 12h3m12 0h3M12 3v3m0 12v3"></path>
-        </svg>
-      </button>
+    <!-- O'ng: Shaxs nomi bo'yicha qidirish maydoni -->
+    <div class="search-box">
+      <svg class="search-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <circle cx="11" cy="11" r="8"></circle>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+      </svg>
+      <input
+        type="search"
+        id="genealogy-search-input"
+        class="search-input"
+        placeholder="Shaxs nomi boʻyicha qidirish"
+        aria-label="Shaxs nomi boʻyicha qidirish"
+        autocomplete="off"
+      />
+      <span class="search-count" id="search-results-count" hidden>0</span>
+      <span id="search-live-status" class="visually-hidden" aria-live="polite" role="status"></span>
     </div>
   </div>
 </div>
 
 <style>
-  .genealogy-toolbar {
+  .genealogy-controls-container {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    gap: 0.75rem;
-    padding: 0.75rem 1rem;
-    background-color: var(--color-bg-elevated);
-    border: 1px solid var(--color-border-subtle);
-    border-radius: 3px 3px 0 0;
-    border-bottom: none;
+    flex-direction: column;
+    gap: 0.65rem;
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  /* 1. Sulolalar Tablari (Pill Tabs) */
+  .dynasty-tabs-nav {
+    width: 100%;
   }
 
   .dynasty-tabs {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.35rem;
+    gap: 0.45rem;
+    align-items: center;
   }
 
   .dynasty-tab-btn {
     font-family: var(--font-sans-ui);
     font-size: 0.8125rem;
     font-weight: 500;
-    padding: 0.45rem 0.85rem;
-    border-radius: 3px;
-    background-color: var(--color-bg-base);
+    padding: 0.45rem 1rem;
+    border-radius: 9999px;
+    background-color: var(--color-bg-elevated);
     border: 1px solid var(--color-border-subtle);
     color: var(--color-text-secondary);
     cursor: pointer;
     transition: all 150ms ease;
+    user-select: none;
+    white-space: nowrap;
   }
 
   .dynasty-tab-btn:hover {
@@ -162,71 +148,48 @@ const { dynasties, activeDynastyId } = Astro.props;
     color: #FAF8F2;
     border-color: var(--color-forest-deep);
     font-weight: 600;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
   }
 
-  .toolbar-actions {
+  [data-theme="night"] .dynasty-tab-btn.active {
+    background-color: var(--color-forest);
+    border-color: var(--color-border-gold);
+    color: #FAF8F2;
+  }
+
+  .dynasty-tab-btn:focus-visible {
+    outline: 2px solid var(--color-accent-gold);
+    outline-offset: 2px;
+  }
+
+  /* 2. Asboblar Paneli (Slim Toolbar) */
+  .genealogy-toolbar {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
-    gap: 0.5rem;
-  }
-
-  .search-box {
-    position: relative;
-    display: flex;
-    align-items: center;
-  }
-
-  .search-icon {
-    position: absolute;
-    left: 0.65rem;
-    color: var(--color-text-muted);
-    pointer-events: none;
-  }
-
-  .search-input {
-    font-family: var(--font-sans-ui);
-    font-size: 0.8125rem;
-    padding: 0.4rem 2rem 0.4rem 2rem;
-    border-radius: 3px;
-    border: 1px solid var(--color-border-strong);
-    background-color: var(--color-bg-base);
-    color: var(--color-text-primary);
-    width: 200px;
-    transition: width 200ms ease, border-color 150ms ease;
-  }
-
-  .search-input:focus {
-    outline: none;
-    border-color: var(--color-accent-gold);
-    width: 240px;
-  }
-
-  .search-count {
-    position: absolute;
-    right: 0.5rem;
-    font-family: var(--font-sans-ui);
-    font-size: 0.6875rem;
-    background-color: var(--color-accent-gold-subtle);
-    color: var(--color-accent-gold);
-    padding: 0.1rem 0.35rem;
-    border-radius: 3px;
-    font-weight: 600;
+    justify-content: space-between;
+    gap: 0.75rem;
+    padding: 0.5rem 0.85rem;
+    background-color: var(--color-bg-elevated);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 4px 4px 0 0;
+    border-bottom: none;
   }
 
   .view-mode-toggle {
     display: flex;
+    align-items: center;
     background-color: var(--color-bg-base);
     border: 1px solid var(--color-border-subtle);
-    border-radius: 3px;
+    border-radius: 4px;
     padding: 2px;
+    gap: 2px;
   }
 
   .mode-btn {
     display: inline-flex;
     align-items: center;
     gap: 0.35rem;
-    padding: 0.35rem 0.65rem;
+    padding: 0.35rem 0.75rem;
     font-family: var(--font-sans-ui);
     font-size: 0.75rem;
     font-weight: 500;
@@ -246,48 +209,100 @@ const { dynasties, activeDynastyId } = Astro.props;
     background-color: var(--color-bg-elevated);
     color: var(--color-accent-gold);
     font-weight: 600;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
   }
 
-  .zoom-controls {
-    display: flex;
-    background-color: var(--color-bg-base);
-    border: 1px solid var(--color-border-subtle);
-    border-radius: 3px;
-    overflow: hidden;
+  .mode-btn:focus-visible {
+    outline: 2px solid var(--color-accent-gold);
   }
 
-  .ctrl-btn {
+  .search-box {
+    position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 0.4rem 0.55rem;
-    background: transparent;
-    border: none;
-    border-right: 1px solid var(--color-border-subtle);
-    color: var(--color-text-secondary);
-    cursor: pointer;
-    transition: all 150ms ease;
+    max-width: 280px;
+    width: 100%;
   }
 
-  .ctrl-btn:last-child {
-    border-right: none;
+  .search-icon {
+    position: absolute;
+    left: 0.65rem;
+    color: var(--color-text-muted);
+    pointer-events: none;
   }
 
-  .ctrl-btn:hover {
-    background-color: var(--color-bg-subtle);
+  .search-input {
+    font-family: var(--font-sans-ui);
+    font-size: 0.8125rem;
+    padding: 0.4rem 1.85rem 0.4rem 2rem;
+    border-radius: 4px;
+    border: 1px solid var(--color-border-strong);
+    background-color: var(--color-bg-base);
     color: var(--color-text-primary);
+    width: 100%;
+    transition: border-color 150ms ease, box-shadow 150ms ease;
   }
 
+  .search-input:focus {
+    outline: none;
+    border-color: var(--color-accent-gold);
+    box-shadow: 0 0 0 2px var(--color-accent-gold-subtle);
+  }
+
+  .search-count {
+    position: absolute;
+    right: 0.5rem;
+    font-family: var(--font-sans-ui);
+    font-size: 0.6875rem;
+    background-color: var(--color-accent-gold-subtle);
+    color: var(--color-accent-gold);
+    padding: 0.1rem 0.4rem;
+    border-radius: 3px;
+    font-weight: 600;
+  }
+
+  /* Mobil Moslashuvchanlik (<768px): gorizontal snap scroll, wrapping yo'q */
   @media (max-width: 768px) {
-    .search-input {
-      width: 150px;
+    .dynasty-tabs {
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+      padding-bottom: 2px;
+      -ms-overflow-style: none;
     }
-    .search-input:focus {
-      width: 180px;
-    }
-    .btn-text {
+
+    .dynasty-tabs::-webkit-scrollbar {
       display: none;
+    }
+
+    .dynasty-tab-btn {
+      flex: 0 0 auto;
+      scroll-snap-align: start;
+    }
+
+    .genealogy-toolbar {
+      padding: 0.45rem 0.65rem;
+    }
+
+    .search-box {
+      max-width: 180px;
+    }
+
+    .search-input {
+      font-size: 0.75rem;
+      padding-inline: 1.8rem 1.4rem;
+    }
+
+    .mode-btn {
+      padding: 0.3rem 0.5rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .search-box {
+      max-width: 160px;
     }
   }
 </style>

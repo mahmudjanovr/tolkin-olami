@@ -2,8 +2,9 @@
 /**
  * TOLKIEN OLAMI — Semantik va Oʻqilishi Qulay Nasabnoma Roʻyxati
  *
- * JavaScriptsiz ham 100% toʻliq oʻqiladigan, skrinriderlar uchun
- * qatʼiy ierarxik semantik HTML (<nav>, <ol>, <li>) strukturasi.
+ * JavaScriptsiz ham 100% toʻliq oʻqiladigan, skrinriderlar uchun qatʼiy
+ * ierarxik semantik HTML strukturasi. Mobilda avlodlar bo'yicha yig'iluvchi
+ * (collapsible) bloklar va "Daraxtda ko'rish" tugmasini ta'minlaydi.
  */
 
 import type { TreeLayout } from '@/utils/genealogy/layout';
@@ -26,28 +27,36 @@ for (const node of layout.nodes) {
 }
 
 const sortedGens = Array.from(generationsMap.keys()).sort((a, b) => a - b);
+const genRoman = (n: number) => {
+  const romans = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'XI', 'XII'];
+  return romans[n - 1] || `${n}`;
+};
 ---
 
 <div id={`accessible-tree-${dynastyId}`} class="accessible-genealogy-container" aria-label={`${dynastyTitle} matnli shajarasi`}>
   <div class="accessible-tree-header">
     <h3 class="accessible-dynasty-title">{houseName}</h3>
     <p class="accessible-hint">
-      Quyidagi roʻyxat avlodlar pogʻonasi (I, II, III...) boʻyicha saralangan toʻliq nasabnoma ierarxiyasini taqdim etadi.
+      Avlodlar pogʻonasi (I, II, III...) boʻyicha saralangan shajara roʻyxati. Har bir shaxsni interaktiv daraxtda koʻrish mumkin.
     </p>
   </div>
 
   <nav class="accessible-tree-nav" aria-label="Sulolaning avlodlar ierarxiyasi">
-    <ol class="generation-list">
+    <div class="generation-collapsible-list">
       {sortedGens.map((genNum) => {
         const members = generationsMap.get(genNum) || [];
         return (
-          <li class="generation-item" id={`gen-${dynastyId}-${genNum}`}>
-            <div class="generation-badge">
-              <span class="gen-num-roman">
-                {genNum === 1 ? 'I' : genNum === 2 ? 'II' : genNum === 3 ? 'III' : genNum === 4 ? 'IV' : genNum === 5 ? 'V' : genNum === 6 ? 'VI' : genNum === 7 ? 'VII' : `Avlod ${genNum}`}
+          <details class="gen-collapsible" open id={`gen-${dynastyId}-${genNum}`}>
+            <summary class="gen-summary">
+              <span class="gen-badge">
+                <span class="gen-num-roman">{genRoman(genNum)}</span>
+                <span class="gen-title">{genNum}-Avlod</span>
               </span>
-              <span class="gen-title">{genNum}-Avlod</span>
-            </div>
+              <span class="gen-count">{members.length} ta aʼzo</span>
+              <svg class="gen-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </summary>
 
             <ul class="members-sublist">
               {members.map((member) => (
@@ -58,7 +67,7 @@ const sortedGens = Array.from(generationsMap.keys()).sort((a, b) => a - b);
                         <h4 class="member-name">{member.name}</h4>
                         {member.isUncertain && (
                           <span class="uncertainty-tag" title="Matnshunoslikda ziddiyatli yoki taxminiy nasab">
-                            [Ziddiyatli / Taxminiy]
+                            [Ziddiyatli]
                           </span>
                         )}
                       </div>
@@ -68,12 +77,12 @@ const sortedGens = Array.from(generationsMap.keys()).sort((a, b) => a - b);
                       )}
 
                       <div class="member-details-row">
-                        <span class="member-dates">📅 {member.dates}</span>
+                        <span class="member-dates">{member.dates}</span>
                         {member.culture && (
-                          <span class="member-culture">🏛️ {member.culture}</span>
+                          <span class="member-culture">· {member.culture}</span>
                         )}
                         {member.bridgeNote && (
-                          <span class="member-bridge">🔗 {member.bridgeNote}</span>
+                          <span class="member-bridge">· {member.bridgeNote}</span>
                         )}
                       </div>
                     </div>
@@ -83,36 +92,55 @@ const sortedGens = Array.from(generationsMap.keys()).sort((a, b) => a - b);
                         <strong>Matn tarixi:</strong> {member.uncertaintyNotes}
                       </div>
                     )}
+
+                    <div class="member-action-row">
+                      <button
+                        type="button"
+                        class="btn-view-in-tree"
+                        data-person-id={member.id}
+                        data-target-dynasty={dynastyId}
+                        aria-label={`${member.name}ni interaktiv daraxtda koʻrish`}
+                      >
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                          <circle cx="12" cy="5" r="3"></circle>
+                          <circle cx="6" cy="19" r="3"></circle>
+                          <circle cx="18" cy="19" r="3"></circle>
+                          <path d="M12 8v4m0 0H6v4m6-4h6v4"></path>
+                        </svg>
+                        <span>Daraxtda koʻrish</span>
+                      </button>
+                    </div>
                   </div>
                 </li>
               ))}
             </ul>
-          </li>
+          </details>
         );
       })}
-    </ol>
+    </div>
   </nav>
 </div>
 
 <style>
   .accessible-genealogy-container {
-    padding: 1.5rem;
+    padding: 1.25rem;
     background-color: var(--color-bg-base);
     border: 1px solid var(--color-border-subtle);
-    border-radius: 0 0 8px 8px;
+    border-radius: 0 0 4px 4px;
+    width: 100%;
   }
 
   .accessible-tree-header {
-    margin-bottom: 1.5rem;
-    padding-bottom: 1rem;
+    margin-bottom: 1.25rem;
+    padding-bottom: 0.75rem;
     border-bottom: 1px solid var(--color-border-subtle);
   }
 
   .accessible-dynasty-title {
     font-family: var(--font-serif-heading);
-    font-size: 1.375rem;
+    font-size: 1.25rem;
     font-weight: 700;
-    margin: 0 0 0.35rem 0;
+    margin: 0 0 0.25rem 0;
     color: var(--color-text-primary);
   }
 
@@ -123,69 +151,96 @@ const sortedGens = Array.from(generationsMap.keys()).sort((a, b) => a - b);
     margin: 0;
   }
 
-  .generation-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  .generation-collapsible-list {
     display: flex;
     flex-direction: column;
-    gap: 1.75rem;
+    gap: 1rem;
   }
 
-  .generation-item {
-    position: relative;
-    padding-left: 1.5rem;
-    border-left: 2px solid var(--color-border-strong);
+  .gen-collapsible {
+    background-color: var(--color-bg-elevated);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 4px;
+    overflow: hidden;
   }
 
-  .generation-badge {
+  .gen-summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.65rem 0.85rem;
+    cursor: pointer;
+    list-style: none;
+    user-select: none;
+    background-color: var(--color-bg-subtle);
+    transition: background-color 150ms ease;
+  }
+
+  .gen-summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .gen-summary:hover {
+    background-color: var(--color-border-subtle);
+  }
+
+  .gen-badge {
     display: inline-flex;
     align-items: center;
-    gap: 0.5rem;
-    margin-bottom: 0.85rem;
-    background-color: var(--color-bg-elevated);
-    padding: 0.25rem 0.65rem;
-    border-radius: 4px;
-    border: 1px solid var(--color-border-subtle);
+    gap: 0.45rem;
   }
 
   .gen-num-roman {
     font-family: var(--font-serif-heading);
     font-weight: 700;
     font-style: italic;
-    color: var(--color-accent-gold);
+    color: var(--color-accent-gold-text);
     font-size: 0.9375rem;
   }
 
   .gen-title {
     font-family: var(--font-sans-ui);
-    font-size: 0.75rem;
+    font-size: 0.8125rem;
     font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
     color: var(--color-text-primary);
+  }
+
+  .gen-count {
+    font-family: var(--font-sans-ui);
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+    margin-left: auto;
+    margin-right: 0.5rem;
+  }
+
+  .gen-chevron {
+    color: var(--color-text-muted);
+    transition: transform 200ms ease;
+  }
+
+  .gen-collapsible[open] .gen-chevron {
+    transform: rotate(180deg);
   }
 
   .members-sublist {
     list-style: none;
-    padding: 0;
+    padding: 0.75rem;
     margin: 0;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 0.85rem;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 0.65rem;
   }
 
   .member-entry {
-    background-color: var(--color-bg-elevated);
+    background-color: var(--color-bg-base);
     border: 1px solid var(--color-border-subtle);
-    border-radius: 6px;
-    padding: 0.85rem 1rem;
+    border-radius: 4px;
+    padding: 0.75rem 0.85rem;
     transition: border-color 150ms ease, box-shadow 150ms ease;
   }
 
   .member-entry:hover {
     border-color: var(--color-accent-gold);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
   }
 
   .member-heading-row {
@@ -193,12 +248,12 @@ const sortedGens = Array.from(generationsMap.keys()).sort((a, b) => a - b);
     align-items: center;
     justify-content: space-between;
     gap: 0.5rem;
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.2rem;
   }
 
   .member-name {
     font-family: var(--font-serif-heading);
-    font-size: 1.125rem;
+    font-size: 1.0625rem;
     font-weight: 700;
     margin: 0;
     color: var(--color-text-primary);
@@ -206,44 +261,79 @@ const sortedGens = Array.from(generationsMap.keys()).sort((a, b) => a - b);
 
   .uncertainty-tag {
     font-family: var(--font-sans-ui);
-    font-size: 0.6875rem;
+    font-size: 0.625rem;
     font-weight: 600;
     color: var(--color-status-variant);
-    background-color: var(--color-bg-base);
-    padding: 0.15rem 0.4rem;
+    background-color: var(--color-bg-elevated);
+    padding: 0.1rem 0.35rem;
     border-radius: 3px;
     border: 1px solid var(--color-status-variant);
   }
 
   .member-title-text {
-    font-family: var(--font-serif-heading);
-    font-style: italic;
-    font-size: 0.875rem;
+    font-family: var(--font-sans-ui);
+    font-size: 0.75rem;
     color: var(--color-text-secondary);
-    margin: 0 0 0.5rem 0;
+    margin: 0 0 0.4rem 0;
   }
 
   .member-details-row {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.65rem;
+    gap: 0.5rem;
     font-family: var(--font-sans-ui);
-    font-size: 0.75rem;
+    font-size: 0.6875rem;
     color: var(--color-text-muted);
   }
 
   .member-bridge {
-    color: var(--color-accent-gold);
+    color: var(--color-accent-gold-text);
     font-weight: 500;
   }
 
   .member-uncertainty-note {
-    margin-top: 0.65rem;
-    padding-top: 0.5rem;
+    margin-top: 0.5rem;
+    padding-top: 0.35rem;
     border-top: 1px dashed var(--color-border-subtle);
     font-family: var(--font-sans-ui);
-    font-size: 0.75rem;
-    line-height: 1.45;
+    font-size: 0.6875rem;
+    line-height: 1.4;
     color: var(--color-status-variant);
+  }
+
+  .member-action-row {
+    margin-top: 0.6rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--color-border-subtle);
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .btn-view-in-tree {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.25rem 0.65rem;
+    font-family: var(--font-sans-ui);
+    font-size: 0.6875rem;
+    font-weight: 600;
+    background-color: var(--color-bg-elevated);
+    border: 1px solid var(--color-border-strong);
+    color: var(--color-accent-gold-text);
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 150ms ease;
+  }
+
+  .btn-view-in-tree:hover {
+    background-color: var(--color-forest);
+    border-color: var(--color-forest-deep);
+    color: #FAF8F2;
+  }
+
+  @media (max-width: 480px) {
+    .members-sublist {
+      grid-template-columns: 1fr;
+    }
   }
 </style>

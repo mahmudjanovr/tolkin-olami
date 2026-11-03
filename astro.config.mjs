@@ -94,6 +94,9 @@ export default defineConfig({
   },
   integrations: [generateSitemap()],
   vite: {
+    resolve: {
+      preserveSymlinks: true,
+    },
     plugins: [servePagefindDev()],
   },
 });

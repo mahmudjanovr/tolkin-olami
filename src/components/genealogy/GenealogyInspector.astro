@@ -2,9 +2,10 @@
 /**
  * TOLKIEN OLAMI — Nasabnoma Shaxs Inspektori (Genealogy Inspector)
  *
- * Desktopda oʻng paneldagi ilmiy kartochka, mobilda pastdan chiquvchi
- * Bottom Sheet dialogi koʻrinishida ishlaydi.
+ * Desktopda kanvasning oʻng chekkasida suzuvchi (overlay drawer) panel,
+ * mobilda pastdan chiquvchi Bottom Sheet dialogi koʻrinishida ochiladi.
  * Standart holatda yopiq turadi va faqat biror shaxs tanlanganda ochiladi.
+ * Esc tugmasi bosilganda yopilib, fokus tanlangan tugunga qaytadi.
  */
 ---
 
@@ -23,7 +24,7 @@
         aria-label="Inspektorni yopish"
         title="Yopish (Escape)"
       >
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
           <line x1="18" y1="6" x2="6" y2="18"></line>
           <line x1="6" y1="6" x2="18" y2="18"></line>
         </svg>
@@ -56,7 +57,7 @@
       <!-- Matnshunoslik Noaniqligi / Ziddiyatli Nasab Izohi -->
       <div class="uncertainty-callout" id="inspector-uncertainty-box" hidden>
         <div class="callout-header">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <circle cx="12" cy="12" r="10"></circle>
             <line x1="12" y1="8" x2="12" y2="12"></line>
             <line x1="12" y1="16" x2="12.01" y2="16"></line>
@@ -105,7 +106,7 @@
       <div class="article-link-section" id="inspector-article-section" hidden>
         <a href="#" id="inspector-article-link" class="article-button">
           <span>Ensiklopedik maqolani oʻqish</span>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <path d="M7 17l9.2-9.2M17 17V7H7"></path>
           </svg>
         </a>
@@ -115,26 +116,45 @@
 </aside>
 
 <style>
+  /* Overlay Drawer on the right of the canvas */
   .genealogy-inspector {
     position: absolute;
-    top: 1rem;
-    right: 1rem;
+    top: 0;
+    right: 0;
+    bottom: 0;
     width: 360px;
-    max-height: calc(100% - 2rem);
+    max-width: 100%;
     background-color: var(--color-bg-base);
-    border: 1px solid var(--color-border-strong);
-    border-radius: 3px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    border-left: 1px solid var(--color-border-strong);
+    box-shadow: -4px 0 20px rgba(0, 0, 0, 0.12);
     z-index: 30;
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    transition: transform 220ms ease, opacity 220ms ease;
+    animation: drawerSlideIn 200ms ease;
+  }
+
+  @keyframes drawerSlideIn {
+    from {
+      transform: translateX(100%);
+      opacity: 0.8;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .genealogy-inspector {
+      animation: none;
+    }
   }
 
   [data-theme="night"] .genealogy-inspector {
-    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.45);
+    box-shadow: -6px 0 24px rgba(0, 0, 0, 0.45);
     background-color: var(--color-bg-elevated);
+    border-left-color: var(--color-border-subtle);
   }
 
   .genealogy-inspector[hidden] {
@@ -152,15 +172,18 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    padding: 1.25rem 1.25rem 0.75rem;
+    padding: 1rem 1.15rem 0.75rem;
     border-bottom: 1px solid var(--color-border-subtle);
     background-color: var(--color-bg-elevated);
+    position: sticky;
+    top: 0;
+    z-index: 2;
   }
 
   .header-titles {
     display: flex;
     flex-direction: column;
-    gap: 0.25rem;
+    gap: 0.2rem;
   }
 
   .inspector-badge {
@@ -170,8 +193,8 @@
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.06em;
-    padding: 0.15rem 0.5rem;
-    border-radius: 4px;
+    padding: 0.12rem 0.45rem;
+    border-radius: 3px;
     background-color: var(--color-accent-gold-subtle);
     color: var(--color-accent-gold);
     border: 1px solid var(--color-border-gold);
@@ -179,7 +202,7 @@
 
   .person-title {
     font-family: var(--font-serif-heading);
-    font-size: 1.5rem;
+    font-size: 1.35rem;
     font-weight: 700;
     line-height: 1.2;
     margin: 0;
@@ -189,7 +212,7 @@
   .person-original-name {
     font-family: var(--font-serif-heading);
     font-style: italic;
-    font-size: 0.9375rem;
+    font-size: 0.875rem;
     color: var(--color-text-secondary);
     margin: 0;
   }
@@ -212,27 +235,31 @@
     color: var(--color-text-primary);
   }
 
+  .inspector-close-btn:focus-visible {
+    outline: 2px solid var(--color-accent-gold);
+  }
+
   .inspector-body {
-    padding: 1.25rem;
+    padding: 1.15rem;
     display: flex;
     flex-direction: column;
-    gap: 1.25rem;
+    gap: 1.15rem;
   }
 
   .meta-grid {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.45rem;
     background-color: var(--color-bg-elevated);
-    padding: 0.75rem 1rem;
-    border-radius: 6px;
+    padding: 0.75rem 0.85rem;
+    border-radius: 4px;
     border: 1px solid var(--color-border-subtle);
   }
 
   .meta-item {
     display: flex;
     flex-direction: column;
-    gap: 0.125rem;
+    gap: 0.1rem;
   }
 
   .meta-label {
@@ -245,25 +272,25 @@
 
   .meta-value {
     font-family: var(--font-sans-ui);
-    font-size: 0.875rem;
+    font-size: 0.8125rem;
     font-weight: 500;
     color: var(--color-text-primary);
   }
 
   .block-heading {
     font-family: var(--font-serif-heading);
-    font-size: 1rem;
+    font-size: 0.9375rem;
     font-weight: 600;
-    margin: 0 0 0.5rem 0;
+    margin: 0 0 0.45rem 0;
     color: var(--color-text-primary);
     border-bottom: 1px solid var(--color-border-subtle);
-    padding-bottom: 0.25rem;
+    padding-bottom: 0.2rem;
   }
 
   .person-summary {
     font-family: var(--font-serif-body);
-    font-size: 0.875rem;
-    line-height: 1.6;
+    font-size: 0.8125rem;
+    line-height: 1.55;
     color: var(--color-text-secondary);
     margin: 0;
   }
@@ -271,24 +298,24 @@
   .uncertainty-callout {
     background-color: var(--color-bg-elevated);
     border-left: 3px solid var(--color-status-variant);
-    padding: 0.75rem 1rem;
-    border-radius: 0 6px 6px 0;
+    padding: 0.65rem 0.85rem;
+    border-radius: 0 4px 4px 0;
   }
 
   .callout-header {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.45rem;
     font-family: var(--font-sans-ui);
     font-size: 0.75rem;
     color: var(--color-status-variant);
-    margin-bottom: 0.35rem;
+    margin-bottom: 0.3rem;
   }
 
   .uncertainty-text {
     font-family: var(--font-sans-ui);
-    font-size: 0.8125rem;
-    line-height: 1.5;
+    font-size: 0.75rem;
+    line-height: 1.45;
     color: var(--color-text-secondary);
     margin: 0;
   }
@@ -296,13 +323,13 @@
   .kinship-section {
     display: flex;
     flex-direction: column;
-    gap: 0.75rem;
+    gap: 0.65rem;
   }
 
   .kinship-group {
     display: flex;
     flex-direction: column;
-    gap: 0.35rem;
+    gap: 0.3rem;
   }
 
   .kinship-label {
@@ -326,7 +353,7 @@
     font-family: var(--font-sans-ui);
     font-size: 0.75rem;
     padding: 0.2rem 0.55rem;
-    border-radius: 4px;
+    border-radius: 3px;
     cursor: pointer;
     transition: background-color 150ms ease, border-color 150ms ease, color 150ms ease;
   }
@@ -346,7 +373,7 @@
 
   .citation-block {
     margin: 0;
-    padding: 0.6rem 0.85rem;
+    padding: 0.55rem 0.75rem;
     background-color: var(--color-bg-elevated);
     border-left: 2px solid var(--color-accent-gold);
     border-radius: 0 4px 4px 0;
@@ -354,7 +381,7 @@
     font-size: 0.8125rem;
     display: flex;
     flex-direction: column;
-    gap: 0.15rem;
+    gap: 0.1rem;
   }
 
   .citation-work {
@@ -371,9 +398,9 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 0.5rem;
+    gap: 0.45rem;
     width: 100%;
-    padding: 0.6rem 1rem;
+    padding: 0.55rem 0.85rem;
     background-color: var(--color-forest);
     border: 1px solid var(--color-forest-deep);
     color: #FAF8F2;
@@ -389,8 +416,8 @@
     background-color: var(--color-forest-deep);
   }
 
-  /* Mobil Moslashuvchanlik (Bottom Sheet Mode) */
-  @media (max-width: 1023px) {
+  /* Mobil Moslashuvchanlik (<768px: Bottom Sheet Mode) */
+  @media (max-width: 767px) {
     .genealogy-inspector {
       position: fixed;
       top: auto;
@@ -398,12 +425,12 @@
       left: 0;
       right: 0;
       width: 100%;
-      max-height: 75vh;
-      border-radius: 16px 16px 0 0;
-      border-left: none;
-      border-right: none;
+      max-height: 80vh;
+      border-radius: 14px 14px 0 0;
+      border: 1px solid var(--color-border-strong);
       border-bottom: none;
-      box-shadow: 0 -8px 32px rgba(0, 0, 0, 0.25);
+      box-shadow: 0 -8px 32px rgba(0, 0, 0, 0.35);
+      z-index: 100;
     }
   }
 </style>

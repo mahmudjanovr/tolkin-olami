@@ -1,9 +1,14 @@
 ---
+/**
+ * TOLKIEN OLAMI — Alohida Sulola Sahifasi (/nasabnomalar/[slug]/)
+ *
+ * Tanlangan kanonik sulolani toʻliq kenglikdagi Classic Heritage shajara
+ * muhitida (3 ustunli interaktiv SVG daraxt, filtrlar, shaxs dosyesi va manbalar) ochadi.
+ */
 import { getCollection, type CollectionEntry } from 'astro:content';
-import EditorialLayout from '@/layouts/EditorialLayout.astro';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Breadcrumbs from '@/components/editorial/Breadcrumbs.astro';
 import GenealogyAtlas from '@/components/genealogy/GenealogyAtlas.astro';
-import CitationBlock from '@/components/editorial/CitationBlock.astro';
-import { resolveEntityLinks } from '@/utils/entity-resolver';
 
 export async function getStaticPaths() {
   const genealogies = await getCollection('genealogies');
@@ -24,95 +29,50 @@ const breadcrumbs = [
   { label: 'Nasabnomalar', href: '/nasabnomalar/' },
   { label: data.title },
 ];
-
-const founderLink = resolveEntityLinks([data.founder_id]);
 ---
 
-<EditorialLayout
-  title={data.title}
-  category="Kanonik Sulola va Nasabnoma"
-  description={data.summary}
-  breadcrumbs={breadcrumbs}
->
-  <div class="dynasty-page-content">
-    <p class="section-lead">
-      {data.summary}
-    </p>
+<BaseLayout title={data.title} description={data.summary}>
+  <div class="dynasty-route-wrapper" data-pagefind-body>
+    <div class="container">
+      <Breadcrumbs items={breadcrumbs} />
 
-    <!-- Tanlangan sulola uchun faollashtirilgan interaktiv shajara -->
-    <GenealogyAtlas initialDynastyId={data.id} />
-  </div>
-
-  <div slot="margin" class="dynasty-margin">
-    <div class="margin-card metadata-card">
-      <h3 class="margin-title">Sulola Maʼlumotlari</h3>
-      <div class="meta-row">
-        <span class="meta-label">Xonadon:</span>
-        <span class="meta-val">{data.house_name}</span>
-      </div>
-      <div class="meta-row">
-        <span class="meta-label">Asoschi:</span>
-        <span class="meta-val">
-          {founderLink[0]?.href ? (
-            <a href={founderLink[0].href}>{founderLink[0].name}</a>
-          ) : (
-            founderLink[0]?.name || data.founder_id
-          )}
+      <header class="dynasty-route-header">
+        <span class="dynasty-route-kicker" data-pagefind-meta="category">
+          Kanonik Sulola va Nasabnoma
         </span>
-      </div>
-      <div class="meta-row">
-        <span class="meta-label">Davr:</span>
-        <span class="meta-val">{data.era}</span>
-      </div>
-      <div class="meta-row">
-        <span class="meta-label">Aʼzolar soni:</span>
-        <span class="meta-val">{data.members.length} ta qayd etilgan shaxs</span>
-      </div>
-      {data.branches.length > 0 && (
-        <div class="meta-row">
-          <span class="meta-label">Tarmoqlar:</span>
-          <span class="meta-val">{data.branches.join(', ')}</span>
-        </div>
-      )}
-    </div>
+        <h1 class="dynasty-route-title" data-pagefind-meta="title">{data.title}</h1>
+      </header>
 
-    {data.sources.length > 0 && (
-      <div class="margin-card citations-card">
-        <CitationBlock sources={data.sources} />
-      </div>
-    )}
+      <GenealogyAtlas initialDynastyId={data.id} />
+    </div>
   </div>
-</EditorialLayout>
+</BaseLayout>
 
 <style>
-  .dynasty-page-content {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+  .dynasty-route-wrapper {
+    width: 100%;
+    min-height: 100vh;
+    padding-block: 1.5rem 3.5rem;
+    overflow-x: clip;
   }
 
-  .section-lead {
-    font-size: 1.125rem;
-    line-height: 1.7;
-    margin-bottom: 1.5rem;
+  .dynasty-route-header {
+    margin-block: 0.75rem 1rem;
   }
 
-  .meta-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+  .dynasty-route-kicker {
+    display: inline-block;
     font-family: var(--font-sans-ui);
-    font-size: 0.8125rem;
-    padding-block: 0.35rem;
-    border-bottom: 1px solid var(--color-border-subtle);
+    font-size: 0.78125rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-accent-gold-text);
+    margin-bottom: 0.25rem;
   }
 
-  .meta-label {
-    color: var(--color-text-muted);
-  }
-
-  .meta-val {
-    color: var(--color-text-primary);
-    font-weight: 500;
+  .dynasty-route-title {
+    font-size: clamp(1.75rem, 3vw, 2.35rem);
+    margin: 0;
   }
 </style>

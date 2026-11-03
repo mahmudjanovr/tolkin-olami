@@ -1,0 +1,604 @@
+---
+/**
+ * TOLKIEN OLAMI — Chap Boshqaruv Paneli va Mobil Tortma (Section C: Left Sidebar)
+ *
+ * Avlodlar navigatsiyasi, qidiruv, irq/xonadon/davr/rishta turi filtrlari
+ * hamda shajara tarmoqlari koʻrinishini boshqarish.
+ */
+
+import type { DynastyModel, GenealogyDataset } from '@/utils/genealogy/genealogy-model';
+
+interface Props {
+  activeDynasty: DynastyModel;
+  filters: GenealogyDataset['filters'];
+}
+
+const { activeDynasty, filters } = Astro.props;
+
+const genCounts = new Map<number, number>();
+for (const m of activeDynasty.members) {
+  genCounts.set(m.generation, (genCounts.get(m.generation) || 0) + 1);
+}
+const sortedGens = Array.from(genCounts.keys()).sort((a, b) => a - b);
+const romans = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X'];
+---
+
+<aside
+  id="genealogy-left-sidebar"
+  class="genealogy-sidebar"
+  aria-label="Shajara navigatsiyasi va filtrlar"
+>
+  <!-- Mobil tortma sarlavhasi (< 1120px da koʻrinadi) -->
+  <div class="sidebar-drawer-header">
+    <h3 class="drawer-heading">Navigatsiya va filtrlar</h3>
+    <button
+      type="button"
+      class="drawer-close-btn"
+      id="btn-close-left-drawer"
+      aria-label="Filtrlar panelini yopish"
+    >
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    </button>
+  </div>
+
+  <div class="sidebar-scroll-body">
+    <!-- 1. Qidiruv -->
+    <section class="sidebar-block" aria-labelledby="sidebar-search-heading">
+      <label for="genealogy-search-input" class="sidebar-label" id="sidebar-search-heading">
+        Shaxsni qidirish
+      </label>
+      <div class="search-field-wrap">
+        <svg class="search-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input
+          type="search"
+          id="genealogy-search-input"
+          class="sidebar-search-input"
+          placeholder="Ism, taxallus yoki unvon..."
+          autocomplete="off"
+        />
+        <button
+          type="button"
+          id="btn-clear-search"
+          class="search-clear-btn"
+          aria-label="Qidiruvni tozalash"
+          hidden
+        >
+          ×
+        </button>
+      </div>
+      <div id="search-live-status" class="search-live-status" role="status" aria-live="polite"></div>
+      <ul id="sidebar-search-results" class="search-results-list" hidden aria-label="Qidiruv natijalari"></ul>
+    </section>
+
+    <!-- 2. Avlodlar navigatsiyasi -->
+    <section class="sidebar-block" aria-labelledby="sidebar-gen-heading">
+      <div class="sidebar-block-head">
+        <h3 class="sidebar-label" id="sidebar-gen-heading">Avlodlar boʻyicha oʻtish</h3>
+      </div>
+      <div class="gen-nav-grid" id="sidebar-generation-nav" role="group" aria-label="Avlod pogʻonalari">
+        {sortedGens.map((gen) => (
+          <button
+            type="button"
+            class="gen-jump-btn"
+            data-gen-jump={gen}
+            title={`${gen}-avlod qatoriga oʻtish`}
+          >
+            <span class="gen-roman">{romans[gen - 1] || gen}</span>
+            <span class="gen-text">{gen}-avlod</span>
+            <span class="gen-badge-num">{genCounts.get(gen) || 0}</span>
+          </button>
+        ))}
+      </div>
+    </section>
+
+    <!-- 3. Filtrlar -->
+    <section class="sidebar-block" aria-labelledby="sidebar-filters-heading">
+      <div class="sidebar-block-head">
+        <h3 class="sidebar-label" id="sidebar-filters-heading">Filtrlar</h3>
+        <button
+          type="button"
+          id="btn-reset-filters"
+          class="sidebar-reset-link"
+          hidden
+        >
+          Tozalash
+        </button>
+      </div>
+
+      <div class="filter-fields-stack">
+        <div class="filter-field">
+          <label for="filter-house" class="filter-sublabel">Xonadon</label>
+          <select id="filter-house" class="sidebar-select">
+            {filters.houses.map((h) => (
+              <option value={h.id} selected={h.id === activeDynasty.id}>
+                {h.label}
+              </option>
+            ))}
+          </select>
+        </div>
+
+        <div class="filter-field">
+          <label for="filter-race" class="filter-sublabel">Irq</label>
+          <select id="filter-race" class="sidebar-select">
+            <option value="all">Barcha irqlar</option>
+            {filters.races.map((r) => (
+              <option value={r.id}>{r.label}</option>
+            ))}
+          </select>
+        </div>
+
+        <div class="filter-field">
+          <label for="filter-era" class="filter-sublabel">Davr</label>
+          <select id="filter-era" class="sidebar-select">
+            <option value="all">Barcha davrlar</option>
+            {filters.eras.map((e) => (
+              <option value={e.id}>{e.label}</option>
+            ))}
+          </select>
+        </div>
+
+        <div class="filter-field">
+          <label for="filter-relation-type" class="filter-sublabel">Rishta turi</label>
+          <select id="filter-relation-type" class="sidebar-select">
+            <option value="all">Barcha rishtalar</option>
+            {filters.relationshipTypes.map((rel) => (
+              <option value={rel.id}>{rel.label}</option>
+            ))}
+          </select>
+        </div>
+
+        <div class="filter-field">
+          <span class="filter-sublabel" id="canon-filter-label">Kanon maqomi</span>
+          <div class="canon-pills-row" role="group" aria-labelledby="canon-filter-label">
+            <button type="button" class="canon-filter-btn is-active" data-canon-filter="all" aria-pressed="true">
+              Barchasi
+            </button>
+            <button type="button" class="canon-filter-btn" data-canon-filter="canon" aria-pressed="false">
+              Kanon
+            </button>
+            <button type="button" class="canon-filter-btn" data-canon-filter="variant" aria-pressed="false">
+              Variant
+            </button>
+            <button type="button" class="canon-filter-btn" data-canon-filter="uncertain" aria-pressed="false">
+              Munozarali
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <p id="filter-active-summary" class="filter-active-summary" aria-live="polite" hidden></p>
+    </section>
+
+    <!-- 4. Tarmoqlar koʻrinishi va shoxlarni yoyish/yigʻish -->
+    <section class="sidebar-block" aria-labelledby="sidebar-branches-heading">
+      <div class="sidebar-block-head">
+        <h3 class="sidebar-label" id="sidebar-branches-heading">Shajara tarmoqlari</h3>
+      </div>
+
+      <div class="branch-checkbox-list" id="sidebar-branch-controls">
+        {activeDynasty.branches.map((branch) => (
+          <label class="branch-check-item">
+            <input
+              type="checkbox"
+              class="branch-visibility-checkbox"
+              data-branch-id={branch.id}
+              checked
+            />
+            <span class="branch-check-text">{branch.label}</span>
+            <span class="branch-check-count">{branch.memberIds.length}</span>
+          </label>
+        ))}
+      </div>
+
+      <div class="branch-tree-actions">
+        <button type="button" id="btn-expand-all-branches" class="branch-action-btn">
+          Shoxlarni yoyish
+        </button>
+        <button type="button" id="btn-collapse-all-branches" class="branch-action-btn">
+          Shoxlarni yigʻish
+        </button>
+      </div>
+    </section>
+  </div>
+</aside>
+
+<style>
+  .genealogy-sidebar {
+    background-color: var(--gen-ivory-elevated);
+    border: 1px solid var(--gen-border);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    align-self: start;
+  }
+
+  .sidebar-drawer-header {
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.85rem 1rem;
+    border-bottom: 1px solid var(--gen-border);
+    background-color: var(--gen-ivory);
+  }
+
+  .drawer-heading {
+    font-family: var(--font-serif-heading);
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin: 0;
+    color: var(--color-text-primary);
+  }
+
+  .drawer-close-btn {
+    width: 32px;
+    height: 32px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: 1px solid var(--gen-border);
+    border-radius: 4px;
+    color: var(--color-text-primary);
+    cursor: pointer;
+  }
+
+  .sidebar-scroll-body {
+    padding: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .sidebar-block {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-bottom: 0.9rem;
+    border-bottom: 1px solid var(--gen-border);
+  }
+
+  .sidebar-block:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+
+  .sidebar-block-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+
+  .sidebar-label {
+    font-family: var(--font-sans-ui);
+    font-size: 0.6875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--gen-pine-text);
+    margin: 0;
+  }
+
+  .sidebar-reset-link {
+    background: none;
+    border: none;
+    padding: 0;
+    font-family: var(--font-sans-ui);
+    font-size: 0.6875rem;
+    font-weight: 600;
+    color: var(--gen-gold-text);
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  .search-field-wrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .search-icon {
+    position: absolute;
+    left: 0.6rem;
+    color: var(--color-text-muted);
+    pointer-events: none;
+  }
+
+  .sidebar-search-input {
+    width: 100%;
+    padding: 0.45rem 1.8rem 0.45rem 1.95rem;
+    font-family: var(--font-sans-ui);
+    font-size: 0.8125rem;
+    color: var(--color-text-primary);
+    background-color: var(--gen-ivory);
+    border: 1px solid var(--gen-border);
+    border-radius: 4px;
+  }
+
+  .sidebar-search-input:focus {
+    outline: 2px solid var(--gen-gold);
+    outline-offset: 0;
+    border-color: var(--gen-pine-fill);
+  }
+
+  .search-clear-btn {
+    position: absolute;
+    right: 0.4rem;
+    background: none;
+    border: none;
+    color: var(--color-text-muted);
+    font-size: 1rem;
+    line-height: 1;
+    cursor: pointer;
+    padding: 0.15rem 0.3rem;
+  }
+
+  .search-live-status {
+    font-family: var(--font-sans-ui);
+    font-size: 0.6875rem;
+    color: var(--color-text-muted);
+    min-height: 0.25rem;
+  }
+
+  .search-results-list {
+    list-style: none;
+    margin: 0;
+    padding: 0.25rem;
+    background-color: var(--gen-ivory);
+    border: 1px solid var(--gen-border);
+    border-radius: 4px;
+    max-height: 190px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+  }
+
+  .search-results-list[hidden] {
+    display: none !important;
+  }
+
+  :global(.search-result-btn) {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.4rem;
+    padding: 0.35rem 0.5rem;
+    background: transparent;
+    border: none;
+    border-radius: 3px;
+    font-family: var(--font-sans-ui);
+    font-size: 0.75rem;
+    color: var(--color-text-primary);
+    text-align: left;
+    cursor: pointer;
+  }
+
+  :global(.search-result-btn:hover) {
+    background-color: var(--gen-ivory-subtle);
+  }
+
+  :global(.search-result-house) {
+    font-size: 0.65rem;
+    color: var(--color-text-muted);
+    white-space: nowrap;
+  }
+
+  .gen-nav-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0.28rem;
+  }
+
+  :global(.gen-jump-btn) {
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+    width: 100%;
+    padding: 0.34rem 0.55rem;
+    background-color: var(--gen-ivory);
+    border: 1px solid var(--gen-border);
+    border-radius: 3px;
+    font-family: var(--font-sans-ui);
+    font-size: 0.75rem;
+    color: var(--color-text-primary);
+    cursor: pointer;
+    transition: border-color 150ms ease, background-color 150ms ease;
+  }
+
+  :global(.gen-jump-btn:hover),
+  :global(.gen-jump-btn.is-active) {
+    border-color: var(--gen-pine-fill);
+    background-color: var(--gen-ivory-subtle);
+  }
+
+  :global(.gen-roman) {
+    font-family: var(--font-serif-heading);
+    font-weight: 700;
+    font-style: italic;
+    color: var(--gen-gold-text);
+    min-width: 1.4rem;
+    text-align: left;
+  }
+
+  :global(.gen-text) {
+    font-weight: 500;
+    flex: 1;
+    text-align: left;
+  }
+
+  :global(.gen-badge-num) {
+    font-size: 0.6875rem;
+    color: var(--color-text-muted);
+  }
+
+  .filter-fields-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 0.55rem;
+  }
+
+  .filter-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+
+  .filter-sublabel {
+    font-family: var(--font-sans-ui);
+    font-size: 0.6875rem;
+    font-weight: 600;
+    color: var(--color-text-secondary);
+  }
+
+  .sidebar-select {
+    width: 100%;
+    padding: 0.38rem 0.5rem;
+    font-family: var(--font-sans-ui);
+    font-size: 0.78125rem;
+    color: var(--color-text-primary);
+    background-color: var(--gen-ivory);
+    border: 1px solid var(--gen-border);
+    border-radius: 4px;
+  }
+
+  .canon-pills-row {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.3rem;
+  }
+
+  .canon-filter-btn {
+    padding: 0.3rem 0.4rem;
+    font-family: var(--font-sans-ui);
+    font-size: 0.6875rem;
+    font-weight: 600;
+    color: var(--color-text-secondary);
+    background-color: var(--gen-ivory);
+    border: 1px solid var(--gen-border);
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 140ms ease;
+  }
+
+  .canon-filter-btn:hover {
+    border-color: var(--gen-gold);
+  }
+
+  .canon-filter-btn.is-active {
+    background-color: var(--gen-pine-fill);
+    border-color: var(--gen-pine-fill);
+    color: #F7F4EC;
+  }
+
+  .filter-active-summary {
+    margin: 0.15rem 0 0 0;
+    font-family: var(--font-sans-ui);
+    font-size: 0.71875rem;
+    color: var(--gen-pine-text);
+    background-color: var(--gen-ivory);
+    border-left: 2px solid var(--gen-gold);
+    padding: 0.35rem 0.5rem;
+  }
+
+  .branch-checkbox-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+
+  :global(.branch-check-item) {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.45rem;
+    font-family: var(--font-sans-ui);
+    font-size: 0.75rem;
+    color: var(--color-text-primary);
+    cursor: pointer;
+    line-height: 1.35;
+  }
+
+  :global(.branch-visibility-checkbox) {
+    margin-top: 0.15rem;
+    accent-color: #183B3A;
+    cursor: pointer;
+    flex-shrink: 0;
+  }
+
+  :global(.branch-check-text) {
+    flex: 1;
+  }
+
+  :global(.branch-check-count) {
+    font-size: 0.6875rem;
+    color: var(--color-text-muted);
+  }
+
+  .branch-tree-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.35rem;
+    margin-top: 0.25rem;
+  }
+
+  .branch-action-btn {
+    padding: 0.35rem 0.45rem;
+    font-family: var(--font-sans-ui);
+    font-size: 0.6875rem;
+    font-weight: 600;
+    color: var(--gen-pine-text);
+    background-color: var(--gen-ivory);
+    border: 1px solid var(--gen-border);
+    border-radius: 3px;
+    cursor: pointer;
+    transition: border-color 140ms ease, background-color 140ms ease;
+  }
+
+  .branch-action-btn:hover {
+    border-color: var(--gen-gold);
+    background-color: var(--gen-ivory-subtle);
+  }
+
+  /* Mobil/Planshet tortma rejimi (< 1120px) */
+  @media (max-width: 1119px) {
+    .genealogy-sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: min(320px, 88vw);
+      z-index: 95;
+      border-radius: 0;
+      border-top: none;
+      border-bottom: none;
+      border-left: none;
+      box-shadow: var(--shadow-overlay);
+      transform: translateX(-104%);
+      visibility: hidden;
+      transition: transform 220ms cubic-bezier(0.22, 1, 0.36, 1), visibility 220ms;
+    }
+
+    .genealogy-sidebar.is-drawer-open {
+      transform: translateX(0);
+      visibility: visible;
+    }
+
+    .sidebar-drawer-header {
+      display: flex;
+    }
+
+    .sidebar-scroll-body {
+      overflow-y: auto;
+      flex: 1;
+      padding-bottom: 2rem;
+    }
+  }
+</style>

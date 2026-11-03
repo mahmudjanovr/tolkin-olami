@@ -39,11 +39,19 @@
       "is_uncertain": false
     },
     {
+      "character_id": "nerdanel",
+      "spouse_ids": ["feanor"],
+      "parent_ids": [],
+      "generation": 2,
+      "order": 2,
+      "is_uncertain": false
+    },
+    {
       "character_id": "fingolfin",
       "spouse_ids": ["anairë"],
       "parent_ids": ["finwe", "indis"],
       "generation": 2,
-      "order": 2,
+      "order": 3,
       "is_uncertain": false
     },
     {
@@ -51,7 +59,23 @@
       "spouse_ids": ["earwen"],
       "parent_ids": ["finwe", "indis"],
       "generation": 2,
-      "order": 3,
+      "order": 4,
+      "is_uncertain": false
+    },
+    {
+      "character_id": "maedhros",
+      "spouse_ids": [],
+      "parent_ids": ["feanor", "nerdanel"],
+      "generation": 3,
+      "order": 1,
+      "is_uncertain": false
+    },
+    {
+      "character_id": "maglor",
+      "spouse_ids": [],
+      "parent_ids": ["feanor", "nerdanel"],
+      "generation": 3,
+      "order": 2,
       "is_uncertain": false
     },
     {
@@ -59,7 +83,7 @@
       "spouse_ids": [],
       "parent_ids": ["fingolfin"],
       "generation": 3,
-      "order": 1,
+      "order": 3,
       "is_uncertain": false
     },
     {
@@ -67,7 +91,15 @@
       "spouse_ids": ["elenwe"],
       "parent_ids": ["fingolfin"],
       "generation": 3,
-      "order": 2,
+      "order": 4,
+      "is_uncertain": false
+    },
+    {
+      "character_id": "finrod",
+      "spouse_ids": [],
+      "parent_ids": ["finarfin"],
+      "generation": 3,
+      "order": 5,
       "is_uncertain": false
     },
     {
@@ -75,7 +107,15 @@
       "spouse_ids": ["celeborn"],
       "parent_ids": ["finarfin"],
       "generation": 3,
-      "order": 3,
+      "order": 6,
+      "is_uncertain": false
+    },
+    {
+      "character_id": "celeborn",
+      "spouse_ids": ["galadriel"],
+      "parent_ids": [],
+      "generation": 3,
+      "order": 7,
       "is_uncertain": false
     },
     {

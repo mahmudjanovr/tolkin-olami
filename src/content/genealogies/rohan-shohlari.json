@@ -85,6 +85,14 @@
       "generation": 7,
       "order": 3,
       "is_uncertain": false
+    },
+    {
+      "character_id": "faramir",
+      "spouse_ids": ["eowyn"],
+      "parent_ids": [],
+      "generation": 7,
+      "order": 4,
+      "is_uncertain": false
     }
   ],
   "branches": ["Birinchi Tarmoq (Eorldan Helmgacha)", "Ikkinchi Tarmoq (Fréaláfdan Théodengacha)", "Uchinchi Tarmoq (Éomerdan boshlab)"],

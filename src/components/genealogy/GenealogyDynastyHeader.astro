@@ -1,0 +1,449 @@
+---
+/**
+ * TOLKIEN OLAMI — Sulola Sarlavhasi va Sulolalar Navigatsiyasi (Section A: Dynasty Header)
+ *
+ * Classic Heritage tahririy uslubidagi sulola tanlagichi, xonadon nomi,
+ * qisqacha tarixiy muqaddima, davr, asosiy shaxslar va shajara tarmoqlari.
+ */
+
+import type { DynastyModel, GenealogyPersonProfile } from '@/utils/genealogy/genealogy-model';
+
+interface Props {
+  dynasties: DynastyModel[];
+  activeDynasty: DynastyModel;
+  people: Record<string, GenealogyPersonProfile>;
+}
+
+const { dynasties, activeDynasty, people } = Astro.props;
+
+const maxGeneration = Math.max(...activeDynasty.members.map((m) => m.generation), 1);
+const founderProfile = people[activeDynasty.founderId];
+
+function getInitials(name: string): string {
+  const parts = name.replace(/[()]/g, '').trim().split(/\s+/);
+  if (parts.length === 1) return (parts[0] || 'T').slice(0, 2).toUpperCase();
+  return ((parts[0]?.[0] || '') + (parts[1]?.[0] || '')).toUpperCase();
+}
+---
+
+<section class="dynasty-header-shell" aria-labelledby="dynasty-header-title">
+  <!-- 1. Sulolalar tezkor tanlagichi (Tablist) -->
+  <div class="dynasty-tabs-bar" role="tablist" aria-label="Kanonik sulolalar tanlagichi">
+    {dynasties.map((d) => {
+      const isActive = d.id === activeDynasty.id;
+      return (
+        <button
+          type="button"
+          id={`tab-${d.id}`}
+          role="tab"
+          aria-selected={isActive ? 'true' : 'false'}
+          aria-controls="genealogy-canvas-stage"
+          class={`dynasty-tab-btn ${isActive ? 'is-active' : ''}`}
+          data-dynasty-id={d.id}
+        >
+          <span class="dynasty-tab-label">{d.shortTitle}</span>
+          <span class="dynasty-tab-count">{d.members.length}</span>
+        </button>
+      );
+    })}
+  </div>
+
+  <!-- 2. Sulola tarixiy arxivi kartasi (Dynasty Header Card) -->
+  <header class="dynasty-editorial-card" id="dynasty-editorial-card">
+    <div class="dynasty-card-top">
+      <div class="dynasty-rubric-row">
+        <span class="dynasty-house-kicker" id="dynasty-house-name">{activeDynasty.houseName}</span>
+        <span class="dynasty-meta-dot" aria-hidden="true">•</span>
+        <span class="dynasty-era-badge" id="dynasty-era-label">{activeDynasty.era}</span>
+      </div>
+
+      <a
+        href={`/nasabnomalar/${activeDynasty.id}/`}
+        class="dynasty-permalink"
+        id="dynasty-permalink"
+        title="Sulolaning alohida sahifasi"
+      >
+        <span>Sulola sahifasi</span>
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M7 17L17 7"></path>
+          <path d="M7 7h10v10"></path>
+        </svg>
+      </a>
+    </div>
+
+    <div class="dynasty-main-grid">
+      <div class="dynasty-narrative-col">
+        <h2 class="dynasty-title" id="dynasty-header-title">{activeDynasty.title}</h2>
+        <p class="dynasty-summary" id="dynasty-header-summary">{activeDynasty.summary}</p>
+      </div>
+
+      <dl class="dynasty-stats-strip" aria-label="Sulola koʻrsatkichlari">
+        <div class="dynasty-stat-item">
+          <dt>Asoschi</dt>
+          <dd>
+            <button
+              type="button"
+              class="stat-founder-btn"
+              id="dynasty-founder-btn"
+              data-person-id={activeDynasty.founderId}
+            >
+              {founderProfile?.name || activeDynasty.founderId}
+            </button>
+          </dd>
+        </div>
+        <div class="dynasty-stat-item">
+          <dt>Avlodlar va shaxslar</dt>
+          <dd id="dynasty-lineage-metrics">
+            {maxGeneration} avlod · {activeDynasty.members.length} shaxs
+          </dd>
+        </div>
+        <div class="dynasty-stat-item">
+          <dt>Shajara tarmoqlari</dt>
+          <dd id="dynasty-branches-summary">
+            {activeDynasty.branches.length} ta asosiy tarmoq
+          </dd>
+        </div>
+      </dl>
+    </div>
+
+    <!-- 3. Muhim shaxslar va tarmoqlar qatori -->
+    <div class="dynasty-people-bar">
+      <span class="people-bar-label">Asosiy shaxslar:</span>
+      <div class="relevant-people-list" id="dynasty-relevant-people">
+        {activeDynasty.relevantPeopleIds.map((pid) => {
+          const person = people[pid];
+          if (!person) return null;
+          const isFeatured = pid === activeDynasty.featuredId;
+          return (
+            <button
+              type="button"
+              class={`relevant-person-chip ${isFeatured ? 'is-selected' : ''}`}
+              data-person-id={person.id}
+            >
+              {person.portrait ? (
+                <img
+                  src={person.portrait.thumb}
+                  alt=""
+                  width="22"
+                  height="22"
+                  loading="lazy"
+                  decoding="async"
+                  class="chip-avatar"
+                />
+              ) : (
+                <span class="chip-monogram" aria-hidden="true">{getInitials(person.name)}</span>
+              )}
+              <span class="chip-name">{person.name}</span>
+            </button>
+          );
+        })}
+      </div>
+    </div>
+  </header>
+</section>
+
+<style>
+  .dynasty-header-shell {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+  }
+
+  .dynasty-tabs-bar {
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+    overflow-x: auto;
+    padding-bottom: 0.25rem;
+    scrollbar-width: thin;
+  }
+
+  .dynasty-tab-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.5rem 0.9rem;
+    background-color: var(--gen-ivory-elevated);
+    border: 1px solid var(--gen-border);
+    border-radius: 4px;
+    font-family: var(--font-sans-ui);
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: var(--color-text-secondary);
+    cursor: pointer;
+    white-space: nowrap;
+    transition: border-color 150ms ease, background-color 150ms ease, color 150ms ease;
+  }
+
+  .dynasty-tab-btn:hover {
+    border-color: var(--gen-gold);
+    color: var(--color-text-primary);
+  }
+
+  .dynasty-tab-btn.is-active {
+    background-color: var(--gen-pine-fill);
+    border-color: var(--gen-pine-fill);
+    color: #F7F4EC;
+  }
+
+  .dynasty-tab-count {
+    font-size: 0.6875rem;
+    font-weight: 600;
+    padding: 0.05rem 0.38rem;
+    border-radius: 999px;
+    background-color: rgba(24, 59, 58, 0.08);
+    color: inherit;
+  }
+
+  .dynasty-tab-btn.is-active .dynasty-tab-count {
+    background-color: rgba(247, 244, 236, 0.2);
+    color: #F7F4EC;
+  }
+
+  .dynasty-editorial-card {
+    background-color: var(--gen-ivory-elevated);
+    border: 1px solid var(--gen-border);
+    border-top: 2px solid var(--gen-gold);
+    border-radius: 4px;
+    padding: 1.15rem 1.35rem;
+    box-shadow: var(--shadow-sm);
+  }
+
+  .dynasty-card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 0.55rem;
+  }
+
+  .dynasty-rubric-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    font-family: var(--font-sans-ui);
+    font-size: 0.75rem;
+  }
+
+  .dynasty-house-kicker {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--gen-gold-text);
+  }
+
+  .dynasty-meta-dot {
+    color: var(--color-text-muted);
+  }
+
+  .dynasty-era-badge {
+    font-weight: 500;
+    color: var(--color-text-secondary);
+    background-color: var(--gen-ivory-subtle);
+    border: 1px solid var(--gen-border);
+    padding: 0.1rem 0.5rem;
+    border-radius: 3px;
+  }
+
+  .dynasty-permalink {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-family: var(--font-sans-ui);
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--gen-pine-text);
+    text-decoration: none;
+    padding: 0.2rem 0.5rem;
+    border-radius: 3px;
+    border: 1px solid transparent;
+    transition: border-color 150ms ease, background-color 150ms ease;
+  }
+
+  .dynasty-permalink:hover {
+    border-color: var(--gen-border);
+    background-color: var(--gen-ivory-subtle);
+    text-decoration: none;
+  }
+
+  .dynasty-main-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding-bottom: 0.9rem;
+    border-bottom: 1px solid var(--gen-border);
+  }
+
+  @media (min-width: 900px) {
+    .dynasty-main-grid {
+      grid-template-columns: minmax(0, 1.7fr) minmax(260px, 1fr);
+      align-items: start;
+      gap: 1.5rem;
+    }
+  }
+
+  .dynasty-title {
+    font-family: var(--font-serif-heading);
+    font-size: clamp(1.375rem, 2.2vw, 1.75rem);
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--color-text-primary);
+    margin: 0 0 0.45rem 0;
+  }
+
+  .dynasty-summary {
+    font-family: var(--font-serif-body);
+    font-size: 0.96875rem;
+    line-height: 1.62;
+    color: var(--color-text-secondary);
+    margin: 0;
+    max-width: 74ch;
+  }
+
+  .dynasty-stats-strip {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.65rem;
+    margin: 0;
+    padding: 0.75rem 0.85rem;
+    background-color: var(--gen-ivory);
+    border: 1px solid var(--gen-border);
+    border-radius: 4px;
+  }
+
+  @media (max-width: 540px) {
+    .dynasty-stats-strip {
+      grid-template-columns: 1fr;
+      gap: 0.5rem;
+    }
+  }
+
+  .dynasty-stat-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    min-width: 0;
+  }
+
+  .dynasty-stat-item dt {
+    font-family: var(--font-sans-ui);
+    font-size: 0.6875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-muted);
+  }
+
+  .dynasty-stat-item dd {
+    margin: 0;
+    font-family: var(--font-sans-ui);
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: var(--color-text-primary);
+  }
+
+  .stat-founder-btn {
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    color: var(--gen-pine-text);
+    text-decoration: underline;
+    text-decoration-color: var(--gen-gold);
+    text-underline-offset: 2px;
+    cursor: pointer;
+    text-align: left;
+  }
+
+  .stat-founder-btn:hover {
+    color: var(--gen-gold-text);
+  }
+
+  .dynasty-people-bar {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding-top: 0.8rem;
+  }
+
+  .people-bar-label {
+    font-family: var(--font-sans-ui);
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--color-text-muted);
+    margin-right: 0.15rem;
+  }
+
+  .relevant-people-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+
+  :global(.relevant-person-chip) {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.22rem 0.6rem 0.22rem 0.28rem;
+    background-color: var(--gen-ivory);
+    border: 1px solid var(--gen-border);
+    border-radius: 999px;
+    font-family: var(--font-sans-ui);
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--color-text-primary);
+    cursor: pointer;
+    transition: border-color 150ms ease, background-color 150ms ease;
+  }
+
+  :global(.relevant-person-chip:hover) {
+    border-color: var(--gen-gold);
+    background-color: var(--gen-ivory-subtle);
+  }
+
+  :global(.relevant-person-chip.is-selected) {
+    background-color: var(--gen-pine-fill);
+    border-color: var(--gen-pine-fill);
+    color: #F7F4EC;
+  }
+
+  :global(.chip-avatar) {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid var(--gen-gold);
+    flex-shrink: 0;
+  }
+
+  :global(.chip-monogram) {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--gen-pine-fill);
+    color: #F7F4EC;
+    font-family: var(--font-serif-heading);
+    font-size: 0.6875rem;
+    font-weight: 700;
+    border: 1px solid var(--gen-gold);
+    flex-shrink: 0;
+  }
+
+  :global(.relevant-person-chip.is-selected .chip-monogram) {
+    background-color: rgba(247, 244, 236, 0.18);
+  }
+
+  @media (max-width: 640px) {
+    .dynasty-editorial-card {
+      padding: 0.95rem 1rem;
+    }
+  }
+</style>

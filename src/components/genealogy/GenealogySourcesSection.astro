@@ -1,0 +1,506 @@
+---
+/**
+ * TOLKIEN OLAMI — Manbalar, Tarixiy Qaydlar va Kanon Maqomi Boʻlimi (Section E: Sources Section)
+ *
+ * Birlamchi manba iqtiboslari, tarixiy-filologik izohlar hamda
+ * Tasdiqlangan (Kanon), Qoʻlyozma varianti (Variant) va Munozarali / Toʻliqsiz (Uncertain)
+ * shajara rishtalarining aniq ilmiy tafovuti.
+ */
+
+import type { DynastyModel, GenealogyPersonProfile } from '@/utils/genealogy/genealogy-model';
+
+interface Props {
+  activeDynasty: DynastyModel;
+  people: Record<string, GenealogyPersonProfile>;
+}
+
+const { activeDynasty, people } = Astro.props;
+
+// Aktiv suloladagi matnshunoslik izohiga yoki oraliq koʻprikka ega aʼzolar
+const notableAuditItems = activeDynasty.members
+  .map((m) => {
+    const p = people[m.character_id];
+    const node = activeDynasty.layout.nodes.find((n) => n.id === m.character_id);
+    if (!p) return null;
+    const hasDispute = m.is_uncertain || p.canonStatus !== 'canon' || Boolean(p.uncertaintyNotes);
+    const hasBridge = Boolean(node?.bridgeNote);
+    if (!hasDispute && !hasBridge) return null;
+
+    const statusKind = m.is_uncertain || p.canonStatus === 'uncertain'
+      ? 'uncertain'
+      : p.canonStatus === 'variant' || p.uncertaintyNotes
+        ? 'variant'
+        : 'bridge';
+
+    const statusLabel =
+      statusKind === 'uncertain'
+        ? 'Munozarali (Uncertain)'
+        : statusKind === 'variant'
+          ? 'Qoʻlyozma varianti (Variant)'
+          : 'Qisqartirilgan zanjir (Koʻprik)';
+
+    const explanation =
+      m.uncertainty_notes ||
+      p.uncertaintyNotes ||
+      (node?.bridgeNote
+        ? `Shajara jadvalida ixchamlik uchun oraliq avlod (${node.bridgeNote}) koʻprik chizigʻi bilan ifodalangan.`
+        : '');
+
+    return {
+      personId: p.id,
+      name: p.name,
+      statusKind,
+      statusLabel,
+      explanation,
+      citation: `${p.citation.work}, ${p.citation.section}`,
+    };
+  })
+  .filter((item): item is NonNullable<typeof item> => item !== null);
+---
+
+<section
+  id="genealogy-sources-section"
+  class="genealogy-sources-section"
+  aria-labelledby="sources-section-heading"
+>
+  <div class="sources-section-header">
+    <div>
+      <span class="sources-kicker">Manbashunoslik va Kanon Tekshiruvi</span>
+      <h2 class="sources-heading" id="sources-section-heading">
+        Birlamchi manbalar va tarixiy izohlar
+      </h2>
+    </div>
+
+    <div class="canon-status-legend" aria-label="Kanon maqomlari tasnifi">
+      <span class="canon-key-badge key-canon">Kanon (Tasdiqlangan)</span>
+      <span class="canon-key-badge key-variant">Variant (Qoʻlyozma)</span>
+      <span class="canon-key-badge key-uncertain">Munozarali / Noaniq</span>
+    </div>
+  </div>
+
+  <div class="sources-columns-grid">
+    <!-- 1-ustun: Birlamchi manbalar va tarixiy izohlar -->
+    <div class="sources-col-card">
+      <h3 class="sources-subhead">Birlamchi manba koʻrsatkichlari</h3>
+      <ol class="primary-sources-list" id="sources-primary-list">
+        {activeDynasty.sources.map((src) => (
+          <li class="source-ref-item">
+            <div class="source-cite-line">
+              <span class="source-author">{src.author}</span>
+              {src.year && <span class="source-year">({src.year}).</span>}
+              {src.href ? (
+                <a href={src.href} class="source-book-link">
+                  <em>{src.bookTitle}</em>
+                </a>
+              ) : (
+                <em>{src.bookTitle}</em>
+              )}
+              <span class="source-chapter"> — «{src.chapter}»</span>
+              {src.page && <span class="source-page">, {src.page}-bet.</span>}
+            </div>
+            {src.notes && <p class="source-hist-note">{src.notes}</p>}
+          </li>
+        ))}
+      </ol>
+
+      <div class="methodology-note-box">
+        <h4 class="methodology-title">Akademik mezon</h4>
+        <p>
+          Ushbu shajaradagi har bir rishta J.R.R. Tolkien va Christopher Tolkien nashrlariga tayanadi.
+          Manbalarda ochiq qoldirilgan sanalar va shaxslar toʻqib chiqarilmaydi; tasdiqlangan qon-qarindoshlik
+          tutash toʻq yashil chiziq bilan, ziddiyatli yoki oraliq boʻgʻinlari qisqartirilgan nasablar esa
+          uzuq-uzuq chiziqlar bilan farqlanadi.
+        </p>
+      </div>
+    </div>
+
+    <!-- 2-ustun: Tasdiqlangan va munozarali / toʻliqsiz maʼlumotlar tahlili -->
+    <div class="sources-col-card">
+      <h3 class="sources-subhead">Kanon holati va farqlash jadvali</h3>
+
+      <div class="canon-metrics-grid" id="sources-canon-metrics">
+        <div class="metric-box metric-canon">
+          <span class="metric-num" id="metric-confirmed-count">
+            {activeDynasty.canonStats.confirmedCount}
+          </span>
+          <span class="metric-title">Kanon (Canon)</span>
+          <span class="metric-desc">Tasdiqlangan rishtalar</span>
+        </div>
+
+        <div class="metric-box metric-variant">
+          <span class="metric-num" id="metric-variant-count">
+            {activeDynasty.canonStats.variantCount}
+          </span>
+          <span class="metric-title">Variant</span>
+          <span class="metric-desc">Qoʻlyozma talqinlari</span>
+        </div>
+
+        <div class="metric-box metric-uncertain">
+          <span class="metric-num" id="metric-uncertain-count">
+            {activeDynasty.canonStats.uncertainCount + activeDynasty.canonStats.bridgeCount}
+          </span>
+          <span class="metric-title">Noaniq / Koʻprik</span>
+          <span class="metric-desc">Ziddiyatli yoki oraliq</span>
+        </div>
+      </div>
+
+      <div class="disputed-audit-wrap">
+        <h4 class="audit-list-heading">
+          Munozarali, variant va qisqartirilgan boʻgʻinlar izohi
+        </h4>
+        <ul class="disputed-audit-list" id="sources-disputed-list">
+          {notableAuditItems.length === 0 ? (
+            <li class="audit-empty-item">
+              Ushbu suloladagi barcha koʻrsatilgan rishtalar birlamchi matnlarda toʻgʻridan-toʻgʻri tasdiqlangan.
+            </li>
+          ) : (
+            notableAuditItems.map((item) => (
+              <li class={`audit-entry audit-${item.statusKind}`}>
+                <div class="audit-entry-top">
+                  <button
+                    type="button"
+                    class="audit-person-btn"
+                    data-person-id={item.personId}
+                  >
+                    {item.name}
+                  </button>
+                  <span class={`audit-status-tag tag-${item.statusKind}`}>
+                    {item.statusLabel}
+                  </span>
+                </div>
+                <p class="audit-explanation">{item.explanation}</p>
+                <span class="audit-cite">{item.citation}</span>
+              </li>
+            ))
+          )}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .genealogy-sources-section {
+    margin-top: 1.5rem;
+    background-color: var(--gen-ivory-elevated);
+    border: 1px solid var(--gen-border);
+    border-radius: 4px;
+    padding: 1.35rem;
+  }
+
+  .sources-section-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.85rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1.15rem;
+    border-bottom: 1px solid var(--gen-border);
+  }
+
+  .sources-kicker {
+    display: block;
+    font-family: var(--font-sans-ui);
+    font-size: 0.6875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: var(--gen-gold-text);
+    margin-bottom: 0.2rem;
+  }
+
+  .sources-heading {
+    font-family: var(--font-serif-heading);
+    font-size: clamp(1.25rem, 2vw, 1.5rem);
+    font-weight: 700;
+    color: var(--color-text-primary);
+    margin: 0;
+  }
+
+  .canon-status-legend {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+
+  .canon-key-badge {
+    padding: 0.18rem 0.55rem;
+    border-radius: 3px;
+    font-family: var(--font-sans-ui);
+    font-size: 0.6875rem;
+    font-weight: 700;
+  }
+
+  .key-canon {
+    background-color: var(--gen-canon-bg);
+    color: var(--gen-pine-text);
+    border: 1px solid var(--gen-pine-border);
+  }
+
+  .key-variant {
+    background-color: var(--gen-variant-bg);
+    color: var(--gen-variant-text);
+    border: 1px solid var(--gen-variant-text);
+  }
+
+  .key-uncertain {
+    background-color: var(--gen-uncertain-bg);
+    color: var(--gen-uncertain);
+    border: 1px solid var(--gen-uncertain);
+  }
+
+  .sources-columns-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  @media (min-width: 920px) {
+    .sources-columns-grid {
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
+      gap: 1.5rem;
+    }
+  }
+
+  .sources-col-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+    min-width: 0;
+  }
+
+  .sources-subhead {
+    font-family: var(--font-serif-heading);
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--color-text-primary);
+    margin: 0;
+  }
+
+  .primary-sources-list {
+    margin: 0;
+    padding-left: 1.15rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  :global(.source-ref-item) {
+    font-family: var(--font-sans-ui);
+    font-size: 0.8125rem;
+    line-height: 1.55;
+    color: var(--color-text-primary);
+  }
+
+  :global(.source-author) {
+    font-weight: 600;
+  }
+
+  :global(.source-year) {
+    color: var(--color-text-secondary);
+    margin-inline: 0.2rem;
+  }
+
+  :global(.source-book-link) {
+    color: var(--gen-gold-text);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  :global(.source-hist-note) {
+    margin: 0.25rem 0 0 0;
+    font-size: 0.75rem;
+    color: var(--color-text-secondary);
+  }
+
+  .methodology-note-box {
+    margin-top: auto;
+    padding: 0.8rem 0.95rem;
+    background-color: var(--gen-ivory);
+    border: 1px solid var(--gen-border);
+    border-left: 3px solid var(--gen-pine-fill);
+    border-radius: 3px;
+  }
+
+  .methodology-title {
+    font-family: var(--font-sans-ui);
+    font-size: 0.71875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--gen-pine-text);
+    margin: 0 0 0.3rem 0;
+  }
+
+  .methodology-note-box p {
+    margin: 0;
+    font-family: var(--font-sans-ui);
+    font-size: 0.78125rem;
+    line-height: 1.55;
+    color: var(--color-text-secondary);
+  }
+
+  .canon-metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.6rem;
+  }
+
+  @media (max-width: 480px) {
+    .canon-metrics-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .metric-box {
+    padding: 0.65rem 0.75rem;
+    background-color: var(--gen-ivory);
+    border: 1px solid var(--gen-border);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+  }
+
+  .metric-canon {
+    border-top: 2px solid var(--gen-pine-fill);
+  }
+
+  .metric-variant {
+    border-top: 2px solid var(--gen-variant-text);
+  }
+
+  .metric-uncertain {
+    border-top: 2px solid var(--gen-uncertain);
+  }
+
+  .metric-num {
+    font-family: var(--font-serif-heading);
+    font-size: 1.375rem;
+    font-weight: 700;
+    line-height: 1.1;
+    color: var(--color-text-primary);
+  }
+
+  .metric-title {
+    font-family: var(--font-sans-ui);
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--color-text-primary);
+  }
+
+  .metric-desc {
+    font-family: var(--font-sans-ui);
+    font-size: 0.6875rem;
+    color: var(--color-text-muted);
+  }
+
+  .audit-list-heading {
+    font-family: var(--font-sans-ui);
+    font-size: 0.71875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-muted);
+    margin: 0 0 0.45rem 0;
+  }
+
+  .disputed-audit-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-height: 290px;
+    overflow-y: auto;
+  }
+
+  :global(.audit-entry) {
+    padding: 0.6rem 0.75rem;
+    background-color: var(--gen-ivory);
+    border: 1px solid var(--gen-border);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  :global(.audit-entry-top) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+
+  :global(.audit-person-btn) {
+    background: none;
+    border: none;
+    padding: 0;
+    font-family: var(--font-serif-heading);
+    font-size: 0.96875rem;
+    font-weight: 700;
+    color: var(--gen-pine-text);
+    text-decoration: underline;
+    text-decoration-color: var(--gen-gold);
+    text-underline-offset: 2px;
+    cursor: pointer;
+  }
+
+  :global(.audit-status-tag) {
+    font-family: var(--font-sans-ui);
+    font-size: 0.65rem;
+    font-weight: 700;
+    padding: 0.08rem 0.4rem;
+    border-radius: 3px;
+  }
+
+  :global(.tag-uncertain) {
+    background-color: var(--gen-uncertain-bg);
+    color: var(--gen-uncertain);
+  }
+
+  :global(.tag-variant) {
+    background-color: var(--gen-variant-bg);
+    color: var(--gen-variant-text);
+  }
+
+  :global(.tag-bridge) {
+    background-color: var(--gen-ivory-subtle);
+    color: var(--gen-gold-text);
+  }
+
+  :global(.audit-explanation) {
+    margin: 0;
+    font-family: var(--font-sans-ui);
+    font-size: 0.75rem;
+    line-height: 1.48;
+    color: var(--color-text-secondary);
+  }
+
+  :global(.audit-cite) {
+    font-family: var(--font-sans-ui);
+    font-size: 0.6875rem;
+    font-style: italic;
+    color: var(--color-text-muted);
+  }
+
+  :global(.audit-empty-item) {
+    padding: 0.65rem 0.75rem;
+    background-color: var(--gen-ivory);
+    border: 1px solid var(--gen-border);
+    border-radius: 4px;
+    font-family: var(--font-sans-ui);
+    font-size: 0.78125rem;
+    color: var(--color-text-secondary);
+  }
+
+  @media (max-width: 640px) {
+    .genealogy-sources-section {
+      padding: 1rem;
+    }
+  }
+</style>

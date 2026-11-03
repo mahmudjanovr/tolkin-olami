@@ -1,397 +1,981 @@
 ---
 /**
- * TOLKIEN OLAMI — Nasabnoma SVG Kanvasi (Genealogy Canvas)
+ * TOLKIEN OLAMI — Interaktiv SVG Nasabnoma Kanvasi (Section B: Interactive Genealogy Canvas)
  *
- * White Tree botanik arxitekturasi asosida:
- * - Nafis Bezye egri shoxlari
- * - Avlodlar pogʻonalari (I, II, III...)
- * - Ziddiyatli nasablar uchun uzuq-uzuq chiziqlar
- * - GPU-tezlashtirilgan pan va zoom
+ * Yengil vaznli SVG shajara chizgichi: portretli tugunlar, ota-ona/farzand, nikoh,
+ * aka-uka/opa-singil va oraliq avlod koʻprigi chiziqlari, masshtablash/surish hamda
+ * tarmoqlarni yoyish/yigʻish boshqaruvi.
  */
 
-import type { TreeLayout } from '@/utils/genealogy/layout';
+import type { DynastyModel, GenealogyPersonProfile } from '@/utils/genealogy/genealogy-model';
+import GenealogyAccessibleTree from './GenealogyAccessibleTree.astro';
 
 interface Props {
-  dynastyId: string;
-  dynastyTitle: string;
-  layout: TreeLayout;
+  activeDynasty: DynastyModel;
+  people: Record<string, GenealogyPersonProfile>;
 }
 
-const { dynastyId, dynastyTitle, layout } = Astro.props;
-const { nodes, links, dimensions } = layout;
+const { activeDynasty, people } = Astro.props;
+const { layout } = activeDynasty;
+const selectedId = activeDynasty.featuredId;
 
-// Avlodlar ro'yxati
-const generations = Array.from(new Set(nodes.map((n) => n.generation))).sort((a, b) => a - b);
-const genRoman = (n: number) => {
-  const romans = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X'];
-  return romans[n - 1] || `${n}`;
-};
+function truncateLabel(str: string, maxLen: number): string {
+  if (str.length <= maxLen) return str;
+  return `${str.slice(0, maxLen - 1).trimEnd()}…`;
+}
+
+function getInitials(name: string): string {
+  const parts = name.replace(/[()]/g, '').trim().split(/\s+/);
+  if (parts.length === 1) return (parts[0] || 'T').slice(0, 2).toUpperCase();
+  return ((parts[0]?.[0] || '') + (parts[1]?.[0] || '')).toUpperCase();
+}
+
+// Har bir avlod Y koordinatasi
+const genRowsMap = new Map<number, number>();
+for (const n of layout.nodes) {
+  if (!genRowsMap.has(n.generation)) {
+    genRowsMap.set(n.generation, n.y);
+  }
+}
+const sortedGenRows = Array.from(genRowsMap.entries()).sort((a, b) => a[0] - b[0]);
+const romans = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X'];
+
+// Farzandga ega tugunlar (Expand/Collapse tugmasi uchun)
+const parentChildCounts = new Map<string, number>();
+for (const n of layout.nodes) {
+  for (const pid of n.parentIds) {
+    parentChildCounts.set(pid, (parentChildCounts.get(pid) || 0) + 1);
+  }
+}
+for (const link of layout.links) {
+  if (link.type === 'bridge') {
+    parentChildCounts.set(link.fromId, (parentChildCounts.get(link.fromId) || 0) + 1);
+  }
+}
+
+// Nasab zanjiri (selectedId uchun)
+function buildLineageIds(targetId: string): string[] {
+  const chain: string[] = [];
+  const visited = new Set<string>();
+  let curr: string | undefined = targetId;
+  while (curr && !visited.has(curr)) {
+    visited.add(curr);
+    chain.unshift(curr);
+    const node = layout.nodes.find((n) => n.id === curr);
+    const nextParent = node?.parentIds.find((pid) => layout.nodes.some((n) => n.id === pid));
+    curr = nextParent;
+  }
+  return chain;
+}
+
+const initialLineageIds = buildLineageIds(selectedId);
 ---
 
-<div
-  id={`genealogy-canvas-container-${dynastyId}`}
-  class="genealogy-canvas-container"
-  data-dynasty-id={dynastyId}
-  data-width={dimensions.width}
-  data-height={dimensions.height}
-  tabindex="0"
-  role="region"
-  aria-label={`${dynastyTitle} interaktiv shajarasi`}
+<section
+  id="genealogy-canvas-stage"
+  class="genealogy-canvas-stage"
+  aria-label={`${activeDynasty.title} interaktiv shajara maydoni`}
 >
-  <svg
-    id={`svg-canvas-${dynastyId}`}
-    class="genealogy-svg"
-    viewBox={`0 0 ${dimensions.width} ${dimensions.height}`}
-    width={dimensions.width}
-    height={dimensions.height}
-  >
-    <defs>
-      <!-- Nikoh Tuguni Simvoli (Botanical Marriage Ring) -->
-      <g id="marriage-ring">
-        <circle cx="0" cy="0" r="4.5" fill="var(--color-bg-base)" stroke="var(--color-accent-gold)" stroke-width="1.5" />
-        <circle cx="0" cy="0" r="1.5" fill="var(--color-accent-gold)" />
-      </g>
-    </defs>
+  <!-- 1. Yuqori boshqaruv paneli: mobil tortmalar, nasab yoʻli va masshtab tugmalari -->
+  <div class="canvas-toolbar">
+    <div class="toolbar-left-group">
+      <!-- Mobil tortma tugmalari (< 1120px) -->
+      <div class="mobile-drawer-triggers">
+        <button
+          type="button"
+          id="btn-open-left-drawer"
+          class="canvas-tool-btn mobile-trigger-btn"
+          aria-controls="genealogy-left-sidebar"
+          aria-expanded="false"
+        >
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="4" y1="6" x2="20" y2="6"></line>
+            <line x1="4" y1="12" x2="14" y2="12"></line>
+            <line x1="4" y1="18" x2="18" y2="18"></line>
+          </svg>
+          <span>Filtrlar</span>
+        </button>
 
-    <!-- Dinamik Pan/Zoom Konteyneri -->
-    <g id={`viewport-content-${dynastyId}`} class="viewport-content">
-      <!-- 1. Avlodlar Qatlamlari va Yoʻnaltiruvchi Chiziqlar -->
-      <g class="generation-strata" aria-hidden="true">
-        {generations.map((genNum) => {
-          const genNodes = nodes.filter((n) => n.generation === genNum);
-          const firstNode = genNodes[0];
-          if (!firstNode) return null;
-          const y = firstNode.y;
-          return (
-            <g class="stratum-group">
-              <!-- Nozik gorizontal ajratuvchi chiziq -->
-              <line
-                x1={20}
-                y1={y - 25}
-                x2={dimensions.width - 20}
-                y2={y - 25}
-                class="stratum-line"
-              />
-              <!-- Rim raqami belgisi -->
-              <rect
-                x={20}
-                y={y - 37}
-                width={36}
-                height={22}
-                rx={4}
-                class="stratum-badge-bg"
-              />
-              <text
-                x={38}
-                y={y - 22}
-                text-anchor="middle"
-                class="stratum-label"
-              >
-                {genRoman(genNum)}
-              </text>
-            </g>
-          );
-        })}
-      </g>
+        <button
+          type="button"
+          id="btn-open-right-drawer"
+          class="canvas-tool-btn mobile-trigger-btn"
+          aria-controls="genealogy-profile-panel"
+          aria-expanded="false"
+        >
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+          <span>Shaxs profili</span>
+        </button>
+      </div>
 
-      <!-- 2. Bogʻlovchi Shoxlar Qatlami (Botanical Branch Links) -->
-      <g class="branches-layer" aria-hidden="true">
-        <!-- Nikoh Bog'lanishlari -->
-        {links.filter((l) => l.type === 'marriage').map((link) => (
-          <g class="marriage-link-group">
-            <path
-              d={link.pathD}
-              class="marriage-path"
-            />
-          </g>
-        ))}
-
-        <!-- Ota-ona va Farzand Shoxlari -->
-        {links.filter((l) => l.type !== 'marriage').map((link) => (
-          <path
-            d={link.pathD}
-            class={`branch-path ${link.isUncertain ? 'branch-uncertain' : ''} ${link.type === 'bridge' ? 'branch-bridge' : ''}`}
-            data-from={link.fromId}
-            data-to={link.toId}
-          />
-        ))}
-      </g>
-
-      <!-- 3. Shaxs Tugunlari Qatlami (Botanical Person Nodes) -->
-      <g class="nodes-layer">
-        {nodes.map((node) => {
-          const firstTitle = node.titles && node.titles.length > 0 && node.titles[0] ? node.titles[0] : '';
-          const mainTitle = firstTitle || node.culture || '';
-          return (
-            <g
-              class={`person-node ${node.isUncertain ? 'node-uncertain' : ''}`}
-              id={`node-${node.id}`}
-              data-person-id={node.id}
-              transform={`translate(${node.x}, ${node.y})`}
-              tabindex="0"
-              role="button"
-              aria-label={`${node.name}, ${mainTitle}, ${node.dates}`}
-            >
-              <!-- Kartochka Foni -->
-              <rect
-                width={node.width}
-                height={node.height}
-                rx={8}
-                class="node-bg"
-              />
-
-              <!-- Botanik kurtak/tugun nuqtalari -->
-              <circle cx={node.width / 2} cy={0} r={3} class="node-bud top-bud" />
-              <circle cx={node.width / 2} cy={node.height} r={3} class="node-bud bottom-bud" />
-
-              <!-- Ism (EB Garamond) -->
-              <text
-                x={node.width / 2}
-                y={24}
-                text-anchor="middle"
-                class="node-name-text"
-              >
-                {node.name}
-              </text>
-
-              <!-- Asosiy Unvon yoki Madaniyat (Inter) -->
-              <text
-                x={node.width / 2}
-                y={40}
-                text-anchor="middle"
-                class="node-title-text"
-              >
-                {mainTitle.length > 24 ? mainTitle.slice(0, 22) + '…' : mainTitle}
-              </text>
-
-              <!-- Xronologik Sanalar (Inter, Muted) -->
-              <text
-                x={node.width / 2}
-                y={55}
-                text-anchor="middle"
-                class="node-date-text"
-              >
-                {node.dates.length > 24 ? node.dates.slice(0, 22) + '…' : node.dates}
-              </text>
-
-              <!-- Ziddiyatli nasab belgisi [?] -->
-              {node.isUncertain && (
-                <g class="uncertainty-indicator" transform={`translate(${node.width - 20}, 8)`}>
-                  <circle cx="6" cy="6" r="6" class="uncertainty-circle" />
-                  <text x="6" y="9.5" text-anchor="middle" class="uncertainty-icon-text">?</text>
-                </g>
-              )}
-
-              <!-- Ko'prik ajdod belgisi -->
-              {node.bridgeNote && (
-                <text
-                  x={node.width / 2}
-                  y={-6}
-                  text-anchor="middle"
-                  class="node-bridge-tag"
+      <!-- Nasab yoʻli (Breadcrumbs) -->
+      <nav class="lineage-trail-nav" aria-label="Tanlangan shaxsning shajaraviy yoʻli">
+        <div class="breadcrumb-trail" id="breadcrumb-trail">
+          {initialLineageIds.map((pid, idx) => {
+            const p = people[pid];
+            if (!p) return null;
+            const isLast = idx === initialLineageIds.length - 1;
+            return (
+              <>
+                {idx > 0 && <span class="crumb-sep" aria-hidden="true">›</span>}
+                <button
+                  type="button"
+                  class={`crumb-person-btn ${isLast ? 'is-active' : ''}`}
+                  data-person-id={pid}
                 >
-                  {node.bridgeNote}
+                  {p.name}
+                </button>
+              </>
+            );
+          })}
+        </div>
+      </nav>
+    </div>
+
+    <div class="toolbar-right-group">
+      <!-- Masshtablash va joylashuv boshqaruvlari -->
+      <div class="zoom-controls-group" role="group" aria-label="Kanvas masshtabini boshqarish">
+        <button
+          type="button"
+          id="btn-zoom-out"
+          class="canvas-icon-btn"
+          title="Kichraytirish (−)"
+          aria-label="Daraxtni kichraytirish"
+        >
+          −
+        </button>
+        <span id="zoom-level-label" class="zoom-level-readout" aria-live="off">100%</span>
+        <button
+          type="button"
+          id="btn-zoom-in"
+          class="canvas-icon-btn"
+          title="Kattalashtirish (+)"
+          aria-label="Daraxtni kattalashtirish"
+        >
+          +
+        </button>
+        <button
+          type="button"
+          id="btn-fit-screen"
+          class="canvas-tool-btn"
+          title="Butun daraxtni ekranga moslash"
+        >
+          Moslash
+        </button>
+        <button
+          type="button"
+          id="btn-reset-view"
+          class="canvas-tool-btn"
+          title="Asl masshtab va markazga qaytarish"
+        >
+          Tiklash
+        </button>
+        <button
+          type="button"
+          id="btn-return-root"
+          class="canvas-tool-btn"
+          data-founder-id={activeDynasty.founderId}
+          title="Sulola asoschisini tanlash"
+        >
+          Asoschi
+        </button>
+      </div>
+
+      <!-- Shajara | Roʻyxat koʻrinish almashinuvi -->
+      <div class="view-mode-switch" role="group" aria-label="Koʻrinish rejimi">
+        <button
+          type="button"
+          id="btn-mode-tree"
+          class="mode-btn active"
+          aria-pressed="true"
+        >
+          Shajara
+        </button>
+        <button
+          type="button"
+          id="btn-mode-list"
+          class="mode-btn"
+          aria-pressed="false"
+        >
+          Roʻyxat
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. Interaktiv SVG Daraxt Maydoni -->
+  <div
+    id="genealogy-views-container"
+    class="svg-viewport-wrap"
+  >
+    <div
+      id={`dynasty-panel-${activeDynasty.id}`}
+      class="svg-pan-container"
+      data-dynasty-panel
+    >
+      <svg
+        id="genealogy-tree-svg"
+        class="genealogy-tree-svg"
+        viewBox={`0 0 ${layout.dimensions.width} ${layout.dimensions.height}`}
+        role="group"
+        aria-label={`${activeDynasty.title} shajara daraxti`}
+      >
+        <defs id="svg-portrait-defs">
+          {layout.nodes.map((node) => (
+            <clipPath id={`clip-node-${node.id}`}>
+              <circle cx="30" cy="37" r="20" />
+            </clipPath>
+          ))}
+        </defs>
+
+        <g id="genealogy-pan-zoom-layer">
+          <!-- Qatlam 1: Avlod gorizontal chiziqlari -->
+          <g id="svg-generation-bands" aria-hidden="true">
+            {sortedGenRows.map(([gen, y]) => (
+              <g class="svg-gen-band" data-gen-band={gen}>
+                <line
+                  x1="12"
+                  y1={y + 37}
+                  x2={layout.dimensions.width - 12}
+                  y2={y + 37}
+                  class="gen-guide-line"
+                />
+                <text x="14" y={y - 10} class="gen-band-label">
+                  {romans[gen - 1] || gen} AVLOD
                 </text>
-              )}
-            </g>
-          );
-        })}
-      </g>
-    </g>
-  </svg>
-</div>
+              </g>
+            ))}
+          </g>
+
+          <!-- Qatlam 2: Bogʻlovchi qarindoshlik chiziqlari -->
+          <g id="svg-links-layer">
+            {layout.links.map((link) => {
+              const relKind =
+                link.type === 'marriage'
+                  ? 'spouse'
+                  : link.type === 'bridge'
+                    ? 'lineage-bridge'
+                    : link.type;
+
+              // Nikoh oʻrtasidagi olmos qisqich koordinatasi
+              let midMarriageX: number | undefined;
+              let midMarriageY: number | undefined;
+              if (link.type === 'marriage' && link.pathD.includes(' L ')) {
+                const coords = link.pathD.replace('M ', '').split(' L ');
+                const p1 = coords[0]?.split(' ').map(Number);
+                const p2 = coords[1]?.split(' ').map(Number);
+                if (p1 && p2 && p1.length === 2 && p2.length === 2) {
+                  midMarriageX = Math.round(((p1[0] || 0) + (p2[0] || 0)) / 2);
+                  midMarriageY = p1[1] || 0;
+                }
+              }
+
+              let startJointX: number | undefined;
+              let startJointY: number | undefined;
+              if (link.type !== 'marriage') {
+                const startMatch = /^M\s+(-?\d+(?:\.\d+)?)\s+(-?\d+(?:\.\d+)?)/.exec(link.pathD);
+                if (startMatch) {
+                  startJointX = Number(startMatch[1]);
+                  startJointY = Number(startMatch[2]);
+                }
+              }
+
+              return (
+                <g
+                  class={`svg-rel-group rel-${relKind} ${link.isUncertain ? 'is-uncertain' : ''}`}
+                  data-rel-type={relKind}
+                  data-from={link.fromId}
+                  data-to={link.toId}
+                >
+                  {link.type === 'marriage' && (
+                    <path d={link.pathD} class="svg-link-marriage-halo" fill="none" />
+                  )}
+                  <path
+                    d={link.pathD}
+                    class={`svg-link-path link-${relKind} ${link.isUncertain ? 'link-uncertain' : ''}`}
+                    fill="none"
+                  />
+                  {startJointX !== undefined && startJointY !== undefined && (
+                    <circle
+                      cx={startJointX}
+                      cy={startJointY}
+                      r="2.2"
+                      class={`svg-descent-joint joint-${relKind} ${link.isUncertain ? 'joint-uncertain' : ''}`}
+                    />
+                  )}
+                  {midMarriageX !== undefined && midMarriageY !== undefined && (
+                    <polygon
+                      points={`${midMarriageX},${midMarriageY - 4} ${midMarriageX + 4},${midMarriageY} ${midMarriageX},${midMarriageY + 4} ${midMarriageX - 4},${midMarriageY}`}
+                      class="marriage-union-diamond"
+                    />
+                  )}
+                </g>
+              );
+            })}
+          </g>
+
+          <!-- Qatlam 3: Shaxs tugunlari (Portret + Ism + Unvon + Sanalar) -->
+          <g id="svg-nodes-layer">
+            {layout.nodes.map((node) => {
+              const profile = people[node.id];
+              const isSelected = node.id === selectedId;
+              const childCount = parentChildCounts.get(node.id) || 0;
+              const primaryRole = node.titles[0] || node.culture || 'Kanonik shaxs';
+
+              return (
+                <>
+                  <g
+                    id={`node-${node.id}`}
+                    class={`tree-person-node ${isSelected ? 'is-selected' : ''} ${node.isUncertain ? 'is-uncertain' : ''}`}
+                    transform={`translate(${node.x}, ${node.y})`}
+                    data-person-id={node.id}
+                    data-generation={node.generation}
+                    tabindex="0"
+                    role="button"
+                    aria-label={`${node.name} (${node.dates})`}
+                  >
+                    <title>{`${node.name} — ${primaryRole} (${node.dates})`}</title>
+
+                    {/* Asosiy karta foni */}
+                    <rect
+                      x="0"
+                      y="0"
+                      width={node.width}
+                      height={node.height}
+                      rx="5"
+                      class="node-card-bg"
+                    />
+
+                    {/* Tanlangan holat oltin ichki gardishi */}
+                    <rect
+                      x="2.5"
+                      y="2.5"
+                      width={node.width - 5}
+                      height={node.height - 5}
+                      rx="3.5"
+                      class="node-selected-inner-ring"
+                    />
+
+                    {/* Portret medalyoni yoki monogramma */}
+                    {profile?.portrait ? (
+                      <g class="node-portrait-group">
+                        <circle cx="30" cy="37" r="20.5" class="node-portrait-backdrop" />
+                        <image
+                          href={profile.portrait.thumb}
+                          x="10"
+                          y="17"
+                          width="40"
+                          height="40"
+                          preserveAspectRatio="xMidYMid slice"
+                          clip-path={`url(#clip-node-${node.id})`}
+                        />
+                        <circle cx="30" cy="37" r="20.5" class="node-portrait-ring" />
+                      </g>
+                    ) : (
+                      <g class="node-monogram-group">
+                        <circle cx="30" cy="37" r="20" class="node-monogram-circle" />
+                        <text x="30" y="41.5" text-anchor="middle" class="node-monogram-label">
+                          {getInitials(node.name)}
+                        </text>
+                      </g>
+                    )}
+
+                    {/* Ism, unvon va sanalar */}
+                    <text x="58" y="27" class="node-name-text">
+                      {truncateLabel(node.name, 17)}
+                    </text>
+                    <text x="58" y="43" class="node-role-text">
+                      {truncateLabel(primaryRole, 22)}
+                    </text>
+                    <text x="58" y="58" class="node-dates-text">
+                      {truncateLabel(node.dates, 23)}
+                    </text>
+
+                    {/* Munozarali / Noaniq maqom nishoni */}
+                    {node.isUncertain && (
+                      <g transform={`translate(${node.width - 20}, 6)`} class="node-uncertain-badge">
+                        <rect x="0" y="0" width="14" height="14" rx="7" class="uncertain-pill-bg" />
+                        <text x="7" y="10.5" text-anchor="middle" class="uncertain-pill-mark">?</text>
+                      </g>
+                    )}
+
+                    {/* Oraliq koʻprik yorligʻi */}
+                    {node.bridgeNote && (
+                      <g transform="translate(8, -11)" class="node-bridge-tag">
+                        <rect
+                          x="0"
+                          y="0"
+                          width={Math.min(node.width - 16, Math.max(76, node.bridgeNote.length * 5.6 + 12))}
+                          height="15"
+                          rx="3"
+                          class="bridge-tag-bg"
+                        />
+                        <text x="6" y="10.5" class="bridge-tag-text">
+                          {truncateLabel(node.bridgeNote, 25)}
+                        </text>
+                      </g>
+                    )}
+                  </g>
+
+                  {/* Shoxni yigʻish / yoyish tugmasi (WCAG 4.1.2 boʻyicha mustaqil tugma sifatida) */}
+                  {childCount > 0 && (
+                    <g
+                      class="node-collapse-toggle"
+                      data-collapse-id={node.id}
+                      transform={`translate(${node.x + node.width / 2}, ${node.y + node.height})`}
+                      role="button"
+                      tabindex="0"
+                      aria-expanded="true"
+                      aria-label={`${node.name} farzandlari shoxini yigʻish yoki yoyish`}
+                    >
+                      <rect x="-13" y="-8" width="26" height="16" rx="8" class="collapse-pill-bg" />
+                      <text x="0" y="3.5" text-anchor="middle" class="collapse-pill-text">−</text>
+                    </g>
+                  )}
+                </>
+              );
+            })}
+          </g>
+        </g>
+      </svg>
+    </div>
+  </div>
+
+  <!-- 3. Semantik Roʻyxat rejimi (No-JS va Roʻyxat tugmasi uchun) -->
+  <div id="genealogy-accessible-views" class="genealogy-accessible-views" hidden>
+    <GenealogyAccessibleTree
+      dynastyId={activeDynasty.id}
+      dynastyTitle={activeDynasty.title}
+      houseName={activeDynasty.houseName}
+      layout={activeDynasty.layout}
+    />
+  </div>
+
+  <!-- 4. Kanvas shartli belgilari (Relationship Types Legend) -->
+  <footer class="canvas-legend-bar" aria-label="Shajara chiziqlari va shartli belgilar izohi">
+    <div class="legend-items-row">
+      <span class="legend-item">
+        <svg width="24" height="10" viewBox="0 0 24 10" aria-hidden="true">
+          <line x1="0" y1="5" x2="24" y2="5" class="legend-stroke-parent" />
+        </svg>
+        <span>Ota-ona / farzand</span>
+      </span>
+
+      <span class="legend-item">
+        <svg width="24" height="10" viewBox="0 0 24 10" aria-hidden="true">
+          <line x1="0" y1="5" x2="24" y2="5" class="legend-stroke-spouse" />
+          <polygon points="12,1.5 15.5,5 12,8.5 8.5,5" class="marriage-union-diamond" />
+        </svg>
+        <span>Nikoh ittifoqi</span>
+      </span>
+
+      <span class="legend-item">
+        <svg width="24" height="10" viewBox="0 0 24 10" aria-hidden="true">
+          <line x1="0" y1="5" x2="24" y2="5" class="legend-stroke-sibling" />
+        </svg>
+        <span>Aka-uka / opa-singil</span>
+      </span>
+
+      <span class="legend-item">
+        <svg width="24" height="10" viewBox="0 0 24 10" aria-hidden="true">
+          <line x1="0" y1="5" x2="24" y2="5" class="legend-stroke-bridge" />
+        </svg>
+        <span>Oraliq avlod koʻprigi</span>
+      </span>
+
+      <span class="legend-item">
+        <svg width="24" height="10" viewBox="0 0 24 10" aria-hidden="true">
+          <line x1="0" y1="5" x2="24" y2="5" class="legend-stroke-uncertain" />
+        </svg>
+        <span>Munozarali / variant</span>
+      </span>
+    </div>
+
+    <span class="legend-interaction-hint">
+      Surish va masshtablash faol · Maʼlumot uchun shaxsni bosing
+    </span>
+  </footer>
+</section>
 
 <style>
-  .genealogy-canvas-container {
-    position: relative;
-    width: 100%;
-    height: 600px;
-    background-color: var(--color-bg-base);
-    border: 1px solid var(--color-border-subtle);
-    border-radius: 0 0 8px 8px;
+  .genealogy-canvas-stage {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--gen-ivory);
+    border: 1px solid var(--gen-border);
+    border-radius: 4px;
     overflow: hidden;
-    cursor: grab;
-    user-select: none;
-    touch-action: none;
+    min-width: 0;
   }
 
-  .genealogy-canvas-container:active {
+  .canvas-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 0.55rem 0.75rem;
+    background-color: var(--gen-ivory-elevated);
+    border-bottom: 1px solid var(--gen-border);
+  }
+
+  .toolbar-left-group,
+  .toolbar-right-group {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    min-width: 0;
+  }
+
+  .mobile-drawer-triggers {
+    display: none;
+    align-items: center;
+    gap: 0.35rem;
+  }
+
+  @media (max-width: 1119px) {
+    .mobile-drawer-triggers {
+      display: inline-flex;
+    }
+  }
+
+  .lineage-trail-nav {
+    min-width: 0;
+  }
+
+  .breadcrumb-trail {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.2rem;
+    font-family: var(--font-sans-ui);
+    font-size: 0.75rem;
+  }
+
+  :global(.crumb-sep) {
+    color: var(--color-text-muted);
+    padding-inline: 0.1rem;
+  }
+
+  :global(.crumb-person-btn) {
+    background: none;
+    border: none;
+    padding: 0.18rem 0.38rem;
+    border-radius: 3px;
+    font-family: var(--font-sans-ui);
+    font-size: 0.75rem;
+    color: var(--color-text-secondary);
+    cursor: pointer;
+  }
+
+  :global(.crumb-person-btn:hover) {
+    background-color: var(--gen-ivory-subtle);
+    color: var(--color-text-primary);
+  }
+
+  :global(.crumb-person-btn.is-active) {
+    font-weight: 700;
+    color: var(--gen-pine-text);
+    background-color: var(--gen-ivory-subtle);
+  }
+
+  .zoom-controls-group {
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+  }
+
+  .canvas-icon-btn,
+  .canvas-tool-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+    height: 30px;
+    padding: 0 0.55rem;
+    background-color: var(--gen-ivory);
+    border: 1px solid var(--gen-border);
+    border-radius: 3px;
+    font-family: var(--font-sans-ui);
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--color-text-primary);
+    cursor: pointer;
+    transition: border-color 140ms ease, background-color 140ms ease;
+  }
+
+  .canvas-icon-btn {
+    width: 30px;
+    padding: 0;
+    font-size: 0.95rem;
+  }
+
+  .canvas-icon-btn:hover,
+  .canvas-tool-btn:hover {
+    border-color: var(--gen-gold);
+    background-color: var(--gen-ivory-subtle);
+  }
+
+  .zoom-level-readout {
+    font-family: var(--font-sans-ui);
+    font-size: 0.71875rem;
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+    color: var(--color-text-secondary);
+    min-width: 2.6rem;
+    text-align: center;
+  }
+
+  .view-mode-switch {
+    display: inline-flex;
+    border: 1px solid var(--gen-border);
+    border-radius: 3px;
+    overflow: hidden;
+  }
+
+  .mode-btn {
+    height: 30px;
+    padding: 0 0.65rem;
+    background-color: var(--gen-ivory);
+    border: none;
+    font-family: var(--font-sans-ui);
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--color-text-secondary);
+    cursor: pointer;
+  }
+
+  .mode-btn.active {
+    background-color: var(--gen-pine-fill);
+    color: #F7F4EC;
+  }
+
+  /* SVG Kanvas Konteyneri */
+  .svg-viewport-wrap {
+    position: relative;
+    width: 100%;
+    height: clamp(460px, 66vh, 690px);
+    background-color: var(--gen-ivory);
+    background-image: radial-gradient(var(--gen-grid-dot) 1px, transparent 1px);
+    background-size: 22px 22px;
+    overflow: hidden;
+  }
+
+  @media (max-width: 640px) {
+    .svg-viewport-wrap {
+      height: 440px;
+    }
+  }
+
+  .svg-pan-container {
+    width: 100%;
+    height: 100%;
+    touch-action: none;
+    user-select: none;
+    cursor: grab;
+  }
+
+  .svg-pan-container.is-panning {
     cursor: grabbing;
   }
 
-  .genealogy-canvas-container:focus-visible {
-    outline: 2px solid var(--color-accent-gold);
-    outline-offset: -2px;
-  }
-
-  .genealogy-svg {
+  .genealogy-tree-svg {
     width: 100%;
     height: 100%;
     display: block;
-    transform-origin: 0 0;
   }
 
-  /* 1. Avlod Qatlamlari Chiziqlari */
-  .stratum-line {
-    stroke: var(--color-border-subtle);
-    stroke-width: 1px;
-    stroke-dasharray: 4 6;
+  /* SVG ichki qatlamlar uslublari (:global chunki klient JS ham dinamik chizadi) */
+  :global(.gen-guide-line) {
+    stroke: var(--gen-guide-rule);
+    stroke-width: 1;
+    stroke-dasharray: 2 5;
   }
 
-  .stratum-badge-bg {
-    fill: var(--color-bg-elevated);
-    stroke: var(--color-border-subtle);
-    stroke-width: 1px;
-  }
-
-  .stratum-label {
-    font-family: var(--font-serif-heading);
-    font-size: 0.8125rem;
-    font-style: italic;
-    font-weight: 600;
+  :global(.gen-band-label) {
+    font-family: var(--font-sans-ui);
+    font-size: 9.5px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
     fill: var(--color-text-muted);
-    dominant-baseline: middle;
   }
 
-  /* 2. Bog'lovchi Shoxlar */
-  .marriage-path {
-    stroke: var(--color-border-strong);
-    stroke-width: 1.5px;
+  :global(.svg-link-path.link-parent-child) {
+    stroke: var(--gen-pine-stroke);
+    stroke-width: 1.8;
+    stroke-linecap: round;
+  }
+
+  :global(.svg-link-marriage-halo) {
+    stroke: var(--gen-gold-soft);
+    stroke-width: 5;
+    stroke-linecap: round;
+  }
+
+  :global(.svg-link-path.link-spouse) {
+    stroke: var(--gen-gold);
+    stroke-width: 1.8;
+  }
+
+  :global(.marriage-union-diamond) {
+    fill: var(--gen-ivory-elevated);
+    stroke: var(--gen-gold);
+    stroke-width: 1.4;
+  }
+
+  :global(.svg-link-path.link-sibling) {
+    stroke: var(--gen-sibling-stroke);
+    stroke-width: 1.25;
     stroke-dasharray: 3 3;
-    fill: none;
   }
 
-  .branch-path {
-    stroke: var(--color-border-strong);
-    stroke-width: 1.6px;
-    fill: none;
-    transition: stroke 200ms ease, stroke-width 200ms ease;
+  :global(.svg-link-path.link-lineage-bridge) {
+    stroke: var(--gen-gold);
+    stroke-width: 1.65;
+    stroke-dasharray: 7 4 2 4;
   }
 
-  .branch-path.branch-uncertain {
-    stroke: var(--color-status-variant);
-    stroke-dasharray: 5 4;
-    stroke-width: 1.8px;
+  :global(.svg-link-path.link-uncertain) {
+    stroke: var(--gen-uncertain) !important;
+    stroke-width: 1.9;
+    stroke-dasharray: 6 4;
   }
 
-  .branch-path.branch-bridge {
-    stroke: var(--color-accent-gold);
-    stroke-dasharray: 4 4;
-    stroke-width: 1.4px;
-    opacity: 0.8;
+  :global(.svg-descent-joint) {
+    fill: var(--gen-pine-stroke);
   }
 
-  /* Chiziq Yoritilishi (Lineage Highlighting) */
-  .branch-path.highlight-stem {
-    stroke: var(--color-accent-gold);
-    stroke-width: 2.8px;
+  :global(.svg-descent-joint.joint-sibling) {
+    fill: var(--gen-sibling-stroke);
   }
 
-  /* 3. Shaxs Tugunlari */
-  .person-node {
+  :global(.svg-descent-joint.joint-lineage-bridge) {
+    fill: var(--gen-gold);
+  }
+
+  :global(.svg-descent-joint.joint-uncertain) {
+    fill: var(--gen-uncertain);
+  }
+
+  :global(.svg-rel-group.is-dimmed),
+  :global(.tree-person-node.is-dimmed),
+  :global(.node-collapse-toggle.is-dimmed) {
+    opacity: 0.2;
+    transition: opacity 160ms ease;
+  }
+
+  :global(.svg-rel-group.is-rel-highlighted .svg-link-path) {
+    stroke-width: 2.7;
+  }
+
+  /* Shaxs tuguni (Person Node) */
+  :global(.tree-person-node) {
     cursor: pointer;
-    transition: transform 150ms ease;
-  }
-
-  .person-node:focus {
     outline: none;
   }
 
-  .node-bg {
-    fill: var(--color-bg-base);
-    stroke: var(--color-border-strong);
-    stroke-width: 1.2px;
-    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.05));
-    transition: all 180ms ease;
-  }
-
-  [data-theme="night"] .node-bg {
-    fill: var(--color-bg-elevated);
-    stroke: var(--color-border-subtle);
-    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.25));
-  }
-
-  .person-node:hover .node-bg {
-    stroke: var(--color-accent-gold);
-    stroke-width: 1.8px;
-  }
-
-  .person-node.selected .node-bg {
-    fill: var(--color-accent-gold-subtle);
-    stroke: var(--color-accent-gold);
-    stroke-width: 2.2px;
-  }
-
-  .person-node:focus-visible .node-bg {
-    stroke: var(--color-accent-gold);
-    stroke-width: 2.5px;
-  }
-
-  .node-bud {
-    fill: var(--color-bg-base);
-    stroke: var(--color-border-strong);
-    stroke-width: 1.2px;
+  :global(.node-card-bg) {
+    fill: var(--gen-ivory-elevated);
+    stroke: var(--gen-node-border);
+    stroke-width: 1.2;
     transition: stroke 150ms ease, fill 150ms ease;
   }
 
-  .person-node:hover .node-bud,
-  .person-node.selected .node-bud {
-    stroke: var(--color-accent-gold);
-    fill: var(--color-accent-gold);
+  :global(.node-selected-inner-ring) {
+    fill: none;
+    stroke: transparent;
+    stroke-width: 1;
+    pointer-events: none;
   }
 
-  .node-name-text {
+  :global(.tree-person-node:hover .node-card-bg),
+  :global(.tree-person-node:focus-visible .node-card-bg) {
+    stroke: var(--gen-pine-stroke);
+    stroke-width: 1.8;
+  }
+
+  :global(.tree-person-node.is-selected .node-card-bg) {
+    fill: var(--gen-node-selected-bg);
+    stroke: var(--gen-pine-stroke);
+    stroke-width: 2.1;
+  }
+
+  :global(.tree-person-node.is-selected .node-selected-inner-ring) {
+    stroke: var(--gen-gold);
+  }
+
+  :global(.tree-person-node.is-uncertain .node-card-bg) {
+    stroke: var(--gen-uncertain);
+    stroke-dasharray: 5 3;
+  }
+
+  :global(.node-portrait-backdrop) {
+    fill: var(--gen-ivory-subtle);
+  }
+
+  :global(.node-portrait-ring) {
+    fill: none;
+    stroke: var(--gen-gold);
+    stroke-width: 1.4;
+  }
+
+  :global(.node-monogram-circle) {
+    fill: var(--gen-pine-fill);
+    stroke: var(--gen-gold);
+    stroke-width: 1.25;
+  }
+
+  :global(.node-monogram-label) {
     font-family: var(--font-serif-heading);
-    font-size: 0.9375rem;
+    font-size: 13px;
+    font-weight: 700;
+    fill: #F7F4EC;
+  }
+
+  :global(.node-name-text) {
+    font-family: var(--font-serif-heading);
+    font-size: 14px;
     font-weight: 700;
     fill: var(--color-text-primary);
   }
 
-  .node-title-text {
+  :global(.node-role-text) {
     font-family: var(--font-sans-ui);
-    font-size: 0.625rem;
+    font-size: 10.2px;
     font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
     fill: var(--color-text-secondary);
   }
 
-  .node-date-text {
+  :global(.node-dates-text) {
     font-family: var(--font-sans-ui);
-    font-size: 0.5625rem;
+    font-size: 9.6px;
     fill: var(--color-text-muted);
   }
 
-  .node-bridge-tag {
-    font-family: var(--font-sans-ui);
-    font-size: 0.5625rem;
-    font-style: italic;
-    fill: var(--color-accent-gold);
+  :global(.uncertain-pill-bg) {
+    fill: #874C22;
   }
 
-  /* Noaniqlik Belgisi */
-  .uncertainty-circle {
-    fill: var(--color-status-variant);
-  }
-
-  .uncertainty-icon-text {
+  :global(.uncertain-pill-mark) {
     font-family: var(--font-sans-ui);
-    font-size: 0.5625rem;
+    font-size: 9.5px;
     font-weight: 700;
-    fill: #ffffff;
-    dominant-baseline: middle;
+    fill: #FAF8F2;
   }
 
-  /* Qidiruv natijasi sifatida tanlangan */
-  .person-node.search-match .node-bg {
-    stroke: var(--color-accent-gold);
-    stroke-width: 2.5px;
-    stroke-dasharray: 6 3;
-    animation: searchPulse 1.8s infinite;
+  :global(.bridge-tag-bg) {
+    fill: var(--gen-ivory-elevated);
+    stroke: var(--gen-gold);
+    stroke-width: 0.9;
   }
 
-  @keyframes searchPulse {
-    0%, 100% { stroke-width: 2.5px; }
-    50% { stroke-width: 3.8px; }
+  :global(.bridge-tag-text) {
+    font-family: var(--font-sans-ui);
+    font-size: 8.8px;
+    font-weight: 600;
+    fill: var(--gen-gold-text);
+  }
+
+  :global(.node-collapse-toggle) {
+    cursor: pointer;
+  }
+
+  :global(.collapse-pill-bg) {
+    fill: var(--gen-ivory-elevated);
+    stroke: var(--gen-pine-stroke);
+    stroke-width: 1.1;
+  }
+
+  :global(.node-collapse-toggle:hover .collapse-pill-bg) {
+    fill: var(--gen-pine-fill);
+  }
+
+  :global(.collapse-pill-text) {
+    font-family: var(--font-sans-ui);
+    font-size: 10px;
+    font-weight: 700;
+    fill: var(--gen-pine-text);
+  }
+
+  :global(.node-collapse-toggle:hover .collapse-pill-text) {
+    fill: #F7F4EC;
+  }
+
+  /* Shartli belgilar paneli (Legend) */
+  .canvas-legend-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.65rem;
+    padding: 0.55rem 0.85rem;
+    background-color: var(--gen-ivory-elevated);
+    border-top: 1px solid var(--gen-border);
+    font-family: var(--font-sans-ui);
+    font-size: 0.71875rem;
+    color: var(--color-text-secondary);
+  }
+
+  .legend-items-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.85rem;
+  }
+
+  .legend-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    white-space: nowrap;
+  }
+
+  .legend-stroke-parent {
+    stroke: var(--gen-pine-stroke);
+    stroke-width: 2;
+  }
+
+  .legend-stroke-spouse {
+    stroke: var(--gen-gold);
+    stroke-width: 2;
+  }
+
+  .legend-stroke-sibling {
+    stroke: var(--gen-sibling-stroke);
+    stroke-width: 1.5;
+    stroke-dasharray: 3 3;
+  }
+
+  .legend-stroke-bridge {
+    stroke: var(--gen-gold);
+    stroke-width: 1.8;
+    stroke-dasharray: 6 3 2 3;
+  }
+
+  .legend-stroke-uncertain {
+    stroke: var(--gen-uncertain);
+    stroke-width: 2;
+    stroke-dasharray: 5 3;
+  }
+
+  .legend-interaction-hint {
+    font-size: 0.6875rem;
+    color: var(--color-text-muted);
+  }
+
+  @media (max-width: 640px) {
+    .legend-interaction-hint {
+      display: none;
+    }
+
+    .lineage-trail-nav {
+      width: 100%;
+      order: 3;
+    }
   }
 </style>

@@ -85,6 +85,14 @@
       "generation": 7,
       "order": 3,
       "is_uncertain": false
+    },
+    {
+      "character_id": "gimli",
+      "spouse_ids": [],
+      "parent_ids": ["gloin"],
+      "generation": 7,
+      "order": 4,
+      "is_uncertain": false
     }
   ],
   "branches": ["Khazad-dûm Oliy Shajarasi", "Kulrang Togʻlar va Erebor Tarmoqlari", "Temir Tepaliklar Tarmoqlari"],

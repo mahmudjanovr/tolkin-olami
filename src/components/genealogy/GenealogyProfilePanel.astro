@@ -1,0 +1,727 @@
+---
+/**
+ * TOLKIEN OLAMI — Oʻng Shaxs Profili Paneli va Mobil Varaq (Section D: Right Profile Panel)
+ *
+ * Tanlangan shaxsning portreti, taxalluslari, sanalari, irqi, xonadoni,
+ * tarjimai holi, muhim voqealari, oilaviy rishtalari va toʻliq qahramon sahifasi havolasi.
+ */
+
+import type { GenealogyPersonProfile, RelatedPersonRef } from '@/utils/genealogy/genealogy-model';
+
+interface Props {
+  person: GenealogyPersonProfile;
+}
+
+const { person } = Astro.props;
+
+const canonBadgeMap = {
+  canon: { label: 'Kanon', cls: 'status-canon' },
+  variant: { label: 'Variant', cls: 'status-variant' },
+  uncertain: { label: 'Munozarali', cls: 'status-uncertain' },
+} as const;
+
+const badge = canonBadgeMap[person.canonStatus];
+
+function getInitials(name: string): string {
+  const parts = name.replace(/[()]/g, '').trim().split(/\s+/);
+  if (parts.length === 1) return (parts[0] || 'T').slice(0, 2).toUpperCase();
+  return ((parts[0]?.[0] || '') + (parts[1]?.[0] || '')).toUpperCase();
+}
+
+const familyGroups: { key: string; label: string; items: RelatedPersonRef[] }[] = [
+  { key: 'parents', label: 'Ota-onasi', items: person.parents },
+  { key: 'spouses', label: 'Turmush oʻrtogʻi', items: person.spouses },
+  { key: 'siblings', label: 'Aka-uka va opa-singillari', items: person.siblings },
+  { key: 'children', label: 'Farzandlari', items: person.children },
+];
+---
+
+<aside
+  id="genealogy-profile-panel"
+  class="genealogy-profile-panel"
+  aria-labelledby="profile-person-name"
+>
+  <!-- Mobil tortma sarlavhasi (< 1120px da koʻrinadi) -->
+  <div class="profile-drawer-bar">
+    <span class="drawer-kicker">Shaxs dosyesi</span>
+    <button
+      type="button"
+      class="profile-close-btn"
+      id="btn-close-right-drawer"
+      aria-label="Shaxs profilini yopish"
+    >
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    </button>
+  </div>
+
+  <div class="profile-scroll-body" id="profile-panel-body">
+    <!-- 1. Yuqori portret va ism qismi -->
+    <div class="profile-identity-header">
+      <div class="profile-portrait-box" id="profile-portrait-box">
+        {person.portrait ? (
+          <img
+            src={person.portrait.thumb}
+            alt={person.portrait.alt}
+            width="76"
+            height="96"
+            loading="lazy"
+            decoding="async"
+            class="profile-portrait-img"
+          />
+        ) : (
+          <div class="profile-monogram-crest" aria-hidden="true">
+            <span>{getInitials(person.name)}</span>
+          </div>
+        )}
+      </div>
+
+      <div class="profile-title-col">
+        <div class="profile-badges-row">
+          <span id="profile-canon-badge" class={`canon-pill ${badge.cls}`}>
+            {badge.label}
+          </span>
+          <span id="profile-house-tag" class="house-mini-tag">{person.houseLabel}</span>
+        </div>
+
+        <h3 class="profile-name" id="profile-person-name">{person.name}</h3>
+
+        <p
+          class="profile-orig-name"
+          id="profile-orig-name"
+          hidden={!person.originalName}
+        >
+          {person.originalName || ''}
+        </p>
+      </div>
+    </div>
+
+    <!-- 2. Unvonlar va taxalluslar -->
+    <div
+      class="profile-Sub-meta"
+      id="profile-titles-wrap"
+      hidden={person.titles.length === 0 && person.aliases.length === 0}
+    >
+      {person.titles.length > 0 && (
+        <p class="profile-titles-line" id="profile-titles-text">
+          {person.titles.join(' · ')}
+        </p>
+      )}
+      {person.aliases.length > 0 && (
+        <p class="profile-aliases-line" id="profile-aliases-text">
+          <span class="meta-inline-label">Nomlari:</span> {person.aliases.join(', ')}
+        </p>
+      )}
+    </div>
+
+    <!-- 3. Xronologik va etnik metamaʼlumotlar jadvali -->
+    <dl class="profile-facts-grid">
+      <div class="fact-row">
+        <dt>Yashagan davri</dt>
+        <dd id="profile-dates">{person.dates}</dd>
+      </div>
+      <div class="fact-row">
+        <dt>Irqi va madaniyati</dt>
+        <dd id="profile-race-culture">{person.raceLabel} · {person.culture}</dd>
+      </div>
+      <div class="fact-row">
+        <dt>Sulola / Xonadon</dt>
+        <dd id="profile-house-full">{person.houseLabel}</dd>
+      </div>
+    </dl>
+
+    <!-- 4. Qisqacha biografiya va matnshunoslik izohi -->
+    <section class="profile-section" aria-labelledby="profile-bio-heading">
+      <h4 class="profile-section-heading" id="profile-bio-heading">Tarjimai hol</h4>
+      <p class="profile-bio-text" id="profile-bio-text">{person.summary}</p>
+
+      <div
+        id="profile-uncertainty-box"
+        class="profile-uncertainty-box"
+        hidden={!person.uncertaintyNotes}
+      >
+        <span class="uncertainty-box-label">Matnshunoslik izohi:</span>
+        <p id="profile-uncertainty-text">{person.uncertaintyNotes || ''}</p>
+      </div>
+    </section>
+
+    <!-- 5. Muhim tarixiy voqealar -->
+    <section
+      class="profile-section"
+      id="profile-events-section"
+      aria-labelledby="profile-events-heading"
+      hidden={person.events.length === 0}
+    >
+      <h4 class="profile-section-heading" id="profile-events-heading">Muhim voqealar</h4>
+      <ul class="profile-events-list" id="profile-events-list">
+        {person.events.map((ev) => (
+          <li>
+            <a href={ev.href} class="profile-event-link">
+              <span class="event-link-title">{ev.title}</span>
+              <span class="event-link-year">{ev.yearText}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    <!-- 6. Oilaviy rishtalar (Ota-ona, Turmush oʻrtoq, Aka-uka, Farzandlar) -->
+    <section class="profile-section" aria-labelledby="profile-kin-heading">
+      <h4 class="profile-section-heading" id="profile-kin-heading">Oilaviy rishtalar</h4>
+      <div class="profile-kin-groups" id="profile-kin-groups">
+        {familyGroups.map((group) => (
+          <div class="kin-group-row" data-kin-group={group.key}>
+            <span class="kin-group-label">{group.label}</span>
+            <div class="kin-chips-wrap">
+              {group.items.length === 0 ? (
+                <span class="kin-empty-text">Qayd etilmagan</span>
+              ) : (
+                group.items.map((rel) =>
+                  rel.inAnyTree ? (
+                    <button
+                      type="button"
+                      class={`kin-chip-btn ${rel.isUncertain ? 'is-uncertain' : ''}`}
+                      data-person-id={rel.id}
+                      data-target-dynasty={rel.dynastyId}
+                    >
+                      <span>{rel.name}</span>
+                      {rel.isUncertain && <span class="kin-uncertain-mark" title="Munozarali">?</span>}
+                    </button>
+                  ) : rel.detailHref ? (
+                    <a href={rel.detailHref} class="kin-chip-link">
+                      {rel.name} ↗
+                    </a>
+                  ) : (
+                    <span class="kin-chip-static">{rel.name}</span>
+                  )
+                )
+              )}
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- 7. Birlamchi manba va Qahramon sahifasiga oʻtish -->
+    <footer class="profile-footer">
+      <div class="profile-citation-line" id="profile-citation-box">
+        <span class="citation-label">Birlamchi manba:</span>
+        {person.citation.href ? (
+          <a href={person.citation.href} class="citation-work-link" id="profile-citation-link">
+            <em>{person.citation.work}</em>
+          </a>
+        ) : (
+          <em id="profile-citation-work">{person.citation.work}</em>
+        )}
+        <span id="profile-citation-section">, {person.citation.section}</span>
+      </div>
+
+      <div id="profile-cta-wrap">
+        {person.detailHref ? (
+          <a href={person.detailHref} class="profile-detail-cta" id="profile-character-link">
+            <span>Qahramon sahifasiga oʻtish</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        ) : (
+          <span class="profile-no-article-note" id="profile-no-article">
+            Ushbu shaxs boʻyicha kanonik maʼlumot nasabnoma registrida jamlangan.
+          </span>
+        )}
+      </div>
+    </footer>
+  </div>
+</aside>
+
+<style>
+  .genealogy-profile-panel {
+    background-color: var(--gen-ivory-elevated);
+    border: 1px solid var(--gen-border);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    align-self: start;
+  }
+
+  .profile-drawer-bar {
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid var(--gen-border);
+    background-color: var(--gen-ivory);
+  }
+
+  .drawer-kicker {
+    font-family: var(--font-sans-ui);
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--gen-pine-text);
+  }
+
+  .profile-close-btn {
+    width: 32px;
+    height: 32px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: 1px solid var(--gen-border);
+    border-radius: 4px;
+    color: var(--color-text-primary);
+    cursor: pointer;
+  }
+
+  .profile-scroll-body {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+  }
+
+  .profile-identity-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.85rem;
+  }
+
+  .profile-portrait-box {
+    width: 72px;
+    height: 92px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    overflow: hidden;
+    border: 1px solid var(--gen-gold);
+    background-color: var(--gen-ivory);
+  }
+
+  :global(.profile-portrait-img) {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  :global(.profile-monogram-crest) {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--gen-pine-fill);
+    color: #F7F4EC;
+    font-family: var(--font-serif-heading);
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  .profile-title-col {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .profile-badges-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    margin-bottom: 0.3rem;
+  }
+
+  :global(.canon-pill) {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.1rem 0.45rem;
+    border-radius: 3px;
+    font-family: var(--font-sans-ui);
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  :global(.canon-pill.status-canon) {
+    background-color: var(--gen-canon-bg);
+    color: var(--gen-pine-text);
+    border: 1px solid var(--gen-pine-border);
+  }
+
+  :global(.canon-pill.status-variant) {
+    background-color: var(--gen-variant-bg);
+    color: var(--gen-variant-text);
+    border: 1px solid var(--gen-variant-text);
+  }
+
+  :global(.canon-pill.status-uncertain) {
+    background-color: var(--gen-uncertain-bg);
+    color: var(--gen-uncertain);
+    border: 1px solid var(--gen-uncertain);
+  }
+
+  .house-mini-tag {
+    font-family: var(--font-sans-ui);
+    font-size: 0.6875rem;
+    color: var(--color-text-muted);
+  }
+
+  .profile-name {
+    font-family: var(--font-serif-heading);
+    font-size: 1.3125rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--color-text-primary);
+    margin: 0;
+  }
+
+  .profile-orig-name {
+    font-family: var(--font-serif-body);
+    font-style: italic;
+    font-size: 0.8125rem;
+    color: var(--color-text-secondary);
+    margin: 0.15rem 0 0 0;
+  }
+
+  .profile-Sub-meta {
+    padding-bottom: 0.7rem;
+    border-bottom: 1px solid var(--gen-border);
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .profile-titles-line {
+    font-family: var(--font-sans-ui);
+    font-size: 0.78125rem;
+    font-weight: 600;
+    color: var(--gen-gold-text);
+    margin: 0;
+  }
+
+  .profile-aliases-line {
+    font-family: var(--font-sans-ui);
+    font-size: 0.75rem;
+    color: var(--color-text-secondary);
+    margin: 0;
+  }
+
+  .meta-inline-label {
+    font-weight: 600;
+    color: var(--color-text-muted);
+  }
+
+  .profile-facts-grid {
+    margin: 0;
+    padding: 0.65rem 0.75rem;
+    background-color: var(--gen-ivory);
+    border: 1px solid var(--gen-border);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+  }
+
+  .fact-row {
+    display: flex;
+    flex-direction: column;
+    gap: 0.08rem;
+  }
+
+  .fact-row dt {
+    font-family: var(--font-sans-ui);
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-muted);
+  }
+
+  .fact-row dd {
+    margin: 0;
+    font-family: var(--font-sans-ui);
+    font-size: 0.8125rem;
+    font-weight: 500;
+    color: var(--color-text-primary);
+  }
+
+  .profile-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--gen-border);
+  }
+
+  .profile-section[hidden] {
+    display: none !important;
+  }
+
+  .profile-section-heading {
+    font-family: var(--font-sans-ui);
+    font-size: 0.6875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--gen-pine-text);
+    margin: 0;
+  }
+
+  .profile-bio-text {
+    font-family: var(--font-serif-body);
+    font-size: 0.875rem;
+    line-height: 1.6;
+    color: var(--color-text-secondary);
+    margin: 0;
+  }
+
+  .profile-uncertainty-box {
+    margin-top: 0.25rem;
+    padding: 0.55rem 0.65rem;
+    background-color: var(--gen-uncertain-bg);
+    border-left: 3px solid var(--gen-uncertain);
+    border-radius: 0 3px 3px 0;
+    font-family: var(--font-sans-ui);
+    font-size: 0.75rem;
+    line-height: 1.5;
+    color: var(--color-text-primary);
+  }
+
+  .profile-uncertainty-box[hidden] {
+    display: none !important;
+  }
+
+  .uncertainty-box-label {
+    display: block;
+    font-weight: 700;
+    color: var(--gen-uncertain);
+    margin-bottom: 0.15rem;
+  }
+
+  .profile-uncertainty-box p {
+    margin: 0;
+  }
+
+  .profile-events-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+
+  :global(.profile-event-link) {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.5rem;
+    padding: 0.35rem 0.55rem;
+    background-color: var(--gen-ivory);
+    border: 1px solid var(--gen-border);
+    border-radius: 3px;
+    font-family: var(--font-sans-ui);
+    font-size: 0.75rem;
+    text-decoration: none;
+    color: var(--color-text-primary);
+    transition: border-color 140ms ease;
+  }
+
+  :global(.profile-event-link:hover) {
+    border-color: var(--gen-gold);
+    text-decoration: none;
+  }
+
+  :global(.event-link-title) {
+    font-weight: 600;
+    color: var(--gen-pine-text);
+  }
+
+  :global(.event-link-year) {
+    font-size: 0.6875rem;
+    color: var(--color-text-muted);
+    white-space: nowrap;
+  }
+
+  .profile-kin-groups {
+    display: flex;
+    flex-direction: column;
+    gap: 0.55rem;
+  }
+
+  :global(.kin-group-row) {
+    display: flex;
+    flex-direction: column;
+    gap: 0.22rem;
+  }
+
+  :global(.kin-group-label) {
+    font-family: var(--font-sans-ui);
+    font-size: 0.6875rem;
+    font-weight: 600;
+    color: var(--color-text-muted);
+  }
+
+  :global(.kin-chips-wrap) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+  }
+
+  :global(.kin-empty-text) {
+    font-family: var(--font-sans-ui);
+    font-size: 0.75rem;
+    font-style: italic;
+    color: var(--color-text-muted);
+  }
+
+  :global(.kin-chip-btn),
+  :global(.kin-chip-link),
+  :global(.kin-chip-static) {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 3px;
+    font-family: var(--font-sans-ui);
+    font-size: 0.75rem;
+    line-height: 1.3;
+  }
+
+  :global(.kin-chip-btn) {
+    background-color: var(--gen-ivory);
+    border: 1px solid var(--gen-border);
+    color: var(--gen-pine-text);
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  :global(.kin-chip-btn:hover) {
+    border-color: var(--gen-gold);
+    background-color: var(--gen-ivory-subtle);
+  }
+
+  :global(.kin-chip-btn.is-uncertain) {
+    border-style: dashed;
+    border-color: var(--gen-uncertain);
+  }
+
+  :global(.kin-uncertain-mark) {
+    color: var(--gen-uncertain);
+    font-weight: 700;
+  }
+
+  :global(.kin-chip-link) {
+    background-color: var(--gen-ivory);
+    border: 1px solid var(--gen-border);
+    color: var(--gen-gold-text);
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  :global(.kin-chip-link:hover) {
+    border-color: var(--gen-gold);
+    text-decoration: none;
+  }
+
+  :global(.kin-chip-static) {
+    background-color: var(--gen-ivory-subtle);
+    border: 1px solid transparent;
+    color: var(--color-text-secondary);
+  }
+
+  .profile-footer {
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--gen-border);
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+  }
+
+  .profile-citation-line {
+    font-family: var(--font-sans-ui);
+    font-size: 0.71875rem;
+    line-height: 1.45;
+    color: var(--color-text-secondary);
+  }
+
+  .citation-label {
+    font-weight: 600;
+    color: var(--color-text-muted);
+    margin-right: 0.25rem;
+  }
+
+  :global(.citation-work-link) {
+    color: var(--gen-gold-text);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  :global(.profile-detail-cta) {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.45rem;
+    width: 100%;
+    padding: 0.55rem 0.85rem;
+    background-color: var(--gen-pine-fill);
+    color: #F7F4EC !important;
+    border: 1px solid var(--gen-pine-fill);
+    border-radius: 4px;
+    font-family: var(--font-sans-ui);
+    font-size: 0.8125rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: opacity 150ms ease;
+  }
+
+  :global(.profile-detail-cta:hover) {
+    opacity: 0.92;
+    text-decoration: none;
+  }
+
+  :global(.profile-no-article-note) {
+    display: block;
+    font-family: var(--font-sans-ui);
+    font-size: 0.71875rem;
+    color: var(--color-text-muted);
+    font-style: italic;
+  }
+
+  /* Mobil/Planshet pastki varaq (sheet) rejimi (< 1120px) */
+  @media (max-width: 1119px) {
+    .genealogy-profile-panel {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      max-height: 84vh;
+      z-index: 96;
+      border-radius: 12px 12px 0 0;
+      border-bottom: none;
+      box-shadow: var(--shadow-overlay);
+      transform: translateY(105%);
+      visibility: hidden;
+      transition: transform 240ms cubic-bezier(0.22, 1, 0.36, 1), visibility 240ms;
+    }
+
+    .genealogy-profile-panel.is-drawer-open {
+      transform: translateY(0);
+      visibility: visible;
+    }
+
+    .profile-drawer-bar {
+      display: flex;
+    }
+
+    .profile-scroll-body {
+      overflow-y: auto;
+      padding-bottom: 1.75rem;
+    }
+  }
+</style>
