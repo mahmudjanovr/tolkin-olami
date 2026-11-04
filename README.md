@@ -15,7 +15,7 @@
 - **Kanonik Nasabnomalar (Genealogies):** Finwë, Durin, Elros, Rohan va Shayr sulolalarining interaktiv SVG daraxtlari.
 - **Mahalliy Statik Qidiruv (Pagefind):** Oʻzbek lotin imlosi (`oʻ`, `gʻ`) va Tolkien diakritikalarini (`ë`, `ä`, `ú`) avtomatik ravishda tenglashtiruvchi tezkor qidiruv modali (`Cmd+K` / `Ctrl+K`).
 - **Oksford Matbaachiligi Dizayn Tizimi:** 95% tabiiy paxta qogʻozi va toʻq siyoh, 5% vazmin tilla aksenti; litsenziyalangan EB Garamond, Literata va Inter shriftlari; toʻliq tungi rejim (FOUC xatolarisiz).
-- **Toʻliq Avtomatlashtirilgan Sifat Nazorati:** 329 ta Vitest unit testlari, 120 ta Playwright E2E testlari va WCAG 2.1 AA darajasidagi qulaylik auditi.
+- **Toʻliq Avtomatlashtirilgan Sifat Nazorati:** 330 ta Vitest unit testlari, 120 ta Playwright E2E testlari va WCAG 2.1 AA darajasidagi qulaylik auditi.
 - **Ishlab Chiqarish va Konteynerlash (Docker & CI/CD):** Koʻp bosqichli Dockerfile (Node 22 Bookworm Slim + Nginx Alpine), avtomatlashtirilgan GitHub Actions CI quvuri va Cloudflare Pages deploy qoʻllab-quvvatlovi.
 
 ---
@@ -85,13 +85,13 @@ Brauzerda `http://localhost:8080` orqali toʻliq statik xizmat ochiladi.
 
 ## 🧪 Sinovlarni Ishga Tushirish (Testing)
 
-Loyiha sifat va regressiyaga qarshi mustahkam sinov qatlamiga ega (jami **329 ta unit** va **120 ta E2E** test):
+Loyiha sifat va regressiyaga qarshi mustahkam sinov qatlamiga ega (jami **330 ta unit** va **120 ta E2E** test):
 
 ```bash
 # 1. Loyihani avval to'liq yig'ing (Performance va havolalar testi uchun kerak):
 npm run build
 
-# 2. Barcha Unit va Sxema testlarini o'tkazish (Vitest - 29 ta test fayli, 329 ta test):
+# 2. Barcha Unit va Sxema testlarini o'tkazish (Vitest - 29 ta test fayli, 330 ta test):
 npm run test:unit
 
 # 3. Playwright brauzerini yuklab olish (agar hali o'rnatilmagan bo'lsa):
@@ -110,7 +110,7 @@ npm run test:e2e
 GitHub Actions quvuri (`.github/workflows/ci.yml`) quyidagi bosqichlarni `ubuntu-latest` muhitida toʻliq tekshiradi:
 1. `npm ci` — Reproduktiv toza bogʻliqliklarni oʻrnatish.
 2. `npm run check` — Astro va TypeScript qatʼiy tipizatsiya nazorati.
-3. `npm run test:unit` — 329 ta Vitest birlik testlari.
+3. `npm run test:unit` — 330 ta Vitest birlik testlari.
 4. `npm run build` — 232 ta statik HTML sahifasini yaratish va Pagefind indekslash.
 5. `npm run test:e2e` — 120 ta Playwright sinovlari (Accessibility, mobil responsivlik, atlas va qidiruv).
 

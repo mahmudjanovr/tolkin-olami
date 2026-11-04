@@ -14,12 +14,12 @@
 | :--- | :---: | :---: | :--- |
 | **Jami Audit Qilingan Qahramonlar** | **81** | 100% | `src/content/characters/` papkasidagi barcha yozuvlar |
 | **Kategoriya C (Mavjud va Tasdiqlangan Portretlar)** | **21** | 25.9% | Dastlabki kanonik va barqaror portretlar |
-| **Yangi Generatsiya Qilingan va Integratsiyalangan** | **13** | 16.0% | Sharp orqali 600x800 va 300x400 WebP formatga oʻtkazilgan |
-| **JAMI INTEGRATSIYALANGAN PORTRETLAR** | **34** | **42.0%** | Manifestda toʻliq roʻyxatdan oʻtgan va diskda mavjud |
+| **Yangi Generatsiya Qilingan va Integratsiyalangan** | **14** | 17.3% | Sharp orqali 600x800 va 300x400 WebP formatga oʻtkazilgan |
+| **JAMI INTEGRATSIYALANGAN PORTRETLAR** | **35** | **43.2%** | Manifestda toʻliq roʻyxatdan oʻtgan va diskda mavjud |
 | **Kategoriya A (Ekran Moslashuvi Mavjud Qahramonlar)** | **30** | 37.0% | Jackson (LOTR/Hobbit), Rings of Power, War of Rohirrim |
 | **Kategoriya B (Faqat Birlamchi Matn Asosidagi Qahramonlar)**| **51** | 63.0% | Silmarillion, HoME, UT, Akallabêth |
-| **Generatsiya Navbatida / Quota Kutayotganlar** | **47** | 58.0% | Har biri uchun individual akademik prompt tayyorlangan |
-| **Diskdagi WebP Aktivlari Soni** | **68 ta** | — | 34 ta asosiy (600x800) + 34 ta eskiz (300x400) |
+| **Generatsiya Navbatida / Quota Kutayotganlar** | **46** | 56.8% | Har biri uchun individual akademik prompt tayyorlangan |
+| **Diskdagi WebP Aktivlari Soni** | **70 ta** | — | 35 ta asosiy (600x800) + 35 ta eskiz (300x400) |
 | **Singan / Notoʻgʻri Havolalar** | **0** | 0% | Barcha yoʻllar va metadata toʻliq tekshirilgan |
 
 ---
@@ -1689,17 +1689,17 @@ Photorealistic museum-quality 3:4 portrait of Yavanna Kementári (Giver of Fruit
    - Barcha eskiz fayllari toʻliq fayldan sezilarli darajada kichik boʻlib, katalog sahifalarining dastlabki yuklanish tezligini oshiradi.
 
 3. **Astro Kontent Tizimi Mosligi:**
-   - Integratsiyalangan barcha 34 ta qahramonning `src/content/characters/[slug].json` fayllaridagi `image` obyekti `characterImageSchema` sxemasi talablariga 100% javob beradi.
+   - Integratsiyalangan barcha 35 ta qahramonning `src/content/characters/[slug].json` fayllaridagi `image` obyekti `characterImageSchema` sxemasi talablariga 100% javob beradi.
    - Mavjud boʻlmagan rasmlarga soxta havola bermaslik uchun `indis.json` va `nerdanel.json` fayllaridagi xato havolalar tozalangan va rasmiy akademik monogramma fallback tizimiga oʻtkazilgan.
 
 4. **Kross-havolalar va Sinov Natijalari:**
-   - `npm run test:unit` — Barcha 29 ta test fayli va 329 ta unit test toʻliq oʻtdi (0 xato).
-   - `npm run check` — Astro diagnostikasidan 163 ta fayl boʻyicha 0 xato va 0 ogohlantirish bilan oʻtildi.
+   - `npm run test:unit` — Barcha 29 ta test fayli va 330 ta unit test toʻliq oʻtdi (0 xato).
+   - `npm run check` — Astro diagnostikasidan 168 ta fayl boʻyicha 0 xato va 0 ogohlantirish bilan oʻtildi.
 
 ---
 
 ## 6. Kelgusi Bosqich Rejasi (Next Steps)
 
-1. API kvotasi tiklangandan soʻng, ushbu hisobotning 4-boʻlimida tayyorlangan 47 ta individual prompt asosida qolgan portretlarni navbatma-navbat generatsiya qilish.
+1. API kvotasi tiklangandan soʻng, ushbu hisobotning 4-boʻlimida tayyorlangan 46 ta individual prompt asosida qolgan portretlarni navbatma-navbat generatsiya qilish.
 2. Har bir yangi generatsiya qilingan tasvirni `scripts/integrate-new-portraits.cjs` orqali WebP formatga oʻtkazish va `src/data/character-portraits.ts` manifestiga kiritish.
 3. Loyihaning `docs/10_CURRENT_STATE.md` hisobotini yangilab borish.
