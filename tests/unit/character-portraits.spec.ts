@@ -17,8 +17,8 @@ describe('Qahramon Portretlari va Illyustratsiya Tizimi (Milestone 6)', () => {
   ];
 
   describe('Manifest va Registr Butunligi', () => {
-    it('Kamida 34 ta qahramon uchun toʻliq tasdiqlangan portret manifesti mavjud', () => {
-      expect(Object.keys(CHARACTER_PORTRAITS).length).toBeGreaterThanOrEqual(34);
+    it('Kamida 35 ta qahramon uchun toʻliq tasdiqlangan portret manifesti mavjud', () => {
+      expect(Object.keys(CHARACTER_PORTRAITS).length).toBeGreaterThanOrEqual(35);
       for (const id of CANONICAL_CHARACTERS) {
         expect(CHARACTER_PORTRAITS[id], `Portret topilmadi: ${id}`).toBeDefined();
         expect(CHARACTER_PORTRAITS[id]!.characterId).toBe(id);

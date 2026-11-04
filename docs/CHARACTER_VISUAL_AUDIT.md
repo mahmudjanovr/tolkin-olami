@@ -48,7 +48,7 @@ Quyidagi jadvalda har bir qahramonning kanonik ismi, irqi, davri, tasnif toifasi
 | № | Qahramon Slugi | Oʻzbekcha Ismi | Irqi va Madaniyati | Toifa | Portret Holati | Fayl Hajmi (Full / Thumb) | Ekran Moslashuvi / Birlamchi Manba |
 | :-: | :--- | :--- | :--- | :-: | :-: | :-: | :--- |
 | 1 | `anarion` | **Anárion** | insonlar (Dúnedain) | **A** | ✅ INTEGRATSIYALANGAN | 86.3 KB / 24.5 KB | The Rings of Power (referenced / upcoming) & Peter Jackson LOTR prologue lore |
-| 2 | `ar-pharazon` | **Ar-Pharazôn Oltin** | insonlar (Dúnedain (Qirol Odamlar / King's Men)) | **A** | ⏳ PROMPT TAYYOR (Quota) | — | The Rings of Power (Trystan Gravelle) |
+| 2 | `ar-pharazon` | **Ar-Pharazôn Oltin** | insonlar (Dúnedain (Qirol Odamlar / King's Men)) | **A** | ✅ INTEGRATSIYALANGAN | 102.4 KB / 25.6 KB | The Rings of Power (Trystan Gravelle) |
 | 3 | `aragorn` | **Aragorn II** | insonlar (Dúnedain) | **C** | ✅ INTEGRATSIYALANGAN | 71.0 KB / 20.1 KB | Peter Jackson The Lord of the Rings (Viggo Mortensen) |
 | 4 | `arwen` | **Arwen Undómiel** | elflar (Yarim-elf (Peredhel)) | **C** | ✅ INTEGRATSIYALANGAN | 129.7 KB / 29.7 KB | Peter Jackson The Lord of the Rings (Liv Tyler) |
 | 5 | `aule` | **Aulë** | ainur (Vala (Aratar)) | **B** | ⏳ PROMPT TAYYOR (Quota) | — | Ekran talqini mavjud emas (Kanonik Silmarillion Ainur) |
@@ -163,10 +163,10 @@ Photorealistic museum-quality 3:4 portrait of Anárion, heroic co-ruler of Gondo
 - **Tolkien Matnidagi Tashqi Koʻrinishi:** Keksa, viqorli va magʻrur imperator: toʻq qora va kumushrang aralash sochlar, takabbur va oʻlimdan qoʻrquv aks etgan oʻtkir kulrang koʻzlar, qatʼiy qirrali yuz.
 - **Kiyim, Sovut va Qurollari:** Númenorning oltin toji (sapfir toshlari bilan bezatilgan), zarbof qizil va oltin ipak toʻn, oltin bilan qoplangan marosim sovuti.
 - **Shaxsiyat va Vizual Salobati:** Takabbur, hukmron, ulugʻvorlik va oʻlimdan dahshatli qoʻrquv girdobidagi soʻnggi Númenor Oliy Shohi.
-- **Portret Holati:** ⏳ Individual ishlab chiqarish prompti tasdiqlangan, navbatdagi API kvotasida generatsiyalanadi
-- **Rasm Manzili:** `/images/characters/ar-pharazon.webp (rejalashtirilgan)`
-- **Oʻzbekcha Alt-matni:** *Ar-Pharazôn Oltin portreti*
-- **Tafsilot Sahifasi Izohi (Caption):** *Ar-Pharazôn Oltin — Ar-Pharazôn (Tar-Calion)*
+- **Portret Holati:** ✅ Diskda WebP formatida mavjud va tizimga integratsiya qilingan
+- **Rasm Manzili:** `/images/characters/ar-pharazon.webp`
+- **Oʻzbekcha Alt-matni:** *Ar-Pharazôn Oltin Númenor shohona oltin toji va zarbof toʻnida, Armenelos taxt zalida*
+- **Tafsilot Sahifasi Izohi (Caption):** *Ar-Pharazôn Oltin — Númenorning 25-va soʻnggi Oliy Shohi, Armadaning fojiaviy yoʻlboshchisi*
 - **Individual Generatsiya Prompti (Art-Directorial Prompt):**
 ```text
 Photorealistic museum-quality 3:4 portrait of Ar-Pharazôn the Golden, the last King of Númenor in all his opulent, tragic imperial pride. An aging, imposing king with haughty aristocratic features, sharp grey eyes clouded with arrogance and dread of mortality, greying dark hair crowned with a heavy gold crown of Númenor adorned with sapphires. Dressed in lavish royal robes of gold brocade and crimson silk over gilded ceremonial cuirass. Opulent golden palace hall lighting, rich fabrics, hyper-realistic, dramatic historical portrait, 8k resolution.

@@ -87,5 +87,11 @@
       "year": 2022,
       "divergence_notes": "Serialda Pharazôn vaqt chizig'i siqilgan holda Ikkinchi davr o'rtasidagi Eregion voqealari bilan bir paytda kansler sifatida ko'rsatiladi. Tolkien xronologiyasida esa Ar-Pharazôn Celebrimbor o'limidan 1400 yil keyin tug'ilgan."
     }
-  ]
+  ],
+  "image": {
+    "src": "/images/characters/ar-pharazon.webp",
+    "src_thumb": "/images/characters/ar-pharazon-thumb.webp",
+    "alt": "Ar-Pharazôn Oltin Númenor shohona oltin toji va zarbof toʻnida, Armenelos taxt zalida",
+    "caption": "Ar-Pharazôn Oltin — Númenorning 25-va soʻnggi Oliy Shohi, Armadaning fojiaviy yoʻlboshchisi"
+  }
 }

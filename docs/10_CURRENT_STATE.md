@@ -30,14 +30,14 @@ Ensiklopediyadagi 9 ta asosiy toʻplam boʻyicha mavjud kontent yozuvlarining ha
 Qahramonlar kartochkalari va batafsil sahifalarida ishlatiladigan ilmiy portretlar holati:
 
 - **Jami qahramonlar yozuvi (`src/content/characters/`):** 81 ta (100% toʻliq audit qilindi)
-- **Portretga ega va toʻliq integratsiyalangan qahramonlar:** 34 ta (42.0%)
+- **Portretga ega va toʻliq integratsiyalangan qahramonlar:** 35 ta (43.2%)
   - *21 ta dastlabki tasdiqlangan portretlar saqlab qolindi*
-  - *13 ta yangi original portretlar generatsiya qilindi va Sharp orqali WebP formatda integratsiya qilindi*
-- **Portret generatsiyasi navbatidagi qahramonlar:** 47 ta (58.0% — har biri uchun individual akademik prompt va providans `docs/CHARACTER_VISUAL_AUDIT.md` va `src/data/character-production-manifest.json` da toʻliq tayyorlangan)
-- **Diskdagi WebP tasvirlari (`public/images/characters/`):** 34 ta juftlik (68 ta fayl: 600x800 asosiy va 300x400 thumbnail WebP)
-- **Manifestda roʻyxatga olinganlar (`src/data/character-portraits.ts`):** 34 ta
+  - *14 ta yangi original portretlar generatsiya qilindi va Sharp orqali WebP formatda integratsiya qilindi*
+- **Portret generatsiyasi navbatidagi qahramonlar:** 46 ta (56.8% — har biri uchun individual akademik prompt va providans `docs/CHARACTER_VISUAL_AUDIT.md` va `src/data/character-production-manifest.json` da toʻliq tayyorlangan)
+- **Diskdagi WebP tasvirlari (`public/images/characters/`):** 35 ta juftlik (70 ta fayl: 600x800 asosiy va 300x400 thumbnail WebP)
+- **Manifestda roʻyxatga olinganlar (`src/data/character-portraits.ts`):** 35 ta
 
-### Portretga Ega Boʻlgan Qahramonlar (34 ta)
+### Portretga Ega Boʻlgan Qahramonlar (35 ta)
 | Slug | Ismi | Rasm Manzili | Provenance Turi |
 | :--- | :--- | :--- | :--- |
 | `finwe` | Finwë | `/images/characters/finwe.webp` | Kanonik/Derivativ tasdiqlangan |
@@ -63,6 +63,7 @@ Qahramonlar kartochkalari va batafsil sahifalarida ishlatiladigan ilmiy portretl
 | `frodo-baggins` | Frodo Baggins | `/images/characters/frodo-baggins.webp` | Kanonik/Derivativ tasdiqlangan |
 | `celebrimbor` | Celebrimbor | `/images/characters/celebrimbor.webp` | Original derivativ / matn vizualizatsiyasi |
 | `anarion` | Anárion | `/images/characters/anarion.webp` | Original matn vizualizatsiyasi |
+| `ar-pharazon` | Ar-Pharazôn Oltin | `/images/characters/ar-pharazon.webp` | Original derivativ vizualizatsiya |
 | `balin` | Balin | `/images/characters/balin.webp` | Original derivativ vizualizatsiya |
 | `celeborn` | Celeborn | `/images/characters/celeborn.webp` | Original derivativ vizualizatsiya |
 | `elendil` | Elendil | `/images/characters/elendil.webp` | Original derivativ vizualizatsiya |
