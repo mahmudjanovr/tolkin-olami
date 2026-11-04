@@ -1,7 +1,5 @@
 User-agent: *
 Allow: /
-Disallow: /_astro/
 Disallow: /pagefind/
 
 Sitemap: https://tolkienolami.uz/sitemap.xml
-Host: https://tolkienolami.uz
