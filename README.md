@@ -15,7 +15,8 @@
 - **Kanonik Nasabnomalar (Genealogies):** Finwë, Durin, Elros, Rohan va Shayr sulolalarining interaktiv SVG daraxtlari.
 - **Mahalliy Statik Qidiruv (Pagefind):** Oʻzbek lotin imlosi (`oʻ`, `gʻ`) va Tolkien diakritikalarini (`ë`, `ä`, `ú`) avtomatik ravishda tenglashtiruvchi tezkor qidiruv modali (`Cmd+K` / `Ctrl+K`).
 - **Oksford Matbaachiligi Dizayn Tizimi:** 95% tabiiy paxta qogʻozi va toʻq siyoh, 5% vazmin tilla aksenti; litsenziyalangan EB Garamond, Literata va Inter shriftlari; toʻliq tungi rejim (FOUC xatolarisiz).
-- **Toʻliq Avtomatlashtirilgan Sifat Nazorati:** 320 ta Vitest testlari, 64 ta Playwright E2E testlari va WCAG 2.1 AA darajasidagi qulaylik auditi.
+- **Toʻliq Avtomatlashtirilgan Sifat Nazorati:** 329 ta Vitest unit testlari, 120 ta Playwright E2E testlari va WCAG 2.1 AA darajasidagi qulaylik auditi.
+- **Ishlab Chiqarish va Konteynerlash (Docker & CI/CD):** Koʻp bosqichli Dockerfile (Node 22 Bookworm Slim + Nginx Alpine), avtomatlashtirilgan GitHub Actions CI quvuri va Cloudflare Pages deploy qoʻllab-quvvatlovi.
 
 ---
 
@@ -68,23 +69,35 @@ npm run check
 npx astro check
 ```
 
+### 6. Docker orqali ishlab chiqarishda ishga tushirish (Production Container)
+Loyiha ikki bosqichli Docker arxitekturasiga ega (Node 22 Bookworm Slim + Nginx Alpine):
+
+```bash
+# Docker obrazini yig'ish
+docker build -t tolkien-olami:latest .
+
+# Konteynerni ishga tushirish (8080-portda)
+docker run -d -p 8080:80 --name tolkien-olami-app tolkien-olami:latest
+```
+Brauzerda `http://localhost:8080` orqali toʻliq statik xizmat ochiladi.
+
 ---
 
 ## 🧪 Sinovlarni Ishga Tushirish (Testing)
 
-Loyiha sifat va regressiyaga qarshi mustahkam sinov qatlamiga ega:
+Loyiha sifat va regressiyaga qarshi mustahkam sinov qatlamiga ega (jami **329 ta unit** va **120 ta E2E** test):
 
 ```bash
 # 1. Loyihani avval to'liq yig'ing (Performance va havolalar testi uchun kerak):
 npm run build
 
-# 2. Barcha Unit va Sxema testlarini o'tkazish (Vitest):
+# 2. Barcha Unit va Sxema testlarini o'tkazish (Vitest - 29 ta test fayli, 329 ta test):
 npm run test:unit
 
 # 3. Playwright brauzerini yuklab olish (agar hali o'rnatilmagan bo'lsa):
 npx playwright install chromium
 
-# 4. End-to-End (E2E) va WCAG 2.1 AA testlarini o'tkazish:
+# 4. End-to-End (E2E) va WCAG 2.1 AA testlarini o'tkazish (120 ta test):
 npm run test:e2e
 ```
 
@@ -92,10 +105,33 @@ npm run test:e2e
 
 ---
 
+## ⚙️ CI/CD Quvuri (Continuous Integration)
+
+GitHub Actions quvuri (`.github/workflows/ci.yml`) quyidagi bosqichlarni `ubuntu-latest` muhitida toʻliq tekshiradi:
+1. `npm ci` — Reproduktiv toza bogʻliqliklarni oʻrnatish.
+2. `npm run check` — Astro va TypeScript qatʼiy tipizatsiya nazorati.
+3. `npm run test:unit` — 329 ta Vitest birlik testlari.
+4. `npm run build` — 232 ta statik HTML sahifasini yaratish va Pagefind indekslash.
+5. `npm run test:e2e` — 120 ta Playwright sinovlari (Accessibility, mobil responsivlik, atlas va qidiruv).
+
+---
+
+## 🔧 Nosozliklarni Bartaraf Etish (Troubleshooting)
+
+- **Windows PowerShell ExecutionPolicy:** Agar Windowsda `npm` yoki `npx` skriptlari `UnauthorizedAccess` xatosini bersa, `npm.cmd` va `npx.cmd` buyruqlaridan foydalaning yoki `Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass` ni kiriting.
+- **Pagefind Dev Rejimi:** Dastlabki yuklanishda qidiruv indeksi mavjud boʻlishi uchun `npm run dev` dan oldin bir marta `npm run build` buyrugʻini ishga tushiring.
+- **Docker muhiti:** Dockerfile Debian `node:22-bookworm-slim` dan foydalanadi; bu Pagefind va Rollupning Linux x64 glibc kutubxonalari bilan 100% ziddiyatsiz ishlashini taʼminlaydi.
+
+
+---
+
 ## 📁 Loyiha Kataloglar Tuzilmasi
 
 ```
 tolkin-olami/
+├── .github/
+│   └── workflows/
+│       └── ci.yml                  # GitHub Actions CI avtomatlashtirish quvuri
 ├── docs/                           # Loyiha meʼmoriy spetsifikatsiyalari
 │   ├── 01_PRODUCT_VISION.md
 │   ├── 02_INFORMATION_ARCHITECTURE.md
@@ -112,8 +148,9 @@ tolkin-olami/
 │   ├── images/characters/          # Qahramon portretlari (WebP)
 │   ├── _headers                    # Cloudflare Pages xavfsizlik sarlavhalari
 │   └── robots.txt
-├── scripts/                        # Yordamchi skriptlar
-│   └── audit-content.cjs           # Kontent auditini o'tkazuvchi skript
+├── scripts/                        # Yordamchi audit va boyitish skriptlari
+│   ├── audit-content.cjs           # Kontent auditini o'tkazuvchi skript
+│   └── audit-editorial.cjs         # Tahririyat qoidalari va sifat eshiklari auditi
 ├── src/
 │   ├── components/                 # UI komponentlar va interaktiv orollar
 │   │   ├── atlas/                  # Leaflet xarita komponentlari
@@ -140,6 +177,9 @@ tolkin-olami/
 ├── tests/
 │   ├── e2e/                        # Playwright integratsion va a11y testlari
 │   └── unit/                       # Vitest sxema, havolalar va byudjet testlari
+├── .dockerignore                   # Docker kontekst filtri
+├── Dockerfile                      # Ko'p bosqichli ishlab chiqarish konteyneri
+├── nginx.conf                      # Ishlab chiqarish Nginx konfiguratsiyasi
 ├── astro.config.mjs
 ├── package.json
 ├── playwright.config.ts

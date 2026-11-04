@@ -97,6 +97,20 @@ export default defineConfig({
     resolve: {
       preserveSymlinks: true,
     },
+    build: {
+      rollupOptions: {
+        onwarn(warning, warn) {
+          // Suppress Leaflet unresolvable runtime asset warning
+          if (
+            warning.message &&
+            warning.message.includes("didn't resolve at build time, it will remain unchanged to be resolved at runtime")
+          ) {
+            return;
+          }
+          warn(warning);
+        },
+      },
+    },
     plugins: [servePagefindDev()],
   },
 });

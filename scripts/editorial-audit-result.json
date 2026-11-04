@@ -544,7 +544,7 @@
     "elfCount": 662,
     "tolkienCount": 539,
     "tolkinCount": 0,
-    "khazadCount": 62,
+    "khazadCount": 63,
     "xazadCount": 4,
     "khuzdulCount": 29,
     "xuzdulCount": 0,
@@ -2354,20 +2354,6 @@
       "total": 6,
       "thinItems": [
         {
-          "file": "durin-avlodlari.json",
-          "summaryWords": 24,
-          "sectionCount": 0,
-          "sectionTitles": [],
-          "wordCount": 234
-        },
-        {
-          "file": "rohan-shohlari.json",
-          "summaryWords": 25,
-          "sectionCount": 0,
-          "sectionTitles": [],
-          "wordCount": 243
-        },
-        {
           "file": "elros-va-gondor-shohlari.json",
           "summaryWords": 25,
           "sectionCount": 0,
@@ -2375,11 +2361,18 @@
           "wordCount": 245
         },
         {
-          "file": "finwe-xonadoni.json",
-          "summaryWords": 29,
+          "file": "durin-avlodlari.json",
+          "summaryWords": 24,
           "sectionCount": 0,
           "sectionTitles": [],
-          "wordCount": 311
+          "wordCount": 248
+        },
+        {
+          "file": "rohan-shohlari.json",
+          "summaryWords": 25,
+          "sectionCount": 0,
+          "sectionTitles": [],
+          "wordCount": 257
         },
         {
           "file": "shayr-xonadonlari.json",
@@ -2394,23 +2387,16 @@
           "sectionCount": 0,
           "sectionTitles": [],
           "wordCount": 382
+        },
+        {
+          "file": "finwe-xonadoni.json",
+          "summaryWords": 29,
+          "sectionCount": 0,
+          "sectionTitles": [],
+          "wordCount": 383
         }
       ],
       "smallest": [
-        {
-          "file": "durin-avlodlari.json",
-          "summaryWords": 24,
-          "sectionCount": 0,
-          "sectionTitles": [],
-          "wordCount": 234
-        },
-        {
-          "file": "rohan-shohlari.json",
-          "summaryWords": 25,
-          "sectionCount": 0,
-          "sectionTitles": [],
-          "wordCount": 243
-        },
         {
           "file": "elros-va-gondor-shohlari.json",
           "summaryWords": 25,
@@ -2419,11 +2405,18 @@
           "wordCount": 245
         },
         {
-          "file": "finwe-xonadoni.json",
-          "summaryWords": 29,
+          "file": "durin-avlodlari.json",
+          "summaryWords": 24,
           "sectionCount": 0,
           "sectionTitles": [],
-          "wordCount": 311
+          "wordCount": 248
+        },
+        {
+          "file": "rohan-shohlari.json",
+          "summaryWords": 25,
+          "sectionCount": 0,
+          "sectionTitles": [],
+          "wordCount": 257
         },
         {
           "file": "shayr-xonadonlari.json",
@@ -2431,6 +2424,13 @@
           "sectionCount": 0,
           "sectionTitles": [],
           "wordCount": 341
+        },
+        {
+          "file": "edain-va-yarim-elflar.json",
+          "summaryWords": 36,
+          "sectionCount": 0,
+          "sectionTitles": [],
+          "wordCount": 382
         }
       ]
     },

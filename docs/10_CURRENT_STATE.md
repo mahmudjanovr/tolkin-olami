@@ -1,7 +1,7 @@
 # Tolkien Olami — Loyihaning Haqiqiy Holati Audit Hisoboti (Current State Audit)
 
 > **Avtomatik yaratilgan:** Ushbu hisobot `scripts/audit-content.cjs` skripti orqali loyihaning haqiqiy holatini sinchkovlik bilan skanerlash orqali tuzildi.  
-> **Sana:** 2026-10-31 11:29:30 UTC  
+> **Sana:** 2026-11-04 11:08:48 UTC  
 > **Muhit:** Node v24.21.0, Astro 7.3.8
 
 ---
@@ -45,13 +45,13 @@ Qahramonlar kartochkalari va batafsil sahifalarida ishlatiladigan ilmiy portretl
 | `gollum` | Gollum | `/images/characters/gollum.webp` | Kanonik/Derivativ tasdiqlangan |
 | `fingolfin` | Fingolfin | `/images/characters/fingolfin.webp` | Kanonik/Derivativ tasdiqlangan |
 | `arwen` | Arwen Undómiel | `/images/characters/arwen.webp` | Kanonik/Derivativ tasdiqlangan |
-| `bilbo-baggins` | Bilbo Baggins | `/images/characters/bilbo-baggins.webp` | Kanonik/Derivativ tasdiqlangan |
 | `boromir` | Boromir | `/images/characters/boromir.webp` | Kanonik/Derivativ tasdiqlangan |
 | `theoden` | Théoden | `/images/characters/theoden.webp` | Kanonik/Derivativ tasdiqlangan |
+| `bilbo-baggins` | Bilbo Baggins | `/images/characters/bilbo-baggins.webp` | Kanonik/Derivativ tasdiqlangan |
 | `beren` | Beren | `/images/characters/beren.webp` | Kanonik/Derivativ tasdiqlangan |
-| `legolas` | Legolas Greenleaf | `/images/characters/legolas.webp` | Kanonik/Derivativ tasdiqlangan |
 | `aragorn` | Aragorn II | `/images/characters/aragorn.webp` | Kanonik/Derivativ tasdiqlangan |
 | `gimli` | Gimli | `/images/characters/gimli.webp` | Kanonik/Derivativ tasdiqlangan |
+| `legolas` | Legolas Greenleaf | `/images/characters/legolas.webp` | Kanonik/Derivativ tasdiqlangan |
 | `elrond` | Elrond | `/images/characters/elrond.webp` | Kanonik/Derivativ tasdiqlangan |
 | `saruman` | Saruman | `/images/characters/saruman.webp` | Kanonik/Derivativ tasdiqlangan |
 | `samwise-gamgee` | Samwise Gamgee | `/images/characters/samwise-gamgee.webp` | Kanonik/Derivativ tasdiqlangan |
@@ -68,14 +68,14 @@ Qahramonlar kartochkalari va batafsil sahifalarida ishlatiladigan ilmiy portretl
 - `maglor` (Maglor)
 - `bard-the-bowman` (Kamonchi Bard (Bard I))
 - `nienor` (Niënor Níniel)
-- `helm-hammerhand` (Helm Hammerhand (Bolgʻaqoʻl))
 - `balin` (Balin)
+- `helm-hammerhand` (Helm Hammerhand (Bolgʻaqoʻl))
 - `elwing` (Elwing Oq)
 - `smaug` (Smaug)
 - `morwen` (Morwen Eledhwen)
-- `thrain-ii` (Thráin II)
-- `dain-ironfoot` (Dáin II Ironfoot (Temiroyoq))
 - `beleg` (Beleg Cúthalion)
+- `thrain-ii` (Thráin II)
+- `curufin` (Curufin)
 - *...va yana 45 ta qahramon (qarang: Faza 7 portretlar paketi)*
 
 ---
@@ -87,7 +87,7 @@ Qahramonlar kartochkalari va batafsil sahifalarida ishlatiladigan ilmiy portretl
 | Hudud (ID) | Tavsif | Vaʼda qilingan hujjat | Haqiqiy holat | Fayl hajmi | Litsenziya fayli |
 | :--- | :--- | :--- | :---: | :---: | :---: |
 | **beleriand** | Beleriand va Shimoliy Yerlar (Birinchi Davr) | docs/02_INFORMATION_ARCHITECTURE.md (§2) | ✅ Mavjud | 150.3 KB | ✅ Mavjud |
-| **orta-yer** | Gʻarbiy Oʻrta-yer (Endor) (Ikkinchi va Uchinchi Davrlar) | docs/02_INFORMATION_ARCHITECTURE.md (§2) | ✅ Mavjud | 263.2 KB | ✅ Mavjud |
+| **orta-yer** | Gʻarbiy Oʻrta-yer (Endor) (Ikkinchi va Uchinchi Davrlar) | docs/02_INFORMATION_ARCHITECTURE.md (§2) | ✅ Mavjud | 263.1 KB | ✅ Mavjud |
 | **numenor** | Númenor Orol-Qirolligi (Elenna) (Ikkinchi Davr) | docs/02_INFORMATION_ARCHITECTURE.md (§2) | ❌ Rejalashtirilgan (Faza 7) | — | — |
 | **valinor** | Aman va Valinor (Boqiy Gʻarb) (Daraxtlar va Ilk Davrlar) | docs/02_INFORMATION_ARCHITECTURE.md (§2) | ❌ Rejalashtirilgan (Faza 7) | — | — |
 
@@ -133,26 +133,26 @@ Quyidagi jadvallarda fayl hajmiga koʻra eng ixcham (yupqa boʻlishi mumkin boʻ
 | :-: | :--- | :--- | :-: |
 | 1 | `finarfin.json` | Finarfin | 3499 B |
 | 2 | `eorl.json` | Yosh Eorl | 3659 B |
-| 3 | `denethor-ii.json` | Denethor II | 3661 B |
+| 3 | `denethor-ii.json` | Denethor II | 3729 B |
 | 4 | `maeglin.json` | Maeglin | 3743 B |
 | 5 | `maglor.json` | Maglor | 3778 B |
 | 6 | `bard-the-bowman.json` | Kamonchi Bard (Bard I) | 3793 B |
 | 7 | `nienor.json` | Niënor Níniel | 3794 B |
-| 8 | `helm-hammerhand.json` | Helm Hammerhand (Bolgʻaqoʻl) | 3806 B |
-| 9 | `balin.json` | Balin | 3816 B |
+| 8 | `balin.json` | Balin | 3816 B |
+| 9 | `helm-hammerhand.json` | Helm Hammerhand (Bolgʻaqoʻl) | 3874 B |
 | 10 | `elwing.json` | Elwing Oq | 3882 B |
 
 ### Toʻplam: `cosmology` (Jami: 8 ta)
 
 | # | Slug / Fayl | Nomi / Sarlavhasi | Fayl Hajmi (bayt) |
 | :-: | :--- | :--- | :-: |
-| 1 | `ea.json` | Eä | 4211 B |
-| 2 | `anar-va-isil.json` | Anar va Isil | 4446 B |
-| 3 | `kuma.json` | Kúma | 4448 B |
-| 4 | `ainulindale.json` | Ainulindalë va Oʻchmas Olov | 4781 B |
-| 5 | `togri-yol-va-aklallabeth.json` | Yassi Arda, Dunyoning Dumaloqlashuvi va Toʻgʻri Yoʻl | 4954 B |
-| 6 | `ikki-daraxt.json` | Valinorning Ikki Daraxti | 5175 B |
-| 7 | `mandos-va-fea-hroa.json` | Fëa va Hröa: Ruh, Tana va Mandos Zallari Metafizikasi | 5277 B |
+| 1 | `ea.json` | Eä | 4253 B |
+| 2 | `anar-va-isil.json` | Anar va Isil | 4487 B |
+| 3 | `kuma.json` | Kúma | 4494 B |
+| 4 | `ainulindale.json` | Ainulindalë va Oʻchmas Olov | 4823 B |
+| 5 | `togri-yol-va-aklallabeth.json` | Yassi Arda, Dunyoning Dumaloqlashuvi va Toʻgʻri Yoʻl | 4999 B |
+| 6 | `ikki-daraxt.json` | Valinorning Ikki Daraxti | 5222 B |
+| 7 | `mandos-va-fea-hroa.json` | Fëa va Hröa: Ruh, Tana va Mandos Zallari Metafizikasi | 5323 B |
 | 8 | `muqaddas-nur.json` | Muqaddas Nur | 6611 B |
 
 ### Toʻplam: `events` (Jami: 17 ta)
@@ -174,11 +174,11 @@ Quyidagi jadvallarda fayl hajmiga koʻra eng ixcham (yupqa boʻlishi mumkin boʻ
 
 | # | Slug / Fayl | Nomi / Sarlavhasi | Fayl Hajmi (bayt) |
 | :-: | :--- | :--- | :-: |
-| 1 | `durin-avlodlari.json` | Durin Avlodlari (Uzunsoqollar) Nasabnomasi | 2544 B |
-| 2 | `elros-va-gondor-shohlari.json` | Elros va Gondor Shohlari Nasabnomasi | 2652 B |
-| 3 | `rohan-shohlari.json` | Eorl va Rohan Shohlari Nasabnomasi | 2676 B |
-| 4 | `finwe-xonadoni.json` | Finwë Xonadoni Nasabnomasi | 3320 B |
-| 5 | `edain-va-yarim-elflar.json` | Edain va Yarim-Elflar (Peredhil) Nasabnomasi | 4035 B |
+| 1 | `elros-va-gondor-shohlari.json` | Elros va Gondor Shohlari Nasabnomasi | 2652 B |
+| 2 | `durin-avlodlari.json` | Durin Avlodlari (Uzunsoqollar) Nasabnomasi | 2712 B |
+| 3 | `rohan-shohlari.json` | Eorl va Rohan Shohlari Nasabnomasi | 2846 B |
+| 4 | `edain-va-yarim-elflar.json` | Edain va Yarim-Elflar (Peredhil) Nasabnomasi | 4035 B |
+| 5 | `finwe-xonadoni.json` | Finwë Xonadoni Nasabnomasi | 4205 B |
 | 6 | `shayr-xonadonlari.json` | Shayr Xonadonlari (Baggins, Tuk va Brendibak) Nasabnomasi | 4208 B |
 
 ### Toʻplam: `languages` (Jami: 10 ta)
@@ -188,13 +188,13 @@ Quyidagi jadvallarda fayl hajmiga koʻra eng ixcham (yupqa boʻlishi mumkin boʻ
 | 1 | `westron.json` | Westron (Umumiy Nutq / Adûni) | 4715 B |
 | 2 | `adunaic.json` | Adûnaic (Númenor Tili) | 4810 B |
 | 3 | `khuzdul.json` | Khuzdul | 4826 B |
-| 4 | `cirth.json` | Cirth (Angerthas Runalari) | 4852 B |
-| 5 | `quenya.json` | Quenya | 4855 B |
+| 4 | `cirth.json` | Cirth (Angerthas Runalari) | 4893 B |
+| 5 | `quenya.json` | Quenya | 4893 B |
 | 6 | `tengwar.json` | Tengwar | 4929 B |
 | 7 | `valarin.json` | Valarin (Ainur Tili) | 4965 B |
-| 8 | `rohirric.json` | Rohirric (Rohan Tili) | 5020 B |
+| 8 | `rohirric.json` | Rohirric (Rohan Tili) | 5062 B |
 | 9 | `sindarin.json` | Sindarin | 5170 B |
-| 10 | `qora-nutq.json` | Qora Nutq (Black Speech) | 5296 B |
+| 10 | `qora-nutq.json` | Qora Nutq (Black Speech) | 5344 B |
 
 ### Toʻplam: `peoples` (Jami: 11 ta)
 
@@ -205,26 +205,26 @@ Quyidagi jadvallarda fayl hajmiga koʻra eng ixcham (yupqa boʻlishi mumkin boʻ
 | 3 | `noldor.json` | Noldor | 4914 B |
 | 4 | `nandor-va-silvan.json` | Nandor va Oʻrmon Elflari | 4921 B |
 | 5 | `rohirrim.json` | Rohirrim (Rohan Chavandozlari) | 4970 B |
-| 6 | `xazad.json` | Khazad (Mittilar) | 4982 B |
-| 7 | `entlar.json` | Entlar (Onodrim) | 5069 B |
-| 8 | `numenorliklar.json` | Númenorliklar | 5070 B |
-| 9 | `dunedain.json` | Dúnedain (Gʻarb Insonlari) | 5081 B |
+| 6 | `xazad.json` | Khazad (Mittilar) | 5037 B |
+| 7 | `dunedain.json` | Dúnedain (Gʻarb Insonlari) | 5081 B |
+| 8 | `entlar.json` | Entlar (Onodrim) | 5128 B |
+| 9 | `numenorliklar.json` | Númenorliklar | 5133 B |
 | 10 | `istari.json` | Istari (Sehrgarlar Ordeni) | 5268 B |
 
 ### Toʻplam: `places` (Jami: 45 ta)
 
 | # | Slug / Fayl | Nomi / Sarlavhasi | Fayl Hajmi (bayt) |
 | :-: | :--- | :--- | :-: |
-| 1 | `nargothrond.json` | Nargothrond | 3687 B |
+| 1 | `nargothrond.json` | Nargothrond | 3736 B |
 | 2 | `orodruin.json` | Orodruin (Hukm Togʻi) | 3837 B |
-| 3 | `barad-dur.json` | Barad-dûr | 3841 B |
+| 3 | `barad-dur.json` | Barad-dûr | 3893 B |
 | 4 | `helms-deep.json` | Helm jarligi (Helm's Deep / Hornburg) | 3893 B |
 | 5 | `gondolin.json` | Gondolin | 3894 B |
-| 6 | `paths-of-the-dead.json` | Oʻliklar Yoʻli | 3920 B |
-| 7 | `havens-of-sirion.json` | Sirion Bandargohi | 3924 B |
-| 8 | `angband.json` | Angband | 3945 B |
-| 9 | `alqualonde.json` | Alqualondë | 3948 B |
-| 10 | `dead-marshes.json` | Oʻlik Botqoqliklar | 3948 B |
+| 6 | `paths-of-the-dead.json` | Oʻliklar Yoʻli | 3966 B |
+| 7 | `havens-of-sirion.json` | Sirion Bandargohi | 3973 B |
+| 8 | `dead-marshes.json` | Oʻlik Botqoqliklar | 3993 B |
+| 9 | `alqualonde.json` | Alqualondë | 3995 B |
+| 10 | `angband.json` | Angband | 3996 B |
 
 ---
 

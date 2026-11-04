@@ -189,6 +189,11 @@ const CANONICAL_REGISTRY: Record<string, KnownEntityEntry> = {
   nogrod: { name: 'Nogrod (Tumunzahar)', collection: 'places', path: '/xaritalar/?joy=nogrod' },
   'havens-of-sirion': { name: 'Sirion Bandargohi', collection: 'places', path: '/xaritalar/?joy=havens-of-sirion' },
   falas: { name: 'Falas (Brithombar va Eglarest)', collection: 'places', path: '/xaritalar/?joy=falas' },
+  fangorn: { name: 'Fangorn Oʻrmoni (Entwood)', collection: 'places' },
+  mirkwood: { name: 'Qorongʻu Oʻrmon (Mirkwood)', collection: 'places' },
+  'the-shire': { name: 'Shayr (The Shire)', collection: 'places' },
+  eregion: { name: 'Eregion (Hollin)', collection: 'places' },
+  moria: { name: 'Khazad-dûm (Moria)', collection: 'places', path: '/xaritalar/?joy=khazad-dum' },
 
   // --- Tarixiy Voqealar (events) ---
   'birinchi-qarindosh-qirgini': { name: 'Birinchi Qarindosh Qirgʻini', collection: 'events' },
