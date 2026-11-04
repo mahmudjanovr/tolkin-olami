@@ -86,5 +86,11 @@
       "year": 2022,
       "divergence_notes": "Serialda Uch Elf Uzugi Yetti va To'qqiz uzukdan avval hamda Sauronning ('Halbrand') bevosita ishtirokida quyiladi. Tolkien kanonida esa Uch Uzuk eng oxirida (Ikkinchi davr 1590-yilda) va Sauron ishtirokisiz, yolg'iz Celebrimborning o'zi tomonidan yaratilgan."
     }
-  ]
+  ],
+  "image": {
+    "src": "/images/characters/celebrimbor.webp",
+    "src_thumb": "/images/characters/celebrimbor-thumb.webp",
+    "alt": "Celebrimbor Eregiondagi ustaxonasida moviy baxmal libosda, qoʻlida kumush temirchilik bolgʻasi bilan",
+    "caption": "Celebrimbor — Noldor shahzodasi, Gwaith-i-Mírdain yetakchisi va Elflarning Uch Uzugi yaratuvchisi"
+  }
 }

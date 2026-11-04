@@ -31,7 +31,9 @@
     "Oq Daraxt koʻchati (Minas Anorga ekkan)",
     "Elendilmir (Shimol Yulduzi toji)"
   ],
-  "primary_locations": ["minas-tirith"],
+  "primary_locations": [
+    "minas-tirith"
+  ],
   "textual_status": "author_published",
   "uncertainty_notes": "Tolkien 'Unfinished Tales' ('The Disaster of the Gladden Fields') asarida Isildurning feʼl-atvorini chuqur tahlil qilgan: kinoadaptatsiyalarda Isildur faqat ochkoʻzlik va zaiflik timsoli sifatida koʻrsatilgan boʻlsa-da, Tolkien matnlarida u favqulodda jasur, yoshligida Nimloth (Oq Daraxt) mevasini saqlab qolish uchun hayotini tikkan buyuk qahramondir. Gladden Dalalaridagi fojeali safarda u Uzukning laʼnati va halokatli qudratini toʻliq anglab yetgan va uni oʻzida saqlashga loyiq emasligini bilib, Imladrisdagi Elrond huzuriga unga topshirish uchun shoshilayotgan edi.",
   "summary": "Elendilning toʻngʻich oʻgʻli, Minas Ithil (keyinchalik Minas Morgul) asoschisi va Gondor qiroli. Yigitlik chogʻida Númenorda shoh Ar-Pharazôn buyrugʻi bilan yoqib yuborilish arafasida turgan muqaddas Oq Daraxt mevasini qahramonona oʻgʻirlab qutqargan. Soʻnggi Ittifoq urushida otasining singan Narsil qilichi bilan Sauronning barmogʻidan Yagona Uzukni kesib olgan. Biroq Elrondning maslahatiga quloq solmasdan, Uzukni oʻzida saqlab qolgan. Uchinchi davrning 2-yilida Gladden Dalalarida orqlar pistirmasida halok boʻlgan fojiali shoh.",
@@ -91,5 +93,11 @@
       "year": 2001,
       "divergence_notes": "Film muqaddimasida Harry Sinclair gavdalantirgan Isildur Orodruin krateri ichida Elrond unga 'Cast it into the fire! Destroy it!' deb hayqirganida, 'No' deb orqasiga o'girilib ketadi. Tolkien kitobida bunday krater ichidagi drama bo'lmagan: Elrond va Círdan Isildurga janggohning o'zidayoq maslahat berishgan, ammo Isildur Uzukni otasi va ukasining o'limi uchun qonuniy tovon sifatida o'zida olib qolgan."
     }
-  ]
+  ],
+  "image": {
+    "src": "/images/characters/isildur.webp",
+    "src_thumb": "/images/characters/isildur-thumb.webp",
+    "alt": "Isildur Gondorning qora va kumush sovutida, Oq Daraxt nishoni bilan",
+    "caption": "Isildur — Gondor va Arnor Oliy Qiroli, Minas Ithil asoschisi va Yagona Uzukni uzib olgan qahramon"
+  }
 }

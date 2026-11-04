@@ -29,7 +29,11 @@
     "Firefoot (Otashoyoq — zotdor jangovar oti)",
     "Oltin Yashil Rohan Qalqoni va Nayzasi"
   ],
-  "primary_locations": ["edoras", "helms-deep", "minas-tirith"],
+  "primary_locations": [
+    "edoras",
+    "helms-deep",
+    "minas-tirith"
+  ],
   "textual_status": "author_published",
   "uncertainty_notes": "Tolkien 'The Lord of the Rings' Ilovasi A (II: 'The House of Eorl') da taʼkidlaganidek, Théoden va uning oʻgʻli Théodred halok boʻlgach, Eorl xonadonining toʻgʻridan-toʻgʻri ota-oʻgʻil sulolasi tugadi. Taxt Théodenning singlisi Théodwynning oʻgʻli Éomerga oʻtdi va u Rohan tarixidagi Uchinchi Sulolaga asos soldi. Éomer Qirol Elessar (Aragorn) bilan qadimiy Eorl va Cirion qasamyodini yangiladi va uning sharafli hukmronligi davrida xalq unga 'Éomer Éadig' (Barakali / Omadli) deb nom berdi.",
   "summary": "Éomund va Théodwynning oʻgʻli, Qirol Théodenning jiyani va Éowynning akasi. Rohan Sharqiy Markining 3-bosh marshali. Merry va Pippinni asir olgan Saruman Uruk-hailarini tor-mor etgan va dashtda Aragorn bilan uchrashgan. Helm darasi va Pelennor janglarida mislsiz jasorat koʻrsatgan. Théoden shahid boʻlgach, jang maydonida Rohan Qiroli deb eʼlon qilingan. Qora Darvoza jangida Aragorn bilan yonma-yon turgan va Toʻrtinchi davrda Rohanni 65 yil davomida tinchlik va qudrat bilan boshqargan buyuk shoh.",
@@ -91,5 +95,11 @@
       "year": 2002,
       "divergence_notes": "Filmda Karl Urban ijrosidagi Éomer jasur, keskin va sadoqatli jangchi sifatida tasvirlangan. Asosiy syujet farqi: filmda Éomer Edorasdan Gríma tomonidan batamom haydab yuboriladi va Helm darasiga jangning eng oxirida Gandalf bilan birga yordamga keladi (Erkenbrandning roli Éomerga berilgan); kitobda esa Éomer tun bo'yi Helm darasining o'zida Aragorn bilan yonma-yon turib mudofaa qilgan."
     }
-  ]
+  ],
+  "image": {
+    "src": "/images/characters/eomer.webp",
+    "src_thumb": "/images/characters/eomer-thumb.webp",
+    "alt": "Éomer ot ramzli sovut va qizil plashda, qoʻlida dubulgʻa tutgan holda Rohan dashtlarida",
+    "caption": "Éomer Éomund oʻgʻli — Riddermarkning Uchinchi Marshali va keyinchalik Rohan Qiroli"
+  }
 }

@@ -29,7 +29,10 @@
     "Elendilmir (Shimol Yulduzi — kumush tasmali oq gavhar toji)",
     "Yetti Palantíri (Númenordan olib kelingan koʻrish toshlari)"
   ],
-  "primary_locations": ["amon-sul", "minas-tirith"],
+  "primary_locations": [
+    "amon-sul",
+    "minas-tirith"
+  ],
   "textual_status": "author_published",
   "uncertainty_notes": "Tolkien 'The Silmarillion' ('Akallabêth') va 'The Lord of the Rings' asarlarida Elendilning boʻyini qariyb 7 fut 11 dyuym (taxminan 241 sm) deb qayd etgan — u Oʻrta-yer tarixidagi barcha Dúnedainlar orasida eng boʻyi balandi boʻlgan ('Elendil the Tall'). Uning Oʻrta-yer sohiliga qadam qoʻyganida Quenya tilida aytgan mashhur qasamyodi: 'Et Eärello Endorenna utúlien. Sinome maruvan ar Hildinyar tenn' Ambar-metta!' ('Buyuk Ummon ortidan Oʻrta-yerga yetib keldim. Bu yerda men va mening vorislarim dunyo oxirigacha yashajakmiz!') oradan uch ming yil oʻtib, uning 39-toʻgʻridan-toʻgʻri avlodi Aragorn II Elessar toj kiyish marosimida takrorlagan muqaddas ontga aylandi.",
   "summary": "Andúniëning soʻnggi knyazi Amandilning toʻngʻich oʻgʻli, Silmarien naslidan boʻlgan Númenor sadoqatlilari yoʻlboshchisi. Orolning qulashi (Akallabêth) chogʻida toʻqqiz kema bilan qutulib, Oʻrta-yerda Arnor va Gondor qudratli qirolliklariga asos solgan buyuk Oliy Shoh. Narsil qilichi egasi. Ikkinchi davr oxirida Gil-galad bilan Elflar va Insonlarning Soʻnggi Ittifoqini tuzib, Barad-dûr qamaliga boshchilik qilgan va Hukm Togʻi etagida Sauronni yengish chogʻida qahramonlarcha shahid boʻlgan zot.",
@@ -92,5 +95,11 @@
       "year": 2001,
       "divergence_notes": "Film muqaddimasida (Prologue) Peter McKenzie gavdalantirgan Elendil So'nggi Ittifoq jangida Sauronning gurzisi zarbasidan qoyaga urilib halok bo'ladi va Sauron uning qilichini oyog'i bilan bosib sindiradi. Kitobda esa Elendil va Gil-galad ikkalasi birgalikda Sauronni yerga qulatishadi (Sauron o'limli yaralanadi) va Elendil jon bergach, uning o'z tanasi ostida Narsil sinib ketadi."
     }
-  ]
+  ],
+  "image": {
+    "src": "/images/characters/elendil.webp",
+    "src_thumb": "/images/characters/elendil-thumb.webp",
+    "alt": "Elendil Boʻyli boshida Elendilmir yulduzi bilan, Yetti Yulduz va Oq Daraxtli moviy sarupoda",
+    "caption": "Elendil Boʻyli — Gondor va Arnorning Birinchi Oliy Qiroli, Dúnedain yetakchisi"
+  }
 }

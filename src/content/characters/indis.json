@@ -26,7 +26,9 @@
   "death_year": "Boqiy (Valinordagi Vanyar xalqi orasida yashaydi)",
   "house_id": "finwe-xonadoni",
   "weapons_and_artifacts": [],
-  "primary_locations": ["tirion"],
+  "primary_locations": [
+    "tirion"
+  ],
   "textual_status": "posthumous_edited",
   "uncertainty_notes": "Matnshunoslik tahlili: Ilk yozuvlar va Christopher Tolkien tahriridagi 'The Silmarillion' nashrida Indis Vanyar Oliy Qiroli Ingwëning singlisi deb atalgan. Biroq J.R.R. Tolkienning keyingi qoʻlyozmalarida ('The Shibboleth of Fëanor', HoME XII hamda 'Morgoth's Ring', HoME X) u Ingwëning jiyani — uning singlisining qizi sifatida qayd etilgan. Shuningdek, Finwë va Indis farzandlarining soni va tugʻilish ketma-ketligi turli qoralama bosqichlarida oʻzgargan: ilk nusxalarda faqat Fingolfin va Finarfin boʻlgan boʻlsa, soʻnggi tahrirlarda ikki qiz — toʻngʻich Findis hamda Írimë (Lalwen) qoʻshilgan.",
   "summary": "Vanyar Oliy Qiroli Ingwëning yaqin qarindoshi, oʻzining tengsiz goʻzalligi, oltin sochlari va yuksak qaddi-qomati bilan tanilgan Vanyar malikasi. Míriel Þerindë vafotidan soʻng Noldor Oliy Qiroli Finwëning ikkinchi rafiqasiga aylangan. Fingolfin, Finarfin, Findis va Írimëning onasi boʻlib, uning vujudi orqali Vanyar qoni va Ikki Daraxt nurini eslatuvchi oltin sochlar sulolaga (xususan Finarfin va Galadrielga) oʻtgan.",
@@ -53,12 +55,6 @@
       "content": "Daraxtlar davrining 1495-yilida Melkor va Ungoliant Ikki Daraxtni zaharlab, Valinorni qorongʻulikka burkadi. Soʻng Melkor Formenosga bostirib kirib, Finwëni shafqatsizlarcha qatl etdi va Silmarillarni oʻgʻirlab ketdi. Sevimli turmush oʻrtogʻining fojiali oʻlimi Indisning qalbini chil-parchin qildi.\n\nFëanor oʻzining mashhur dahshatli qasamyodini ichib, Noldor xalqini Oʻrta-yerga surgun va qasos sari boshlaganida, Indis bu qonli va isyonkor harakatga mutlaqo qoʻshilmadi. U hatto oʻz oʻgʻillari Fingolfin va Finarfinning Oʻrta-yerga ketishini ham qoʻllab-quvvatlamadi (Finarfin keyinchalik Valinorga qaytib keldi). Chuqur motamga botgan Indis toʻngʻich qizi Findis bilan birga Tirionni butunlay tark etdi va oʻzining tugʻishgan xalqi — Vanyar orasiga, Taniquetil togʻi etaklariga qaytdi. U umrining qolgan qismini Valar huzurida, tinchlik va ibodatda oʻtkazdi."
     }
   ],
-  "image": {
-    "src": "/images/characters/indis.webp",
-    "src_thumb": "/images/characters/indis-thumb.webp",
-    "alt": "Indis Goʻzal — oltin sochli Vanyar malikasi va Noldor Oliy Malikasi",
-    "caption": "Indis Goʻzal — Finwëning ikkinchi rafiqasi, Fingolfin va Finarfinning onasi"
-  },
   "sources": [
     {
       "book_slug": "silmarillion",

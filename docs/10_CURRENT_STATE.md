@@ -29,13 +29,15 @@ Ensiklopediyadagi 9 ta asosiy toʻplam boʻyicha mavjud kontent yozuvlarining ha
 
 Qahramonlar kartochkalari va batafsil sahifalarida ishlatiladigan ilmiy portretlar holati:
 
-- **Jami qahramonlar yozuvi (`src/content/characters/`):** 81 ta
-- **Portretga ega qahramonlar:** 21 ta (25.9%)
-- **Portreti hali mavjud boʻlmagan qahramonlar:** 60 ta (74.1%)
-- **Diskdagi tasvirlar (`public/images/characters/`):** 21 ta juftlik (asosiy va thumbnail webp)
-- **Manifestda roʻyxatga olinganlar (`src/data/character-portraits.ts`):** 21 ta
+- **Jami qahramonlar yozuvi (`src/content/characters/`):** 81 ta (100% toʻliq audit qilindi)
+- **Portretga ega va toʻliq integratsiyalangan qahramonlar:** 34 ta (42.0%)
+  - *21 ta dastlabki tasdiqlangan portretlar saqlab qolindi*
+  - *13 ta yangi original portretlar generatsiya qilindi va Sharp orqali WebP formatda integratsiya qilindi*
+- **Portret generatsiyasi navbatidagi qahramonlar:** 47 ta (58.0% — har biri uchun individual akademik prompt va providans `docs/CHARACTER_VISUAL_AUDIT.md` va `src/data/character-production-manifest.json` da toʻliq tayyorlangan)
+- **Diskdagi WebP tasvirlari (`public/images/characters/`):** 34 ta juftlik (68 ta fayl: 600x800 asosiy va 300x400 thumbnail WebP)
+- **Manifestda roʻyxatga olinganlar (`src/data/character-portraits.ts`):** 34 ta
 
-### Portretga Ega Boʻlgan Qahramonlar (21 ta)
+### Portretga Ega Boʻlgan Qahramonlar (34 ta)
 | Slug | Ismi | Rasm Manzili | Provenance Turi |
 | :--- | :--- | :--- | :--- |
 | `finwe` | Finwë | `/images/characters/finwe.webp` | Kanonik/Derivativ tasdiqlangan |
@@ -59,24 +61,21 @@ Qahramonlar kartochkalari va batafsil sahifalarida ishlatiladigan ilmiy portretl
 | `turin` | Túrin Turambar | `/images/characters/turin.webp` | Kanonik/Derivativ tasdiqlangan |
 | `gandalf` | Gandalf | `/images/characters/gandalf.webp` | Kanonik/Derivativ tasdiqlangan |
 | `frodo-baggins` | Frodo Baggins | `/images/characters/frodo-baggins.webp` | Kanonik/Derivativ tasdiqlangan |
+| `celebrimbor` | Celebrimbor | `/images/characters/celebrimbor.webp` | Original derivativ / matn vizualizatsiyasi |
+| `anarion` | Anárion | `/images/characters/anarion.webp` | Original matn vizualizatsiyasi |
+| `balin` | Balin | `/images/characters/balin.webp` | Original derivativ vizualizatsiya |
+| `celeborn` | Celeborn | `/images/characters/celeborn.webp` | Original derivativ vizualizatsiya |
+| `elendil` | Elendil | `/images/characters/elendil.webp` | Original derivativ vizualizatsiya |
+| `eomer` | Éomer | `/images/characters/eomer.webp` | Original derivativ vizualizatsiya |
+| `eowyn` | Éowyn | `/images/characters/eowyn.webp` | Original derivativ vizualizatsiya |
+| `isildur` | Isildur | `/images/characters/isildur.webp` | Original derivativ vizualizatsiya |
+| `meriadoc-brandybuck` | Meriadoc Brandybuck | `/images/characters/meriadoc-brandybuck.webp` | Original derivativ vizualizatsiya |
+| `peregrin-took` | Peregrin Took | `/images/characters/peregrin-took.webp` | Original derivativ vizualizatsiya |
+| `radagast` | Radagast | `/images/characters/radagast.webp` | Original derivativ vizualizatsiya |
+| `thorin-oakenshield` | Thorin II Oakenshield | `/images/characters/thorin-oakenshield.webp` | Original derivativ vizualizatsiya |
+| `thranduil` | Thranduil | `/images/characters/thranduil.webp` | Original derivativ vizualizatsiya |
 
-### Portret Kutilayotgan Qahramonlar Namunasi (60 tadan bir qismi)
-- `finarfin` (Finarfin)
-- `eorl` (Yosh Eorl)
-- `denethor-ii` (Denethor II)
-- `maeglin` (Maeglin)
-- `maglor` (Maglor)
-- `bard-the-bowman` (Kamonchi Bard (Bard I))
-- `nienor` (Niënor Níniel)
-- `balin` (Balin)
-- `helm-hammerhand` (Helm Hammerhand (Bolgʻaqoʻl))
-- `elwing` (Elwing Oq)
-- `smaug` (Smaug)
-- `morwen` (Morwen Eledhwen)
-- `beleg` (Beleg Cúthalion)
-- `thrain-ii` (Thráin II)
-- `curufin` (Curufin)
-- *...va yana 45 ta qahramon (qarang: Faza 7 portretlar paketi)*
+Batafsil maʼlumot uchun qarang: [`docs/CHARACTER_VISUAL_AUDIT.md`](CHARACTER_VISUAL_AUDIT.md).
 
 ---
 

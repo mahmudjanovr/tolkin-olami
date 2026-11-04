@@ -89,5 +89,11 @@
     "witch-king",
     "aragorn"
   ],
-  "adaptations": []
+  "adaptations": [],
+  "image": {
+    "src": "/images/characters/meriadoc-brandybuck.webp",
+    "src_thumb": "/images/characters/meriadoc-brandybuck-thumb.webp",
+    "alt": "Meriadoc Merry Brandybuck xantal rangli jundan nimchada va Elflar bargli toʻgʻnogʻichi bilan",
+    "caption": "Meriadoc Merry Brandybuck — Rohan eskvayri, Buckland xoʻjasi va Uzuk Birodarligi aʼzosi"
+  }
 }

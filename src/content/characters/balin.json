@@ -71,5 +71,11 @@
     "dain-ironfoot",
     "durin-i"
   ],
-  "adaptations": []
+  "adaptations": [],
+  "image": {
+    "src": "/images/characters/balin.webp",
+    "src_thumb": "/images/characters/balin-thumb.webp",
+    "alt": "Balin oppoq oqsoqol soqol bilan, toʻq qizil qalpoqda Moria yilnomasini ushlab turgan holda",
+    "caption": "Balin — Fundinning oʻgʻli, Moria hukmdori va Thorin hamrohlaridan biri"
+  }
 }

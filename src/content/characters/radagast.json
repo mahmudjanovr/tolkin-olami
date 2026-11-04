@@ -22,7 +22,10 @@
   "weapons_and_artifacts": [
     "Qoʻngʻir sehrgar hassasi"
   ],
-  "primary_locations": ["rivendell", "bree"],
+  "primary_locations": [
+    "rivendell",
+    "bree"
+  ],
   "textual_status": "author_published",
   "uncertainty_notes": "'Unfinished Tales'dagi 'The Istari' essesida Tolkien Radagast Oʻrta-yerdagi oʻrmonlar va qushlarga haddan ziyod bogʻlanib qolgani uchun Sauronga qarshi siyosiy missiyasidan chetlashganini yozadi. Biroq u Saruman kabi xiyonat qilmagan; Yavanna unga aynan tabiat va jonivorlarni zulmatdan asrash vazifasini yuklagani bois, u oʻz burchini boshqacha shaklda bajargan deb baholanadi.",
   "summary": "Valinordan Oʻrta-yerga yuborilgan besh Istari (Sehrgar)dan biri, Yavannaning xizmatkori. Mirkwood chetidagi Rhosgobelda yashab, qushlar va yovvoyi hayvonlar tilini mukammal bilgan, Buyuk Burgutlar (Gwaihir) orqali Gandalfni Orthanc tutqunligidan qutqarilishiga bevosita sababchi boʻlgan tabiat homiysi.",
@@ -69,5 +72,11 @@
       "year": 2012,
       "divergence_notes": "Filmda Radagast quyonlar qo'shilgan chanada yuruvchi g'alati va komik chol sifatida ko'rsatilgan hamda Dol Guldurga shaxsan kiradi. Kitobda esa u vazmin, tabiat ilmining donishmand ustasi bo'lib, Bilbo safarida bevosita qatnashmaydi, faqat Gandalf va Beorn tomonidan hurmat bilan tilga olinadi."
     }
-  ]
+  ],
+  "image": {
+    "src": "/images/characters/radagast.webp",
+    "src_thumb": "/images/characters/radagast-thumb.webp",
+    "alt": "Radagast Qoʻngʻir oʻrmon kiyimlarida, yelkasida kichik qushcha va qoʻlida yogʻoch aso bilan",
+    "caption": "Radagast Qoʻngʻir (Aiwendil) — Istari beshligidan biri, qushlar va jonivorlar doʻsti"
+  }
 }

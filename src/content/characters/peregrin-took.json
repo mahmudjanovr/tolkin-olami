@@ -90,5 +90,11 @@
     "treebeard",
     "aragorn"
   ],
-  "adaptations": []
+  "adaptations": [],
+  "image": {
+    "src": "/images/characters/peregrin-took.webp",
+    "src_thumb": "/images/characters/peregrin-took-thumb.webp",
+    "alt": "Peregrin Pippin Took Minas Tirith Qalʼa Qorovuli libosida, Oq Daraxt naqshi bilan",
+    "caption": "Peregrin Pippin Took — Gondor Qalʼa Qorovuli, Shire Teini va Uzuk Birodarligi aʼzosi"
+  }
 }

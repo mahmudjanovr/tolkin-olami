@@ -1,0 +1,4445 @@
+[
+  {
+    "slug": "anarion",
+    "id": "anarion",
+    "name": "Anárion",
+    "original_name": "Anárion",
+    "aliases": [
+      "Quyosh Oʻgʻli",
+      "Minas Anor Asoschisi"
+    ],
+    "titles": [
+      "Gondor Ham-Qiroli (Isildur bilan birga)",
+      "Anórien va Minas Anor Hukmdori"
+    ],
+    "race": "insonlar",
+    "sub_race": "Dúnedain",
+    "culture": "Númenor (Rómenna) / Gondor",
+    "birth_year": "Ikkinchi davr 3219",
+    "death_year": "Ikkinchi davr 3440 (Barad-dûr qamalida minoradan otilgan toshdan halok boʻlgan)",
+    "weapons_and_artifacts": [
+      "Anor-tosh (Minas Anor Palantíri)"
+    ],
+    "primary_locations": [
+      "numenor",
+      "minas-tirith",
+      "barad-dur"
+    ],
+    "adaptations": [],
+    "sources": [
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Of the Rings of Power and the Third Age",
+        "page": "291"
+      },
+      {
+        "book_slug": "the-lord-of-the-rings",
+        "chapter": "The Council of Elrond & Appendix A",
+        "page": "244"
+      }
+    ],
+    "summary": "Elendilning kichik oʻgʻli ва Isildurning ukasi. Númenor halokatidan uchta kema bilan omon chiqib, akasi Isildur bilan birga Gondor qirolligi va Osgiliathga asos solgan, Minas Anor (keyinchalik Minas Tirith) qalʼasini qurgan, Sauronning ilk hujumidan Gondorni qutqarib qolgan va Barad-dûr qamalida halok boʻlgan Gondor qirollari sulolasi bobokaloni."
+  },
+  {
+    "slug": "ar-pharazon",
+    "id": "ar-pharazon",
+    "name": "Ar-Pharazôn Oltin",
+    "original_name": "Ar-Pharazôn (Tar-Calion)",
+    "aliases": [
+      "Tar-Calion (Quenya tilidagi majburiy qayd nomi)",
+      "Ar-Pharazôn the Golden (Oltin Pharazôn)"
+    ],
+    "titles": [
+      "Númenorning 25- va Soʻnggi Qiroli",
+      "Buyuk Armiya va Armada Sohibi"
+    ],
+    "race": "insonlar",
+    "sub_race": "Dúnedain (Qirol Odamlar / King's Men)",
+    "culture": "Númenor (Armenelos)",
+    "birth_year": "Ikkinchi davr 3118",
+    "death_year": "Ikkinchi davr 3319 (Aman qirgʻoqlarida Unutilgan Gʻorlar ostida tiriklayin koʻmilgan)",
+    "weapons_and_artifacts": [
+      "Númenor Qirollik Hassasi (Sceptre of Númenor — halokatda yoʻqolgan)",
+      "Alcarondas (Dengiz Qalʼasi — Ar-Pharazônning ulkan bayroqdor kemasi)"
+    ],
+    "primary_locations": [
+      "numenor",
+      "barad-dur",
+      "tirion"
+    ],
+    "adaptations": [
+      {
+        "medium": "series",
+        "title": "The Lord of the Rings: The Rings of Power",
+        "creator": "J.D. Payne & Patrick McKay",
+        "year": 2022,
+        "divergence_notes": "Serialda Pharazôn vaqt chizig'i siqilgan holda Ikkinchi davr o'rtasidagi Eregion voqealari bilan bir paytda kansler sifatida ko'rsatiladi. Tolkien xronologiyasida esa Ar-Pharazôn Celebrimbor o'limidan 1400 yil keyin tug'ilgan."
+      }
+    ],
+    "sources": [
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Akallabêth: The Downfall of Númenor",
+        "page": "268"
+      },
+      {
+        "book_slug": "the-lord-of-the-rings",
+        "chapter": "Appendix A (I: The Numenorean Kings)",
+        "page": "1036"
+      },
+      {
+        "book_slug": "letters-of-jrr-tolkien",
+        "chapter": "Letter 131 (To Milton Waldman, 1951)",
+        "page": "156"
+      }
+    ],
+    "summary": "Númenorning yigirma beshinchi va eng soʻnggi, eng qudratli va eng takabbur hukmdori. Amakivachchasi Mírielga majburan uylanib taxtni tortib olgan, Umbar yurishida Sauronni tiz choʻktirib asir sifatida Númenorga olib kelgan, biroq Sauronning makri bilan boqiylik izlab Valinorga qurolli hujum qilgan va Akallabêth (Númenorning choʻkishi) halokatiga sababchi boʻlgan qirol."
+  },
+  {
+    "slug": "aragorn",
+    "id": "aragorn",
+    "name": "Aragorn II",
+    "original_name": "Elessar Telcontar",
+    "aliases": [
+      "Strider (Daydi)",
+      "Estel (Umid)",
+      "Dúnadan (Gʻarbiy Inson)",
+      "Thorongil (Yulduz Burguti)",
+      "Envinyatar (Yangilovchi)",
+      "Elessar Telcontar"
+    ],
+    "titles": [
+      "Gondor va Arnor Birlashgan Qirolligi Oliy Shohi",
+      "Isildur Vorisi",
+      "Shimol Dúnedainining 16-Yoʻlboshchisi"
+    ],
+    "race": "insonlar",
+    "sub_race": "Dúnedain",
+    "culture": "Gondor / Dúnedain",
+    "birth_year": "Uchinchi davr 2931",
+    "death_year": "Toʻrtinchi davr 120",
+    "weapons_and_artifacts": [
+      "Andúril (Qayta soxtalangan Narsil qilichi)",
+      "Elessar zumrad toshi",
+      "Barahir uzugi",
+      "Elendil Yulduzi"
+    ],
+    "primary_locations": [
+      "rivendell",
+      "minas-tirith",
+      "pelargir",
+      "helms-deep"
+    ],
+    "adaptations": [
+      {
+        "medium": "film",
+        "title": "The Lord of the Rings Film Trilogy",
+        "creator": "Peter Jackson",
+        "year": 2001,
+        "divergence_notes": "Filmda Aragorn taxtni qabul qilishdan bosh tortuvchi va Isildurning zaifligidan qo'rquvchi ikkilanuvchan qahramon sifatida tasvirlangan. Kitobda esa u o'z taqdiri va shohona burchini yoshligidanoq qat'iyat bilan bilgan va Andúril qilichini Rivendelldan chiqqan zahotiyoq olib yurgan."
+      }
+    ],
+    "sources": [
+      {
+        "book_slug": "the-lord-of-the-rings",
+        "chapter": "The Council of Elrond",
+        "page": "245"
+      },
+      {
+        "book_slug": "the-lord-of-the-rings",
+        "chapter": "The Passing of the Grey Company",
+        "page": "771"
+      },
+      {
+        "book_slug": "the-lord-of-the-rings",
+        "chapter": "The Battle of the Pelennor Fields",
+        "page": "838"
+      },
+      {
+        "book_slug": "the-lord-of-the-rings",
+        "chapter": "The Steward and the King",
+        "page": "959"
+      },
+      {
+        "book_slug": "unfinished-tales",
+        "chapter": "The Hunt for the Ring",
+        "page": "337"
+      }
+    ],
+    "summary": "Arathorn II va Gilraenning oʻgʻli, Isildurning 39-toʻgʻridan-toʻgʻri avlodi va Shimol Dúnedainining 16-yoʻlboshchisi. Oʻrta-yer boʻylab yashirin xizmat qilib, Uzuk Birodarligiga rahbarlik qilgan, Pelennor va Qora Darvoza janglarida gʻalabaga erishib, Gondor va Arnor Birlashgan Qirolligi taxtini tiklagan va Toʻrtinchi davr tinchligini barpo etgan buyuk shoh."
+  },
+  {
+    "slug": "arwen",
+    "id": "arwen",
+    "name": "Arwen Undómiel",
+    "original_name": "Arwen Undómiel",
+    "aliases": [
+      "Undómiel (Oqshom Yulduzi)",
+      "Gondor va Arnor Qirolichasi",
+      "Lúthien Qiyofasi"
+    ],
+    "titles": [
+      "Gondor va Arnor Birlashgan Qirolligi Oliy Qirolichasi",
+      "Imladris Malika-qizi"
+    ],
+    "race": "elflar",
+    "sub_race": "Yarim-elf (Peredhel)",
+    "culture": "Rivendell / Lothlórien / Gondor",
+    "birth_year": "Uchinchi davr 241",
+    "death_year": "Toʻrtinchi davr 121 (Lothlóriendagi Cerin Amrothda vafot etgan)",
+    "weapons_and_artifacts": [
+      "Oqshom Yulduzi gavhari (Evenstar billur marjoni)",
+      "Aragorn uchun toʻqigan Shohona Qora Bayroq (Oq Daraxt, Yetti Yulduz va Elendil Toji naqshli)"
+    ],
+    "primary_locations": [
+      "rivendell",
+      "minas-tirith"
+    ],
+    "adaptations": [
+      {
+        "medium": "film",
+        "title": "The Lord of the Rings Film Trilogy",
+        "creator": "Peter Jackson",
+        "year": 2001,
+        "divergence_notes": "Filmda Liv Tyler ijrosidagi Arwen kitobdagiga qaraganda ancha ko'proq jangovar harakatlarda ishtirok etadi. Ayniqsa, 'The Fellowship of the Ring' filmida Glorfindel o'rniga aynan Arwen yarador Frodoning oti bilan Nazgûllardan qochadi va Bruinen toshqinini chaqiradi (kitobda toshqinni Elrond va Gandalf chaqiradi, Frodoning qutqaruvchisi esa Glorfindeldir)."
+      }
+    ],
+    "sources": [
+      {
+        "book_slug": "the-lord-of-the-rings",
+        "chapter": "The Steward and the King",
+        "page": "961"
+      },
+      {
+        "book_slug": "the-lord-of-the-rings",
+        "chapter": "Appendix A: Annals of the Kings and Rulers (V: Here Follows a Part of the Tale of Aragorn and Arwen)",
+        "page": "1057"
+      },
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Of the Rings of Power and the Third Age",
+        "page": "298"
+      }
+    ],
+    "summary": "Elrond va Celebríanning kenja qizi, Galadrielning sevimli nevarasi, Rivendell va Lothlórien malikasi. Oʻz davrida Lúthien Tinúvielning yer yuzidagi tirik timsoli deb eʼzozlangan. Aragorn II Elessar bilan turmush qurib, Eldar boqiyligidan insonlar foniyligi foydasiga voz kechgan. Gondor va Arnor Birlashgan Qirolligining Oliy Qirolichasi, Eldarionning onasi. Uchinchi davrda Elflar va Insonlarning eng soʻnggi buyuk ittifoqini oʻz nikohi bilan muhrlagan afsonaviy ayol."
+  },
+  {
+    "slug": "aule",
+    "id": "aule",
+    "name": "Aulë",
+    "original_name": "Aulë",
+    "aliases": [
+      "Mahal (Khuzdul tilida: Yaratuvchi)",
+      "Noldor Doʻsti",
+      "Aulë Temirchi (The Smith)",
+      "Aghaûl"
+    ],
+    "titles": [
+      "Arda Moddalari va Hunarmandchiligi Hukmdori",
+      "Aratar Aʼzosi",
+      "Togʻlar va Maʼdanlar Sohibi"
+    ],
+    "race": "ainur",
+    "sub_race": "Vala (Aratar)",
+    "culture": "Valinor / Ainur",
+    "birth_year": "Zamon yaralishidan avval",
+    "death_year": "Boqiy (Arda yakunigacha)",
+    "weapons_and_artifacts": [
+      "Angainor (Melkorni bogʻlagan zanjir)",
+      "Illuin va Ormal (Ikki ulkan chiroq)",
+      "Quyosh va Oy kemalari",
+      "Buyuk bolgʻa"
+    ],
+    "primary_locations": [
+      "tirion"
+    ],
+    "adaptations": [],
+    "sources": [
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Valaquenta",
+        "page": "27"
+      },
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Of Aulë and Yavanna",
+        "page": "43"
+      }
+    ],
+    "summary": "Yer qobigʻi, togʻlar, maʼdanlar, olmoslar va barcha hunarmandchilik sanʼati hukmdori boʻlgan buyuk Vala, Yavannaning umr yoʻldoshi. Mitti-odamlarning (Khazâd) yaratuvchisi, Khuzdul tilining asoschisi hamda Noldor elflarining (xususan Mahtan va Fëanorning) bosh ustozi."
+  },
+  {
+    "slug": "balin",
+    "id": "balin",
+    "name": "Balin",
+    "original_name": "Balin",
+    "aliases": [
+      "Moria Xoʻjayini (Lord of Moria)",
+      "Fundin oʻgʻli Balin"
+    ],
+    "titles": [
+      "Moria Hukmdori (Lord of Moria)",
+      "Torin Emanqalqon guruhining oqsoqoli va kuzatuvchisi"
+    ],
+    "race": "mitti-odamlar",
+    "sub_race": "Uzunsoqollar (Longbeards)",
+    "culture": "Erebor va Moria mitti-odamlari",
+    "birth_year": "U.D. 2763",
+    "death_year": "U.D. 2994 (10-noyabr)",
+    "weapons_and_artifacts": [
+      "Durin boltasi (Moria ekspeditsiyasida topilgan)",
+      "Mazarbul kitobi (Balin solnomasi)"
+    ],
+    "primary_locations": [
+      "erebor",
+      "khazad-dum",
+      "hobbiton"
+    ],
+    "adaptations": [],
+    "sources": [
+      {
+        "book_slug": "the-hobbit",
+        "chapter": "1-bob (Kutilmagan ziyofat) va 12-bob (Ichkaridagi maʼlumotlar)",
+        "page": "18"
+      },
+      {
+        "book_slug": "the-fellowship-of-the-ring",
+        "chapter": "II kitob, 4-bob (Qorongʻulikdagi sayohat) va 5-bob (Khazad-dûm koʻprigi)",
+        "page": "319"
+      },
+      {
+        "book_slug": "the-return-of-the-king",
+        "chapter": "Ilova A, III qism (Durin xalqi)",
+        "page": "1077"
+      }
+    ],
+    "summary": "Durin xonadonining olijanob vakili, Fundinning oʻgʻli, Torin Emanqalqonning Ereborga yurishidagi eng yaqin maslahatchisi va Bilbo Begginsning samimiy doʻsti. Keyinchalik qadimgi Khazad-dûmni qayta tiklash uchun Moria ekspeditsiyasini boshqargan va Mazarbul zalida dafn etilgan."
+  },
+  {
+    "slug": "bard-the-bowman",
+    "id": "bard-the-bowman",
+    "name": "Kamonchi Bard (Bard I)",
+    "original_name": "Bard the Bowman",
+    "aliases": [
+      "Kamonchi Bard",
+      "Ajdar-qotili (Dragon-shooter)",
+      "Bard I"
+    ],
+    "titles": [
+      "Deylning Qayta Tiklangan Qirolligi Shohi",
+      "Esgarot kamonchilari sardori"
+    ],
+    "race": "insonlar",
+    "sub_race": "Shimol insonlari (Northmen)",
+    "culture": "Esgarot (Koʻl-shahar) va Deyl",
+    "birth_year": "U.D. 2900-yillar atrofida",
+    "death_year": "U.D. 2977",
+    "weapons_and_artifacts": [
+      "Qora oʻq (Black Arrow — ajdar Smaugni oʻldirgan merosiy oʻq)",
+      "Qora tistkanli katta kamon",
+      "Girionning zumrad marjoni"
+    ],
+    "primary_locations": [
+      "erebor",
+      "mirkwood"
+    ],
+    "adaptations": [],
+    "sources": [
+      {
+        "book_slug": "the-hobbit",
+        "chapter": "14-bob (Olov va suv) hamda 17-bob (Bulutlar yorildi)",
+        "page": "234"
+      },
+      {
+        "book_slug": "the-return-of-the-king",
+        "chapter": "Ilova A, III qism va Ilova B",
+        "page": "1076"
+      }
+    ],
+    "summary": "Qadimgi Deyl hukmdori Girionning bevosita avlodi va Esgarot (Koʻl-shahar) himoyachisi. Qora oʻq bilan dahshatli ajdar Smaugni urib tushirgan, Besh Qoʻshin Jangida insonlar qoʻshinini boshqargan va vayron boʻlgan Deyl shahrini qayta tiklab, uning birinchi yangi qiroli boʻlgan."
+  },
+  {
+    "slug": "beleg",
+    "id": "beleg",
+    "name": "Beleg Cúthalion",
+    "original_name": "Beleg Cúthalion",
+    "aliases": [
+      "Cúthalion (Kuchli Yoy / Strongbow)",
+      "Doriath Chegara Sardori"
+    ],
+    "titles": [
+      "Doriath Shimoliy Chegaralari Bosh Qoʻriqchisi",
+      "Thingolning Bosh Kamonchisi"
+    ],
+    "race": "elflar",
+    "sub_race": "Sindar",
+    "culture": "Doriath (Menegroth)",
+    "birth_year": "Daraxtlar davri",
+    "death_year": "Birinchi davr 489 (Taur-nu-Fuin oʻrmonida Túrin tomonidan yanglishib oʻldirilgan)",
+    "weapons_and_artifacts": [
+      "Belthronding (Qora тис daraxtidan yasalgan ulkan kamon)",
+      "Dailir (Hech qachon nishondan adashmaydigan va sinmaydigan sevimli oʻqi)",
+      "Anglachel (Eöl meteorit temiridan yasagan qora qilich — keyinchalik Gurthang)"
+    ],
+    "primary_locations": [
+      "menegroth",
+      "doriath",
+      "beleriand"
+    ],
+    "adaptations": [],
+    "sources": [
+      {
+        "book_slug": "the-children-of-hurin",
+        "chapter": "The Death of Beleg",
+        "page": "152"
+      },
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Of Túrin Turambar",
+        "page": "201"
+      },
+      {
+        "book_slug": "unfinished-tales",
+        "chapter": "Narn i Hîn Húrin",
+        "page": "75"
+      }
+    ],
+    "summary": "Qirol Thingolning eng ulugʻ kamonchisi, izquvari va tabibi, Túrin Turambarning ustozi va sodiq quroldosh doʻsti. Asirga tushgan Túrinni qutqarish uchun Anglachel qilichi bilan Taur-nu-Fuin dahshatlaridan yolgʻiz oʻtib, doʻstining zanjirlarini kesayotganida, zulmatda hushini yoʻqotgan Túrin tomonidan oʻz qilichi bilan fojiaviy tarzda oʻldirilgan."
+  },
+  {
+    "slug": "beren",
+    "id": "beren",
+    "name": "Beren",
+    "original_name": "Beren Erchamion",
+    "aliases": [
+      "Camlost (Boʻshqoʻl)",
+      "Erchamion (Birqoʻl)",
+      "Dorthonion Ovchisi"
+    ],
+    "titles": [
+      "Dorthonion Bahodiri",
+      "Silmaril Qutqaruvchisi",
+      "Tol Galen Hukmdori"
+    ],
+    "race": "insonlar",
+    "sub_race": "Edain",
+    "culture": "Bëor xonadoni",
+    "birth_year": "Birinchi davr 432",
+    "death_year": "Birinchi davr 503",
+    "weapons_and_artifacts": [
+      "Barahir uzugi",
+      "Angrist pichogʻi",
+      "Silmaril"
+    ],
+    "primary_locations": [
+      "menegroth",
+      "nargothrond"
+    ],
+    "adaptations": [],
+    "sources": [
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Of Beren and Lúthien",
+        "page": "162"
+      },
+      {
+        "book_slug": "the-lord-of-the-rings",
+        "chapter": "A Knife in the Dark",
+        "page": "191"
+      },
+      {
+        "book_slug": "history-of-middle-earth",
+        "chapter": "The Lay of Leithian (HoME III)",
+        "page": "150"
+      },
+      {
+        "book_slug": "beren-and-luthien",
+        "chapter": "The Tale of Tinúviel va Quenta Silmarillion",
+        "page": "29"
+      }
+    ],
+    "summary": "Barahir va Emeldirning oʻgʻli, Bëor xonadonining eng buyuk inson qahramoni. Dorthoniondagi yolgʻiz partizanlik kurashidan soʻng Doriathga kelgan, Thingol qoʻygan imkonsiz shartni bajarib, Lúthien bilan birga Morgothning temir tojidan Silmarilni kesib olgan hamda foniylik shartida oʻlimdan qaytgan afsonaviy bahodir."
+  },
+  {
+    "slug": "bilbo-baggins",
+    "id": "bilbo-baggins",
+    "name": "Bilbo Baggins",
+    "original_name": "Bilbo Baggins (Kuduktuk: Bilba Labingi)",
+    "aliases": [
+      "Elf-doʻsti (Elf-friend)",
+      "U yerga va qaytishga muallifi",
+      "Togʻosti Qulfbozi (Burglar)",
+      "Uzukni topgan xobbit"
+    ],
+    "titles": [
+      "Bag End Xoʻjayini",
+      "Erebor Ekspeditsiyasi Qidiruvchisi",
+      "Qizil Kitob Asoschisi"
+    ],
+    "race": "xobbitlar",
+    "sub_race": "Harfoot va Fallohide nasli",
+    "culture": "Shire (Shir) / Bag End / Rivendell",
+    "birth_year": "Uchinchi davr 2890 (Shir hisobi 1290)",
+    "death_year": "Boqiy Gʻarbga oʻtgan (Uchinchi davr 3021 / Shir hisobi 1421, 131 yoshida)",
+    "weapons_and_artifacts": [
+      "Sting (Gondolin pichogʻi / xanjari)",
+      "Mithril zanjir sovut (Thorin Oakenshield sovgʻasi)",
+      "Yagona Uzuk (60 yil davomida saqlagan)",
+      "Gʻarbiy Chegara Qizil Kitobi ('U yerga va qaytishga' asari)"
+    ],
+    "primary_locations": [
+      "hobbiton",
+      "rivendell",
+      "ered-luin"
+    ],
+    "adaptations": [
+      {
+        "medium": "film",
+        "title": "The Hobbit & The Lord of the Rings Film Trilogies",
+        "creator": "Peter Jackson",
+        "year": 2012,
+        "divergence_notes": "Film trilogiyasida yosh Bilbo rolini Martin Freeman, keksaygan Bilboni esa Sir Ian Holm gavdalantirgan. Martin Freeman ijrosi kitobdagi istehzo, noqulaylik va ichki olijanob jasoratni nihoyatda yorqin ochib bergan. Filmda Bilboning Azog bilan jangdagi ishtiroki kitobga nisbatan jangovar harakatlar bilan boyitilgan."
+      }
+    ],
+    "sources": [
+      {
+        "book_slug": "the-hobbit",
+        "chapter": "Riddles in the Dark",
+        "page": "68"
+      },
+      {
+        "book_slug": "the-hobbit",
+        "chapter": "Inside Information",
+        "page": "208"
+      },
+      {
+        "book_slug": "the-lord-of-the-rings",
+        "chapter": "A Long-expected Party",
+        "page": "21"
+      },
+      {
+        "book_slug": "the-lord-of-the-rings",
+        "chapter": "Many Meetings",
+        "page": "224"
+      },
+      {
+        "book_slug": "the-lord-of-the-rings",
+        "chapter": "The Grey Havens",
+        "page": "1002"
+      }
+    ],
+    "summary": "Bungo Baggins va Belladonna Tookning oʻgʻli, Bag End egasi. Gandalf va Thorin Oakenshield boshchiligidagi oʻn uch mitti hamrohligida Erebor sayohatiga chiqib, Smaug ajdarini magʻlub etishda qatnashgan va Tumanli Togʻlar qaʼrida Gollumdan Yagona Uzukni topib olgan buyuk xobbit. Uzukni 60 yil saqlab, uni oʻz ixtiyori bilan Frodoga topshirgan birinchi Uzuk sohibi; Rivendellda 'U yerga va qaytishga' asari hamda elflar dostonlarini yozib, 131 yoshida Boqiy Gʻarbga suzib ketgan."
+  },
+  {
+    "slug": "boromir",
+    "id": "boromir",
+    "name": "Boromir",
+    "original_name": "Boromir",
+    "aliases": [
+      "Gondor Qalqoni",
+      "Oq Minora Sardori",
+      "Katta Boromir"
+    ],
+    "titles": [
+      "Gondor Oliy Noibi Valiahdi",
+      "Oq Minora Bosh Kapitani",
+      "Uzuk Birodarligi aʼzosi"
+    ],
+    "race": "insonlar",
+    "sub_race": "Dúnedain",
+    "culture": "Gondor / Minas Tirith",
+    "birth_year": "Uchinchi davr 2978",
+    "death_year": "Uchinchi davr 3019 (Amon Hen yaqinida qahramonlarcha halok boʻlgan)",
+    "weapons_and_artifacts": [
+      "Gondor Buyuk Shoxi (Vorothorn kiyigi shoxidan ishlangan sulolaviy karnay)",
+      "Keng poʻlat Gondor qilichi va kumush qirrali dumaloq qalqon"
+    ],
+    "primary_locations": [
+      "minas-tirith",
+      "osgiliath",
+      "rivendell"
+    ],
+    "adaptations": [
+      {
+        "medium": "film",
+        "title": "The Lord of the Rings Film Trilogy",
+        "creator": "Peter Jackson",
+        "year": 2001,
+        "divergence_notes": "Filmda Sean Bean ijrosidagi Boromir kino tarixidagi eng ta'sirli va fojiali qahramonlik o'limlaridan birini namoyish etgan. Asosiy tafovut: filmda Boromirni o'ldirgan orqlar sardori 'Lurtz' deb nomlanadi va u Aragorn tomonidan qatl etiladi; Tolkien kitoblarida esa 'Lurtz' degan personaj umuman mavjud emas — Boromir nomsiz orq kamonchilari tomonidan o'ldirilgan."
+      }
+    ],
+    "sources": [
+      {
+        "book_slug": "the-lord-of-the-rings",
+        "chapter": "The Council of Elrond",
+        "page": "236"
+      },
+      {
+        "book_slug": "the-lord-of-the-rings",
+        "chapter": "The Great River",
+        "page": "388"
+      },
+      {
+        "book_slug": "the-lord-of-the-rings",
+        "chapter": "The Departure of Boromir",
+        "page": "403"
+      }
+    ],
+    "summary": "Gondor Noibi Denethor II va Finduilasning toʻngʻich oʻgʻli, Faramirning akasi, Minas Tirithning bosh sarkardasi. Osgiliath kechuvida Sauron qoʻshinlarini qaytargan, koʻrgan tushi ortidan 110 kunlik mashaqqatli safar qilib Rivendellga kelgan va Uzuk Birodarligi safiga qoʻshilgan. Caradhras qorlarida va Moria zallarida sherdek jang qilgan. Amon Henda Uzuk vasvasasiga tushgan boʻlsa-da, darhol hushiga kelib, Merry va Pippinni himoya qilish yoʻlida oʻnlab orqlar bilan yakkama-yakka jangda mardlarcha halok boʻlgan buyuk Gondor bahodiri."
+  },
+  {
+    "slug": "celeborn",
+    "id": "celeborn",
+    "name": "Celeborn",
+    "original_name": "Celeborn",
+    "aliases": [
+      "Donishmand Celeborn",
+      "Lothlórien hukmdori",
+      "Sharqiy Lórien qiroli",
+      "Teleporno (Telerin shakli)"
+    ],
+    "titles": [
+      "Lotlorien Xoʻjayini (Lord of Lothlórien)",
+      "Doriath shahzodasi",
+      "Sharqiy Lórien Hukmdori"
+    ],
+    "race": "elflar",
+    "sub_race": "Sindar (Teleri)",
+    "culture": "Doriath va Lothlórien elflari",
+    "birth_year": "Daraxtlar Davri (Beleriand yoki Aman)",
+    "death_year": "Oʻlmas (T.D. boshlarida Gʻarbga suzib ketgan)",
+    "weapons_and_artifacts": [
+      "Lotlorienning oq oqqush kemalari"
+    ],
+    "primary_locations": [
+      "doriath",
+      "eregion",
+      "rivendell",
+      "lothlorien",
+      "mirkwood"
+    ],
+    "adaptations": [],
+    "sources": [
+      {
+        "book_slug": "the-fellowship-of-the-ring",
+        "chapter": "II kitob, 7-bob: \"Galadriel koʻzgusi\"",
+        "page": "354"
+      },
+      {
+        "book_slug": "the-return-of-the-king",
+        "chapter": "Ilova B: \"Yillar solnomasi (Shimoliy urushlar)\"",
+        "page": "1093"
+      },
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Quenta Silmarillion, 13-bob: \"Noldorning qaytishi\"",
+        "page": "115"
+      }
+    ],
+    "summary": "Oʻrta-yerning eng qadimgi va donishmand elf hukmdorlaridan biri, malika Galadrielning umr yoʻldoshi, Elrondning qaynotasi va Arwenning bobosi. Galadriel bilan birga Oltin Oʻrmon (Lothlórien)ni boshqargan va Uzuk Urushida Dol Guldur qalʼasini zabt etishga boshchilik qilgan."
+  },
+  {
+    "slug": "celebrimbor",
+    "id": "celebrimbor",
+    "name": "Celebrimbor",
+    "original_name": "Telperinquar",
+    "aliases": [
+      "Telperinquar (Quenya: Kumush Musht / Kumush Qoʻl)",
+      "Eregion Hukmdori",
+      "Gwaith-i-Mírdain Bosh Ustasi"
+    ],
+    "titles": [
+      "Eregion (Hollin) Hukmdori",
+      "Mírdain (Javohirsozlar Birodarligi) Rahbari",
+      "Fëanor Xonadonining Soʻnggi Shahzodasi"
+    ],
+    "race": "elflar",
+    "sub_race": "Noldor",
+    "culture": "Nargothrond / Eregion (Ost-in-Edhil)",
+    "birth_year": "Daraxtlar davri yoki Birinchi davr boshi",
+    "death_year": "Ikkinchi davr 1697 (Ost-in-Edhil qulaganida Sauron qiynoqlarida halok boʻlgan)",
+    "weapons_and_artifacts": [
+      "Uch Elf Uzugi: Narya (Olov), Nenya (Suv) va Vilya (Havo) — Sauron qoʻli tegmasdan yolgʻiz oʻzi yaratgan",
+      "Durin Darvozasi (Moria Gʻarbiy Darvozasi — Narvi bilan birga ithildin yozuvlarini chizgan)",
+      "Elessar zumrad toshi (Ikkinchi davr varianti — Galadriel uchun)"
+    ],
+    "primary_locations": [
+      "lindon",
+      "rivendell"
+    ],
+    "adaptations": [
+      {
+        "medium": "series",
+        "title": "The Lord of the Rings: The Rings of Power",
+        "creator": "J.D. Payne & Patrick McKay",
+        "year": 2022,
+        "divergence_notes": "Serialda Uch Elf Uzugi Yetti va To'qqiz uzukdan avval hamda Sauronning ('Halbrand') bevosita ishtirokida quyiladi. Tolkien kanonida esa Uch Uzuk eng oxirida (Ikkinchi davr 1590-yilda) va Sauron ishtirokisiz, yolg'iz Celebrimborning o'zi tomonidan yaratilgan."
+      }
+    ],
+    "sources": [
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Of the Rings of Power and the Third Age",
+        "page": "286"
+      },
+      {
+        "book_slug": "the-lord-of-the-rings",
+        "chapter": "The Council of Elrond & A Journey in the Dark",
+        "page": "242"
+      },
+      {
+        "book_slug": "unfinished-tales",
+        "chapter": "The History of Galadriel and Celeborn",
+        "page": "234"
+      }
+    ],
+    "summary": "Fëanorning nabirasi va Curufinning oʻgʻli, Ikkinchi davrda Eregion qirolligi va Gwaith-i-Mírdain (Javohirsozlar) uyushmasining asoschisi. Moria mitti ustasi Narvi bilan Gʻarbiy Darvozani bezagan, Sauronning 'Annatar' qiyofasidagi hiylasini fosh etgach, Uch Muqaddas Elf Uzugini (Narya, Nenya, Vilya) Saurondan yashirgan va ularni sotmasdan qiynoq ostida jon bergan buyuk usta."
+  },
+  {
+    "slug": "cirdan",
+    "id": "cirdan",
+    "name": "Círdan Kemasoz",
+    "original_name": "Nowë (Círdan)",
+    "aliases": [
+      "Nowë (Asl ismi: Uzoqni Koʻruvchi / Fikr Sohibi)",
+      "Círdan the Shipwright (Kemasoz Círdan)"
+    ],
+    "titles": [
+      "Kulrang Bandargohlar (Mithlond) Hukmdori",
+      "Falas va Balar Oroli Sohibi",
+      "Narya (Olov Uzugi) Dastlabki Saqlovchisi"
+    ],
+    "race": "elflar",
+    "sub_race": "Teleri / Sindar (Falathrim)",
+    "culture": "Falas / Mithlond (Lindon)",
+    "birth_year": "Daraxtlar davri (Cuiviénenda uygʻongan)",
+    "death_year": "Boqiy (Toʻrtinchi davrda Soʻnggi Kemada Gʻarbga suzib ketgan)",
+    "weapons_and_artifacts": [
+      "Narya (Qizil Olov Uzugi — Celebrimbordan olib, Gandalfga topshirgan)",
+      "Vingilótë (Eärendil bilan birga qurgan muqaddas kema)",
+      "Oq kemalar floti"
+    ],
+    "primary_locations": [
+      "lindon",
+      "ered-luin",
+      "beleriand"
+    ],
+    "adaptations": [],
+    "sources": [
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Of the Sindar",
+        "page": "92"
+      },
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Of the Rings of Power and the Third Age",
+        "page": "304"
+      },
+      {
+        "book_slug": "the-lord-of-the-rings",
+        "chapter": "The Grey Havens",
+        "page": "1028"
+      },
+      {
+        "book_slug": "history-of-middle-earth",
+        "chapter": "The Peoples of Middle-earth (Last Writings: Círdan)",
+        "page": "384"
+      }
+    ],
+    "summary": "Cuiviénendan Buyuk Yurishga chiqqan birinchi avlod Teleri elflaridan boʻlib, Uchinchi davr yakunigacha Oʻrta-yerda yashagan eng keksa va eng uzoqni koʻra biluvchi Elf (uzun kumush soqolli yagona Elda). Falas va Kulrang Bandargohlar hukmdori, Eärendilning ustozi hamda Gandalfning ilohiy tabiatini birinchi boʻlib tanib, unga Olov Uzugi — Naryani topshirgan donishmand."
+  },
+  {
+    "slug": "curufin",
+    "id": "curufin",
+    "name": "Curufin",
+    "original_name": "Curufinwë (Atarinke)",
+    "aliases": [
+      "Curufinwë (Otasining asl ismi bilan)",
+      "Atarinke (Quenya: Kichik Ota)",
+      "Curufin the Crafty (Mohir/Ayyor Curufin)"
+    ],
+    "titles": [
+      "Himlad Hukmdori",
+      "Fëanorning Beshinchi Oʻgʻli"
+    ],
+    "race": "elflar",
+    "sub_race": "Noldor",
+    "culture": "Tirion / Himlad / Nargothrond",
+    "birth_year": "Daraxtlar davri",
+    "death_year": "Birinchi davr 506 (Menegrothda Ikkinchi Qarindosh Qirgʻinida halok boʻlgan)",
+    "weapons_and_artifacts": [
+      "Angrist (Temir Kesuvchi — Nogrod ustasi Telchar yasagan xanjar; Beren u bilan Morgoth tojidan Silmarilni kesib olgan)"
+    ],
+    "primary_locations": [
+      "nargothrond",
+      "menegroth",
+      "tirion",
+      "beleriand"
+    ],
+    "adaptations": [],
+    "sources": [
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Of Eldamar and the Princes of the Eldalië",
+        "page": "60"
+      },
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Of Beren and Lúthien",
+        "page": "170"
+      },
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Of the Ruin of Doriath",
+        "page": "236"
+      },
+      {
+        "book_slug": "beren-and-luthien",
+        "chapter": "The Lay of Leithian",
+        "page": "155"
+      }
+    ],
+    "summary": "Fëanor va Nerdanelning beshinchi va otasiga eng suyukli oʻgʻli, Uch Elf Uzugini yaratgan Celebrimborning otasi. Yuz qiyofasi, hunarmandchilik mahorati va oʻtkir notiqlik sanʼatida Fëanorning oʻzginasi boʻlib, akasi Celegorm bilan Nargothrondda fitna uyushtirgan va Doriathga qilingan hujumda halok boʻlgan."
+  },
+  {
+    "slug": "dain-ironfoot",
+    "id": "dain-ironfoot",
+    "name": "Dáin II Ironfoot (Temiroyoq)",
+    "original_name": "Dáin II Ironfoot",
+    "aliases": [
+      "Temiroyoq Dáin",
+      "Temir Tepaliklar hukmdori",
+      "Togʻ osti Qiroli"
+    ],
+    "titles": [
+      "Durin xalqining Qiroli",
+      "Togʻ osti Qiroli (King under the Mountain)",
+      "Temir Tepaliklar Xoʻjayini (Lord of the Iron Hills)"
+    ],
+    "race": "mitti-odamlar",
+    "sub_race": "Uzunsoqollar (Longbeards)",
+    "culture": "Temir Tepaliklar va Erebor",
+    "birth_year": "U.D. 2767",
+    "death_year": "U.D. 3019 (17-mart, Deyl jangi)",
+    "weapons_and_artifacts": [
+      "Qizil jangovar bolta (Barazanthathûl)"
+    ],
+    "primary_locations": [
+      "erebor",
+      "khazad-dum"
+    ],
+    "adaptations": [],
+    "sources": [
+      {
+        "book_slug": "the-hobbit",
+        "chapter": "17-bob: \"Bulutlar yorildi\" va 18-bob: \"Ortga qaytish\"",
+        "page": "265"
+      },
+      {
+        "book_slug": "the-fellowship-of-the-ring",
+        "chapter": "II kitob, 2-bob: \"Elrond kengashi\"",
+        "page": "241"
+      },
+      {
+        "book_slug": "the-return-of-the-king",
+        "chapter": "Ilova A, III qism: \"Durin xalqi\" va Ilova B",
+        "page": "1075"
+      }
+    ],
+    "summary": "Durin xonadonining buyuk jangchisi va davlat arbobi. Yoshligida Azanulbizar jangida oʻrk yoʻlboshchisi Azogni oʻldirgan, Besh Qoʻshin Jangidan soʻng Togʻ osti Qiroli taxtiga oʻtirgan va Uzuk Urushida Erebor darvozasi oldida qirol Brand jasadini himoya qilib qahramonlarcha halok boʻlgan."
+  },
+  {
+    "slug": "denethor-ii",
+    "id": "denethor-ii",
+    "name": "Denethor II",
+    "original_name": "Denethor II",
+    "aliases": [
+      "Minas Tirith hukmdori",
+      "Gondor Noibi"
+    ],
+    "titles": [
+      "Gondorning Yigirma Oltinchi Hukmdor Noibi (Ruling Steward of Gondor)"
+    ],
+    "race": "insonlar",
+    "sub_race": "Dúnedain (Húrin xonadoni)",
+    "culture": "Gondor",
+    "birth_year": "U.D. 2930",
+    "death_year": "U.D. 3019 (15-mart)",
+    "weapons_and_artifacts": [
+      "Anor toshi (Minas Tirith Palantíri)",
+      "Gondor Noiblarining oq hassasi"
+    ],
+    "primary_locations": [
+      "minas-tirith"
+    ],
+    "adaptations": [],
+    "sources": [
+      {
+        "book_slug": "the-return-of-the-king",
+        "chapter": "V kitob, 1-bob: \"Minas Tirith\", 4-bob: \"Shahar qamali\" va 7-bob: \"Denethorning gulxani\"",
+        "page": "753"
+      },
+      {
+        "book_slug": "the-return-of-the-king",
+        "chapter": "Ilova A: \"Gondor va Anárion shohlari\"",
+        "page": "1055"
+      }
+    ],
+    "summary": "Gondorning soʻnggi va yigirma oltinchi Hukmdor Noibi, Boromir hamda Faramirning otasi. Chuqur donishmandlik, kuchli iroda va sof Númenor qoniga ega boʻlishiga qaramay, Anor Palantíri orqali Sauron bilan iroda toʻqnashuvida umidsizlikka tushib, Minas Tirith qamali vaqtida fojiali tarzda oʻz joniga qasd qilgan."
+  },
+  {
+    "slug": "durin-i",
+    "id": "durin-i",
+    "name": "Durin I (Boqiy Durin)",
+    "original_name": "Durin the Deathless",
+    "aliases": [
+      "Boqiy Durin (Durin the Deathless)",
+      "Yetti Otaning toʻngʻichi",
+      "Khazad-dûm asoschisi"
+    ],
+    "titles": [
+      "Mitti-odamlarning Yetti Otasidan birinchisi",
+      "Khazad-dûmning Birinchi Qiroli",
+      "Durin xonadoni asoschisi"
+    ],
+    "race": "mitti-odamlar",
+    "sub_race": "Uzunsoqollar (Longbeards)",
+    "culture": "Khazad-dûm (Moria)",
+    "birth_year": "Daraxtlar Davri (Aulë tomonidan yaratilgan, B.D. boshlarida uygʻongan)",
+    "death_year": "Birinchi Davr oxirlari",
+    "weapons_and_artifacts": [
+      "Durin toji (Mirrormere koʻlida aks etgan yetti yulduz timsoli)",
+      "Durin boltasi",
+      "Durin toshi (Kheled-zâram boʻyidagi yodgorlik ustuni)"
+    ],
+    "primary_locations": [
+      "khazad-dum"
+    ],
+    "adaptations": [],
+    "sources": [
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Quenta Silmarillion, 2-bob: \"Aulë va Yavanna haqida\"",
+        "page": "44"
+      },
+      {
+        "book_slug": "the-fellowship-of-the-ring",
+        "chapter": "II kitob, 4-bob: \"Qorongʻulikdagi sayohat (Gimli qoʻshigʻi)\"",
+        "page": "315"
+      },
+      {
+        "book_slug": "the-return-of-the-king",
+        "chapter": "Ilova A, III qism: \"Durin xalqi\"",
+        "page": "1071"
+      }
+    ],
+    "summary": "Vala Aulë tomonidan yaratilgan Mittilarning Yetti Otasidan eng ulugʻi va birinchisi, Uzunsoqollar qabilasi hamda Khazad-dûm (Moria) yerosti saltanatining asoschisi. U shunchalik uzoq umr koʻrganki, xalqi uni «Boqiy Durin» deb ulugʻlagan."
+  },
+  {
+    "slug": "earendil",
+    "id": "earendil",
+    "name": "Eärendil Dengizchi",
+    "original_name": "Eärendil Ardamírë",
+    "aliases": [
+      "Eärendil the Mariner (Dengizchi Eärendil)",
+      "Muborak Eärendil (Eärendil the Blessed)",
+      "Azrubêl (Adûnaic tilida)",
+      "Gil-Estel (Yuqori Umid Yulduzi)"
+    ],
+    "titles": [
+      "Sirion Bandargohi Hukmdori",
+      "Vingilótë Kemasi Sardori",
+      "Ikki Qavm (Elflar va Insonlar) Elchisi"
+    ],
+    "race": "elflar",
+    "sub_race": "Yarim-elf (Peredhel — Eldar taqdirini tanlagan)",
+    "culture": "Gondolin / Sirion / Valinor",
+    "birth_year": "Birinchi davr 503",
+    "death_year": "Boqiy (Osmon gumbazida Vingilótë kemasi bilan suzib yuradi)",
+    "weapons_and_artifacts": [
+      "Silmaril (Peshonasiga bogʻlangan muqaddas gavhar — Eärendil Yulduzi)",
+      "Vingilótë (Koʻpik Guli — osmonda uchuvchi oq kema)",
+      "Elessar zumrad toshi"
+    ],
+    "primary_locations": [
+      "gondolin",
+      "tirion",
+      "beleriand"
+    ],
+    "adaptations": [],
+    "sources": [
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Of the Voyage of Eärendil and the War of Wrath",
+        "page": "246"
+      },
+      {
+        "book_slug": "the-lord-of-the-rings",
+        "chapter": "Many Meetings (Bilbo's Song of Eärendil)",
+        "page": "246"
+      },
+      {
+        "book_slug": "the-fall-of-gondolin",
+        "chapter": "The Fall of Gondolin",
+        "page": "165"
+      },
+      {
+        "book_slug": "letters-of-jrr-tolkien",
+        "chapter": "Letter 297 (Draft to Mr Rang, August 1967)",
+        "page": "385"
+      }
+    ],
+    "summary": "Tuor va Idrilning oʻgʻli, Elwingning umr yoʻldoshi hamda Elrond va Elrosning otasi. Peshonasida Beren va Lúthienning Silmarili bilan Vingilótë kemasida Sehrli Orollardan oʻtib, Valinorga qadam qoʻygan ilk tirik inson; Elflar va Insonlar nomidan Valardan shavqat soʻrab, Gʻazab Urushida ajdaho Ancalagon the Blackni oʻldirgan va осмоnda Umid Yulduziga aylangan najotkor."
+  },
+  {
+    "slug": "elendil",
+    "id": "elendil",
+    "name": "Elendil",
+    "original_name": "Elendil Voronda",
+    "aliases": [
+      "Elendil Boʻyi-baland (Elendil the Tall)",
+      "Elendil Voronda (Sodiq Elendil)",
+      "Arnor va Gondor Oliy Shohi",
+      "Gʻarbiy Kemalar Sardori"
+    ],
+    "titles": [
+      "Arnor va Gondor Birlashgan Qirolligi Oliy Shohi (1-shoh)",
+      "Shimol Dúnedainining Oliy Qiroli",
+      "Soʻnggi Ittifoq Bosh Qoʻmondoni"
+    ],
+    "race": "insonlar",
+    "sub_race": "Dúnedain (Númenórean)",
+    "culture": "Númenor / Arnor / Gondor",
+    "birth_year": "Ikkinchi davr 3119 (Númenor)",
+    "death_year": "Ikkinchi davr 3441 (Orodruin etagida Sauron bilan duelda halok boʻlgan)",
+    "weapons_and_artifacts": [
+      "Narsil qilichi (Nogrod ustasi Telchar yasagan, quyosh va oydek nur sochuvchi qilich)",
+      "Elendilmir (Shimol Yulduzi — kumush tasmali oq gavhar toji)",
+      "Yetti Palantíri (Númenordan olib kelingan koʻrish toshlari)"
+    ],
+    "primary_locations": [
+      "amon-sul",
+      "minas-tirith"
+    ],
+    "adaptations": [
+      {
+        "medium": "film",
+        "title": "The Lord of the Rings: The Fellowship of the Ring",
+        "creator": "Peter Jackson",
+        "year": 2001,
+        "divergence_notes": "Film muqaddimasida (Prologue) Peter McKenzie gavdalantirgan Elendil So'nggi Ittifoq jangida Sauronning gurzisi zarbasidan qoyaga urilib halok bo'ladi va Sauron uning qilichini oyog'i bilan bosib sindiradi. Kitobda esa Elendil va Gil-galad ikkalasi birgalikda Sauronni yerga qulatishadi (Sauron o'limli yaralanadi) va Elendil jon bergach, uning o'z tanasi ostida Narsil sinib ketadi."
+      }
+    ],
+    "sources": [
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Akallabêth: The Downfall of Númenor",
+        "page": "272"
+      },
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Of the Rings of Power and the Third Age",
+        "page": "291"
+      },
+      {
+        "book_slug": "the-lord-of-the-rings",
+        "chapter": "The Council of Elrond",
+        "page": "243"
+      },
+      {
+        "book_slug": "unfinished-tales",
+        "chapter": "The Line of Elros: Kings of Númenor",
+        "page": "218"
+      }
+    ],
+    "summary": "Andúniëning soʻnggi knyazi Amandilning toʻngʻich oʻgʻli, Silmarien naslidan boʻlgan Númenor sadoqatlilari yoʻlboshchisi. Orolning qulashi (Akallabêth) chogʻida toʻqqiz kema bilan qutulib, Oʻrta-yerda Arnor va Gondor qudratli qirolliklariga asos solgan buyuk Oliy Shoh. Narsil qilichi egasi. Ikkinchi davr oxirida Gil-galad bilan Elflar va Insonlarning Soʻnggi Ittifoqini tuzib, Barad-dûr qamaliga boshchilik qilgan va Hukm Togʻi etagida Sauronni yengish chogʻida qahramonlarcha shahid boʻlgan zot."
+  },
+  {
+    "slug": "elrond",
+    "id": "elrond",
+    "name": "Elrond",
+    "original_name": "Elrond Peredhel",
+    "aliases": [
+      "Elrond Yarim-elf",
+      "Imladris Hukmdori",
+      "Rivendell Oqsoqoli",
+      "Peredhel"
+    ],
+    "titles": [
+      "Imladris (Rivendell) Hukmdori",
+      "Gil-galadning Oliy Noibi va Sarkardasi",
+      "Vilya (Havo Uzugi) Posboni",
+      "Oq Kengash aʼzosi"
+    ],
+    "race": "elflar",
+    "sub_race": "Yarim-elf (Peredhel)",
+    "culture": "Rivendell (Imladris) / Lindon",
+    "birth_year": "Birinchi davr 532",
+    "death_year": "Boqiy (Uchinchi davr 3021-yilda Boqiy Gʻarbga suzib ketgan)",
+    "weapons_and_artifacts": [
+      "Vilya (Uch Elflar Uzugining eng qudratlisi — Sapfir / Havo Uzugi)",
+      "Qadimiy Eldar va Númenor solnomalari",
+      "Barahir uzugi va Narsil parchalari (Aragorn voyaga yetguncha asragan)"
+    ],
+    "primary_locations": [
+      "rivendell"
+    ],
+    "adaptations": [
+      {
+        "medium": "film",
+        "title": "The Lord of the Rings & The Hobbit Film Trilogies",
+        "creator": "Peter Jackson",
+        "year": 2001,
+        "divergence_notes": "Filmda Hugo Weaving ijrosidagi Elrond insonlarning zaifligiga shubha bilan qaraydigan, Aragornning taxtga o'tirishiga dastlab qarshi bo'lgan ancha sovuqqon rahbar sifatida tasvirlangan. Kitobda esa Elrond Aragornga mehrli ota bo'lgan, insoniyatga doimo hamdardlik bildirgan va Narsil qilichini Birodarlik yo'lga chiqishidan oldinoq Rivendellda qayta soxtalatgan."
+      }
+    ],
+    "sources": [
+      {
+        "book_slug": "the-lord-of-the-rings",
+        "chapter": "Many Meetings",
+        "page": "218"
+      },
+      {
+        "book_slug": "the-lord-of-the-rings",
+        "chapter": "The Council of Elrond",
+        "page": "233"
+      },
+      {
+        "book_slug": "the-lord-of-the-rings",
+        "chapter": "Appendix A: Annals of the Kings and Rulers",
+        "page": "1032"
+      },
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Of the Rings of Power and the Third Age",
+        "page": "286"
+      },
+      {
+        "book_slug": "letters-of-jrr-tolkien",
+        "chapter": "Letter 153",
+        "page": "189"
+      }
+    ],
+    "summary": "Eärendil va Elwingning oʻgʻli, Númenor asoschisi Elrosning egizagi, Imladris (Rivendell) vodiysi asoschisi va hukmdori. Soʻnggi Ittifoq urushida Oliy Qirol Gil-galadning bosh bayroqdori boʻlgan. Uch Elflar Uzugining eng ulugʻi — Vilyaning sohibi. Oʻrta-yerda Isildur merosini va Shimol Dúnedain naslini asrab-avaylagan, Uzuk Kengashiga rahbarlik qilgan buyuk tabib, donishmand va xaloskor."
+  },
+  {
+    "slug": "elros",
+    "id": "elros",
+    "name": "Elros Tar-Minyatur",
+    "original_name": "Elros Tar-Minyatur",
+    "aliases": [
+      "Tar-Minyatur (Quenya: Birinchi Oliy Hukmdor)",
+      "Gimilzôr"
+    ],
+    "titles": [
+      "Númenorning Birinchi Qiroli",
+      "Elros Xonadoni (Númenor, Arnor va Gondor Qirollari) Asoschisi"
+    ],
+    "race": "insonlar",
+    "sub_race": "Yarim-elf / Dúnedain (Insonlar taqdirini tanlagan)",
+    "culture": "Sirion / Númenor (Armenelos)",
+    "birth_year": "Birinchi davr 532",
+    "death_year": "Ikkinchi davr 442 (500 yoshida oʻz ixtiyori bilan vafot etgan)",
+    "weapons_and_artifacts": [
+      "Aranrúth (Thingolning qilichi — Círdan orqali Elrosga topshirilgan)",
+      "Barahir Uzugi",
+      "Bregor Yoyi va Tuorning Dramborleg boltasi"
+    ],
+    "primary_locations": [
+      "numenor",
+      "lindon",
+      "beleriand"
+    ],
+    "adaptations": [],
+    "sources": [
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Akallabêth: The Downfall of Númenor",
+        "page": "261"
+      },
+      {
+        "book_slug": "the-lord-of-the-rings",
+        "chapter": "Appendix A (I: The Numenorean Kings)",
+        "page": "1033"
+      },
+      {
+        "book_slug": "unfinished-tales",
+        "chapter": "A Description of the Island of Númenor",
+        "page": "165"
+      }
+    ],
+    "summary": "Eärendil va Elwingning oʻgʻli, Elrond Yarim-elfning egizak akasi. Yarim-elflar tanlovida insonlar qismatini va foniylik inʼomini tanlab, yulduz shaklidagi Elenna (Númenor) oroliga Edain xalqini boshlab borgan va 410 yil davomida 'Tar-Minyatur' nomi bilan hukmronlik qilgan Númenorning birinchi qiroli, Aragornning bobokaloni."
+  },
+  {
+    "slug": "elwing",
+    "id": "elwing",
+    "name": "Elwing Oq",
+    "original_name": "Elwing",
+    "aliases": [
+      "Elwing the White (Oq Elwing)"
+    ],
+    "titles": [
+      "Doriath va Thingol Merosxoʻri",
+      "Sirion Bandargohi Malikasi",
+      "Silmaril Saqlovchisi"
+    ],
+    "race": "elflar",
+    "sub_race": "Yarim-elf (Eldar, Edain va Maia Melian qoni)",
+    "culture": "Doriath / Sirion / Alqualondë (Eldamar)",
+    "birth_year": "Birinchi davr ~503 (Tol Galenda)",
+    "death_year": "Boqiy (Eldamar qirgʻogʻidagi oq minorada yashaydi)",
+    "weapons_and_artifacts": [
+      "Silmaril va Nauglamír marjoni (ota-onasi Dior va Nimlothdan qolgan meros)"
+    ],
+    "primary_locations": [
+      "menegroth",
+      "doriath",
+      "alqualonde",
+      "beleriand"
+    ],
+    "adaptations": [],
+    "sources": [
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Of the Ruin of Doriath",
+        "page": "236"
+      },
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Of the Voyage of Eärendil and the War of Wrath",
+        "page": "247"
+      },
+      {
+        "book_slug": "beren-and-luthien",
+        "chapter": "The Silmaril and the Ruin of Doriath",
+        "page": "235"
+      }
+    ],
+    "summary": "Beren va Lúthienning oʻgʻli Diorning yagona omon qolgan qizi, Eärendilning umr yoʻldoshi hamda Elrond va Elrosning onasi. Sirion bandargohidagi Uchinchi Qarindosh Qirgʻinida Silmarilni Fëanor oʻgʻillariga bermaslik uchun koʻksida gavhar bilan dengizga sakragan va Ulmo tomonidan oq qushga aylantirilib, Eärendilning Vingilótë kemasiga yetkazilgan malika."
+  },
+  {
+    "slug": "eomer",
+    "id": "eomer",
+    "name": "Éomer",
+    "original_name": "Éomer Éadig",
+    "aliases": [
+      "Éomer Éadig (Barakali)",
+      "Rohan Qiroli",
+      "Sharqiy Mark Marshali"
+    ],
+    "titles": [
+      "Rohan Qiroli (Eorl xonadonining 18-qiroli va Uchinchi Sulola asoschisi)",
+      "Mark Oliy Sarkardasi",
+      "Gondorning Qardosh Hukmdori"
+    ],
+    "race": "insonlar",
+    "sub_race": "Rohirrim",
+    "culture": "Rohan / Edoras",
+    "birth_year": "Uchinchi davr 2991",
+    "death_year": "Toʻrtinchi davr 63 (93 yoshida)",
+    "weapons_and_artifacts": [
+      "Gúthwinë (Urush Doʻsti — poʻlat qilichi)",
+      "Firefoot (Otashoyoq — zotdor jangovar oti)",
+      "Oltin Yashil Rohan Qalqoni va Nayzasi"
+    ],
+    "primary_locations": [
+      "edoras",
+      "helms-deep",
+      "minas-tirith"
+    ],
+    "adaptations": [
+      {
+        "medium": "film",
+        "title": "The Lord of the Rings Film Trilogy",
+        "creator": "Peter Jackson",
+        "year": 2002,
+        "divergence_notes": "Filmda Karl Urban ijrosidagi Éomer jasur, keskin va sadoqatli jangchi sifatida tasvirlangan. Asosiy syujet farqi: filmda Éomer Edorasdan Gríma tomonidan batamom haydab yuboriladi va Helm darasiga jangning eng oxirida Gandalf bilan birga yordamga keladi (Erkenbrandning roli Éomerga berilgan); kitobda esa Éomer tun bo'yi Helm darasining o'zida Aragorn bilan yonma-yon turib mudofaa qilgan."
+      }
+    ],
+    "sources": [
+      {
+        "book_slug": "the-lord-of-the-rings",
+        "chapter": "The Riders of Rohan",
+        "page": "423"
+      },
+      {
+        "book_slug": "the-lord-of-the-rings",
+        "chapter": "The Battle of the Pelennor Fields",
+        "page": "841"
+      },
+      {
+        "book_slug": "the-lord-of-the-rings",
+        "chapter": "The Black Gate Opens",
+        "page": "887"
+      },
+      {
+        "book_slug": "the-lord-of-the-rings",
+        "chapter": "Appendix A: Annals of the Kings and Rulers (II: The House of Eorl)",
+        "page": "1069"
+      }
+    ],
+    "summary": "Éomund va Théodwynning oʻgʻli, Qirol Théodenning jiyani va Éowynning akasi. Rohan Sharqiy Markining 3-bosh marshali. Merry va Pippinni asir olgan Saruman Uruk-hailarini tor-mor etgan va dashtda Aragorn bilan uchrashgan. Helm darasi va Pelennor janglarida mislsiz jasorat koʻrsatgan. Théoden shahid boʻlgach, jang maydonida Rohan Qiroli deb eʼlon qilingan. Qora Darvoza jangida Aragorn bilan yonma-yon turgan va Toʻrtinchi davrda Rohanni 65 yil davomida tinchlik va qudrat bilan boshqargan buyuk shoh."
+  },
+  {
+    "slug": "eorl",
+    "id": "eorl",
+    "name": "Yosh Eorl",
+    "original_name": "Eorl the Young",
+    "aliases": [
+      "Yosh Eorl",
+      "Eoteod xoʻjayini",
+      "Rohan asoschisi"
+    ],
+    "titles": [
+      "Rohanning (Riddermark) Birinchi Qiroli",
+      "Eoteod Hukmdori",
+      "Eorl xonadoni asoschisi"
+    ],
+    "race": "insonlar",
+    "sub_race": "Shimol insonlari (Éothéod)",
+    "culture": "Rohirrim (Rohan)",
+    "birth_year": "U.D. 2485",
+    "death_year": "U.D. 2545",
+    "weapons_and_artifacts": [
+      "Felarof (Mearas otlarining otasi)",
+      "Guthwine urush bayrogʻi (yashil maydondagi oq ot)"
+    ],
+    "primary_locations": [
+      "edoras",
+      "minas-tirith"
+    ],
+    "adaptations": [],
+    "sources": [
+      {
+        "book_slug": "the-return-of-the-king",
+        "chapter": "Ilova A, II qism (Eorl xonadoni)",
+        "page": "1063"
+      },
+      {
+        "book_slug": "the-two-towers",
+        "chapter": "III kitob, 6-bob (Oltin Saroy qiroli)",
+        "page": "508"
+      }
+    ],
+    "summary": "Eoteod xalqining jasur yosh hukmdori va Rohan qirolligining asoschisi. U.D. 2510-yilda Celebrant dalasi jangida Gondorni halokatdan qutqarib, Noib Kirion bilan abadiiy ittifoq qasamyodini (Eorl Qasamyodi) ichgan va Kalenardxon oʻlkasini meros qilib olgan."
+  },
+  {
+    "slug": "eowyn",
+    "id": "eowyn",
+    "name": "Éowyn",
+    "original_name": "Éowyn",
+    "aliases": [
+      "Rohan Qalqon-qizi (Shieldmaiden of Rohan)",
+      "Dernhelm (Yashirin dubulgʻa)",
+      "Ithilien Oq Xonimi",
+      "Nazgûl Qotili"
+    ],
+    "titles": [
+      "Rohan Malika-qizi",
+      "Ithilien Xonimi (Lady of Ithilien)",
+      "Emyn Arnen Malika-rafiqasi"
+    ],
+    "race": "insonlar",
+    "sub_race": "Rohirrim",
+    "culture": "Rohan / Ithilien",
+    "birth_year": "Uchinchi davr 2995",
+    "death_year": "Toʻrtinchi davr (Faramir bilan birga uzoq va tinch umr kechirgan)",
+    "weapons_and_artifacts": [
+      "Oʻtkir poʻlat Rohan qilichi",
+      "Dernhelm temir dubulgʻasi va sovuti",
+      "Rohan shohona otliq qalqoni"
+    ],
+    "primary_locations": [
+      "edoras",
+      "helms-deep",
+      "minas-tirith"
+    ],
+    "adaptations": [
+      {
+        "medium": "film",
+        "title": "The Lord of the Rings Film Trilogy",
+        "creator": "Peter Jackson",
+        "year": 2002,
+        "divergence_notes": "Miranda Otto tomonidan ijro etilgan Éowyn obrazi fantastik kino tarixidagi eng buyuk ayol qahramonlardan biri sifatida e'tirof etiladi. Uning 'I am no man!' deb Jodugar-shohni qulatish sahnasi kitobdagi epik qudratni to'liq aks ettirgan. Kichik tafovut: film kengaytirilgan talqinida uning Faramir bilan Shifo Uylaridagi sevgi qissasi qisqartirib ko'rsatilgan."
+      }
+    ],
+    "sources": [
+      {
+        "book_slug": "the-lord-of-the-rings",
+        "chapter": "The King of the Golden Hall",
+        "page": "512"
+      },
+      {
+        "book_slug": "the-lord-of-the-rings",
+        "chapter": "The Battle of the Pelennor Fields",
+        "page": "841"
+      },
+      {
+        "book_slug": "the-lord-of-the-rings",
+        "chapter": "The Houses of Healing",
+        "page": "868"
+      },
+      {
+        "book_slug": "the-lord-of-the-rings",
+        "chapter": "The Steward and the King",
+        "page": "962"
+      }
+    ],
+    "summary": "Éomund va Théodwynning qizi, Qirol Théodenning jiyani va Éomerning singlisi. Rohan malikasi va dovyurak qalqon-qizi. Saroydagi maʼyuslik va ojizlikdan qutulish, janggohlarda sharafli nom qoldirish istagida yashirincha 'Dernhelm' niqobi ostida Pelennor maydoniga otlangan. Afsonaviy bashoratni amalga oshirib, Nazgûllar Oliy Yoʻlboshchisi — Angmar Jodugar-shohini yakkama-yakka jangda oʻldirgan buyuk qahramon ayol. Shifo Uylarida Faramir bilan uchrashib muhabbat topgan va Ithilien Xonimiga aylangan."
+  },
+  {
+    "slug": "faramir",
+    "id": "faramir",
+    "name": "Faramir",
+    "original_name": "Faramir",
+    "aliases": [
+      "Ithilien Knyazi",
+      "Gondor Oliy Noibi",
+      "Ithilien Kapitani"
+    ],
+    "titles": [
+      "Ithilien Knyazi (Prince of Ithilien)",
+      "Gondor Hukmdor Noibi (soʻnggi amaldagi noib)",
+      "Emyn Arnen Hukmdori",
+      "Qirol Elessarning Bosh Maslahatchisi"
+    ],
+    "race": "insonlar",
+    "sub_race": "Dúnedain",
+    "culture": "Gondor / Ithilien",
+    "birth_year": "Uchinchi davr 2983",
+    "death_year": "Toʻrtinchi davr 82 (120 yoshida)",
+    "weapons_and_artifacts": [
+      "Ithilien qoʻriqchilari kamoni va oʻqdon",
+      "Gondor poʻlat qilichi",
+      "Gondor Noiblari kumush hassasi"
+    ],
+    "primary_locations": [
+      "minas-tirith",
+      "osgiliath",
+      "henneth-annun"
+    ],
+    "adaptations": [
+      {
+        "medium": "film",
+        "title": "The Lord of the Rings Film Trilogy",
+        "creator": "Peter Jackson",
+        "year": 2002,
+        "divergence_notes": "Filmda David Wenham ijrosidagi Faramir kitobdagiga nisbatan ancha ikkilanuvchi va otasining mehrini qozonish uchun Frodoni zanjirband qilib Osgiliathgacha sudrab boruvchi obraz sifatida ko'rsatilgan. Kitobda esa Faramir Henneth Annûnda Uzuk sirini bilishi bilanoq, uni aslo olmasligini qat'iy bildirgan va Frodoni darhol hurmat bilan kuzatib qo'ygan."
+      }
+    ],
+    "sources": [
+      {
+        "book_slug": "the-lord-of-the-rings",
+        "chapter": "The Window on the West",
+        "page": "669"
+      },
+      {
+        "book_slug": "the-lord-of-the-rings",
+        "chapter": "The Siege of Gondor",
+        "page": "802"
+      },
+      {
+        "book_slug": "the-lord-of-the-rings",
+        "chapter": "The Houses of Healing",
+        "page": "864"
+      },
+      {
+        "book_slug": "the-lord-of-the-rings",
+        "chapter": "The Steward and the King",
+        "page": "957"
+      },
+      {
+        "book_slug": "letters-of-jrr-tolkien",
+        "chapter": "Letter 211",
+        "page": "280"
+      }
+    ],
+    "summary": "Denethor II va Finduilasning kenja oʻgʻli, Boromirning ukasi, Ithilien qoʻriqchilari (Rangers of Ithilien) sardori. Donishmand, olijanob va Dúnedainning qadimiy oliy fazilatlarini oʻzida mujassam etgan buyuk shaxs. Henneth Annûnda Frodoni uchratganida, Yagona Uzukning vasvasasiga berilmasdan, unga yoʻl bergan. Pelennor arafasida ogʻir yaralanib, otasining telbaligi qurboniga aylanayozganida Gandalf tomonidan qutqarilgan. Shifo Uylarida Rohan malikasi Éowyn bilan uchrashib muhabbat bogʻlagan va Aragornga taxtni topshirib, Ithilien Knyazi etib tayinlangan."
+  },
+  {
+    "slug": "feanor",
+    "id": "feanor",
+    "name": "Fëanor",
+    "original_name": "Curufinwë (Fëanáro)",
+    "aliases": [
+      "Silmarillar yaratuvchisi",
+      "Fëanáro (Olov ruhi)",
+      "Noldor ustasi"
+    ],
+    "titles": [
+      "Noldor Oliy Qiroli",
+      "Tirion va Formenos Hukmdori"
+    ],
+    "race": "elflar",
+    "sub_race": "Noldor",
+    "culture": "Valinor Noldori",
+    "birth_year": "Daraxtlar davri 1169",
+    "death_year": "Birinchi davr 1",
+    "weapons_and_artifacts": [
+      "Silmarillar",
+      "Tengwar yozuvi",
+      "Palantíri (Koʻrish toshlari)",
+      "Fëanor chiroqlari"
+    ],
+    "primary_locations": [
+      "tirion",
+      "formenos",
+      "mithrim"
+    ],
+    "adaptations": [],
+    "sources": [
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Of Fëanor and the Unchaining of Melkor",
+        "page": "64"
+      },
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Of the Silmarils and the Unrest of the Noldor",
+        "page": "73"
+      },
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Of the Flight of the Noldor",
+        "page": "82"
+      },
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Of the Return of the Noldor",
+        "page": "106"
+      },
+      {
+        "book_slug": "history-of-middle-earth",
+        "chapter": "The Shibboleth of Fëanor (HoME XII)",
+        "page": "331"
+      }
+    ],
+    "summary": "Finwë va Mírielning yagona oʻgʻli, Arda tarixidagi eng tengsiz aql, hunarmandlik va sanʼat sohibi. Ikki Daraxt nurini mujassam etgan uch Silmarilni yaratgan, ammo oʻzining betizgin gʻururi va Melkor fitnasi oqibatida Noldor qasamyodini qabul qilib, xalqini fojiaviy surgun tomon yetaklagan buyuk sarkarda."
+  },
+  {
+    "slug": "finarfin",
+    "id": "finarfin",
+    "name": "Finarfin",
+    "original_name": "Arafinwë",
+    "aliases": [
+      "Arafinwë (Quenya: Olijanob va dono Finwë)",
+      "Ingoldo"
+    ],
+    "titles": [
+      "Valinordagi Noldor Oliy Qiroli",
+      "Finarfin Xonadoni Asoschisi"
+    ],
+    "race": "elflar",
+    "sub_race": "Noldor (Vanyar va Teleri qoni bilan)",
+    "culture": "Tirion (Aman Noldori)",
+    "birth_year": "Daraxtlar davri YT 1230",
+    "death_year": "Boqiy (Valinorda hukmronlik qiladi)",
+    "weapons_and_artifacts": [
+      "Tirion Noldor Toji"
+    ],
+    "primary_locations": [
+      "tirion",
+      "alqualonde"
+    ],
+    "adaptations": [],
+    "sources": [
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Of Eldamar and the Princes of the Eldalië",
+        "page": "60"
+      },
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Of the Flight of the Noldor",
+        "page": "88"
+      },
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Of the Voyage of Eärendil and the War of Wrath",
+        "page": "251"
+      }
+    ],
+    "summary": "Finwë va Vanyar malikasi Indisning kenja oʻgʻli, Fëanor va Fingolfinning ukasi, Finrod hamda Galadrielning otasi. Finwë oʻgʻillari ichida eng bosiq va donishmandi boʻlib, Mandos Hukmidan soʻng tavba qilib Tirionga qaytgan, Valinorda qolgan Noldor Oliy Qiroli va Gʻazab Urushidagi Noldor qoʻshini sarkardasi."
+  },
+  {
+    "slug": "fingolfin",
+    "id": "fingolfin",
+    "name": "Fingolfin",
+    "original_name": "Nolofinwë",
+    "aliases": [
+      "Noldor Bahodiri",
+      "Nolofinwë (Dono Finwë)",
+      "Oliy Qirol"
+    ],
+    "titles": [
+      "Beleriand Noldorining Oliy Qiroli",
+      "Hithlum Hukmdori"
+    ],
+    "race": "elflar",
+    "sub_race": "Noldor",
+    "culture": "Noldor",
+    "birth_year": "Daraxtlar davri 1190",
+    "death_year": "Birinchi davr 456",
+    "weapons_and_artifacts": [
+      "Ringil qilichi",
+      "Kumush yulduzli zangori qalqon"
+    ],
+    "primary_locations": [
+      "tirion",
+      "mithrim"
+    ],
+    "adaptations": [],
+    "sources": [
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Of the Flight of the Noldor",
+        "page": "82"
+      },
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Of the Return of the Noldor",
+        "page": "106"
+      },
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Of the Ruin of Beleriand and the Fall of Fingolfin",
+        "page": "150"
+      },
+      {
+        "book_slug": "history-of-middle-earth",
+        "chapter": "The Shibboleth of Fëanor (HoME XII)",
+        "page": "344"
+      }
+    ],
+    "summary": "Finwë va Vanyar malikasi Indisning toʻngʻich oʻgʻli, Belerianddagi Noldorning eng mard, sabr-toqatli va qudratli Oliy Qiroli. Helcaraxë qahraton muzliklaridan oʻz xalqini talafotsiz olib oʻtgan hamda Dagor Bragollach halokatidan soʻng Angband darvozasida Morgoth bilan yakkama-yakka buyuk duelda mardlarcha halok boʻlgan afsonaviy bahodir."
+  },
+  {
+    "slug": "fingon",
+    "id": "fingon",
+    "name": "Fingon Jasur",
+    "original_name": "Findekáno",
+    "aliases": [
+      "Findekáno (Quenya: Mahoratli Qoʻmondon)",
+      "Fingon the Valiant (Jasur Fingon)"
+    ],
+    "titles": [
+      "Surgun qilingan Noldor Oliy Qiroli",
+      "Dor-lómin va Hithlum Shahzodasi"
+    ],
+    "race": "elflar",
+    "sub_race": "Noldor",
+    "culture": "Tirion / Hithlum",
+    "birth_year": "Daraxtlar davri YT 1260",
+    "death_year": "Birinchi davr 472 (Nirnaeth Arnoediadda Gothmog tomonidan oʻldirilgan)",
+    "weapons_and_artifacts": [
+      "Hithlumning Oltin Yoyi va Oltin Tasmalari",
+      "Kumush va koʻk qirollik bayrogʻi"
+    ],
+    "primary_locations": [
+      "mithrim",
+      "tirion",
+      "alqualonde",
+      "beleriand"
+    ],
+    "adaptations": [],
+    "sources": [
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Of the Return of the Noldor",
+        "page": "109"
+      },
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Of the Ruin of Beleriand and the Fall of Fingolfin",
+        "page": "154"
+      },
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Of the Fifth Battle: Nirnaeth Arnoediad",
+        "page": "192"
+      },
+      {
+        "book_slug": "the-children-of-hurin",
+        "chapter": "The Battle of Unnumbered Tears",
+        "page": "56"
+      }
+    ],
+    "summary": "Fingolfinning toʻngʻich oʻgʻli va Turgonning akasi, Noldorning eng mard va sodiq shahzodasi. Thangorodrim qoyasida osib qoʻyilgan doʻsti Maedhrosni yolgʻiz oʻzi qutqarib, Noldor xonadonlari oʻrtasidagi adovatga barham bergan hamda otasining oʻlimidan soʻng Noldor Oliy Qiroli sifatida Nirnaeth Arnoediad jangida qahramonlarcha halok boʻlgan sarkarda."
+  },
+  {
+    "slug": "finrod",
+    "id": "finrod",
+    "name": "Finrod Felagund",
+    "original_name": "Findaráto Ingoldo",
+    "aliases": [
+      "Felagund (Khuzdul: Gʻorlar Oʻymakori)",
+      "Nóm (Edain tilida: Donishmandlik)",
+      "Findaráto (Quenya)",
+      "Insonlar Doʻsti"
+    ],
+    "titles": [
+      "Nargothrond Qiroli va Asoschisi",
+      "Minas Tirith (Tol Sirion) Bunyodkori",
+      "Finarfin Xonadonining Toʻngʻich Shahzodasi"
+    ],
+    "race": "elflar",
+    "sub_race": "Noldor",
+    "culture": "Tirion / Nargothrond",
+    "birth_year": "Daraxtlar davri YT 1300",
+    "death_year": "Birinchi davr 465 (Tol-in-Gaurhothda qahramonlarcha halok boʻlgan, Valinorda qayta tirilgan)",
+    "weapons_and_artifacts": [
+      "Barahir Uzugi (Yashil zumradli qoʻsh ilon uzugi — Beren va Aragorn merosi)",
+      "Nauglamír (Mitti ustalari Finrod uchun yasagan oltin marjon)"
+    ],
+    "primary_locations": [
+      "nargothrond",
+      "menegroth",
+      "tirion",
+      "beleriand"
+    ],
+    "adaptations": [],
+    "sources": [
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Of the Return of the Noldor",
+        "page": "114"
+      },
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Of the Coming of Men into the West",
+        "page": "140"
+      },
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Of Beren and Lúthien",
+        "page": "168"
+      },
+      {
+        "book_slug": "beren-and-luthien",
+        "chapter": "The Lay of Leithian (Canto VII: The Contest of Finrod and Thu)",
+        "page": "124"
+      }
+    ],
+    "summary": "Finarfinning toʻngʻich oʻgʻli, Galadrielning akasi, yashirin Nargothrond qirolligining asoschisi va Beleriandda Edain (Insonlar)ni ilk bor uchratib, ularga doʻstlik va maʼrifat ulashgan eng olijanob Noldor shahzodasi. Dagor Bragollachda Barahirga bergan qasamyodiga sodiq qolib, Beren Erchamionni Sauron zindonida oʻz hayoti evaziga qutqargan."
+  },
+  {
+    "slug": "finwe",
+    "id": "finwe",
+    "name": "Finwë",
+    "original_name": "Finwë Noldóran",
+    "aliases": [
+      "Noldor Oqsoqoli",
+      "Finwë Noldóran",
+      "Eldamar Qiroli"
+    ],
+    "titles": [
+      "Noldor Oliy Qiroli",
+      "Tirion Hukmdori"
+    ],
+    "race": "elflar",
+    "sub_race": "Noldor",
+    "culture": "Valinor Noldori",
+    "birth_year": "Daraxtlar davri 1050",
+    "death_year": "Daraxtlar davri 1495",
+    "weapons_and_artifacts": [
+      "Noldor Oliy Toji"
+    ],
+    "primary_locations": [
+      "tirion",
+      "formenos"
+    ],
+    "adaptations": [],
+    "sources": [
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Of Eldamar and the Princes of the Eldalië",
+        "page": "59"
+      },
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Of the Silmarils and the Unrest of the Noldor",
+        "page": "73"
+      },
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Of the Flight of the Noldor",
+        "page": "82"
+      },
+      {
+        "book_slug": "history-of-middle-earth",
+        "chapter": "Laws and Customs among the Eldar (HoME X)",
+        "page": "207"
+      }
+    ],
+    "summary": "Valinordagi Noldor xalqining birinchi Oliy Qiroli, Buyuk Elflar koʻchishining uch afsonaviy yoʻlboshchisidan biri. Míriel va Indis bilan tuzgan ikki nikohi Noldorning uch buyuk sulolasiga asos soldi. Fëanorni Formenosdagi surgunda yolgʻiz qoldirmagan va Melkor tomonidan Formenos darvozasida qahramonlarcha qatl etilgan ilk shahid qirol."
+  },
+  {
+    "slug": "frodo-baggins",
+    "id": "frodo-baggins",
+    "name": "Frodo Baggins",
+    "original_name": "Frodo Baggins (Kuduktuk: Maura Labingi)",
+    "aliases": [
+      "Toʻqqiz Barmoqli Frodo (Frodo of the Nine Fingers)",
+      "Uzuk Elchisi (The Ring-bearer)",
+      "Janob Underhill (Mr. Underhill)",
+      "Elf-doʻsti (Elf-friend)"
+    ],
+    "titles": [
+      "Yagona Uzuk Elchisi",
+      "Bag End Egasi",
+      "Shir Muvaqqat Meri (Mayor of Michel Delving)",
+      "Qizil Kitob Muallifi"
+    ],
+    "race": "xobbitlar",
+    "sub_race": "Fallohide va Harfoot nasli",
+    "culture": "Shire (Shir) / Bag End",
+    "birth_year": "Uchinchi davr 2968 (Shir hisobi 1368)",
+    "death_year": "Boqiy Gʻarbga oʻtgan (Uchinchi davr 3021 / Shir hisobi 1421)",
+    "weapons_and_artifacts": [
+      "Sting (Gondolin qadimiy pichogʻi / xanjari)",
+      "Mithril zanjir sovut (Bilbo sovgʻasi)",
+      "Galadriel billur shishasi (Eärendil nuri joylangan shisha)",
+      "Yagona Uzuk (Mordorga eltgan)"
+    ],
+    "primary_locations": [
+      "hobbiton",
+      "rivendell",
+      "buckland",
+      "bree",
+      "cirith-ungol",
+      "orodruin"
+    ],
+    "adaptations": [
+      {
+        "medium": "film",
+        "title": "The Lord of the Rings Film Trilogy",
+        "creator": "Peter Jackson",
+        "year": 2001,
+        "divergence_notes": "Filmda Elijah Wood gavdalantirgan Frodo kitobdagiga nisbatan ancha yosh, nochorroq va omonatroq ko'rsatilgan. Kitobda Frodo 50 yoshli yetuk, qat'iyatli va chuqur donishmandlikka ega xobbit bo'lib, xiyonatkor Gollumni Samdan hech qachon ustun qo'ymaydi (filmda esa Frodo Samni haydab yuborish sahnasi qo'shilgan, bu kitob kanoniga to'g'ri kelmaydi)."
+      }
+    ],
+    "sources": [
+      {
+        "book_slug": "the-lord-of-the-rings",
+        "chapter": "The Shadow of the Past",
+        "page": "42"
+      },
+      {
+        "book_slug": "the-lord-of-the-rings",
+        "chapter": "The Council of Elrond",
+        "page": "264"
+      },
+      {
+        "book_slug": "the-lord-of-the-rings",
+        "chapter": "Mount Doom",
+        "page": "923"
+      },
+      {
+        "book_slug": "the-lord-of-the-rings",
+        "chapter": "The Grey Havens",
+        "page": "1003"
+      },
+      {
+        "book_slug": "letters-of-jrr-tolkien",
+        "chapter": "Letter 246",
+        "page": "325"
+      }
+    ],
+    "summary": "Drogo Baggins va Primula Brandybuckning yagona oʻgʻli, Bilbo Bagginsning asrandi jiyani va Bag End vorisi. Gandalf maslahati bilan Yagona Uzukni Oʻrta-yer boʻylab xavfsiz olib oʻtgan va Elrond Kengashida uni Hukm Togʻida yoʻq qilish vazifasini oʻz boʻyniga olgan buyuk Uzuk Elchisi. Weathertop, Moria, Cirith Ungol va Mordor azoblarini yengib oʻtgan, Oʻrta-yerni Sauron zulmatidan qutqargan va oʻz jarohatlariga shifo topish uchun Boqiy Gʻarbga — Valinorga yoʻl olgan xobbit qahramoni."
+  },
+  {
+    "slug": "galadriel",
+    "id": "galadriel",
+    "name": "Galadriel",
+    "original_name": "Artanis Nerwen",
+    "aliases": [
+      "Oltin Oʻrmon Sohibasi",
+      "Oʻrmon Malikasi",
+      "Artanis (Aslzoda qiz)",
+      "Nerwen (Erkak-qiz)",
+      "Oq Xonim",
+      "Lothlórien Bekasi"
+    ],
+    "titles": [
+      "Lothlórien Malikasi",
+      "Eldar Donishmandi",
+      "Eregionning Sobiq Hukmdori",
+      "Oq Kengash Aʼzosi"
+    ],
+    "race": "elflar",
+    "sub_race": "Noldor",
+    "culture": "Eldar (Noldor / Vanyar / Teleri sintezi)",
+    "birth_year": "Daraxtlar davri 1362",
+    "weapons_and_artifacts": [
+      "Nenya (Oq Uzuk / Suv Uzugi - Olmos Uzuk)",
+      "Galadriel Koʻzgusi",
+      "Galadriel Billuri (Eärendil nuri shishasi)"
+    ],
+    "primary_locations": [
+      "lothlorien",
+      "tirion",
+      "doriath"
+    ],
+    "adaptations": [
+      {
+        "medium": "film",
+        "title": "The Lord of the Rings Film Trilogy",
+        "creator": "Peter Jackson",
+        "year": 2001,
+        "divergence_notes": "Filmda Galadrielning sinovdan o'tishi va Nenya qudrati qorong'i yashil dahshat effektlari bilan vizual bo'rttirilgan. Kitobda esa bu sahna ko'proq chuqur ichki ruhiy va teologik kurash sifatida tasvirlangan."
+      }
+    ],
+    "sources": [
+      {
+        "book_slug": "the-lord-of-the-rings",
+        "chapter": "The Mirror of Galadriel",
+        "page": "360"
+      },
+      {
+        "book_slug": "the-lord-of-the-rings",
+        "chapter": "Farewell to Lórien",
+        "page": "379"
+      },
+      {
+        "book_slug": "the-lord-of-the-rings",
+        "chapter": "The Grey Havens",
+        "page": "1004"
+      },
+      {
+        "book_slug": "unfinished-tales",
+        "chapter": "The History of Galadriel and Celeborn",
+        "page": "228"
+      },
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Of the Flight of the Noldor",
+        "page": "82"
+      }
+    ],
+    "summary": "Finarfin va Eärwenning qizi, Noldorning eng ulugʻ, goʻzal va donishmand malikasi. Sochlarida Ikki Daraxt nurini jamlagan, Oʻrta-yerda Doriath, Eregion va Lothlórien hukmdori boʻlgan. Uchinchi davrda Nenya uzugi yordamida oʻz sarhadlarini vaqt va yemirilishdan saqlagan, Sauronga qarshi Oq Kengashni tashkil etgan hamda Frodo oldidagi Buyuk Sinovdan oʻtib, Gʻarbga qaytish marhamatiga sazovor boʻlgan muqaddas siymo."
+  },
+  {
+    "slug": "gandalf",
+    "id": "gandalf",
+    "name": "Gandalf",
+    "original_name": "Olórin",
+    "aliases": [
+      "Mithrandir (Kulrang Ziyoratchi)",
+      "Olórin",
+      "Oq Gandalf",
+      "Tharkûn (Mitti tilida)",
+      "Incánus (Janub tilida)",
+      "Oq Chavandoz",
+      "Boʻron Qargʻasi (Stormcrow)"
+    ],
+    "titles": [
+      "Istari (Sehrgarlar) yetakchisi",
+      "Oq Kengash aʼzosi",
+      "Narya (Olov Uzugi) Posboni"
+    ],
+    "race": "ainur",
+    "sub_race": "Maia (Istari)",
+    "culture": "Valinor Maiari",
+    "birth_year": "Dunyodan avval (Ainur Musiqasi)",
+    "death_year": "Boqiy (Uchinchi davr 3021-yilda Gʻarbga suzib ketgan)",
+    "weapons_and_artifacts": [
+      "Glamdring (Gondolin qadimiy qilichi)",
+      "Narya (Uch Elflar Uzugining biri — Olov Uzugi)",
+      "Sehrgar hassasi"
+    ],
+    "primary_locations": [
+      "rivendell",
+      "minas-tirith",
+      "hobbiton",
+      "bree"
+    ],
+    "adaptations": [
+      {
+        "medium": "film",
+        "title": "The Lord of the Rings & The Hobbit Film Trilogies",
+        "creator": "Peter Jackson",
+        "year": 2001,
+        "divergence_notes": "Filmda Sir Ian McKellen gavdalantirgan Gandalf obrazi kitobdagi donishmandlik, olijanoblik va qudratni nihoyatda mukammal ifodalagan. Asosiy tafovut Minas Tirith qamalida: film kengaytirilgan talqinida Jodugar-shoh Gandalfning hassasini sindiradi, kitobda esa bunday sahna yo'q — ular tengma-teng to'qnashuv arafasida turganida Rohirrim karnaylari yangrab jang buriladi."
+      }
+    ],
+    "sources": [
+      {
+        "book_slug": "the-lord-of-the-rings",
+        "chapter": "The Council of Elrond",
+        "page": "239"
+      },
+      {
+        "book_slug": "the-lord-of-the-rings",
+        "chapter": "The White Rider",
+        "page": "488"
+      },
+      {
+        "book_slug": "the-lord-of-the-rings",
+        "chapter": "The Grey Havens",
+        "page": "1002"
+      },
+      {
+        "book_slug": "the-hobbit",
+        "chapter": "An Unexpected Party",
+        "page": "1"
+      },
+      {
+        "book_slug": "unfinished-tales",
+        "chapter": "The Istari",
+        "page": "388"
+      }
+    ],
+    "summary": "Manwë va Nienna xizmatidagi eng donishmand Maia — Olórin. Uchinchi davrning 1000-yillarida Oʻrta-yer xalqlariga Sauronga qarshi kurashda koʻmaklashish uchun Istari (Sehrgarlar) elchisi sifatida joʻnatilgan. Círdandan Olov Uzugi Naryani qabul qilgan. Bilbo va Frodoni buyuk safarlarga ilhomlantirgan, Moria tubsizligida Balrog bilan jangda halok boʻlib, Eru Ilúvatar inoyati bilan Oq Gandalf qiyofasida qayta tirilgan va Halqa Urushida Birlashgan Qirollik tiklanishiga boshchilik qilgan buyuk donishmand."
+  },
+  {
+    "slug": "gil-galad",
+    "id": "gil-galad",
+    "name": "Gil-galad",
+    "original_name": "Ereinion",
+    "aliases": [
+      "Yulduzlar nuri",
+      "Ereinion (Shohlar nasli)",
+      "Finellach"
+    ],
+    "titles": [
+      "Noldorning Soʻnggi Oliy Qiroli",
+      "Lindon Hukmdori",
+      "Eldar Oliy Hukmdori"
+    ],
+    "race": "elflar",
+    "sub_race": "Noldor",
+    "culture": "Lindon Noldori",
+    "birth_year": "Birinchi davr taxm. 450",
+    "death_year": "Ikkinchi davr 3441",
+    "weapons_and_artifacts": [
+      "Aeglos (Qorli Nayza)",
+      "Vilya (Moviy Uzuk / Havo Uzugi)",
+      "Narya (Olov Uzugi)"
+    ],
+    "primary_locations": [
+      "lindon",
+      "beleriand"
+    ],
+    "adaptations": [],
+    "sources": [
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Of the Ruin of Beleriand",
+        "page": "154"
+      },
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Of the Rings of Power and the Third Age",
+        "page": "285"
+      },
+      {
+        "book_slug": "the-lord-of-the-rings",
+        "chapter": "A Knife in the Dark",
+        "page": "189"
+      },
+      {
+        "book_slug": "the-lord-of-the-rings",
+        "chapter": "The Council of Elrond",
+        "page": "245"
+      },
+      {
+        "book_slug": "history-of-middle-earth",
+        "chapter": "The Shibboleth of Fëanor (HoME XII)",
+        "page": "347"
+      }
+    ],
+    "summary": "Oʻrta-yerdagi Noldorning soʻnggi Oliy Qiroli. Birinchi davr halokatidan soʻng Lindon qirolligiga asos solgan, Annatar niqobidagi Sauronni Lindonga kiritmagan va Qudrat Uzuklari sirini fosh etgan. Ikkinchi davr oxirida Insonlar va Elflarning Soʻnggi Ittifoqiga Elendil bilan birga boshchilik qilib, Orodruin etagidagi qahramonona duelda Sauronni qulatgan va oʻzi ham shahid boʻlgan buyuk monarx."
+  },
+  {
+    "slug": "gimli",
+    "id": "gimli",
+    "name": "Gimli",
+    "original_name": "Gimli",
+    "aliases": [
+      "Elf-doʻsti (Elf-friend)",
+      "Yaltiroq Gʻorlar Hukmdori (Lord of the Glittering Caves)",
+      "Qulfposbon (Lockbearer)"
+    ],
+    "titles": [
+      "Uzuk Birodarligi aʼzosi",
+      "Aglarond (Yaltiroq Gʻorlar) Hukmdori"
+    ],
+    "race": "mitti-odamlar",
+    "sub_race": "Durin xalqi (Uzunsoqollar)",
+    "culture": "Erebor / Aglarond",
+    "birth_year": "Uchinchi davr 2879",
+    "death_year": "Boqiy Gʻarbga oʻtgan (Toʻrtinchi davr 120)",
+    "weapons_and_artifacts": [
+      "Ikki tigʻli ogʻir poʻlat bolgʻa va jangovar boltalar",
+      "Galadriel inʼom etgan uch oltin soch tolasi",
+      "Mithril va poʻlat halqali sovut"
+    ],
+    "primary_locations": [
+      "erebor",
+      "helms-deep",
+      "khazad-dum",
+      "lothlorien",
+      "rivendell",
+      "minas-tirith"
+    ],
+    "adaptations": [
+      {
+        "medium": "film",
+        "title": "The Lord of the Rings Film Trilogy",
+        "creator": "Peter Jackson",
+        "year": 2001,
+        "divergence_notes": "Filmda John Rhys-Davies ijro etgan Gimli obrazi kitobdagiga nisbatan ko'proq komik va hazilkash xarakterga burilgan. Kitobda esa Gimli shoirona hissiyotga ega, tosh va me'morchilik san'atini teran tushunuvchi, o'ta jiddiy va o'tkir so'zli shaxs bo'lib, uning Galadriel bilan muloqoti ingliz adabiyotining eng yuksak ritsarlik ehtiromi namunasi hisoblanadi."
+      }
+    ],
+    "sources": [
+      {
+        "book_slug": "the-lord-of-the-rings",
+        "chapter": "The Council of Elrond",
+        "page": "240"
+      },
+      {
+        "book_slug": "the-lord-of-the-rings",
+        "chapter": "Farewell to Lórien",
+        "page": "366"
+      },
+      {
+        "book_slug": "the-lord-of-the-rings",
+        "chapter": "The Road to Isengard",
+        "page": "534"
+      },
+      {
+        "book_slug": "the-lord-of-the-rings",
+        "chapter": "The Battle of the Pelennor Fields",
+        "page": "840"
+      },
+      {
+        "book_slug": "the-lord-of-the-rings",
+        "chapter": "Appendix A: Annals of the Kings and Rulers (III: Durin's Folk)",
+        "page": "1074"
+      }
+    ],
+    "summary": "Glóinning oʻgʻli, Erebor mittisi va Uzuk Birodarligidagi mittilarning yagona munosib vakili. Moria, Helm darasi va Pelennor janglarida tengsiz dovyuraklik koʻrsatgan bahodir. Elflar va Mittilar oʻrtasidagi koʻp asrlik adovatni yoʻqqa chiqarib, Legolas bilan abadiy doʻstlik rishtalarini bogʻlagan va Galadrielning uch oltin soch tolasiga sazovor boʻlgan yagona mitti. Halqa Urushidan soʻng Yaltiroq Gʻorlar (Aglarond) qirolligini barpo etgan va Toʻrtinchi davrda Boqiy Gʻarbga suzib ketgan afsonaviy shaxs."
+  },
+  {
+    "slug": "glaurung",
+    "id": "glaurung",
+    "name": "Glaurung",
+    "original_name": "Glaurung",
+    "aliases": [
+      "Ajdarlar Otasi (Father of Dragons)",
+      "Morgothning Buyuk Chuvalchangi (Great Worm of Morgoth)",
+      "Oltin Chuvalchang"
+    ],
+    "titles": [
+      "Urulóki (Olov-ajdarlar)ning Toʻngʻichi"
+    ],
+    "race": "boshqa",
+    "sub_race": "Qanotsiz olov-ajdar (Urulóki)",
+    "culture": "Angband maxluqlari",
+    "birth_year": "Birinchi Davr (Angband)",
+    "death_year": "B.D. 499 (Cabed-en-Aras)",
+    "weapons_and_artifacts": [
+      "Ajdar afsuni (koʻz qarashi orqali irodani falaj qilish va xotirani oʻchirish qudrati)"
+    ],
+    "primary_locations": [
+      "angband",
+      "nargothrond",
+      "doriath"
+    ],
+    "adaptations": [],
+    "sources": [
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Quenta Silmarillion, 18-bob, 20-bob va 21-bob: \"Túrin Turambar haqida\"",
+        "page": "151"
+      },
+      {
+        "book_slug": "the-children-of-hurin",
+        "chapter": "11-bob: \"Nargothrondning qulashi\" va 16-bob: \"Glaurungning oʻlimi\"",
+        "page": "176"
+      }
+    ],
+    "summary": "Morgoth tomonidan yaratilgan Olovli Ajdarlarning (Urulóki) birinchisi va Ajdarlar Otasi. Qanotsiz boʻlishiga qaramay, olov purkashi va gipnozchi yovuz nigohi bilan Dagor Bragollach hamda Nirnaeth Arnoediad janglarida hal qiluvchi kuch boʻlgan, Nargothrondni vayron qilib, Húrin farzandlari — Túrin va Niënorni fojiali halokatga yetaklagan."
+  },
+  {
+    "slug": "glorfindel",
+    "id": "glorfindel",
+    "name": "Glorfindel",
+    "original_name": "Laurefindil (Glorfindel)",
+    "aliases": [
+      "Laurefindil (Quenya: Oltin Soch)",
+      "Oltin Gul Xonadoni Sardori",
+      "Rivendell Oq Elchisi"
+    ],
+    "titles": [
+      "Gondolinning Oltin Gul Xonadoni Boshligʻi",
+      "Rivendell (Imladris) Bosh Sarkardasi",
+      "Valinorning Qayta Tirilgan Elchisi"
+    ],
+    "race": "elflar",
+    "sub_race": "Noldor (Calaquendi)",
+    "culture": "Tirion / Gondolin / Rivendell",
+    "birth_year": "Daraxtlar davri (Valinor)",
+    "death_year": "Birinchi davr 510 (Cirith Thoronathda Balrog bilan jangda halok boʻlib, Valinorda qayta tirilgan va Oʻrta-yerga qaytgan)",
+    "weapons_and_artifacts": [
+      "Asfaloth (Oq uchqur elf tulpori — Frodoni Bruinen kechuvidan olib oʻtgan)",
+      "Oltin quyosh naqshli qalqon va kumush zirh"
+    ],
+    "primary_locations": [
+      "gondolin",
+      "rivendell",
+      "tirion"
+    ],
+    "adaptations": [
+      {
+        "medium": "film",
+        "title": "The Lord of the Rings: The Fellowship of the Ring",
+        "creator": "Peter Jackson",
+        "year": 2001,
+        "divergence_notes": "Peter Jackson filmida Frodoni Bruinen kechuvida qutqarish vazifasi Glorfindel o'rniga Arwen Undómielga berilgan. Kanonik matnda esa Arwen Rivendellda bo'ladi, Nazgûllarga qarshi shaxsan Glorfindel chiqib, Frodoni o'zining Asfaloth tulporiga mindiradi."
+      }
+    ],
+    "sources": [
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Of Tuor and the Fall of Gondolin",
+        "page": "243"
+      },
+      {
+        "book_slug": "the-fall-of-gondolin",
+        "chapter": "The Fall of Gondolin",
+        "page": "190"
+      },
+      {
+        "book_slug": "the-lord-of-the-rings",
+        "chapter": "Flight to the Ford",
+        "page": "221"
+      },
+      {
+        "book_slug": "the-lord-of-the-rings",
+        "chapter": "Appendix A (Eriador, Arnor, and the Heirs of Isildur)",
+        "page": "1051"
+      },
+      {
+        "book_slug": "history-of-middle-earth",
+        "chapter": "The Peoples of Middle-earth (Last Writings: Glorfindel)",
+        "page": "377"
+      }
+    ],
+    "summary": "Yashirin Gondolin shahridagi Oltin Gul xonadoni sardori. Gondolin qulaganida Cirith Thoronath darasida Tuor va Idril boshchiligidagi qochqinlarni himoya qilib, Balrog bilan yakkama-yakka jangda halok boʻlgan; Valar tomonidan qayta tiriltirilib, Oʻrta-yerga qaytarilgan va Uchinchi davrda Angmar Jodugar-qiroli haqida mashhur bashoratni aytgan hamda Frodo Bagginsni Toʻqqiz Qora Chavandozdan qutqargan ulugʻvor Noldor sarkardasi."
+  },
+  {
+    "slug": "gollum",
+    "id": "gollum",
+    "name": "Gollum",
+    "original_name": "Sméagol (Kuduktuk: Trahald)",
+    "aliases": [
+      "Sméagol",
+      "Trahald (In qazuvchi)",
+      "Gollum",
+      "Slinker va Stinker (Samwise qoʻygan laqab)",
+      "Qadrdonim (Precious) quli"
+    ],
+    "titles": [
+      "Gladden Daryo Xobbiti (sobiq)",
+      "Yagona Uzuk Posboni (478 yil davomida)"
+    ],
+    "race": "xobbitlar",
+    "sub_race": "Stoor (Anduin boʻyi daryo xobbiti)",
+    "culture": "Gladden Dalalari / Tumanli Togʻlar / Mordor",
+    "birth_year": "Uchinchi davr taxminan 2430",
+    "death_year": "Uchinchi davr 3019 (Hukm Togʻi olovida Uzuk bilan birga erib ketgan)",
+    "weapons_and_artifacts": [
+      "Oʻtkir tirnoqlar va tishlar",
+      "Yagona Uzuk (deyarli besh yuz yil asragan)"
+    ],
+    "primary_locations": [
+      "barad-dur",
+      "dead-marshes",
+      "cirith-ungol",
+      "orodruin"
+    ],
+    "adaptations": [
+      {
+        "medium": "film",
+        "title": "The Lord of the Rings & The Hobbit Film Trilogies",
+        "creator": "Peter Jackson",
+        "year": 2002,
+        "divergence_notes": "Andy Serkis tomonidan motion-capture texnologiyasi orqali gavdalantirilgan Gollum kino san'atidagi eng inqilobiy va mukammal obrazlardan biriga aylangan. Film kitobdagi Sméagol va Gollum o'rtasidagi shizoid ziddiyatni vizual jihatdan nihoyatda dahshatli va ayni paytda achinarli darajada aniq gavdalantirgan."
+      }
+    ],
+    "sources": [
+      {
+        "book_slug": "the-hobbit",
+        "chapter": "Riddles in the Dark",
+        "page": "71"
+      },
+      {
+        "book_slug": "the-lord-of-the-rings",
+        "chapter": "The Shadow of the Past",
+        "page": "51"
+      },
+      {
+        "book_slug": "the-lord-of-the-rings",
+        "chapter": "The Taming of Sméagol",
+        "page": "600"
+      },
+      {
+        "book_slug": "the-lord-of-the-rings",
+        "chapter": "Mount Doom",
+        "page": "925"
+      },
+      {
+        "book_slug": "letters-of-jrr-tolkien",
+        "chapter": "Letter 246",
+        "page": "326"
+      }
+    ],
+    "summary": "Anduin daryosi boʻyida yashovchi Stoor xobbitlari qabilasidan boʻlgan Sméagol. 2463-yilda qarindoshi Déagol bilan baliq tutayotib Yagona Uzukni topgan va uni egallash uchun doʻstini boʻgʻib oʻldirgan. Qabiladan quvilgach, Tumanli Togʻlar qaʼridagi zax gʻorlarda qariyb 500 yil yashagan. Uzuk uning vujudini xunuk, oʻrmalovchi maxluq — Gollumga aylantirgan. Bilbo Baggins Uzukni topib olgach, butun Oʻrta-yer boʻylab uni taʼqib qilgan. Halqa Urushida Frodo va Samga Mordor sari yoʻlboshchilik qilgan va Hukm Togʻida Uzuk bilan birga olovga qulab, Ardaning najot topishiga sabab boʻlgan fojiali qahramon."
+  },
+  {
+    "slug": "helm-hammerhand",
+    "id": "helm-hammerhand",
+    "name": "Helm Hammerhand (Bolgʻaqoʻl)",
+    "original_name": "Helm Hammerhand",
+    "aliases": [
+      "Bolgʻaqoʻl (Hammerhand)",
+      "Hornburg arvohi"
+    ],
+    "titles": [
+      "Rohanning Toʻqqizinchi Qiroli (birinchi sulolaning soʻnggi shohi)"
+    ],
+    "race": "insonlar",
+    "sub_race": "Shimol insonlari (Rohirrim)",
+    "culture": "Rohan (Riddermark)",
+    "birth_year": "U.D. 2691",
+    "death_year": "U.D. 2759",
+    "weapons_and_artifacts": [
+      "Helmning buyuk burgʻusi (Horn of Helm Hammerhand)"
+    ],
+    "primary_locations": [
+      "helms-deep",
+      "edoras"
+    ],
+    "adaptations": [],
+    "sources": [
+      {
+        "book_slug": "the-return-of-the-king",
+        "chapter": "Ilova A, II qism: \"Eorl xonadoni\"",
+        "page": "1065"
+      },
+      {
+        "book_slug": "the-two-towers",
+        "chapter": "III kitob, 7-bob: \"Helm Darasi\"",
+        "page": "528"
+      }
+    ],
+    "summary": "Rohanning toʻqqizinchi qiroli va Eorl xonadonining birinchi tarmogʻidagi soʻnggi shoh. Jismoniy qudrati va Uzoq Qish davridagi fojiali qamalda yalang qoʻl bilan dushmanlarni qirib tashlagani tufayli afsonaga aylangan; uning sharafiga Helm Darasi (Helm's Deep) nomlangan."
+  },
+  {
+    "slug": "hurin",
+    "id": "hurin",
+    "name": "Húrin Thalion",
+    "original_name": "Húrin Thalion",
+    "aliases": [
+      "Thalion (Sindarin: Qatʼiyatli, Mustahkam)",
+      "Úmarth (Yomon Qismat — oʻzi tanlagan laqab)"
+    ],
+    "titles": [
+      "Dor-lómin Hukmdori",
+      "Hador Xonadoni Boshligʻi",
+      "Shimol Foniylarining Eng Buyuk Jangchisi"
+    ],
+    "race": "insonlar",
+    "sub_race": "Edain (Hador Xonadoni)",
+    "culture": "Dor-lómin (Hithlum)",
+    "birth_year": "Birinchi davr 441",
+    "death_year": "Birinchi davr ~502 (Gʻarbiy Dengizga oʻzini tashlab halok boʻlgan)",
+    "weapons_and_artifacts": [
+      "Ikki qoʻlli jangovar bolta ('Aurë entuluva!' hayqirigʻi bilan)",
+      "Dor-lómin Ajdar-dubulgʻasi (oilaviy meros)",
+      "Nauglamír marjoni (Nargothrond vayronalaridan olib chiqqan)"
+    ],
+    "primary_locations": [
+      "mithrim",
+      "gondolin",
+      "nargothrond",
+      "menegroth",
+      "beleriand"
+    ],
+    "adaptations": [],
+    "sources": [
+      {
+        "book_slug": "the-children-of-hurin",
+        "chapter": "The Words of Húrin and Morgoth",
+        "page": "61"
+      },
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Of the Fifth Battle: Nirnaeth Arnoediad",
+        "page": "194"
+      },
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Of the Ruin of Doriath",
+        "page": "227"
+      },
+      {
+        "book_slug": "history-of-middle-earth",
+        "chapter": "The War of the Jewels (The Wanderings of Húrin)",
+        "page": "251"
+      }
+    ],
+    "summary": "Hador Xonadonining va Dor-lóminning buyuk hukmdori, Morwenning eri hamda Túrin va Niënorning otasi. Nirnaeth Arnoediad jangida Turgon chekinishini himoya qilib, yolgʻiz oʻzi yetmish nafar troll va orqni bolta bilan qirib tashlagan, Morgothga boʻysunishdan bosh tortib 28 yil Thangorodrim choʻqqisidagi tosh kursiga bogʻlab qoʻyilgan eng jasur foniy jangchi."
+  },
+  {
+    "slug": "idril",
+    "id": "idril",
+    "name": "Idril Celebrindal",
+    "original_name": "Itarillë (Itarildë)",
+    "aliases": [
+      "Celebrindal (Sindarin: Kumush Oyoq)",
+      "Itarillë (Quenya: Chaqnoq Yorqinlik)",
+      "Itarilda"
+    ],
+    "titles": [
+      "Gondolin Malikasi va Vorisi",
+      "Sirion Bandargohi Xonimasi"
+    ],
+    "race": "elflar",
+    "sub_race": "Noldor (Vanyar qoni bilan)",
+    "culture": "Gondolin",
+    "birth_year": "Daraxtlar davri",
+    "death_year": "Boqiy (Birinchi davr ~525-yilda Tuor bilan Gʻarbga suzib ketgan)",
+    "weapons_and_artifacts": [
+      "Elessar zumrad toshi (Birinchi davr nishoni — oʻgʻli Eärendilga topshirgan)",
+      "Idrilning Maxfiy Yoʻli (Gondolin togʻlari ostidagi najot lahmasi)"
+    ],
+    "primary_locations": [
+      "gondolin",
+      "tirion",
+      "beleriand"
+    ],
+    "adaptations": [],
+    "sources": [
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Of Maeglin",
+        "page": "136"
+      },
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Of Tuor and the Fall of Gondolin",
+        "page": "241"
+      },
+      {
+        "book_slug": "the-fall-of-gondolin",
+        "chapter": "The Fall of Gondolin",
+        "page": "160"
+      },
+      {
+        "book_slug": "unfinished-tales",
+        "chapter": "Of Tuor and His Coming to Gondolin",
+        "page": "17"
+      },
+      {
+        "book_slug": "unfinished-tales",
+        "chapter": "The History of Galadriel and Celeborn (The Elessar)",
+        "page": "249"
+      },
+      {
+        "book_slug": "the-war-of-the-jewels",
+        "chapter": "The Tale of Years",
+        "page": "346"
+      }
+    ],
+    "summary": "Gondolin qiroli Turgon va Vanyar xonadoniga mansub Elenwëning yagona qizi, uzoqni koʻra biluvchi benazirligi va donoligi bilan tanilgan Noldor malikasi. Insonlar qahramoni Huor oʻgʻli Tuorga turmushga chiqib, Elflar va Insonlar oʻrtasidagi ikkinchi buyuk ittifoqni bogʻlagan, boʻlajak qutqaruvchi Eärendilni dunyoga keltirgan. Oʻzining teran bashorati tufayli oldindan qazdirgan yerosti Maxfiy Yoʻli orqali Gondolin fojiasida oʻz xalqining qolgan qismini halokatdan saqlab qolgan va keyinchalik sevimli umr yoʻldoshi Tuor bilan birga Boqiy Gʻarb tomon suzib ketgan."
+  },
+  {
+    "slug": "indis",
+    "id": "indis",
+    "name": "Indis Goʻzal",
+    "original_name": "Indis",
+    "aliases": [
+      "Indis the Fair (Goʻzal Indis)",
+      "Noldor Oliy Malikasi",
+      "Vanyar Malikasi"
+    ],
+    "titles": [
+      "Noldor Oliy Malikasi",
+      "Tirion Qirolichasi",
+      "Vanyar Oliyxonimi"
+    ],
+    "race": "elflar",
+    "sub_race": "Vanyar",
+    "culture": "Taniquetil (Vanyar) / Tirion (Noldor)",
+    "birth_year": "Daraxtlar davri",
+    "death_year": "Boqiy (Valinordagi Vanyar xalqi orasida yashaydi)",
+    "weapons_and_artifacts": [],
+    "primary_locations": [
+      "tirion"
+    ],
+    "adaptations": [],
+    "sources": [
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Of Eldamar and the Princes of the Eldalië",
+        "page": "59-63"
+      },
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Of Fëanor and the Unchaining of Melkor",
+        "page": "64-68"
+      },
+      {
+        "book_slug": "morgoths-ring",
+        "chapter": "Laws and Customs among the Eldar",
+        "page": "207-254"
+      },
+      {
+        "book_slug": "the-peoples-of-middle-earth",
+        "chapter": "The Shibboleth of Fëanor",
+        "page": "331-366"
+      }
+    ],
+    "summary": "Vanyar Oliy Qiroli Ingwëning yaqin qarindoshi, oʻzining tengsiz goʻzalligi, oltin sochlari va yuksak qaddi-qomati bilan tanilgan Vanyar malikasi. Míriel Þerindë vafotidan soʻng Noldor Oliy Qiroli Finwëning ikkinchi rafiqasiga aylangan. Fingolfin, Finarfin, Findis va Írimëning onasi boʻlib, uning vujudi orqali Vanyar qoni va Ikki Daraxt nurini eslatuvchi oltin sochlar sulolaga (xususan Finarfin va Galadrielga) oʻtgan."
+  },
+  {
+    "slug": "isildur",
+    "id": "isildur",
+    "name": "Isildur",
+    "original_name": "Isildur",
+    "aliases": [
+      "Uzukni kesib olgan Shoh",
+      "Minas Ithil Hukmdori",
+      "Arnor va Gondor Oliy Shohi"
+    ],
+    "titles": [
+      "Gondor Ham-qiroli (ukasi Anárion bilan)",
+      "Arnor va Gondor Birlashgan Qirolligi Oliy Shohi (2-shoh)",
+      "Minas Ithil Asoschisi"
+    ],
+    "race": "insonlar",
+    "sub_race": "Dúnedain (Númenórean)",
+    "culture": "Númenor / Gondor / Arnor",
+    "birth_year": "Ikkinchi davr 3209 (Númenor)",
+    "death_year": "Uchinchi davr 2 (Gladden Dalalari qirgʻinida orqlar tomonidan oʻldirilgan)",
+    "weapons_and_artifacts": [
+      "Singan Narsil qilichi parchasi (Sauron barmogʻini kesgan tigʻ)",
+      "Yagona Uzuk (qisqa muddat saqlagan)",
+      "Oq Daraxt koʻchati (Minas Anorga ekkan)",
+      "Elendilmir (Shimol Yulduzi toji)"
+    ],
+    "primary_locations": [
+      "minas-tirith"
+    ],
+    "adaptations": [
+      {
+        "medium": "film",
+        "title": "The Lord of the Rings: The Fellowship of the Ring",
+        "creator": "Peter Jackson",
+        "year": 2001,
+        "divergence_notes": "Film muqaddimasida Harry Sinclair gavdalantirgan Isildur Orodruin krateri ichida Elrond unga 'Cast it into the fire! Destroy it!' deb hayqirganida, 'No' deb orqasiga o'girilib ketadi. Tolkien kitobida bunday krater ichidagi drama bo'lmagan: Elrond va Círdan Isildurga janggohning o'zidayoq maslahat berishgan, ammo Isildur Uzukni otasi va ukasining o'limi uchun qonuniy tovon sifatida o'zida olib qolgan."
+      }
+    ],
+    "sources": [
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Akallabêth: The Downfall of Númenor",
+        "page": "262"
+      },
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Of the Rings of Power and the Third Age",
+        "page": "294"
+      },
+      {
+        "book_slug": "the-lord-of-the-rings",
+        "chapter": "The Council of Elrond",
+        "page": "244"
+      },
+      {
+        "book_slug": "unfinished-tales",
+        "chapter": "The Disaster of the Gladden Fields",
+        "page": "271"
+      }
+    ],
+    "summary": "Elendilning toʻngʻich oʻgʻli, Minas Ithil (keyinchalik Minas Morgul) asoschisi va Gondor qiroli. Yigitlik chogʻida Númenorda shoh Ar-Pharazôn buyrugʻi bilan yoqib yuborilish arafasida turgan muqaddas Oq Daraxt mevasini qahramonona oʻgʻirlab qutqargan. Soʻnggi Ittifoq urushida otasining singan Narsil qilichi bilan Sauronning barmogʻidan Yagona Uzukni kesib olgan. Biroq Elrondning maslahatiga quloq solmasdan, Uzukni oʻzida saqlab qolgan. Uchinchi davrning 2-yilida Gladden Dalalarida orqlar pistirmasida halok boʻlgan fojiali shoh."
+  },
+  {
+    "slug": "legolas",
+    "id": "legolas",
+    "name": "Legolas Greenleaf",
+    "original_name": "Legolas (Sindarin)",
+    "aliases": [
+      "Legolas Yashilyaproq (Greenleaf)",
+      "Oʻrmon Kamonchisi",
+      "Ithilien Elflari Sardori"
+    ],
+    "titles": [
+      "Katta Yashil Oʻrmon (Mirkwood) Shahzodasi",
+      "Uzuk Birodarligi aʼzosi",
+      "Ithilien Elflari Yoʻlboshchisi"
+    ],
+    "race": "elflar",
+    "sub_race": "Sindar",
+    "culture": "Mirkwood (Buyuk Yashil Oʻrmon) / Ithilien",
+    "birth_year": "Uchinchi davr (aniq yili manbalarda koʻrsatilmagan)",
+    "death_year": "Boqiy Gʻarbga oʻtgan (Toʻrtinchi davr 120)",
+    "weapons_and_artifacts": [
+      "Galadhrim uzun kamoni va kumush oʻqlar",
+      "Mirkwood kalta oʻrmon kamoni",
+      "Oq poʻlat elflar pichogʻi"
+    ],
+    "primary_locations": [
+      "rivendell",
+      "minas-tirith"
+    ],
+    "adaptations": [
+      {
+        "medium": "film",
+        "title": "The Lord of the Rings & The Hobbit Film Trilogies",
+        "creator": "Peter Jackson",
+        "year": 2001,
+        "divergence_notes": "Filmda Orlando Bloom ijro etgan Legolas mislsiz akrobatik harakatlari (qalqonda sirpanish, ulkan mumakil ustidan sakrash) bilan tomoshabinlar olqishiga sazovor bo'lgan. Kitobda Legolas jismoniy tryuklardan ko'ra ko'proq ruhiy xotirjamlik, poetik qo'shiqlar va tabiat hissi bilan ajralib turuvchi chuqur obrazdir."
+      }
+    ],
+    "sources": [
+      {
+        "book_slug": "the-lord-of-the-rings",
+        "chapter": "The Council of Elrond",
+        "page": "241"
+      },
+      {
+        "book_slug": "the-lord-of-the-rings",
+        "chapter": "The Great River",
+        "page": "379"
+      },
+      {
+        "book_slug": "the-lord-of-the-rings",
+        "chapter": "The Passing of the Grey Company",
+        "page": "766"
+      },
+      {
+        "book_slug": "the-lord-of-the-rings",
+        "chapter": "The Field of Cormallen",
+        "page": "934"
+      },
+      {
+        "book_slug": "the-lord-of-the-rings",
+        "chapter": "Appendix A: Annals of the Kings and Rulers (III: Durin's Folk)",
+        "page": "1074"
+      }
+    ],
+    "summary": "Mirkwood qiroli Thranduilning oʻgʻli, Sindar shahzodasi va Uzuk Birodarligidagi elflarning yagona elchisi. Oʻzining beqiyos uzoqni koʻrish qobiliyati, tovushsiz yengil qadamlari va mislsiz kamonbozligi bilan mashhur. Moria, Helm darasi va Pelennor janglarida mardona jang qilgan. Mitti Gimli bilan oʻrtasidagi tarixiy adovatni sindirib, abadiy birodarlik oʻrnatgan. Halqa Urushidan soʻng Ithilienda goʻzal elflar oʻlkasiga asos solgan va Toʻrtinchi davrda Gimli bilan birga Boqiy Gʻarbga suzib ketgan."
+  },
+  {
+    "slug": "luthien",
+    "id": "luthien",
+    "name": "Lúthien Tinúviel",
+    "original_name": "Lúthien Tinúviel",
+    "aliases": [
+      "Tinúviel (Gʻira-shira Qizi / Bulbul)",
+      "Lúthien (Sehrlovchi Gul)",
+      "Thúringwethil (Qiyofa niqobi sifatida)"
+    ],
+    "titles": [
+      "Doriath Malika Qizi",
+      "Ilúvatar Farzandlarining Eng Goʻzali"
+    ],
+    "race": "elflar",
+    "sub_race": "Sindar / Yarim-Maia (Keyinchalik foniy)",
+    "culture": "Doriath (Menegroth)",
+    "birth_year": "Daraxtlar davri YT 1200",
+    "death_year": "Birinchi davr ~503 (Ikkinchi bor foniy sifatida vafot etgan)",
+    "weapons_and_artifacts": [
+      "Sehrli uxlatuvchi qora soch ridolari",
+      "Silmaril va Nauglamír marjoni (Tol Galen davrida)"
+    ],
+    "primary_locations": [
+      "menegroth",
+      "doriath",
+      "nargothrond",
+      "beleriand"
+    ],
+    "adaptations": [],
+    "sources": [
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Of Beren and Lúthien",
+        "page": "162"
+      },
+      {
+        "book_slug": "beren-and-luthien",
+        "chapter": "The Tale of Tinúviel & The Lay of Leithian",
+        "page": "27"
+      },
+      {
+        "book_slug": "the-lord-of-the-rings",
+        "chapter": "A Knife in the Dark",
+        "page": "191"
+      },
+      {
+        "book_slug": "letters-of-jrr-tolkien",
+        "chapter": "Letter 340 (To Christopher Tolkien, 11 July 1972)",
+        "page": "420"
+      }
+    ],
+    "summary": "Doriath qiroli Thingol va Maia Melianning yagona qizi, olamda yaralgan barcha Elflar va Insonlar ichida eng goʻzali. Foniy inson Berenga koʻngil qoʻyib, Tol-in-Gaurhothda Sauronni, Angbandda esa Morgothning oʻzini sehrli qoʻshigʻi bilan uxlatgan hamda sevgilisi uchun boqiylikdan voz kechib, foniylik qismatini tanlagan afsonaviy qahramon."
+  },
+  {
+    "slug": "maedhros",
+    "id": "maedhros",
+    "name": "Maedhros Baland",
+    "original_name": "Maitimo (Nelyafinwë)",
+    "aliases": [
+      "Nelyafinwë (Quenya: Uchinchi Finwë)",
+      "Maitimo (Kelishgan qomatli)",
+      "Russandol (Mis-qizil boshli)",
+      "Erchamion (Bir qoʻlli)"
+    ],
+    "titles": [
+      "Fëanor Xonadoni Boshligʻi",
+      "Himring va Sharqiy Chegaralar Hukmdori",
+      "Maedhros Ittifoqi Asoschisi"
+    ],
+    "race": "elflar",
+    "sub_race": "Noldor",
+    "culture": "Tirion / Himring",
+    "birth_year": "Daraxtlar davri",
+    "death_year": "Birinchi davr 587 (Silmaril bilan birga olovli jarlikka oʻzini tashlagan)",
+    "weapons_and_artifacts": [
+      "Silmaril (Birinchi davr yakunida Eönwë qarorgohidan olib qochilgan)",
+      "Himring qilichi (chap qoʻlda tutilgan)"
+    ],
+    "primary_locations": [
+      "formenos",
+      "mithrim",
+      "tirion",
+      "beleriand"
+    ],
+    "adaptations": [],
+    "sources": [
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Of the Flight of the Noldor",
+        "page": "83"
+      },
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Of the Return of the Noldor",
+        "page": "110"
+      },
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Of the Fifth Battle: Nirnaeth Arnoediad",
+        "page": "188"
+      },
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Of the Voyage of Eärendil and the War of Wrath",
+        "page": "253"
+      }
+    ],
+    "summary": "Fëanor va Nerdanelning yetti oʻgʻlining toʻngʻichi, mis-qizil sochli buyuk sarkarda va diplomat. Fingon tomonidan Thangorodrimdan qutqarilgach, Noldor Oliy Qirolligi tojidan amakisi Fingolfin foydasiga voz kechgan, Himring tepaligini qahramonlarcha mudofaa qilgan, biroq otasining mudhish Qasamyodi tufayli fojiali yakunga uchragan shahzoda."
+  },
+  {
+    "slug": "maeglin",
+    "id": "maeglin",
+    "name": "Maeglin",
+    "original_name": "Lómion (Maeglin)",
+    "aliases": [
+      "Lómion (Quenya: Gʻira-shira Farzandi — onasi bergan ism)",
+      "Maeglin (Sindarin: Oʻtkir Nigoh — otasi bergan ism)"
+    ],
+    "titles": [
+      "Gondolin Shahzodasi",
+      "Koʻrshapalak (Mole) Xonadoni Sardori"
+    ],
+    "race": "elflar",
+    "sub_race": "Sindar / Noldor",
+    "culture": "Nan Elmoth / Gondolin",
+    "birth_year": "Birinchi davr ~320",
+    "death_year": "Birinchi davr 510 (Gondolin devorlaridan Tuor tomonidan uloqtirilgan)",
+    "weapons_and_artifacts": [
+      "Anguirel (Eöl meteorit temiridan yasagan qora qilich — Anglachelning egizagi)"
+    ],
+    "primary_locations": [
+      "gondolin",
+      "beleriand"
+    ],
+    "adaptations": [],
+    "sources": [
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Of Maeglin",
+        "page": "132"
+      },
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Of Tuor and the Fall of Gondolin",
+        "page": "242"
+      },
+      {
+        "book_slug": "the-fall-of-gondolin",
+        "chapter": "The Fall of Gondolin",
+        "page": "165"
+      }
+    ],
+    "summary": "Qorongʻi Elf Eöl va Fingolfin qizi Aredhelning oʻgʻli, Gondolin qiroli Turgonning jiyani. Togʻ maʼdanlarini topishda tengsiz usta va qudratli jangchi boʻlishiga qaramay, amakivachchasi Idrilga boʻlgan javobsiz ehtirosi hamda Tuorga hasadi oqibatida Morgothga yashirin Gondolinning joylashuvini sotgan mashʼum xoin."
+  },
+  {
+    "slug": "maglor",
+    "id": "maglor",
+    "name": "Maglor",
+    "original_name": "Kanafinwë Macalaurë",
+    "aliases": [
+      "Macalaurë (Quenya: Oltin Zarb Qiluvchi)",
+      "Kanafinwë (Baland Ovozli Finwë)",
+      "Noldorning Eng Buyuk Baxshisi"
+    ],
+    "titles": [
+      "Maglor Darasi (Maglor's Gap) Hukmdori",
+      "Fëanorning Ikkinchi Oʻgʻli",
+      "Noldollantë Muallifi"
+    ],
+    "race": "elflar",
+    "sub_race": "Noldor",
+    "culture": "Tirion / Sharqiy Beleriand",
+    "birth_year": "Daraxtlar davri",
+    "death_year": "Nomaʼlum (Dengiz qirgʻoqlari boʻylab mangu sarson kuylab yuradi)",
+    "weapons_and_artifacts": [
+      "Oltin arfa",
+      "Silmaril (Dengizga uloqtirilgan)"
+    ],
+    "primary_locations": [
+      "tirion",
+      "formenos",
+      "beleriand"
+    ],
+    "adaptations": [],
+    "sources": [
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Of the Flight of the Noldor",
+        "page": "87"
+      },
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Of the Voyage of Eärendil and the War of Wrath",
+        "page": "247"
+      }
+    ],
+    "summary": "Fëanor va Nerdanelning ikkinchi oʻgʻli, onasining yumshoq koʻnglini meros qilib olgan va butun Oʻrta-yerda Dairondan keyin ikkinchi oʻrinda turuvchi buyuk qoʻshiqchi va shoir. Sirion qirgʻinidan soʻng Elrond va Elrosni asrab olib tarbiyalagan hamda oxirida Silmarilni dengizga uloqtirib, qirgʻoqlar boʻylab abadiy tavba qoʻshigʻini kuylab ketgan yagona tirik qolgan Fëanor oʻgʻli."
+  },
+  {
+    "slug": "mandos",
+    "id": "mandos",
+    "name": "Mandos (Námo)",
+    "original_name": "Námo",
+    "aliases": [
+      "Námo (Asl ismi: Hukm Qiluvchi)",
+      "Mandos (Istiqomatgohi nomi bilan)",
+      "Bannoth"
+    ],
+    "titles": [
+      "Taqdirlar Hukmdori",
+      "Oʻliklar Uyi Qoʻriqchisi",
+      "Valar Bosh Maslahatchisi va Hakami",
+      "Aratar Aʼzosi"
+    ],
+    "race": "ainur",
+    "sub_race": "Vala (Aratar / Fëanturi)",
+    "culture": "Valinor (Mandos Zallari)",
+    "birth_year": "Zamon yaralishidan avval",
+    "death_year": "Boqiy (Arda yakunigacha)",
+    "weapons_and_artifacts": [
+      "Mandos Zallari (Vairë gobelenlari bilan qoplangan kutish maskani)"
+    ],
+    "primary_locations": [
+      "tirion",
+      "alqualonde"
+    ],
+    "adaptations": [],
+    "sources": [
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Valaquenta",
+        "page": "28"
+      },
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Of the Flight of the Noldor",
+        "page": "88"
+      },
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Of Beren and Lúthien",
+        "page": "186"
+      },
+      {
+        "book_slug": "beren-and-luthien",
+        "chapter": "The Lay of Leithian",
+        "page": "210"
+      }
+    ],
+    "summary": "Fëanturi (Ruhlar Xoʻjayinlari) birodarlarining kattasi, Valinorning gʻarbiy qirgʻogʻidagi Kutish Zallari sohibi va Arda taqdirlarining qatʼiy jarchisi. Hech narsani unutmaydigan, Eru Ilúvatarning irodasidan tashqari kelajakning barcha hukmlarini biladigan va Fëanor xonadoniga 'Shimol Bashorati'ni oʻqigan Vala."
+  },
+  {
+    "slug": "manwe",
+    "id": "manwe",
+    "name": "Manwë Súlimo",
+    "original_name": "Manwë Súlimo",
+    "aliases": [
+      "Súlimo (Arda Nafasi Hukmdori)",
+      "Mánawenúz",
+      "Keksa Qirol (The Elder King)"
+    ],
+    "titles": [
+      "Arda Oliy Qiroli",
+      "Valar Hukmdori",
+      "Shamollar va Havo Tangrisi",
+      "Taniquetil Sohibi"
+    ],
+    "race": "ainur",
+    "sub_race": "Vala (Aratar)",
+    "culture": "Valinor / Ainur",
+    "birth_year": "Zamon yaralishidan avval (Timeless Halls)",
+    "death_year": "Boqiy (Arda yakunigacha)",
+    "weapons_and_artifacts": [
+      "Sapfir hassasi (Noldor ustalari yasagan)",
+      "Koʻk rido va Ilmarinen toji"
+    ],
+    "primary_locations": [
+      "tirion"
+    ],
+    "adaptations": [],
+    "sources": [
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Valaquenta",
+        "page": "26"
+      },
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Of the Beginning of Days",
+        "page": "35"
+      },
+      {
+        "book_slug": "unfinished-tales",
+        "chapter": "The Istari",
+        "page": "393"
+      }
+    ],
+    "summary": "Arda olamining Oliy Qiroli va Valar kengashining rahbari, Melkorning Eru Ilúvatar ongida egizak birodari sifatida yaralgan eng ulugʻvor Vala. Taniquetil choʻqqisidagi Ilmarin saroyidan turib Varda bilan birga butun Arda ustidan nazorat qiluvchi, havo, shamollar va burgutlar homiysi."
+  },
+  {
+    "slug": "melian",
+    "id": "melian",
+    "name": "Melian",
+    "original_name": "Melian",
+    "aliases": [
+      "Melyanna (Quenya: Aziz Tuhfa)",
+      "Doriath Malikasi",
+      "Bulbullar Xonimasi"
+    ],
+    "titles": [
+      "Doriath Malikasi",
+      "Sindar Oliy Malikasi",
+      "Vána va Estëning Maia ruhi"
+    ],
+    "race": "ainur",
+    "sub_race": "Maia",
+    "culture": "Valinor / Doriath (Sindar)",
+    "birth_year": "Zamon yaralishidan avval",
+    "death_year": "Boqiy (Birinchi davr 502-yilda Valinorga qaytgan)",
+    "weapons_and_artifacts": [
+      "Melian Kamari (Doriathni oʻrab turgan koʻrinmas sehrli himoya devori)",
+      "Lembas (yoʻl noni) tayyorlash siri"
+    ],
+    "primary_locations": [
+      "menegroth",
+      "doriath",
+      "beleriand"
+    ],
+    "adaptations": [],
+    "sources": [
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Of Thingol and Melian",
+        "page": "55"
+      },
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Of the Sindar",
+        "page": "91"
+      },
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Of the Ruin of Doriath",
+        "page": "231"
+      },
+      {
+        "book_slug": "beren-and-luthien",
+        "chapter": "Of Beren and Lúthien",
+        "page": "35"
+      }
+    ],
+    "summary": "Vána va Estëga xizmat qilgan donishmand va goʻzal Maia ruhi. Belerianddagi Nan Elmoth oʻrmonida Elflar qiroli Elwë (Thingol)ga koʻngil qoʻyib, oʻz ilohiy qonini Elflar va Insonlar nasliga qoʻshgan yagona Ainu; Doriath qirolligi va mashhur 'Melian Kamari' asoschisi, Lúthienning onasi."
+  },
+  {
+    "slug": "melkor",
+    "id": "melkor",
+    "name": "Melkor",
+    "original_name": "Melkor",
+    "aliases": [
+      "Morgoth Bauglir",
+      "Dunyoning Qora Dushmani",
+      "Belegurth (Buyuk Oʻlim)",
+      "Zulmat Hukmdori",
+      "Birinchi Qora Hukmdor",
+      "Angband Shohi"
+    ],
+    "titles": [
+      "Eng ulugʻ Vala (isyonidan avval)",
+      "Utumno va Angband Hukmdori",
+      "Dunyoning Qora Podshohi"
+    ],
+    "race": "ainur",
+    "sub_race": "Vala",
+    "culture": "Valar / Utumno / Angband",
+    "birth_year": "Dunyodan avval (Ainur Musiqasi)",
+    "death_year": "Birinchi davr 590 (Gʻazab Urushidan soʻng Dunyoviy Boʻshliq — Kúmaga uloqtirilgan)",
+    "weapons_and_artifacts": [
+      "Grond (Yerosti Dunyosi Bolgʻasi)",
+      "Uch Silmaril oʻrnatilgan Temir Toj",
+      "Qora Qalqon va Nayza"
+    ],
+    "primary_locations": [
+      "formenos",
+      "tirion"
+    ],
+    "adaptations": [],
+    "sources": [
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Ainulindalë: The Music of the Ainur",
+        "page": "15"
+      },
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Valaquenta: Account of the Valar and Maiar",
+        "page": "25"
+      },
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Of the Flight of the Noldor",
+        "page": "82"
+      },
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Of the Ruin of Beleriand and the Fall of Fingolfin",
+        "page": "150"
+      },
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Of the Voyage of Eärendil and the War of Wrath",
+        "page": "246"
+      }
+    ],
+    "summary": "Eru Ilúvatar yaratgan eng buyuk, qudratli va donishmand Ainur — Melkor. Ainur Musiqasida oʻz xudbin niyatlari bilan uygʻunlikni buzib, isyon koʻtargan. Arda yaratilgach, Valarga qarshi tinimsiz urush ochgan. Utumno va Angband yerosti qalʼalarini barpo etib, oʻrklar, trollar, balroglar va ajdarlarni yaratgan. Ungoliant bilan Ikki Daraxtni quritib, Silmarillarni oʻgʻirlagan va Finwëni qatl etgan. Fëanor unga 'Morgoth' deb laqab bergan. Birinchi davr oxirida Gʻazab Urushida Valar va Eldar qoʻshini tomonidan batamom tor-mor etilib, Dunyo Boʻshligʻiga uloqtirilgan."
+  },
+  {
+    "slug": "meriadoc-brandybuck",
+    "id": "meriadoc-brandybuck",
+    "name": "Meriadok Brendibak (Merri)",
+    "original_name": "Meriadoc Brandybuck (Kalimac Brandagamba)",
+    "aliases": [
+      "Merri",
+      "Aqlli Meriadok",
+      "Holdvayn (Rohan markasi ritsari)",
+      "Buckland xoʻjayini"
+    ],
+    "titles": [
+      "Uzuk Birodarligi aʼzosi",
+      "Buckland hukmdori (Master of Buckland)",
+      "Riddermark (Rohan) ritsari",
+      "Shimoliy Shohlik maslahatchisi"
+    ],
+    "race": "xobbitlar",
+    "sub_race": "Fallohayd va Stoor aralash avlodi",
+    "culture": "Shayr va Buckland xobbitlari",
+    "birth_year": "U.D. 2982",
+    "death_year": "T.D. 63 dan keyin (Gondorda dafn etilgan)",
+    "weapons_and_artifacts": [
+      "Gʻarbqoʻrgʻon (Barrow-downs) xanjari (Angmar Jodugar-qirolini yaralagan qadimgi Arnor tigʻi)",
+      "Eorl xonadonining kumush burgʻusi (Eowyn tomonidan sovgʻa qilingan)"
+    ],
+    "primary_locations": [
+      "the-shire",
+      "rivendell",
+      "fangorn",
+      "edoras",
+      "minas-tirith"
+    ],
+    "adaptations": [],
+    "sources": [
+      {
+        "book_slug": "the-fellowship-of-the-ring",
+        "chapter": "I kitob, 5-bob (Fosh etilgan fitna)",
+        "page": "98"
+      },
+      {
+        "book_slug": "the-two-towers",
+        "chapter": "III kitob, 4-bob (Daraxtsaqol)",
+        "page": "462"
+      },
+      {
+        "book_slug": "the-return-of-the-king",
+        "chapter": "V kitob, 6-bob (Pelennor tekisliklari jangi) va Ilova F",
+        "page": "841"
+      }
+    ],
+    "summary": "Frodo Begginsning yaqin qarindoshi va sodiq doʻsti, Uzuk Birodarligi aʼzosi hamda Rohan qiroli Teodenning qurolbardori. Pelennor tekisliklari jangida malika Eovin bilan birga Angmar Jodugar-qirolini mahv etishda hal qiluvchi rol oʻynagan va keyinchalik Shayr tarixi boʻyicha yirik ilmiy risolalar yozgan."
+  },
+  {
+    "slug": "miriel",
+    "id": "miriel",
+    "name": "Míriel Þerindë",
+    "original_name": "Míriel Þerindë",
+    "aliases": [
+      "Þerindë (Serindë — Kashtachi)",
+      "Fíriel (Oh tortib jon bergan)",
+      "Míriel Serindë"
+    ],
+    "titles": [
+      "Noldorning Birinchi Malikasi",
+      "Vairë Toʻquvchining Bosh Yordamchisi"
+    ],
+    "race": "elflar",
+    "sub_race": "Noldor",
+    "culture": "Tirion / Mandos Zallari",
+    "birth_year": "Daraxtlar davri",
+    "death_year": "Daraxtlar davri YT 1170 (Lórien bogʻlarida ruhi tanasini tark etgan; keyinchalik tanasiga qaytgan)",
+    "weapons_and_artifacts": [
+      "Finwë Xonadoni Tarixi Gobelenlari (Mandos Zallarida toʻqilgan)",
+      "Mírielning kumush ignalari va toʻquv dastgohi"
+    ],
+    "primary_locations": [
+      "tirion"
+    ],
+    "adaptations": [],
+    "sources": [
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Of Fëanor and the Unchaining of Melkor",
+        "page": "63"
+      },
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Of the Sun and Moon and the Hiding of Valinor",
+        "page": "102"
+      },
+      {
+        "book_slug": "morgoths-ring",
+        "chapter": "Laws and Customs among the Eldar",
+        "page": "205"
+      },
+      {
+        "book_slug": "the-peoples-of-middle-earth",
+        "chapter": "The Shibboleth of Fëanor",
+        "page": "333"
+      }
+    ],
+    "summary": "Noldor Oliy Qiroli Finwëning birinchi umr yoʻldoshi va afsonaviy Fëanorning onasi, butun Eldamar boʻyicha tengsiz toʻquvchi va nafis kashtadoʻz. Yagona farzandi Fëanorni dunyoga keltirish jarayonida butun jismoniy (hröa) va ruhiy (fëa) quvvatini sarflab, Boqiy Valinor zaminida oʻz ixtiyori bilan tanasini tark etgan ilk elf. Uning oʻlimi va Mandosdan qaytishni istamasligi Valar oʻrtasida buyuk teologik munozaraga va 'Finwë Hukmi'ning qabul qilinishiga sabab boʻlgan, bu esa Noldor xonadonining boʻlinishi va keyingi fojealarning poydevorini qoʻygan."
+  },
+  {
+    "slug": "morwen",
+    "id": "morwen",
+    "name": "Morwen Eledhwen",
+    "original_name": "Morwen Eledhwen",
+    "aliases": [
+      "Eledhwen (Sindarin: Elf Nuri / Elfdek Goʻzal)",
+      "Dor-lómin Xonimasi"
+    ],
+    "titles": [
+      "Dor-lómin Malikasi",
+      "Bëor Xonadoni Aslzodasi"
+    ],
+    "race": "insonlar",
+    "sub_race": "Edain (Bëor Xonadoni)",
+    "culture": "Dor-lómin / Doriath",
+    "birth_year": "Birinchi davr 443",
+    "death_year": "Birinchi davr 500 (Cabed-en-Arasda Húrin qoʻlida vafot etgan; Tol Morwen toshi ostida qolgan)",
+    "weapons_and_artifacts": [
+      "Dor-lómin Ajdar-dubulgʻasi (oʻgʻli Túringa Doriathga yuborgan)",
+      "Tol Morwen yodgorlik toshi"
+    ],
+    "primary_locations": [
+      "mithrim",
+      "menegroth",
+      "doriath",
+      "beleriand"
+    ],
+    "adaptations": [],
+    "sources": [
+      {
+        "book_slug": "the-children-of-hurin",
+        "chapter": "The Departure of Túrin",
+        "page": "66"
+      },
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Of Túrin Turambar",
+        "page": "198"
+      },
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Of the Ruin of Doriath",
+        "page": "228"
+      }
+    ],
+    "summary": "Bëor Xonadonining Baragund naslidan boʻlgan magʻrur va sohibjamol ayol, Berenning amakivachchasi, Húrinning sodiq umr yoʻldoshi hamda Túrin va Niënorning onasi. Nirnaeth Arnoediaddan keyin bosib olingan Dor-lóminda Sharqlik bosqinchilarga bosh egmay, oʻgʻli Túrinni Doriathga joʻnatgan va umrining oxirida farzandlari qabri ustida eri Húrin bilan uchrashib jon bergan."
+  },
+  {
+    "slug": "nerdanel",
+    "id": "nerdanel",
+    "name": "Nerdanel Dono",
+    "original_name": "Nerdanel",
+    "aliases": [
+      "Nerdanel the Wise (Dono Nerdanel)",
+      "Istarnië (Dono, bilimdon ayol)"
+    ],
+    "titles": [
+      "Fëanorning Umr Yoʻldoshi",
+      "Yetti Shahzoda Onasi",
+      "Valinorning Buyuk Haykaltaroshi"
+    ],
+    "race": "elflar",
+    "sub_race": "Noldor",
+    "culture": "Tirion / Valinor",
+    "birth_year": "Daraxtlar davri",
+    "death_year": "Boqiy (Valinorda qolgan)",
+    "weapons_and_artifacts": [
+      "Valar va Eldar haykallari (Tirion koʻrkiga aylangan tirikdek tosh va metall haykallar)"
+    ],
+    "primary_locations": [
+      "tirion"
+    ],
+    "adaptations": [],
+    "sources": [
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Of Eldamar and the Princes of the Eldalië",
+        "page": "64"
+      },
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Of Fëanor and the Unchaining of Melkor",
+        "page": "64-68"
+      },
+      {
+        "book_slug": "the-peoples-of-middle-earth",
+        "chapter": "The Shibboleth of Fëanor",
+        "page": "335-344"
+      },
+      {
+        "book_slug": "morgoths-ring",
+        "chapter": "The Later Quenta Silmarillion",
+        "page": "272-277"
+      }
+    ],
+    "summary": "Aulëning bosh Noldor shogirdi Mahtanning qizi, Fëanorning xotini va uning yetti mashhur oʻgʻlining onasi. Valinordagi eng iqtidorli haykaltarosh boʻlib, tosh va metalldan tirikdek jonli qiyofalar yarata olgan. Yuksak aql-idroki, sabr-bardoshi va qatʼiyati bilan tanilgan. Uzoq yillar davomida Fëanorning olovli gʻazabini jilovlay olgan yagona inson boʻlgan, biroq erining takabburligi va Valarga qarshi isyoniga qoʻshilmasdan, Valinorda qolgan."
+  },
+  {
+    "slug": "nienor",
+    "id": "nienor",
+    "name": "Niënor Níniel",
+    "original_name": "Niënor",
+    "aliases": [
+      "Níniel (Sindarin: Koʻz Yoshlari Qizi — Túrin bergan ism)",
+      "Niënor (Motam)"
+    ],
+    "titles": [
+      "Dor-lómin Qizi"
+    ],
+    "race": "insonlar",
+    "sub_race": "Edain (Hador va Bëor xonadonlari)",
+    "culture": "Dor-lómin / Doriath / Brethil",
+    "birth_year": "Birinchi davr 473",
+    "death_year": "Birinchi davr 499 (Cabed-en-Aras darasidan Teiglin daryosiga oʻzini tashlagan)",
+    "weapons_and_artifacts": [],
+    "primary_locations": [
+      "menegroth",
+      "doriath",
+      "nargothrond",
+      "beleriand"
+    ],
+    "adaptations": [],
+    "sources": [
+      {
+        "book_slug": "the-children-of-hurin",
+        "chapter": "The Coming of Níniel & The Death of Glaurung",
+        "page": "204"
+      },
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Of Túrin Turambar",
+        "page": "217"
+      },
+      {
+        "book_slug": "unfinished-tales",
+        "chapter": "Narn i Hîn Húrin",
+        "page": "125"
+      }
+    ],
+    "summary": "Húrin Thalion va Morwen Eledhwenning kenja qizi, Túrin Turambarning singlisi. Nirnaeth Arnoediad motami kunlarida tugʻilgan, ajdaho Glaurungning koʻz sehri tufayli butun oʻtmish xotirasi oʻchirilgan va Brethil oʻrmonida oʻz akasi Túrinni tanimay turmushga chiqqan, haqiqat ochilgach esa daryoga oʻzini tashlagan fojiaviy qahramon."
+  },
+  {
+    "slug": "peregrin-took",
+    "id": "peregrin-took",
+    "name": "Peregrin Tuk (Pippin)",
+    "original_name": "Peregrin Took (Razanur Tûk)",
+    "aliases": [
+      "Pippin",
+      "Ernil i Pheriannath (Yarimboʻylilar shahzodasi)",
+      "Qalʼa soqchisi (Guard of the Citadel)",
+      "Tuk XXXII (Shayr Tani)"
+    ],
+    "titles": [
+      "Uzuk Birodarligi aʼzosi",
+      "Minas Tirit Qalʼasi ritsari",
+      "Shayr Tani (Thain of the Shire)",
+      "Shimoliy Shohlik maslahatchisi"
+    ],
+    "race": "xobbitlar",
+    "sub_race": "Fallohayd avlodi",
+    "culture": "Shayr xobbitlari (Buyuk Smial)",
+    "birth_year": "U.D. 2990",
+    "death_year": "T.D. 63 dan keyin (Gondorda dafn etilgan)",
+    "weapons_and_artifacts": [
+      "Gʻarbqoʻrgʻon (Barrow-downs) xanjari (keyinchalik Qora Darvoza oldida Troll boshligʻini oʻldirgan)",
+      "Minas Tirit Qalʼasi soqchisining kumush va qora zirhi hamda Oq Daraxt dubulgʻasi"
+    ],
+    "primary_locations": [
+      "the-shire",
+      "rivendell",
+      "fangorn",
+      "isengard",
+      "minas-tirith"
+    ],
+    "adaptations": [],
+    "sources": [
+      {
+        "book_slug": "the-fellowship-of-the-ring",
+        "chapter": "I kitob, 4-bob (Qoʻziqorinlarga yaqin yoʻl)",
+        "page": "86"
+      },
+      {
+        "book_slug": "the-two-towers",
+        "chapter": "III kitob, 11-bob (Ortank Palantiri)",
+        "page": "592"
+      },
+      {
+        "book_slug": "the-return-of-the-king",
+        "chapter": "V kitob, 1-bob (Minas Tirit) va 7-bob (Denetorning gulxani)",
+        "page": "747"
+      }
+    ],
+    "summary": "Uzuk Birodarligining eng yosh aʼzosi, Frodo Begginsning sodiq hamrohi va Gondor Qalʼasi ritsari. Minas Tirit qamali chogʻida Faramirning hayotini saqlab qolgan, Qora Darvoza jangida qahramonlik koʻrsatgan va keyinchalik Shayrning oʻttiz ikkinchi Tani boʻlgan."
+  },
+  {
+    "slug": "radagast",
+    "id": "radagast",
+    "name": "Radagast Qoʻngʻir",
+    "original_name": "Aiwendil",
+    "aliases": [
+      "Aiwendil (Quenya: Qushlar Doʻsti)",
+      "Radagast the Brown (Qoʻngʻir Radagast)",
+      "Qushlar Jinovchisi",
+      "Rhosgobel Xoʻjayini"
+    ],
+    "titles": [
+      "Istari (Sehrgarlar) Ordeni Aʼzosi",
+      "Yavannaning Elchisi",
+      "Oʻsimliklar va Jonivorlar Ustasi"
+    ],
+    "race": "ainur",
+    "sub_race": "Maia (Istar)",
+    "culture": "Valinor / Rhosgobel (Mirkwood)",
+    "birth_year": "Zamon yaralishidan avval (Uchinchi davr ~1000-yilda Oʻrta-yerga kelgan)",
+    "death_year": "Boqiy",
+    "weapons_and_artifacts": [
+      "Qoʻngʻir sehrgar hassasi"
+    ],
+    "primary_locations": [
+      "rivendell",
+      "bree"
+    ],
+    "adaptations": [
+      {
+        "medium": "film",
+        "title": "The Hobbit Film Trilogy",
+        "creator": "Peter Jackson",
+        "year": 2012,
+        "divergence_notes": "Filmda Radagast quyonlar qo'shilgan chanada yuruvchi g'alati va komik chol sifatida ko'rsatilgan hamda Dol Guldurga shaxsan kiradi. Kitobda esa u vazmin, tabiat ilmining donishmand ustasi bo'lib, Bilbo safarida bevosita qatnashmaydi, faqat Gandalf va Beorn tomonidan hurmat bilan tilga olinadi."
+      }
+    ],
+    "sources": [
+      {
+        "book_slug": "the-lord-of-the-rings",
+        "chapter": "The Council of Elrond",
+        "page": "256"
+      },
+      {
+        "book_slug": "the-hobbit",
+        "chapter": "Queer Lodgings",
+        "page": "114"
+      },
+      {
+        "book_slug": "unfinished-tales",
+        "chapter": "The Istari",
+        "page": "390"
+      }
+    ],
+    "summary": "Valinordan Oʻrta-yerga yuborilgan besh Istari (Sehrgar)dan biri, Yavannaning xizmatkori. Mirkwood chetidagi Rhosgobelda yashab, qushlar va yovvoyi hayvonlar tilini mukammal bilgan, Buyuk Burgutlar (Gwaihir) orqali Gandalfni Orthanc tutqunligidan qutqarilishiga bevosita sababchi boʻlgan tabiat homiysi."
+  },
+  {
+    "slug": "samwise-gamgee",
+    "id": "samwise-gamgee",
+    "name": "Samwise Gamgee",
+    "original_name": "Samwise Gamgee (Kuduktuk: Banazîr Galbasi)",
+    "aliases": [
+      "Sam",
+      "Jasur Samwise (Samwise the Brave)",
+      "Bogʻbon Gamgee (Gardner)",
+      "Uzuk Posboni (vaqtincha)"
+    ],
+    "titles": [
+      "Shir Meri (yetti marotaba ketma-ket saylangan)",
+      "Bag End Xoʻjayini",
+      "Gondor Maslahatchisi",
+      "Qizil Kitob Posboni"
+    ],
+    "race": "xobbitlar",
+    "sub_race": "Harfoot nasli",
+    "culture": "Shire (Shir) / Hobbiton",
+    "birth_year": "Uchinchi davr 2980 (Shir hisobi 1380)",
+    "death_year": "Boqiy Gʻarbga oʻtgan (Toʻrtinchi davr 61 / Shir hisobi 1482)",
+    "weapons_and_artifacts": [
+      "Sting qilichi (vaqtincha Frodo oʻrniga koʻtargan)",
+      "Galadriel tuprogʻi va Mallorn urugʻi solingan quticha",
+      "Lothlórien elflar arqoni",
+      "Gʻarbiy Chegara Qizil Kitobi"
+    ],
+    "primary_locations": [
+      "hobbiton",
+      "bywater",
+      "rivendell",
+      "cirith-ungol",
+      "orodruin"
+    ],
+    "adaptations": [
+      {
+        "medium": "film",
+        "title": "The Lord of the Rings Film Trilogy",
+        "creator": "Peter Jackson",
+        "year": 2001,
+        "divergence_notes": "Filmda Sean Astin ijro etgan Samwise Gamgee kitobdagi fidoyilik, mehr va qahramonlikni tomoshabinga beqiyos yetkazgan va kino tarixidagi eng sevimli qahramonlardan biriga aylangan. Yagona jiddiy tafovut — Cirith Ungol yo'lida Gollumning non uvog'i orqali Samga tuhmat qilishi va Frodoning Samni haydab yuborishi faqat film dramaturgiyasi uchun qo'shilgan; kitobda bunday ajralish hech qachon yuz bermagan."
+      }
+    ],
+    "sources": [
+      {
+        "book_slug": "the-lord-of-the-rings",
+        "chapter": "The Choices of Master Samwise",
+        "page": "710"
+      },
+      {
+        "book_slug": "the-lord-of-the-rings",
+        "chapter": "Mount Doom",
+        "page": "917"
+      },
+      {
+        "book_slug": "the-lord-of-the-rings",
+        "chapter": "The Scouring of the Shire",
+        "page": "975"
+      },
+      {
+        "book_slug": "the-lord-of-the-rings",
+        "chapter": "The Grey Havens",
+        "page": "1005"
+      },
+      {
+        "book_slug": "letters-of-jrr-tolkien",
+        "chapter": "Letter 131",
+        "page": "145"
+      }
+    ],
+    "summary": "Hamfast Gamgeening oʻgʻli, Bilbo va Frodo Bagginslarning sadoqatli bogʻboni va eng yaqin doʻsti. Uzuk Birodarligi aʼzosi. Safar davomida Frodoni bir zum ham yolgʻiz qoldirmagan, Cirith Ungolda bahaybat oʻrgimchak Shelobni yakka oʻzi yaralab Frodoni qutqargan, Uzukni qisqa muddat saqlagan va Hukm Togʻiga charchagan xoʻjayinini yelkasida koʻtarib chiqqan buyuk xobbit. Halqa Urushidan soʻng Shirni qayta obod qilgan, yetti bor Shir Meri etib saylangan va oxirgi Uzuk Posboni sifatida Boqiy Gʻarbga — Valinorga suzib ketgan."
+  },
+  {
+    "slug": "saruman",
+    "id": "saruman",
+    "name": "Saruman",
+    "original_name": "Curumo",
+    "aliases": [
+      "Curunír (Mohir Inson)",
+      "Oq Saruman (Saruman the White)",
+      "Koʻp Rangli Saruman (Saruman of Many Colours)",
+      "Sharkey (Qari Kishi / Boshliq)",
+      "Isengard Jodugari"
+    ],
+    "titles": [
+      "Oq Kengash Boshligʻi (sobiq)",
+      "Istari (Sehrgarlar) Oliy Yoʻlboshchisi (sobiq)",
+      "Orthanc Qora Minorasi Hukmdori"
+    ],
+    "race": "ainur",
+    "sub_race": "Maia (Istari)",
+    "culture": "Aulë Maiari / Isengard",
+    "birth_year": "Dunyodan avval (Ainur Musiqasi)",
+    "death_year": "Uchinchi davr 3019 (Shirda oʻz malaychasi Gríma Wormtongue tomonidan oʻldirilgan)",
+    "weapons_and_artifacts": [
+      "Orthanc Palantíri (Koʻrish toshi)",
+      "Sehrgar hassasi (Gandalf tomonidan parchalangan)",
+      "Isengard poroxi va mexanik qamal qurollari"
+    ],
+    "primary_locations": [
+      "isengard",
+      "hobbiton",
+      "bywater"
+    ],
+    "adaptations": [
+      {
+        "medium": "film",
+        "title": "The Lord of the Rings Film Trilogy",
+        "creator": "Peter Jackson",
+        "year": 2001,
+        "divergence_notes": "Filmda afsonaviy Sir Christopher Lee gavdalantirgan Saruman kino tarixidagi eng qudratli yovuz obrazlardan biridir. Asosiy syujet tafovuti: film kengaytirilgan talqinida Saruman Isengarddagi Orthanc minorasi cho'qqisida Gríma tomonidan pichoqlanib, pastdagi g'ildirakka qulab halok bo'ladi; kitobda esa u qochib ketadi va 'Shirning xarobasi' (Scouring of the Shire) bobida aynan Bag End ostonasida halok bo'ladi (filmda bu butun bob tushirib qoldirilgan)."
+      }
+    ],
+    "sources": [
+      {
+        "book_slug": "the-lord-of-the-rings",
+        "chapter": "The Council of Elrond",
+        "page": "252"
+      },
+      {
+        "book_slug": "the-lord-of-the-rings",
+        "chapter": "The Voice of Saruman",
+        "page": "563"
+      },
+      {
+        "book_slug": "the-lord-of-the-rings",
+        "chapter": "The Scouring of the Shire",
+        "page": "985"
+      },
+      {
+        "book_slug": "unfinished-tales",
+        "chapter": "The Istari",
+        "page": "389"
+      }
+    ],
+    "summary": "Aulë xizmatidagi eng ulugʻ Maia — Curumo. Oʻrta-yerga joʻnatilgan besh Istari yetakchisi va Oq Kengash boshligʻi. Qadimiy Orthanc qora minorasiga joylashib, Qudrat Uzuklari tarixini oʻrgangan. Biroq Palantír orqali Sauron bilan bogʻlanib, uning irodasiga boʻysungan va xiyonat yoʻliga kirgan. Uruk-hai armiyasini tuzib, Rohanni yoʻq qilishga uringan, ammo Entlar tomonidan qamal qilinib, Gandalf tomonidan hassasi sindirilgan. Halqa Urushi soʻngida Shirni vayron qilishga urinib, Bag End ostonasida oʻldirilgan fojiali sehrgar."
+  },
+  {
+    "slug": "sauron",
+    "id": "sauron",
+    "name": "Sauron",
+    "original_name": "Mairon",
+    "aliases": [
+      "Annatar (Tuhfalar Hukmdori)",
+      "Gorthaur (Dahshatli)",
+      "Artano (Oliy Usta)",
+      "Aulendil (Aulë xizmatkori)",
+      "Nekromant (Qora Jodugar)",
+      "Qora Hukmdor",
+      "Halqalar Sohibi"
+    ],
+    "titles": [
+      "Mordor Hukmdori",
+      "Barad-dûr Qora Minorasi Sohibi",
+      "Yagona Uzuk Yaratuvchisi",
+      "Oʻrta-yerning Qora Hukmdori"
+    ],
+    "race": "ainur",
+    "sub_race": "Maia",
+    "culture": "Aulë Maiari / Angband / Mordor",
+    "birth_year": "Dunyodan avval (Ainur Musiqasi)",
+    "death_year": "Uchinchi davr 3019 (ruhiy quvvati batamom soʻnib, zaif sharpaga aylangan)",
+    "weapons_and_artifacts": [
+      "Yagona Uzuk (Barcha Qudrat Uzuklarini boʻysundiruvchi Hukm Uzugi)",
+      "Barad-dûr qora istehkomi",
+      "Morgul pichogʻi"
+    ],
+    "primary_locations": [
+      "barad-dur",
+      "orodruin",
+      "morannon"
+    ],
+    "adaptations": [
+      {
+        "medium": "film",
+        "title": "The Lord of the Rings Film Trilogy",
+        "creator": "Peter Jackson",
+        "year": 2001,
+        "divergence_notes": "Filmda Sauron jismoniy vujudga ega bo'lmagan, Barad-dûr cho'qqisida yonib turuvchi gigant 'Olovli Ko'z' sifatida tasvirlangan. Tolkienning asl matnlarida esa Sauron Uchinchi davrda to'rt barmoqli (Isildur kesib olgan barmog'idan mahrum) qora va dahshatli jismoniy gavdaga ega bo'lgan; 'Qizil Ko'z' esa uning gerbi va aqlan uzoqni ko'ruvchi qudrati timsolidir."
+      }
+    ],
+    "sources": [
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Of the Rings of Power and the Third Age",
+        "page": "285"
+      },
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Akallabêth: The Downfall of Númenor",
+        "page": "260"
+      },
+      {
+        "book_slug": "the-lord-of-the-rings",
+        "chapter": "The Shadow of the Past",
+        "page": "42"
+      },
+      {
+        "book_slug": "the-lord-of-the-rings",
+        "chapter": "Mount Doom",
+        "page": "921"
+      },
+      {
+        "book_slug": "letters-of-jrr-tolkien",
+        "chapter": "Letter 131",
+        "page": "143"
+      }
+    ],
+    "summary": "Dastlab Aulë maktabining eng iqtidorli va qudratli Maiasi boʻlgan Mairon, keyinchalik Melkorning bosh leytenantiga aylangan. Birinchi davrda Angband qalʼasi va Tol-in-Gaurhothni boshqargan. Ikkinchi davrda 'Annatar' niqobi ostida Celebrimbor va Eregion elflarini aldab, Qudrat Uzuklarini yasatgan hamda Orodruin qaʼrida Yagona Uzukni zarb qilgan. Númenor halokatiga sabab boʻlgan. Soʻnggi Ittifoq va Halqa Urushlarida Oʻrta-yerni zulmatga burkagan, Yagona Uzuk Hukm Togʻida yoʻq qilinishi bilan abadiy qulagan bosh yovuz hukmdor."
+  },
+  {
+    "slug": "shelob",
+    "id": "shelob",
+    "name": "Shelob",
+    "original_name": "Shelob",
+    "aliases": [
+      "Buyuk Shelob (Shelob the Great)",
+      "U (Her Ladyship — orklar tilida)",
+      "Ungoliantning soʻnggi farzandi"
+    ],
+    "titles": [
+      "Kirix Ungol dovoni qoʻriqchisi"
+    ],
+    "race": "boshqa",
+    "sub_race": "Ulkan Oʻrgimchak (Ungoliant avlodi)",
+    "culture": "Ephel Dúath (Torech Ungol)",
+    "birth_year": "Birinchi Davr (Nan Dungortheb)",
+    "death_year": "Nomaʼlum (U.D. 3019-yilda ogʻir yaralangan)",
+    "weapons_and_artifacts": [
+      "Falajlovchi zaharli nish",
+      "Mustahkam qora toʻrlar (oddiy qilich kesa olmaydigan iplar)"
+    ],
+    "primary_locations": [
+      "cirith-ungol",
+      "barad-dur"
+    ],
+    "adaptations": [],
+    "sources": [
+      {
+        "book_slug": "the-two-towers",
+        "chapter": "IV kitob, 9-bob (Shelobning uyasi) va 10-bob (Master Semvayzning tanlovi)",
+        "page": "718"
+      },
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Quenta Silmarillion, 8-bob (Valinorning qorongʻulashishi) va 19-bob",
+        "page": "81"
+      }
+    ],
+    "summary": "Birinchi Davrdagi Valinor Daraxtlarini quritgan qorongʻulik maxluqi Ungoliantning eng soʻnggi va eng dahshatli farzandi. Sauronning oʻzidan oldin Mordor togʻlaridagi Kirix Ungol gʻorlariga joylashgan; Frodo Begginsni chaqib falaj qilganida Semvayz Gemji tomonidan Sting qilichi va Galadriel shishachasi bilan ogʻir yaralangan."
+  },
+  {
+    "slug": "smaug",
+    "id": "smaug",
+    "name": "Smaug",
+    "original_name": "Smaug the Golden",
+    "aliases": [
+      "Oltin Smaug (Smaug the Golden)",
+      "Dahshatli Smaug",
+      "Bosh va Eng Buyuk Ofat (Chiefest and Greatest of Calamities)"
+    ],
+    "titles": [
+      "Togʻ osti Ajdar-Hukmdori"
+    ],
+    "race": "boshqa",
+    "sub_race": "Qanotli olov-ajdar (Urulóki)",
+    "culture": "Shimoliy ajdarlar",
+    "birth_year": "Uchinchi Davr",
+    "death_year": "U.D. 2941 (1-noyabr)",
+    "weapons_and_artifacts": [
+      "Koʻkragiga yopishib ketgan olmos va javohirlardan iborat zirh qobigʻi"
+    ],
+    "primary_locations": [
+      "erebor"
+    ],
+    "adaptations": [],
+    "sources": [
+      {
+        "book_slug": "the-hobbit",
+        "chapter": "1-bob (Kutilmagan ziyofat), 12-bob (Ichkaridagi maʼlumotlar) va 14-bob (Olov va suv)",
+        "page": "205"
+      },
+      {
+        "book_slug": "the-return-of-the-king",
+        "chapter": "Ilova A, III qism (Durin xalqi — Erebor yurishi)",
+        "page": "1079"
+      }
+    ],
+    "summary": "Uchinchi Davrning eng soʻnggi buyuk olovli ajdari. U.D. 2770-yilda Deyl shahrini vayron qilib, Yolgʻiz Togʻ (Erebor) qirolligini va Durin xalqining behisob xazinasini egallab olgan; U.D. 2941-yilda Bilbo Beggins tomonidan zaif joyi aniqlangach, Kamonchi Bardning Qora oʻqi bilan oʻldirilgan."
+  },
+  {
+    "slug": "theoden",
+    "id": "theoden",
+    "name": "Théoden",
+    "original_name": "Théoden Ednew",
+    "aliases": [
+      "Théoden Ednew (Yangilangan)",
+      "Mark Shohi (King of the Mark)",
+      "Rohirrim Oqsoqoli"
+    ],
+    "titles": [
+      "Rohan Qiroli (Eorl xonadonining 17-qiroli)",
+      "Mark Hukmdori",
+      "Gondorning Oliy Qasamyodli Ittifoqchisi"
+    ],
+    "race": "insonlar",
+    "sub_race": "Rohirrim",
+    "culture": "Rohan / Edoras",
+    "birth_year": "Uchinchi davr 2948",
+    "death_year": "Uchinchi davr 3019 (Pelennor Maydonlari Jangida shahid boʻlgan)",
+    "weapons_and_artifacts": [
+      "Herugrim (Qadimiy Eorl xonadoni qilichi)",
+      "Snowmane (Oqyel — afsonaviy oq zotdor jangovar oti)",
+      "Zarhal Rohan dubulgʻasi va oltin qalqoni"
+    ],
+    "primary_locations": [
+      "edoras",
+      "helms-deep",
+      "minas-tirith"
+    ],
+    "adaptations": [
+      {
+        "medium": "film",
+        "title": "The Lord of the Rings Film Trilogy",
+        "creator": "Peter Jackson",
+        "year": 2002,
+        "divergence_notes": "Filmda marhum Bernard Hill gavdalantirgan Théoden xarakteri kino san'atidagi eng unutilmas shoh obrazlaridan biriga aylangan. Filmda Théodenni Gríma emas, balki Sarumanning ruhi bevosita egallab olgani ko'rsatiladi va Gandalf undan jin chiqargandek Sarumanni haydaydi; kitobda esa hech qanday jismoniy jinsizlanish bo'lmagan — Théoden Grímaning psixologik bosimi va zaiflashtiruvchi dorilar ta'siridan Gandalfning donishmand so'zlari bilan uyg'ongan."
+      }
+    ],
+    "sources": [
+      {
+        "book_slug": "the-lord-of-the-rings",
+        "chapter": "The King of the Golden Hall",
+        "page": "505"
+      },
+      {
+        "book_slug": "the-lord-of-the-rings",
+        "chapter": "Helm's Deep",
+        "page": "525"
+      },
+      {
+        "book_slug": "the-lord-of-the-rings",
+        "chapter": "The Ride of the Rohirrim",
+        "page": "828"
+      },
+      {
+        "book_slug": "the-lord-of-the-rings",
+        "chapter": "The Battle of the Pelennor Fields",
+        "page": "837"
+      },
+      {
+        "book_slug": "the-lord-of-the-rings",
+        "chapter": "Appendix A: Annals of the Kings and Rulers (II: The House of Eorl)",
+        "page": "1068"
+      }
+    ],
+    "summary": "Thengel va Morwenning yagona oʻgʻli, Rohan Qirolligining 17-hukmdori. Saruman aygʻoqchisi Gríma Wormtongue taʼsirida tushkunlikka tushgan, ammo Gandalf tomonidan uygʻotilgan. Helm darasida Isengard qoʻshinini yenggan. Qizil Oʻq chaqirigʻiga javoban 6000 otliq bilan Gondor yordamiga shoshilgan, Pelennor Maydonlari Jangida shaxsan qoʻshin boshlab, Mordor qamalini yorib oʻtgan va Jodugar-shoh bilan toʻqnashuvda shahid boʻlgan afsonaviy qirol."
+  },
+  {
+    "slug": "thingol",
+    "id": "thingol",
+    "name": "Elu Thingol",
+    "original_name": "Elwë Singollo",
+    "aliases": [
+      "Elwë Singollo (Quenya: Kulrang Rido)",
+      "Elu Thingol (Sindarin)",
+      "Yashirin Shoh (The Hidden King)"
+    ],
+    "titles": [
+      "Doriath Qiroli",
+      "Beleriand va Sindar Oliy Hukmdori",
+      "Menegroth Sohibi"
+    ],
+    "race": "elflar",
+    "sub_race": "Teleri / Sindar (Calaquendi)",
+    "culture": "Doriath (Menegroth)",
+    "birth_year": "Daraxtlar davri (Cuiviénenda uygʻongan)",
+    "death_year": "Birinchi davr 502 (Menegrothda oʻldirilgan)",
+    "weapons_and_artifacts": [
+      "Aranrúth (Qirol Gʻazabi — keyinchalik Númenor qirollari qilichiga aylangan)",
+      "Nauglamír (Silmaril oʻrnatilgan mittilar marjoni)"
+    ],
+    "primary_locations": [
+      "menegroth",
+      "doriath",
+      "beleriand"
+    ],
+    "adaptations": [],
+    "sources": [
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Of Thingol and Melian",
+        "page": "55"
+      },
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Of the Return of the Noldor",
+        "page": "128"
+      },
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Of the Ruin of Doriath",
+        "page": "232"
+      },
+      {
+        "book_slug": "the-children-of-hurin",
+        "chapter": "Túrin in Doriath",
+        "page": "76"
+      }
+    ],
+    "summary": "Cuiviénendan Buyuk Yurishni boshlagan Teleri elflarining Finwë va Ingwë qatoridagi ilk elchisi, Oʻrta-yerda qolgan Elflar ichida Ikki Daraxt nurini koʻrgan yagona Calaquendi. Maia Melianga uylanib, Doriath qirolligi va Menegroth saroyiga asos solgan, biroq Silmaril vasvasasi tufayli halokatga uchragan ulugʻvor shoh."
+  },
+  {
+    "slug": "thorin-oakenshield",
+    "id": "thorin-oakenshield",
+    "name": "Thorin II Oakenshield",
+    "original_name": "Thorin II",
+    "aliases": [
+      "Thorin Emandubon (Oakenshield)",
+      "Togʻosti Qiroli (King under the Mountain)"
+    ],
+    "titles": [
+      "Durin Xalqi Oliy Qiroli",
+      "Erebor Hukmdori",
+      "Moviy Togʻlar (Ered Luin) Mittilar Sardori"
+    ],
+    "race": "mitti-odamlar",
+    "sub_race": "Durin xalqi (Uzunsoqollar)",
+    "culture": "Erebor / Ered Luin",
+    "birth_year": "Uchinchi davr 2746",
+    "death_year": "Uchinchi davr 2941 (Besh Qoʻshin jangida halok boʻlgan)",
+    "weapons_and_artifacts": [
+      "Orcrist (Gondolin qadimiy qilichi — Goblin Yorgich)",
+      "Eman shoxi qalqoni (Oakenshield)",
+      "Erebor maxfiy eshigi kaliti va xaritasi",
+      "Arkenstone (Togʻ Yuragi)"
+    ],
+    "primary_locations": [
+      "erebor",
+      "ered-luin",
+      "rivendell"
+    ],
+    "adaptations": [
+      {
+        "medium": "film",
+        "title": "The Hobbit Film Trilogy",
+        "creator": "Peter Jackson",
+        "year": 2012,
+        "divergence_notes": "Filmda Richard Armitage ijrosidagi Thorin ancha yoshroq, romantikroq va jangari shoh sifatida gavdalantirilgan. Kitobda Azog Azanulbizar jangida Dáin tomonidan o'ldirilgan bo'lsa, filmda Azog omon qolib, Thorinning shaxsiy qasoskor ashaddiy dushmaniga aylantirilgan va ular Besh Qo'shin jangida muz ustida yakkama-yakka olishadilar."
+      }
+    ],
+    "sources": [
+      {
+        "book_slug": "the-hobbit",
+        "chapter": "An Unexpected Party",
+        "page": "8"
+      },
+      {
+        "book_slug": "the-hobbit",
+        "chapter": "The Clouds Burst",
+        "page": "278"
+      },
+      {
+        "book_slug": "the-hobbit",
+        "chapter": "The Return Journey",
+        "page": "288"
+      },
+      {
+        "book_slug": "the-lord-of-the-rings",
+        "chapter": "Appendix A: Annals of the Kings and Rulers (III: Durin's Folk)",
+        "page": "1072"
+      },
+      {
+        "book_slug": "unfinished-tales",
+        "chapter": "The Quest of Erebor",
+        "page": "321"
+      }
+    ],
+    "summary": "Thráin II ning toʻngʻich oʻgʻli, Thrórning nevarasi, Durin xonadonining bevosita vorisi va Togʻosti Qiroli. Azanulbizar jangida singan eman shoxini qalqon qilib orqlar bilan jang qilgani sababli 'Oakenshield' laqabini olgan. Uzoq yillar Ered Luindagi quvgʻin xalqini boshqargan. 2941-yilda Gandalf va Bilbo Baggins bilan Erebor safariga otlanib, oʻz vatanini qaytarib olgan va Besh Qoʻshin jangida qahramonlarcha halok boʻlgan mitti hukmdori."
+  },
+  {
+    "slug": "thrain-ii",
+    "id": "thrain-ii",
+    "name": "Thráin II",
+    "original_name": "Thráin II",
+    "aliases": [
+      "Surgundagi Qirol",
+      "Thrór oʻgʻli Thráin"
+    ],
+    "titles": [
+      "Durin xalqining Surgundagi Qiroli",
+      "Yetti Mitti Uzugining soʻnggi saqlovchisi"
+    ],
+    "race": "mitti-odamlar",
+    "sub_race": "Uzunsoqollar (Longbeards)",
+    "culture": "Erebor va Moviy Togʻlar",
+    "birth_year": "U.D. 2644",
+    "death_year": "U.D. 2850 (Dol Guldur zindonlari)",
+    "weapons_and_artifacts": [
+      "Durin xonadonining Qudrat Uzugi (Yetti Uzukning birinchisi va soʻnggisi)",
+      "Thrór xaritasi va Erebor maxfiy eshigining kumush kaliti"
+    ],
+    "primary_locations": [
+      "erebor",
+      "khazad-dum",
+      "ered-luin",
+      "mirkwood"
+    ],
+    "adaptations": [],
+    "sources": [
+      {
+        "book_slug": "the-hobbit",
+        "chapter": "1-bob: \"Kutilmagan mehmonlar\"",
+        "page": "26"
+      },
+      {
+        "book_slug": "the-return-of-the-king",
+        "chapter": "Ilova A, III qism: \"Durin xalqi\"",
+        "page": "1074"
+      },
+      {
+        "book_slug": "unfinished-tales",
+        "chapter": "III qism, 3-bob: \"Erebor yurishi\"",
+        "page": "321"
+      }
+    ],
+    "summary": "Togʻ osti Qiroli Thrórning oʻgʻli va Thorin Oakenshieldning otasi. Otasi Moria darvozasi oldida Azog tomonidan oʻldirilgach, Mittilar va Oʻrklar urushiga (Azanulbizar jangiga) boshchilik qilgan; keyinchalik Dol Guldur zindonida halok boʻlishidan oldin Erebor xaritasi va kalitini Gandalfga topshirgan."
+  },
+  {
+    "slug": "thranduil",
+    "id": "thranduil",
+    "name": "Thranduil",
+    "original_name": "Thranduil",
+    "aliases": [
+      "Elflar Qiroli (Elvenking)",
+      "Oʻrmon elflari shohi",
+      "Eryn Lasgalen qiroli"
+    ],
+    "titles": [
+      "Qorongʻu Oʻrmon (Mirkwood) Oʻrmon Elflari Qiroli",
+      "Shimoliy Eryn Lasgalen Hukmdori"
+    ],
+    "race": "elflar",
+    "sub_race": "Sindar",
+    "culture": "Qorongʻu Oʻrmon (Nandor / Silvan) elflari",
+    "birth_year": "B.D. (Doriath)",
+    "death_year": "Oʻlmas",
+    "weapons_and_artifacts": [
+      "Kuzgi barglar va rezavorlar yoki bahorgi gullardan yasalgan toj",
+      "Elflar qirolining yerosti saroyi (Thranduil's Halls)"
+    ],
+    "primary_locations": [
+      "doriath",
+      "mirkwood",
+      "erebor"
+    ],
+    "adaptations": [],
+    "sources": [
+      {
+        "book_slug": "the-hobbit",
+        "chapter": "8-bob: \"Chivinlar va oʻrgimchaklar\" hamda 17-bob: \"Bulutlar yorildi\"",
+        "page": "160"
+      },
+      {
+        "book_slug": "the-fellowship-of-the-ring",
+        "chapter": "II kitob, 2-bob: \"Elrond kengashi\"",
+        "page": "255"
+      },
+      {
+        "book_slug": "the-return-of-the-king",
+        "chapter": "Ilova B: \"Yillar solnomasi\"",
+        "page": "1093"
+      }
+    ],
+    "summary": "Qorongʻu Oʻrmon (avvalgi Katta Yashil Oʻrmon) elflarining Sindar naslli qiroli va Legolasning otasi. «Hobbit» asarida Thorin Oakenshield guruhini asir olgan va Besh Qoʻshin Jangida ishtirok etgan, keyinchalik Uzuk Urushida Dol Guldur qoʻshinlariga qarshi Shimolni himoya qilgan."
+  },
+  {
+    "slug": "tom-bombadil",
+    "id": "tom-bombadil",
+    "name": "Tom Bombadil",
+    "original_name": "Tom Bombadil (Iarwain Ben-adar)",
+    "aliases": [
+      "Iarwain Ben-adar (Elflar tilida: Eng Qadimgi va Otasiz)",
+      "Forn (Mitti-odamlar tilida)",
+      "Orald (Shimol insonlari tilida)",
+      "Oʻrmon Xoʻjayini (Master of Wood, Water and Hill)"
+    ],
+    "titles": [
+      "Qadimgi Oʻrmon Xoʻjayini (Master)"
+    ],
+    "race": "boshqa",
+    "sub_race": "Nomaʼlum (Arda tabiatining ilk ruhi)",
+    "culture": "Qadimgi Oʻrmon (Old Forest)",
+    "birth_year": "Arda yaratilganidan beri (Ilk yomgʻir tomchisi va ilk eman urugʻidan oldin)",
+    "death_year": "Oʻlmas",
+    "weapons_and_artifacts": [
+      "Qoʻshiqlar va soʻz qudrati (oʻz hududida mutlaq tabiiy uygʻunlik)",
+      "Moviy kamzul, sariq etik va pat qadalgan eski shlyapa"
+    ],
+    "primary_locations": [
+      "the-shire",
+      "rivendell"
+    ],
+    "adaptations": [],
+    "sources": [
+      {
+        "book_slug": "the-fellowship-of-the-ring",
+        "chapter": "I kitob, 6-bob (Qadimgi Oʻrmon), 7-bob (Tom Bombadilning uyida) va 8-bob (Qoʻrgʻon tepaliklaridagi tuman)",
+        "page": "119"
+      },
+      {
+        "book_slug": "the-fellowship-of-the-ring",
+        "chapter": "II kitob, 2-bob (Elrond kengashi)",
+        "page": "265"
+      },
+      {
+        "book_slug": "the-return-of-the-king",
+        "chapter": "VI kitob, 7-bob (Uyga qaytish)",
+        "page": "996"
+      }
+    ],
+    "summary": "Shayr sharqidagi Qadimgi Oʻrmon va Gʻarbqoʻrgʻon tepaliklari xoʻjayini, Oʻrta-yerdagi eng sirli va qadimgi mavjudot. Uning ustidan Yagona Uzuk hech qanday hokimiyatga ega emas; u Frodo va uning doʻstlarini Qari Majnuntol hamda Qoʻrgʻon-arvohlari (Barrow-wights) tuzogʻidan ikki marta qutqarib qolgan."
+  },
+  {
+    "slug": "treebeard",
+    "id": "treebeard",
+    "name": "Daraxtsaqol (Fangorn)",
+    "original_name": "Treebeard (Fangorn)",
+    "aliases": [
+      "Fangorn",
+      "Oʻrmon Choʻponi",
+      "Entlar Oqsoqoli"
+    ],
+    "titles": [
+      "Entlarning (Onodrim) Eng Qadimgisi",
+      "Fangorn oʻrmoni Qoʻriqchisi"
+    ],
+    "race": "boshqa",
+    "sub_race": "Entlar (Onodrim)",
+    "culture": "Fangorn oʻrmoni",
+    "birth_year": "Daraxtlar Davri (Elflar uygʻongan chogʻda)",
+    "death_year": "Tirik (Oʻrta-yerning eng qadimgi jonzoti)",
+    "weapons_and_artifacts": [
+      "Ent-ichimligi (Ent-draughts — Entwash daryosining hayotbaxsh suvi)"
+    ],
+    "primary_locations": [
+      "fangorn",
+      "isengard"
+    ],
+    "adaptations": [],
+    "sources": [
+      {
+        "book_slug": "the-two-towers",
+        "chapter": "III kitob, 4-bob: \"Daraxtsaqol\" va 9-bob: \"Vayronalar uzra toshqin\"",
+        "page": "463"
+      },
+      {
+        "book_slug": "the-return-of-the-king",
+        "chapter": "VI kitob, 6-bob: \"Koʻplab xayrlashuvlar\"",
+        "page": "979"
+      },
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Quenta Silmarillion, 2-bob: \"Aulë va Yavanna haqida\"",
+        "page": "45"
+      }
+    ],
+    "summary": "Valier malikasi Yavanna tomonidan daraxtlarni himoya qilish uchun yaratilgan Entlar (Daraxtlar Choʻponlari) xalqining eng qadimgi vakili va Fangorn oʻrmonining qoʻriqchisi. Uzuk Urushida Merri va Pippin bilan uchrashgach, Entlarni Sarumanning Isengard qalʼasiga qarshi soʻnggi yurishga boshlagan."
+  },
+  {
+    "slug": "tuor",
+    "id": "tuor",
+    "name": "Tuor",
+    "original_name": "Tuor Eladar",
+    "aliases": [
+      "Ulmondil (Ulmo Doʻsti)",
+      "Oqarnu Qanoti Sardori"
+    ],
+    "titles": [
+      "Ulmoning Elchisi",
+      "Gondolinning Oqqush Qanoti Xonadoni Boshligʻi",
+      "Eldar Qatoriga Qoʻshilgan Yagona Foniy"
+    ],
+    "race": "insonlar",
+    "sub_race": "Edain (Hador Xonadoni — keyinchalik Eldar boqiyligi berilgan)",
+    "culture": "Mithrim / Gondolin / Sirion",
+    "birth_year": "Birinchi davr 472",
+    "death_year": "Boqiy (Idril bilan Valinorga suzib ketib, Noldor qatoriga qabul qilingan)",
+    "weapons_and_artifacts": [
+      "Dramborleg (Gondolinda besh barobar zarba beruvchi ulkan jangovar bolta — keyinchalik Númenor qirollari merosi)",
+      "Vinyamardagi Ulmo qalqoni, dubulgʻasi va zirhi"
+    ],
+    "primary_locations": [
+      "mithrim",
+      "gondolin",
+      "beleriand"
+    ],
+    "adaptations": [],
+    "sources": [
+      {
+        "book_slug": "the-fall-of-gondolin",
+        "chapter": "Of Tuor and his Coming to Gondolin",
+        "page": "145"
+      },
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Of Tuor and the Fall of Gondolin",
+        "page": "238"
+      },
+      {
+        "book_slug": "unfinished-tales",
+        "chapter": "Of Tuor and his Coming to Gondolin",
+        "page": "17"
+      },
+      {
+        "book_slug": "letters-of-jrr-tolkien",
+        "chapter": "Letter 153 (To Peter Hastings, September 1954)",
+        "page": "193"
+      }
+    ],
+    "summary": "Nirnaeth Arnoediad qahramoni Huorning oʻgʻli, Húrinning jiyani va Túrinning amakivachchasi. Vala Ulmo tomonidan tanlanib, yashirin Gondolinga elchi boʻlib borgan, Turgonning qizi Idrilga uylanib, Eärendilni dunyoga keltirgan va Gondolin qulaganida Maeglinni oʻldirib, omon qolgan xalqni qutqargan buyuk qahramon."
+  },
+  {
+    "slug": "turgon",
+    "id": "turgon",
+    "name": "Turgon Donishmand",
+    "original_name": "Turukáno",
+    "aliases": [
+      "Turukáno (Quenya: Jasur Hukmdor)",
+      "Yashirin Shoh",
+      "Turgon the Wise"
+    ],
+    "titles": [
+      "Gondolin Qiroli va Asoschisi",
+      "Surgun qilingan Noldor Oliy Qiroli",
+      "Nevrast Hukmdori"
+    ],
+    "race": "elflar",
+    "sub_race": "Noldor",
+    "culture": "Tirion / Nevrast / Gondolin",
+    "birth_year": "Daraxtlar davri YT 1300",
+    "death_year": "Birinchi davr 510 (Gondolinning qulashida Qirol Minorasi bilan birga halok boʻlgan)",
+    "weapons_and_artifacts": [
+      "Glamdring (Dushman Bolgʻasi — ming yillardan soʻng Gandalf topib olgan qilich)",
+      "Glingal va Belthil (Gondolindagi Ikki Daraxt haykallari)"
+    ],
+    "primary_locations": [
+      "gondolin",
+      "tirion",
+      "beleriand"
+    ],
+    "adaptations": [],
+    "sources": [
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Of Maeglin",
+        "page": "131"
+      },
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Of the Fifth Battle: Nirnaeth Arnoediad",
+        "page": "190"
+      },
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Of Tuor and the Fall of Gondolin",
+        "page": "238"
+      },
+      {
+        "book_slug": "the-fall-of-gondolin",
+        "chapter": "The Fall of Gondolin",
+        "page": "37"
+      },
+      {
+        "book_slug": "the-hobbit",
+        "chapter": "A Short Rest",
+        "page": "51"
+      }
+    ],
+    "summary": "Fingolfinning ikkinchi oʻgʻli, Idrilning otasi va Eärendilning bobosi. Vala Ulmoning koʻrsatmasi bilan Oʻrab Oluvchi Togʻlar orasida yashirin va muhtasham Gondolin shahrini barpo etgan, akasi Fingon vafotidan soʻng Noldor Oliy Qiroliga aylangan hamda oʻz shahrini oxirgi nafasigacha himoya qilib halok boʻlgan buyuk hukmdor."
+  },
+  {
+    "slug": "turin",
+    "id": "turin",
+    "name": "Túrin Turambar",
+    "original_name": "Túrin",
+    "aliases": [
+      "Neithan (Haqsizlangan)",
+      "Gorthol (Dahshatli Dubulgʻa)",
+      "Agarwaen (Qonli)",
+      "Mormegil (Qora Qilich)",
+      "Turambar (Taqdir Hukmdori)",
+      "Oʻrmon Yovvoyisi"
+    ],
+    "titles": [
+      "Dor-lómin Amiri",
+      "Nargothrond Sarkardasi",
+      "Brethil Bahodiri"
+    ],
+    "race": "insonlar",
+    "sub_race": "Edain",
+    "culture": "Hador xonadoni",
+    "birth_year": "Birinchi davr 464",
+    "death_year": "Birinchi davr 499",
+    "weapons_and_artifacts": [
+      "Gurthang (Qora qilich)",
+      "Hador Ajdaho Dubulgʻasi"
+    ],
+    "primary_locations": [
+      "nargothrond",
+      "menegroth"
+    ],
+    "adaptations": [],
+    "sources": [
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Of Túrin Turambar",
+        "page": "198"
+      },
+      {
+        "book_slug": "unfinished-tales",
+        "chapter": "Narn i Chîn Húrin",
+        "page": "57"
+      },
+      {
+        "book_slug": "the-children-of-hurin",
+        "chapter": "The Childhood of Túrin va The Death of Túrin",
+        "page": "33"
+      }
+    ],
+    "summary": "Húrin Thalion va Morwen Eledhwenning oʻgʻli, Hador xonadonining eng qahramonona va eng fojiali bahodiri. Morgothning Húrin avlodiga yogʻdirgan qora laʼnati ostida yashab, oʻzining shon-sharafi va oʻjar gʻururi bilan Nargothrond mudofaasini boshqargan, Glaurung ajdarini oʻldirgan, ammo mashʼum qismat fosh boʻlgach, oʻz qilichi Gurthang tigʻida halok boʻlgan mard jangchi."
+  },
+  {
+    "slug": "ulmo",
+    "id": "ulmo",
+    "name": "Ulmo",
+    "original_name": "Ulmo",
+    "aliases": [
+      "Suvlar Hukmdori (Lord of Waters)",
+      "Tashqi Dengiz Qiroli (King of the Sea)",
+      "Ullubôz"
+    ],
+    "titles": [
+      "Dengizlar Qiroli",
+      "Aratar Aʼzosi",
+      "Daryolar va Buloqlar Sohibi"
+    ],
+    "race": "ainur",
+    "sub_race": "Vala (Aratar)",
+    "culture": "Tashqi Dengiz / Ainur",
+    "birth_year": "Zamon yaralishidan avval",
+    "death_year": "Boqiy (Arda yakunigacha)",
+    "weapons_and_artifacts": [
+      "Ulumúri (Salmar tomonidan oq chigʻanoqlardan yasalgan buyuk dengiz burgʻulari)",
+      "Koʻpikli toʻlqinlar kabi kumush-yashil zirh"
+    ],
+    "primary_locations": [
+      "gondolin",
+      "nargothrond",
+      "beleriand"
+    ],
+    "adaptations": [],
+    "sources": [
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Valaquenta",
+        "page": "27"
+      },
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Of Tuor and the Fall of Gondolin",
+        "page": "238"
+      },
+      {
+        "book_slug": "the-fall-of-gondolin",
+        "chapter": "The Last Version (Of Tuor and his Coming to Gondolin)",
+        "page": "145"
+      },
+      {
+        "book_slug": "unfinished-tales",
+        "chapter": "Of Tuor and his Coming to Gondolin",
+        "page": "17"
+      }
+    ],
+    "summary": "Valar ichida qudratda Manwë va Vardadan keyin turuvchi Suvlar va Dengizlar Hukmdori. Valinorda yashamasdan, Arda ostidagi teran daryo va dengizlar orqali Oʻrta-yer bilan aloqani uzmagan, Finrod va Turgonga yashirin shaharlar qurishni ilhomlantirgan hamda Tuor orqali Elflar va Insonlarni qutqarish rejasini amalga oshirgan buyuk Vala."
+  },
+  {
+    "slug": "varda",
+    "id": "varda",
+    "name": "Varda Elentári",
+    "original_name": "Varda Elentári",
+    "aliases": [
+      "Elbereth Gilthoniel (Sindarin)",
+      "Tintallë (Yulduz Yoquvchi)",
+      "Fanuilos (Doimiy Oq)",
+      "Barazantiath"
+    ],
+    "titles": [
+      "Yulduzlar Malikasi",
+      "Valier Oliy Malikasi",
+      "Muqaddas Nur Sohibasi"
+    ],
+    "race": "ainur",
+    "sub_race": "Valie (Aratar)",
+    "culture": "Valinor / Ainur",
+    "birth_year": "Zamon yaralishidan avval (Timeless Halls)",
+    "death_year": "Boqiy (Arda yakunigacha)",
+    "weapons_and_artifacts": [
+      "Kulonlar va Telperion shudringlaridan yigʻilgan nur idishlari",
+      "Valacirca (Valar Oʻrogʻi / Katta Ayiq yulduz turkumi)"
+    ],
+    "primary_locations": [
+      "tirion"
+    ],
+    "adaptations": [],
+    "sources": [
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Valaquenta",
+        "page": "26"
+      },
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Of the Coming of the Elves and the Captivity of Melkor",
+        "page": "48"
+      },
+      {
+        "book_slug": "the-lord-of-the-rings",
+        "chapter": "The Choices of Master Samwise",
+        "page": "729"
+      }
+    ],
+    "summary": "Valier (ayol Valar) ichida eng ulugʻvori va goʻzali, Manwëning umr yoʻldoshi, osmonda yulduzlar va yulduz turkumlarini yoqqan Muqaddas Nur malikasi. Elflar tomonidan eng koʻp sevilgan va 'A Elbereth Gilthoniel' madhiyalari orqali zulmatga qarshi chaqirilgan ilohiy homiy."
+  },
+  {
+    "slug": "witch-king",
+    "id": "witch-king",
+    "name": "Angmar Jodugar-qiroli",
+    "original_name": "Witch-king of Angmar",
+    "aliases": [
+      "Nazgullar Hukmdori (Lord of the Nazgûl)",
+      "Toʻqqizlar Sardori",
+      "Qora Sardor (Black Captain)",
+      "Morgul Qiroli"
+    ],
+    "titles": [
+      "Uzuk-sharpalar (Nazgûl) Sardori",
+      "Angmar Jodugar-qiroli",
+      "Minas Morgul Hukmdori"
+    ],
+    "race": "insonlar",
+    "sub_race": "Uzuk-sharpa (Nazgûl / Úlairi)",
+    "culture": "Qora Numenorliklar (Mordor va Angmar)",
+    "birth_year": "Ikkinchi Davr",
+    "death_year": "U.D. 3019 (15-mart, Pelennor tekisliklari)",
+    "weapons_and_artifacts": [
+      "Toʻqqizta Insonlar Uzugidan birinchisi",
+      "Morgul tigʻi (Frodoni Shamoltepada yaralagan sehrli xanjar)",
+      "Qora gurzi va alangali qilich",
+      "Temir toj"
+    ],
+    "primary_locations": [
+      "cirith-ungol",
+      "amon-sul",
+      "minas-tirith",
+      "barad-dur"
+    ],
+    "adaptations": [],
+    "sources": [
+      {
+        "book_slug": "the-fellowship-of-the-ring",
+        "chapter": "I kitob, 11-bob (Qorongʻulikdagi pichoq)",
+        "page": "195"
+      },
+      {
+        "book_slug": "the-return-of-the-king",
+        "chapter": "V kitob, 4-bob (Shahar qamali) va 6-bob (Pelennor tekisliklari jangi)",
+        "page": "829"
+      },
+      {
+        "book_slug": "the-return-of-the-king",
+        "chapter": "Ilova A, I qism (Shimoliy shohlik va Gondor)",
+        "page": "1043"
+      }
+    ],
+    "summary": "Toʻqqizta Nazgul (Uzuk-sharpa)ning sardori va Sauronning eng dahshatli xizmatkori. Uchinchi Davrda Shimoliy Arnor qirolligini vayron qilgan, Minas Itilni egallab Minas Morgulga aylantirgan, Frodo Begginsni Shamoltepada yaralagan va Pelennor tekisliklari jangida Eovin hamda Merri tomonidan mahv etilgan."
+  },
+  {
+    "slug": "yavanna",
+    "id": "yavanna",
+    "name": "Yavanna Kementári",
+    "original_name": "Yavanna Kementári",
+    "aliases": [
+      "Kementári (Yer Malikasi)",
+      "Palúrien",
+      "Mevalar Beruvchi (Giver of Fruits)"
+    ],
+    "titles": [
+      "Yer Malikasi",
+      "Oʻsimliklar va Tirik Tabiat Homiysi",
+      "Aratar Aʼzosi",
+      "Ikki Daraxt Yaratuvchisi"
+    ],
+    "race": "ainur",
+    "sub_race": "Valie (Aratar)",
+    "culture": "Valinor / Ainur",
+    "birth_year": "Zamon yaralishidan avval",
+    "death_year": "Boqiy (Arda yakunigacha)",
+    "weapons_and_artifacts": [
+      "Telperion va Laurelin (Valinorning Ikki Daraxti)",
+      "Galathilion (Tirionning Oq Daraxti)",
+      "Palantirlar haqidagi qadimgi bilimlar"
+    ],
+    "primary_locations": [
+      "tirion"
+    ],
+    "adaptations": [],
+    "sources": [
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Of the Beginning of Days",
+        "page": "38"
+      },
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Of Aulë and Yavanna",
+        "page": "45"
+      },
+      {
+        "book_slug": "silmarillion",
+        "chapter": "Of the Sun and Moon and the Hiding of Valinor",
+        "page": "99"
+      }
+    ],
+    "summary": "Valier ichida Vardadan keyin ikkinchi oʻrinda turuvchi Yer Malikasi, Aulëning umr yoʻldoshi va barcha oʻsimliklar, oʻrmonlar hamda jonivorlar homiysi. Qoʻshigʻi bilan Valinorning Ikki Daraxtini — Telperion va Laurelinni oʻstirgan hamda daraxtlarni himoya qilish uchun Entlar (Daraxt choʻponlari) yaralishiga sababchi boʻlgan ilohiy zot."
+  }
+]

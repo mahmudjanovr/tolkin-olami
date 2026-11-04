@@ -104,5 +104,11 @@
       "year": 2012,
       "divergence_notes": "Filmda Richard Armitage ijrosidagi Thorin ancha yoshroq, romantikroq va jangari shoh sifatida gavdalantirilgan. Kitobda Azog Azanulbizar jangida Dáin tomonidan o'ldirilgan bo'lsa, filmda Azog omon qolib, Thorinning shaxsiy qasoskor ashaddiy dushmaniga aylantirilgan va ular Besh Qo'shin jangida muz ustida yakkama-yakka olishadilar."
     }
-  ]
+  ],
+  "image": {
+    "src": "/images/characters/thorin-oakenshield.webp",
+    "src_thumb": "/images/characters/thorin-oakenshield-thumb.webp",
+    "alt": "Thorin Emanqalqon moviy qalpoq va moʻynali ogʻir mitti toʻnida, kumush kokilli soqoli bilan",
+    "caption": "Thorin II Emanqalqon — Togʻ Ostidagi Qirol, Durin xonadoni boshligʻi va Erebor ozodkori"
+  }
 }

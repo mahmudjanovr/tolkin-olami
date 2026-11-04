@@ -17,10 +17,28 @@ describe('Qahramon Portretlari va Illyustratsiya Tizimi (Milestone 6)', () => {
   ];
 
   describe('Manifest va Registr Butunligi', () => {
-    it('Barcha 8 ta kanonik qahramon uchun portret manifesti mavjud', () => {
+    it('Kamida 34 ta qahramon uchun toʻliq tasdiqlangan portret manifesti mavjud', () => {
+      expect(Object.keys(CHARACTER_PORTRAITS).length).toBeGreaterThanOrEqual(34);
       for (const id of CANONICAL_CHARACTERS) {
         expect(CHARACTER_PORTRAITS[id], `Portret topilmadi: ${id}`).toBeDefined();
         expect(CHARACTER_PORTRAITS[id]!.characterId).toBe(id);
+      }
+    });
+
+    it('Ishlab chiqarish manifesti (character-production-manifest.json) barcha 81 ta qahramonni toʻliq qamrab olgan', () => {
+      const manifestPath = path.resolve(process.cwd(), 'src/data/character-production-manifest.json');
+      expect(fs.existsSync(manifestPath), 'character-production-manifest.json topilmadi').toBe(true);
+
+      const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf-8'));
+      expect(Array.isArray(manifest)).toBe(true);
+      expect(manifest.length).toBe(81);
+
+      for (const item of manifest) {
+        expect(item.id).toBeDefined();
+        expect(item.name).toBeDefined();
+        expect(['A', 'B', 'C']).toContain(item.adaptationCategory);
+        expect(['INTEGRATED_VERIFIED', 'PENDING_GENERATION_QUOTA']).toContain(item.portraitStatus);
+        expect(item.productionPrompt.length).toBeGreaterThan(30);
       }
     });
 

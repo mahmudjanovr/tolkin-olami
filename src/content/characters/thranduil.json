@@ -75,5 +75,11 @@
     "gollum",
     "aragorn"
   ],
-  "adaptations": []
+  "adaptations": [],
+  "image": {
+    "src": "/images/characters/thranduil.webp",
+    "src_thumb": "/images/characters/thranduil-thumb.webp",
+    "alt": "Thranduil boshida kuzgi barglar va mevalardan gulchambar toj bilan, yashil baxmal libosda",
+    "caption": "Thranduil — Shimoliy Zulmatzor (Mirkwood) Oʻrmon Qirolligi hukmdori va Legolasning otasi"
+  }
 }

@@ -30,7 +30,11 @@
     "Dernhelm temir dubulgʻasi va sovuti",
     "Rohan shohona otliq qalqoni"
   ],
-  "primary_locations": ["edoras", "helms-deep", "minas-tirith"],
+  "primary_locations": [
+    "edoras",
+    "helms-deep",
+    "minas-tirith"
+  ],
   "textual_status": "author_published",
   "uncertainty_notes": "Tolkien 'The Lord of the Rings' dostonida Glorfindel tomonidan ming yil muqaddam aytilgan mashhur bashoratni ('Angmar Jodugar-shohini hech bir tirik er kishi qulitolmas') nozik filologik mahorat bilan ochib bergan. Jodugar-shoh oʻzini har qanday oʻlimdan holi deb hisoblab: 'Hech bir tirik erkak menga zarar yetkazolmas!' deb kekkayganida, Éowyn dubulgʻasini boshidan yechib tashlab, uzun oltin sochlarini yoyadi va: 'Men er kishi emasman! Sen ayol kishiga boqib turibsan!' deb xitob qiladi. Merry Brandybuckning gʻayritabiiy Dúnedain xanjari zarbasi bilan birlashgan holda, Éowyn yovuz qora hukmdorni yer tishlatadi.",
   "summary": "Éomund va Théodwynning qizi, Qirol Théodenning jiyani va Éomerning singlisi. Rohan malikasi va dovyurak qalqon-qizi. Saroydagi maʼyuslik va ojizlikdan qutulish, janggohlarda sharafli nom qoldirish istagida yashirincha 'Dernhelm' niqobi ostida Pelennor maydoniga otlangan. Afsonaviy bashoratni amalga oshirib, Nazgûllar Oliy Yoʻlboshchisi — Angmar Jodugar-shohini yakkama-yakka jangda oʻldirgan buyuk qahramon ayol. Shifo Uylarida Faramir bilan uchrashib muhabbat topgan va Ithilien Xonimiga aylangan.",
@@ -92,5 +96,11 @@
       "year": 2002,
       "divergence_notes": "Miranda Otto tomonidan ijro etilgan Éowyn obrazi fantastik kino tarixidagi eng buyuk ayol qahramonlardan biri sifatida e'tirof etiladi. Uning 'I am no man!' deb Jodugar-shohni qulatish sahnasi kitobdagi epik qudratni to'liq aks ettirgan. Kichik tafovut: film kengaytirilgan talqinida uning Faramir bilan Shifo Uylaridagi sevgi qissasi qisqartirib ko'rsatilgan."
     }
-  ]
+  ],
+  "image": {
+    "src": "/images/characters/eowyn.webp",
+    "src_thumb": "/images/characters/eowyn-thumb.webp",
+    "alt": "Éowyn nafis oq-yashil libosda, belida qilich kamari bilan Edorasdagi Oltin Qasrda",
+    "caption": "Éowyn — Rohan Qalqonqizi, Théodenning jiyani va keyinchalik Ithilien xonimi"
+  }
 }

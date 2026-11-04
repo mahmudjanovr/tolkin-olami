@@ -205,6 +205,7 @@ Loyihaning barcha meʼmoriy spetsifikatsiyalari `docs/` katalogida toʻliq bayon
 10. [10. Loyihaning Haqiqiy Holati Audit Hisoboti](docs/10_CURRENT_STATE.md) — Kontent toʻplamlari, portretlar, xaritalar va yupqa yozuvlar auditi.
 11. [11. Oʻzbek Tahririyat Uslubiyoti va Sifat Standartlari](docs/11_EDITORIAL_STYLE_GUIDE.md) — Imlo, fonetika, atamalar lugʻati va minimal sifat mezonlari.
 12. [12. Kanonik Manbalar Siyosati va Iqtibos Standartlari](docs/12_CANONICAL_SOURCE_POLICY.md) — Toʻrt pogʻonali matn ierarxiyasi, birlamchi vs ikkilamchi manbalar va Oksford iqtibos tizimi.
+13. [13. Qahramonlar Vizual Auditi va Portretlar Ensiklopediyasi](docs/CHARACTER_VISUAL_AUDIT.md) — Barcha 81 ta qahramonning toʻliq vizual inventarizatsiyasi, fotorealistik portretlar holati va ishlab chiqarish manifesti.
 
 ---
 

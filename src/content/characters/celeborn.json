@@ -79,5 +79,11 @@
     "gimli",
     "aragorn"
   ],
-  "adaptations": []
+  "adaptations": [],
+  "image": {
+    "src": "/images/characters/celeborn.webp",
+    "src_thumb": "/images/characters/celeborn-thumb.webp",
+    "alt": "Celeborn kumush-oq libosda, yaltiroq kumush sochlari bilan Caras Galadhonda",
+    "caption": "Celeborn — Lothlórien hukmdori, Doriath shahzodasi va Galadrielning umr yoʻldoshi"
+  }
 }

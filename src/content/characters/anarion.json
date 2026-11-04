@@ -72,5 +72,11 @@
     "boromir",
     "faramir"
   ],
-  "adaptations": []
+  "adaptations": [],
+  "image": {
+    "src": "/images/characters/anarion.webp",
+    "src_thumb": "/images/characters/anarion-thumb.webp",
+    "alt": "Anárion quyosh ramzli kumush sovutda, qoʻlida Númenor qilichi bilan Minas Anorda",
+    "caption": "Anárion — Elendilning kenja oʻgʻli, Gondor hamhukmdori va Minas Anor asoschisi"
+  }
 }
