@@ -1,0 +1,303 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import NavIcon from '@/components/navigation/NavIcon.astro';
+---
+
+<BaseLayout
+  title="Sahifa topilmadi (404)"
+  description="Siz soʻragan sahifa Oʻrta-yer arxivlarida mavjud emas yoki boshqa manzilga koʻchirilgan."
+>
+  <div class="error-page-container container">
+    <div class="error-manuscript-card">
+      <div class="manuscript-header" aria-hidden="true">
+        <span class="manuscript-tengwar">  </span>
+        <div class="manuscript-divider"></div>
+      </div>
+
+      <div class="error-code-badge">Xatolik 404</div>
+
+      <h1 class="error-title">Yoʻqolgan Qoʻlyozma</h1>
+
+      <p class="error-lead">
+        Siz qidirayotgan sahifa Minas Tirith yoki Rivendell kutubxonalari arxivlarida topilmadi.
+        Ehtimol, havola eskirgan yoki sahifa boshqa manzilga koʻchirilgan.
+      </p>
+
+      <div class="error-quote-box">
+        <blockquote class="error-quote font-serif">
+          «Barcha sarson-sargardon yurganlar ham adashgan emas... ammo bu yoʻl Oʻrta-yer xaritasida topilmadi.»
+        </blockquote>
+        <cite class="error-cite">— J.R.R. Tolkien asarlari motivlari asosida</cite>
+      </div>
+
+      <div class="helpful-links-section">
+        <h2 class="helpful-heading">Asosiy Boʻlimlarga Qaytish</h2>
+        <div class="links-grid">
+          <a href="/" class="quick-link-card">
+            <span class="link-icon" aria-hidden="true">🏛️</span>
+            <div class="link-info">
+              <span class="link-title">Bosh sahifa</span>
+              <span class="link-desc">Asosiy ensiklopediya va yangiliklar</span>
+            </div>
+          </a>
+
+          <a href="/qahramonlar/" class="quick-link-card">
+            <span class="link-icon" aria-hidden="true">👑</span>
+            <div class="link-info">
+              <span class="link-title">Qahramonlar</span>
+              <span class="link-desc">81 ta kanonik qahramon biografiyasi</span>
+            </div>
+          </a>
+
+          <a href="/xaritalar/" class="quick-link-card">
+            <span class="link-icon" aria-hidden="true">🗺️</span>
+            <div class="link-info">
+              <span class="link-title">Tarixiy Atlas</span>
+              <span class="link-desc">Interaktiv Oʻrta-yer va Beleriand xaritalari</span>
+            </div>
+          </a>
+
+          <a href="/kitoblar/" class="quick-link-card">
+            <span class="link-icon" aria-hidden="true">📜</span>
+            <div class="link-info">
+              <span class="link-title">Kitoblar</span>
+              <span class="link-desc">Bibliografiya va manbalar korpusi</span>
+            </div>
+          </a>
+
+          <a href="/tarix/" class="quick-link-card">
+            <span class="link-icon" aria-hidden="true">⏳</span>
+            <div class="link-info">
+              <span class="link-title">Xronologiya</span>
+              <span class="link-desc">Toʻrt davr solnomasi va yillar hisobi</span>
+            </div>
+          </a>
+
+          <a href="/qidiruv/" class="quick-link-card">
+            <span class="link-icon" aria-hidden="true">🔍</span>
+            <div class="link-info">
+              <span class="link-title">Global Qidiruv</span>
+              <span class="link-desc">Ensiklopediya boʻyicha toʻliq qidiruv</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="error-search-action">
+        <button
+          type="button"
+          class="error-search-btn"
+          data-open-search
+          aria-label="Qidiruv oynasini ochish"
+        >
+          <NavIcon icon="search" size={16} class="search-btn-icon" />
+          <span>Arxiv boʻyicha qidirish (Ctrl+K)</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .error-page-container {
+    padding-block: 3.5rem 5rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .error-manuscript-card {
+    max-width: 760px;
+    width: 100%;
+    background-color: var(--color-bg-elevated);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 6px;
+    padding: clamp(1.5rem, 4vw, 3rem);
+    box-shadow: var(--shadow-md);
+    text-align: center;
+  }
+
+  .manuscript-header {
+    margin-bottom: 1.5rem;
+  }
+
+  .manuscript-tengwar {
+    font-family: var(--font-tengwar-script);
+    font-size: 2.25rem;
+    color: var(--color-accent-gold-text);
+    display: block;
+    line-height: 1;
+    margin-bottom: 0.75rem;
+    user-select: none;
+  }
+
+  .manuscript-divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--color-border-gold), transparent);
+    width: 60%;
+    margin-inline: auto;
+  }
+
+  .error-code-badge {
+    display: inline-block;
+    font-family: var(--font-sans-ui);
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--color-accent-gold-text);
+    background-color: var(--color-accent-gold-subtle);
+    border: 1px solid var(--color-border-gold);
+    padding: 0.25rem 0.75rem;
+    border-radius: 999px;
+    margin-bottom: 1rem;
+  }
+
+  .error-title {
+    font-family: var(--font-serif-heading);
+    font-size: clamp(2rem, 4vw, 2.75rem);
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--color-text-primary);
+    margin-bottom: 1rem;
+  }
+
+  .error-lead {
+    font-family: var(--font-serif-body);
+    font-size: 1.125rem;
+    line-height: 1.65;
+    color: var(--color-text-secondary);
+    max-width: 58ch;
+    margin-inline: auto;
+    margin-bottom: 2rem;
+  }
+
+  .error-quote-box {
+    background-color: var(--color-bg-subtle);
+    border-left: 3px solid var(--color-accent-gold);
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 2.5rem;
+    text-align: left;
+    border-radius: 0 4px 4px 0;
+  }
+
+  .error-quote {
+    font-style: italic;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--color-text-primary);
+    margin-bottom: 0.5rem;
+  }
+
+  .error-cite {
+    font-family: var(--font-sans-ui);
+    font-size: 0.8125rem;
+    color: var(--color-text-muted);
+    display: block;
+  }
+
+  .helpful-links-section {
+    margin-bottom: 2.5rem;
+    text-align: left;
+  }
+
+  .helpful-heading {
+    font-family: var(--font-serif-heading);
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--color-text-primary);
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--color-border-subtle);
+    text-align: center;
+  }
+
+  .links-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.875rem;
+  }
+
+  @media (min-width: 580px) {
+    .links-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .quick-link-card {
+    display: flex;
+    align-items: center;
+    gap: 0.875rem;
+    padding: 0.875rem 1rem;
+    background-color: var(--color-bg-base);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 4px;
+    text-decoration: none;
+    transition: border-color 0.15s ease, background-color 0.15s ease, transform 0.15s ease;
+  }
+
+  .quick-link-card:hover {
+    border-color: var(--color-border-gold);
+    background-color: var(--color-accent-gold-subtle);
+    transform: translateY(-1px);
+    text-decoration: none;
+  }
+
+  .link-icon {
+    font-size: 1.5rem;
+    line-height: 1;
+    flex-shrink: 0;
+  }
+
+  .link-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    min-width: 0;
+  }
+
+  .link-title {
+    font-family: var(--font-serif-heading);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-text-primary);
+  }
+
+  .link-desc {
+    font-family: var(--font-sans-ui);
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .error-search-action {
+    display: flex;
+    justify-content: center;
+  }
+
+  .error-search-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.625rem;
+    background-color: var(--color-forest);
+    color: #FAF8F2;
+    border: 1px solid var(--color-border-gold);
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    font-family: var(--font-sans-ui);
+    font-size: 0.875rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.15s ease, transform 0.15s ease;
+  }
+
+  .error-search-btn span {
+    color: #FAF8F2;
+  }
+
+  .error-search-btn:hover {
+    background-color: var(--color-forest-dark);
+    transform: translateY(-1px);
+  }
+</style>

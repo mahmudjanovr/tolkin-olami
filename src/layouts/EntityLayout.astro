@@ -23,6 +23,7 @@ interface Props {
   relatedGroups?: RelatedGroup[];
   adaptations?: AdaptationItem[];
   leadSummary?: string;
+  image?: string;
 }
 
 const {
@@ -36,10 +37,16 @@ const {
   relatedGroups = [],
   adaptations = [],
   leadSummary,
+  image,
 } = Astro.props;
 ---
 
-<BaseLayout title={title} description={leadSummary || `${title} — Tolkien Olami ensiklopedik maqolasi`} type="article">
+<BaseLayout
+  title={title}
+  description={leadSummary || `${title} — Tolkien Olami ensiklopedik maqolasi`}
+  type="article"
+  image={image}
+>
   <div class="entity-container container">
     <Breadcrumbs items={breadcrumbs} />
 

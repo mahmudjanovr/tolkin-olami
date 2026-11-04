@@ -15,6 +15,7 @@ test.describe('WCAG 2.1 AA Maxsus Kirish Imkoniyati (Accessibility Tests)', () =
     { name: 'Tillar va Yozuvlar', path: '/xalqlar-va-tillar/' },
     { name: 'Tarix va Xronologiya', path: '/tarix/' },
     { name: 'Tolkien Merosi', path: '/tolkien/' },
+    { name: '404 Xato sahifasi', path: '/404.html' },
   ];
 
   for (const { name, path } of routes) {

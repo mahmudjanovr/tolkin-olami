@@ -1,8 +1,21 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
-
+import { createLogger } from 'vite';
 import fs from 'node:fs';
 import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+
+const customViteLogger = createLogger();
+const originalViteWarn = customViteLogger.warn;
+customViteLogger.warn = (/** @type {any} */ msg, /** @type {any} */ options) => {
+  if (
+    typeof msg === 'string' &&
+    msg.includes("didn't resolve at build time, it will remain unchanged to be resolved at runtime")
+  ) {
+    return;
+  }
+  originalViteWarn(msg, options);
+};
 
 /** @returns {import('vite').Plugin} */
 function servePagefindDev() {
@@ -32,8 +45,6 @@ function servePagefindDev() {
   };
 }
 
-import { fileURLToPath } from 'node:url';
-
 /** @returns {import('astro').AstroIntegration} */
 function generateSitemap() {
   return {
@@ -42,6 +53,7 @@ function generateSitemap() {
       'astro:build:done': async ({ dir, pages }) => {
         const outDir = fileURLToPath(dir);
         const baseUrl = 'https://tolkienolami.uz';
+        const todayIso = new Date().toISOString().split('T')[0];
 
         const uniqueUrls = new Set();
         for (const p of pages) {
@@ -72,7 +84,7 @@ function generateSitemap() {
             priority = '0.9';
             changefreq = 'weekly';
           }
-          return `  <url>\n    <loc>${loc}</loc>\n    <changefreq>${changefreq}</changefreq>\n    <priority>${priority}</priority>\n  </url>`;
+          return `  <url>\n    <loc>${loc}</loc>\n    <lastmod>${todayIso}</lastmod>\n    <changefreq>${changefreq}</changefreq>\n    <priority>${priority}</priority>\n  </url>`;
         });
 
         const sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${xmlEntries.join('\n')}\n</urlset>\n`;
@@ -94,6 +106,7 @@ export default defineConfig({
   },
   integrations: [generateSitemap()],
   vite: {
+    customLogger: customViteLogger,
     resolve: {
       preserveSymlinks: true,
     },

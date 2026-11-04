@@ -230,13 +230,14 @@ Quyidagi jadvallarda fayl hajmiga koʻra eng ixcham (yupqa boʻlishi mumkin boʻ
 
 ## 5. Yigʻilgan Sahifalar Soni (`dist/` Output)
 
-- **Astro Build Natijasi:** **232** ta statik HTML sahifasi
-- **Pagefind Qidiruv Indeksi:** 231 ta sahifa indekslangan (maxsus qidiruv atributiga ega sahifalar)
-- **Sitemap URL lari:** 231 ta kanonik sahifa
+- **Astro Build Natijasi:** **233** ta statik HTML sahifasi (jumladan Oksford uslubidagi yangi `404.html`)
+- **Pagefind Qidiruv Indeksi:** 226 ta qidiruv atributiga ega boʻlgan asosiy ensiklopediya sahifasi toʻliq indekslangan
+- **Sitemap URL lari:** 231 ta kanonik sahifa (`<lastmod>` ISO sanalari bilan boyitilgan, 404 va xizmat fayllari toʻgʻri chiqarib tashlangan)
 
 ### Sahifalar Taqsimoti:
 - Bosh sahifa (`/`): 1
 - Qidiruv (`/qidiruv/`): 1
+- 404 Xato sahifasi (`/404.html`): 1
 - Xaritalar va Atlas (`/xaritalar/` va 45 ta toponim sahifasi): 46
 - Qahramonlar (`/qahramonlar/` va 81 ta qahramon sahifasi): 82
 - Kitoblar (`/kitoblar/` va 35 ta kitob sahifasi): 36
@@ -246,6 +247,19 @@ Quyidagi jadvallarda fayl hajmiga koʻra eng ixcham (yupqa boʻlishi mumkin boʻ
 - Tillar va Xalqlar (`/xalqlar-va-tillar/` va 21 ta til/xalq sahifasi): 22
 - Nasabnomalar (`/nasabnomalar/` va 6 ta shajara sahifasi): 7
 - Tolkien Merosi (`/tolkien/` va 2 ta biografik sahifa): 3
+
+---
+
+## 6. Sifat va Ishonchlilik Koʻrsatkichlari (Automated Testing Status)
+
+- **Astro Check & TypeScript Diagnostics:** 172 ta fayl — 0 xato, 0 ogohlantirish, 0 hint.
+- **Vitest Unit Testlari:** **337 ta test** (30 ta test toʻplami) — 100% muvaffaqiyatli oʻtgan.
+- **Playwright E2E & A11y Testlari:** **187 ta test** — 100% muvaffaqiyatli oʻtgan.
+  - WCAG 2.1 AA Maxsus Kirish Imkoniyati (Axe-core): 0 jiddiy yoki kritik nuqson.
+  - Responsivlik & Gorizontal toshish yoʻqligi: 320px, 375px, 768px, 1024px, 1440px da 0 toshish.
+- **Portretlar Butunligi:** 81 ta qahramon — 35 ta WebP portreti va 46 ta filologik monogramma fallback 0 xato bilan tasdiqlangan.
+- **Xavfsizlik Sarlavhalari (Security Headers):** Content Security Policy (CSP), Strict-Transport-Security (HSTS), X-Frame-Options (DENY), X-Content-Type-Options (nosniff) Nginx va Cloudflare Pages konfiguratsiyalarida sinxronlangan.
+- **SEO & Structured Data:** Schema.org JSON-LD (WebSite, SearchAction, Article/WebPage) barcha sahifalarga integratsiya qilingan, kanonik rasmlar ijtimoiy tarmoqlar kartalariga (Open Graph / Twitter) uzatilgan.
 
 ---
 

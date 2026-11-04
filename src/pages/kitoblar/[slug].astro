@@ -92,6 +92,7 @@ const textualStatus: TextualStatus = categoryStatusMap[data.category] || 'author
   textualStatus={textualStatus}
   sources={[]}
   leadSummary={data.synopsis}
+  image={data.cover_image?.src}
 >
   {data.cover_image && (
     <figure class="book-cover-figure" slot="sidebar-media">
@@ -99,6 +100,8 @@ const textualStatus: TextualStatus = categoryStatusMap[data.category] || 'author
         <img
           src={data.cover_image.src}
           alt={data.cover_image.alt}
+          width={400}
+          height={600}
           class="book-cover-img"
           loading="eager"
           decoding="async"

@@ -13,6 +13,7 @@ interface Props {
   image?: string;
   type?: 'website' | 'article';
   canonical?: string;
+  schema?: Record<string, unknown> | Array<Record<string, unknown>>;
 }
 
 const {
@@ -22,6 +23,7 @@ const {
   image,
   type = 'website',
   canonical,
+  schema,
 } = Astro.props;
 
 const siteOrigin = 'https://tolkienolami.uz';
@@ -36,6 +38,53 @@ const fullTitle =
 const ogImage = image
   ? (image.startsWith('http') ? image : `${siteOrigin}${image.startsWith('/') ? '' : '/'}${image}`)
   : `${siteOrigin}/images/og-default.png`;
+
+const defaultWebsiteSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'Tolkien Olami',
+  alternateName: 'Tolkien Olami Ensiklopediyasi',
+  url: siteOrigin,
+  inLanguage: 'uz',
+  description: "J.R.R. Tolkien asarlari bo'yicha ilmiy, matnshunoslikka asoslangan o'zbek tilidagi ensiklopediya",
+  potentialAction: {
+    '@type': 'SearchAction',
+    target: {
+      '@type': 'EntryPoint',
+      urlTemplate: `${siteOrigin}/qidiruv/?q={search_term_string}`,
+    },
+    'query-input': 'required name=search_term_string',
+  },
+};
+
+const defaultArticleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: fullTitle,
+  description: description,
+  url: canonicalURL,
+  image: ogImage,
+  inLanguage: 'uz',
+  mainEntityOfPage: {
+    '@type': 'WebPage',
+    '@id': canonicalURL,
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: 'Tolkien Olami',
+    url: siteOrigin,
+    logo: {
+      '@type': 'ImageObject',
+      url: `${siteOrigin}/favicon.svg`,
+    },
+  },
+};
+
+const jsonLdData = schema
+  ? schema
+  : type === 'article'
+    ? [defaultWebsiteSchema, defaultArticleSchema]
+    : defaultWebsiteSchema;
 ---
 
 <!doctype html>
@@ -81,6 +130,9 @@ const ogImage = image
     <meta name="twitter:title" content={fullTitle} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={ogImage} />
+
+    <!-- Schema.org JSON-LD Structured Data -->
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLdData)} />
 
     <!-- FOUC ni minimallashtiruvchi sinxron Head inline skripti -->
     <script is:inline>
